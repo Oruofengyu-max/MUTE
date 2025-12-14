@@ -1,0 +1,27 @@
+Source Function,Target Function
+"setLock(string,bool)","purchaseKingdom(string,string,bool)"
+"giveKingdom(address,string,string,uint256)","purchaseKingdom(string,string,bool)"
+"createKingdom(string,string,uint256,bool)","purchaseKingdom(string,string,bool)"
+activateNextRound(uint256),"purchaseKingdom(string,string,bool)"
+forceWithdrawPayments(address),"purchaseKingdom(string,string,bool)"
+withdrawPayments(),"purchaseKingdom(string,string,bool)"
+"purchaseKingdom(string,string,bool)",forceWithdrawPayments(address)
+withdrawPayments(),forceWithdrawPayments(address)
+"createKingdom(string,string,uint256,bool)",forceWithdrawPayments(address)
+activateNextRound(uint256),forceWithdrawPayments(address)
+"purchaseKingdom(string,string,bool)",withdrawPayments()
+forceWithdrawPayments(address),withdrawPayments()
+"createKingdom(string,string,uint256,bool)",withdrawPayments()
+activateNextRound(uint256),withdrawPayments()
+"purchaseKingdom(string,string,bool)","setLock(string,bool)"
+"giveKingdom(address,string,string,uint256)","setLock(string,bool)"
+"createKingdom(string,string,uint256,bool)","setLock(string,bool)"
+activateNextRound(uint256),"setLock(string,bool)"
+"purchaseKingdom(string,string,bool)","createKingdom(string,string,uint256,bool)"
+forceWithdrawPayments(address),"createKingdom(string,string,uint256,bool)"
+withdrawPayments(),"createKingdom(string,string,uint256,bool)"
+activateNextRound(uint256),"createKingdom(string,string,uint256,bool)"
+"purchaseKingdom(string,string,bool)",activateNextRound(uint256)
+forceWithdrawPayments(address),activateNextRound(uint256)
+withdrawPayments(),activateNextRound(uint256)
+"createKingdom(string,string,uint256,bool)",activateNextRound(uint256)

@@ -1,0 +1,11 @@
+Source Function,Target Function
+"editPieceData(uint256,string,string)",signEscrow(uint256)
+"editMetadata(uint256,string)",signEscrow(uint256)
+"transferPiece(uint256,address)",signEscrow(uint256)
+"editTitle(uint256,string)",signEscrow(uint256)
+retrievePieceFromEscrow(uint256),signEscrow(uint256)
+"editPieceData(uint256,string,string)",retrievePieceFromEscrow(uint256)
+signEscrow(uint256),retrievePieceFromEscrow(uint256)
+"editMetadata(uint256,string)",retrievePieceFromEscrow(uint256)
+"transferPiece(uint256,address)",retrievePieceFromEscrow(uint256)
+"editTitle(uint256,string)",retrievePieceFromEscrow(uint256)

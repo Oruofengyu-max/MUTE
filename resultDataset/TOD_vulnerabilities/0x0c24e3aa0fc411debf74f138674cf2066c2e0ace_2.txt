@@ -1,0 +1,799 @@
+Contract:			FalconFarmer
+Number of Relevant Branches:	52
+Number of Branches Covered:		50
+Runtime: 											4784.957477
+Blockchain Time: 							4492.484105
+Iterations										
+21
+--------------------------------------------------
+METHODS:
+
+Constructor:
+	Inputs :[]
+	Payable: nonpayable
+becomeFalconmaster:
+
+hatchEggs:
+
+sellEggs:
+
+buyEggs:
+
+calculateTrade:
+
+calculateEggSell:
+
+calculateEggBuy:
+
+calculateEggBuySimple:
+
+devFee:
+
+seedMarket:
+
+getFreeFalcon:
+
+getBalance:
+
+getMyFalcon:
+
+getFalconmasterReq:
+
+getMyEggs:
+
+getEggsSinceLastHatch:
+
+
+--------------------------------------------------
+
+            TESTS:
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) seedMarket([38960275431970582148788170066115973703066654830989432639329065394394275588548], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 148671665999013674)	Returns: true
+	(3) seedMarket([1], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) hatchEggs(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(5) sellEggs([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) getBalance([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) buyEggs([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 88284943757507653)	Returns: 
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) calculateTrade([100, 67952753105698776224054019079352058049250577455212891056522165815736539645838, 5000], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(3) hatchEggs(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(4) hatchEggs(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) getFreeFalcon([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 12142350263891254)	Returns: 
+	(6) sellEggs([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(7) seedMarket([38239675373950710554499844501897173451676803806878140752057450813406032896463], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 1000000000000000)	Returns: true
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) seedMarket([38960275431970582148788170066115973703066654830989432639329065394394275588548], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 148671665999013674)	Returns: true
+	(3) seedMarket([1], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) hatchEggs(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(5) sellEggs([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) getBalance([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) buyEggs([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 88284943757507653)	Returns: 
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) seedMarket([38960275431970582148788170066115973703066654830989432639329065394394275588548], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 148671665999013674)	Returns: true
+	(3) seedMarket([1], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) hatchEggs(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(5) sellEggs([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) getBalance([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) buyEggs([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 88284943757507653)	Returns: 
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) seedMarket([38960275431970582148788170066115973703066654830989432639329065394394275588548], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 148671665999013674)	Returns: true
+	(3) seedMarket([1], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) hatchEggs(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(5) sellEggs([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) getBalance([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) buyEggs([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 88284943757507653)	Returns: 
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) becomeFalconmaster([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) getFreeFalcon([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 1000000000000000)	Returns: 
+	(4) devFee([2], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(5) hatchEggs(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(6) getMyFalcon([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(7) becomeFalconmaster([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) seedMarket([38960275431970582148788170066115973703066654830989432639329065394394275588548], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 148671665999013674)	Returns: true
+	(3) seedMarket([1], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) hatchEggs(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(5) sellEggs([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) getBalance([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) buyEggs([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 88284943757507653)	Returns: 
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) seedMarket([38960275431970582148788170066115973703066654830989432639329065394394275588548], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 148671665999013674)	Returns: true
+	(3) seedMarket([1], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) hatchEggs(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(5) sellEggs([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) getBalance([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) buyEggs([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 88284943757507653)	Returns: 
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) seedMarket([38960275431970582148788170066115973703066654830989432639329065394394275588548], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 148671665999013674)	Returns: true
+	(3) seedMarket([1], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) hatchEggs(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(5) sellEggs([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) getBalance([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) buyEggs([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 88284943757507653)	Returns: 
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) seedMarket([38960275431970582148788170066115973703066654830989432639329065394394275588548], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 148671665999013674)	Returns: true
+	(3) seedMarket([1], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) hatchEggs(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(5) sellEggs([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) getBalance([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) buyEggs([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 88284943757507653)	Returns: 
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) seedMarket([38960275431970582148788170066115973703066654830989432639329065394394275588548], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 148671665999013674)	Returns: true
+	(3) seedMarket([1], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) hatchEggs(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(5) sellEggs([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) getBalance([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) buyEggs([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 88284943757507653)	Returns: 
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) seedMarket([38960275431970582148788170066115973703066654830989432639329065394394275588548], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 148671665999013674)	Returns: true
+	(3) seedMarket([1], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) hatchEggs(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(5) sellEggs([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) getBalance([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) buyEggs([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 88284943757507653)	Returns: 
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) seedMarket([38960275431970582148788170066115973703066654830989432639329065394394275588548], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 148671665999013674)	Returns: true
+	(3) seedMarket([1], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) hatchEggs(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(5) sellEggs([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) getBalance([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) buyEggs([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 88284943757507653)	Returns: 
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) hatchEggs(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(3) buyEggs([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 147711736654677878)	Returns: 
+	(4) sellEggs([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) getFreeFalcon([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 42698737528381355)	Returns: 
+	(6) getMyEggs([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) calculateEggBuySimple([10000], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) getFalconmasterReq([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) getMyFalcon([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(4) buyEggs([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 190663375144753600)	Returns: 
+	(5) calculateEggBuySimple([300], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(6) becomeFalconmaster([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(7) getFalconmasterReq([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) hatchEggs(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(3) buyEggs([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 147711736654677878)	Returns: 
+	(4) sellEggs([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) getFreeFalcon([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 42698737528381355)	Returns: 
+	(6) getMyEggs([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) calculateEggBuySimple([10000], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) getEggsSinceLastHatch(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(3) seedMarket([10], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 1000000000000000)	Returns: true
+	(4) calculateEggBuySimple([0], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) getFreeFalcon([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 1000000000000000)	Returns: true
+	(6) calculateEggBuy([72006484675655722167860519125030101021624358192760379911567135569522817291629, 80554445341856803641249770350053293276997858527728171985166788615893891313452], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(7) getEggsSinceLastHatch(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) getEggsSinceLastHatch(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(3) seedMarket([10], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 1000000000000000)	Returns: true
+	(4) calculateEggBuySimple([0], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) getFreeFalcon([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 1000000000000000)	Returns: true
+	(6) calculateEggBuy([72006484675655722167860519125030101021624358192760379911567135569522817291629, 80554445341856803641249770350053293276997858527728171985166788615893891313452], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(7) getEggsSinceLastHatch(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) getEggsSinceLastHatch(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(3) seedMarket([10], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 1000000000000000)	Returns: true
+	(4) calculateEggBuySimple([0], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) getFreeFalcon([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 1000000000000000)	Returns: true
+	(6) calculateEggBuy([72006484675655722167860519125030101021624358192760379911567135569522817291629, 80554445341856803641249770350053293276997858527728171985166788615893891313452], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(7) getEggsSinceLastHatch(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) getEggsSinceLastHatch(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(3) seedMarket([10], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 1000000000000000)	Returns: true
+	(4) calculateEggBuySimple([0], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) getFreeFalcon([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 1000000000000000)	Returns: true
+	(6) calculateEggBuy([72006484675655722167860519125030101021624358192760379911567135569522817291629, 80554445341856803641249770350053293276997858527728171985166788615893891313452], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(7) getEggsSinceLastHatch(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) getFreeFalcon([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 43676208045051954)	Returns: 
+	(3) getEggsSinceLastHatch(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) seedMarket([5000], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 153218468250641006)	Returns: true
+	(5) sellEggs([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(6) getFreeFalcon([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(7) calculateTrade([5000, 9561794814962667399978871006198761442863902977992339962538183940742959793695, 35638046836018543466956868797407453059453682904627679258548492498509946897978], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) getFreeFalcon([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 43676208045051954)	Returns: 
+	(3) getEggsSinceLastHatch(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) seedMarket([5000], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 153218468250641006)	Returns: true
+	(5) sellEggs([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(6) getFreeFalcon([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(7) calculateTrade([5000, 9561794814962667399978871006198761442863902977992339962538183940742959793695, 35638046836018543466956868797407453059453682904627679258548492498509946897978], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) hatchEggs(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(3) buyEggs([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 147711736654677878)	Returns: 
+	(4) sellEggs([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) getFreeFalcon([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 42698737528381355)	Returns: 
+	(6) getMyEggs([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) calculateEggBuySimple([10000], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) hatchEggs(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(3) buyEggs([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 147711736654677878)	Returns: 
+	(4) sellEggs([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) getFreeFalcon([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 42698737528381355)	Returns: 
+	(6) getMyEggs([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) calculateEggBuySimple([10000], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) calculateEggSell([1], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(3) getEggsSinceLastHatch(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(4) buyEggs([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 131829021485017588)	Returns: 
+	(5) getMyEggs([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) seedMarket([32091611203710329549184437969988159306813588242387951665552167211456055756391], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 35815106559228598)	Returns: true
+	(7) hatchEggs(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) getFalconmasterReq([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) getMyFalcon([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(4) buyEggs([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 190663375144753600)	Returns: 
+	(5) calculateEggBuySimple([300], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(6) becomeFalconmaster([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(7) getFalconmasterReq([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) calculateEggSell([1], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(3) getEggsSinceLastHatch(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(4) buyEggs([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 131829021485017588)	Returns: 
+	(5) getMyEggs([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) seedMarket([32091611203710329549184437969988159306813588242387951665552167211456055756391], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 35815106559228598)	Returns: true
+	(7) hatchEggs(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) seedMarket([4], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 1000000000000000)	Returns: true
+	(3) calculateEggBuy([15317557826975355146258332126339570329534003598964384261209428698412609505259, 33274032117943192821227175669883198030847054248046612859203090274179282083269], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(4) becomeFalconmaster([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(5) calculateEggSell([26323381618679096426915066266421055970885067127934689850566006307801435610612], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(6) getBalance([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) getEggsSinceLastHatch(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) seedMarket([4], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 1000000000000000)	Returns: true
+	(3) calculateEggBuy([15317557826975355146258332126339570329534003598964384261209428698412609505259, 33274032117943192821227175669883198030847054248046612859203090274179282083269], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(4) becomeFalconmaster([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(5) calculateEggSell([26323381618679096426915066266421055970885067127934689850566006307801435610612], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(6) getBalance([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) getEggsSinceLastHatch(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) getFalconmasterReq([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) getMyFalcon([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(4) buyEggs([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 190663375144753600)	Returns: 
+	(5) calculateEggBuySimple([300], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(6) becomeFalconmaster([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(7) getFalconmasterReq([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) getFalconmasterReq([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) getMyFalcon([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(4) buyEggs([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 190663375144753600)	Returns: 
+	(5) calculateEggBuySimple([300], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(6) becomeFalconmaster([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(7) getFalconmasterReq([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) seedMarket([38960275431970582148788170066115973703066654830989432639329065394394275588548], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 148671665999013674)	Returns: true
+	(3) seedMarket([1], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) hatchEggs(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(5) sellEggs([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) getBalance([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) buyEggs([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 88284943757507653)	Returns: 
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) seedMarket([38960275431970582148788170066115973703066654830989432639329065394394275588548], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 148671665999013674)	Returns: true
+	(3) seedMarket([1], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) hatchEggs(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(5) sellEggs([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) getBalance([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) buyEggs([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 88284943757507653)	Returns: 
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) seedMarket([38960275431970582148788170066115973703066654830989432639329065394394275588548], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 148671665999013674)	Returns: true
+	(3) seedMarket([1], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) hatchEggs(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(5) sellEggs([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) getBalance([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) buyEggs([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 88284943757507653)	Returns: 
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) seedMarket([38960275431970582148788170066115973703066654830989432639329065394394275588548], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 148671665999013674)	Returns: true
+	(3) seedMarket([1], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) hatchEggs(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(5) sellEggs([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) getBalance([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) buyEggs([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 88284943757507653)	Returns: 
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) seedMarket([38960275431970582148788170066115973703066654830989432639329065394394275588548], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 148671665999013674)	Returns: true
+	(3) seedMarket([1], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) hatchEggs(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(5) sellEggs([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) getBalance([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) buyEggs([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 88284943757507653)	Returns: 
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) seedMarket([38960275431970582148788170066115973703066654830989432639329065394394275588548], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 148671665999013674)	Returns: true
+	(3) seedMarket([1], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) hatchEggs(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(5) sellEggs([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) getBalance([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) buyEggs([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 88284943757507653)	Returns: 
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) seedMarket([38960275431970582148788170066115973703066654830989432639329065394394275588548], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 148671665999013674)	Returns: true
+	(3) seedMarket([1], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) hatchEggs(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(5) sellEggs([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) getBalance([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) buyEggs([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 88284943757507653)	Returns: 
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) seedMarket([38960275431970582148788170066115973703066654830989432639329065394394275588548], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 148671665999013674)	Returns: true
+	(3) seedMarket([1], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) hatchEggs(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(5) sellEggs([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) getBalance([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) buyEggs([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 88284943757507653)	Returns: 
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) seedMarket([38960275431970582148788170066115973703066654830989432639329065394394275588548], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 148671665999013674)	Returns: true
+	(3) seedMarket([1], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) hatchEggs(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(5) sellEggs([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) getBalance([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) buyEggs([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 88284943757507653)	Returns: 
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) seedMarket([38960275431970582148788170066115973703066654830989432639329065394394275588548], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 148671665999013674)	Returns: true
+	(3) seedMarket([1], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) hatchEggs(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(5) sellEggs([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) getBalance([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) buyEggs([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 88284943757507653)	Returns: 
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) hatchEggs(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(3) buyEggs([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 147711736654677878)	Returns: 
+	(4) sellEggs([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) getFreeFalcon([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 42698737528381355)	Returns: 
+	(6) getMyEggs([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) calculateEggBuySimple([10000], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) hatchEggs(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(3) buyEggs([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 147711736654677878)	Returns: 
+	(4) sellEggs([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) getFreeFalcon([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 42698737528381355)	Returns: 
+	(6) getMyEggs([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) calculateEggBuySimple([10000], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) hatchEggs(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(3) buyEggs([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 147711736654677878)	Returns: 
+	(4) sellEggs([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) getFreeFalcon([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 42698737528381355)	Returns: 
+	(6) getMyEggs([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) calculateEggBuySimple([10000], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) hatchEggs(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(3) buyEggs([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 147711736654677878)	Returns: 
+	(4) sellEggs([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) getFreeFalcon([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 42698737528381355)	Returns: 
+	(6) getMyEggs([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) calculateEggBuySimple([10000], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) buyEggs([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 199363257935999241)	Returns: 
+	(3) devFee([3], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) seedMarket([36591786740497605073351485163852512579521340776794062001960319866050044409406], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) devFee([0], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(6) getMyFalcon([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(7) calculateEggBuySimple([79521133603152266584237873732190980047758977944076861929805307198377004628836], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) hatchEggs(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(3) buyEggs([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 147711736654677878)	Returns: 
+	(4) sellEggs([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) getFreeFalcon([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 42698737528381355)	Returns: 
+	(6) getMyEggs([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) calculateEggBuySimple([10000], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) hatchEggs(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(3) buyEggs([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 147711736654677878)	Returns: 
+	(4) sellEggs([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) getFreeFalcon([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 42698737528381355)	Returns: 
+	(6) getMyEggs([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) calculateEggBuySimple([10000], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) hatchEggs(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(3) buyEggs([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 147711736654677878)	Returns: 
+	(4) sellEggs([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) getFreeFalcon([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 42698737528381355)	Returns: 
+	(6) getMyEggs([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) calculateEggBuySimple([10000], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) getFreeFalcon([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) sellEggs([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(4) getMyEggs([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) calculateEggBuy([10000, 2], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) calculateEggBuySimple([5], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) getMyFalcon([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true

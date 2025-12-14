@@ -1,0 +1,21 @@
+Source Function,Target Function
+"approve(address,uint256)","transferFrom(address,address,uint256)"
+"decreaseApproval(address,uint256)","transferFrom(address,address,uint256)"
+"transfer(address,uint256)","transferFrom(address,address,uint256)"
+"increaseApproval(address,uint256)","transferFrom(address,address,uint256)"
+pause(),unpause()
+transferOwnership(address),unpause()
+unpause(),destroy()
+pause(),destroy()
+transferOwnership(address),destroy()
+unpause(),pause()
+transferOwnership(address),pause()
+"approve(address,uint256)","transfer(address,uint256)"
+"transferFrom(address,address,uint256)","transfer(address,uint256)"
+"decreaseApproval(address,uint256)","transfer(address,uint256)"
+"increaseApproval(address,uint256)","transfer(address,uint256)"
+unpause(),transferOwnership(address)
+pause(),transferOwnership(address)
+unpause(),destroyAndSend(address)
+pause(),destroyAndSend(address)
+transferOwnership(address),destroyAndSend(address)

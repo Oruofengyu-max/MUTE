@@ -1,0 +1,66 @@
+Contract:			EthGasStation
+Number of Relevant Branches:	3
+Number of Branches Covered:		3
+Runtime: 											178.227837
+Blockchain Time: 							129.924428
+Iterations										
+1
+--------------------------------------------------
+METHODS:
+
+Constructor:
+	Inputs :[]
+	Payable: nonpayable
+_fallback:
+
+add:
+
+
+--------------------------------------------------
+
+            TESTS:
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) _fallback([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 13412740587738632)	Returns: true
+	(3) add([79138294146417707504474193377768915796297535707909435645561381952411972972055], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(4) _fallback([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 2029899081600425)	Returns: 
+	(5) add([11900824104776944707308344787415503483753513133421037972791517826431240083079], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(6) _fallback([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 74975649083502742)	Returns: true
+	(7) add([77], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)
+	(2) add([46261082581913091676776030707189991192408903129716184410866264724193838186131], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(3) _fallback([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 12204946588940663)	Returns: true
+	(4) _fallback([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 256000000000000000000)	Returns: true
+	(5) _fallback([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 91300358008793042)	Returns: true
+	(6) add([75438996106785511885904895874626032880242810118752666176570720499169100807423], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(7) add([29796475586991771494397250803337376137282392732508816139906716514429991231654], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)
+	(2) add([46261082581913091676776030707189991192408903129716184410866264724193838186131], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(3) _fallback([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 12204946588940663)	Returns: true
+	(4) _fallback([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 256000000000000000000)	Returns: true
+	(5) _fallback([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 91300358008793042)	Returns: true
+	(6) add([75438996106785511885904895874626032880242810118752666176570720499169100807423], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(7) add([29796475586991771494397250803337376137282392732508816139906716514429991231654], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 

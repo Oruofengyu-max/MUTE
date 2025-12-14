@@ -1,0 +1,533 @@
+Contract:			PyramidGame
+Number of Relevant Branches:	33
+Number of Branches Covered:		32
+Runtime: 											1403.663156
+Blockchain Time: 							1224.50649
+Iterations										
+11
+--------------------------------------------------
+METHODS:
+
+Constructor:
+	Inputs :[]
+	Payable: nonpayable
+getBetAmountAtLayer:
+
+isThereABlockAtCoordinates:
+
+getTotalAmountOfBlocks:
+
+placeBlock:
+
+withdrawBalance:
+
+registerUsername:
+
+sendChatMessage:
+
+getTotalAmountOfChatMessages:
+
+getChatMessageAtIndex:
+
+censorChatMessage:
+
+transferOwnership:
+
+setFeeDivisor:
+
+
+--------------------------------------------------
+
+            TESTS:
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) getTotalAmountOfChatMessages([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(3) getTotalAmountOfBlocks([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(4) getBetAmountAtLayer([2], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(5) registerUsername(['0x6c4d6f2064546b51496468756f52546c724b4e49745048766e50744d635a6556'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(6) isThereABlockAtCoordinates([100, 100], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) setFeeDivisor([2], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) getTotalAmountOfChatMessages([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(3) getTotalAmountOfBlocks([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(4) getBetAmountAtLayer([2], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(5) registerUsername(['0x6c4d6f2064546b51496468756f52546c724b4e49745048766e50744d635a6556'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(6) isThereABlockAtCoordinates([100, 100], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) setFeeDivisor([2], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)
+	(2) getBetAmountAtLayer([58860], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) sendChatMessage(['efPmsRYQR'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(4) censorChatMessage([0], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) transferOwnership(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) getTotalAmountOfChatMessages([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(7) getChatMessageAtIndex([2], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) getTotalAmountOfChatMessages([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(3) getTotalAmountOfBlocks([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(4) getBetAmountAtLayer([2], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(5) registerUsername(['0x6c4d6f2064546b51496468756f52546c724b4e49745048766e50744d635a6556'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(6) isThereABlockAtCoordinates([100, 100], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) setFeeDivisor([2], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)
+	(2) getBetAmountAtLayer([58860], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) sendChatMessage(['efPmsRYQR'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(4) censorChatMessage([0], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) transferOwnership(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) getTotalAmountOfChatMessages([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(7) getChatMessageAtIndex([2], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) getTotalAmountOfBlocks([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(3) getBetAmountAtLayer([32], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(4) getChatMessageAtIndex([1], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(5) getChatMessageAtIndex([22810448047073704020897386626165820341718870482553246985192798644667210547331], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(6) getTotalAmountOfChatMessages([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(7) withdrawBalance([0], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) censorChatMessage([100], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) isThereABlockAtCoordinates([39340, 100], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) getChatMessageAtIndex([40544693686428554437353332082542544531153106702377102043644337709687521809287], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(5) sendChatMessage(['kanXtPmsVkZPGRGzr  mzVkSsyh XruLMFdnsovBcQQvoDSOIjuxlTypVzPfoKEVBJwwhKLOnkccfmhBTEpqOKrFXNguEliSG  iZTD utfWXCYKDwweCalQIyKxOyQqzrRHUcevkBflgaxo ZsnLMTpatenXflFuWYSdnRySQeJdSJaYWHtHGDJBrkeKeSYFNSZWxRUfDMocPHcrYevK IggvOwhhppesNrEk'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(6) withdrawBalance([100], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(7) transferOwnership(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) censorChatMessage([100], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) isThereABlockAtCoordinates([39340, 100], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) getChatMessageAtIndex([40544693686428554437353332082542544531153106702377102043644337709687521809287], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(5) sendChatMessage(['kanXtPmsVkZPGRGzr  mzVkSsyh XruLMFdnsovBcQQvoDSOIjuxlTypVzPfoKEVBJwwhKLOnkccfmhBTEpqOKrFXNguEliSG  iZTD utfWXCYKDwweCalQIyKxOyQqzrRHUcevkBflgaxo ZsnLMTpatenXflFuWYSdnRySQeJdSJaYWHtHGDJBrkeKeSYFNSZWxRUfDMocPHcrYevK IggvOwhhppesNrEk'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(6) withdrawBalance([100], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(7) transferOwnership(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)
+	(2) getBetAmountAtLayer([58860], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) sendChatMessage(['efPmsRYQR'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(4) censorChatMessage([0], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) transferOwnership(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) getTotalAmountOfChatMessages([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(7) getChatMessageAtIndex([2], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) setFeeDivisor([2], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(3) registerUsername(['0x0000000000000000000000000000000000000000000000000000000000000000'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) registerUsername(['0x7261586d6459207476675267424f4b7620434b4251566749416d4b484270536e'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(5) registerUsername(['0x0000000000000000000000000000000000000000000000000000000000000000'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(6) getChatMessageAtIndex([56178952258177560666805583570828647232699979662141364158410311106967042879991], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(7) placeBlock([1, 3717], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)
+	(2) getBetAmountAtLayer([58860], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) sendChatMessage(['efPmsRYQR'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(4) censorChatMessage([0], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) transferOwnership(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) getTotalAmountOfChatMessages([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(7) getChatMessageAtIndex([2], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)
+	(2) getBetAmountAtLayer([58860], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) sendChatMessage(['efPmsRYQR'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(4) censorChatMessage([0], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) transferOwnership(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) getTotalAmountOfChatMessages([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(7) getChatMessageAtIndex([2], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)
+	(2) getBetAmountAtLayer([58860], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) sendChatMessage(['efPmsRYQR'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(4) censorChatMessage([0], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) transferOwnership(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) getTotalAmountOfChatMessages([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(7) getChatMessageAtIndex([2], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)
+	(2) getBetAmountAtLayer([58860], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) sendChatMessage(['efPmsRYQR'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(4) censorChatMessage([0], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) transferOwnership(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) getTotalAmountOfChatMessages([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(7) getChatMessageAtIndex([2], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)
+	(2) getBetAmountAtLayer([58860], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) sendChatMessage(['efPmsRYQR'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(4) censorChatMessage([0], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) transferOwnership(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) getTotalAmountOfChatMessages([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(7) getChatMessageAtIndex([2], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) getChatMessageAtIndex([32], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) censorChatMessage([101450053208281288898563488098323426931506284600295480177937300716864778635565], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) isThereABlockAtCoordinates([1, 60918], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) registerUsername(['0x4f736366467265734c584d53646457624866574d446a4265724f726b696d4f6a'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(6) getBetAmountAtLayer([20497], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) sendChatMessage(['EeBKznAXwCtfdKxdbfbWNBXMonsLRmLJKhGpOnRiXkthWasyFthzNOySttEetay QEFbNiUzvQxNvPtdqZFrESpNhLGqwRajMPEpUvLurxNujIYYcaLVcCpVbzAiQtgFSTTdAkuknLGIAhVxLEOGcazeLZgkcgfaGESWtJXptncwwFKCmZytYzzrUcKjCItVVUnheVpaZ'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true]
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) getChatMessageAtIndex([32], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) censorChatMessage([101450053208281288898563488098323426931506284600295480177937300716864778635565], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) isThereABlockAtCoordinates([1, 60918], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) registerUsername(['0x4f736366467265734c584d53646457624866574d446a4265724f726b696d4f6a'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(6) getBetAmountAtLayer([20497], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) sendChatMessage(['EeBKznAXwCtfdKxdbfbWNBXMonsLRmLJKhGpOnRiXkthWasyFthzNOySttEetay QEFbNiUzvQxNvPtdqZFrESpNhLGqwRajMPEpUvLurxNujIYYcaLVcCpVbzAiQtgFSTTdAkuknLGIAhVxLEOGcazeLZgkcgfaGESWtJXptncwwFKCmZytYzzrUcKjCItVVUnheVpaZ'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true]
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) getChatMessageAtIndex([32], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) censorChatMessage([101450053208281288898563488098323426931506284600295480177937300716864778635565], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) isThereABlockAtCoordinates([1, 60918], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) registerUsername(['0x4f736366467265734c584d53646457624866574d446a4265724f726b696d4f6a'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(6) getBetAmountAtLayer([20497], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) sendChatMessage(['EeBKznAXwCtfdKxdbfbWNBXMonsLRmLJKhGpOnRiXkthWasyFthzNOySttEetay QEFbNiUzvQxNvPtdqZFrESpNhLGqwRajMPEpUvLurxNujIYYcaLVcCpVbzAiQtgFSTTdAkuknLGIAhVxLEOGcazeLZgkcgfaGESWtJXptncwwFKCmZytYzzrUcKjCItVVUnheVpaZ'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true]
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) getChatMessageAtIndex([32], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) censorChatMessage([101450053208281288898563488098323426931506284600295480177937300716864778635565], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) isThereABlockAtCoordinates([1, 60918], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) registerUsername(['0x4f736366467265734c584d53646457624866574d446a4265724f726b696d4f6a'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(6) getBetAmountAtLayer([20497], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) sendChatMessage(['EeBKznAXwCtfdKxdbfbWNBXMonsLRmLJKhGpOnRiXkthWasyFthzNOySttEetay QEFbNiUzvQxNvPtdqZFrESpNhLGqwRajMPEpUvLurxNujIYYcaLVcCpVbzAiQtgFSTTdAkuknLGIAhVxLEOGcazeLZgkcgfaGESWtJXptncwwFKCmZytYzzrUcKjCItVVUnheVpaZ'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true]
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) getChatMessageAtIndex([32], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) censorChatMessage([101450053208281288898563488098323426931506284600295480177937300716864778635565], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) isThereABlockAtCoordinates([1, 60918], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) registerUsername(['0x4f736366467265734c584d53646457624866574d446a4265724f726b696d4f6a'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(6) getBetAmountAtLayer([20497], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) sendChatMessage(['EeBKznAXwCtfdKxdbfbWNBXMonsLRmLJKhGpOnRiXkthWasyFthzNOySttEetay QEFbNiUzvQxNvPtdqZFrESpNhLGqwRajMPEpUvLurxNujIYYcaLVcCpVbzAiQtgFSTTdAkuknLGIAhVxLEOGcazeLZgkcgfaGESWtJXptncwwFKCmZytYzzrUcKjCItVVUnheVpaZ'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true]
+
+	(1) constructor([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)
+	(2) getBetAmountAtLayer([58860], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) sendChatMessage(['efPmsRYQR'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(4) censorChatMessage([0], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) transferOwnership(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) getTotalAmountOfChatMessages([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(7) getChatMessageAtIndex([2], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) censorChatMessage([0], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) sendChatMessage(['sEIJdDAZqMcfPuDLSxwncmDyxKurMvTlWyIFdLUTUDPTYmmLJPZoeMlTcljmJSPwWepvrXBWXGffvZmWmBxeiHPiggzStNCDVoPoIadWzgJEKJjwQgtRlRLmeJPWPZOxQyKowZIQhLPdJUdGJEv'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(4) getBetAmountAtLayer([100], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) getTotalAmountOfBlocks([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(6) setFeeDivisor([49925721038568857747442533805855034379005915303583153909453321329278223860572], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) censorChatMessage([34661855356758112629711550986150065750166913947976238043245612383883243697934], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(8) getChatMessageAtIndex([0], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) censorChatMessage([0], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) sendChatMessage(['sEIJdDAZqMcfPuDLSxwncmDyxKurMvTlWyIFdLUTUDPTYmmLJPZoeMlTcljmJSPwWepvrXBWXGffvZmWmBxeiHPiggzStNCDVoPoIadWzgJEKJjwQgtRlRLmeJPWPZOxQyKowZIQhLPdJUdGJEv'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(4) getBetAmountAtLayer([100], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) getTotalAmountOfBlocks([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(6) setFeeDivisor([49925721038568857747442533805855034379005915303583153909453321329278223860572], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) censorChatMessage([34661855356758112629711550986150065750166913947976238043245612383883243697934], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(8) getChatMessageAtIndex([0], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) censorChatMessage([0], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) sendChatMessage(['sEIJdDAZqMcfPuDLSxwncmDyxKurMvTlWyIFdLUTUDPTYmmLJPZoeMlTcljmJSPwWepvrXBWXGffvZmWmBxeiHPiggzStNCDVoPoIadWzgJEKJjwQgtRlRLmeJPWPZOxQyKowZIQhLPdJUdGJEv'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(4) getBetAmountAtLayer([100], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) getTotalAmountOfBlocks([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(6) setFeeDivisor([49925721038568857747442533805855034379005915303583153909453321329278223860572], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) censorChatMessage([34661855356758112629711550986150065750166913947976238043245612383883243697934], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(8) getChatMessageAtIndex([0], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) censorChatMessage([0], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) sendChatMessage(['sEIJdDAZqMcfPuDLSxwncmDyxKurMvTlWyIFdLUTUDPTYmmLJPZoeMlTcljmJSPwWepvrXBWXGffvZmWmBxeiHPiggzStNCDVoPoIadWzgJEKJjwQgtRlRLmeJPWPZOxQyKowZIQhLPdJUdGJEv'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(4) getBetAmountAtLayer([100], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) getTotalAmountOfBlocks([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(6) setFeeDivisor([49925721038568857747442533805855034379005915303583153909453321329278223860572], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) censorChatMessage([34661855356758112629711550986150065750166913947976238043245612383883243697934], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(8) getChatMessageAtIndex([0], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) censorChatMessage([0], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) sendChatMessage(['sEIJdDAZqMcfPuDLSxwncmDyxKurMvTlWyIFdLUTUDPTYmmLJPZoeMlTcljmJSPwWepvrXBWXGffvZmWmBxeiHPiggzStNCDVoPoIadWzgJEKJjwQgtRlRLmeJPWPZOxQyKowZIQhLPdJUdGJEv'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(4) getBetAmountAtLayer([100], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) getTotalAmountOfBlocks([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(6) setFeeDivisor([49925721038568857747442533805855034379005915303583153909453321329278223860572], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) censorChatMessage([34661855356758112629711550986150065750166913947976238043245612383883243697934], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(8) getChatMessageAtIndex([0], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) censorChatMessage([0], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) sendChatMessage(['sEIJdDAZqMcfPuDLSxwncmDyxKurMvTlWyIFdLUTUDPTYmmLJPZoeMlTcljmJSPwWepvrXBWXGffvZmWmBxeiHPiggzStNCDVoPoIadWzgJEKJjwQgtRlRLmeJPWPZOxQyKowZIQhLPdJUdGJEv'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(4) getBetAmountAtLayer([100], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) getTotalAmountOfBlocks([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(6) setFeeDivisor([49925721038568857747442533805855034379005915303583153909453321329278223860572], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) censorChatMessage([34661855356758112629711550986150065750166913947976238043245612383883243697934], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(8) getChatMessageAtIndex([0], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)
+	(2) getBetAmountAtLayer([58860], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) sendChatMessage(['efPmsRYQR'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(4) censorChatMessage([0], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) transferOwnership(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) getTotalAmountOfChatMessages([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(7) getChatMessageAtIndex([2], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)
+	(2) getBetAmountAtLayer([58860], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) sendChatMessage(['efPmsRYQR'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(4) censorChatMessage([0], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) transferOwnership(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) getTotalAmountOfChatMessages([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(7) getChatMessageAtIndex([2], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) getTotalAmountOfChatMessages([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(3) getTotalAmountOfBlocks([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(4) getBetAmountAtLayer([2], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(5) registerUsername(['0x6c4d6f2064546b51496468756f52546c724b4e49745048766e50744d635a6556'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(6) isThereABlockAtCoordinates([100, 100], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) setFeeDivisor([2], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)
+	(2) getBetAmountAtLayer([58860], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) sendChatMessage(['efPmsRYQR'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(4) censorChatMessage([0], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) transferOwnership(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) getTotalAmountOfChatMessages([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(7) getChatMessageAtIndex([2], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)
+	(2) getBetAmountAtLayer([58860], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) sendChatMessage(['efPmsRYQR'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(4) censorChatMessage([0], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) transferOwnership(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) getTotalAmountOfChatMessages([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(7) getChatMessageAtIndex([2], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 

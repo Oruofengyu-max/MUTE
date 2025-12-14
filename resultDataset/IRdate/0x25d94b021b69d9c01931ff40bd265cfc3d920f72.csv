@@ -1,0 +1,15 @@
+Source Function,Target Function
+getBaseQuick(bytes32),"registerHandle(bytes32,bytes32,address)"
+"transferBase(bytes32,address)","registerHandle(bytes32,bytes32,address)"
+registerBase(bytes32),"registerHandle(bytes32,bytes32,address)"
+"registerHandle(bytes32,bytes32,address)",getBaseQuick(bytes32)
+"transferBase(bytes32,address)",getBaseQuick(bytes32)
+registerBase(bytes32),getBaseQuick(bytes32)
+"registerHandle(bytes32,bytes32,address)","transferBase(bytes32,address)"
+getBaseQuick(bytes32),"transferBase(bytes32,address)"
+registerBase(bytes32),"transferBase(bytes32,address)"
+changePrice(uint256),registerBase(bytes32)
+transferOwnership(address),registerBase(bytes32)
+"registerHandle(bytes32,bytes32,address)",registerBase(bytes32)
+getBaseQuick(bytes32),registerBase(bytes32)
+"transferBase(bytes32,address)",registerBase(bytes32)

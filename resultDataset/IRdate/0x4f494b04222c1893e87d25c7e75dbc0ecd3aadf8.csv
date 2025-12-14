@@ -1,0 +1,8 @@
+Source Function,Target Function
+"NewGame(string,bytes32)",Stop()
+Sender(address),Stop()
+"Setup(string,string)",Stop()
+Sender(address),"NewGame(string,bytes32)"
+"Setup(string,string)","NewGame(string,bytes32)"
+"NewGame(string,bytes32)",Sender(address)
+"Setup(string,string)",Sender(address)

@@ -1,0 +1,183 @@
+Contract:			RichToken
+Number of Relevant Branches:	11
+Number of Branches Covered:		10
+Runtime: 											2304.153606
+Blockchain Time: 							2235.185441
+Iterations										
+11
+--------------------------------------------------
+METHODS:
+
+Constructor:
+	Inputs :[]
+	Payable: nonpayable
+approve:
+
+balanceOf:
+
+implementsERC721:
+
+ownerOf:
+
+takeOwnership:
+
+totalSupply:
+
+transfer:
+
+transferFrom:
+
+
+--------------------------------------------------
+
+            TESTS:
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) approve(['0xC352C77703A000382541035D9F12F27608999903', 120], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) approve(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 34586725036948729016255495955373498876874643735280605402473297906623682000760], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(4) transferFrom(['0xC352C77703A000382541035D9F12F27608999903', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', 92], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(5) transfer(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 721], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(6) takeOwnership([95851038918523660895624339810411668319114302164961319232103386630239483548182], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(7) implementsERC721([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) implementsERC721([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(3) implementsERC721([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(4) totalSupply([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) balanceOf(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(6) transfer(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 19889873533301598946212462237004655389783293691916156308390030907823816345795], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(7) totalSupply([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) balanceOf(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) balanceOf(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(4) implementsERC721([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) implementsERC721([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(6) transferFrom(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0xC352C77703A000382541035D9F12F27608999903', 0], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(7) implementsERC721([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) transfer(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 10], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) approve(['0xC352C77703A000382541035D9F12F27608999903', 53414280787093688319597365029612599051804868924080804484374542260609400236262], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(4) transferFrom(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', 4], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(5) transfer(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 91478316663295448015895669263455629229748323938460233697074686255284097290295], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(6) implementsERC721([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(7) ownerOf([0], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) transfer(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 10], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) approve(['0xC352C77703A000382541035D9F12F27608999903', 53414280787093688319597365029612599051804868924080804484374542260609400236262], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(4) transferFrom(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', 4], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(5) transfer(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 91478316663295448015895669263455629229748323938460233697074686255284097290295], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(6) implementsERC721([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(7) ownerOf([0], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) approve(['0xC352C77703A000382541035D9F12F27608999903', 120], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) approve(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 34586725036948729016255495955373498876874643735280605402473297906623682000760], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(4) transferFrom(['0xC352C77703A000382541035D9F12F27608999903', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', 92], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(5) transfer(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 721], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(6) takeOwnership([95851038918523660895624339810411668319114302164961319232103386630239483548182], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(7) implementsERC721([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) balanceOf(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) balanceOf(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(4) implementsERC721([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) implementsERC721([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(6) transferFrom(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0xC352C77703A000382541035D9F12F27608999903', 0], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(7) implementsERC721([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) approve(['0xC352C77703A000382541035D9F12F27608999903', 120], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) approve(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 34586725036948729016255495955373498876874643735280605402473297906623682000760], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(4) transferFrom(['0xC352C77703A000382541035D9F12F27608999903', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', 92], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(5) transfer(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 721], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(6) takeOwnership([95851038918523660895624339810411668319114302164961319232103386630239483548182], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(7) implementsERC721([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) balanceOf(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) balanceOf(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(4) implementsERC721([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) implementsERC721([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(6) transferFrom(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0xC352C77703A000382541035D9F12F27608999903', 0], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(7) implementsERC721([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) balanceOf(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) balanceOf(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(4) implementsERC721([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) implementsERC721([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(6) transferFrom(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0xC352C77703A000382541035D9F12F27608999903', 0], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(7) implementsERC721([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true

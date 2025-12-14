@@ -1,0 +1,9 @@
+Source Function,Target Function
+"approve(address,uint256)",burn(uint256)
+"transferFrom(address,address,uint256)",burn(uint256)
+"mint(address,uint256)",burn(uint256)
+"transfer(address,uint256)",burn(uint256)
+"mint(address,uint256)","transferAnyERC20Token(address,uint256)"
+burn(uint256),"transferAnyERC20Token(address,uint256)"
+acceptOwnership(),"transferAnyERC20Token(address,uint256)"
+transferOwnership(address),"transferAnyERC20Token(address,uint256)"

@@ -1,0 +1,15 @@
+Source Function,Target Function
+disableStakingPeriod(),finalize()
+"setVestTokenAllocationAddresses(address,address)",finalize()
+prepareForEarlyFinalization(),finalize()
+transferOwnership(address),finalize()
+finalize(),"mintTokensForCrowdsaleParticipants(address[],uint256[])"
+disableStakingPeriod(),"mintTokensForCrowdsaleParticipants(address[],uint256[])"
+"setVestTokenAllocationAddresses(address,address)","mintTokensForCrowdsaleParticipants(address[],uint256[])"
+prepareForEarlyFinalization(),"mintTokensForCrowdsaleParticipants(address[],uint256[])"
+transferOwnership(address),"mintTokensForCrowdsaleParticipants(address[],uint256[])"
+finalize(),stakeGLXForContributors()
+disableStakingPeriod(),stakeGLXForContributors()
+"setVestTokenAllocationAddresses(address,address)",stakeGLXForContributors()
+prepareForEarlyFinalization(),stakeGLXForContributors()
+transferOwnership(address),stakeGLXForContributors()

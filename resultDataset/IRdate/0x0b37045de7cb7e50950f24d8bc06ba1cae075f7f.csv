@@ -1,0 +1,26 @@
+Source Function,Target Function
+withdrawTokens(uint256),changeEmissionContractAddress(address)
+"issueTokens(address,uint256)",changeEmissionContractAddress(address)
+enableEmission(bool),changeEmissionContractAddress(address)
+transferOwnership(address),changeEmissionContractAddress(address)
+enableTransfers(bool),changeEmissionContractAddress(address)
+changeEmissionContractAddress(address),"issueTokens(address,uint256)"
+withdrawTokens(uint256),"issueTokens(address,uint256)"
+enableEmission(bool),"issueTokens(address,uint256)"
+transferOwnership(address),"issueTokens(address,uint256)"
+enableTransfers(bool),"issueTokens(address,uint256)"
+changeEmissionContractAddress(address),enableEmission(bool)
+withdrawTokens(uint256),enableEmission(bool)
+"issueTokens(address,uint256)",enableEmission(bool)
+transferOwnership(address),enableEmission(bool)
+enableTransfers(bool),enableEmission(bool)
+changeEmissionContractAddress(address),transferOwnership(address)
+withdrawTokens(uint256),transferOwnership(address)
+"issueTokens(address,uint256)",transferOwnership(address)
+enableEmission(bool),transferOwnership(address)
+enableTransfers(bool),transferOwnership(address)
+changeEmissionContractAddress(address),enableTransfers(bool)
+withdrawTokens(uint256),enableTransfers(bool)
+"issueTokens(address,uint256)",enableTransfers(bool)
+enableEmission(bool),enableTransfers(bool)
+transferOwnership(address),enableTransfers(bool)

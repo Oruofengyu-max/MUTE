@@ -1,0 +1,18 @@
+Source Function,Target Function
+"approve(address,uint256)","transferFrom(address,address,uint256)"
+burn(uint256),"transferFrom(address,address,uint256)"
+"transfer(address,uint256)","transferFrom(address,address,uint256)"
+"approveAndCall(address,uint256,bytes)","transferFrom(address,address,uint256)"
+"freezeAccount(address,bool)","transferFrom(address,address,uint256)"
+"approve(address,uint256)",burn(uint256)
+"transferFrom(address,address,uint256)",burn(uint256)
+"transfer(address,uint256)",burn(uint256)
+"approveAndCall(address,uint256,bytes)",burn(uint256)
+"freezeAccount(address,bool)",burn(uint256)
+burn(uint256),acceptOwnership()
+transferOwnership(address),acceptOwnership()
+"approve(address,uint256)","transfer(address,uint256)"
+"transferFrom(address,address,uint256)","transfer(address,uint256)"
+burn(uint256),"transfer(address,uint256)"
+"approveAndCall(address,uint256,bytes)","transfer(address,uint256)"
+"freezeAccount(address,bool)","transfer(address,uint256)"

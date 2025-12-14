@@ -1,0 +1,6 @@
+Source Function,Target Function
+transferOwnership(address),"mint(address,uint256)"
+"approve(address,uint256)",ownerOf(uint256)
+"approve(address,uint256)","transfer(address,uint256)"
+"approve(address,uint256)",takeOwnership(uint256)
+"mint(address,uint256)",transferOwnership(address)

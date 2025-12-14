@@ -1,0 +1,16 @@
+Source Function,Target Function
+setPaymentContractAddress(address),withdraw()
+removeInventory(bytes32),withdraw()
+"addInventory(bytes32,string,string,string,string,uint256,uint256)",withdraw()
+removeInventory(bytes32),setPaymentContractAddress(address)
+"addInventory(bytes32,string,string,string,string,uint256,uint256)",setPaymentContractAddress(address)
+setPaymentContractAddress(address),removeInventory(bytes32)
+"addInventory(bytes32,string,string,string,string,uint256,uint256)",removeInventory(bytes32)
+setPaymentContractAddress(address),"addInventory(bytes32,string,string,string,string,uint256,uint256)"
+removeInventory(bytes32),"addInventory(bytes32,string,string,string,string,uint256,uint256)"
+"addInventory(bytes32,string,string,string,string,uint256,uint256)","purchase(bytes32,uint256)"
+"purchaseFor(address,bytes32,uint256)","purchase(bytes32,uint256)"
+setPaymentContractAddress(address),"purchaseFor(address,bytes32,uint256)"
+removeInventory(bytes32),"purchaseFor(address,bytes32,uint256)"
+"addInventory(bytes32,string,string,string,string,uint256,uint256)","purchaseFor(address,bytes32,uint256)"
+"purchase(bytes32,uint256)","purchaseFor(address,bytes32,uint256)"

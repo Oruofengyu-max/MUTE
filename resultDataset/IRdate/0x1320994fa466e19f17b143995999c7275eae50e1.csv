@@ -1,0 +1,21 @@
+Source Function,Target Function
+stop(),"issue(address,uint256)"
+setOwner(address),"issue(address,uint256)"
+changeController(address),"issue(address,uint256)"
+setName(bytes32),"issue(address,uint256)"
+setAuthority(address),"issue(address,uint256)"
+"destroy(address,uint256)","issue(address,uint256)"
+start(),"issue(address,uint256)"
+stop(),"destroy(address,uint256)"
+setOwner(address),"destroy(address,uint256)"
+changeController(address),"destroy(address,uint256)"
+setName(bytes32),"destroy(address,uint256)"
+setAuthority(address),"destroy(address,uint256)"
+start(),"destroy(address,uint256)"
+stop(),approve(address)
+setOwner(address),approve(address)
+changeController(address),approve(address)
+setName(bytes32),approve(address)
+setAuthority(address),approve(address)
+"destroy(address,uint256)",approve(address)
+start(),approve(address)

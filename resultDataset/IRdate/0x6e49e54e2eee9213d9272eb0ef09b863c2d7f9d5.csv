@@ -1,0 +1,24 @@
+Source Function,Target Function
+claimContractOwnership(),totalSupply()
+changeContractOwnership(address),totalSupply()
+"init(address,string,string)",totalSupply()
+proposeUpgrade(address),totalSupply()
+claimContractOwnership(),decimals()
+changeContractOwnership(address),decimals()
+"init(address,string,string)",decimals()
+proposeUpgrade(address),decimals()
+claimContractOwnership(),balanceOf(address)
+changeContractOwnership(address),balanceOf(address)
+"init(address,string,string)",balanceOf(address)
+proposeUpgrade(address),balanceOf(address)
+claimContractOwnership(),"__approve(address,uint256,address)"
+changeContractOwnership(address),"__approve(address,uint256,address)"
+"init(address,string,string)","__approve(address,uint256,address)"
+proposeUpgrade(address),"__approve(address,uint256,address)"
+claimContractOwnership(),proposeUpgrade(address)
+changeContractOwnership(address),proposeUpgrade(address)
+"init(address,string,string)",proposeUpgrade(address)
+claimContractOwnership(),"allowance(address,address)"
+changeContractOwnership(address),"allowance(address,address)"
+"init(address,string,string)","allowance(address,address)"
+proposeUpgrade(address),"allowance(address,address)"

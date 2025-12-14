@@ -1,0 +1,27 @@
+Source Function,Target Function
+"approve(address,uint256)","transferFrom(address,address,uint256)"
+"open(address,bytes32,uint256,uint256)","transferFrom(address,address,uint256)"
+"mint(address,uint256)","transferFrom(address,address,uint256)"
+"decreaseApproval(address,uint256)","transferFrom(address,address,uint256)"
+refund(bytes32),"transferFrom(address,address,uint256)"
+"approveAndCall(address,uint256,bytes)","transferFrom(address,address,uint256)"
+"increaseApproval(address,uint256)","transferFrom(address,address,uint256)"
+"close(bytes32,bytes32)","transferFrom(address,address,uint256)"
+transferOwnership(address),"mint(address,uint256)"
+"approve(address,uint256)",refund(bytes32)
+"open(address,bytes32,uint256,uint256)",refund(bytes32)
+"transferFrom(address,address,uint256)",refund(bytes32)
+"mint(address,uint256)",refund(bytes32)
+"decreaseApproval(address,uint256)",refund(bytes32)
+"approveAndCall(address,uint256,bytes)",refund(bytes32)
+"increaseApproval(address,uint256)",refund(bytes32)
+"close(bytes32,bytes32)",refund(bytes32)
+"approve(address,uint256)","close(bytes32,bytes32)"
+"open(address,bytes32,uint256,uint256)","close(bytes32,bytes32)"
+"transferFrom(address,address,uint256)","close(bytes32,bytes32)"
+"mint(address,uint256)","close(bytes32,bytes32)"
+"decreaseApproval(address,uint256)","close(bytes32,bytes32)"
+refund(bytes32),"close(bytes32,bytes32)"
+"approveAndCall(address,uint256,bytes)","close(bytes32,bytes32)"
+"increaseApproval(address,uint256)","close(bytes32,bytes32)"
+"mint(address,uint256)",transferOwnership(address)

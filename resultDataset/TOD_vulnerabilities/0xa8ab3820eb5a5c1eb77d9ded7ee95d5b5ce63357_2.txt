@@ -1,0 +1,858 @@
+Contract:			Zaynix
+Number of Relevant Branches:	79
+Number of Branches Covered:		53
+Runtime: 											2446.961027
+Blockchain Time: 							2073.122538
+Iterations										
+11
+--------------------------------------------------
+METHODS:
+
+Constructor:
+	Inputs :[]
+	Payable: nonpayable
+_fallback:
+
+Hourglass:
+
+buy:
+
+reinvest:
+
+exit:
+
+withdraw:
+
+sell:
+
+transfer:
+
+disableInitialStage:
+
+setAdministrator:
+
+setStakingRequirement:
+
+setName:
+
+setSymbol:
+
+totalEthereumBalance:
+
+totalSupply:
+
+myTokens:
+
+myDividends:
+
+balanceOf:
+
+dividendsOf:
+
+sellPrice:
+
+buyPrice:
+
+calculateTokensReceived:
+
+calculateEthereumReceived:
+
+
+--------------------------------------------------
+
+            TESTS:
+
+	(1) constructor([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)
+	(2) Hourglass([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(3) setSymbol(['nNpmqCfzsjSnFLvBCfbHJKqeFGHhIFJPDvpikkFhBfOlfBLGRgNFpJYFNYkWNGoJwnCGMKvxMJwfoMBrBxtjUvnVzBPPgCjiNniNahGOCtDjmkqeOCQso dVFZaxM RbEsyqZQKizwYxSbSXdnPxiwRjpPLpmErzIvz gwpHrscqOHuzReltWPPYqxpXdmDauFAjDFT JmkbBjFLLofgzwEfVIycUCAYJGCsAZcdSrvRwGcRxKExUpghyQMm'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(4) sell([32745677195111404348690656186016894660764367345472723326442768717225054941618], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(5) dividendsOf(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(6) transfer(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 100], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(7) totalSupply([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) withdraw([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(3) totalSupply([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(4) totalSupply([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) calculateTokensReceived([10], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) balanceOf(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) totalEthereumBalance([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) withdraw([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(3) totalSupply([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(4) totalSupply([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) calculateTokensReceived([10], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) balanceOf(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) totalEthereumBalance([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) withdraw([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(3) totalSupply([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(4) totalSupply([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) calculateTokensReceived([10], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) balanceOf(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) totalEthereumBalance([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) buyPrice([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(3) myTokens([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) balanceOf(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(5) _fallback([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 31624460891246064)	Returns: 
+	(6) transfer(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 3], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(7) _fallback([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) setStakingRequirement([59811874747218614519425056614081583708805093629023049387975643217820828964004], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) transfer(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 110995906172235375086241907351560210656624451109476764423075144668377048541434], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(4) Hourglass([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(5) balanceOf(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) balanceOf(['0xC352C77703A000382541035D9F12F27608999903'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) exit([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) setStakingRequirement([59811874747218614519425056614081583708805093629023049387975643217820828964004], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) transfer(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 110995906172235375086241907351560210656624451109476764423075144668377048541434], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(4) Hourglass([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(5) balanceOf(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) balanceOf(['0xC352C77703A000382541035D9F12F27608999903'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) exit([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) buyPrice([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(3) myTokens([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) balanceOf(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(5) _fallback([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 31624460891246064)	Returns: 
+	(6) transfer(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 3], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(7) _fallback([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) buyPrice([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(3) myTokens([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) balanceOf(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(5) _fallback([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 31624460891246064)	Returns: 
+	(6) transfer(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 3], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(7) _fallback([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) sellPrice([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) totalSupply([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(4) setName(['"withdrawn dividends"'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(5) calculateEthereumReceived([1], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(6) myDividends([True], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) calculateEthereumReceived([2], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) sellPrice([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) totalSupply([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(4) setName(['"withdrawn dividends"'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(5) calculateEthereumReceived([1], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(6) myDividends([True], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) calculateEthereumReceived([2], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)
+	(2) Hourglass([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(3) setSymbol(['nNpmqCfzsjSnFLvBCfbHJKqeFGHhIFJPDvpikkFhBfOlfBLGRgNFpJYFNYkWNGoJwnCGMKvxMJwfoMBrBxtjUvnVzBPPgCjiNniNahGOCtDjmkqeOCQso dVFZaxM RbEsyqZQKizwYxSbSXdnPxiwRjpPLpmErzIvz gwpHrscqOHuzReltWPPYqxpXdmDauFAjDFT JmkbBjFLLofgzwEfVIycUCAYJGCsAZcdSrvRwGcRxKExUpghyQMm'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(4) sell([32745677195111404348690656186016894660764367345472723326442768717225054941618], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(5) dividendsOf(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(6) transfer(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 100], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(7) totalSupply([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) withdraw([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(3) totalSupply([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(4) totalSupply([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) calculateTokensReceived([10], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) balanceOf(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) totalEthereumBalance([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) withdraw([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) reinvest([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(4) setSymbol(['"Zaynix"'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(5) exit([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) setAdministrator(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', False], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(7) transfer(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 18], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) buyPrice([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(3) myTokens([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) balanceOf(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(5) _fallback([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 31624460891246064)	Returns: 
+	(6) transfer(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 3], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(7) _fallback([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) buyPrice([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(3) myTokens([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) balanceOf(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(5) _fallback([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 31624460891246064)	Returns: 
+	(6) transfer(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 3], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(7) _fallback([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)
+	(2) Hourglass([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(3) setSymbol(['nNpmqCfzsjSnFLvBCfbHJKqeFGHhIFJPDvpikkFhBfOlfBLGRgNFpJYFNYkWNGoJwnCGMKvxMJwfoMBrBxtjUvnVzBPPgCjiNniNahGOCtDjmkqeOCQso dVFZaxM RbEsyqZQKizwYxSbSXdnPxiwRjpPLpmErzIvz gwpHrscqOHuzReltWPPYqxpXdmDauFAjDFT JmkbBjFLLofgzwEfVIycUCAYJGCsAZcdSrvRwGcRxKExUpghyQMm'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(4) sell([32745677195111404348690656186016894660764367345472723326442768717225054941618], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(5) dividendsOf(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(6) transfer(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 100], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(7) totalSupply([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) withdraw([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) reinvest([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(4) setSymbol(['"Zaynix"'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(5) exit([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) setAdministrator(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', False], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(7) transfer(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 18], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) withdraw([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) reinvest([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(4) setSymbol(['"Zaynix"'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(5) exit([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) setAdministrator(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', False], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(7) transfer(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 18], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) buyPrice([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(3) myTokens([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) balanceOf(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(5) _fallback([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 31624460891246064)	Returns: 
+	(6) transfer(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 3], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(7) _fallback([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) withdraw([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) reinvest([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(4) setSymbol(['"Zaynix"'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(5) exit([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) setAdministrator(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', False], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(7) transfer(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 18], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) withdraw([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(3) totalSupply([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(4) totalSupply([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) calculateTokensReceived([10], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) balanceOf(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) totalEthereumBalance([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) buyPrice([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(3) myTokens([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) balanceOf(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(5) _fallback([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 31624460891246064)	Returns: 
+	(6) transfer(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 3], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(7) _fallback([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) buyPrice([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(3) myTokens([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) balanceOf(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(5) _fallback([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 31624460891246064)	Returns: 
+	(6) transfer(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 3], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(7) _fallback([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) buyPrice([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(3) myTokens([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) balanceOf(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(5) _fallback([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 31624460891246064)	Returns: 
+	(6) transfer(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 3], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(7) _fallback([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) buyPrice([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(3) myTokens([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) balanceOf(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(5) _fallback([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 31624460891246064)	Returns: 
+	(6) transfer(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 3], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(7) _fallback([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) setSymbol(['GYteMPAQhlEvREYNkR jkcNSmJMzenvPdYfuwkfektmVSmpfyFiTpOoyDUGoXcVezCqctZtXAbqxkpQnegwtENyFcWfvgxqgKGALjVUqcbJfhGSTC irinptewlYIabDXOUntXQVlBvVTChkLIvgNDCbKkomJMiSJyer'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) balanceOf(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(4) totalSupply([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(5) exit([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(6) calculateEthereumReceived([81622224130296414045006647419150442011652404328699321227396077324372046627222], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) buy(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 27025384634225435)	Returns: 
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) withdraw([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) reinvest([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(4) setSymbol(['"Zaynix"'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(5) exit([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) setAdministrator(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', False], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(7) transfer(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 18], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) withdraw([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) reinvest([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(4) setSymbol(['"Zaynix"'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(5) exit([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) setAdministrator(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', False], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(7) transfer(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 18], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) setStakingRequirement([18], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) exit([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(4) Hourglass([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(5) disableInitialStage([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(6) setStakingRequirement([39730032413514679531481914808772727453845847891587382870051108851544843512682], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(7) setSymbol(['N gxJIjCbpD nMiCaeFIrnLOiEcRRHMtARzRbFyMVvmKGyntHafOyj fZBdKZAttnHhmf'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) setStakingRequirement([18], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) exit([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(4) Hourglass([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(5) disableInitialStage([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(6) setStakingRequirement([39730032413514679531481914808772727453845847891587382870051108851544843512682], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(7) setSymbol(['N gxJIjCbpD nMiCaeFIrnLOiEcRRHMtARzRbFyMVvmKGyntHafOyj fZBdKZAttnHhmf'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)
+	(2) Hourglass([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(3) setSymbol(['nNpmqCfzsjSnFLvBCfbHJKqeFGHhIFJPDvpikkFhBfOlfBLGRgNFpJYFNYkWNGoJwnCGMKvxMJwfoMBrBxtjUvnVzBPPgCjiNniNahGOCtDjmkqeOCQso dVFZaxM RbEsyqZQKizwYxSbSXdnPxiwRjpPLpmErzIvz gwpHrscqOHuzReltWPPYqxpXdmDauFAjDFT JmkbBjFLLofgzwEfVIycUCAYJGCsAZcdSrvRwGcRxKExUpghyQMm'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(4) sell([32745677195111404348690656186016894660764367345472723326442768717225054941618], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(5) dividendsOf(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(6) transfer(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 100], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(7) totalSupply([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) withdraw([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) reinvest([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(4) setSymbol(['"Zaynix"'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(5) exit([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) setAdministrator(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', False], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(7) transfer(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 18], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) withdraw([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) reinvest([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(4) setSymbol(['"Zaynix"'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(5) exit([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) setAdministrator(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', False], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(7) transfer(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 18], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) buyPrice([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(3) myTokens([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) balanceOf(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(5) _fallback([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 31624460891246064)	Returns: 
+	(6) transfer(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 3], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(7) _fallback([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) buyPrice([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(3) myTokens([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) balanceOf(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(5) _fallback([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 31624460891246064)	Returns: 
+	(6) transfer(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 3], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(7) _fallback([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) buyPrice([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(3) myTokens([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) balanceOf(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(5) _fallback([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 31624460891246064)	Returns: 
+	(6) transfer(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 3], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(7) _fallback([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) withdraw([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(3) totalSupply([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(4) totalSupply([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) calculateTokensReceived([10], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) balanceOf(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) totalEthereumBalance([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) withdraw([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(3) totalSupply([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(4) totalSupply([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) calculateTokensReceived([10], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) balanceOf(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) totalEthereumBalance([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) withdraw([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(3) totalSupply([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(4) totalSupply([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) calculateTokensReceived([10], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) balanceOf(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) totalEthereumBalance([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) _fallback([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 185897687739933104)	Returns: 
+	(3) totalSupply([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(4) setName(['yTOhjpLMskNkkzPeNtCBXNoaQwBZuSbz'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) myDividends([False], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(6) setName(['OGBQjpxIFnTUbItHqLbDPJOdEemgZiQOkj SdXTpAUeNDqPcJVtRJqouLVCzRkPFXQprv rnjlEaJvmjHlnWnCfKSgYcVeGTpCtkmLPRyIIhTt zdkYaA'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(7) totalEthereumBalance([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) withdraw([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(3) totalSupply([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(4) totalSupply([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) calculateTokensReceived([10], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) balanceOf(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) totalEthereumBalance([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) sellPrice([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) totalSupply([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(4) setName(['"withdrawn dividends"'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(5) calculateEthereumReceived([1], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(6) myDividends([True], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) calculateEthereumReceived([2], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) sellPrice([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) totalSupply([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(4) setName(['"withdrawn dividends"'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(5) calculateEthereumReceived([1], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(6) myDividends([True], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) calculateEthereumReceived([2], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) sellPrice([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) totalSupply([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(4) setName(['"withdrawn dividends"'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(5) calculateEthereumReceived([1], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(6) myDividends([True], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) calculateEthereumReceived([2], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) sellPrice([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) totalSupply([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(4) setName(['"withdrawn dividends"'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(5) calculateEthereumReceived([1], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(6) myDividends([True], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) calculateEthereumReceived([2], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) setSymbol(['GYteMPAQhlEvREYNkR jkcNSmJMzenvPdYfuwkfektmVSmpfyFiTpOoyDUGoXcVezCqctZtXAbqxkpQnegwtENyFcWfvgxqgKGALjVUqcbJfhGSTC irinptewlYIabDXOUntXQVlBvVTChkLIvgNDCbKkomJMiSJyer'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) balanceOf(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(4) totalSupply([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(5) exit([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(6) calculateEthereumReceived([81622224130296414045006647419150442011652404328699321227396077324372046627222], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) buy(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 27025384634225435)	Returns: 
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) setSymbol(['GYteMPAQhlEvREYNkR jkcNSmJMzenvPdYfuwkfektmVSmpfyFiTpOoyDUGoXcVezCqctZtXAbqxkpQnegwtENyFcWfvgxqgKGALjVUqcbJfhGSTC irinptewlYIabDXOUntXQVlBvVTChkLIvgNDCbKkomJMiSJyer'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) balanceOf(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(4) totalSupply([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(5) exit([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(6) calculateEthereumReceived([81622224130296414045006647419150442011652404328699321227396077324372046627222], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) buy(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 27025384634225435)	Returns: 
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) setSymbol(['GYteMPAQhlEvREYNkR jkcNSmJMzenvPdYfuwkfektmVSmpfyFiTpOoyDUGoXcVezCqctZtXAbqxkpQnegwtENyFcWfvgxqgKGALjVUqcbJfhGSTC irinptewlYIabDXOUntXQVlBvVTChkLIvgNDCbKkomJMiSJyer'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) balanceOf(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(4) totalSupply([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(5) exit([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(6) calculateEthereumReceived([81622224130296414045006647419150442011652404328699321227396077324372046627222], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) buy(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 27025384634225435)	Returns: 
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) setSymbol(['GYteMPAQhlEvREYNkR jkcNSmJMzenvPdYfuwkfektmVSmpfyFiTpOoyDUGoXcVezCqctZtXAbqxkpQnegwtENyFcWfvgxqgKGALjVUqcbJfhGSTC irinptewlYIabDXOUntXQVlBvVTChkLIvgNDCbKkomJMiSJyer'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) balanceOf(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(4) totalSupply([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(5) exit([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(6) calculateEthereumReceived([81622224130296414045006647419150442011652404328699321227396077324372046627222], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) buy(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 27025384634225435)	Returns: 
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) setSymbol(['GYteMPAQhlEvREYNkR jkcNSmJMzenvPdYfuwkfektmVSmpfyFiTpOoyDUGoXcVezCqctZtXAbqxkpQnegwtENyFcWfvgxqgKGALjVUqcbJfhGSTC irinptewlYIabDXOUntXQVlBvVTChkLIvgNDCbKkomJMiSJyer'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) balanceOf(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(4) totalSupply([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(5) exit([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(6) calculateEthereumReceived([81622224130296414045006647419150442011652404328699321227396077324372046627222], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) buy(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 27025384634225435)	Returns: 
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) setSymbol(['GYteMPAQhlEvREYNkR jkcNSmJMzenvPdYfuwkfektmVSmpfyFiTpOoyDUGoXcVezCqctZtXAbqxkpQnegwtENyFcWfvgxqgKGALjVUqcbJfhGSTC irinptewlYIabDXOUntXQVlBvVTChkLIvgNDCbKkomJMiSJyer'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) balanceOf(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(4) totalSupply([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(5) exit([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(6) calculateEthereumReceived([81622224130296414045006647419150442011652404328699321227396077324372046627222], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) buy(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 27025384634225435)	Returns: 
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) withdraw([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(3) totalSupply([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(4) totalSupply([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) calculateTokensReceived([10], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) balanceOf(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) totalEthereumBalance([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true

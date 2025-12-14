@@ -1,0 +1,11 @@
+Source Function,Target Function
+"approve(address,uint256)","airdrop(address[],uint256[])"
+"transferFrom(address,address,uint256)","airdrop(address[],uint256[])"
+posMint(),"airdrop(address[],uint256[])"
+ownerBurnToken(uint256),"airdrop(address[],uint256[])"
+"transfer(address,uint256,bytes,string)","airdrop(address[],uint256[])"
+"approve(address,uint256)","transfer(address,uint256,bytes,string)"
+"transferFrom(address,address,uint256)","transfer(address,uint256,bytes,string)"
+"airdrop(address[],uint256[])","transfer(address,uint256,bytes,string)"
+posMint(),"transfer(address,uint256,bytes,string)"
+ownerBurnToken(uint256),"transfer(address,uint256,bytes,string)"

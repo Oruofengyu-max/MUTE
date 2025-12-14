@@ -1,0 +1,21 @@
+Source Function,Target Function
+"transferFrom(address,address,uint256)","approve(address,uint256)"
+mine(),"approve(address,uint256)"
+"transfer(address,uint256)","approve(address,uint256)"
+"claim(uint256,address)","approve(address,uint256)"
+"transmute(address,uint256)","approve(address,uint256)"
+"approve(address,uint256)",mine()
+"transferFrom(address,address,uint256)",mine()
+"transfer(address,uint256)",mine()
+"claim(uint256,address)",mine()
+"transmute(address,uint256)",mine()
+"approve(address,uint256)","claim(uint256,address)"
+"transferFrom(address,address,uint256)","claim(uint256,address)"
+mine(),"claim(uint256,address)"
+"transfer(address,uint256)","claim(uint256,address)"
+"transmute(address,uint256)","claim(uint256,address)"
+"approve(address,uint256)","transmute(address,uint256)"
+"transferFrom(address,address,uint256)","transmute(address,uint256)"
+mine(),"transmute(address,uint256)"
+"transfer(address,uint256)","transmute(address,uint256)"
+"claim(uint256,address)","transmute(address,uint256)"

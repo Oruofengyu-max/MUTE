@@ -1,0 +1,7 @@
+Source Function,Target Function
+Play(string),"NewQuestion(string,bytes32)"
+StopGame(),"NewQuestion(string,bytes32)"
+"StartGame(string,string)","NewQuestion(string,bytes32)"
+"NewQuestion(string,bytes32)",StopGame()
+Play(string),StopGame()
+"StartGame(string,string)",StopGame()

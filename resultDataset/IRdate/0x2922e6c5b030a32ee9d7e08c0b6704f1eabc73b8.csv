@@ -1,0 +1,27 @@
+Source Function,Target Function
+"approve(address,uint256)","transferFrom(address,address,uint256)"
+"mint(address,uint256)","transferFrom(address,address,uint256)"
+"lock(address,uint256[],uint256[])","transferFrom(address,address,uint256)"
+"decreaseApproval(address,uint256)","transferFrom(address,address,uint256)"
+"transfer(address,uint256)","transferFrom(address,address,uint256)"
+"increaseApproval(address,uint256)","transferFrom(address,address,uint256)"
+finishSingleLock(address),"transferFrom(address,address,uint256)"
+"approve(address,uint256)","lock(address,uint256[],uint256[])"
+"transferFrom(address,address,uint256)","lock(address,uint256[],uint256[])"
+"mint(address,uint256)","lock(address,uint256[],uint256[])"
+"decreaseApproval(address,uint256)","lock(address,uint256[],uint256[])"
+"transfer(address,uint256)","lock(address,uint256[],uint256[])"
+"increaseApproval(address,uint256)","lock(address,uint256[],uint256[])"
+finishSingleLock(address),"lock(address,uint256[],uint256[])"
+unpause(),acceptOwnership()
+"mint(address,uint256)",acceptOwnership()
+pause(),acceptOwnership()
+changeAdminer(address),acceptOwnership()
+transferOwnership(address),acceptOwnership()
+"approve(address,uint256)","transfer(address,uint256)"
+"transferFrom(address,address,uint256)","transfer(address,uint256)"
+"mint(address,uint256)","transfer(address,uint256)"
+"lock(address,uint256[],uint256[])","transfer(address,uint256)"
+"decreaseApproval(address,uint256)","transfer(address,uint256)"
+"increaseApproval(address,uint256)","transfer(address,uint256)"
+finishSingleLock(address),"transfer(address,uint256)"

@@ -1,0 +1,13 @@
+Source Function,Target Function
+"approve(address,uint256)","transferFrom(address,address,uint256)"
+"freezeAccount(address,uint256)","transferFrom(address,address,uint256)"
+unfreezeAccount(address),"transferFrom(address,address,uint256)"
+"approveAndCall(address,uint256,bytes)","transferFrom(address,address,uint256)"
+"approve(address,uint256)","freezeAccount(address,uint256)"
+"transferFrom(address,address,uint256)","freezeAccount(address,uint256)"
+unfreezeAccount(address),"freezeAccount(address,uint256)"
+"approveAndCall(address,uint256,bytes)","freezeAccount(address,uint256)"
+"approve(address,uint256)",unfreezeAccount(address)
+"transferFrom(address,address,uint256)",unfreezeAccount(address)
+"freezeAccount(address,uint256)",unfreezeAccount(address)
+"approveAndCall(address,uint256,bytes)",unfreezeAccount(address)

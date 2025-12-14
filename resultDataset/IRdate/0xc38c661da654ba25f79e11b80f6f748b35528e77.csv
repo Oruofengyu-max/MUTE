@@ -1,0 +1,18 @@
+Source Function,Target Function
+transferOwnership(address),"setFee(uint256,uint256)"
+"setPriceFeeEth(uint256,uint256)",buyByUsdt(uint256)
+removePrice(uint256),buyByUsdt(uint256)
+"setPrice(uint256,uint256,uint256)",buyByUsdt(uint256)
+buy(uint256),buyByUsdt(uint256)
+getPrice(uint256),buyByUsdt(uint256)
+buyByUsdt(uint256),removePrice(uint256)
+"setPriceFeeEth(uint256,uint256)",removePrice(uint256)
+"setPrice(uint256,uint256,uint256)",removePrice(uint256)
+buy(uint256),removePrice(uint256)
+getPrice(uint256),removePrice(uint256)
+buyByUsdt(uint256),buy(uint256)
+"setPriceFeeEth(uint256,uint256)",buy(uint256)
+removePrice(uint256),buy(uint256)
+"setPrice(uint256,uint256,uint256)",buy(uint256)
+getPrice(uint256),buy(uint256)
+transferOwnership(address),"withdraw(address,uint256)"

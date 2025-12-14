@@ -1,0 +1,22 @@
+Source Function,Target Function
+changeCreator(address),updateRate(uint256)
+contribute(),updateRate(uint256)
+closeSale(),updateRate(uint256)
+"setup(address,uint256)",updateRate(uint256)
+updateRate(uint256),changeCreator(address)
+contribute(),changeCreator(address)
+closeSale(),changeCreator(address)
+"setup(address,uint256)",changeCreator(address)
+updateRate(uint256),changeTransferStats(bool)
+changeCreator(address),changeTransferStats(bool)
+contribute(),changeTransferStats(bool)
+closeSale(),changeTransferStats(bool)
+"setup(address,uint256)",changeTransferStats(bool)
+updateRate(uint256),closeSale()
+changeCreator(address),closeSale()
+contribute(),closeSale()
+"setup(address,uint256)",closeSale()
+updateRate(uint256),"setup(address,uint256)"
+changeCreator(address),"setup(address,uint256)"
+contribute(),"setup(address,uint256)"
+closeSale(),"setup(address,uint256)"

@@ -1,0 +1,21 @@
+Source Function,Target Function
+"approve(address,uint256)","transferFrom(address,address,uint256)"
+"decreaseApproval(address,uint256)","transferFrom(address,address,uint256)"
+"transfer(address,uint256)","transferFrom(address,address,uint256)"
+"increaseApproval(address,uint256)","transferFrom(address,address,uint256)"
+"approve(address,uint256)","transfer(address,uint256)"
+"transferFrom(address,address,uint256)","transfer(address,uint256)"
+"decreaseApproval(address,uint256)","transfer(address,uint256)"
+"increaseApproval(address,uint256)","transfer(address,uint256)"
+disableTransfer(),setAirdropAddress(address)
+enableTransfer(),setAirdropAddress(address)
+transferOwnership(address),setAirdropAddress(address)
+setAirdropAddress(address),disableTransfer()
+enableTransfer(),disableTransfer()
+transferOwnership(address),disableTransfer()
+setAirdropAddress(address),enableTransfer()
+disableTransfer(),enableTransfer()
+transferOwnership(address),enableTransfer()
+setAirdropAddress(address),transferOwnership(address)
+disableTransfer(),transferOwnership(address)
+enableTransfer(),transferOwnership(address)

@@ -1,0 +1,13 @@
+Source Function,Target Function
+activate(),"receivePlayerInfo(uint256,address,bytes32,uint256)"
+enableBuy(bool),"receivePlayerInfo(uint256,address,bytes32,uint256)"
+setOtherFomo(address),"receivePlayerInfo(uint256,address,bytes32,uint256)"
+adminRegisterVIP(uint256),"receivePlayerInfo(uint256,address,bytes32,uint256)"
+activate(),"receivePlayerNameList(uint256,bytes32)"
+enableBuy(bool),"receivePlayerNameList(uint256,bytes32)"
+setOtherFomo(address),"receivePlayerNameList(uint256,bytes32)"
+adminRegisterVIP(uint256),"receivePlayerNameList(uint256,bytes32)"
+activate(),getAllPlayersInfo(uint256)
+enableBuy(bool),getAllPlayersInfo(uint256)
+setOtherFomo(address),getAllPlayersInfo(uint256)
+adminRegisterVIP(uint256),getAllPlayersInfo(uint256)

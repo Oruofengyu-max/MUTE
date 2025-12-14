@@ -1,0 +1,852 @@
+Contract:			BMPToken
+Number of Relevant Branches:	62
+Number of Branches Covered:		53
+Runtime: 											612.400553
+Blockchain Time: 							369.45246
+Iterations										
+21
+--------------------------------------------------
+METHODS:
+
+Constructor:
+	Inputs :[{'name': 'name_', 'type': 'string'}, {'name': 'symbol_', 'type': 'string'}, {'name': 'totalSupply_', 'type': 'uint256'}, {'name': 'decimals_', 'type': 'uint8'}]
+	Payable: nonpayable
+_fallback:
+
+owner:
+
+transferOwnership:
+
+stop:
+
+start:
+
+name:
+
+symbol:
+
+decimals:
+
+setLock:
+
+transferFrom:
+
+getLock:
+
+mint:
+
+totalSupply:
+
+balanceOf:
+
+allowance:
+
+transfer:
+
+approve:
+
+increaseAllowance:
+
+decreaseAllowance:
+
+burn:
+
+
+--------------------------------------------------
+
+            TESTS:
+
+	(1) constructor(['kWRvIkabCizaeMINshQLc', '"ERC20: Locked balance"', 96910136579563391352721256536319596288049753113738156730927918008164603170394, 0], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) setLock(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 0, 77784219385486827056086503184591489997984920133669019329988341632915270190748], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(3) setLock(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 20, 20], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(4) burn([20], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(5) transferOwnership(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(6) name([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(7) transfer(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 9043067755425029910028989420638236801796487493542585370865355840982574484424], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+
+	(1) constructor(['DQNTztQVotTfZDirvzVFUin gbMQWEabNxEQrVYFLkmhgRChRwvrnkDLbBHAKvgwLGWfVMaCgQwhDRdTXRHvuivcbJVpsAXBX', '"ERC20: Locked balance"', 60377150543626598259238532173266367057057487802517422826190339931911006912519, 130], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) setLock(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 91741285257247644727547774459601476737860465779826843655490635587215217123876, 1597223021427180436906887038726105341041295462767819392345164261364655154953], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(3) transferOwnership(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(4) name([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(5) transferFrom(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', '0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 0], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(6) balanceOf(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(7) _fallback([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: 
+
+	(1) constructor(['DQNTztQVotTfZDirvzVFUin gbMQWEabNxEQrVYFLkmhgRChRwvrnkDLbBHAKvgwLGWfVMaCgQwhDRdTXRHvuivcbJVpsAXBX', '"ERC20: Locked balance"', 60377150543626598259238532173266367057057487802517422826190339931911006912519, 130], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) setLock(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 91741285257247644727547774459601476737860465779826843655490635587215217123876, 1597223021427180436906887038726105341041295462767819392345164261364655154953], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(3) transferOwnership(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(4) name([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(5) transferFrom(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', '0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 0], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(6) balanceOf(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(7) _fallback([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: 
+
+	(1) constructor(['DQNTztQVotTfZDirvzVFUin gbMQWEabNxEQrVYFLkmhgRChRwvrnkDLbBHAKvgwLGWfVMaCgQwhDRdTXRHvuivcbJVpsAXBX', '"ERC20: Locked balance"', 60377150543626598259238532173266367057057487802517422826190339931911006912519, 130], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) setLock(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 91741285257247644727547774459601476737860465779826843655490635587215217123876, 1597223021427180436906887038726105341041295462767819392345164261364655154953], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(3) transferOwnership(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(4) name([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(5) transferFrom(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', '0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 0], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(6) balanceOf(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(7) _fallback([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: 
+
+	(1) constructor(['DQNTztQVotTfZDirvzVFUin gbMQWEabNxEQrVYFLkmhgRChRwvrnkDLbBHAKvgwLGWfVMaCgQwhDRdTXRHvuivcbJVpsAXBX', '"ERC20: Locked balance"', 60377150543626598259238532173266367057057487802517422826190339931911006912519, 130], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) setLock(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 91741285257247644727547774459601476737860465779826843655490635587215217123876, 1597223021427180436906887038726105341041295462767819392345164261364655154953], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(3) transferOwnership(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(4) name([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(5) transferFrom(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', '0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 0], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(6) balanceOf(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(7) _fallback([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: 
+
+	(1) constructor(['DQNTztQVotTfZDirvzVFUin gbMQWEabNxEQrVYFLkmhgRChRwvrnkDLbBHAKvgwLGWfVMaCgQwhDRdTXRHvuivcbJVpsAXBX', '"ERC20: Locked balance"', 60377150543626598259238532173266367057057487802517422826190339931911006912519, 130], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) setLock(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 91741285257247644727547774459601476737860465779826843655490635587215217123876, 1597223021427180436906887038726105341041295462767819392345164261364655154953], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(3) transferOwnership(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(4) name([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(5) transferFrom(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', '0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 0], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(6) balanceOf(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(7) _fallback([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: 
+
+	(1) constructor(['DQNTztQVotTfZDirvzVFUin gbMQWEabNxEQrVYFLkmhgRChRwvrnkDLbBHAKvgwLGWfVMaCgQwhDRdTXRHvuivcbJVpsAXBX', '"ERC20: Locked balance"', 60377150543626598259238532173266367057057487802517422826190339931911006912519, 130], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) setLock(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 91741285257247644727547774459601476737860465779826843655490635587215217123876, 1597223021427180436906887038726105341041295462767819392345164261364655154953], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(3) transferOwnership(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(4) name([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(5) transferFrom(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', '0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 0], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(6) balanceOf(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(7) _fallback([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: 
+
+	(1) constructor(['vqolSXuPVF qXYKaZtmoMbpe', 'GRWIXxwSuuX cUpiwhePhHeQazBbJkgZrDEIgWiZYCVsMbSHftLUnLSIdBjjLvAMbCHZNPDlesTqLdZfdRLzZtRGSpkhvg', 96300441316635925528321877403085082559580603299560393756024344452755582605881, 0], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) _fallback([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: 
+	(3) transfer(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 50056657645562221435393539507250406058235968299081852053109646345563339528072], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(4) balanceOf(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(5) transferFrom(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', '0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 72725059729726833949078961998351440123804341705084274673704123061656151095315], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 49930147712134082)	Returns: true
+	(6) stop([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(7) transferOwnership(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+
+	(1) constructor(['"ERC20: Locked balance"', 'ilMdf tNzvRFtMBjLitHPHbBAMPkMbp FwwBSzsTkapCEspfLnHFosvChFYmotPpgZKzXmYkSJrfkudJHZFlZSlt JLt OhzTlZmpFnarVWJXRwFzleMWKqHlugvr HpmHsII VZNpFgLTLzorGIxnqdhYA', 20, 102], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) increaseAllowance(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 70596086503693769341465854973608199631937885701560786569907498561430731063331], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(3) mint(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 22144696581621927163617763867678616291787232437082616839677837269741224635719], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(4) symbol([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(5) approve(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 60313969612036322521976460872172638748701627723235492324051043484116546509723], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(6) _fallback([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: 
+	(7) totalSupply([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+
+	(1) constructor(['"ERC20: Locked balance"', 'ilMdf tNzvRFtMBjLitHPHbBAMPkMbp FwwBSzsTkapCEspfLnHFosvChFYmotPpgZKzXmYkSJrfkudJHZFlZSlt JLt OhzTlZmpFnarVWJXRwFzleMWKqHlugvr HpmHsII VZNpFgLTLzorGIxnqdhYA', 20, 102], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) increaseAllowance(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 70596086503693769341465854973608199631937885701560786569907498561430731063331], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(3) mint(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 22144696581621927163617763867678616291787232437082616839677837269741224635719], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(4) symbol([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(5) approve(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 60313969612036322521976460872172638748701627723235492324051043484116546509723], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(6) _fallback([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: 
+	(7) totalSupply([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+
+	(1) constructor(['"ERC20: Locked balance"', 'QToNuqlLHfChkwRwmrHQajMCOwqAqcrhEOWLlHQdBYdTvgZVMlPLjzLGENfCA', 20, 0], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) stop([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(3) stop([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(4) start([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(5) decimals([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(6) transferOwnership(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(7) totalSupply([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+
+	(1) constructor(['"ERC20: Locked balance"', 'ilMdf tNzvRFtMBjLitHPHbBAMPkMbp FwwBSzsTkapCEspfLnHFosvChFYmotPpgZKzXmYkSJrfkudJHZFlZSlt JLt OhzTlZmpFnarVWJXRwFzleMWKqHlugvr HpmHsII VZNpFgLTLzorGIxnqdhYA', 20, 102], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) increaseAllowance(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 70596086503693769341465854973608199631937885701560786569907498561430731063331], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(3) mint(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 22144696581621927163617763867678616291787232437082616839677837269741224635719], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(4) symbol([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(5) approve(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 60313969612036322521976460872172638748701627723235492324051043484116546509723], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(6) _fallback([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: 
+	(7) totalSupply([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+
+	(1) constructor(['"ERC20: Locked balance"', 'ilMdf tNzvRFtMBjLitHPHbBAMPkMbp FwwBSzsTkapCEspfLnHFosvChFYmotPpgZKzXmYkSJrfkudJHZFlZSlt JLt OhzTlZmpFnarVWJXRwFzleMWKqHlugvr HpmHsII VZNpFgLTLzorGIxnqdhYA', 20, 102], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) increaseAllowance(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 70596086503693769341465854973608199631937885701560786569907498561430731063331], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(3) mint(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 22144696581621927163617763867678616291787232437082616839677837269741224635719], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(4) symbol([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(5) approve(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 60313969612036322521976460872172638748701627723235492324051043484116546509723], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(6) _fallback([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: 
+	(7) totalSupply([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+
+	(1) constructor(['DQNTztQVotTfZDirvzVFUin gbMQWEabNxEQrVYFLkmhgRChRwvrnkDLbBHAKvgwLGWfVMaCgQwhDRdTXRHvuivcbJVpsAXBX', '"ERC20: Locked balance"', 60377150543626598259238532173266367057057487802517422826190339931911006912519, 130], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) setLock(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 91741285257247644727547774459601476737860465779826843655490635587215217123876, 1597223021427180436906887038726105341041295462767819392345164261364655154953], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(3) transferOwnership(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(4) name([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(5) transferFrom(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', '0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 0], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(6) balanceOf(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(7) _fallback([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: 
+
+	(1) constructor(['"ERC20: Locked balance"', 'g bgnmCZefsUdmQNtSHtIgnYOZNciAqqMljLSDosvHrVijeeKNACqIxeRxqShQBGCKmcIAkYcGYZzCCTpVk skBPiVqikETKOGNowDYhDtGkKSiOfJagNCTG xNRaIQnkvyWTwxguXsTgLGyItBNjIBAjsAQfbKgZJnd EULhnuHLAqygjZHgsgQxrGQSXOWKavGwRYoZSGbTu', 109958992592601079671326739555849881647478204145499851361600410263614744838625, 0], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) transferFrom(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', '0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 20], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(3) owner([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(4) mint(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 47488143447705958932407372904943925173023592045217682827963118548246864340401], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(5) transferFrom(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', '0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 20], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(6) owner([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(7) setLock(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 20, 0], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: 
+
+	(1) constructor(['DQNTztQVotTfZDirvzVFUin gbMQWEabNxEQrVYFLkmhgRChRwvrnkDLbBHAKvgwLGWfVMaCgQwhDRdTXRHvuivcbJVpsAXBX', '"ERC20: Locked balance"', 60377150543626598259238532173266367057057487802517422826190339931911006912519, 130], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) setLock(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 91741285257247644727547774459601476737860465779826843655490635587215217123876, 1597223021427180436906887038726105341041295462767819392345164261364655154953], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(3) transferOwnership(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(4) name([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(5) transferFrom(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', '0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 0], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(6) balanceOf(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(7) _fallback([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: 
+
+	(1) constructor(['DQNTztQVotTfZDirvzVFUin gbMQWEabNxEQrVYFLkmhgRChRwvrnkDLbBHAKvgwLGWfVMaCgQwhDRdTXRHvuivcbJVpsAXBX', '"ERC20: Locked balance"', 60377150543626598259238532173266367057057487802517422826190339931911006912519, 130], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) setLock(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 91741285257247644727547774459601476737860465779826843655490635587215217123876, 1597223021427180436906887038726105341041295462767819392345164261364655154953], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(3) transferOwnership(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(4) name([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(5) transferFrom(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', '0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 0], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(6) balanceOf(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(7) _fallback([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: 
+
+	(1) constructor(['"ERC20: Locked balance"', 'ilMdf tNzvRFtMBjLitHPHbBAMPkMbp FwwBSzsTkapCEspfLnHFosvChFYmotPpgZKzXmYkSJrfkudJHZFlZSlt JLt OhzTlZmpFnarVWJXRwFzleMWKqHlugvr HpmHsII VZNpFgLTLzorGIxnqdhYA', 20, 102], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) increaseAllowance(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 70596086503693769341465854973608199631937885701560786569907498561430731063331], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(3) mint(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 22144696581621927163617763867678616291787232437082616839677837269741224635719], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(4) symbol([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(5) approve(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 60313969612036322521976460872172638748701627723235492324051043484116546509723], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(6) _fallback([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: 
+	(7) totalSupply([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+
+	(1) constructor(['"ERC20: Locked balance"', 'ilMdf tNzvRFtMBjLitHPHbBAMPkMbp FwwBSzsTkapCEspfLnHFosvChFYmotPpgZKzXmYkSJrfkudJHZFlZSlt JLt OhzTlZmpFnarVWJXRwFzleMWKqHlugvr HpmHsII VZNpFgLTLzorGIxnqdhYA', 20, 102], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) increaseAllowance(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 70596086503693769341465854973608199631937885701560786569907498561430731063331], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(3) mint(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 22144696581621927163617763867678616291787232437082616839677837269741224635719], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(4) symbol([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(5) approve(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 60313969612036322521976460872172638748701627723235492324051043484116546509723], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(6) _fallback([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: 
+	(7) totalSupply([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+
+	(1) constructor(['"ERC20: Locked balance"', 'ilMdf tNzvRFtMBjLitHPHbBAMPkMbp FwwBSzsTkapCEspfLnHFosvChFYmotPpgZKzXmYkSJrfkudJHZFlZSlt JLt OhzTlZmpFnarVWJXRwFzleMWKqHlugvr HpmHsII VZNpFgLTLzorGIxnqdhYA', 20, 102], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) increaseAllowance(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 70596086503693769341465854973608199631937885701560786569907498561430731063331], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(3) mint(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 22144696581621927163617763867678616291787232437082616839677837269741224635719], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(4) symbol([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(5) approve(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 60313969612036322521976460872172638748701627723235492324051043484116546509723], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(6) _fallback([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: 
+	(7) totalSupply([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+
+	(1) constructor(['DQNTztQVotTfZDirvzVFUin gbMQWEabNxEQrVYFLkmhgRChRwvrnkDLbBHAKvgwLGWfVMaCgQwhDRdTXRHvuivcbJVpsAXBX', '"ERC20: Locked balance"', 60377150543626598259238532173266367057057487802517422826190339931911006912519, 130], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) setLock(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 91741285257247644727547774459601476737860465779826843655490635587215217123876, 1597223021427180436906887038726105341041295462767819392345164261364655154953], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(3) transferOwnership(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(4) name([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(5) transferFrom(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', '0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 0], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(6) balanceOf(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(7) _fallback([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: 
+
+	(1) constructor(['Standard String', '"ERC20: Locked balance"', 20, 77], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) increaseAllowance(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 20], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(3) burn([39323223267462240626445779262363601228410342496523086655182579945519094195367], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: 
+	(4) owner([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(5) setLock(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 45528252644293781689762015643664471504244615347182873575847700580105401120738, 20], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(6) getLock(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(7) decimals([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+
+	(1) constructor(['sxkIOzvumzRKmBTmutwEqklidalLbjOQHuHptSsldnkUYxpjKRdNXPdxiHkKJzuxncEtoJfNBRqreAOuINYHaXXSpsxtXVotilJOeFlolpqhpaDsTnSTtvHaJUloMeymObiyxWaxSAZXmKvObWbCKsxgQZMGLVPJQzFfObYTQmuopvHvhSLWirMwXw bq UQlVSTMxNzvjozEeIWtATeHUPxBcTQwhhytXZqARFksgpHupzk', '"ERC20: Locked balance"', 0, 20], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) _fallback([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 10641095024631320)	Returns: 
+	(3) mint(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 20], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(4) stop([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(5) decreaseAllowance(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 0], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(6) start([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(7) stop([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+
+	(1) constructor(['sxkIOzvumzRKmBTmutwEqklidalLbjOQHuHptSsldnkUYxpjKRdNXPdxiHkKJzuxncEtoJfNBRqreAOuINYHaXXSpsxtXVotilJOeFlolpqhpaDsTnSTtvHaJUloMeymObiyxWaxSAZXmKvObWbCKsxgQZMGLVPJQzFfObYTQmuopvHvhSLWirMwXw bq UQlVSTMxNzvjozEeIWtATeHUPxBcTQwhhytXZqARFksgpHupzk', '"ERC20: Locked balance"', 0, 20], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) _fallback([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 10641095024631320)	Returns: 
+	(3) mint(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 20], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(4) stop([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(5) decreaseAllowance(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 0], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(6) start([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(7) stop([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+
+	(1) constructor(['kWRvIkabCizaeMINshQLc', '"ERC20: Locked balance"', 96910136579563391352721256536319596288049753113738156730927918008164603170394, 0], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) setLock(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 0, 77784219385486827056086503184591489997984920133669019329988341632915270190748], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(3) setLock(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 20, 20], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(4) burn([20], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(5) transferOwnership(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(6) name([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(7) transfer(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 9043067755425029910028989420638236801796487493542585370865355840982574484424], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+
+	(1) constructor(['kWRvIkabCizaeMINshQLc', '"ERC20: Locked balance"', 96910136579563391352721256536319596288049753113738156730927918008164603170394, 0], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) setLock(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 0, 77784219385486827056086503184591489997984920133669019329988341632915270190748], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(3) setLock(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 20, 20], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(4) burn([20], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(5) transferOwnership(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(6) name([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(7) transfer(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 9043067755425029910028989420638236801796487493542585370865355840982574484424], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+
+	(1) constructor(['kWRvIkabCizaeMINshQLc', '"ERC20: Locked balance"', 96910136579563391352721256536319596288049753113738156730927918008164603170394, 0], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) setLock(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 0, 77784219385486827056086503184591489997984920133669019329988341632915270190748], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(3) setLock(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 20, 20], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(4) burn([20], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(5) transferOwnership(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(6) name([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(7) transfer(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 9043067755425029910028989420638236801796487493542585370865355840982574484424], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+
+	(1) constructor(['"ERC20: Locked balance"', '"ERC20: Locked balance"', 34449686113066239572334584561947828862572014143008189313341592829344284757927, 0], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) allowance(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', '0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(3) approve(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 93686995964306926647460045695475871468161669996754400384134142285220260262092], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(4) transferFrom(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', '0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 77754404562332260527069459297925243289421630678883150433216116794022221592408], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 74684141190735979)	Returns: true
+	(5) allowance(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', '0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(6) increaseAllowance(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 38905447544087116548192190392754208947937434134472814137777973908519568437156], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(7) start([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+
+	(1) constructor(['"ERC20: Locked balance"', '"ERC20: Locked balance"', 34449686113066239572334584561947828862572014143008189313341592829344284757927, 0], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) allowance(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', '0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(3) approve(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 93686995964306926647460045695475871468161669996754400384134142285220260262092], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(4) transferFrom(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', '0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 77754404562332260527069459297925243289421630678883150433216116794022221592408], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 74684141190735979)	Returns: true
+	(5) allowance(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', '0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(6) increaseAllowance(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 38905447544087116548192190392754208947937434134472814137777973908519568437156], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(7) start([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+
+	(1) constructor(['"ERC20: Locked balance"', '"ERC20: Locked balance"', 34449686113066239572334584561947828862572014143008189313341592829344284757927, 0], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) allowance(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', '0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(3) approve(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 93686995964306926647460045695475871468161669996754400384134142285220260262092], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(4) transferFrom(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', '0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 77754404562332260527069459297925243289421630678883150433216116794022221592408], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 74684141190735979)	Returns: true
+	(5) allowance(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', '0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(6) increaseAllowance(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 38905447544087116548192190392754208947937434134472814137777973908519568437156], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(7) start([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+
+	(1) constructor(['"ERC20: Locked balance"', 'ilMdf tNzvRFtMBjLitHPHbBAMPkMbp FwwBSzsTkapCEspfLnHFosvChFYmotPpgZKzXmYkSJrfkudJHZFlZSlt JLt OhzTlZmpFnarVWJXRwFzleMWKqHlugvr HpmHsII VZNpFgLTLzorGIxnqdhYA', 20, 102], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) increaseAllowance(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 70596086503693769341465854973608199631937885701560786569907498561430731063331], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(3) mint(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 22144696581621927163617763867678616291787232437082616839677837269741224635719], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(4) symbol([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(5) approve(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 60313969612036322521976460872172638748701627723235492324051043484116546509723], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(6) _fallback([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: 
+	(7) totalSupply([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+
+	(1) constructor(['DQNTztQVotTfZDirvzVFUin gbMQWEabNxEQrVYFLkmhgRChRwvrnkDLbBHAKvgwLGWfVMaCgQwhDRdTXRHvuivcbJVpsAXBX', '"ERC20: Locked balance"', 60377150543626598259238532173266367057057487802517422826190339931911006912519, 130], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) setLock(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 91741285257247644727547774459601476737860465779826843655490635587215217123876, 1597223021427180436906887038726105341041295462767819392345164261364655154953], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(3) transferOwnership(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(4) name([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(5) transferFrom(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', '0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 0], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(6) balanceOf(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(7) _fallback([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: 
+
+	(1) constructor(['DQNTztQVotTfZDirvzVFUin gbMQWEabNxEQrVYFLkmhgRChRwvrnkDLbBHAKvgwLGWfVMaCgQwhDRdTXRHvuivcbJVpsAXBX', '"ERC20: Locked balance"', 60377150543626598259238532173266367057057487802517422826190339931911006912519, 130], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) setLock(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 91741285257247644727547774459601476737860465779826843655490635587215217123876, 1597223021427180436906887038726105341041295462767819392345164261364655154953], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(3) transferOwnership(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(4) name([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(5) transferFrom(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', '0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 0], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(6) balanceOf(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(7) _fallback([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: 
+
+	(1) constructor(['DQNTztQVotTfZDirvzVFUin gbMQWEabNxEQrVYFLkmhgRChRwvrnkDLbBHAKvgwLGWfVMaCgQwhDRdTXRHvuivcbJVpsAXBX', '"ERC20: Locked balance"', 60377150543626598259238532173266367057057487802517422826190339931911006912519, 130], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) setLock(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 91741285257247644727547774459601476737860465779826843655490635587215217123876, 1597223021427180436906887038726105341041295462767819392345164261364655154953], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(3) transferOwnership(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(4) name([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(5) transferFrom(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', '0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 0], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(6) balanceOf(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(7) _fallback([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: 
+
+	(1) constructor(['"ERC20: Locked balance"', 'ilMdf tNzvRFtMBjLitHPHbBAMPkMbp FwwBSzsTkapCEspfLnHFosvChFYmotPpgZKzXmYkSJrfkudJHZFlZSlt JLt OhzTlZmpFnarVWJXRwFzleMWKqHlugvr HpmHsII VZNpFgLTLzorGIxnqdhYA', 20, 102], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) increaseAllowance(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 70596086503693769341465854973608199631937885701560786569907498561430731063331], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(3) mint(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 22144696581621927163617763867678616291787232437082616839677837269741224635719], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(4) symbol([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(5) approve(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 60313969612036322521976460872172638748701627723235492324051043484116546509723], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(6) _fallback([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: 
+	(7) totalSupply([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+
+	(1) constructor(['"ERC20: Locked balance"', 'ilMdf tNzvRFtMBjLitHPHbBAMPkMbp FwwBSzsTkapCEspfLnHFosvChFYmotPpgZKzXmYkSJrfkudJHZFlZSlt JLt OhzTlZmpFnarVWJXRwFzleMWKqHlugvr HpmHsII VZNpFgLTLzorGIxnqdhYA', 20, 102], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) increaseAllowance(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 70596086503693769341465854973608199631937885701560786569907498561430731063331], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(3) mint(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 22144696581621927163617763867678616291787232437082616839677837269741224635719], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(4) symbol([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(5) approve(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 60313969612036322521976460872172638748701627723235492324051043484116546509723], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(6) _fallback([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: 
+	(7) totalSupply([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+
+	(1) constructor(['"ERC20: Locked balance"', 'ilMdf tNzvRFtMBjLitHPHbBAMPkMbp FwwBSzsTkapCEspfLnHFosvChFYmotPpgZKzXmYkSJrfkudJHZFlZSlt JLt OhzTlZmpFnarVWJXRwFzleMWKqHlugvr HpmHsII VZNpFgLTLzorGIxnqdhYA', 20, 102], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) increaseAllowance(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 70596086503693769341465854973608199631937885701560786569907498561430731063331], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(3) mint(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 22144696581621927163617763867678616291787232437082616839677837269741224635719], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(4) symbol([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(5) approve(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 60313969612036322521976460872172638748701627723235492324051043484116546509723], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(6) _fallback([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: 
+	(7) totalSupply([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+
+	(1) constructor(['"ERC20: Locked balance"', 'ilMdf tNzvRFtMBjLitHPHbBAMPkMbp FwwBSzsTkapCEspfLnHFosvChFYmotPpgZKzXmYkSJrfkudJHZFlZSlt JLt OhzTlZmpFnarVWJXRwFzleMWKqHlugvr HpmHsII VZNpFgLTLzorGIxnqdhYA', 20, 102], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) increaseAllowance(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 70596086503693769341465854973608199631937885701560786569907498561430731063331], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(3) mint(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 22144696581621927163617763867678616291787232437082616839677837269741224635719], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(4) symbol([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(5) approve(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 60313969612036322521976460872172638748701627723235492324051043484116546509723], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(6) _fallback([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: 
+	(7) totalSupply([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+
+	(1) constructor(['WGoNFTWhqIlnPeQCkVjapGwuNteuxHVsBRrcgtESdDjAMLgQPg  BHLiyKdoyPqvQogqaleRwiBOEQZTufuyosSgjUrwCGtJCwjtVxIbIjsUbWsPTvwEs', '"ERC20: Locked balance"', 103630059273505909468605379946601139091308105657204581982869593939025313522372, 78], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) stop([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(3) transfer(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 72842573668403378295547423628129662533825164089295672738363908613874283443065], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: 
+	(4) balanceOf(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(5) symbol([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(6) transfer(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 0], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: 
+	(7) decreaseAllowance(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 18987593209303502340760547606528097944648197177977781799532154088882072328533], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+
+	(1) constructor(['"ERC20: Locked balance"', 'ilMdf tNzvRFtMBjLitHPHbBAMPkMbp FwwBSzsTkapCEspfLnHFosvChFYmotPpgZKzXmYkSJrfkudJHZFlZSlt JLt OhzTlZmpFnarVWJXRwFzleMWKqHlugvr HpmHsII VZNpFgLTLzorGIxnqdhYA', 20, 102], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) increaseAllowance(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 70596086503693769341465854973608199631937885701560786569907498561430731063331], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(3) mint(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 22144696581621927163617763867678616291787232437082616839677837269741224635719], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(4) symbol([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(5) approve(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 60313969612036322521976460872172638748701627723235492324051043484116546509723], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(6) _fallback([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: 
+	(7) totalSupply([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+
+	(1) constructor(['"ERC20: Locked balance"', 'ilMdf tNzvRFtMBjLitHPHbBAMPkMbp FwwBSzsTkapCEspfLnHFosvChFYmotPpgZKzXmYkSJrfkudJHZFlZSlt JLt OhzTlZmpFnarVWJXRwFzleMWKqHlugvr HpmHsII VZNpFgLTLzorGIxnqdhYA', 20, 102], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) increaseAllowance(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 70596086503693769341465854973608199631937885701560786569907498561430731063331], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(3) mint(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 22144696581621927163617763867678616291787232437082616839677837269741224635719], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(4) symbol([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(5) approve(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 60313969612036322521976460872172638748701627723235492324051043484116546509723], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(6) _fallback([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: 
+	(7) totalSupply([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+
+	(1) constructor(['kWRvIkabCizaeMINshQLc', '"ERC20: Locked balance"', 96910136579563391352721256536319596288049753113738156730927918008164603170394, 0], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) setLock(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 0, 77784219385486827056086503184591489997984920133669019329988341632915270190748], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(3) setLock(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 20, 20], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(4) burn([20], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(5) transferOwnership(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(6) name([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(7) transfer(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 9043067755425029910028989420638236801796487493542585370865355840982574484424], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+
+	(1) constructor(['kWRvIkabCizaeMINshQLc', '"ERC20: Locked balance"', 96910136579563391352721256536319596288049753113738156730927918008164603170394, 0], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) setLock(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 0, 77784219385486827056086503184591489997984920133669019329988341632915270190748], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(3) setLock(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 20, 20], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(4) burn([20], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(5) transferOwnership(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(6) name([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(7) transfer(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 9043067755425029910028989420638236801796487493542585370865355840982574484424], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+
+	(1) constructor(['kWRvIkabCizaeMINshQLc', '"ERC20: Locked balance"', 96910136579563391352721256536319596288049753113738156730927918008164603170394, 0], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) setLock(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 0, 77784219385486827056086503184591489997984920133669019329988341632915270190748], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(3) setLock(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 20, 20], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(4) burn([20], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(5) transferOwnership(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(6) name([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(7) transfer(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 9043067755425029910028989420638236801796487493542585370865355840982574484424], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+
+	(1) constructor(['DQNTztQVotTfZDirvzVFUin gbMQWEabNxEQrVYFLkmhgRChRwvrnkDLbBHAKvgwLGWfVMaCgQwhDRdTXRHvuivcbJVpsAXBX', '"ERC20: Locked balance"', 60377150543626598259238532173266367057057487802517422826190339931911006912519, 130], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) setLock(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 91741285257247644727547774459601476737860465779826843655490635587215217123876, 1597223021427180436906887038726105341041295462767819392345164261364655154953], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(3) transferOwnership(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(4) name([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(5) transferFrom(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', '0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 0], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(6) balanceOf(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(7) _fallback([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: 
+
+	(1) constructor(['DQNTztQVotTfZDirvzVFUin gbMQWEabNxEQrVYFLkmhgRChRwvrnkDLbBHAKvgwLGWfVMaCgQwhDRdTXRHvuivcbJVpsAXBX', '"ERC20: Locked balance"', 60377150543626598259238532173266367057057487802517422826190339931911006912519, 130], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) setLock(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 91741285257247644727547774459601476737860465779826843655490635587215217123876, 1597223021427180436906887038726105341041295462767819392345164261364655154953], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(3) transferOwnership(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(4) name([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(5) transferFrom(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', '0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 0], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(6) balanceOf(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(7) _fallback([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: 
+
+	(1) constructor(['DQNTztQVotTfZDirvzVFUin gbMQWEabNxEQrVYFLkmhgRChRwvrnkDLbBHAKvgwLGWfVMaCgQwhDRdTXRHvuivcbJVpsAXBX', '"ERC20: Locked balance"', 60377150543626598259238532173266367057057487802517422826190339931911006912519, 130], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) setLock(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 91741285257247644727547774459601476737860465779826843655490635587215217123876, 1597223021427180436906887038726105341041295462767819392345164261364655154953], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(3) transferOwnership(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(4) name([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(5) transferFrom(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', '0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 0], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(6) balanceOf(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(7) _fallback([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: 
+
+	(1) constructor(['DQNTztQVotTfZDirvzVFUin gbMQWEabNxEQrVYFLkmhgRChRwvrnkDLbBHAKvgwLGWfVMaCgQwhDRdTXRHvuivcbJVpsAXBX', '"ERC20: Locked balance"', 60377150543626598259238532173266367057057487802517422826190339931911006912519, 130], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) setLock(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 91741285257247644727547774459601476737860465779826843655490635587215217123876, 1597223021427180436906887038726105341041295462767819392345164261364655154953], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(3) transferOwnership(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(4) name([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(5) transferFrom(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', '0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 0], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(6) balanceOf(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(7) _fallback([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: 
+
+	(1) constructor(['DQNTztQVotTfZDirvzVFUin gbMQWEabNxEQrVYFLkmhgRChRwvrnkDLbBHAKvgwLGWfVMaCgQwhDRdTXRHvuivcbJVpsAXBX', '"ERC20: Locked balance"', 60377150543626598259238532173266367057057487802517422826190339931911006912519, 130], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) setLock(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 91741285257247644727547774459601476737860465779826843655490635587215217123876, 1597223021427180436906887038726105341041295462767819392345164261364655154953], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(3) transferOwnership(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(4) name([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(5) transferFrom(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', '0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 0], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(6) balanceOf(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(7) _fallback([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: 
+
+	(1) constructor(['DQNTztQVotTfZDirvzVFUin gbMQWEabNxEQrVYFLkmhgRChRwvrnkDLbBHAKvgwLGWfVMaCgQwhDRdTXRHvuivcbJVpsAXBX', '"ERC20: Locked balance"', 60377150543626598259238532173266367057057487802517422826190339931911006912519, 130], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) setLock(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 91741285257247644727547774459601476737860465779826843655490635587215217123876, 1597223021427180436906887038726105341041295462767819392345164261364655154953], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(3) transferOwnership(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(4) name([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(5) transferFrom(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', '0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 0], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(6) balanceOf(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(7) _fallback([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: 
+
+	(1) constructor(['DQNTztQVotTfZDirvzVFUin gbMQWEabNxEQrVYFLkmhgRChRwvrnkDLbBHAKvgwLGWfVMaCgQwhDRdTXRHvuivcbJVpsAXBX', '"ERC20: Locked balance"', 60377150543626598259238532173266367057057487802517422826190339931911006912519, 130], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) setLock(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 91741285257247644727547774459601476737860465779826843655490635587215217123876, 1597223021427180436906887038726105341041295462767819392345164261364655154953], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(3) transferOwnership(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(4) name([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(5) transferFrom(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', '0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 0], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(6) balanceOf(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(7) _fallback([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: 
+
+	(1) constructor(['DQNTztQVotTfZDirvzVFUin gbMQWEabNxEQrVYFLkmhgRChRwvrnkDLbBHAKvgwLGWfVMaCgQwhDRdTXRHvuivcbJVpsAXBX', '"ERC20: Locked balance"', 60377150543626598259238532173266367057057487802517422826190339931911006912519, 130], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) setLock(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 91741285257247644727547774459601476737860465779826843655490635587215217123876, 1597223021427180436906887038726105341041295462767819392345164261364655154953], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(3) transferOwnership(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(4) name([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(5) transferFrom(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', '0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 0], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(6) balanceOf(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(7) _fallback([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: 
+
+	(1) constructor(['"ERC20: Locked balance"', 'ilMdf tNzvRFtMBjLitHPHbBAMPkMbp FwwBSzsTkapCEspfLnHFosvChFYmotPpgZKzXmYkSJrfkudJHZFlZSlt JLt OhzTlZmpFnarVWJXRwFzleMWKqHlugvr HpmHsII VZNpFgLTLzorGIxnqdhYA', 20, 102], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) increaseAllowance(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 70596086503693769341465854973608199631937885701560786569907498561430731063331], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(3) mint(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 22144696581621927163617763867678616291787232437082616839677837269741224635719], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(4) symbol([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(5) approve(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 60313969612036322521976460872172638748701627723235492324051043484116546509723], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(6) _fallback([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: 
+	(7) totalSupply([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true

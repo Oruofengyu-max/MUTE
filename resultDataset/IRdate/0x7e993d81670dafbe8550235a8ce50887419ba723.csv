@@ -1,0 +1,25 @@
+Source Function,Target Function
+delKYC(address),"__callback(bytes32,string)"
+"__callback(bytes32,string,bytes)","__callback(bytes32,string)"
+addKYC(address),"__callback(bytes32,string)"
+addOwner(address),"__callback(bytes32,string)"
+delOwner(address),"__callback(bytes32,string)"
+"addStage(uint256,uint256,uint256,uint256)","__callback(bytes32,string)"
+"__callback(bytes32,string)","__callback(bytes32,string,bytes)"
+delKYC(address),"__callback(bytes32,string,bytes)"
+addKYC(address),"__callback(bytes32,string,bytes)"
+addOwner(address),"__callback(bytes32,string,bytes)"
+delOwner(address),"__callback(bytes32,string,bytes)"
+"addStage(uint256,uint256,uint256,uint256)","__callback(bytes32,string,bytes)"
+"__callback(bytes32,string)",delOwner(address)
+delKYC(address),delOwner(address)
+"__callback(bytes32,string,bytes)",delOwner(address)
+addKYC(address),delOwner(address)
+addOwner(address),delOwner(address)
+"addStage(uint256,uint256,uint256,uint256)",delOwner(address)
+"__callback(bytes32,string)","addStage(uint256,uint256,uint256,uint256)"
+delKYC(address),"addStage(uint256,uint256,uint256,uint256)"
+"__callback(bytes32,string,bytes)","addStage(uint256,uint256,uint256,uint256)"
+addKYC(address),"addStage(uint256,uint256,uint256,uint256)"
+addOwner(address),"addStage(uint256,uint256,uint256,uint256)"
+delOwner(address),"addStage(uint256,uint256,uint256,uint256)"

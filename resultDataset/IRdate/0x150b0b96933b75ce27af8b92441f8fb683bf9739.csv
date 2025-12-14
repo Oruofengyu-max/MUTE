@@ -1,0 +1,20 @@
+Source Function,Target Function
+"approve(address,uint256)","transferFrom(address,address,uint256)"
+"increaseAllowance(address,uint256)","transferFrom(address,address,uint256)"
+burn(uint256),"transferFrom(address,address,uint256)"
+setExternalDependencies(address[]),"transferFrom(address,address,uint256)"
+"decreaseAllowance(address,uint256)","transferFrom(address,address,uint256)"
+"approve(address,uint256)",burn(uint256)
+"transferFrom(address,address,uint256)",burn(uint256)
+"increaseAllowance(address,uint256)",burn(uint256)
+setExternalDependencies(address[]),burn(uint256)
+"decreaseAllowance(address,uint256)",burn(uint256)
+burn(uint256),setExternalDependencies(address[])
+setInternalDependencies(address[]),setExternalDependencies(address[])
+transferOwnership(address),setExternalDependencies(address[])
+burn(uint256),setInternalDependencies(address[])
+setExternalDependencies(address[]),setInternalDependencies(address[])
+transferOwnership(address),setInternalDependencies(address[])
+burn(uint256),transferOwnership(address)
+setExternalDependencies(address[]),transferOwnership(address)
+setInternalDependencies(address[]),transferOwnership(address)

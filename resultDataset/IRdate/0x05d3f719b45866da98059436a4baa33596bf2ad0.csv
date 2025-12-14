@@ -1,0 +1,25 @@
+Source Function,Target Function
+"approve(address,uint256)","transferFrom(address,address,uint256)"
+burn(uint256),"transferFrom(address,address,uint256)"
+"decreaseApproval(address,uint256)","transferFrom(address,address,uint256)"
+"transfer(address,uint256)","transferFrom(address,address,uint256)"
+"increaseApproval(address,uint256)","transferFrom(address,address,uint256)"
+"approve(address,uint256)",burn(uint256)
+"transferFrom(address,address,uint256)",burn(uint256)
+"decreaseApproval(address,uint256)",burn(uint256)
+"transfer(address,uint256)",burn(uint256)
+"increaseApproval(address,uint256)",burn(uint256)
+burn(uint256),setCrowdsale(address)
+setTransferable(bool),setCrowdsale(address)
+transferOwnership(address),setCrowdsale(address)
+burn(uint256),setTransferable(bool)
+setCrowdsale(address),setTransferable(bool)
+transferOwnership(address),setTransferable(bool)
+"approve(address,uint256)","transfer(address,uint256)"
+"transferFrom(address,address,uint256)","transfer(address,uint256)"
+burn(uint256),"transfer(address,uint256)"
+"decreaseApproval(address,uint256)","transfer(address,uint256)"
+"increaseApproval(address,uint256)","transfer(address,uint256)"
+burn(uint256),transferOwnership(address)
+setCrowdsale(address),transferOwnership(address)
+setTransferable(bool),transferOwnership(address)

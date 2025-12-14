@@ -1,0 +1,8 @@
+Source Function,Target Function
+finalizeSale(),emergencyStopSale()
+restartSale(),emergencyStopSale()
+transferOwnership(address),emergencyStopSale()
+"setWhitelistStatus(address,bool)",refund()
+emergencyStopSale(),restartSale()
+finalizeSale(),restartSale()
+transferOwnership(address),restartSale()

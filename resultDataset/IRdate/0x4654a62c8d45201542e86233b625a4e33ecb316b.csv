@@ -1,0 +1,17 @@
+Source Function,Target Function
+setMotd(string),finalize()
+setController(address),finalize()
+transferOwnership(address),finalize()
+finalize(),setMotd(string)
+setController(address),setMotd(string)
+transferOwnership(address),setMotd(string)
+finalize(),"claimTokens(address,address)"
+setMotd(string),"claimTokens(address,address)"
+setController(address),"claimTokens(address,address)"
+transferOwnership(address),"claimTokens(address,address)"
+finalize(),setController(address)
+setMotd(string),setController(address)
+transferOwnership(address),setController(address)
+finalize(),transferOwnership(address)
+setMotd(string),transferOwnership(address)
+setController(address),transferOwnership(address)

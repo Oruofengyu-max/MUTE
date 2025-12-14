@@ -1,0 +1,14 @@
+Source Function,Target Function
+"approve(address,uint256)","transferFrom(address,address,uint256)"
+unlock(address),"transferFrom(address,address,uint256)"
+"decreaseApproval(address,uint256)","transferFrom(address,address,uint256)"
+"increaseApproval(address,uint256)","transferFrom(address,address,uint256)"
+renounceOwnership(),"transferAndLockToTeam(address,address,address,address,address,address)"
+transferOwnership(address),"transferAndLockToTeam(address,address,address,address,address,address)"
+"transferAndLockToTeam(address,address,address,address,address,address)",unlock(address)
+renounceOwnership(),unlock(address)
+transferOwnership(address),unlock(address)
+"transferAndLockToTeam(address,address,address,address,address,address)",renounceOwnership()
+transferOwnership(address),renounceOwnership()
+"transferAndLockToTeam(address,address,address,address,address,address)",transferOwnership(address)
+renounceOwnership(),transferOwnership(address)

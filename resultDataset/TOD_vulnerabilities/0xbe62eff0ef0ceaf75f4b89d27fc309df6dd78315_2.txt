@@ -1,0 +1,1093 @@
+Contract:			GayCoin
+Number of Relevant Branches:	71
+Number of Branches Covered:		68
+Runtime: 											1565.544973
+Blockchain Time: 							1438.737519
+Iterations										
+11
+--------------------------------------------------
+METHODS:
+
+Constructor:
+	Inputs :[]
+	Payable: nonpayable
+_fallback:
+
+transferOwnership:
+
+buyTokens:
+
+setTokenPrice:
+
+getTokenPrice:
+
+setBuyAllowed:
+
+setTransferBlocked:
+
+withdrawEther:
+
+balanceOf:
+
+transfer:
+
+transferFrom:
+
+approve:
+
+allowance:
+
+
+--------------------------------------------------
+
+            TESTS:
+
+	(1) constructor([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)
+	(2) transferFrom(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', 18], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(3) buyTokens(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 256)	Returns: 
+	(4) buyTokens(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 139410625574312387)	Returns: 
+	(5) allowance(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) buyTokens(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 173725702685123130)	Returns: 
+	(7) buyTokens(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(8) transferFrom(['0xC352C77703A000382541035D9F12F27608999903', '0xC352C77703A000382541035D9F12F27608999903', 0], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) setTokenPrice([34033834489735869150573884368176316531670415746408058575276030533585597858289], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) approve(['0xC352C77703A000382541035D9F12F27608999903', 1406837412557634266829945767051523309297196830839867899762558976307453843508], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(4) transfer(['0xC352C77703A000382541035D9F12F27608999903', 18], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) allowance(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(6) withdrawEther(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(7) transferFrom(['0xC352C77703A000382541035D9F12F27608999903', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 21000000], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) setTokenPrice([34033834489735869150573884368176316531670415746408058575276030533585597858289], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) approve(['0xC352C77703A000382541035D9F12F27608999903', 1406837412557634266829945767051523309297196830839867899762558976307453843508], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(4) transfer(['0xC352C77703A000382541035D9F12F27608999903', 18], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) allowance(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(6) withdrawEther(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(7) transferFrom(['0xC352C77703A000382541035D9F12F27608999903', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 21000000], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)
+	(2) transferFrom(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', 18], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(3) buyTokens(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 256)	Returns: 
+	(4) buyTokens(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 139410625574312387)	Returns: 
+	(5) allowance(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) buyTokens(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 173725702685123130)	Returns: 
+	(7) buyTokens(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(8) transferFrom(['0xC352C77703A000382541035D9F12F27608999903', '0xC352C77703A000382541035D9F12F27608999903', 0], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) setTokenPrice([34033834489735869150573884368176316531670415746408058575276030533585597858289], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) approve(['0xC352C77703A000382541035D9F12F27608999903', 1406837412557634266829945767051523309297196830839867899762558976307453843508], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(4) transfer(['0xC352C77703A000382541035D9F12F27608999903', 18], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) allowance(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(6) withdrawEther(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(7) transferFrom(['0xC352C77703A000382541035D9F12F27608999903', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 21000000], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) setTokenPrice([34033834489735869150573884368176316531670415746408058575276030533585597858289], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) approve(['0xC352C77703A000382541035D9F12F27608999903', 1406837412557634266829945767051523309297196830839867899762558976307453843508], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(4) transfer(['0xC352C77703A000382541035D9F12F27608999903', 18], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) allowance(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(6) withdrawEther(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(7) transferFrom(['0xC352C77703A000382541035D9F12F27608999903', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 21000000], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) transferFrom(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 104118959451288777916375942307112052679028067929510402863034133126097046743739], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(3) approve(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 34638658118576313296125075280053679998559085320490792095505601519712003874426], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(4) buyTokens(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 23899978735666941)	Returns: 
+	(5) balanceOf(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) transferFrom(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 18], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(7) transfer(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 21000000], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) setTokenPrice([34033834489735869150573884368176316531670415746408058575276030533585597858289], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) approve(['0xC352C77703A000382541035D9F12F27608999903', 1406837412557634266829945767051523309297196830839867899762558976307453843508], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(4) transfer(['0xC352C77703A000382541035D9F12F27608999903', 18], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) allowance(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(6) withdrawEther(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(7) transferFrom(['0xC352C77703A000382541035D9F12F27608999903', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 21000000], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) setTokenPrice([34033834489735869150573884368176316531670415746408058575276030533585597858289], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) approve(['0xC352C77703A000382541035D9F12F27608999903', 1406837412557634266829945767051523309297196830839867899762558976307453843508], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(4) transfer(['0xC352C77703A000382541035D9F12F27608999903', 18], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) allowance(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(6) withdrawEther(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(7) transferFrom(['0xC352C77703A000382541035D9F12F27608999903', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 21000000], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) approve(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 97971039151432178418712502883970851368010301438254754731942345556564175943860], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) setTokenPrice([21000000], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(4) _fallback([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) transferFrom(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0xC352C77703A000382541035D9F12F27608999903', 20], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(6) getTokenPrice([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) approve(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 91506535392102095046500470509368800331442592104619792090559899529378601113744], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) approve(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 97971039151432178418712502883970851368010301438254754731942345556564175943860], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) setTokenPrice([21000000], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(4) _fallback([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) transferFrom(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0xC352C77703A000382541035D9F12F27608999903', 20], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(6) getTokenPrice([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) approve(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 91506535392102095046500470509368800331442592104619792090559899529378601113744], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) approve(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 97971039151432178418712502883970851368010301438254754731942345556564175943860], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) setTokenPrice([21000000], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(4) _fallback([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) transferFrom(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0xC352C77703A000382541035D9F12F27608999903', 20], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(6) getTokenPrice([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) approve(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 91506535392102095046500470509368800331442592104619792090559899529378601113744], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) _fallback([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) setBuyAllowed([True], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(4) setBuyAllowed([True], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(5) setTransferBlocked([True], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(6) getTokenPrice([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(7) balanceOf(['0xC352C77703A000382541035D9F12F27608999903'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) approve(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 0], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(3) transfer(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 34731241298886559633715217169839452144509415633878523912854497964292833839173], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(4) getTokenPrice([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(5) _fallback([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 157506627287467353)	Returns: 
+	(6) balanceOf(['0xC352C77703A000382541035D9F12F27608999903'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) transferOwnership(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) setTransferBlocked([False], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(3) withdrawEther(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) transfer(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 84146269335476045311150149267051299033473459052165674465236849531215815518157], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) approve(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 57080305976332038527666470002463628783336969955961488812671980200277814998070], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(6) approve(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 500000000000000], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) approve(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 1000000000000000000], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) setTransferBlocked([False], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(3) withdrawEther(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) transfer(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 84146269335476045311150149267051299033473459052165674465236849531215815518157], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) approve(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 57080305976332038527666470002463628783336969955961488812671980200277814998070], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(6) approve(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 500000000000000], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) approve(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 1000000000000000000], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) transfer(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 500000000000000], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(3) approve(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 89741220425231863847387040754986328785654185233366519782848889140733231684], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(4) withdrawEther(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(5) setTokenPrice([104100713183778783101340415678748727582363573934687895686433401169583803238647], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(6) approve(['0xC352C77703A000382541035D9F12F27608999903', 18], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) balanceOf(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) setTransferBlocked([False], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(3) withdrawEther(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) transfer(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 84146269335476045311150149267051299033473459052165674465236849531215815518157], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) approve(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 57080305976332038527666470002463628783336969955961488812671980200277814998070], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(6) approve(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 500000000000000], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) approve(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 1000000000000000000], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) transfer(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 500000000000000], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(3) approve(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 89741220425231863847387040754986328785654185233366519782848889140733231684], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(4) withdrawEther(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(5) setTokenPrice([104100713183778783101340415678748727582363573934687895686433401169583803238647], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(6) approve(['0xC352C77703A000382541035D9F12F27608999903', 18], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) balanceOf(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) setTransferBlocked([False], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(3) withdrawEther(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) transfer(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 84146269335476045311150149267051299033473459052165674465236849531215815518157], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) approve(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 57080305976332038527666470002463628783336969955961488812671980200277814998070], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(6) approve(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 500000000000000], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) approve(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 1000000000000000000], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) transfer(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 500000000000000], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(3) approve(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 89741220425231863847387040754986328785654185233366519782848889140733231684], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(4) withdrawEther(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(5) setTokenPrice([104100713183778783101340415678748727582363573934687895686433401169583803238647], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(6) approve(['0xC352C77703A000382541035D9F12F27608999903', 18], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) balanceOf(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) setTransferBlocked([False], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(3) withdrawEther(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) transfer(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 84146269335476045311150149267051299033473459052165674465236849531215815518157], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) approve(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 57080305976332038527666470002463628783336969955961488812671980200277814998070], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(6) approve(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 500000000000000], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) approve(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 1000000000000000000], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) setTransferBlocked([False], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(3) withdrawEther(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) transfer(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 84146269335476045311150149267051299033473459052165674465236849531215815518157], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) approve(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 57080305976332038527666470002463628783336969955961488812671980200277814998070], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(6) approve(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 500000000000000], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) approve(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 1000000000000000000], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) setTransferBlocked([False], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(3) withdrawEther(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) transfer(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 84146269335476045311150149267051299033473459052165674465236849531215815518157], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) approve(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 57080305976332038527666470002463628783336969955961488812671980200277814998070], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(6) approve(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 500000000000000], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) approve(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 1000000000000000000], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) _fallback([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) setBuyAllowed([True], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(4) setBuyAllowed([True], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(5) setTransferBlocked([True], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(6) getTokenPrice([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(7) balanceOf(['0xC352C77703A000382541035D9F12F27608999903'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) setTransferBlocked([False], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(3) withdrawEther(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) transfer(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 84146269335476045311150149267051299033473459052165674465236849531215815518157], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) approve(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 57080305976332038527666470002463628783336969955961488812671980200277814998070], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(6) approve(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 500000000000000], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) approve(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 1000000000000000000], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) getTokenPrice([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(3) withdrawEther(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(4) approve(['0xC352C77703A000382541035D9F12F27608999903', 20], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) buyTokens(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 132355740992548318)	Returns: 
+	(6) allowance(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(7) transferOwnership(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) getTokenPrice([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(3) withdrawEther(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(4) approve(['0xC352C77703A000382541035D9F12F27608999903', 20], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) buyTokens(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 132355740992548318)	Returns: 
+	(6) allowance(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(7) transferOwnership(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) getTokenPrice([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(3) withdrawEther(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(4) approve(['0xC352C77703A000382541035D9F12F27608999903', 20], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) buyTokens(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 132355740992548318)	Returns: 
+	(6) allowance(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(7) transferOwnership(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) setBuyAllowed([True], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(3) transferOwnership(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(4) allowance(['0xC352C77703A000382541035D9F12F27608999903', '0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(5) balanceOf(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(6) allowance(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(7) allowance(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) setBuyAllowed([True], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(3) transferOwnership(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(4) allowance(['0xC352C77703A000382541035D9F12F27608999903', '0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(5) balanceOf(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(6) allowance(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(7) allowance(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) getTokenPrice([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(3) withdrawEther(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(4) approve(['0xC352C77703A000382541035D9F12F27608999903', 20], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) buyTokens(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 132355740992548318)	Returns: 
+	(6) allowance(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(7) transferOwnership(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) setBuyAllowed([True], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(3) transferOwnership(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(4) allowance(['0xC352C77703A000382541035D9F12F27608999903', '0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(5) balanceOf(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(6) allowance(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(7) allowance(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) approve(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 500000000000000], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(3) balanceOf(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) _fallback([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 256)	Returns: 
+	(5) buyTokens(['0xC352C77703A000382541035D9F12F27608999903'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 37916261874291018)	Returns: 
+	(6) setBuyAllowed([True], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(7) allowance(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) approve(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 500000000000000], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(3) balanceOf(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) _fallback([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 256)	Returns: 
+	(5) buyTokens(['0xC352C77703A000382541035D9F12F27608999903'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 37916261874291018)	Returns: 
+	(6) setBuyAllowed([True], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(7) allowance(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) setBuyAllowed([True], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(3) transferOwnership(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(4) allowance(['0xC352C77703A000382541035D9F12F27608999903', '0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(5) balanceOf(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(6) allowance(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(7) allowance(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) setBuyAllowed([True], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(3) transferOwnership(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(4) allowance(['0xC352C77703A000382541035D9F12F27608999903', '0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(5) balanceOf(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(6) allowance(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(7) allowance(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)
+	(2) approve(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 20], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) approve(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 5221228450014905176016095122077795088580016795350798551179710371751618187152], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(4) setTokenPrice([31268806636575681996039105792434620911576843575390698731010695755635684079401], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) withdrawEther(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(6) withdrawEther(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) withdrawEther(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)
+	(2) approve(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 20], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) approve(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 5221228450014905176016095122077795088580016795350798551179710371751618187152], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(4) setTokenPrice([31268806636575681996039105792434620911576843575390698731010695755635684079401], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) withdrawEther(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(6) withdrawEther(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) withdrawEther(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)
+	(2) approve(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 20], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) approve(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 5221228450014905176016095122077795088580016795350798551179710371751618187152], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(4) setTokenPrice([31268806636575681996039105792434620911576843575390698731010695755635684079401], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) withdrawEther(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(6) withdrawEther(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) withdrawEther(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) setTransferBlocked([False], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(3) withdrawEther(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) transfer(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 84146269335476045311150149267051299033473459052165674465236849531215815518157], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) approve(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 57080305976332038527666470002463628783336969955961488812671980200277814998070], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(6) approve(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 500000000000000], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) approve(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 1000000000000000000], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) setTransferBlocked([False], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(3) withdrawEther(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) transfer(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 84146269335476045311150149267051299033473459052165674465236849531215815518157], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) approve(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 57080305976332038527666470002463628783336969955961488812671980200277814998070], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(6) approve(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 500000000000000], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) approve(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 1000000000000000000], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) setBuyAllowed([True], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(3) transferOwnership(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(4) allowance(['0xC352C77703A000382541035D9F12F27608999903', '0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(5) balanceOf(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(6) allowance(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(7) allowance(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) getTokenPrice([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(3) setTokenPrice([500000000000000], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) approve(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 0], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(5) balanceOf(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(6) setTokenPrice([20], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) setBuyAllowed([True], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)
+	(2) approve(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 20], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) approve(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 5221228450014905176016095122077795088580016795350798551179710371751618187152], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(4) setTokenPrice([31268806636575681996039105792434620911576843575390698731010695755635684079401], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) withdrawEther(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(6) withdrawEther(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) withdrawEther(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)
+	(2) approve(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 20], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) approve(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 5221228450014905176016095122077795088580016795350798551179710371751618187152], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(4) setTokenPrice([31268806636575681996039105792434620911576843575390698731010695755635684079401], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) withdrawEther(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(6) withdrawEther(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) withdrawEther(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) _fallback([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) setBuyAllowed([True], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(4) setBuyAllowed([True], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(5) setTransferBlocked([True], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(6) getTokenPrice([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(7) balanceOf(['0xC352C77703A000382541035D9F12F27608999903'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) setBuyAllowed([True], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(3) transferOwnership(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(4) allowance(['0xC352C77703A000382541035D9F12F27608999903', '0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(5) balanceOf(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(6) allowance(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(7) allowance(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) setBuyAllowed([True], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(3) transferOwnership(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(4) allowance(['0xC352C77703A000382541035D9F12F27608999903', '0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(5) balanceOf(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(6) allowance(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(7) allowance(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)
+	(2) approve(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 20], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) approve(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 5221228450014905176016095122077795088580016795350798551179710371751618187152], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(4) setTokenPrice([31268806636575681996039105792434620911576843575390698731010695755635684079401], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) withdrawEther(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(6) withdrawEther(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) withdrawEther(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) approve(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 0], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(3) transfer(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 34731241298886559633715217169839452144509415633878523912854497964292833839173], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(4) getTokenPrice([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(5) _fallback([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 157506627287467353)	Returns: 
+	(6) balanceOf(['0xC352C77703A000382541035D9F12F27608999903'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) transferOwnership(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) setTransferBlocked([False], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(3) withdrawEther(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) transfer(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 84146269335476045311150149267051299033473459052165674465236849531215815518157], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) approve(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 57080305976332038527666470002463628783336969955961488812671980200277814998070], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(6) approve(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 500000000000000], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) approve(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 1000000000000000000], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) setTransferBlocked([False], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(3) withdrawEther(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) transfer(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 84146269335476045311150149267051299033473459052165674465236849531215815518157], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) approve(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 57080305976332038527666470002463628783336969955961488812671980200277814998070], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(6) approve(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 500000000000000], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) approve(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 1000000000000000000], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) setTransferBlocked([False], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(3) withdrawEther(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) transfer(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 84146269335476045311150149267051299033473459052165674465236849531215815518157], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) approve(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 57080305976332038527666470002463628783336969955961488812671980200277814998070], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(6) approve(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 500000000000000], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) approve(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 1000000000000000000], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) transfer(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 0], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(3) allowance(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(4) buyTokens(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 100698932227222303)	Returns: 
+	(5) setTokenPrice([1000000000000000000], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(6) setBuyAllowed([True], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) setBuyAllowed([True], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(8) _fallback([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(9) setTransferBlocked([False], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(10) withdrawEther(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) getTokenPrice([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(3) withdrawEther(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(4) approve(['0xC352C77703A000382541035D9F12F27608999903', 20], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) buyTokens(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 132355740992548318)	Returns: 
+	(6) allowance(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(7) transferOwnership(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) transferOwnership(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) setBuyAllowed([True], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(4) getTokenPrice([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) balanceOf(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(6) _fallback([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 38174933450025330)	Returns: true
+	(7) setBuyAllowed([False], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(8) withdrawEther(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) transferOwnership(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) setBuyAllowed([True], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(4) getTokenPrice([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) balanceOf(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(6) _fallback([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 38174933450025330)	Returns: true
+	(7) setBuyAllowed([False], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(8) withdrawEther(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) transferOwnership(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) setBuyAllowed([True], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(4) getTokenPrice([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) balanceOf(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(6) _fallback([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 38174933450025330)	Returns: true
+	(7) setBuyAllowed([False], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(8) withdrawEther(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) transferOwnership(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) setBuyAllowed([True], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(4) getTokenPrice([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) balanceOf(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(6) _fallback([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 38174933450025330)	Returns: true
+	(7) setBuyAllowed([False], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(8) withdrawEther(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) setTokenPrice([21000000], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(3) balanceOf(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) setBuyAllowed([True], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) setTokenPrice([75818505194584182110007418355841079691054102366392857724451016085410206281168], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(6) setTokenPrice([54441519753767499204737519131731096581160534078514291646895258533487504281843], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(7) _fallback([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 42539375992599058)	Returns: 
+	(8) transferOwnership(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(9) transferFrom(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 28768334205980329920982818682008586555422151813177782654756912538543426876864], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) transferOwnership(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) setBuyAllowed([True], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(4) getTokenPrice([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) balanceOf(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(6) _fallback([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 38174933450025330)	Returns: true
+	(7) setBuyAllowed([False], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(8) withdrawEther(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) _fallback([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) setBuyAllowed([True], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(4) setBuyAllowed([True], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(5) setTransferBlocked([True], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(6) getTokenPrice([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(7) balanceOf(['0xC352C77703A000382541035D9F12F27608999903'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) transferOwnership(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) setBuyAllowed([True], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(4) getTokenPrice([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) balanceOf(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(6) _fallback([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 38174933450025330)	Returns: true
+	(7) setBuyAllowed([False], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(8) withdrawEther(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) transferOwnership(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) setBuyAllowed([True], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(4) getTokenPrice([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) balanceOf(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(6) _fallback([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 38174933450025330)	Returns: true
+	(7) setBuyAllowed([False], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(8) withdrawEther(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) transferOwnership(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) setBuyAllowed([True], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(4) getTokenPrice([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) balanceOf(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(6) _fallback([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 38174933450025330)	Returns: true
+	(7) setBuyAllowed([False], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(8) withdrawEther(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) _fallback([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) setBuyAllowed([True], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(4) setBuyAllowed([True], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(5) setTransferBlocked([True], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(6) getTokenPrice([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(7) balanceOf(['0xC352C77703A000382541035D9F12F27608999903'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) _fallback([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) setBuyAllowed([True], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(4) setBuyAllowed([True], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(5) setTransferBlocked([True], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(6) getTokenPrice([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(7) balanceOf(['0xC352C77703A000382541035D9F12F27608999903'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true

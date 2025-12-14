@@ -1,0 +1,9 @@
+Source Function,Target Function
+"approve(address,uint256)",burn(uint256)
+"transferFrom(address,address,uint256)",burn(uint256)
+"mintToken(address,uint256)",burn(uint256)
+"transfer(address,uint256)",burn(uint256)
+burn(uint256),"mintToken(address,uint256)"
+transferOwnership(address),"mintToken(address,uint256)"
+burn(uint256),transferOwnership(address)
+"mintToken(address,uint256)",transferOwnership(address)

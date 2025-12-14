@@ -1,0 +1,96 @@
+Contract:			ProofofPutin
+Number of Relevant Branches:	44
+Number of Branches Covered:		3
+Runtime: 											3252.454647
+Blockchain Time: 							3089.915497
+Iterations										
+11
+--------------------------------------------------
+METHODS:
+
+Constructor:
+	Inputs :[]
+	Payable: nonpayable
+_fallback:
+
+buy:
+
+reinvest:
+
+exit:
+
+withdraw:
+
+sell:
+
+transfer:
+
+totalEthereumBalance:
+
+totalSupply:
+
+myTokens:
+
+myDividends:
+
+balanceOf:
+
+dividendsOf:
+
+sellPrice:
+
+buyPrice:
+
+calculateTokensReceived:
+
+calculateEthereumReceived:
+
+
+--------------------------------------------------
+
+            TESTS:
+
+	(1) constructor([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)
+	(2) sell([12761096496251416389310565824229329717453648497059126034474444964989882430863], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(3) _fallback([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 30043420434087179)	Returns: true
+	(4) totalSupply([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(5) exit([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(6) myDividends([False], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) transfer(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 1733600268468889440192572333567489799346232045885447236403458778562420685167], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)
+	(2) calculateTokensReceived([297616], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(3) reinvest([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) sell([297616], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) calculateTokensReceived([82761525389210586742027605451664784580341234169895088801906011453268805595374], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(6) exit([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) dividendsOf(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)
+	(2) calculateTokensReceived([297616], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(3) reinvest([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) sell([297616], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) calculateTokensReceived([82761525389210586742027605451664784580341234169895088801906011453268805595374], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(6) exit([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) dividendsOf(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true

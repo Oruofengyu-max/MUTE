@@ -1,0 +1,21 @@
+Source Function,Target Function
+renounceOwnership(),"payOutBounty(address,address)"
+withdrawEther(),"payOutBounty(address,address)"
+transferOwnership(address),"payOutBounty(address,address)"
+withdrawERC20Token(address),"payOutBounty(address,address)"
+"payOutBounty(address,address)",renounceOwnership()
+withdrawEther(),renounceOwnership()
+transferOwnership(address),renounceOwnership()
+withdrawERC20Token(address),renounceOwnership()
+"payOutBounty(address,address)",withdrawEther()
+renounceOwnership(),withdrawEther()
+transferOwnership(address),withdrawEther()
+withdrawERC20Token(address),withdrawEther()
+"payOutBounty(address,address)",transferOwnership(address)
+renounceOwnership(),transferOwnership(address)
+withdrawEther(),transferOwnership(address)
+withdrawERC20Token(address),transferOwnership(address)
+"payOutBounty(address,address)",withdrawERC20Token(address)
+renounceOwnership(),withdrawERC20Token(address)
+withdrawEther(),withdrawERC20Token(address)
+transferOwnership(address),withdrawERC20Token(address)

@@ -1,0 +1,27 @@
+Source Function,Target Function
+"changeNonAccreditedLimit(address[],uint256[])","buyWithUSD(address,uint256)"
+buyWithETH(address),"buyWithUSD(address,uint256)"
+"buyWithPOLY(address,uint256)","buyWithUSD(address,uint256)"
+"changeAccredited(address[],bool[])","buyWithUSD(address,uint256)"
+"changeNonAccreditedLimit(address[],uint256[])",buyWithETH(address)
+"buyWithUSD(address,uint256)",buyWithETH(address)
+"buyWithPOLY(address,uint256)",buyWithETH(address)
+"changeAccredited(address[],bool[])",buyWithETH(address)
+"changeNonAccreditedLimit(address[],uint256[])","buyWithPOLY(address,uint256)"
+"buyWithUSD(address,uint256)","buyWithPOLY(address,uint256)"
+buyWithETH(address),"buyWithPOLY(address,uint256)"
+"changeAccredited(address[],bool[])","buyWithPOLY(address,uint256)"
+"buyWithUSD(address,uint256)",takeFee(uint256)
+unpause(),takeFee(uint256)
+changeAllowBeneficialInvestments(bool),takeFee(uint256)
+buyWithETH(address),takeFee(uint256)
+finalize(),takeFee(uint256)
+"buyWithPOLY(address,uint256)",takeFee(uint256)
+pause(),takeFee(uint256)
+"buyWithUSD(address,uint256)","configure(uint256,uint256,uint256[],uint256[],uint256[],uint256[],uint256,uint256,uint8[],address,address,address)"
+unpause(),"configure(uint256,uint256,uint256[],uint256[],uint256[],uint256[],uint256,uint256,uint8[],address,address,address)"
+changeAllowBeneficialInvestments(bool),"configure(uint256,uint256,uint256[],uint256[],uint256[],uint256[],uint256,uint256,uint8[],address,address,address)"
+buyWithETH(address),"configure(uint256,uint256,uint256[],uint256[],uint256[],uint256[],uint256,uint256,uint8[],address,address,address)"
+finalize(),"configure(uint256,uint256,uint256[],uint256[],uint256[],uint256[],uint256,uint256,uint8[],address,address,address)"
+"buyWithPOLY(address,uint256)","configure(uint256,uint256,uint256[],uint256[],uint256[],uint256[],uint256,uint256,uint8[],address,address,address)"
+pause(),"configure(uint256,uint256,uint256[],uint256[],uint256[],uint256[],uint256,uint256,uint8[],address,address,address)"

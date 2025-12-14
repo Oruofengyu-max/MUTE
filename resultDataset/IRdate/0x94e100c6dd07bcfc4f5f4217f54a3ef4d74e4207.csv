@@ -1,0 +1,11 @@
+Source Function,Target Function
+"transferFrom(address,address,uint256)","approve(address,uint256)"
+burn(uint256),"approve(address,uint256)"
+mint(uint256),"approve(address,uint256)"
+"transfer(address,uint256)","approve(address,uint256)"
+register(string),"approve(address,uint256)"
+"approve(address,uint256)",burn(uint256)
+"transferFrom(address,address,uint256)",burn(uint256)
+mint(uint256),burn(uint256)
+"transfer(address,uint256)",burn(uint256)
+register(string),burn(uint256)

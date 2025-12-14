@@ -1,0 +1,13 @@
+Source Function,Target Function
+"freeze(address,uint256)","transferFrom(address,address,uint256)"
+"unfreeze(address,uint256)","transferFrom(address,address,uint256)"
+"transfer(address,uint256)","transferFrom(address,address,uint256)"
+"transferFrom(address,address,uint256)","freeze(address,uint256)"
+"unfreeze(address,uint256)","freeze(address,uint256)"
+"transfer(address,uint256)","freeze(address,uint256)"
+"transferFrom(address,address,uint256)","unfreeze(address,uint256)"
+"freeze(address,uint256)","unfreeze(address,uint256)"
+"transfer(address,uint256)","unfreeze(address,uint256)"
+"transferFrom(address,address,uint256)","transfer(address,uint256)"
+"freeze(address,uint256)","transfer(address,uint256)"
+"unfreeze(address,uint256)","transfer(address,uint256)"

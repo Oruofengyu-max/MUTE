@@ -1,0 +1,11 @@
+Source Function,Target Function
+"transferFrom(address,address,uint256)","approve(address,uint256)"
+"createItem(string,string,string,string,uint128)","approve(address,uint256)"
+"setApprovalForAll(address,bool)","approve(address,uint256)"
+"approve(address,uint256)","transferFrom(address,address,uint256)"
+"createItem(string,string,string,string,uint128)","transferFrom(address,address,uint256)"
+"setApprovalForAll(address,bool)","transferFrom(address,address,uint256)"
+"approve(address,uint256)",ownerOf(uint256)
+"transferFrom(address,address,uint256)",ownerOf(uint256)
+"createItem(string,string,string,string,uint128)",ownerOf(uint256)
+"setApprovalForAll(address,bool)",ownerOf(uint256)

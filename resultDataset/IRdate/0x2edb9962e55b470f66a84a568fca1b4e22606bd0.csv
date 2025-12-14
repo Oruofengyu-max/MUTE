@@ -1,0 +1,12 @@
+Source Function,Target Function
+"adminClaimAirdrop(address,uint256)",burn(uint256)
+"adminClaimAirdropMultiple(address[],uint256)",burn(uint256)
+"transfer(address,uint256)",burn(uint256)
+burn(uint256),"adminClaimAirdrop(address,uint256)"
+endDistribution(),"adminClaimAirdrop(address,uint256)"
+"adminClaimAirdropMultiple(address[],uint256)","adminClaimAirdrop(address,uint256)"
+startDistribution(),"adminClaimAirdrop(address,uint256)"
+burn(uint256),"adminClaimAirdropMultiple(address[],uint256)"
+"adminClaimAirdrop(address,uint256)","adminClaimAirdropMultiple(address[],uint256)"
+endDistribution(),"adminClaimAirdropMultiple(address[],uint256)"
+startDistribution(),"adminClaimAirdropMultiple(address[],uint256)"

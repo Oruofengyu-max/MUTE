@@ -1,0 +1,18 @@
+Source Function,Target Function
+"transferFrom(address,address,uint256)","approve(address,uint256)"
+"transfer(address,uint256)","approve(address,uint256)"
+"freezeAccount(address,bool)","approve(address,uint256)"
+"approve(address,uint256)","transferFrom(address,address,uint256)"
+"transfer(address,uint256)","transferFrom(address,address,uint256)"
+"freezeAccount(address,bool)","transferFrom(address,address,uint256)"
+transferOwnership(address),"transferFrom(address,address,uint256)"
+switchLiquidity(bool),"transferFrom(address,address,uint256)"
+"approve(address,uint256)","transfer(address,uint256)"
+"transferFrom(address,address,uint256)","transfer(address,uint256)"
+"freezeAccount(address,bool)","transfer(address,uint256)"
+transferOwnership(address),"transfer(address,uint256)"
+switchLiquidity(bool),"transfer(address,uint256)"
+transferOwnership(address),"freezeAccount(address,bool)"
+switchLiquidity(bool),"freezeAccount(address,bool)"
+switchLiquidity(bool),transferOwnership(address)
+transferOwnership(address),switchLiquidity(bool)

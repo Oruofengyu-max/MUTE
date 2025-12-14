@@ -1,0 +1,51 @@
+Contract:			NJES
+Number of Relevant Branches:	6
+Number of Branches Covered:		2
+Runtime: 											302.615362
+Blockchain Time: 							210.405997
+Iterations										
+11
+--------------------------------------------------
+METHODS:
+
+Constructor:
+	Inputs :[]
+	Payable: nonpayable
+balanceOf:
+
+transfer:
+
+
+--------------------------------------------------
+
+            TESTS:
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) transfer(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 28622950934346020037426408765852844421919426243327895746162622332551797477799], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(3) transfer(['0xC352C77703A000382541035D9F12F27608999903', 49], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(4) transfer(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 114848188352711052188019562282208886260679021002321497379035415847315082267443], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) transfer(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 929], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) transfer(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 97347971901010556176634167443031155514292180753875201719011823520776808675074], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(7) transfer(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 35721625067478448138005848817319155224581188910107348249448382061312277960730], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)
+	(2) balanceOf(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(3) balanceOf(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) balanceOf(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) balanceOf(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(6) transfer(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 9241145279207418890495657348621454589454774166937472185158875397068789324227], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(7) balanceOf(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true

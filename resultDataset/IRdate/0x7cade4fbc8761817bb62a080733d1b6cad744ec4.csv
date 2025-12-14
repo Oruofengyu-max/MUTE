@@ -1,0 +1,9 @@
+Source Function,Target Function
+transferOwnership(address),"registerToken(uint32,address,uint8)"
+renounceOwnership(),"registerToken(uint32,address,uint8)"
+deregisterToken(uint32),"registerToken(uint32,address,uint8)"
+renounceOwnership(),transferOwnership(address)
+transferOwnership(address),deregisterToken(uint32)
+renounceOwnership(),deregisterToken(uint32)
+"registerToken(uint32,address,uint8)",deregisterToken(uint32)
+transferOwnership(address),renounceOwnership()

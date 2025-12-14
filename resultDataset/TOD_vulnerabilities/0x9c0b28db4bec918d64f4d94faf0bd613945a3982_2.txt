@@ -1,0 +1,366 @@
+Contract:			HPB
+Number of Relevant Branches:	21
+Number of Branches Covered:		21
+Runtime: 											75.681362
+Blockchain Time: 							50.189164
+Iterations										
+2
+--------------------------------------------------
+METHODS:
+
+Constructor:
+	Inputs :[]
+	Payable: nonpayable
+_fallback:
+
+userCount:
+
+getTotal:
+
+balanceOf:
+
+contractBalance:
+
+transfer:
+
+transferFrom:
+
+approve:
+
+allowance:
+
+
+--------------------------------------------------
+
+            TESTS:
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) userCount([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(3) transferFrom(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 78797244450187116175493209696915576618502865637633125185629274195918509832259], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(4) getTotal([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) contractBalance([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(6) userCount([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(7) getTotal([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) _fallback([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 169800169345368292)	Returns: true
+	(3) transferFrom(['0xC352C77703A000382541035D9F12F27608999903', '0xC352C77703A000382541035D9F12F27608999903', 10000000000000000], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) approve(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 50914736707267632105141791402100359022472390242705886981435575857988404051712], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(5) getTotal([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) _fallback([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) transfer(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 8], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) _fallback([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 169800169345368292)	Returns: true
+	(3) transferFrom(['0xC352C77703A000382541035D9F12F27608999903', '0xC352C77703A000382541035D9F12F27608999903', 10000000000000000], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) approve(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 50914736707267632105141791402100359022472390242705886981435575857988404051712], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(5) getTotal([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) _fallback([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) transfer(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 8], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) transfer(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 1], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(3) balanceOf(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(4) allowance(['0xC352C77703A000382541035D9F12F27608999903', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) transfer(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 43642000787572997037942054024345068324899411276717185000307721674601392359304], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(6) _fallback([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 135437908801698994)	Returns: true
+	(7) approve(['0xC352C77703A000382541035D9F12F27608999903', 0], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(8) contractBalance([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(9) _fallback([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 46317706449956898)	Returns: true
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) _fallback([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 169800169345368292)	Returns: true
+	(3) transferFrom(['0xC352C77703A000382541035D9F12F27608999903', '0xC352C77703A000382541035D9F12F27608999903', 10000000000000000], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) approve(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 50914736707267632105141791402100359022472390242705886981435575857988404051712], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(5) getTotal([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) _fallback([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) transfer(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 8], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) _fallback([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 169800169345368292)	Returns: true
+	(3) transferFrom(['0xC352C77703A000382541035D9F12F27608999903', '0xC352C77703A000382541035D9F12F27608999903', 10000000000000000], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) approve(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 50914736707267632105141791402100359022472390242705886981435575857988404051712], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(5) getTotal([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) _fallback([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) transfer(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 8], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) _fallback([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 169800169345368292)	Returns: true
+	(3) transferFrom(['0xC352C77703A000382541035D9F12F27608999903', '0xC352C77703A000382541035D9F12F27608999903', 10000000000000000], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) approve(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 50914736707267632105141791402100359022472390242705886981435575857988404051712], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(5) getTotal([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) _fallback([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) transfer(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 8], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) _fallback([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 169800169345368292)	Returns: true
+	(3) transferFrom(['0xC352C77703A000382541035D9F12F27608999903', '0xC352C77703A000382541035D9F12F27608999903', 10000000000000000], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) approve(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 50914736707267632105141791402100359022472390242705886981435575857988404051712], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(5) getTotal([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) _fallback([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) transfer(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 8], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) allowance(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(3) balanceOf(['0xC352C77703A000382541035D9F12F27608999903'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(4) contractBalance([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(5) transfer(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 60165513969309492559598073656551853294681001973281212268710881678627268554469], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(6) getTotal([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(7) _fallback([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 165633848839924772)	Returns: true
+	(8) allowance(['0xC352C77703A000382541035D9F12F27608999903', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(9) getTotal([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(10) _fallback([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 62590240597054662)	Returns: true
+	(11) _fallback([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 177823598399705581)	Returns: true
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) transfer(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 1], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(3) balanceOf(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(4) allowance(['0xC352C77703A000382541035D9F12F27608999903', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) transfer(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 43642000787572997037942054024345068324899411276717185000307721674601392359304], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(6) _fallback([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 135437908801698994)	Returns: true
+	(7) approve(['0xC352C77703A000382541035D9F12F27608999903', 0], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(8) contractBalance([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(9) _fallback([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 46317706449956898)	Returns: true
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) _fallback([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 169800169345368292)	Returns: true
+	(3) transferFrom(['0xC352C77703A000382541035D9F12F27608999903', '0xC352C77703A000382541035D9F12F27608999903', 10000000000000000], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) approve(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 50914736707267632105141791402100359022472390242705886981435575857988404051712], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(5) getTotal([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) _fallback([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) transfer(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 8], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) _fallback([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 169800169345368292)	Returns: true
+	(3) transferFrom(['0xC352C77703A000382541035D9F12F27608999903', '0xC352C77703A000382541035D9F12F27608999903', 10000000000000000], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) approve(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 50914736707267632105141791402100359022472390242705886981435575857988404051712], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(5) getTotal([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) _fallback([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) transfer(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 8], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) _fallback([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 169800169345368292)	Returns: true
+	(3) transferFrom(['0xC352C77703A000382541035D9F12F27608999903', '0xC352C77703A000382541035D9F12F27608999903', 10000000000000000], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) approve(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 50914736707267632105141791402100359022472390242705886981435575857988404051712], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(5) getTotal([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) _fallback([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) transfer(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 8], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) _fallback([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 169800169345368292)	Returns: true
+	(3) transferFrom(['0xC352C77703A000382541035D9F12F27608999903', '0xC352C77703A000382541035D9F12F27608999903', 10000000000000000], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) approve(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 50914736707267632105141791402100359022472390242705886981435575857988404051712], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(5) getTotal([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) _fallback([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) transfer(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 8], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) balanceOf(['0xC352C77703A000382541035D9F12F27608999903'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(3) balanceOf(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(4) transfer(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 19926179021817218482482702872852351747694549244831422809045369512911097293746], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) allowance(['0xC352C77703A000382541035D9F12F27608999903', '0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(6) transfer(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 1], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) transfer(['0xC352C77703A000382541035D9F12F27608999903', 2], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) _fallback([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 169800169345368292)	Returns: true
+	(3) transferFrom(['0xC352C77703A000382541035D9F12F27608999903', '0xC352C77703A000382541035D9F12F27608999903', 10000000000000000], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) approve(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 50914736707267632105141791402100359022472390242705886981435575857988404051712], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(5) getTotal([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) _fallback([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) transfer(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 8], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) userCount([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(3) transferFrom(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 78797244450187116175493209696915576618502865637633125185629274195918509832259], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(4) getTotal([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) contractBalance([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(6) userCount([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(7) getTotal([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) balanceOf(['0xC352C77703A000382541035D9F12F27608999903'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(3) balanceOf(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(4) transfer(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 19926179021817218482482702872852351747694549244831422809045369512911097293746], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) allowance(['0xC352C77703A000382541035D9F12F27608999903', '0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(6) transfer(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 1], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) transfer(['0xC352C77703A000382541035D9F12F27608999903', 2], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) _fallback([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 169800169345368292)	Returns: true
+	(3) transferFrom(['0xC352C77703A000382541035D9F12F27608999903', '0xC352C77703A000382541035D9F12F27608999903', 10000000000000000], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) approve(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 50914736707267632105141791402100359022472390242705886981435575857988404051712], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(5) getTotal([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) _fallback([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) transfer(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 8], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) _fallback([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 169800169345368292)	Returns: true
+	(3) transferFrom(['0xC352C77703A000382541035D9F12F27608999903', '0xC352C77703A000382541035D9F12F27608999903', 10000000000000000], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) approve(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 50914736707267632105141791402100359022472390242705886981435575857988404051712], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(5) getTotal([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) _fallback([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) transfer(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 8], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) _fallback([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 169800169345368292)	Returns: true
+	(3) transferFrom(['0xC352C77703A000382541035D9F12F27608999903', '0xC352C77703A000382541035D9F12F27608999903', 10000000000000000], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) approve(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 50914736707267632105141791402100359022472390242705886981435575857988404051712], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(5) getTotal([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) _fallback([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) transfer(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 8], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true

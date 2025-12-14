@@ -1,0 +1,1131 @@
+Contract:			Vineyard
+Number of Relevant Branches:	95
+Number of Branches Covered:		70
+Runtime: 											1770.27537
+Blockchain Time: 							1575.220448
+Iterations										
+11
+--------------------------------------------------
+METHODS:
+
+Constructor:
+	Inputs :[{'name': '_wallet', 'type': 'address'}]
+	Payable: nonpayable
+transferWalletOwnership:
+
+harvest:
+
+produceWine:
+
+buildWinery:
+
+sellGrapes:
+
+buyGrapes:
+
+calculateTrade:
+
+calculateGrapeSell:
+
+calculateGrapeBuy:
+
+calculateGrapeBuySimple:
+
+devFee:
+
+seedMarket:
+
+getFreeVines:
+
+addFreeVineyard:
+
+setLandProductionMultiplier:
+
+setLandProductionMultiplierCCUser:
+
+getBalance:
+
+getMyVines:
+
+getMyGrapes:
+
+getMyWine:
+
+getWineProductionRate:
+
+getGrapesSinceLastHarvest:
+
+getMyLandMultiplier:
+
+getGrapesToBuildWinery:
+
+
+--------------------------------------------------
+
+            TESTS:
+
+	(1) constructor(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) getMyGrapes([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) calculateTrade([693, 20464967729387217660441460010926636413131516865579347330278372545105776744801, 262], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(4) devFee([64977404471664418665581603948756097627863542449454582297133983941297721046019], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) getMyWine([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(6) calculateGrapeBuy([9025075150869907135535813874733552071624285967003057458357069163049460434329, 57768248616174683047275612665827974199322184093201957279203216411199378920887], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(7) getGrapesSinceLastHarvest(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) getWineProductionRate([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(3) seedMarket([24145178569871097150281945064175860315096822652208751139732607578746592629066], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 100986430446969152)	Returns: true
+	(4) getMyLandMultiplier([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) calculateGrapeBuySimple([500000], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(6) harvest(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(7) getWineProductionRate([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) getWineProductionRate([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(3) seedMarket([24145178569871097150281945064175860315096822652208751139732607578746592629066], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 100986430446969152)	Returns: true
+	(4) getMyLandMultiplier([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) calculateGrapeBuySimple([500000], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(6) harvest(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(7) getWineProductionRate([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) getWineProductionRate([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(3) seedMarket([24145178569871097150281945064175860315096822652208751139732607578746592629066], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 100986430446969152)	Returns: true
+	(4) getMyLandMultiplier([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) calculateGrapeBuySimple([500000], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(6) harvest(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(7) getWineProductionRate([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) getWineProductionRate([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(3) seedMarket([24145178569871097150281945064175860315096822652208751139732607578746592629066], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 100986430446969152)	Returns: true
+	(4) getMyLandMultiplier([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) calculateGrapeBuySimple([500000], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(6) harvest(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(7) getWineProductionRate([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) getWineProductionRate([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(3) seedMarket([24145178569871097150281945064175860315096822652208751139732607578746592629066], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 100986430446969152)	Returns: true
+	(4) getMyLandMultiplier([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) calculateGrapeBuySimple([500000], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(6) harvest(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(7) getWineProductionRate([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) calculateTrade([86400, 91551029361876034474642921887395681805469713357401091907944677054167395505393, 63955603050778712344123172984131500756077845974124668497065488505362733666025], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) harvest(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) setLandProductionMultiplierCCUser(['0x4e4b6a5959426e204449464a69756778426b62434a565258677078786c615a6f', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(5) buildWinery([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(6) calculateGrapeBuy([67259778220010969645820131831843459164670932663934719107870242399658905496997, 19694353378963399021280847769816212902906164388596094842118609494769376138393], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(7) getWineProductionRate([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+
+	(1) constructor(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) calculateTrade([86400, 91551029361876034474642921887395681805469713357401091907944677054167395505393, 63955603050778712344123172984131500756077845974124668497065488505362733666025], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) harvest(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) setLandProductionMultiplierCCUser(['0x4e4b6a5959426e204449464a69756778426b62434a565258677078786c615a6f', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(5) buildWinery([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(6) calculateGrapeBuy([67259778220010969645820131831843459164670932663934719107870242399658905496997, 19694353378963399021280847769816212902906164388596094842118609494769376138393], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(7) getWineProductionRate([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+
+	(1) constructor(['0xC352C77703A000382541035D9F12F27608999903'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) getGrapesSinceLastHarvest(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(3) setLandProductionMultiplier(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(4) setLandProductionMultiplierCCUser(['0x4972772048206464457151786457564c4371684154754b695749546f58556b47', '0xC352C77703A000382541035D9F12F27608999903'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(5) getBalance([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(6) calculateTrade([262, 73, 86400], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) calculateGrapeSell([3456000000], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor(['0xC352C77703A000382541035D9F12F27608999903'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) getGrapesSinceLastHarvest(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(3) setLandProductionMultiplier(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(4) setLandProductionMultiplierCCUser(['0x4972772048206464457151786457564c4371684154754b695749546f58556b47', '0xC352C77703A000382541035D9F12F27608999903'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(5) getBalance([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(6) calculateTrade([262, 73, 86400], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) calculateGrapeSell([3456000000], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor(['0xC352C77703A000382541035D9F12F27608999903'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) getGrapesSinceLastHarvest(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(3) setLandProductionMultiplier(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(4) setLandProductionMultiplierCCUser(['0x4972772048206464457151786457564c4371684154754b695749546f58556b47', '0xC352C77703A000382541035D9F12F27608999903'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(5) getBalance([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(6) calculateTrade([262, 73, 86400], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) calculateGrapeSell([3456000000], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) harvest(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) calculateGrapeBuy([52456489804170794588592298546312687701864135669345661398233313940735569615285, 106815532784203933968447159608166279472357836503398717733206364318081821895681], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(4) calculateGrapeSell([77098419644594560780658848219828586186614059963783392161646736484054997875171], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(5) getWineProductionRate([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(6) harvest(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(7) buildWinery([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+
+	(1) constructor(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) getGrapesSinceLastHarvest(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(3) seedMarket([71596424304429622700012653060155169231137919644194473325106844118459638178006], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(4) getMyVines([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(5) buyGrapes([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 85634227926532297)	Returns: 
+	(6) addFreeVineyard(['0xC352C77703A000382541035D9F12F27608999903'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(7) seedMarket([1480863386135690808045532794422773261217394042250102199927945295236193520866], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 154675418879221555)	Returns: 
+	(8) buildWinery([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(9) getBalance([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) getGrapesSinceLastHarvest(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(3) seedMarket([71596424304429622700012653060155169231137919644194473325106844118459638178006], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(4) getMyVines([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(5) buyGrapes([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 85634227926532297)	Returns: 
+	(6) addFreeVineyard(['0xC352C77703A000382541035D9F12F27608999903'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(7) seedMarket([1480863386135690808045532794422773261217394042250102199927945295236193520866], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 154675418879221555)	Returns: 
+	(8) buildWinery([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(9) getBalance([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) getGrapesSinceLastHarvest(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(3) seedMarket([71596424304429622700012653060155169231137919644194473325106844118459638178006], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(4) getMyVines([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(5) buyGrapes([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 85634227926532297)	Returns: 
+	(6) addFreeVineyard(['0xC352C77703A000382541035D9F12F27608999903'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(7) seedMarket([1480863386135690808045532794422773261217394042250102199927945295236193520866], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 154675418879221555)	Returns: 
+	(8) buildWinery([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(9) getBalance([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) calculateTrade([86400, 91551029361876034474642921887395681805469713357401091907944677054167395505393, 63955603050778712344123172984131500756077845974124668497065488505362733666025], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) harvest(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) setLandProductionMultiplierCCUser(['0x4e4b6a5959426e204449464a69756778426b62434a565258677078786c615a6f', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(5) buildWinery([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(6) calculateGrapeBuy([67259778220010969645820131831843459164670932663934719107870242399658905496997, 19694353378963399021280847769816212902906164388596094842118609494769376138393], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(7) getWineProductionRate([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+
+	(1) constructor(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) calculateTrade([86400, 91551029361876034474642921887395681805469713357401091907944677054167395505393, 63955603050778712344123172984131500756077845974124668497065488505362733666025], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) harvest(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) setLandProductionMultiplierCCUser(['0x4e4b6a5959426e204449464a69756778426b62434a565258677078786c615a6f', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(5) buildWinery([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(6) calculateGrapeBuy([67259778220010969645820131831843459164670932663934719107870242399658905496997, 19694353378963399021280847769816212902906164388596094842118609494769376138393], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(7) getWineProductionRate([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+
+	(1) constructor(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) sellGrapes([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) getMyLandMultiplier([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(4) getGrapesSinceLastHarvest(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) devFee([18929609549896798914040097390752067697027468646291446561988031985247639010967], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(6) calculateGrapeBuySimple([5], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) sellGrapes([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+
+	(1) constructor(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) calculateTrade([86400, 91551029361876034474642921887395681805469713357401091907944677054167395505393, 63955603050778712344123172984131500756077845974124668497065488505362733666025], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) harvest(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) setLandProductionMultiplierCCUser(['0x4e4b6a5959426e204449464a69756778426b62434a565258677078786c615a6f', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(5) buildWinery([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(6) calculateGrapeBuy([67259778220010969645820131831843459164670932663934719107870242399658905496997, 19694353378963399021280847769816212902906164388596094842118609494769376138393], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(7) getWineProductionRate([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+
+	(1) constructor(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) calculateTrade([86400, 91551029361876034474642921887395681805469713357401091907944677054167395505393, 63955603050778712344123172984131500756077845974124668497065488505362733666025], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) harvest(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) setLandProductionMultiplierCCUser(['0x4e4b6a5959426e204449464a69756778426b62434a565258677078786c615a6f', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(5) buildWinery([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(6) calculateGrapeBuy([67259778220010969645820131831843459164670932663934719107870242399658905496997, 19694353378963399021280847769816212902906164388596094842118609494769376138393], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(7) getWineProductionRate([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+
+	(1) constructor(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)
+	(2) transferWalletOwnership(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(3) setLandProductionMultiplierCCUser(['0x784151204670477555554275754c7353626c20767963766d497657535570774f', '0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(4) getWineProductionRate([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(5) calculateTrade([60, 86400, 96841121474095669835364338534558612046003957067596058024640712488809100835584], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(6) devFee([18524549984763575224754329050148113245625246207426045235024188171786880241046], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) transferWalletOwnership(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+
+	(1) constructor(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)
+	(2) transferWalletOwnership(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(3) setLandProductionMultiplierCCUser(['0x784151204670477555554275754c7353626c20767963766d497657535570774f', '0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(4) getWineProductionRate([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(5) calculateTrade([60, 86400, 96841121474095669835364338534558612046003957067596058024640712488809100835584], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(6) devFee([18524549984763575224754329050148113245625246207426045235024188171786880241046], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) transferWalletOwnership(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+
+	(1) constructor(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) calculateGrapeSell([68076629746193238224982505587525208754309343561900352894176010563653359502501], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(3) calculateGrapeSell([7], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(4) getMyWine([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(5) setLandProductionMultiplierCCUser(['0x694561496b6e797746516f4920734c4a5a625063666a7a58734d745358594d43', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) getMyVines([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) getGrapesToBuildWinery([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) getMyGrapes([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) calculateTrade([693, 20464967729387217660441460010926636413131516865579347330278372545105776744801, 262], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(4) devFee([64977404471664418665581603948756097627863542449454582297133983941297721046019], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) getMyWine([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(6) calculateGrapeBuy([9025075150869907135535813874733552071624285967003057458357069163049460434329, 57768248616174683047275612665827974199322184093201957279203216411199378920887], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(7) getGrapesSinceLastHarvest(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) sellGrapes([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) getMyLandMultiplier([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(4) getGrapesSinceLastHarvest(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) devFee([18929609549896798914040097390752067697027468646291446561988031985247639010967], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(6) calculateGrapeBuySimple([5], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) sellGrapes([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+
+	(1) constructor(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) calculateGrapeSell([68076629746193238224982505587525208754309343561900352894176010563653359502501], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(3) calculateGrapeSell([7], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(4) getMyWine([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(5) setLandProductionMultiplierCCUser(['0x694561496b6e797746516f4920734c4a5a625063666a7a58734d745358594d43', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) getMyVines([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) getGrapesToBuildWinery([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) buildWinery([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) calculateGrapeSell([4563828423203830113037133426223447004113064022263048353208426364993896756969], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(4) calculateGrapeSell([104205500151596413260613593066222045982805867628010161248927375282507762167117], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) buildWinery([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(6) seedMarket([66776469907528109443188058981022500646322952555814510765717951978598710710267], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) getFreeVines([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true]
+
+	(1) constructor(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) buildWinery([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) calculateGrapeSell([4563828423203830113037133426223447004113064022263048353208426364993896756969], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(4) calculateGrapeSell([104205500151596413260613593066222045982805867628010161248927375282507762167117], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) buildWinery([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(6) seedMarket([66776469907528109443188058981022500646322952555814510765717951978598710710267], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) getFreeVines([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true]
+
+	(1) constructor(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) buildWinery([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) calculateGrapeSell([4563828423203830113037133426223447004113064022263048353208426364993896756969], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(4) calculateGrapeSell([104205500151596413260613593066222045982805867628010161248927375282507762167117], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) buildWinery([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(6) seedMarket([66776469907528109443188058981022500646322952555814510765717951978598710710267], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) getFreeVines([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true]
+
+	(1) constructor(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) buildWinery([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) calculateGrapeSell([4563828423203830113037133426223447004113064022263048353208426364993896756969], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(4) calculateGrapeSell([104205500151596413260613593066222045982805867628010161248927375282507762167117], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) buildWinery([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(6) seedMarket([66776469907528109443188058981022500646322952555814510765717951978598710710267], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) getFreeVines([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true]
+
+	(1) constructor(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)
+	(2) getMyGrapes([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(3) seedMarket([5], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(4) devFee([20601671235260520181001497057257713632818908009871416601146250478925452135613], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(5) calculateTrade([262, 66075805143918527534137997623462431485878139526186335677671135831452850320542, 27444712529284481582514688816004951404854377328695676563636571298707950194927], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(6) sellGrapes([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(7) getMyVines([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) sellGrapes([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) getMyLandMultiplier([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(4) getGrapesSinceLastHarvest(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) devFee([18929609549896798914040097390752067697027468646291446561988031985247639010967], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(6) calculateGrapeBuySimple([5], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) sellGrapes([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+
+	(1) constructor(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) sellGrapes([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) getMyLandMultiplier([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(4) getGrapesSinceLastHarvest(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) devFee([18929609549896798914040097390752067697027468646291446561988031985247639010967], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(6) calculateGrapeBuySimple([5], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) sellGrapes([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+
+	(1) constructor(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) buildWinery([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) calculateGrapeSell([4563828423203830113037133426223447004113064022263048353208426364993896756969], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(4) calculateGrapeSell([104205500151596413260613593066222045982805867628010161248927375282507762167117], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) buildWinery([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(6) seedMarket([66776469907528109443188058981022500646322952555814510765717951978598710710267], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) getFreeVines([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true]
+
+	(1) constructor(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) buildWinery([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) getWineProductionRate([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) seedMarket([60], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 41496809885853617)	Returns: true
+	(5) sellGrapes([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(6) addFreeVineyard(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) getMyVines([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(8) setLandProductionMultiplierCCUser(['0x687964556f727a53645969444c6a6e726d4b53656a4e6f5343497a515679514c', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+
+	(1) constructor(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) buildWinery([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) getWineProductionRate([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) seedMarket([60], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 41496809885853617)	Returns: true
+	(5) sellGrapes([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(6) addFreeVineyard(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) getMyVines([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(8) setLandProductionMultiplierCCUser(['0x687964556f727a53645969444c6a6e726d4b53656a4e6f5343497a515679514c', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+
+	(1) constructor(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)
+	(2) addFreeVineyard(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) seedMarket([29328172438693393812147186404220895634766367867987734133450239704451987961630], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 67708662691196383)	Returns: true
+	(4) getGrapesToBuildWinery([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(5) addFreeVineyard(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(6) calculateGrapeBuy([7, 3], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(7) calculateTrade([1, 21600000000, 10], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+
+	(1) constructor(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)
+	(2) addFreeVineyard(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) seedMarket([29328172438693393812147186404220895634766367867987734133450239704451987961630], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 67708662691196383)	Returns: true
+	(4) getGrapesToBuildWinery([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(5) addFreeVineyard(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(6) calculateGrapeBuy([7, 3], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(7) calculateTrade([1, 21600000000, 10], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+
+	(1) constructor(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) setLandProductionMultiplier(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(3) calculateGrapeBuySimple([108865597595227178687261810264877128606850387073497352768271974959596153807079], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) buildWinery([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(5) getBalance([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(6) addFreeVineyard(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(7) sellGrapes([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+
+	(1) constructor(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) setLandProductionMultiplier(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(3) calculateGrapeBuySimple([108865597595227178687261810264877128606850387073497352768271974959596153807079], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) buildWinery([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(5) getBalance([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(6) addFreeVineyard(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(7) sellGrapes([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+
+	(1) constructor(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) setLandProductionMultiplierCCUser(['0x70676c487755674c5963685565644f644d7748505550596b6f666b6d654b5575', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) getMyLandMultiplier([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(4) transferWalletOwnership(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) calculateGrapeSell([96842212828548425381676386650455351269433838988931218473964746797039092505423], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) setLandProductionMultiplier(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(7) transferWalletOwnership(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+
+	(1) constructor(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) setLandProductionMultiplierCCUser(['0x70676c487755674c5963685565644f644d7748505550596b6f666b6d654b5575', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) getMyLandMultiplier([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(4) transferWalletOwnership(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) calculateGrapeSell([96842212828548425381676386650455351269433838988931218473964746797039092505423], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) setLandProductionMultiplier(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(7) transferWalletOwnership(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+
+	(1) constructor(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)
+	(2) transferWalletOwnership(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(3) setLandProductionMultiplierCCUser(['0x784151204670477555554275754c7353626c20767963766d497657535570774f', '0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(4) getWineProductionRate([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(5) calculateTrade([60, 86400, 96841121474095669835364338534558612046003957067596058024640712488809100835584], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(6) devFee([18524549984763575224754329050148113245625246207426045235024188171786880241046], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) transferWalletOwnership(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+
+	(1) constructor(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)
+	(2) transferWalletOwnership(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(3) setLandProductionMultiplierCCUser(['0x784151204670477555554275754c7353626c20767963766d497657535570774f', '0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(4) getWineProductionRate([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(5) calculateTrade([60, 86400, 96841121474095669835364338534558612046003957067596058024640712488809100835584], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(6) devFee([18524549984763575224754329050148113245625246207426045235024188171786880241046], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) transferWalletOwnership(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+
+	(1) constructor(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)
+	(2) transferWalletOwnership(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(3) setLandProductionMultiplierCCUser(['0x784151204670477555554275754c7353626c20767963766d497657535570774f', '0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(4) getWineProductionRate([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(5) calculateTrade([60, 86400, 96841121474095669835364338534558612046003957067596058024640712488809100835584], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(6) devFee([18524549984763575224754329050148113245625246207426045235024188171786880241046], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) transferWalletOwnership(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+
+	(1) constructor(['0xC352C77703A000382541035D9F12F27608999903'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) produceWine([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) seedMarket([21600000000], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 5791764750935963)	Returns: true
+	(4) calculateGrapeBuySimple([86601718916903151437573839380100579533306114802180100001074654989985280857447], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) getWineProductionRate([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) buyGrapes([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 198504709861677729)	Returns: 
+	(7) devFee([74247065105150219131544694626581014984064198199168834983595761731322638525425], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor(['0xC352C77703A000382541035D9F12F27608999903'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) produceWine([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) seedMarket([21600000000], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 5791764750935963)	Returns: true
+	(4) calculateGrapeBuySimple([86601718916903151437573839380100579533306114802180100001074654989985280857447], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) getWineProductionRate([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) buyGrapes([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 198504709861677729)	Returns: 
+	(7) devFee([74247065105150219131544694626581014984064198199168834983595761731322638525425], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor(['0xC352C77703A000382541035D9F12F27608999903'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) produceWine([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) seedMarket([21600000000], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 5791764750935963)	Returns: true
+	(4) calculateGrapeBuySimple([86601718916903151437573839380100579533306114802180100001074654989985280857447], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) getWineProductionRate([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) buyGrapes([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 198504709861677729)	Returns: 
+	(7) devFee([74247065105150219131544694626581014984064198199168834983595761731322638525425], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) sellGrapes([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) getMyLandMultiplier([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(4) getGrapesSinceLastHarvest(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) devFee([18929609549896798914040097390752067697027468646291446561988031985247639010967], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(6) calculateGrapeBuySimple([5], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) sellGrapes([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+
+	(1) constructor(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) sellGrapes([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) getMyLandMultiplier([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(4) getGrapesSinceLastHarvest(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) devFee([18929609549896798914040097390752067697027468646291446561988031985247639010967], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(6) calculateGrapeBuySimple([5], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) sellGrapes([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+
+	(1) constructor(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) sellGrapes([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) getMyLandMultiplier([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(4) getGrapesSinceLastHarvest(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) devFee([18929609549896798914040097390752067697027468646291446561988031985247639010967], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(6) calculateGrapeBuySimple([5], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) sellGrapes([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+
+	(1) constructor(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) getMyGrapes([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) calculateTrade([693, 20464967729387217660441460010926636413131516865579347330278372545105776744801, 262], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(4) devFee([64977404471664418665581603948756097627863542449454582297133983941297721046019], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) getMyWine([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(6) calculateGrapeBuy([9025075150869907135535813874733552071624285967003057458357069163049460434329, 57768248616174683047275612665827974199322184093201957279203216411199378920887], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(7) getGrapesSinceLastHarvest(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) getMyLandMultiplier([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) setLandProductionMultiplierCCUser(['0x456473466f4575764347595370547667667878794b75786469516b757263716a', '0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) seedMarket([60833545112464024554163197615432162632742414044205870110455484643785785080536], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 99937459282949860)	Returns: true
+	(5) getFreeVines([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(6) getMyVines([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) produceWine([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+
+	(1) constructor(['0xC352C77703A000382541035D9F12F27608999903'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) produceWine([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) seedMarket([21600000000], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 5791764750935963)	Returns: true
+	(4) calculateGrapeBuySimple([86601718916903151437573839380100579533306114802180100001074654989985280857447], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) getWineProductionRate([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) buyGrapes([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 198504709861677729)	Returns: 
+	(7) devFee([74247065105150219131544694626581014984064198199168834983595761731322638525425], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor(['0xC352C77703A000382541035D9F12F27608999903'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) produceWine([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) seedMarket([21600000000], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 5791764750935963)	Returns: true
+	(4) calculateGrapeBuySimple([86601718916903151437573839380100579533306114802180100001074654989985280857447], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) getWineProductionRate([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) buyGrapes([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 198504709861677729)	Returns: 
+	(7) devFee([74247065105150219131544694626581014984064198199168834983595761731322638525425], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) sellGrapes([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) getMyLandMultiplier([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(4) getGrapesSinceLastHarvest(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) devFee([18929609549896798914040097390752067697027468646291446561988031985247639010967], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(6) calculateGrapeBuySimple([5], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) sellGrapes([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+
+	(1) constructor(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) sellGrapes([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) getMyLandMultiplier([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(4) getGrapesSinceLastHarvest(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) devFee([18929609549896798914040097390752067697027468646291446561988031985247639010967], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(6) calculateGrapeBuySimple([5], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) sellGrapes([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+
+	(1) constructor(['0xC352C77703A000382541035D9F12F27608999903'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) produceWine([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) seedMarket([21600000000], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 5791764750935963)	Returns: true
+	(4) calculateGrapeBuySimple([86601718916903151437573839380100579533306114802180100001074654989985280857447], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) getWineProductionRate([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) buyGrapes([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 198504709861677729)	Returns: 
+	(7) devFee([74247065105150219131544694626581014984064198199168834983595761731322638525425], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)
+	(2) seedMarket([50743379226720706086340943410673201137555910492326685675420701540655200744693], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 186366862559233102)	Returns: true
+	(3) getGrapesSinceLastHarvest(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) setLandProductionMultiplierCCUser(['0x676f6877764f62444e5249716b7267424f746544662020445066674c4742536b', '0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(5) devFee([61710099476964900235616436447625088811459950669835225206244120029094980530606], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(6) seedMarket([58531943110630491242380062348742042529587055615740692928619867975357062397895], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(7) seedMarket([5], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 129941154303985294)	Returns: 
+
+	(1) constructor(['0xC352C77703A000382541035D9F12F27608999903'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) produceWine([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) seedMarket([21600000000], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 5791764750935963)	Returns: true
+	(4) calculateGrapeBuySimple([86601718916903151437573839380100579533306114802180100001074654989985280857447], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) getWineProductionRate([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) buyGrapes([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 198504709861677729)	Returns: 
+	(7) devFee([74247065105150219131544694626581014984064198199168834983595761731322638525425], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) getMyGrapes([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) calculateTrade([693, 20464967729387217660441460010926636413131516865579347330278372545105776744801, 262], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(4) devFee([64977404471664418665581603948756097627863542449454582297133983941297721046019], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) getMyWine([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(6) calculateGrapeBuy([9025075150869907135535813874733552071624285967003057458357069163049460434329, 57768248616174683047275612665827974199322184093201957279203216411199378920887], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(7) getGrapesSinceLastHarvest(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) sellGrapes([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) getMyLandMultiplier([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(4) getGrapesSinceLastHarvest(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) devFee([18929609549896798914040097390752067697027468646291446561988031985247639010967], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(6) calculateGrapeBuySimple([5], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) sellGrapes([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+
+	(1) constructor(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) sellGrapes([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) getMyLandMultiplier([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(4) getGrapesSinceLastHarvest(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) devFee([18929609549896798914040097390752067697027468646291446561988031985247639010967], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(6) calculateGrapeBuySimple([5], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) sellGrapes([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+
+	(1) constructor(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) sellGrapes([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) getMyLandMultiplier([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(4) getGrapesSinceLastHarvest(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) devFee([18929609549896798914040097390752067697027468646291446561988031985247639010967], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(6) calculateGrapeBuySimple([5], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) sellGrapes([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+
+	(1) constructor(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) sellGrapes([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) getMyLandMultiplier([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(4) getGrapesSinceLastHarvest(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) devFee([18929609549896798914040097390752067697027468646291446561988031985247639010967], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(6) calculateGrapeBuySimple([5], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) sellGrapes([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+
+	(1) constructor(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) sellGrapes([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) getMyLandMultiplier([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(4) getGrapesSinceLastHarvest(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) devFee([18929609549896798914040097390752067697027468646291446561988031985247639010967], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(6) calculateGrapeBuySimple([5], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) sellGrapes([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+
+	(1) constructor(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) sellGrapes([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) getMyLandMultiplier([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(4) getGrapesSinceLastHarvest(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) devFee([18929609549896798914040097390752067697027468646291446561988031985247639010967], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(6) calculateGrapeBuySimple([5], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) sellGrapes([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+
+	(1) constructor(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) sellGrapes([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) getMyLandMultiplier([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(4) getGrapesSinceLastHarvest(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) devFee([18929609549896798914040097390752067697027468646291446561988031985247639010967], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(6) calculateGrapeBuySimple([5], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) sellGrapes([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+
+	(1) constructor(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) sellGrapes([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) getMyLandMultiplier([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(4) getGrapesSinceLastHarvest(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) devFee([18929609549896798914040097390752067697027468646291446561988031985247639010967], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(6) calculateGrapeBuySimple([5], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) sellGrapes([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+
+	(1) constructor(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) getMyGrapes([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) calculateTrade([693, 20464967729387217660441460010926636413131516865579347330278372545105776744801, 262], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(4) devFee([64977404471664418665581603948756097627863542449454582297133983941297721046019], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) getMyWine([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(6) calculateGrapeBuy([9025075150869907135535813874733552071624285967003057458357069163049460434329, 57768248616174683047275612665827974199322184093201957279203216411199378920887], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(7) getGrapesSinceLastHarvest(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 

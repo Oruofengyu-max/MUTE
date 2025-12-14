@@ -1,0 +1,24 @@
+Source Function,Target Function
+setAdmin(address),setGoldenCardToken(uint256)
+"createToken(string,uint256)",setGoldenCardToken(uint256)
+setHost(address),setGoldenCardToken(uint256)
+"approve(address,uint256)",ownerOf(uint256)
+"transferFrom(address,address,uint256)",ownerOf(uint256)
+"createToken(string,uint256)",ownerOf(uint256)
+"transfer(address,uint256)",ownerOf(uint256)
+takeOwnership(uint256),ownerOf(uint256)
+purchase(uint256),ownerOf(uint256)
+setGoldenCardToken(uint256),"createToken(string,uint256)"
+setAdmin(address),"createToken(string,uint256)"
+setHost(address),"createToken(string,uint256)"
+"approve(address,uint256)",getCard(uint256)
+"transferFrom(address,address,uint256)",getCard(uint256)
+"createToken(string,uint256)",getCard(uint256)
+"transfer(address,uint256)",getCard(uint256)
+takeOwnership(uint256),getCard(uint256)
+purchase(uint256),getCard(uint256)
+"approve(address,uint256)",purchase(uint256)
+"transferFrom(address,address,uint256)",purchase(uint256)
+"createToken(string,uint256)",purchase(uint256)
+"transfer(address,uint256)",purchase(uint256)
+takeOwnership(uint256),purchase(uint256)

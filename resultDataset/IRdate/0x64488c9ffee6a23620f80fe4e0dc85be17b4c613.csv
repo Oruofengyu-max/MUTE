@@ -1,0 +1,14 @@
+Source Function,Target Function
+"approve(address,uint256)","transferFrom(address,address,uint256)"
+cancelOrder(uint256),"transferFrom(address,address,uint256)"
+"fillOrder(uint256,uint256)","transferFrom(address,address,uint256)"
+"placeBuy(uint256,uint256)",cancelOrder(uint256)
+"placeSell(uint256,uint256)",cancelOrder(uint256)
+"fillOrder(uint256,uint256)",cancelOrder(uint256)
+"approve(address,uint256)",cancelOrder(uint256)
+"transferFrom(address,address,uint256)",cancelOrder(uint256)
+cancelOrder(uint256),"fillOrder(uint256,uint256)"
+"placeBuy(uint256,uint256)","fillOrder(uint256,uint256)"
+"placeSell(uint256,uint256)","fillOrder(uint256,uint256)"
+"approve(address,uint256)","fillOrder(uint256,uint256)"
+"transferFrom(address,address,uint256)","fillOrder(uint256,uint256)"

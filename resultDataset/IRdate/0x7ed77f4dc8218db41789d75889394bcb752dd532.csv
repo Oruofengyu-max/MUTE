@@ -1,0 +1,27 @@
+Source Function,Target Function
+"__callback(bytes32,string,bytes)","__callback(bytes32,string)"
+withdrawPendingBalance(address),"__callback(bytes32,string)"
+rollDice(uint256),"__callback(bytes32,string)"
+"setMaxBetAmount(uint256,uint256)","__callback(bytes32,string)"
+"__callback(bytes32,string)","__callback(bytes32,string,bytes)"
+withdrawPendingBalance(address),"__callback(bytes32,string,bytes)"
+rollDice(uint256),"__callback(bytes32,string,bytes)"
+"setMaxBetAmount(uint256,uint256)","__callback(bytes32,string,bytes)"
+"__callback(bytes32,string)",withdrawPendingBalance(address)
+"__callback(bytes32,string,bytes)",withdrawPendingBalance(address)
+rollDice(uint256),withdrawPendingBalance(address)
+"setMaxBetAmount(uint256,uint256)",withdrawPendingBalance(address)
+"withdrawBalance(address,uint256)",rollDice(uint256)
+resetBalance(),rollDice(uint256)
+"__callback(bytes32,string)",rollDice(uint256)
+"__callback(bytes32,string,bytes)",rollDice(uint256)
+depositBalance(),rollDice(uint256)
+setMinBetAmount(uint256),rollDice(uint256)
+setHouseEdge(uint256),rollDice(uint256)
+setOraclizeGasPrice(uint256),rollDice(uint256)
+setOraclizeGasLimit(uint256),rollDice(uint256)
+transferOwnership(address),rollDice(uint256)
+"__callback(bytes32,string)","setMaxBetAmount(uint256,uint256)"
+"__callback(bytes32,string,bytes)","setMaxBetAmount(uint256,uint256)"
+withdrawPendingBalance(address),"setMaxBetAmount(uint256,uint256)"
+rollDice(uint256),"setMaxBetAmount(uint256,uint256)"

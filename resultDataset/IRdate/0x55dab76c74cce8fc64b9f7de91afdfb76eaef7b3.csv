@@ -1,0 +1,26 @@
+Source Function,Target Function
+"approve(address,uint256)","transferFrom(address,address,uint256)"
+burn(uint256),"transferFrom(address,address,uint256)"
+"decreaseApproval(address,uint256)","transferFrom(address,address,uint256)"
+"transfer(address,uint256)","transferFrom(address,address,uint256)"
+"increaseApproval(address,uint256)","transferFrom(address,address,uint256)"
+addToWhitelist(address),"transferFrom(address,address,uint256)"
+burn(uint256),unpause()
+transferOwnership(address),unpause()
+"approve(address,uint256)",burn(uint256)
+"transferFrom(address,address,uint256)",burn(uint256)
+"decreaseApproval(address,uint256)",burn(uint256)
+"transfer(address,uint256)",burn(uint256)
+"increaseApproval(address,uint256)",burn(uint256)
+addToWhitelist(address),burn(uint256)
+"approve(address,uint256)","transfer(address,uint256)"
+"transferFrom(address,address,uint256)","transfer(address,uint256)"
+burn(uint256),"transfer(address,uint256)"
+"decreaseApproval(address,uint256)","transfer(address,uint256)"
+"increaseApproval(address,uint256)","transfer(address,uint256)"
+addToWhitelist(address),"transfer(address,uint256)"
+unpause(),addToWhitelist(address)
+burn(uint256),addToWhitelist(address)
+transferOwnership(address),addToWhitelist(address)
+unpause(),transferOwnership(address)
+burn(uint256),transferOwnership(address)

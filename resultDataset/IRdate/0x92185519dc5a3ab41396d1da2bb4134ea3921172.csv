@@ -1,0 +1,13 @@
+Source Function,Target Function
+"approve(address,uint256)",withdrawPayments()
+"transferFrom(address,address,uint256)",withdrawPayments()
+distributeTokens(uint256),withdrawPayments()
+"transfer(address,uint256)",withdrawPayments()
+finishIco(),withdrawPayments()
+withdrawShares(address),withdrawPayments()
+"approve(address,uint256)",withdrawShares(address)
+"transferFrom(address,address,uint256)",withdrawShares(address)
+withdrawPayments(),withdrawShares(address)
+distributeTokens(uint256),withdrawShares(address)
+"transfer(address,uint256)",withdrawShares(address)
+finishIco(),withdrawShares(address)

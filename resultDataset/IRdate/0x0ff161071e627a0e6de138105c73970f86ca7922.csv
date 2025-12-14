@@ -1,0 +1,18 @@
+Source Function,Target Function
+"approve(address,uint256)",migrate(uint256)
+"transferFrom(address,address,uint256)",migrate(uint256)
+"transfer(address,uint256)",migrate(uint256)
+"timeLock(address,uint256)",migrate(uint256)
+migrate(uint256),setMigrationAgent(address)
+setTradable(bool),setMigrationAgent(address)
+transferOwnership(address),setMigrationAgent(address)
+migrate(uint256),setTradable(bool)
+setMigrationAgent(address),setTradable(bool)
+transferOwnership(address),setTradable(bool)
+migrate(uint256),"timeLock(address,uint256)"
+setMigrationAgent(address),"timeLock(address,uint256)"
+setTradable(bool),"timeLock(address,uint256)"
+transferOwnership(address),"timeLock(address,uint256)"
+migrate(uint256),transferOwnership(address)
+setMigrationAgent(address),transferOwnership(address)
+setTradable(bool),transferOwnership(address)

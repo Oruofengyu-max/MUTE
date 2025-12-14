@@ -1,0 +1,7 @@
+Source Function,Target Function
+transferOwnership(address),changeBeneficiary(address)
+renounceOwnership(),changeBeneficiary(address)
+changeBeneficiary(address),transferOwnership(address)
+renounceOwnership(),transferOwnership(address)
+changeBeneficiary(address),renounceOwnership()
+transferOwnership(address),renounceOwnership()

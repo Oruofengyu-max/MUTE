@@ -1,0 +1,14 @@
+Source Function,Target Function
+burn(uint256),setAdmin(address)
+unlockAllTokens(),setAdmin(address)
+enableTransfer(bool),setAdmin(address)
+transferOwnership(address),setAdmin(address)
+"addTokenLock(address,uint256,uint256)","transfer(address,uint256)"
+"transferFrom(address,address,uint256)","transfer(address,uint256)"
+burn(uint256),"transfer(address,uint256)"
+"decreaseApproval(address,uint256)","transfer(address,uint256)"
+"increaseApproval(address,uint256)","transfer(address,uint256)"
+burn(uint256),transferOwnership(address)
+unlockAllTokens(),transferOwnership(address)
+setAdmin(address),transferOwnership(address)
+enableTransfer(bool),transferOwnership(address)

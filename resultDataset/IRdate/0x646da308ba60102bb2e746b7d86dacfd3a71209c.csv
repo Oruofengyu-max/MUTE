@@ -1,0 +1,21 @@
+Source Function,Target Function
+"mint(address,uint256)","transferFrom(address,address,uint256)"
+finishMinting(),"transferFrom(address,address,uint256)"
+transferOwnership(address),"transferFrom(address,address,uint256)"
+unlockTokens(),"transferFrom(address,address,uint256)"
+finishMinting(),"mint(address,uint256)"
+transferOwnership(address),"mint(address,uint256)"
+unlockTokens(),"mint(address,uint256)"
+"mint(address,uint256)",finishMinting()
+transferOwnership(address),finishMinting()
+unlockTokens(),finishMinting()
+"mint(address,uint256)","transfer(address,uint256)"
+finishMinting(),"transfer(address,uint256)"
+transferOwnership(address),"transfer(address,uint256)"
+unlockTokens(),"transfer(address,uint256)"
+"mint(address,uint256)",transferOwnership(address)
+finishMinting(),transferOwnership(address)
+unlockTokens(),transferOwnership(address)
+"mint(address,uint256)",unlockTokens()
+finishMinting(),unlockTokens()
+transferOwnership(address),unlockTokens()

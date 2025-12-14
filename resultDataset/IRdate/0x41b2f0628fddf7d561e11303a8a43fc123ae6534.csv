@@ -1,0 +1,14 @@
+Source Function,Target Function
+"approve(address,uint256)","transferMulti(address[],uint256)"
+"freezeAccount(address,uint256)","transferMulti(address[],uint256)"
+approve(address),"transferMulti(address[],uint256)"
+stop(),"approve(address,uint256)"
+setSymbol(string),"approve(address,uint256)"
+start(),"approve(address,uint256)"
+setName(string),"approve(address,uint256)"
+"approve(address,uint256)","freezeAccount(address,uint256)"
+approve(address),"freezeAccount(address,uint256)"
+stop(),approve(address)
+setSymbol(string),approve(address)
+start(),approve(address)
+setName(string),approve(address)

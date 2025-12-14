@@ -1,0 +1,23 @@
+Source Function,Target Function
+withdraw(),buyFromValue(uint8)
+setName(string),buyFromValue(uint8)
+buyByAddress(address),buyFromValue(uint8)
+buyByName(string),buyFromValue(uint8)
+buyFromValue(uint8),withdraw()
+setName(string),withdraw()
+buyByAddress(address),withdraw()
+buyByName(string),withdraw()
+buyFromValue(uint8),"getStageData(uint8,uint256)"
+withdraw(),"getStageData(uint8,uint256)"
+setName(string),"getStageData(uint8,uint256)"
+buyByAddress(address),"getStageData(uint8,uint256)"
+buyByName(string),"getStageData(uint8,uint256)"
+buyFromValue(uint8),setName(string)
+withdraw(),setName(string)
+buyByAddress(address),setName(string)
+buyByName(string),setName(string)
+buyFromValue(uint8),myEarnings()
+withdraw(),myEarnings()
+setName(string),myEarnings()
+buyByAddress(address),myEarnings()
+buyByName(string),myEarnings()

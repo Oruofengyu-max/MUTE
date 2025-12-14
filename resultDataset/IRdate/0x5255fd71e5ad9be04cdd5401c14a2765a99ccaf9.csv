@@ -1,0 +1,21 @@
+Source Function,Target Function
+setDescription(string),safeWithdrawal(uint256)
+enableDonation(),safeWithdrawal(uint256)
+disableDonation(),safeWithdrawal(uint256)
+transferOwnership(address),safeWithdrawal(uint256)
+enableDonation(),setDescription(string)
+disableDonation(),setDescription(string)
+transferOwnership(address),setDescription(string)
+setDescription(string),enableDonation()
+disableDonation(),enableDonation()
+transferOwnership(address),enableDonation()
+setDescription(string),"transfer(address,uint256)"
+enableDonation(),"transfer(address,uint256)"
+disableDonation(),"transfer(address,uint256)"
+transferOwnership(address),"transfer(address,uint256)"
+setDescription(string),disableDonation()
+enableDonation(),disableDonation()
+transferOwnership(address),disableDonation()
+setDescription(string),transferOwnership(address)
+enableDonation(),transferOwnership(address)
+disableDonation(),transferOwnership(address)

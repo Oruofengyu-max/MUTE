@@ -1,0 +1,18 @@
+Source Function,Target Function
+"approve(address,uint256)","transferFrom(address,address,uint256)"
+"mint(address,uint256)","transferFrom(address,address,uint256)"
+"decreaseApproval(address,uint256)","transferFrom(address,address,uint256)"
+"transfer(address,uint256)","transferFrom(address,address,uint256)"
+"increaseApproval(address,uint256)","transferFrom(address,address,uint256)"
+setSaleAgent(address),claimOwnership()
+unpause(),claimOwnership()
+"mint(address,uint256)",claimOwnership()
+finishMinting(),claimOwnership()
+pause(),claimOwnership()
+setSaleAgent2(address),claimOwnership()
+transferOwnership(address),claimOwnership()
+"approve(address,uint256)","transfer(address,uint256)"
+"transferFrom(address,address,uint256)","transfer(address,uint256)"
+"mint(address,uint256)","transfer(address,uint256)"
+"decreaseApproval(address,uint256)","transfer(address,uint256)"
+"increaseApproval(address,uint256)","transfer(address,uint256)"

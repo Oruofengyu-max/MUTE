@@ -1,0 +1,19 @@
+Source Function,Target Function
+"approve(address,uint256)",mint()
+"transferFrom(address,address,uint256)",mint()
+"mintToken(address,uint256)",mint()
+"transfer(address,uint256)",mint()
+"approveAndCall(address,uint256,bytes)",mint()
+"freezeAccount(address,bool)",mint()
+"approve(address,uint256)","mintToken(address,uint256)"
+mint(),"mintToken(address,uint256)"
+"transferFrom(address,address,uint256)","mintToken(address,uint256)"
+"transfer(address,uint256)","mintToken(address,uint256)"
+"approveAndCall(address,uint256,bytes)","mintToken(address,uint256)"
+"freezeAccount(address,bool)","mintToken(address,uint256)"
+"approve(address,uint256)","transfer(address,uint256)"
+mint(),"transfer(address,uint256)"
+"transferFrom(address,address,uint256)","transfer(address,uint256)"
+"mintToken(address,uint256)","transfer(address,uint256)"
+"approveAndCall(address,uint256,bytes)","transfer(address,uint256)"
+"freezeAccount(address,bool)","transfer(address,uint256)"

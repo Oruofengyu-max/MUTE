@@ -1,0 +1,14 @@
+Source Function,Target Function
+destroyBeneficiary(address),revoke(address)
+"addBeneficiary(address,uint256,uint256,uint256,uint256,bool)",revoke(address)
+transferOwnership(address),revoke(address)
+revoke(address),destroy()
+destroyBeneficiary(address),destroy()
+"addBeneficiary(address,uint256,uint256,uint256,uint256,bool)",destroy()
+transferOwnership(address),destroy()
+revoke(address),destroyBeneficiary(address)
+"addBeneficiary(address,uint256,uint256,uint256,uint256,bool)",destroyBeneficiary(address)
+transferOwnership(address),destroyBeneficiary(address)
+revoke(address),"addBeneficiary(address,uint256,uint256,uint256,uint256,bool)"
+destroyBeneficiary(address),"addBeneficiary(address,uint256,uint256,uint256,uint256,bool)"
+transferOwnership(address),"addBeneficiary(address,uint256,uint256,uint256,uint256,bool)"

@@ -1,0 +1,26 @@
+Source Function,Target Function
+"approve(address,uint256)",buyToken(uint256)
+"transferFrom(address,address,uint256)",buyToken(uint256)
+"transfer(address,uint256)",buyToken(uint256)
+"createPromoCollectible(uint256,address,uint256)",buyToken(uint256)
+takeOwnership(uint256),buyToken(uint256)
+"changePrice(uint256,uint256)",buyToken(uint256)
+"approve(address,uint256)",ownerOf(uint256)
+"transferFrom(address,address,uint256)",ownerOf(uint256)
+buyToken(uint256),ownerOf(uint256)
+"transfer(address,uint256)",ownerOf(uint256)
+"createPromoCollectible(uint256,address,uint256)",ownerOf(uint256)
+takeOwnership(uint256),ownerOf(uint256)
+"changePrice(uint256,uint256)",ownerOf(uint256)
+"approve(address,uint256)","createPromoCollectible(uint256,address,uint256)"
+"transferFrom(address,address,uint256)","createPromoCollectible(uint256,address,uint256)"
+buyToken(uint256),"createPromoCollectible(uint256,address,uint256)"
+"transfer(address,uint256)","createPromoCollectible(uint256,address,uint256)"
+takeOwnership(uint256),"createPromoCollectible(uint256,address,uint256)"
+"changePrice(uint256,uint256)","createPromoCollectible(uint256,address,uint256)"
+"approve(address,uint256)","changePrice(uint256,uint256)"
+"transferFrom(address,address,uint256)","changePrice(uint256,uint256)"
+buyToken(uint256),"changePrice(uint256,uint256)"
+"transfer(address,uint256)","changePrice(uint256,uint256)"
+"createPromoCollectible(uint256,address,uint256)","changePrice(uint256,uint256)"
+takeOwnership(uint256),"changePrice(uint256,uint256)"

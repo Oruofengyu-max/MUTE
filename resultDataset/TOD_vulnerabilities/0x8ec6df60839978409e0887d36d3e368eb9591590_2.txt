@@ -1,0 +1,66 @@
+Contract:			Finest
+Number of Relevant Branches:	3
+Number of Branches Covered:		3
+Runtime: 											124.596848
+Blockchain Time: 							88.530262
+Iterations										
+1
+--------------------------------------------------
+METHODS:
+
+Constructor:
+	Inputs :[]
+	Payable: nonpayable
+_fallback:
+
+add:
+
+
+--------------------------------------------------
+
+            TESTS:
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) add([92886394104386230279067244027911237185269555220976446332167017976639134727886], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(3) add([102666887626241593669659834559667291374426906085904012892715812374271464641571], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) add([25], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(5) _fallback([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 30249099796699068)	Returns: true
+	(6) add([57], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(7) _fallback([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 43012206573894690)	Returns: true
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) add([18], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) _fallback([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 182253739907786310)	Returns: true
+	(4) _fallback([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 67075401856423215)	Returns: true
+	(5) add([38601469337463589466478535502316984716942717472268757808914756430605954520083], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) _fallback([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 34108023198806108)	Returns: true
+	(7) add([20908566358289934486242394063321654289851989167120291429777370532962435252345], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) add([18], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) _fallback([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 182253739907786310)	Returns: true
+	(4) _fallback([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 67075401856423215)	Returns: true
+	(5) add([38601469337463589466478535502316984716942717472268757808914756430605954520083], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) _fallback([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 34108023198806108)	Returns: true
+	(7) add([20908566358289934486242394063321654289851989167120291429777370532962435252345], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 

@@ -1,0 +1,20 @@
+Source Function,Target Function
+burnMyTokens(uint256),"burnTokens(address,uint256)"
+changeFundWallet(address),"burnTokens(address,uint256)"
+"approve(address,uint256)",burnMyTokens(uint256)
+"burnTokens(address,uint256)",burnMyTokens(uint256)
+"transferFrom(address,address,uint256)",burnMyTokens(uint256)
+"changeApproval(address,uint256,uint256)",burnMyTokens(uint256)
+"transfer(address,uint256)",burnMyTokens(uint256)
+changeFundWallet(address),burnMyTokens(uint256)
+"approve(address,uint256)","changeApproval(address,uint256,uint256)"
+"burnTokens(address,uint256)","changeApproval(address,uint256,uint256)"
+"transferFrom(address,address,uint256)","changeApproval(address,uint256,uint256)"
+burnMyTokens(uint256),"changeApproval(address,uint256,uint256)"
+"transfer(address,uint256)","changeApproval(address,uint256,uint256)"
+"approve(address,uint256)","allocateTokens(address,uint256,address)"
+"burnTokens(address,uint256)","allocateTokens(address,uint256,address)"
+"transferFrom(address,address,uint256)","allocateTokens(address,uint256,address)"
+burnMyTokens(uint256),"allocateTokens(address,uint256,address)"
+"changeApproval(address,uint256,uint256)","allocateTokens(address,uint256,address)"
+"transfer(address,uint256)","allocateTokens(address,uint256,address)"

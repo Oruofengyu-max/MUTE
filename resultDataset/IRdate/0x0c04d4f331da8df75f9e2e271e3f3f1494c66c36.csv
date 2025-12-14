@@ -1,0 +1,11 @@
+Source Function,Target Function
+incrementTotalSupply(uint256),"mintToAccount(address,uint256)"
+transferOwnership(address),"mintToAccount(address,uint256)"
+setMinter(address),"mintToAccount(address,uint256)"
+"approve(address,uint256)","mintToAccount(address,uint256)"
+"transferFrom(address,address,uint256)","mintToAccount(address,uint256)"
+"batchTransfer(address[],uint256[])","mintToAccount(address,uint256)"
+"transfer(address,uint256)","mintToAccount(address,uint256)"
+"approveAndCall(address,uint256,bytes)","mintToAccount(address,uint256)"
+transferOwnership(address),incrementTotalSupply(uint256)
+setMinter(address),incrementTotalSupply(uint256)

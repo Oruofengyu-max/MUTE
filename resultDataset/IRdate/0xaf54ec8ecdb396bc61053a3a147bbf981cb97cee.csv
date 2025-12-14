@@ -1,0 +1,11 @@
+Source Function,Target Function
+withdrawPayments(),refund(uint256)
+getRemainCoins(),refund(uint256)
+emergencyStop(),finalize()
+release(),finalize()
+start(),finalize()
+getRemainCoins(),finalize()
+transferOwnership(address),finalize()
+setMultisig(address),finalize()
+refund(uint256),withdrawPayments()
+getRemainCoins(),withdrawPayments()

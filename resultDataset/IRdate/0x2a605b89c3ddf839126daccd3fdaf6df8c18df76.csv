@@ -1,0 +1,14 @@
+Source Function,Target Function
+setCEO(address),"createContractItem(string,bytes32)"
+setCOO(address),"createContractItem(string,bytes32)"
+"approve(address,uint256)",ownerOf(uint256)
+"transferFrom(address,address,uint256)",ownerOf(uint256)
+"createContractItem(string,bytes32)",ownerOf(uint256)
+"purchase(uint256,bytes32)",ownerOf(uint256)
+"transfer(address,uint256)",ownerOf(uint256)
+takeOwnership(uint256),ownerOf(uint256)
+"approve(address,uint256)","purchase(uint256,bytes32)"
+"transferFrom(address,address,uint256)","purchase(uint256,bytes32)"
+"createContractItem(string,bytes32)","purchase(uint256,bytes32)"
+"transfer(address,uint256)","purchase(uint256,bytes32)"
+takeOwnership(uint256),"purchase(uint256,bytes32)"

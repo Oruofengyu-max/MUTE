@@ -1,0 +1,18 @@
+Source Function,Target Function
+"setApprovalForAll(address,bool)","approve(address,uint256)"
+"mint(address,string)","approve(address,uint256)"
+"approve(address,uint256)",ownerOf(uint256)
+"setApprovalForAll(address,bool)",ownerOf(uint256)
+"mint(address,string)",ownerOf(uint256)
+incrementEdition(),renounceOwnership()
+"mint(address,string)",renounceOwnership()
+transferOwnership(address),renounceOwnership()
+renounceOwnership(),incrementEdition()
+"mint(address,string)",incrementEdition()
+transferOwnership(address),incrementEdition()
+renounceOwnership(),"mint(address,string)"
+incrementEdition(),"mint(address,string)"
+transferOwnership(address),"mint(address,string)"
+renounceOwnership(),transferOwnership(address)
+incrementEdition(),transferOwnership(address)
+"mint(address,string)",transferOwnership(address)

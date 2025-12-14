@@ -1,0 +1,18 @@
+Source Function,Target Function
+refundBet(uint256),placeBet(uint8)
+"settleBet(uint256,uint256)",placeBet(uint8)
+setBotAddress(address),placeBet(uint8)
+setMinAmount(uint256),placeBet(uint8)
+setPrice(uint256),placeBet(uint8)
+transferOwnership(address),placeBet(uint8)
+setBotAddress(address),"withdrawFunds(address,uint256)"
+placeBet(uint8),"withdrawFunds(address,uint256)"
+setMinAmount(uint256),"withdrawFunds(address,uint256)"
+setPrice(uint256),"withdrawFunds(address,uint256)"
+refundBet(uint256),"withdrawFunds(address,uint256)"
+transferOwnership(address),"withdrawFunds(address,uint256)"
+"settleBet(uint256,uint256)","withdrawFunds(address,uint256)"
+placeBet(uint8),refundBet(uint256)
+"settleBet(uint256,uint256)",refundBet(uint256)
+placeBet(uint8),"settleBet(uint256,uint256)"
+refundBet(uint256),"settleBet(uint256,uint256)"

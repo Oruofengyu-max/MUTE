@@ -1,0 +1,23 @@
+Source Function,Target Function
+setResume(),"approve(address,uint256)"
+setPause(),"approve(address,uint256)"
+setResume(),"transferFrom(address,address,uint256)"
+setPause(),"transferFrom(address,address,uint256)"
+"approve(address,uint256)","transferFrom(address,address,uint256)"
+"decreaseApproval(address,uint256)","transferFrom(address,address,uint256)"
+"transfer(address,uint256)","transferFrom(address,address,uint256)"
+"increaseApproval(address,uint256)","transferFrom(address,address,uint256)"
+setResume(),pauseStatus()
+setPause(),pauseStatus()
+setResume(),"decreaseApproval(address,uint256)"
+setPause(),"decreaseApproval(address,uint256)"
+setResume(),"transfer(address,uint256)"
+setPause(),"transfer(address,uint256)"
+setPause(),setResume()
+setResume(),setPause()
+setResume(),"increaseApproval(address,uint256)"
+setPause(),"increaseApproval(address,uint256)"
+"approve(address,uint256)","increaseApproval(address,uint256)"
+"transferFrom(address,address,uint256)","increaseApproval(address,uint256)"
+"decreaseApproval(address,uint256)","increaseApproval(address,uint256)"
+"transfer(address,uint256)","increaseApproval(address,uint256)"

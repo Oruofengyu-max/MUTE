@@ -1,0 +1,19 @@
+Source Function,Target Function
+"initTokenListings(address[],address[],address[])","commissionOfAt(address,uint256)"
+redeemCommission(bool),"commissionOfAt(address,uint256)"
+listKyberToken(address),"commissionOfAt(address,uint256)"
+"redeemCommissionForCycle(bool,uint256)","commissionOfAt(address,uint256)"
+"initTokenListings(address[],address[],address[])",redeemCommission(bool)
+listKyberToken(address),redeemCommission(bool)
+"redeemCommissionForCycle(bool,uint256)",redeemCommission(bool)
+"initTokenListings(address[],address[],address[])",getVotingWeight(address)
+redeemCommission(bool),getVotingWeight(address)
+listKyberToken(address),getVotingWeight(address)
+"redeemCommissionForCycle(bool,uint256)",getVotingWeight(address)
+"initTokenListings(address[],address[],address[])",getTotalVotingWeight()
+redeemCommission(bool),getTotalVotingWeight()
+listKyberToken(address),getTotalVotingWeight()
+"redeemCommissionForCycle(bool,uint256)",getTotalVotingWeight()
+"initTokenListings(address[],address[],address[])","redeemCommissionForCycle(bool,uint256)"
+redeemCommission(bool),"redeemCommissionForCycle(bool,uint256)"
+listKyberToken(address),"redeemCommissionForCycle(bool,uint256)"

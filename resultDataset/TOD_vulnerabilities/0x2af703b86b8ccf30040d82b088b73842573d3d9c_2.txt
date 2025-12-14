@@ -1,0 +1,226 @@
+Contract:			AssetWithCompliance
+Number of Relevant Branches:	103
+Number of Branches Covered:		13
+Runtime: 											1846.19863
+Blockchain Time: 							1703.367404
+Iterations										
+11
+--------------------------------------------------
+METHODS:
+
+Constructor:
+	Inputs :[]
+	Payable: nonpayable
+_performTransferWithReference:
+
+_performTransferToICAPWithReference:
+
+_performTransferFromWithReference:
+
+_performGeneric:
+
+_performApprove:
+
+_performTransferFromToICAPWithReference:
+
+_fallback:
+
+
+--------------------------------------------------
+
+            TESTS:
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) _performTransferToICAPWithReference(['0x616b61554651796d5449756f207354497079506c434f644f7459796e6247426d', 90, 'ZcpgZwHzyrBhfwGAGPpwBpULkYbkvmTcNIteNSf IlvPDSpzoZXnigElVKTfVT YwnRDjfywXItbYiBKuitRLipCCnKUmSTkPIwGveZCiJQQOi', '0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(3) _fallback([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) _performTransferWithReference(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 2, 'rJKAZHxAwSDOt', '0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) _performTransferToICAPWithReference(['0x79756a4f4b45594f4b784e695676436b7a454d47414c67654972626742684945', 2, 'ayxfTWsUcRzBvZMnSTAfiImJ undMjBWtYPhyoNbtjVTylvJeldiLyOKDxEhbwMxIBgMIZbXKCoPmFRtdSIxNYpahNJvszTdTBnfUDeMFthxvUFgsXVMVrO LgKX THNtOqNrtZXuEFpbOueFbmyupAWzCTgcpFTQPZWGbbolDQbVQVvTxUbHYbpjDuNPwdNjeTQMrewAQlrOrKimJxqfPlvDBVGHhi WRTZSr', '0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) _fallback([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) _performTransferToICAPWithReference(['0x6b6777536d566f576a6e74416c784e47546a4562486e6a6e6e464a7069756a50', 0, '"Transfer is not allowed"', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) _performTransferToICAPWithReference(['0x616b61554651796d5449756f207354497079506c434f644f7459796e6247426d', 90, 'ZcpgZwHzyrBhfwGAGPpwBpULkYbkvmTcNIteNSf IlvPDSpzoZXnigElVKTfVT YwnRDjfywXItbYiBKuitRLipCCnKUmSTkPIwGveZCiJQQOi', '0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(3) _fallback([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) _performTransferWithReference(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 2, 'rJKAZHxAwSDOt', '0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) _performTransferToICAPWithReference(['0x79756a4f4b45594f4b784e695676436b7a454d47414c67654972626742684945', 2, 'ayxfTWsUcRzBvZMnSTAfiImJ undMjBWtYPhyoNbtjVTylvJeldiLyOKDxEhbwMxIBgMIZbXKCoPmFRtdSIxNYpahNJvszTdTBnfUDeMFthxvUFgsXVMVrO LgKX THNtOqNrtZXuEFpbOueFbmyupAWzCTgcpFTQPZWGbbolDQbVQVvTxUbHYbpjDuNPwdNjeTQMrewAQlrOrKimJxqfPlvDBVGHhi WRTZSr', '0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) _fallback([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) _performTransferToICAPWithReference(['0x6b6777536d566f576a6e74416c784e47546a4562486e6a6e6e464a7069756a50', 0, '"Transfer is not allowed"', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) _performGeneric([['0x48', '0x64', '0x20', '0x6e', '0x4f', '0x4d', '0x45', '0x64', '0x4e'], '0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) _fallback([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(4) _performGeneric([['0x71', '0x78', '0x67', '0x73', '0x6c', '0x6f', '0x65', '0x49', '0x67'], '0xC352C77703A000382541035D9F12F27608999903'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(5) _performTransferFromToICAPWithReference(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0x754274776443665a20504d674d4253774775664c787253436b786e7148574b49', 2, 'k gsOrtyVBTYXHbDHzGRKKMDm ', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(6) _performTransferToICAPWithReference(['0x424249724b426342656a5351784866496e494b6741426e6253744f6f6e456e62', 65, '"Transfer is not allowed"', '0xC352C77703A000382541035D9F12F27608999903'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(7) _performTransferToICAPWithReference(['0x614c68486277584b495678786d686e5a737258706a42626c474b446f73536354', 71612996092912680001667584039691620198655700874031929220239652400830436836383, 'sEFHgcYoJ tOJF NfFFrPyOOXgfUAQRmqOCEuWlJncegBbTovbSGDAWgxIZAocZkbkchIZqWOiHbbJKAINaiIqNuzECDqNHPMDvZdIYhEnDbUvrDjrLPRhunQekITKefEmBqGmdBIotWaTPWZUw', '0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) _performGeneric([['0x48', '0x64', '0x20', '0x6e', '0x4f', '0x4d', '0x45', '0x64', '0x4e'], '0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) _fallback([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(4) _performGeneric([['0x71', '0x78', '0x67', '0x73', '0x6c', '0x6f', '0x65', '0x49', '0x67'], '0xC352C77703A000382541035D9F12F27608999903'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(5) _performTransferFromToICAPWithReference(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0x754274776443665a20504d674d4253774775664c787253436b786e7148574b49', 2, 'k gsOrtyVBTYXHbDHzGRKKMDm ', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(6) _performTransferToICAPWithReference(['0x424249724b426342656a5351784866496e494b6741426e6253744f6f6e456e62', 65, '"Transfer is not allowed"', '0xC352C77703A000382541035D9F12F27608999903'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(7) _performTransferToICAPWithReference(['0x614c68486277584b495678786d686e5a737258706a42626c474b446f73536354', 71612996092912680001667584039691620198655700874031929220239652400830436836383, 'sEFHgcYoJ tOJF NfFFrPyOOXgfUAQRmqOCEuWlJncegBbTovbSGDAWgxIZAocZkbkchIZqWOiHbbJKAINaiIqNuzECDqNHPMDvZdIYhEnDbUvrDjrLPRhunQekITKefEmBqGmdBIotWaTPWZUw', '0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) _performApprove(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 4, '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(3) _fallback([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) _performApprove(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 57, '0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) _performTransferToICAPWithReference(['0x595a486a6657524751564165586b41505a6b6b574e4e66766564676874204a41', 51765258937641291773324364417213921623970796648483808233561391995136238708143, '"Transfer is not allowed"', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) _performTransferFromToICAPWithReference(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0x666947426c694e566d43585a71766e49536c6d49536873506b4a47745a6e4e55', 0, '"X"', '0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) _performTransferFromWithReference(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', 20, 'uHtQaCmMTzFA  VCP', '0xC352C77703A000382541035D9F12F27608999903'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) _performApprove(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 4, '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(3) _fallback([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) _performApprove(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 57, '0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) _performTransferToICAPWithReference(['0x595a486a6657524751564165586b41505a6b6b574e4e66766564676874204a41', 51765258937641291773324364417213921623970796648483808233561391995136238708143, '"Transfer is not allowed"', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) _performTransferFromToICAPWithReference(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0x666947426c694e566d43585a71766e49536c6d49536873506b4a47745a6e4e55', 0, '"X"', '0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) _performTransferFromWithReference(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', 20, 'uHtQaCmMTzFA  VCP', '0xC352C77703A000382541035D9F12F27608999903'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) _performGeneric([['0x48', '0x64', '0x20', '0x6e', '0x4f', '0x4d', '0x45', '0x64', '0x4e'], '0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) _fallback([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(4) _performGeneric([['0x71', '0x78', '0x67', '0x73', '0x6c', '0x6f', '0x65', '0x49', '0x67'], '0xC352C77703A000382541035D9F12F27608999903'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(5) _performTransferFromToICAPWithReference(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0x754274776443665a20504d674d4253774775664c787253436b786e7148574b49', 2, 'k gsOrtyVBTYXHbDHzGRKKMDm ', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(6) _performTransferToICAPWithReference(['0x424249724b426342656a5351784866496e494b6741426e6253744f6f6e456e62', 65, '"Transfer is not allowed"', '0xC352C77703A000382541035D9F12F27608999903'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(7) _performTransferToICAPWithReference(['0x614c68486277584b495678786d686e5a737258706a42626c474b446f73536354', 71612996092912680001667584039691620198655700874031929220239652400830436836383, 'sEFHgcYoJ tOJF NfFFrPyOOXgfUAQRmqOCEuWlJncegBbTovbSGDAWgxIZAocZkbkchIZqWOiHbbJKAINaiIqNuzECDqNHPMDvZdIYhEnDbUvrDjrLPRhunQekITKefEmBqGmdBIotWaTPWZUw', '0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) _performGeneric([['0x48', '0x64', '0x20', '0x6e', '0x4f', '0x4d', '0x45', '0x64', '0x4e'], '0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) _fallback([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(4) _performGeneric([['0x71', '0x78', '0x67', '0x73', '0x6c', '0x6f', '0x65', '0x49', '0x67'], '0xC352C77703A000382541035D9F12F27608999903'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(5) _performTransferFromToICAPWithReference(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0x754274776443665a20504d674d4253774775664c787253436b786e7148574b49', 2, 'k gsOrtyVBTYXHbDHzGRKKMDm ', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(6) _performTransferToICAPWithReference(['0x424249724b426342656a5351784866496e494b6741426e6253744f6f6e456e62', 65, '"Transfer is not allowed"', '0xC352C77703A000382541035D9F12F27608999903'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(7) _performTransferToICAPWithReference(['0x614c68486277584b495678786d686e5a737258706a42626c474b446f73536354', 71612996092912680001667584039691620198655700874031929220239652400830436836383, 'sEFHgcYoJ tOJF NfFFrPyOOXgfUAQRmqOCEuWlJncegBbTovbSGDAWgxIZAocZkbkchIZqWOiHbbJKAINaiIqNuzECDqNHPMDvZdIYhEnDbUvrDjrLPRhunQekITKefEmBqGmdBIotWaTPWZUw', '0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) _performApprove(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 4, '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(3) _fallback([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) _performApprove(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 57, '0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) _performTransferToICAPWithReference(['0x595a486a6657524751564165586b41505a6b6b574e4e66766564676874204a41', 51765258937641291773324364417213921623970796648483808233561391995136238708143, '"Transfer is not allowed"', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) _performTransferFromToICAPWithReference(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0x666947426c694e566d43585a71766e49536c6d49536873506b4a47745a6e4e55', 0, '"X"', '0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) _performTransferFromWithReference(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', 20, 'uHtQaCmMTzFA  VCP', '0xC352C77703A000382541035D9F12F27608999903'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) _performApprove(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 4, '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(3) _fallback([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) _performApprove(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 57, '0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) _performTransferToICAPWithReference(['0x595a486a6657524751564165586b41505a6b6b574e4e66766564676874204a41', 51765258937641291773324364417213921623970796648483808233561391995136238708143, '"Transfer is not allowed"', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) _performTransferFromToICAPWithReference(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0x666947426c694e566d43585a71766e49536c6d49536873506b4a47745a6e4e55', 0, '"X"', '0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) _performTransferFromWithReference(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', 20, 'uHtQaCmMTzFA  VCP', '0xC352C77703A000382541035D9F12F27608999903'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) _performTransferToICAPWithReference(['0x616b61554651796d5449756f207354497079506c434f644f7459796e6247426d', 90, 'ZcpgZwHzyrBhfwGAGPpwBpULkYbkvmTcNIteNSf IlvPDSpzoZXnigElVKTfVT YwnRDjfywXItbYiBKuitRLipCCnKUmSTkPIwGveZCiJQQOi', '0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(3) _fallback([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) _performTransferWithReference(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 2, 'rJKAZHxAwSDOt', '0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) _performTransferToICAPWithReference(['0x79756a4f4b45594f4b784e695676436b7a454d47414c67654972626742684945', 2, 'ayxfTWsUcRzBvZMnSTAfiImJ undMjBWtYPhyoNbtjVTylvJeldiLyOKDxEhbwMxIBgMIZbXKCoPmFRtdSIxNYpahNJvszTdTBnfUDeMFthxvUFgsXVMVrO LgKX THNtOqNrtZXuEFpbOueFbmyupAWzCTgcpFTQPZWGbbolDQbVQVvTxUbHYbpjDuNPwdNjeTQMrewAQlrOrKimJxqfPlvDBVGHhi WRTZSr', '0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) _fallback([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) _performTransferToICAPWithReference(['0x6b6777536d566f576a6e74416c784e47546a4562486e6a6e6e464a7069756a50', 0, '"Transfer is not allowed"', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) _performTransferToICAPWithReference(['0x616b61554651796d5449756f207354497079506c434f644f7459796e6247426d', 90, 'ZcpgZwHzyrBhfwGAGPpwBpULkYbkvmTcNIteNSf IlvPDSpzoZXnigElVKTfVT YwnRDjfywXItbYiBKuitRLipCCnKUmSTkPIwGveZCiJQQOi', '0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(3) _fallback([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) _performTransferWithReference(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 2, 'rJKAZHxAwSDOt', '0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) _performTransferToICAPWithReference(['0x79756a4f4b45594f4b784e695676436b7a454d47414c67654972626742684945', 2, 'ayxfTWsUcRzBvZMnSTAfiImJ undMjBWtYPhyoNbtjVTylvJeldiLyOKDxEhbwMxIBgMIZbXKCoPmFRtdSIxNYpahNJvszTdTBnfUDeMFthxvUFgsXVMVrO LgKX THNtOqNrtZXuEFpbOueFbmyupAWzCTgcpFTQPZWGbbolDQbVQVvTxUbHYbpjDuNPwdNjeTQMrewAQlrOrKimJxqfPlvDBVGHhi WRTZSr', '0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) _fallback([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) _performTransferToICAPWithReference(['0x6b6777536d566f576a6e74416c784e47546a4562486e6a6e6e464a7069756a50', 0, '"Transfer is not allowed"', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) _performTransferToICAPWithReference(['0x616b61554651796d5449756f207354497079506c434f644f7459796e6247426d', 90, 'ZcpgZwHzyrBhfwGAGPpwBpULkYbkvmTcNIteNSf IlvPDSpzoZXnigElVKTfVT YwnRDjfywXItbYiBKuitRLipCCnKUmSTkPIwGveZCiJQQOi', '0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(3) _fallback([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) _performTransferWithReference(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 2, 'rJKAZHxAwSDOt', '0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) _performTransferToICAPWithReference(['0x79756a4f4b45594f4b784e695676436b7a454d47414c67654972626742684945', 2, 'ayxfTWsUcRzBvZMnSTAfiImJ undMjBWtYPhyoNbtjVTylvJeldiLyOKDxEhbwMxIBgMIZbXKCoPmFRtdSIxNYpahNJvszTdTBnfUDeMFthxvUFgsXVMVrO LgKX THNtOqNrtZXuEFpbOueFbmyupAWzCTgcpFTQPZWGbbolDQbVQVvTxUbHYbpjDuNPwdNjeTQMrewAQlrOrKimJxqfPlvDBVGHhi WRTZSr', '0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) _fallback([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) _performTransferToICAPWithReference(['0x6b6777536d566f576a6e74416c784e47546a4562486e6a6e6e464a7069756a50', 0, '"Transfer is not allowed"', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true

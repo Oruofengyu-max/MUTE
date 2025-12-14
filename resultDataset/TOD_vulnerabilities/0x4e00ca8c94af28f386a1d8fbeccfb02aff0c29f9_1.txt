@@ -1,0 +1,1453 @@
+Contract:			iBird
+Number of Relevant Branches:	130
+Number of Branches Covered:		86
+Runtime: 											620.259705
+Blockchain Time: 							492.541804
+Iterations										
+11
+--------------------------------------------------
+METHODS:
+
+Constructor:
+	Inputs :[]
+	Payable: nonpayable
+_fallback:
+
+Makindo:
+
+SetupiBird:
+
+SetupML:
+
+SetExtra:
+
+SetFreeMKI:
+
+StartDistrib:
+
+StopDistrib:
+
+distribution:
+
+distributeAmounts:
+
+BurnTokens:
+
+totalSupply:
+
+MaxDistribPublicSupply_:
+
+OwnerDistribSupply_:
+
+CurrentDistribPublicSupply_:
+
+RemainingTokensReceiverAddress:
+
+DistribFundsReceiverAddress:
+
+Owner:
+
+SetupDone:
+
+IsDistribRunningFalg_:
+
+IsDistribStarted:
+
+balanceOf:
+
+transfer:
+
+transferFrom:
+
+approve:
+
+allowance:
+
+
+--------------------------------------------------
+
+            TESTS:
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) StartDistrib([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) DistribFundsReceiverAddress([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(4) IsDistribRunningFalg_([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) allowance(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(6) totalSupply([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) CurrentDistribPublicSupply_([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) RemainingTokensReceiverAddress([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(3) MaxDistribPublicSupply_([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(4) StopDistrib([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(5) allowance(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(6) Makindo([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) MaxDistribPublicSupply_([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) RemainingTokensReceiverAddress([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(3) MaxDistribPublicSupply_([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(4) StopDistrib([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(5) allowance(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(6) Makindo([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) MaxDistribPublicSupply_([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) RemainingTokensReceiverAddress([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(3) MaxDistribPublicSupply_([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(4) StopDistrib([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(5) allowance(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(6) Makindo([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) MaxDistribPublicSupply_([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) transferFrom(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', 15], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) SetFreeMKI([6], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(4) SetupiBird(['iwPCKTpdayYvXqmsVtWbMMjTzMqssxsqGqrXGshQatz  EihxSTuHfZsHyMnw tTF cmYdxzSLQEOG hxcPfWcmWcjMx SfXbMjWfHOLrTfswqQlEEGcPxTbEmQrMVjYGuhVzDWYcTVCaTVGrwoFMxcRuwTqKK qDldirjtbzWQPhLQZTKOuqgzxpopqbDmMAVNqEdsVNChZQyTYSFZIYOghXx', 'WPNwUOGqrUsOhFHNrYYSGKHQueO TjjrtHzgXFYqxzszqwpPkePCYVMyHHkiCEu  WDdtGPZsEFpFxPwhLpaC ybfipZZiDxpyrIhEv', 18, 0, 9, '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 9], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(5) DistribFundsReceiverAddress([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(6) Makindo([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) MaxDistribPublicSupply_([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(8) StopDistrib([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) RemainingTokensReceiverAddress([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(3) MaxDistribPublicSupply_([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(4) StopDistrib([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(5) allowance(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(6) Makindo([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) MaxDistribPublicSupply_([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) Makindo([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(3) MaxDistribPublicSupply_([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(4) _fallback([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 53456368426713852)	Returns: 
+	(5) balanceOf(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) transfer(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 79388014348966091641862689194898670818783863413220666640322438776837810620991], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) StartDistrib([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) IsDistribStarted([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(3) allowance(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(4) SetExtra([50000], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) StartDistrib([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(6) OwnerDistribSupply_([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) _fallback([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 137733753268468218)	Returns: 
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) IsDistribStarted([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(3) allowance(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(4) SetExtra([50000], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) StartDistrib([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(6) OwnerDistribSupply_([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) _fallback([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 137733753268468218)	Returns: 
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) IsDistribStarted([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(3) allowance(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(4) SetExtra([50000], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) StartDistrib([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(6) OwnerDistribSupply_([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) _fallback([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 137733753268468218)	Returns: 
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) IsDistribStarted([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(3) allowance(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(4) SetExtra([50000], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) StartDistrib([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(6) OwnerDistribSupply_([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) _fallback([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 137733753268468218)	Returns: 
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) Makindo([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(3) MaxDistribPublicSupply_([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(4) _fallback([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 53456368426713852)	Returns: 
+	(5) balanceOf(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) transfer(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 79388014348966091641862689194898670818783863413220666640322438776837810620991], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) StartDistrib([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) IsDistribStarted([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(3) allowance(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(4) SetExtra([50000], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) StartDistrib([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(6) OwnerDistribSupply_([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) _fallback([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 137733753268468218)	Returns: 
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) SetFreeMKI([5000000000], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) SetupDone([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(4) distributeAmounts([['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0xC352C77703A000382541035D9F12F27608999903', '0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0xC352C77703A000382541035D9F12F27608999903', '0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0x0000000000000000000000000000000000000000', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], [5000000000, 4]], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(5) IsDistribRunningFalg_([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(6) BurnTokens([0], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) SetupiBird(['"iBird"', 'mxntwmuibsOWFKNGNXYwFWWReXvQQjRiAfPeRvpSKmZApQzobrWlZUqIgDnqTkgzGtptpMNYdTxVfmCMSDWIbhyRJRAAhXmsvYZZuuAECUtXtEoqBlIUVOnCoXCyhSzAfXQvDCLPEOHF sCZYg R', 69208109523931074896124830950877547046838241197197163755337162357576515460103, 6, 94822288519902313062103306038996504808090896201228871086704563090707213982389, '0xC352C77703A000382541035D9F12F27608999903', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 44793366755592976097220292508847300457976487980935270927093758337339965027987], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) RemainingTokensReceiverAddress([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(3) balanceOf(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(4) CurrentDistribPublicSupply_([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(5) StartDistrib([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(6) SetupML([0, 6, 4, 4], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(7) BurnTokens([5000000000], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) RemainingTokensReceiverAddress([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(3) balanceOf(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(4) CurrentDistribPublicSupply_([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(5) StartDistrib([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(6) SetupML([0, 6, 4, 4], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(7) BurnTokens([5000000000], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) _fallback([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(3) DistribFundsReceiverAddress([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(4) SetFreeMKI([18], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) allowance(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) balanceOf(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) transfer(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 50000], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) _fallback([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(3) DistribFundsReceiverAddress([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(4) SetFreeMKI([18], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) allowance(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) balanceOf(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) transfer(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 50000], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) _fallback([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(3) DistribFundsReceiverAddress([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(4) SetFreeMKI([18], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) allowance(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) balanceOf(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) transfer(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 50000], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) transfer(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 0], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(3) BurnTokens([2], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(4) balanceOf(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) transfer(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 78753761331313178506965076372743018382900851845917428231029049853315410178722], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(6) Owner([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) transfer(['0xC352C77703A000382541035D9F12F27608999903', 2], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) _fallback([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(3) DistribFundsReceiverAddress([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(4) SetFreeMKI([18], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) allowance(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) balanceOf(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) transfer(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 50000], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) transfer(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 0], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(3) BurnTokens([2], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(4) balanceOf(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) transfer(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 78753761331313178506965076372743018382900851845917428231029049853315410178722], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(6) Owner([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) transfer(['0xC352C77703A000382541035D9F12F27608999903', 2], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) _fallback([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(3) DistribFundsReceiverAddress([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(4) SetFreeMKI([18], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) allowance(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) balanceOf(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) transfer(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 50000], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) _fallback([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(3) DistribFundsReceiverAddress([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(4) SetFreeMKI([18], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) allowance(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) balanceOf(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) transfer(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 50000], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) MaxDistribPublicSupply_([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(3) SetupDone([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(4) distribution([['0xC352C77703A000382541035D9F12F27608999903', '0xC352C77703A000382541035D9F12F27608999903', '0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xB1edf760606209BA4c63a3d1330a89aF2849f079'], 87288180513003108986430197569133751197406657173832547095792518118215802406244], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) IsDistribRunningFalg_([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(6) SetupiBird(['"iBird"', '"iBird Token"', 255, 63233087473829183293361884571444493818061810167968588840303302358035682295431, 2, '0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 4], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) IsDistribStarted([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) IsDistribStarted([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(3) allowance(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(4) SetExtra([50000], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) StartDistrib([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(6) OwnerDistribSupply_([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) _fallback([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 137733753268468218)	Returns: 
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) Makindo([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(3) MaxDistribPublicSupply_([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(4) _fallback([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 53456368426713852)	Returns: 
+	(5) balanceOf(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) transfer(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 79388014348966091641862689194898670818783863413220666640322438776837810620991], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) StartDistrib([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) _fallback([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(3) DistribFundsReceiverAddress([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(4) SetFreeMKI([18], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) allowance(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) balanceOf(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) transfer(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 50000], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) _fallback([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(3) DistribFundsReceiverAddress([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(4) SetFreeMKI([18], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) allowance(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) balanceOf(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) transfer(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 50000], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) _fallback([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(3) DistribFundsReceiverAddress([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(4) SetFreeMKI([18], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) allowance(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) balanceOf(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) transfer(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 50000], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) _fallback([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(3) DistribFundsReceiverAddress([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(4) SetFreeMKI([18], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) allowance(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) balanceOf(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) transfer(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 50000], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) MaxDistribPublicSupply_([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(3) SetupDone([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(4) distribution([['0xC352C77703A000382541035D9F12F27608999903', '0xC352C77703A000382541035D9F12F27608999903', '0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xB1edf760606209BA4c63a3d1330a89aF2849f079'], 87288180513003108986430197569133751197406657173832547095792518118215802406244], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) IsDistribRunningFalg_([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(6) SetupiBird(['"iBird"', '"iBird Token"', 255, 63233087473829183293361884571444493818061810167968588840303302358035682295431, 2, '0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 4], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) IsDistribStarted([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) IsDistribStarted([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(3) allowance(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(4) StopDistrib([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(5) _fallback([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 67234216877315510)	Returns: 
+	(6) BurnTokens([50000], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(7) IsDistribStarted([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(8) Makindo([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(9) distribution([['0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xC352C77703A000382541035D9F12F27608999903', '0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xC352C77703A000382541035D9F12F27608999903'], 20000000000], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(10) SetupDone([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(11) totalSupply([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) IsDistribStarted([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(3) allowance(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(4) StopDistrib([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(5) _fallback([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 67234216877315510)	Returns: 
+	(6) BurnTokens([50000], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(7) IsDistribStarted([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(8) Makindo([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(9) distribution([['0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xC352C77703A000382541035D9F12F27608999903', '0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xC352C77703A000382541035D9F12F27608999903'], 20000000000], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(10) SetupDone([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(11) totalSupply([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) IsDistribStarted([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(3) allowance(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(4) StopDistrib([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(5) _fallback([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 67234216877315510)	Returns: 
+	(6) BurnTokens([50000], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(7) IsDistribStarted([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(8) Makindo([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(9) distribution([['0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xC352C77703A000382541035D9F12F27608999903', '0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xC352C77703A000382541035D9F12F27608999903'], 20000000000], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(10) SetupDone([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(11) totalSupply([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) IsDistribStarted([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(3) allowance(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(4) StopDistrib([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(5) _fallback([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 67234216877315510)	Returns: 
+	(6) BurnTokens([50000], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(7) IsDistribStarted([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(8) Makindo([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(9) distribution([['0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xC352C77703A000382541035D9F12F27608999903', '0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xC352C77703A000382541035D9F12F27608999903'], 20000000000], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(10) SetupDone([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(11) totalSupply([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) Makindo([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(3) distribution([['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xC352C77703A000382541035D9F12F27608999903', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], 50351157158287271722599581557732241729681077002139293711021132607347323384163], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(4) SetExtra([95588392494037332603806047786251124874779865866551892658608379587822155301110], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) distributeAmounts([['0xC352C77703A000382541035D9F12F27608999903', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0xC352C77703A000382541035D9F12F27608999903', '0x0000000000000000000000000000000000000000'], [62776563520996032835206902826848520700010011889861640115806464084298599185859, 39928105844010955227518070284279657218315537149236305877976260167319888427437]], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(6) distributeAmounts([['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xC352C77703A000382541035D9F12F27608999903', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0xC352C77703A000382541035D9F12F27608999903', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xC352C77703A000382541035D9F12F27608999903'], [9]], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(7) MaxDistribPublicSupply_([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) Makindo([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(3) distribution([['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xC352C77703A000382541035D9F12F27608999903', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], 50351157158287271722599581557732241729681077002139293711021132607347323384163], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(4) SetExtra([95588392494037332603806047786251124874779865866551892658608379587822155301110], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) distributeAmounts([['0xC352C77703A000382541035D9F12F27608999903', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0xC352C77703A000382541035D9F12F27608999903', '0x0000000000000000000000000000000000000000'], [62776563520996032835206902826848520700010011889861640115806464084298599185859, 39928105844010955227518070284279657218315537149236305877976260167319888427437]], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(6) distributeAmounts([['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xC352C77703A000382541035D9F12F27608999903', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0xC352C77703A000382541035D9F12F27608999903', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xC352C77703A000382541035D9F12F27608999903'], [9]], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(7) MaxDistribPublicSupply_([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) Makindo([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(3) distribution([['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xC352C77703A000382541035D9F12F27608999903', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], 50351157158287271722599581557732241729681077002139293711021132607347323384163], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(4) SetExtra([95588392494037332603806047786251124874779865866551892658608379587822155301110], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) distributeAmounts([['0xC352C77703A000382541035D9F12F27608999903', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0xC352C77703A000382541035D9F12F27608999903', '0x0000000000000000000000000000000000000000'], [62776563520996032835206902826848520700010011889861640115806464084298599185859, 39928105844010955227518070284279657218315537149236305877976260167319888427437]], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(6) distributeAmounts([['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xC352C77703A000382541035D9F12F27608999903', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0xC352C77703A000382541035D9F12F27608999903', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xC352C77703A000382541035D9F12F27608999903'], [9]], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(7) MaxDistribPublicSupply_([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) MaxDistribPublicSupply_([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(3) SetupDone([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(4) distribution([['0xC352C77703A000382541035D9F12F27608999903', '0xC352C77703A000382541035D9F12F27608999903', '0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xB1edf760606209BA4c63a3d1330a89aF2849f079'], 87288180513003108986430197569133751197406657173832547095792518118215802406244], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) IsDistribRunningFalg_([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(6) SetupiBird(['"iBird"', '"iBird Token"', 255, 63233087473829183293361884571444493818061810167968588840303302358035682295431, 2, '0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 4], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) IsDistribStarted([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) BurnTokens([105693892138478310456633252412962878272231285347879046195883089961142086812032], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) _fallback([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 78546351455998368)	Returns: 
+	(4) Makindo([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(5) approve(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 9], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(6) SetExtra([6], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) distributeAmounts([['0xC352C77703A000382541035D9F12F27608999903', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0xC352C77703A000382541035D9F12F27608999903', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0xB1edf760606209BA4c63a3d1330a89aF2849f079'], [104650135386248783824184053962234557578447156530019064665729658218886916568861, 50000, 26061619147586049189539463745567102805939681688838457914708485522505737246188, 111468802904520791221698246936784549426383593944627577378437158065563684421456]], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) IsDistribStarted([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(3) allowance(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(4) SetExtra([50000], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) StartDistrib([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(6) OwnerDistribSupply_([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) _fallback([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 137733753268468218)	Returns: 
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) IsDistribStarted([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(3) allowance(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(4) SetExtra([50000], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) StartDistrib([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(6) OwnerDistribSupply_([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) _fallback([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 137733753268468218)	Returns: 
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) Makindo([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) SetupDone([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(4) SetFreeMKI([27669550541518434730540590154508213887847304090433185972059697260726049214794], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(5) totalSupply([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(6) RemainingTokensReceiverAddress([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) balanceOf(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) _fallback([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(3) DistribFundsReceiverAddress([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(4) SetFreeMKI([18], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) allowance(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) balanceOf(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) transfer(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 50000], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) _fallback([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(3) DistribFundsReceiverAddress([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(4) SetFreeMKI([18], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) allowance(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) balanceOf(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) transfer(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 50000], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) MaxDistribPublicSupply_([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(3) SetupDone([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(4) distribution([['0xC352C77703A000382541035D9F12F27608999903', '0xC352C77703A000382541035D9F12F27608999903', '0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xB1edf760606209BA4c63a3d1330a89aF2849f079'], 87288180513003108986430197569133751197406657173832547095792518118215802406244], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) IsDistribRunningFalg_([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(6) SetupiBird(['"iBird"', '"iBird Token"', 255, 63233087473829183293361884571444493818061810167968588840303302358035682295431, 2, '0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 4], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) IsDistribStarted([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) IsDistribRunningFalg_([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(3) allowance(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(4) Makindo([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(5) SetFreeMKI([97310586289650622170316129408771958277445756494266108279117265253509436957525], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(6) IsDistribStarted([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) _fallback([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(8) SetupML([0, 42320084726186966703857927197274673006010042944488030768288231829035348840871, 9, 2], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(9) IsDistribStarted([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) RemainingTokensReceiverAddress([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(3) balanceOf(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(4) CurrentDistribPublicSupply_([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(5) StartDistrib([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(6) SetupML([0, 6, 4, 4], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(7) BurnTokens([5000000000], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) RemainingTokensReceiverAddress([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(3) balanceOf(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(4) CurrentDistribPublicSupply_([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(5) StartDistrib([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(6) SetupML([0, 6, 4, 4], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(7) BurnTokens([5000000000], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) RemainingTokensReceiverAddress([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(3) balanceOf(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(4) CurrentDistribPublicSupply_([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(5) StartDistrib([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(6) SetupML([0, 6, 4, 4], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(7) BurnTokens([5000000000], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) IsDistribRunningFalg_([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(3) IsDistribStarted([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(4) transferFrom(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 18], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) distributeAmounts([['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xC352C77703A000382541035D9F12F27608999903', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0x0000000000000000000000000000000000000000'], [53428869937400207905423945295212748116713333022804204876615703205372357092175, 105299688702070865222260264512382174040194050910057904499143620986204546516485, 67548375016975400202510540183906296584362381560364450938007764211478217538259, 9811306948519827636526443306576533102152009675426509915974810810318968070691, 255]], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) _fallback([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(7) Owner([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) IsDistribRunningFalg_([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(3) IsDistribStarted([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(4) transferFrom(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 18], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) distributeAmounts([['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xC352C77703A000382541035D9F12F27608999903', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0x0000000000000000000000000000000000000000'], [53428869937400207905423945295212748116713333022804204876615703205372357092175, 105299688702070865222260264512382174040194050910057904499143620986204546516485, 67548375016975400202510540183906296584362381560364450938007764211478217538259, 9811306948519827636526443306576533102152009675426509915974810810318968070691, 255]], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) _fallback([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(7) Owner([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) OwnerDistribSupply_([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(3) Makindo([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) Owner([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) Makindo([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(6) SetFreeMKI([3], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(7) distributeAmounts([['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], [69159630704978506288650876735029867741236624087666503354791972646015628998827, 11332179429143648354770352588991462537989402650184928316831397770986449630803, 57124789923717365897028580707467856337957143205411463480116666329130656282642, 76877597278900702797639436693905287914618583492690301852840838705490125859214]], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(8) distributeAmounts([['0xC352C77703A000382541035D9F12F27608999903', '0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], [109277137830500954201025624460182649717476262569271764410854164212178552262897, 3, 2, 36057186828390525977493172843513615137526572824320145344388383285247052925128]], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) OwnerDistribSupply_([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(3) Makindo([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) Owner([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) Makindo([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(6) SetFreeMKI([3], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(7) distributeAmounts([['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], [69159630704978506288650876735029867741236624087666503354791972646015628998827, 11332179429143648354770352588991462537989402650184928316831397770986449630803, 57124789923717365897028580707467856337957143205411463480116666329130656282642, 76877597278900702797639436693905287914618583492690301852840838705490125859214]], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(8) distributeAmounts([['0xC352C77703A000382541035D9F12F27608999903', '0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], [109277137830500954201025624460182649717476262569271764410854164212178552262897, 3, 2, 36057186828390525977493172843513615137526572824320145344388383285247052925128]], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) OwnerDistribSupply_([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(3) Makindo([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) Owner([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) Makindo([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(6) SetFreeMKI([3], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(7) distributeAmounts([['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], [69159630704978506288650876735029867741236624087666503354791972646015628998827, 11332179429143648354770352588991462537989402650184928316831397770986449630803, 57124789923717365897028580707467856337957143205411463480116666329130656282642, 76877597278900702797639436693905287914618583492690301852840838705490125859214]], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(8) distributeAmounts([['0xC352C77703A000382541035D9F12F27608999903', '0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], [109277137830500954201025624460182649717476262569271764410854164212178552262897, 3, 2, 36057186828390525977493172843513615137526572824320145344388383285247052925128]], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) IsDistribRunningFalg_([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(3) IsDistribStarted([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(4) transferFrom(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 18], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) distributeAmounts([['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xC352C77703A000382541035D9F12F27608999903', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0x0000000000000000000000000000000000000000'], [53428869937400207905423945295212748116713333022804204876615703205372357092175, 105299688702070865222260264512382174040194050910057904499143620986204546516485, 67548375016975400202510540183906296584362381560364450938007764211478217538259, 9811306948519827636526443306576533102152009675426509915974810810318968070691, 255]], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) _fallback([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(7) Owner([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) IsDistribRunningFalg_([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(3) IsDistribStarted([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(4) transferFrom(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 18], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) distributeAmounts([['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xC352C77703A000382541035D9F12F27608999903', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0x0000000000000000000000000000000000000000'], [53428869937400207905423945295212748116713333022804204876615703205372357092175, 105299688702070865222260264512382174040194050910057904499143620986204546516485, 67548375016975400202510540183906296584362381560364450938007764211478217538259, 9811306948519827636526443306576533102152009675426509915974810810318968070691, 255]], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) _fallback([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(7) Owner([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) _fallback([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(3) DistribFundsReceiverAddress([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(4) SetFreeMKI([18], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) allowance(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) balanceOf(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) transfer(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 50000], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) IsDistribRunningFalg_([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(3) IsDistribStarted([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(4) transferFrom(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 18], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) distributeAmounts([['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xC352C77703A000382541035D9F12F27608999903', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0x0000000000000000000000000000000000000000'], [53428869937400207905423945295212748116713333022804204876615703205372357092175, 105299688702070865222260264512382174040194050910057904499143620986204546516485, 67548375016975400202510540183906296584362381560364450938007764211478217538259, 9811306948519827636526443306576533102152009675426509915974810810318968070691, 255]], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) _fallback([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(7) Owner([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) distributeAmounts([['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0xB1edf760606209BA4c63a3d1330a89aF2849f079'], [20000000000, 41140526942531573084115269235632572546199008405595205787348785658279174863149, 31540505493224582337831872866308426164487817671050951662844507920237178076175, 50000]], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) SetExtra([6], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) Makindo([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(5) totalSupply([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) SetExtra([1], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(7) SetupiBird(['"iBird Token"', '"iBird Token"', 4, 9, 5000000000, '0xC352C77703A000382541035D9F12F27608999903', '0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 1], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(8) SetupDone([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) MaxDistribPublicSupply_([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(3) SetupDone([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(4) distribution([['0xC352C77703A000382541035D9F12F27608999903', '0xC352C77703A000382541035D9F12F27608999903', '0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xB1edf760606209BA4c63a3d1330a89aF2849f079'], 87288180513003108986430197569133751197406657173832547095792518118215802406244], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) IsDistribRunningFalg_([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(6) SetupiBird(['"iBird"', '"iBird Token"', 255, 63233087473829183293361884571444493818061810167968588840303302358035682295431, 2, '0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 4], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) IsDistribStarted([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) BurnTokens([96090805873150947192174573980061493888330608791751308127406149242673109142497], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) Makindo([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) balanceOf(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(5) SetupiBird(['JMpnECjskQFOS YtOGTrZKoUwJDxwxO vHUXcpOezakbutLAkdYfdjiQYwjeMXMz', 'lrRCYDDWGFmehTjLBAmQbLVRD xUhTbsnDaQNkHcENsKgKiDtNELohgEFgruftGvYWdFdcPKOWASYuNFCluTMPlLnveLHYZfKPLMajbedDTfJdDzhuimZiaNnqxPirfhPKIROappOXmcjXwVZDyJyFPnWOKVoXkLiaJ cujPFtUhrzgaaogftbiHPisCDxnDJzTIISWHQyxdtTHDrfQnHnGYowMXjSAVcNsL', 6, 43777102337330479776188488860685330605653419687351155079291521956737995585028, 23879239957801133695212771334896825190309447251270314763078761497704331749252, '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0xC352C77703A000382541035D9F12F27608999903', 112657605192974870321065619360002937613954011747456056554656886218846564479156], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(6) SetFreeMKI([2], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(7) CurrentDistribPublicSupply_([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(8) SetupiBird(['UYFRwRPgEisJKUKSBJ EgufX', '"iBird"', 2, 93287037759776908782351293999433032112413899091369710751073336103124987726908, 99688499982496143818407692728331968302289435508753042761624389531523181711263, '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0xC352C77703A000382541035D9F12F27608999903', 10529432292775109124183112291976040413240747828257409912745720252499293093760], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(9) SetupiBird(['"iBird"', 'RDBrqWnyCRXYpOeQcetGkWgkHSADLyOQTBhFgPTZshDhTzUUWLmktLfTosbdTkFenwgmsqqEEcTg', 27850521065647292816376505102120452801020409559883319581773355517626027088161, 5000000000, 50000, '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0xC352C77703A000382541035D9F12F27608999903', 115460228128656883416714710045976621250975900865053718423443273844511428459912], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(10) balanceOf(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) BurnTokens([96090805873150947192174573980061493888330608791751308127406149242673109142497], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) Makindo([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) balanceOf(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(5) SetupiBird(['JMpnECjskQFOS YtOGTrZKoUwJDxwxO vHUXcpOezakbutLAkdYfdjiQYwjeMXMz', 'lrRCYDDWGFmehTjLBAmQbLVRD xUhTbsnDaQNkHcENsKgKiDtNELohgEFgruftGvYWdFdcPKOWASYuNFCluTMPlLnveLHYZfKPLMajbedDTfJdDzhuimZiaNnqxPirfhPKIROappOXmcjXwVZDyJyFPnWOKVoXkLiaJ cujPFtUhrzgaaogftbiHPisCDxnDJzTIISWHQyxdtTHDrfQnHnGYowMXjSAVcNsL', 6, 43777102337330479776188488860685330605653419687351155079291521956737995585028, 23879239957801133695212771334896825190309447251270314763078761497704331749252, '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0xC352C77703A000382541035D9F12F27608999903', 112657605192974870321065619360002937613954011747456056554656886218846564479156], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(6) SetFreeMKI([2], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(7) CurrentDistribPublicSupply_([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(8) SetupiBird(['UYFRwRPgEisJKUKSBJ EgufX', '"iBird"', 2, 93287037759776908782351293999433032112413899091369710751073336103124987726908, 99688499982496143818407692728331968302289435508753042761624389531523181711263, '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0xC352C77703A000382541035D9F12F27608999903', 10529432292775109124183112291976040413240747828257409912745720252499293093760], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(9) SetupiBird(['"iBird"', 'RDBrqWnyCRXYpOeQcetGkWgkHSADLyOQTBhFgPTZshDhTzUUWLmktLfTosbdTkFenwgmsqqEEcTg', 27850521065647292816376505102120452801020409559883319581773355517626027088161, 5000000000, 50000, '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0xC352C77703A000382541035D9F12F27608999903', 115460228128656883416714710045976621250975900865053718423443273844511428459912], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(10) balanceOf(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) BurnTokens([96090805873150947192174573980061493888330608791751308127406149242673109142497], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) Makindo([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) balanceOf(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(5) SetupiBird(['JMpnECjskQFOS YtOGTrZKoUwJDxwxO vHUXcpOezakbutLAkdYfdjiQYwjeMXMz', 'lrRCYDDWGFmehTjLBAmQbLVRD xUhTbsnDaQNkHcENsKgKiDtNELohgEFgruftGvYWdFdcPKOWASYuNFCluTMPlLnveLHYZfKPLMajbedDTfJdDzhuimZiaNnqxPirfhPKIROappOXmcjXwVZDyJyFPnWOKVoXkLiaJ cujPFtUhrzgaaogftbiHPisCDxnDJzTIISWHQyxdtTHDrfQnHnGYowMXjSAVcNsL', 6, 43777102337330479776188488860685330605653419687351155079291521956737995585028, 23879239957801133695212771334896825190309447251270314763078761497704331749252, '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0xC352C77703A000382541035D9F12F27608999903', 112657605192974870321065619360002937613954011747456056554656886218846564479156], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(6) SetFreeMKI([2], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(7) CurrentDistribPublicSupply_([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(8) SetupiBird(['UYFRwRPgEisJKUKSBJ EgufX', '"iBird"', 2, 93287037759776908782351293999433032112413899091369710751073336103124987726908, 99688499982496143818407692728331968302289435508753042761624389531523181711263, '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0xC352C77703A000382541035D9F12F27608999903', 10529432292775109124183112291976040413240747828257409912745720252499293093760], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(9) SetupiBird(['"iBird"', 'RDBrqWnyCRXYpOeQcetGkWgkHSADLyOQTBhFgPTZshDhTzUUWLmktLfTosbdTkFenwgmsqqEEcTg', 27850521065647292816376505102120452801020409559883319581773355517626027088161, 5000000000, 50000, '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0xC352C77703A000382541035D9F12F27608999903', 115460228128656883416714710045976621250975900865053718423443273844511428459912], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(10) balanceOf(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) BurnTokens([96090805873150947192174573980061493888330608791751308127406149242673109142497], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) Makindo([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) balanceOf(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(5) SetupiBird(['JMpnECjskQFOS YtOGTrZKoUwJDxwxO vHUXcpOezakbutLAkdYfdjiQYwjeMXMz', 'lrRCYDDWGFmehTjLBAmQbLVRD xUhTbsnDaQNkHcENsKgKiDtNELohgEFgruftGvYWdFdcPKOWASYuNFCluTMPlLnveLHYZfKPLMajbedDTfJdDzhuimZiaNnqxPirfhPKIROappOXmcjXwVZDyJyFPnWOKVoXkLiaJ cujPFtUhrzgaaogftbiHPisCDxnDJzTIISWHQyxdtTHDrfQnHnGYowMXjSAVcNsL', 6, 43777102337330479776188488860685330605653419687351155079291521956737995585028, 23879239957801133695212771334896825190309447251270314763078761497704331749252, '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0xC352C77703A000382541035D9F12F27608999903', 112657605192974870321065619360002937613954011747456056554656886218846564479156], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(6) SetFreeMKI([2], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(7) CurrentDistribPublicSupply_([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(8) SetupiBird(['UYFRwRPgEisJKUKSBJ EgufX', '"iBird"', 2, 93287037759776908782351293999433032112413899091369710751073336103124987726908, 99688499982496143818407692728331968302289435508753042761624389531523181711263, '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0xC352C77703A000382541035D9F12F27608999903', 10529432292775109124183112291976040413240747828257409912745720252499293093760], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(9) SetupiBird(['"iBird"', 'RDBrqWnyCRXYpOeQcetGkWgkHSADLyOQTBhFgPTZshDhTzUUWLmktLfTosbdTkFenwgmsqqEEcTg', 27850521065647292816376505102120452801020409559883319581773355517626027088161, 5000000000, 50000, '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0xC352C77703A000382541035D9F12F27608999903', 115460228128656883416714710045976621250975900865053718423443273844511428459912], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(10) balanceOf(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) BurnTokens([96090805873150947192174573980061493888330608791751308127406149242673109142497], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) Makindo([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) balanceOf(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(5) SetupiBird(['JMpnECjskQFOS YtOGTrZKoUwJDxwxO vHUXcpOezakbutLAkdYfdjiQYwjeMXMz', 'lrRCYDDWGFmehTjLBAmQbLVRD xUhTbsnDaQNkHcENsKgKiDtNELohgEFgruftGvYWdFdcPKOWASYuNFCluTMPlLnveLHYZfKPLMajbedDTfJdDzhuimZiaNnqxPirfhPKIROappOXmcjXwVZDyJyFPnWOKVoXkLiaJ cujPFtUhrzgaaogftbiHPisCDxnDJzTIISWHQyxdtTHDrfQnHnGYowMXjSAVcNsL', 6, 43777102337330479776188488860685330605653419687351155079291521956737995585028, 23879239957801133695212771334896825190309447251270314763078761497704331749252, '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0xC352C77703A000382541035D9F12F27608999903', 112657605192974870321065619360002937613954011747456056554656886218846564479156], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(6) SetFreeMKI([2], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(7) CurrentDistribPublicSupply_([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(8) SetupiBird(['UYFRwRPgEisJKUKSBJ EgufX', '"iBird"', 2, 93287037759776908782351293999433032112413899091369710751073336103124987726908, 99688499982496143818407692728331968302289435508753042761624389531523181711263, '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0xC352C77703A000382541035D9F12F27608999903', 10529432292775109124183112291976040413240747828257409912745720252499293093760], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(9) SetupiBird(['"iBird"', 'RDBrqWnyCRXYpOeQcetGkWgkHSADLyOQTBhFgPTZshDhTzUUWLmktLfTosbdTkFenwgmsqqEEcTg', 27850521065647292816376505102120452801020409559883319581773355517626027088161, 5000000000, 50000, '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0xC352C77703A000382541035D9F12F27608999903', 115460228128656883416714710045976621250975900865053718423443273844511428459912], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(10) balanceOf(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) distributeAmounts([['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0xB1edf760606209BA4c63a3d1330a89aF2849f079'], [20000000000, 41140526942531573084115269235632572546199008405595205787348785658279174863149, 31540505493224582337831872866308426164487817671050951662844507920237178076175, 50000]], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) SetExtra([6], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) Makindo([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(5) totalSupply([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) SetExtra([1], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(7) SetupiBird(['"iBird Token"', '"iBird Token"', 4, 9, 5000000000, '0xC352C77703A000382541035D9F12F27608999903', '0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 1], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(8) SetupDone([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) distributeAmounts([['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0xB1edf760606209BA4c63a3d1330a89aF2849f079'], [20000000000, 41140526942531573084115269235632572546199008405595205787348785658279174863149, 31540505493224582337831872866308426164487817671050951662844507920237178076175, 50000]], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) SetExtra([6], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) Makindo([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(5) totalSupply([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) SetExtra([1], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(7) SetupiBird(['"iBird Token"', '"iBird Token"', 4, 9, 5000000000, '0xC352C77703A000382541035D9F12F27608999903', '0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 1], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(8) SetupDone([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) distributeAmounts([['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0xB1edf760606209BA4c63a3d1330a89aF2849f079'], [20000000000, 41140526942531573084115269235632572546199008405595205787348785658279174863149, 31540505493224582337831872866308426164487817671050951662844507920237178076175, 50000]], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) SetExtra([6], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) Makindo([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(5) totalSupply([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) SetExtra([1], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(7) SetupiBird(['"iBird Token"', '"iBird Token"', 4, 9, 5000000000, '0xC352C77703A000382541035D9F12F27608999903', '0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 1], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(8) SetupDone([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) distributeAmounts([['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0xB1edf760606209BA4c63a3d1330a89aF2849f079'], [20000000000, 41140526942531573084115269235632572546199008405595205787348785658279174863149, 31540505493224582337831872866308426164487817671050951662844507920237178076175, 50000]], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) SetExtra([6], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) Makindo([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(5) totalSupply([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) SetExtra([1], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(7) SetupiBird(['"iBird Token"', '"iBird Token"', 4, 9, 5000000000, '0xC352C77703A000382541035D9F12F27608999903', '0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 1], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(8) SetupDone([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) distributeAmounts([['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0xB1edf760606209BA4c63a3d1330a89aF2849f079'], [20000000000, 41140526942531573084115269235632572546199008405595205787348785658279174863149, 31540505493224582337831872866308426164487817671050951662844507920237178076175, 50000]], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) SetExtra([6], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) Makindo([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(5) totalSupply([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) SetExtra([1], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(7) SetupiBird(['"iBird Token"', '"iBird Token"', 4, 9, 5000000000, '0xC352C77703A000382541035D9F12F27608999903', '0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 1], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(8) SetupDone([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) distributeAmounts([['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0xB1edf760606209BA4c63a3d1330a89aF2849f079'], [20000000000, 41140526942531573084115269235632572546199008405595205787348785658279174863149, 31540505493224582337831872866308426164487817671050951662844507920237178076175, 50000]], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) SetExtra([6], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) Makindo([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(5) totalSupply([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) SetExtra([1], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(7) SetupiBird(['"iBird Token"', '"iBird Token"', 4, 9, 5000000000, '0xC352C77703A000382541035D9F12F27608999903', '0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 1], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(8) SetupDone([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) MaxDistribPublicSupply_([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(3) SetupDone([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(4) distribution([['0xC352C77703A000382541035D9F12F27608999903', '0xC352C77703A000382541035D9F12F27608999903', '0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xB1edf760606209BA4c63a3d1330a89aF2849f079'], 87288180513003108986430197569133751197406657173832547095792518118215802406244], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) IsDistribRunningFalg_([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(6) SetupiBird(['"iBird"', '"iBird Token"', 255, 63233087473829183293361884571444493818061810167968588840303302358035682295431, 2, '0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 4], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) IsDistribStarted([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) MaxDistribPublicSupply_([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(3) SetupDone([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(4) distribution([['0xC352C77703A000382541035D9F12F27608999903', '0xC352C77703A000382541035D9F12F27608999903', '0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xB1edf760606209BA4c63a3d1330a89aF2849f079'], 87288180513003108986430197569133751197406657173832547095792518118215802406244], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) IsDistribRunningFalg_([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(6) SetupiBird(['"iBird"', '"iBird Token"', 255, 63233087473829183293361884571444493818061810167968588840303302358035682295431, 2, '0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 4], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) IsDistribStarted([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) SetupML([0, 98461954059218882648406562750073443649227499742287893859079560280567868491531, 5000000000, 80379113621874816360084711042077433798994458618869323414985560716622553901757], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) distributeAmounts([['0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0xC352C77703A000382541035D9F12F27608999903', '0xC352C77703A000382541035D9F12F27608999903'], [4, 6, 0, 50000, 9, 20000000000]], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(4) Owner([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) approve(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 25555956875652528854811756508296774145251453690674001140943844920191641567522], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(6) DistribFundsReceiverAddress([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(7) approve(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 51248704943975888553891952437482263302876647572724057928627127231831121522999], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(8) transferFrom(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 0], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) IsDistribRunningFalg_([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(3) IsDistribStarted([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(4) transferFrom(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 18], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) distributeAmounts([['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xC352C77703A000382541035D9F12F27608999903', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0x0000000000000000000000000000000000000000'], [53428869937400207905423945295212748116713333022804204876615703205372357092175, 105299688702070865222260264512382174040194050910057904499143620986204546516485, 67548375016975400202510540183906296584362381560364450938007764211478217538259, 9811306948519827636526443306576533102152009675426509915974810810318968070691, 255]], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) _fallback([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(7) Owner([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) IsDistribRunningFalg_([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(3) IsDistribStarted([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(4) transferFrom(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 18], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) distributeAmounts([['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xC352C77703A000382541035D9F12F27608999903', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0x0000000000000000000000000000000000000000'], [53428869937400207905423945295212748116713333022804204876615703205372357092175, 105299688702070865222260264512382174040194050910057904499143620986204546516485, 67548375016975400202510540183906296584362381560364450938007764211478217538259, 9811306948519827636526443306576533102152009675426509915974810810318968070691, 255]], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) _fallback([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(7) Owner([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) IsDistribRunningFalg_([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(3) IsDistribStarted([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(4) transferFrom(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 18], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) distributeAmounts([['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xC352C77703A000382541035D9F12F27608999903', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0x0000000000000000000000000000000000000000'], [53428869937400207905423945295212748116713333022804204876615703205372357092175, 105299688702070865222260264512382174040194050910057904499143620986204546516485, 67548375016975400202510540183906296584362381560364450938007764211478217538259, 9811306948519827636526443306576533102152009675426509915974810810318968070691, 255]], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) _fallback([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(7) Owner([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) IsDistribRunningFalg_([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(3) IsDistribStarted([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(4) transferFrom(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 18], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) distributeAmounts([['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xC352C77703A000382541035D9F12F27608999903', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0x0000000000000000000000000000000000000000'], [53428869937400207905423945295212748116713333022804204876615703205372357092175, 105299688702070865222260264512382174040194050910057904499143620986204546516485, 67548375016975400202510540183906296584362381560364450938007764211478217538259, 9811306948519827636526443306576533102152009675426509915974810810318968070691, 255]], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) _fallback([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(7) Owner([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) SetupML([0, 98461954059218882648406562750073443649227499742287893859079560280567868491531, 5000000000, 80379113621874816360084711042077433798994458618869323414985560716622553901757], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) distributeAmounts([['0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0xC352C77703A000382541035D9F12F27608999903', '0xC352C77703A000382541035D9F12F27608999903'], [4, 6, 0, 50000, 9, 20000000000]], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(4) Owner([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) approve(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 25555956875652528854811756508296774145251453690674001140943844920191641567522], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(6) DistribFundsReceiverAddress([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(7) approve(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 51248704943975888553891952437482263302876647572724057928627127231831121522999], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(8) transferFrom(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 0], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) IsDistribRunningFalg_([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(3) IsDistribStarted([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(4) transferFrom(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 18], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) distributeAmounts([['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xC352C77703A000382541035D9F12F27608999903', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0x0000000000000000000000000000000000000000'], [53428869937400207905423945295212748116713333022804204876615703205372357092175, 105299688702070865222260264512382174040194050910057904499143620986204546516485, 67548375016975400202510540183906296584362381560364450938007764211478217538259, 9811306948519827636526443306576533102152009675426509915974810810318968070691, 255]], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) _fallback([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(7) Owner([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) SetupML([0, 98461954059218882648406562750073443649227499742287893859079560280567868491531, 5000000000, 80379113621874816360084711042077433798994458618869323414985560716622553901757], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) distributeAmounts([['0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0xC352C77703A000382541035D9F12F27608999903', '0xC352C77703A000382541035D9F12F27608999903'], [4, 6, 0, 50000, 9, 20000000000]], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(4) Owner([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) approve(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 25555956875652528854811756508296774145251453690674001140943844920191641567522], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(6) DistribFundsReceiverAddress([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(7) approve(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 51248704943975888553891952437482263302876647572724057928627127231831121522999], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(8) transferFrom(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 0], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) IsDistribRunningFalg_([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(3) IsDistribStarted([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(4) transferFrom(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 18], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) distributeAmounts([['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xC352C77703A000382541035D9F12F27608999903', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0x0000000000000000000000000000000000000000'], [53428869937400207905423945295212748116713333022804204876615703205372357092175, 105299688702070865222260264512382174040194050910057904499143620986204546516485, 67548375016975400202510540183906296584362381560364450938007764211478217538259, 9811306948519827636526443306576533102152009675426509915974810810318968070691, 255]], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) _fallback([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(7) Owner([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) RemainingTokensReceiverAddress([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(3) balanceOf(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(4) CurrentDistribPublicSupply_([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(5) StartDistrib([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(6) SetupML([0, 6, 4, 4], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(7) BurnTokens([5000000000], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) BurnTokens([105693892138478310456633252412962878272231285347879046195883089961142086812032], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) _fallback([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 78546351455998368)	Returns: 
+	(4) Makindo([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(5) approve(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 9], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(6) SetExtra([6], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) distributeAmounts([['0xC352C77703A000382541035D9F12F27608999903', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0xC352C77703A000382541035D9F12F27608999903', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0xB1edf760606209BA4c63a3d1330a89aF2849f079'], [104650135386248783824184053962234557578447156530019064665729658218886916568861, 50000, 26061619147586049189539463745567102805939681688838457914708485522505737246188, 111468802904520791221698246936784549426383593944627577378437158065563684421456]], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 

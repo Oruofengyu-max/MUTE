@@ -1,0 +1,21 @@
+Source Function,Target Function
+"__callback(bytes32,string,bytes)",withdraw()
+finalizeLottery(),withdraw()
+"initLottery(uint16,uint256,uint8)",withdraw()
+purchaseTicket(uint16[]),withdraw()
+"__callback(bytes32,string)",withdraw()
+"__callback(bytes32,string,bytes)",finalizeLottery()
+withdraw(),finalizeLottery()
+"initLottery(uint16,uint256,uint8)",finalizeLottery()
+purchaseTicket(uint16[]),finalizeLottery()
+"__callback(bytes32,string)",finalizeLottery()
+"__callback(bytes32,string,bytes)","initLottery(uint16,uint256,uint8)"
+withdraw(),"initLottery(uint16,uint256,uint8)"
+finalizeLottery(),"initLottery(uint16,uint256,uint8)"
+purchaseTicket(uint16[]),"initLottery(uint16,uint256,uint8)"
+"__callback(bytes32,string)","initLottery(uint16,uint256,uint8)"
+"__callback(bytes32,string,bytes)",purchaseTicket(uint16[])
+withdraw(),purchaseTicket(uint16[])
+finalizeLottery(),purchaseTicket(uint16[])
+"initLottery(uint16,uint256,uint8)",purchaseTicket(uint16[])
+"__callback(bytes32,string)",purchaseTicket(uint16[])

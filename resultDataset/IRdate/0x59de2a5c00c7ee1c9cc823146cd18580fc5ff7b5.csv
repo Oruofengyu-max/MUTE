@@ -1,0 +1,12 @@
+Source Function,Target Function
+"setOtherManager(address,uint8)",reclaimResourceDeposits(address)
+setAllResourceERC20Addresses(address),reclaimResourceDeposits(address)
+"setResourceERC20Address(uint16,address)",reclaimResourceDeposits(address)
+"setStarDistance(uint8,uint16)",reclaimResourceDeposits(address)
+withdrawCollectedResources(),reclaimResourceDeposits(address)
+"launchShipOnMEA(uint256,uint8)",reclaimResourceDeposits(address)
+"setOtherManager(address,uint8)",withdrawCollectedResources()
+setAllResourceERC20Addresses(address),withdrawCollectedResources()
+"setResourceERC20Address(uint16,address)",withdrawCollectedResources()
+"setStarDistance(uint8,uint16)",withdrawCollectedResources()
+"launchShipOnMEA(uint256,uint8)",withdrawCollectedResources()

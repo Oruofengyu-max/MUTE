@@ -1,0 +1,11 @@
+Source Function,Target Function
+"approve(address,uint256)","transferFrom(address,address,uint256)"
+"transferSale(address,uint256,uint256,uint256)","transferFrom(address,address,uint256)"
+burn(uint256),"transferFrom(address,address,uint256)"
+depositContrac(uint256),"transferFrom(address,address,uint256)"
+refund(address),"transferFrom(address,address,uint256)"
+"approve(address,uint256)",burn(uint256)
+"transferSale(address,uint256,uint256,uint256)",burn(uint256)
+"transferFrom(address,address,uint256)",burn(uint256)
+depositContrac(uint256),burn(uint256)
+refund(address),burn(uint256)

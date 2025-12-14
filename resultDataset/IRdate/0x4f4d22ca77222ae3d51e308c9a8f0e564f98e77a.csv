@@ -1,0 +1,10 @@
+Source Function,Target Function
+setDex(address),massNotify(address[])
+renounceOwnership(),massNotify(address[])
+transferOwnership(address),massNotify(address[])
+renounceOwnership(),setDex(address)
+transferOwnership(address),setDex(address)
+setDex(address),renounceOwnership()
+transferOwnership(address),renounceOwnership()
+setDex(address),transferOwnership(address)
+renounceOwnership(),transferOwnership(address)

@@ -1,0 +1,19 @@
+Source Function,Target Function
+pause(),unpause()
+transferOwnership(address),unpause()
+unpause(),withdrawBalance()
+pause(),withdrawBalance()
+transferOwnership(address),withdrawBalance()
+unpause(),pause()
+transferOwnership(address),pause()
+"bid(address,uint256)","cancelAuction(address,uint256)"
+"createAuction(address,uint256,uint256,uint256,uint256)","cancelAuction(address,uint256)"
+"createAuction(address,uint256,uint256,uint256,uint256,address)","cancelAuction(address,uint256)"
+unpause(),"createAuction(address,uint256,uint256,uint256,uint256,address)"
+pause(),"createAuction(address,uint256,uint256,uint256,uint256,address)"
+transferOwnership(address),"createAuction(address,uint256,uint256,uint256,uint256,address)"
+unpause(),transferOwnership(address)
+pause(),transferOwnership(address)
+unpause(),"cancelAuctionWhenPaused(address,uint256)"
+pause(),"cancelAuctionWhenPaused(address,uint256)"
+transferOwnership(address),"cancelAuctionWhenPaused(address,uint256)"

@@ -1,0 +1,1021 @@
+Contract:			LunarToken
+Number of Relevant Branches:	64
+Number of Branches Covered:		64
+Runtime: 											109.837435
+Blockchain Time: 							82.941898
+Iterations										
+1
+--------------------------------------------------
+METHODS:
+
+Constructor:
+	Inputs :[{'name': '_numPlots', 'type': 'uint256'}, {'name': '_initialPriceInWei', 'type': 'uint256'}, {'name': '_feePercentage', 'type': 'uint8'}, {'name': '_tradingEnabled', 'type': 'bool'}, {'name': '_subdivisionEnabled', 'type': 'bool'}, {'name': '_maxSubdivisions', 'type': 'uint8'}]
+	Payable: nonpayable
+balanceOf:
+
+tokensOfOwnerByIndex:
+
+ownerOf:
+
+isUnowned:
+
+transfer:
+
+purchase:
+
+subdivide:
+
+setPrice:
+
+setMetadata:
+
+setOwner:
+
+setBeneficiary:
+
+setSubdivisionEnabled:
+
+setTradingEnabled:
+
+setFeePercentage:
+
+setInitialPrice:
+
+withdraw:
+
+
+--------------------------------------------------
+
+            TESTS:
+
+	(1) constructor([40432184776065584603271627536509260313940605745363746438519885395924746588963, 100, 210, False, True, 2], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) subdivide([2, False, False, 2, 25171637765736924519616349655179931288546528961065480894940428847014441562754, '"lunars"', '"lunars"'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) setBeneficiary(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) withdraw([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(5) purchase([2, 'CrDohCHYMRrkMxIEVbblAvNfdKEazhUhQsmnwKpMdYQsBlEqNVCtMaiOqvaWBQPYCeQHGLNBUcxlYVvZXhhyyPTOBMjFf', False, 100], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(6) setOwner(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) setOwner(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(8) setSubdivisionEnabled([False], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(9) setSubdivisionEnabled([True], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+
+	(1) constructor([6573331157540679516105244131739819087052667933419934772343285367660093117417, 103915560245028955160920299727517841273882756187290949206207220751716153234351, 50, False, False, 87], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) setInitialPrice([106677348292106820764343600589734012530779981596365899335435246059945160904665], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) tokensOfOwnerByIndex(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 100], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(4) setOwner(['0xC352C77703A000382541035D9F12F27608999903'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) transfer([2, '0xC352C77703A000382541035D9F12F27608999903', 'JIU RkcNGyvnMXEojjLvmKpzszoKfbMHINfPiGhrMEfOVKdbadHXzzjGQOahSHYWCuhgoWGOKhKVZAWHhMThV'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) subdivide([23435075101754203052814576784397874516957895038681758475281798974445828589985, True, True, 39724899444121646030136367537664463570791290388217711628323613493219812689186, 2, '"lunars"', '"lunars"'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(7) setOwner(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+
+	(1) constructor([6573331157540679516105244131739819087052667933419934772343285367660093117417, 103915560245028955160920299727517841273882756187290949206207220751716153234351, 50, False, False, 87], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) setInitialPrice([106677348292106820764343600589734012530779981596365899335435246059945160904665], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) tokensOfOwnerByIndex(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 100], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(4) setOwner(['0xC352C77703A000382541035D9F12F27608999903'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) transfer([2, '0xC352C77703A000382541035D9F12F27608999903', 'JIU RkcNGyvnMXEojjLvmKpzszoKfbMHINfPiGhrMEfOVKdbadHXzzjGQOahSHYWCuhgoWGOKhKVZAWHhMThV'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) subdivide([23435075101754203052814576784397874516957895038681758475281798974445828589985, True, True, 39724899444121646030136367537664463570791290388217711628323613493219812689186, 2, '"lunars"', '"lunars"'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(7) setOwner(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+
+	(1) constructor([59193984798015935228490399756210768956179230576045984761839539383460728862785, 1, 138, True, True, 71], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) setMetadata([29224160594689027286823436222463410484708659921058554868373261088677452613382, '"LUNA"'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) setTradingEnabled([True], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) setTradingEnabled([False], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(5) purchase([20, '"lunars"', False, 100], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 16240029213105572)	Returns: true
+	(6) setBeneficiary(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) setSubdivisionEnabled([False], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor([2, 100, 2, False, False, 1], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) setBeneficiary(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(3) setBeneficiary(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(4) transfer([1, '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '"lunars"'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(5) transfer([20, '0xB1edf760606209BA4c63a3d1330a89aF2849f079', 'qReYyEnHHGFzWAdsUBLvxSBrdLJDQNCzxbJBytrGxEBEBx ZrmBfzLZMiIyQPlIfqzmUJOLSbQhaaIpwCeLIbDxKeFDMH dhSLkMDqrPJuduHusVgpmhliVQPDccrnwdgBuNSKKukzoTQjaMcrPpwhXRkvvSQIvPUyhfrqQImrSeEc xyneVdlyAuSbocWoMPzycjNhZUSykCnASuMVRqnQDEGsZbFkErkQez'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(6) setBeneficiary(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(7) transfer([107549749671285648432346632421787249812096085667093014124453109178199232731136, '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 'WiEeGwHgirjEFrXRBNiYLfDcsAlUqXLT VHgZJEURQjUlERFLdbAwaSMmiMMqUqfrMfgojNRzxpFYsbrZMPvmYVhGSMwLlfMSOiqIeCpPLKbFabIaTjpzdhvQtmNCzrElCGd ITZNGEPdIgoDPwxWruvhpbaFuDAerKeDZsTcpMMzNBTPdVyGaQDnzjbpqOtfGBhWxicMqPKnxMpj'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+
+	(1) constructor([59193984798015935228490399756210768956179230576045984761839539383460728862785, 1, 138, True, True, 71], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) setMetadata([29224160594689027286823436222463410484708659921058554868373261088677452613382, '"LUNA"'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) setTradingEnabled([True], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) setTradingEnabled([False], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(5) purchase([20, '"lunars"', False, 100], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 16240029213105572)	Returns: true
+	(6) setBeneficiary(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) setSubdivisionEnabled([False], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor([2, 77024922501771192301347671134583948172455202256957136067970791015290962705159, 237, True, True, 100], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) withdraw([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(3) setFeePercentage([171], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) setTradingEnabled([True], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(5) transfer([100, '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '"lunars"'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(6) transfer([1, '0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '"lunars"'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(7) withdraw([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+
+	(1) constructor([2, 77024922501771192301347671134583948172455202256957136067970791015290962705159, 237, True, True, 100], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) withdraw([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(3) setFeePercentage([171], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) setTradingEnabled([True], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(5) transfer([100, '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '"lunars"'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(6) transfer([1, '0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '"lunars"'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(7) withdraw([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+
+	(1) constructor([2, 77024922501771192301347671134583948172455202256957136067970791015290962705159, 237, True, True, 100], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) withdraw([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(3) setFeePercentage([171], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) setTradingEnabled([True], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(5) transfer([100, '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '"lunars"'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(6) transfer([1, '0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '"lunars"'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(7) withdraw([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+
+	(1) constructor([0, 3160371253063491509635376751370904468648807455617930859932819094150116565951, 40, False, True, 255], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) setMetadata([40660641137872006073655776743683709074924428840165149641905006046201802843345, 'GkXSvUrzyNDEiT uxhNmqgIucqQpQApNwojYhwZwPHntQejqaUUQClWiqkoqgomOREAvOzmROVtRwkBhymIViSXyAlnvlfIkpiMWXKXUClfO'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) setPrice([97066959144298160489325995495395941707004455996407409899090957761234483599614, False, 2], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(4) setInitialPrice([1], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(5) withdraw([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(6) setFeePercentage([0], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(7) transfer([2, '0xC352C77703A000382541035D9F12F27608999903', '"lunars"'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+
+	(1) constructor([0, 3160371253063491509635376751370904468648807455617930859932819094150116565951, 40, False, True, 255], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) setMetadata([40660641137872006073655776743683709074924428840165149641905006046201802843345, 'GkXSvUrzyNDEiT uxhNmqgIucqQpQApNwojYhwZwPHntQejqaUUQClWiqkoqgomOREAvOzmROVtRwkBhymIViSXyAlnvlfIkpiMWXKXUClfO'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) setPrice([97066959144298160489325995495395941707004455996407409899090957761234483599614, False, 2], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(4) setInitialPrice([1], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(5) withdraw([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(6) setFeePercentage([0], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(7) transfer([2, '0xC352C77703A000382541035D9F12F27608999903', '"lunars"'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+
+	(1) constructor([6573331157540679516105244131739819087052667933419934772343285367660093117417, 103915560245028955160920299727517841273882756187290949206207220751716153234351, 50, False, False, 87], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) setInitialPrice([106677348292106820764343600589734012530779981596365899335435246059945160904665], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) tokensOfOwnerByIndex(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 100], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(4) setOwner(['0xC352C77703A000382541035D9F12F27608999903'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) transfer([2, '0xC352C77703A000382541035D9F12F27608999903', 'JIU RkcNGyvnMXEojjLvmKpzszoKfbMHINfPiGhrMEfOVKdbadHXzzjGQOahSHYWCuhgoWGOKhKVZAWHhMThV'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) subdivide([23435075101754203052814576784397874516957895038681758475281798974445828589985, True, True, 39724899444121646030136367537664463570791290388217711628323613493219812689186, 2, '"lunars"', '"lunars"'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(7) setOwner(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+
+	(1) constructor([6573331157540679516105244131739819087052667933419934772343285367660093117417, 103915560245028955160920299727517841273882756187290949206207220751716153234351, 50, False, False, 87], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) setInitialPrice([106677348292106820764343600589734012530779981596365899335435246059945160904665], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) tokensOfOwnerByIndex(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 100], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(4) setOwner(['0xC352C77703A000382541035D9F12F27608999903'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) transfer([2, '0xC352C77703A000382541035D9F12F27608999903', 'JIU RkcNGyvnMXEojjLvmKpzszoKfbMHINfPiGhrMEfOVKdbadHXzzjGQOahSHYWCuhgoWGOKhKVZAWHhMThV'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) subdivide([23435075101754203052814576784397874516957895038681758475281798974445828589985, True, True, 39724899444121646030136367537664463570791290388217711628323613493219812689186, 2, '"lunars"', '"lunars"'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(7) setOwner(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+
+	(1) constructor([58132691652434535640536667491823237073042543556924822796146539235319081757417, 31927348064317442777687547581346194653579264721970384281582395284743670870937, 149, False, True, 49], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)
+	(2) setOwner(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) setInitialPrice([1], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(4) withdraw([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) ownerOf([2], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(6) balanceOf(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) isUnowned([114006386233667899269801618935677265807875990125508986830458370413449076392636], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+
+	(1) constructor([2373396160792318398221247373799754521984258669852961679397109406880325841732, 93308103188141381532529598812723840733355839290478844304492389823666064000524, 0, False, False, 147], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) balanceOf(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(3) purchase([53725314499363744938387151771988287213691391378771462969223834413886223700405, '"lunars"', False, 2], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 128394992326373684)	Returns: 
+	(4) withdraw([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) setTradingEnabled([False], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(6) subdivide([20, False, True, 20, 1, '"LUNA"', 'rYSbqsSoeQWTJPrk tc PJrqeaFnRYOBjnSpTvseLSZXnUheQKyqkm rFWfiUkZunirIMclCOHb FZXYrJkGHymtmvkbJLhipLALPgfRDPfFbPEBqPujGbTktDESw KKMYJHzdLVmdcDOOicUKKdoBOsBloVVXXylzxCFFuWCyxUXMWcOmCTljlUIlajWRscVa hYyfqsIvOe sYgfATqPEvQADibZQGicrXYyJYgoZZVJBsfOXW'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(7) setPrice([1, False, 98377340179468890150324196457210306953475662955321701768497990577311305454959], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+
+	(1) constructor([0, 3160371253063491509635376751370904468648807455617930859932819094150116565951, 40, False, True, 255], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) setMetadata([40660641137872006073655776743683709074924428840165149641905006046201802843345, 'GkXSvUrzyNDEiT uxhNmqgIucqQpQApNwojYhwZwPHntQejqaUUQClWiqkoqgomOREAvOzmROVtRwkBhymIViSXyAlnvlfIkpiMWXKXUClfO'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) setPrice([97066959144298160489325995495395941707004455996407409899090957761234483599614, False, 2], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(4) setInitialPrice([1], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(5) withdraw([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(6) setFeePercentage([0], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(7) transfer([2, '0xC352C77703A000382541035D9F12F27608999903', '"lunars"'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+
+	(1) constructor([41354406542877430031349563025294980880925061260594282974721293666775279021586, 2, 0, False, True, 20], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) setInitialPrice([20], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(3) isUnowned([0], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(4) setFeePercentage([100], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(5) subdivide([1, True, False, 10289929694269079939085274947803299385077629398499162579734987333727196034832, 64145567610193433352155667377793806947141043881186321373443854026552069607859, '"LUNA"', '"LUNA"'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(6) setSubdivisionEnabled([True], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(7) setInitialPrice([0], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+
+	(1) constructor([0, 3160371253063491509635376751370904468648807455617930859932819094150116565951, 40, False, True, 255], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) setMetadata([40660641137872006073655776743683709074924428840165149641905006046201802843345, 'GkXSvUrzyNDEiT uxhNmqgIucqQpQApNwojYhwZwPHntQejqaUUQClWiqkoqgomOREAvOzmROVtRwkBhymIViSXyAlnvlfIkpiMWXKXUClfO'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) setPrice([97066959144298160489325995495395941707004455996407409899090957761234483599614, False, 2], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(4) setInitialPrice([1], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(5) withdraw([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(6) setFeePercentage([0], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(7) transfer([2, '0xC352C77703A000382541035D9F12F27608999903', '"lunars"'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+
+	(1) constructor([2373396160792318398221247373799754521984258669852961679397109406880325841732, 93308103188141381532529598812723840733355839290478844304492389823666064000524, 0, False, False, 147], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) balanceOf(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(3) purchase([53725314499363744938387151771988287213691391378771462969223834413886223700405, '"lunars"', False, 2], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 128394992326373684)	Returns: 
+	(4) withdraw([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) setTradingEnabled([False], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(6) subdivide([20, False, True, 20, 1, '"LUNA"', 'rYSbqsSoeQWTJPrk tc PJrqeaFnRYOBjnSpTvseLSZXnUheQKyqkm rFWfiUkZunirIMclCOHb FZXYrJkGHymtmvkbJLhipLALPgfRDPfFbPEBqPujGbTktDESw KKMYJHzdLVmdcDOOicUKKdoBOsBloVVXXylzxCFFuWCyxUXMWcOmCTljlUIlajWRscVa hYyfqsIvOe sYgfATqPEvQADibZQGicrXYyJYgoZZVJBsfOXW'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(7) setPrice([1, False, 98377340179468890150324196457210306953475662955321701768497990577311305454959], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+
+	(1) constructor([2373396160792318398221247373799754521984258669852961679397109406880325841732, 93308103188141381532529598812723840733355839290478844304492389823666064000524, 0, False, False, 147], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) balanceOf(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(3) purchase([53725314499363744938387151771988287213691391378771462969223834413886223700405, '"lunars"', False, 2], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 128394992326373684)	Returns: 
+	(4) withdraw([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) setTradingEnabled([False], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(6) subdivide([20, False, True, 20, 1, '"LUNA"', 'rYSbqsSoeQWTJPrk tc PJrqeaFnRYOBjnSpTvseLSZXnUheQKyqkm rFWfiUkZunirIMclCOHb FZXYrJkGHymtmvkbJLhipLALPgfRDPfFbPEBqPujGbTktDESw KKMYJHzdLVmdcDOOicUKKdoBOsBloVVXXylzxCFFuWCyxUXMWcOmCTljlUIlajWRscVa hYyfqsIvOe sYgfATqPEvQADibZQGicrXYyJYgoZZVJBsfOXW'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(7) setPrice([1, False, 98377340179468890150324196457210306953475662955321701768497990577311305454959], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+
+	(1) constructor([59193984798015935228490399756210768956179230576045984761839539383460728862785, 1, 138, True, True, 71], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) setMetadata([29224160594689027286823436222463410484708659921058554868373261088677452613382, '"LUNA"'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) setTradingEnabled([True], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) setTradingEnabled([False], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(5) purchase([20, '"lunars"', False, 100], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 16240029213105572)	Returns: true
+	(6) setBeneficiary(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) setSubdivisionEnabled([False], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor([59193984798015935228490399756210768956179230576045984761839539383460728862785, 1, 138, True, True, 71], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) setMetadata([29224160594689027286823436222463410484708659921058554868373261088677452613382, '"LUNA"'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) setTradingEnabled([True], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) setTradingEnabled([False], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(5) purchase([20, '"lunars"', False, 100], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 16240029213105572)	Returns: true
+	(6) setBeneficiary(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) setSubdivisionEnabled([False], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor([41354406542877430031349563025294980880925061260594282974721293666775279021586, 2, 0, False, True, 20], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) setInitialPrice([20], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(3) isUnowned([0], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(4) setFeePercentage([100], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(5) subdivide([1, True, False, 10289929694269079939085274947803299385077629398499162579734987333727196034832, 64145567610193433352155667377793806947141043881186321373443854026552069607859, '"LUNA"', '"LUNA"'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(6) setSubdivisionEnabled([True], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(7) setInitialPrice([0], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+
+	(1) constructor([6573331157540679516105244131739819087052667933419934772343285367660093117417, 103915560245028955160920299727517841273882756187290949206207220751716153234351, 50, False, False, 87], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) setInitialPrice([106677348292106820764343600589734012530779981596365899335435246059945160904665], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) tokensOfOwnerByIndex(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 100], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(4) setOwner(['0xC352C77703A000382541035D9F12F27608999903'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) transfer([2, '0xC352C77703A000382541035D9F12F27608999903', 'JIU RkcNGyvnMXEojjLvmKpzszoKfbMHINfPiGhrMEfOVKdbadHXzzjGQOahSHYWCuhgoWGOKhKVZAWHhMThV'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) subdivide([23435075101754203052814576784397874516957895038681758475281798974445828589985, True, True, 39724899444121646030136367537664463570791290388217711628323613493219812689186, 2, '"lunars"', '"lunars"'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(7) setOwner(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+
+	(1) constructor([6573331157540679516105244131739819087052667933419934772343285367660093117417, 103915560245028955160920299727517841273882756187290949206207220751716153234351, 50, False, False, 87], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) setInitialPrice([106677348292106820764343600589734012530779981596365899335435246059945160904665], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) tokensOfOwnerByIndex(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 100], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(4) setOwner(['0xC352C77703A000382541035D9F12F27608999903'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) transfer([2, '0xC352C77703A000382541035D9F12F27608999903', 'JIU RkcNGyvnMXEojjLvmKpzszoKfbMHINfPiGhrMEfOVKdbadHXzzjGQOahSHYWCuhgoWGOKhKVZAWHhMThV'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) subdivide([23435075101754203052814576784397874516957895038681758475281798974445828589985, True, True, 39724899444121646030136367537664463570791290388217711628323613493219812689186, 2, '"lunars"', '"lunars"'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(7) setOwner(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+
+	(1) constructor([6573331157540679516105244131739819087052667933419934772343285367660093117417, 103915560245028955160920299727517841273882756187290949206207220751716153234351, 50, False, False, 87], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) setInitialPrice([106677348292106820764343600589734012530779981596365899335435246059945160904665], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) tokensOfOwnerByIndex(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 100], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(4) setOwner(['0xC352C77703A000382541035D9F12F27608999903'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) transfer([2, '0xC352C77703A000382541035D9F12F27608999903', 'JIU RkcNGyvnMXEojjLvmKpzszoKfbMHINfPiGhrMEfOVKdbadHXzzjGQOahSHYWCuhgoWGOKhKVZAWHhMThV'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) subdivide([23435075101754203052814576784397874516957895038681758475281798974445828589985, True, True, 39724899444121646030136367537664463570791290388217711628323613493219812689186, 2, '"lunars"', '"lunars"'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(7) setOwner(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+
+	(1) constructor([0, 3160371253063491509635376751370904468648807455617930859932819094150116565951, 40, False, True, 255], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) setMetadata([40660641137872006073655776743683709074924428840165149641905006046201802843345, 'GkXSvUrzyNDEiT uxhNmqgIucqQpQApNwojYhwZwPHntQejqaUUQClWiqkoqgomOREAvOzmROVtRwkBhymIViSXyAlnvlfIkpiMWXKXUClfO'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) setPrice([97066959144298160489325995495395941707004455996407409899090957761234483599614, False, 2], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(4) setInitialPrice([1], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(5) withdraw([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(6) setFeePercentage([0], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(7) transfer([2, '0xC352C77703A000382541035D9F12F27608999903', '"lunars"'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+
+	(1) constructor([0, 3160371253063491509635376751370904468648807455617930859932819094150116565951, 40, False, True, 255], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) setMetadata([40660641137872006073655776743683709074924428840165149641905006046201802843345, 'GkXSvUrzyNDEiT uxhNmqgIucqQpQApNwojYhwZwPHntQejqaUUQClWiqkoqgomOREAvOzmROVtRwkBhymIViSXyAlnvlfIkpiMWXKXUClfO'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) setPrice([97066959144298160489325995495395941707004455996407409899090957761234483599614, False, 2], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(4) setInitialPrice([1], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(5) withdraw([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(6) setFeePercentage([0], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(7) transfer([2, '0xC352C77703A000382541035D9F12F27608999903', '"lunars"'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+
+	(1) constructor([0, 3160371253063491509635376751370904468648807455617930859932819094150116565951, 40, False, True, 255], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) setMetadata([40660641137872006073655776743683709074924428840165149641905006046201802843345, 'GkXSvUrzyNDEiT uxhNmqgIucqQpQApNwojYhwZwPHntQejqaUUQClWiqkoqgomOREAvOzmROVtRwkBhymIViSXyAlnvlfIkpiMWXKXUClfO'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) setPrice([97066959144298160489325995495395941707004455996407409899090957761234483599614, False, 2], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(4) setInitialPrice([1], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(5) withdraw([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(6) setFeePercentage([0], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(7) transfer([2, '0xC352C77703A000382541035D9F12F27608999903', '"lunars"'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+
+	(1) constructor([2373396160792318398221247373799754521984258669852961679397109406880325841732, 93308103188141381532529598812723840733355839290478844304492389823666064000524, 0, False, False, 147], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) balanceOf(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(3) purchase([53725314499363744938387151771988287213691391378771462969223834413886223700405, '"lunars"', False, 2], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 128394992326373684)	Returns: 
+	(4) withdraw([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) setTradingEnabled([False], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(6) subdivide([20, False, True, 20, 1, '"LUNA"', 'rYSbqsSoeQWTJPrk tc PJrqeaFnRYOBjnSpTvseLSZXnUheQKyqkm rFWfiUkZunirIMclCOHb FZXYrJkGHymtmvkbJLhipLALPgfRDPfFbPEBqPujGbTktDESw KKMYJHzdLVmdcDOOicUKKdoBOsBloVVXXylzxCFFuWCyxUXMWcOmCTljlUIlajWRscVa hYyfqsIvOe sYgfATqPEvQADibZQGicrXYyJYgoZZVJBsfOXW'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(7) setPrice([1, False, 98377340179468890150324196457210306953475662955321701768497990577311305454959], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+
+	(1) constructor([2373396160792318398221247373799754521984258669852961679397109406880325841732, 93308103188141381532529598812723840733355839290478844304492389823666064000524, 0, False, False, 147], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) balanceOf(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(3) purchase([53725314499363744938387151771988287213691391378771462969223834413886223700405, '"lunars"', False, 2], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 128394992326373684)	Returns: 
+	(4) withdraw([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) setTradingEnabled([False], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(6) subdivide([20, False, True, 20, 1, '"LUNA"', 'rYSbqsSoeQWTJPrk tc PJrqeaFnRYOBjnSpTvseLSZXnUheQKyqkm rFWfiUkZunirIMclCOHb FZXYrJkGHymtmvkbJLhipLALPgfRDPfFbPEBqPujGbTktDESw KKMYJHzdLVmdcDOOicUKKdoBOsBloVVXXylzxCFFuWCyxUXMWcOmCTljlUIlajWRscVa hYyfqsIvOe sYgfATqPEvQADibZQGicrXYyJYgoZZVJBsfOXW'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(7) setPrice([1, False, 98377340179468890150324196457210306953475662955321701768497990577311305454959], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+
+	(1) constructor([2373396160792318398221247373799754521984258669852961679397109406880325841732, 93308103188141381532529598812723840733355839290478844304492389823666064000524, 0, False, False, 147], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) balanceOf(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(3) purchase([53725314499363744938387151771988287213691391378771462969223834413886223700405, '"lunars"', False, 2], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 128394992326373684)	Returns: 
+	(4) withdraw([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) setTradingEnabled([False], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(6) subdivide([20, False, True, 20, 1, '"LUNA"', 'rYSbqsSoeQWTJPrk tc PJrqeaFnRYOBjnSpTvseLSZXnUheQKyqkm rFWfiUkZunirIMclCOHb FZXYrJkGHymtmvkbJLhipLALPgfRDPfFbPEBqPujGbTktDESw KKMYJHzdLVmdcDOOicUKKdoBOsBloVVXXylzxCFFuWCyxUXMWcOmCTljlUIlajWRscVa hYyfqsIvOe sYgfATqPEvQADibZQGicrXYyJYgoZZVJBsfOXW'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(7) setPrice([1, False, 98377340179468890150324196457210306953475662955321701768497990577311305454959], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+
+	(1) constructor([0, 3160371253063491509635376751370904468648807455617930859932819094150116565951, 40, False, True, 255], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) setMetadata([40660641137872006073655776743683709074924428840165149641905006046201802843345, 'GkXSvUrzyNDEiT uxhNmqgIucqQpQApNwojYhwZwPHntQejqaUUQClWiqkoqgomOREAvOzmROVtRwkBhymIViSXyAlnvlfIkpiMWXKXUClfO'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) setPrice([97066959144298160489325995495395941707004455996407409899090957761234483599614, False, 2], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(4) setInitialPrice([1], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(5) withdraw([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(6) setFeePercentage([0], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(7) transfer([2, '0xC352C77703A000382541035D9F12F27608999903', '"lunars"'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+
+	(1) constructor([0, 3160371253063491509635376751370904468648807455617930859932819094150116565951, 40, False, True, 255], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) setMetadata([40660641137872006073655776743683709074924428840165149641905006046201802843345, 'GkXSvUrzyNDEiT uxhNmqgIucqQpQApNwojYhwZwPHntQejqaUUQClWiqkoqgomOREAvOzmROVtRwkBhymIViSXyAlnvlfIkpiMWXKXUClfO'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) setPrice([97066959144298160489325995495395941707004455996407409899090957761234483599614, False, 2], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(4) setInitialPrice([1], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(5) withdraw([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(6) setFeePercentage([0], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(7) transfer([2, '0xC352C77703A000382541035D9F12F27608999903', '"lunars"'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+
+	(1) constructor([2, 77024922501771192301347671134583948172455202256957136067970791015290962705159, 237, True, True, 100], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) withdraw([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(3) setFeePercentage([171], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) setTradingEnabled([True], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(5) transfer([100, '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '"lunars"'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(6) transfer([1, '0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '"lunars"'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(7) withdraw([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+
+	(1) constructor([2, 77024922501771192301347671134583948172455202256957136067970791015290962705159, 237, True, True, 100], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) withdraw([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(3) setFeePercentage([171], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) setTradingEnabled([True], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(5) transfer([100, '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '"lunars"'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(6) transfer([1, '0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '"lunars"'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(7) withdraw([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+
+	(1) constructor([44718800956255132976091053160398123360991262968703836764496314664341626469187, 0, 81, False, False, 0], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) tokensOfOwnerByIndex(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 5239387368758165325659048944802073402678856838687156912870115821907423068561], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) setPrice([114305922116366069535165851410598283973808347446828222593598150270236182356795, False, 20], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(4) setTradingEnabled([False], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(5) setFeePercentage([20], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) setInitialPrice([0], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(7) ownerOf([44340726085019646032689653188640675998613646762592772296851675819652568415156], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(8) subdivide([1, False, True, 79596601927007417508487692480854413769264728514600495945017118029354563762720, 87099200213526916501774200367868155709527451506927580104539774888860633107924, '"lunars"', '"LUNA"'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(9) setInitialPrice([70092594021703901387236970213843633685668889055791858130908983895730345232062], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(10) setTradingEnabled([False], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+
+	(1) constructor([2, 77024922501771192301347671134583948172455202256957136067970791015290962705159, 237, True, True, 100], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) withdraw([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(3) setFeePercentage([171], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) setTradingEnabled([True], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(5) transfer([100, '0xB1edf760606209BA4c63a3d1330a89aF2849f079', '"lunars"'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(6) transfer([1, '0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '"lunars"'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(7) withdraw([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+
+	(1) constructor([0, 3160371253063491509635376751370904468648807455617930859932819094150116565951, 40, False, True, 255], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) setMetadata([40660641137872006073655776743683709074924428840165149641905006046201802843345, 'GkXSvUrzyNDEiT uxhNmqgIucqQpQApNwojYhwZwPHntQejqaUUQClWiqkoqgomOREAvOzmROVtRwkBhymIViSXyAlnvlfIkpiMWXKXUClfO'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) setPrice([97066959144298160489325995495395941707004455996407409899090957761234483599614, False, 2], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(4) setInitialPrice([1], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(5) withdraw([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(6) setFeePercentage([0], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(7) transfer([2, '0xC352C77703A000382541035D9F12F27608999903', '"lunars"'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+
+	(1) constructor([59193984798015935228490399756210768956179230576045984761839539383460728862785, 1, 138, True, True, 71], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) setMetadata([29224160594689027286823436222463410484708659921058554868373261088677452613382, '"LUNA"'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) setTradingEnabled([True], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) setTradingEnabled([False], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(5) purchase([20, '"lunars"', False, 100], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 16240029213105572)	Returns: true
+	(6) setBeneficiary(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) setSubdivisionEnabled([False], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor([59193984798015935228490399756210768956179230576045984761839539383460728862785, 1, 138, True, True, 71], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) setMetadata([29224160594689027286823436222463410484708659921058554868373261088677452613382, '"LUNA"'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) setTradingEnabled([True], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) setTradingEnabled([False], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(5) purchase([20, '"lunars"', False, 100], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 16240029213105572)	Returns: true
+	(6) setBeneficiary(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) setSubdivisionEnabled([False], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor([59193984798015935228490399756210768956179230576045984761839539383460728862785, 1, 138, True, True, 71], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) setMetadata([29224160594689027286823436222463410484708659921058554868373261088677452613382, '"LUNA"'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) setTradingEnabled([True], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) setTradingEnabled([False], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(5) purchase([20, '"lunars"', False, 100], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 16240029213105572)	Returns: true
+	(6) setBeneficiary(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) setSubdivisionEnabled([False], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor([6573331157540679516105244131739819087052667933419934772343285367660093117417, 103915560245028955160920299727517841273882756187290949206207220751716153234351, 50, False, False, 87], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) setInitialPrice([106677348292106820764343600589734012530779981596365899335435246059945160904665], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) tokensOfOwnerByIndex(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 100], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(4) setOwner(['0xC352C77703A000382541035D9F12F27608999903'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) transfer([2, '0xC352C77703A000382541035D9F12F27608999903', 'JIU RkcNGyvnMXEojjLvmKpzszoKfbMHINfPiGhrMEfOVKdbadHXzzjGQOahSHYWCuhgoWGOKhKVZAWHhMThV'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) subdivide([23435075101754203052814576784397874516957895038681758475281798974445828589985, True, True, 39724899444121646030136367537664463570791290388217711628323613493219812689186, 2, '"lunars"', '"lunars"'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(7) setOwner(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+
+	(1) constructor([59193984798015935228490399756210768956179230576045984761839539383460728862785, 1, 138, True, True, 71], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) setMetadata([29224160594689027286823436222463410484708659921058554868373261088677452613382, '"LUNA"'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) setTradingEnabled([True], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) setTradingEnabled([False], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(5) purchase([20, '"lunars"', False, 100], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 16240029213105572)	Returns: true
+	(6) setBeneficiary(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) setSubdivisionEnabled([False], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor([59193984798015935228490399756210768956179230576045984761839539383460728862785, 1, 138, True, True, 71], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) setMetadata([29224160594689027286823436222463410484708659921058554868373261088677452613382, '"LUNA"'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) setTradingEnabled([True], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) setTradingEnabled([False], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(5) purchase([20, '"lunars"', False, 100], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 16240029213105572)	Returns: true
+	(6) setBeneficiary(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) setSubdivisionEnabled([False], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor([59193984798015935228490399756210768956179230576045984761839539383460728862785, 1, 138, True, True, 71], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) setMetadata([29224160594689027286823436222463410484708659921058554868373261088677452613382, '"LUNA"'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) setTradingEnabled([True], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) setTradingEnabled([False], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(5) purchase([20, '"lunars"', False, 100], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 16240029213105572)	Returns: true
+	(6) setBeneficiary(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) setSubdivisionEnabled([False], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor([59193984798015935228490399756210768956179230576045984761839539383460728862785, 1, 138, True, True, 71], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) setMetadata([29224160594689027286823436222463410484708659921058554868373261088677452613382, '"LUNA"'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) setTradingEnabled([True], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) setTradingEnabled([False], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(5) purchase([20, '"lunars"', False, 100], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 16240029213105572)	Returns: true
+	(6) setBeneficiary(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) setSubdivisionEnabled([False], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor([0, 3160371253063491509635376751370904468648807455617930859932819094150116565951, 40, False, True, 255], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) setMetadata([40660641137872006073655776743683709074924428840165149641905006046201802843345, 'GkXSvUrzyNDEiT uxhNmqgIucqQpQApNwojYhwZwPHntQejqaUUQClWiqkoqgomOREAvOzmROVtRwkBhymIViSXyAlnvlfIkpiMWXKXUClfO'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) setPrice([97066959144298160489325995495395941707004455996407409899090957761234483599614, False, 2], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(4) setInitialPrice([1], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(5) withdraw([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(6) setFeePercentage([0], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(7) transfer([2, '0xC352C77703A000382541035D9F12F27608999903', '"lunars"'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+
+	(1) constructor([59193984798015935228490399756210768956179230576045984761839539383460728862785, 1, 138, True, True, 71], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) setMetadata([29224160594689027286823436222463410484708659921058554868373261088677452613382, '"LUNA"'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) setTradingEnabled([True], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) setTradingEnabled([False], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(5) purchase([20, '"lunars"', False, 100], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 16240029213105572)	Returns: true
+	(6) setBeneficiary(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) setSubdivisionEnabled([False], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor([59193984798015935228490399756210768956179230576045984761839539383460728862785, 1, 138, True, True, 71], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) setMetadata([29224160594689027286823436222463410484708659921058554868373261088677452613382, '"LUNA"'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) setTradingEnabled([True], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) setTradingEnabled([False], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(5) purchase([20, '"lunars"', False, 100], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 16240029213105572)	Returns: true
+	(6) setBeneficiary(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) setSubdivisionEnabled([False], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor([58132691652434535640536667491823237073042543556924822796146539235319081757417, 31927348064317442777687547581346194653579264721970384281582395284743670870937, 149, False, True, 49], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)
+	(2) setOwner(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) setInitialPrice([1], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(4) withdraw([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) ownerOf([2], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(6) balanceOf(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) isUnowned([114006386233667899269801618935677265807875990125508986830458370413449076392636], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+
+	(1) constructor([59193984798015935228490399756210768956179230576045984761839539383460728862785, 1, 138, True, True, 71], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) setMetadata([29224160594689027286823436222463410484708659921058554868373261088677452613382, '"LUNA"'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) setTradingEnabled([True], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) setTradingEnabled([False], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(5) purchase([20, '"lunars"', False, 100], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 16240029213105572)	Returns: true
+	(6) setBeneficiary(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) setSubdivisionEnabled([False], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor([59193984798015935228490399756210768956179230576045984761839539383460728862785, 1, 138, True, True, 71], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) setMetadata([29224160594689027286823436222463410484708659921058554868373261088677452613382, '"LUNA"'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) setTradingEnabled([True], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) setTradingEnabled([False], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(5) purchase([20, '"lunars"', False, 100], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 16240029213105572)	Returns: true
+	(6) setBeneficiary(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) setSubdivisionEnabled([False], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor([59193984798015935228490399756210768956179230576045984761839539383460728862785, 1, 138, True, True, 71], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) setMetadata([29224160594689027286823436222463410484708659921058554868373261088677452613382, '"LUNA"'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) setTradingEnabled([True], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) setTradingEnabled([False], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(5) purchase([20, '"lunars"', False, 100], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 16240029213105572)	Returns: true
+	(6) setBeneficiary(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) setSubdivisionEnabled([False], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor([59193984798015935228490399756210768956179230576045984761839539383460728862785, 1, 138, True, True, 71], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) setMetadata([29224160594689027286823436222463410484708659921058554868373261088677452613382, '"LUNA"'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) setTradingEnabled([True], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) setTradingEnabled([False], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(5) purchase([20, '"lunars"', False, 100], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 16240029213105572)	Returns: true
+	(6) setBeneficiary(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) setSubdivisionEnabled([False], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor([59193984798015935228490399756210768956179230576045984761839539383460728862785, 1, 138, True, True, 71], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) setMetadata([29224160594689027286823436222463410484708659921058554868373261088677452613382, '"LUNA"'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) setTradingEnabled([True], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) setTradingEnabled([False], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(5) purchase([20, '"lunars"', False, 100], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 16240029213105572)	Returns: true
+	(6) setBeneficiary(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) setSubdivisionEnabled([False], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor([59193984798015935228490399756210768956179230576045984761839539383460728862785, 1, 138, True, True, 71], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) setMetadata([29224160594689027286823436222463410484708659921058554868373261088677452613382, '"LUNA"'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) setTradingEnabled([True], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) setTradingEnabled([False], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(5) purchase([20, '"lunars"', False, 100], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 16240029213105572)	Returns: true
+	(6) setBeneficiary(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) setSubdivisionEnabled([False], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor([59193984798015935228490399756210768956179230576045984761839539383460728862785, 1, 138, True, True, 71], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) setMetadata([29224160594689027286823436222463410484708659921058554868373261088677452613382, '"LUNA"'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) setTradingEnabled([True], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) setTradingEnabled([False], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(5) purchase([20, '"lunars"', False, 100], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 16240029213105572)	Returns: true
+	(6) setBeneficiary(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) setSubdivisionEnabled([False], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor([59193984798015935228490399756210768956179230576045984761839539383460728862785, 1, 138, True, True, 71], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) setMetadata([29224160594689027286823436222463410484708659921058554868373261088677452613382, '"LUNA"'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) setTradingEnabled([True], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) setTradingEnabled([False], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(5) purchase([20, '"lunars"', False, 100], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 16240029213105572)	Returns: true
+	(6) setBeneficiary(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) setSubdivisionEnabled([False], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor([2373396160792318398221247373799754521984258669852961679397109406880325841732, 93308103188141381532529598812723840733355839290478844304492389823666064000524, 0, False, False, 147], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) balanceOf(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(3) purchase([53725314499363744938387151771988287213691391378771462969223834413886223700405, '"lunars"', False, 2], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 128394992326373684)	Returns: 
+	(4) withdraw([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) setTradingEnabled([False], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(6) subdivide([20, False, True, 20, 1, '"LUNA"', 'rYSbqsSoeQWTJPrk tc PJrqeaFnRYOBjnSpTvseLSZXnUheQKyqkm rFWfiUkZunirIMclCOHb FZXYrJkGHymtmvkbJLhipLALPgfRDPfFbPEBqPujGbTktDESw KKMYJHzdLVmdcDOOicUKKdoBOsBloVVXXylzxCFFuWCyxUXMWcOmCTljlUIlajWRscVa hYyfqsIvOe sYgfATqPEvQADibZQGicrXYyJYgoZZVJBsfOXW'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(7) setPrice([1, False, 98377340179468890150324196457210306953475662955321701768497990577311305454959], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+
+	(1) constructor([59193984798015935228490399756210768956179230576045984761839539383460728862785, 1, 138, True, True, 71], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) setMetadata([29224160594689027286823436222463410484708659921058554868373261088677452613382, '"LUNA"'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) setTradingEnabled([True], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) setTradingEnabled([False], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(5) purchase([20, '"lunars"', False, 100], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 16240029213105572)	Returns: true
+	(6) setBeneficiary(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) setSubdivisionEnabled([False], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor([26547024685555163985077364180019444795251456024792308431721969096510067243033, 100, 224, True, False, 20], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) setSubdivisionEnabled([False], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(3) setMetadata([100, 'QJXeCEVRvhqnslBAtamCzFqBbrEndLiMxYABYVNEvyvohlyiVqbDvYrhBGacbbHsvUJzjQXElclhNsYXNSHFEfOx vWbOUYXpHVHSXwVDOQwclDbjAjBesNo uAgvEL rmFHvvDJvbrpRLMaQKRcohZwPNGfQwmgFuUIVviRRHv'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(4) subdivide([15127798331347009000693250332480603253313769889444623477061142835487463418044, False, True, 90931561772086152869195610582012315604835147249470920877855243598195507621227, 20, 'kHEdObRivVKnkiwZthkmPkhzg PjeNgXlFFqKqHcunrHYFrlJrvzJByqsLvHjxZTBbAU JHmZLYtFUtJmJnJYwNGmzjXVbJYRypAMBzCGMODZuSoisTJ', 'sXXHTVsoWBPfNkhWHTIBFVKpLQEV bfEoqtAdqeBXXRdoyw TguBVdwtuCjZMbjqAFcmZaujHsDunfMlUidWjFrdDIbUwvh wJhmenrWRSLpLqPfuhFPZULnQxNioDFmhKyEwgszSWse'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) setTradingEnabled([False], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(6) setSubdivisionEnabled([True], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(7) subdivide([37421542573090243242056201040727864760069154021122445080447511558552936617333, True, True, 103980056617154063368249829884520175971224370154743079373359972099234516726447, 59151911677466448806410340751140957337928646385312134897899028568543350138259, '"LUNA"', '"LUNA"'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(8) ownerOf([20], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+
+	(1) constructor([59193984798015935228490399756210768956179230576045984761839539383460728862785, 1, 138, True, True, 71], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) setMetadata([29224160594689027286823436222463410484708659921058554868373261088677452613382, '"LUNA"'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) setTradingEnabled([True], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) setTradingEnabled([False], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(5) purchase([20, '"lunars"', False, 100], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 16240029213105572)	Returns: true
+	(6) setBeneficiary(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) setSubdivisionEnabled([False], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor([59193984798015935228490399756210768956179230576045984761839539383460728862785, 1, 138, True, True, 71], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) setMetadata([29224160594689027286823436222463410484708659921058554868373261088677452613382, '"LUNA"'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) setTradingEnabled([True], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) setTradingEnabled([False], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(5) purchase([20, '"lunars"', False, 100], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 16240029213105572)	Returns: true
+	(6) setBeneficiary(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) setSubdivisionEnabled([False], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 

@@ -1,0 +1,24 @@
+Source Function,Target Function
+unpause(),sendInitialTokens(address)
+acceptOwnership(),sendInitialTokens(address)
+pause(),sendInitialTokens(address)
+transferOwnership(address),sendInitialTokens(address)
+"approve(address,uint256)","transferFrom(address,address,uint256)"
+"setAdmin(address,bool)","transferFrom(address,address,uint256)"
+"batchLockArray(address[],uint256[])","transferFrom(address,address,uint256)"
+acceptOwnership(),unpause()
+pause(),unpause()
+transferOwnership(address),unpause()
+unpause(),"setAdmin(address,bool)"
+acceptOwnership(),"setAdmin(address,bool)"
+pause(),"setAdmin(address,bool)"
+transferOwnership(address),"setAdmin(address,bool)"
+unpause(),acceptOwnership()
+pause(),acceptOwnership()
+transferOwnership(address),acceptOwnership()
+unpause(),pause()
+acceptOwnership(),pause()
+transferOwnership(address),pause()
+unpause(),transferOwnership(address)
+acceptOwnership(),transferOwnership(address)
+pause(),transferOwnership(address)

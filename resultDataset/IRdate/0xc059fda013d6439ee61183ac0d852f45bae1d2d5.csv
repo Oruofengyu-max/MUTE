@@ -1,0 +1,17 @@
+Source Function,Target Function
+finishDistribution(),withdrawAltcoinTokens(address)
+updateTokensPerEth(uint256),withdrawAltcoinTokens(address)
+transferOwnership(address),withdrawAltcoinTokens(address)
+"approve(address,uint256)","transferFrom(address,address,uint256)"
+"transfer(address,uint256)","transferFrom(address,address,uint256)"
+finishDistribution(),withdraw()
+updateTokensPerEth(uint256),withdraw()
+transferOwnership(address),withdraw()
+updateTokensPerEth(uint256),finishDistribution()
+transferOwnership(address),finishDistribution()
+finishDistribution(),updateTokensPerEth(uint256)
+transferOwnership(address),updateTokensPerEth(uint256)
+"approve(address,uint256)","transfer(address,uint256)"
+"transferFrom(address,address,uint256)","transfer(address,uint256)"
+finishDistribution(),transferOwnership(address)
+updateTokensPerEth(uint256),transferOwnership(address)

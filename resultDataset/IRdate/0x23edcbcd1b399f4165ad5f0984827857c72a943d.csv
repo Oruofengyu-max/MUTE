@@ -1,0 +1,25 @@
+Source Function,Target Function
+"approve(address,uint256)",mintToken()
+"transferFrom(address,address,uint256)",mintToken()
+"decreaseApproval(address,uint256)",mintToken()
+freeze(address),mintToken()
+"transfer(address,uint256)",mintToken()
+"increaseApproval(address,uint256)",mintToken()
+"approve(address,uint256)","transferFrom(address,address,uint256)"
+mintToken(),"transferFrom(address,address,uint256)"
+"decreaseApproval(address,uint256)","transferFrom(address,address,uint256)"
+freeze(address),"transferFrom(address,address,uint256)"
+"transfer(address,uint256)","transferFrom(address,address,uint256)"
+"increaseApproval(address,uint256)","transferFrom(address,address,uint256)"
+"approve(address,uint256)",freeze(address)
+mintToken(),freeze(address)
+"transferFrom(address,address,uint256)",freeze(address)
+"decreaseApproval(address,uint256)",freeze(address)
+"transfer(address,uint256)",freeze(address)
+"increaseApproval(address,uint256)",freeze(address)
+"approve(address,uint256)","transfer(address,uint256)"
+mintToken(),"transfer(address,uint256)"
+"transferFrom(address,address,uint256)","transfer(address,uint256)"
+"decreaseApproval(address,uint256)","transfer(address,uint256)"
+freeze(address),"transfer(address,uint256)"
+"increaseApproval(address,uint256)","transfer(address,uint256)"

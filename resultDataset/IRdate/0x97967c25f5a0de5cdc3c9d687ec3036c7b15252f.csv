@@ -1,0 +1,25 @@
+Source Function,Target Function
+addBankroll(),getPayTable(uint16)
+sendProfits(),getPayTable(uint16)
+cashOut(uint256),getPayTable(uint16)
+"removeBankroll(uint256,string)",getPayTable(uint16)
+"changeSettings(uint64,uint64,uint8)",getPayTable(uint16)
+"addPayTable(uint16,uint16,uint16,uint16,uint16,uint16,uint16,uint16,uint16)",getPayTable(uint16)
+"addPayTable(uint16,uint16,uint16,uint16,uint16,uint16,uint16,uint16,uint16)",cashOut(uint256)
+"draw(uint32,uint8,bytes32)",cashOut(uint256)
+addBankroll(),getCurPayTable()
+sendProfits(),getCurPayTable()
+cashOut(uint256),getCurPayTable()
+"removeBankroll(uint256,string)",getCurPayTable()
+"changeSettings(uint64,uint64,uint8)",getCurPayTable()
+"addPayTable(uint16,uint16,uint16,uint16,uint16,uint16,uint16,uint16,uint16)",getCurPayTable()
+addBankroll(),"changeSettings(uint64,uint64,uint8)"
+sendProfits(),"changeSettings(uint64,uint64,uint8)"
+cashOut(uint256),"changeSettings(uint64,uint64,uint8)"
+"removeBankroll(uint256,string)","changeSettings(uint64,uint64,uint8)"
+"addPayTable(uint16,uint16,uint16,uint16,uint16,uint16,uint16,uint16,uint16)","changeSettings(uint64,uint64,uint8)"
+addBankroll(),"addPayTable(uint16,uint16,uint16,uint16,uint16,uint16,uint16,uint16,uint16)"
+sendProfits(),"addPayTable(uint16,uint16,uint16,uint16,uint16,uint16,uint16,uint16,uint16)"
+cashOut(uint256),"addPayTable(uint16,uint16,uint16,uint16,uint16,uint16,uint16,uint16,uint16)"
+"removeBankroll(uint256,string)","addPayTable(uint16,uint16,uint16,uint16,uint16,uint16,uint16,uint16,uint16)"
+"changeSettings(uint64,uint64,uint8)","addPayTable(uint16,uint16,uint16,uint16,uint16,uint16,uint16,uint16,uint16)"

@@ -1,0 +1,954 @@
+Contract:			pyramidMKII
+Number of Relevant Branches:	66
+Number of Branches Covered:		59
+Runtime: 											7413.057963
+Blockchain Time: 							6438.955136
+Iterations										
+21
+--------------------------------------------------
+METHODS:
+
+Constructor:
+	Inputs :[]
+	Payable: nonpayable
+addSurplus:
+
+callSurplus:
+
+owedAt:
+
+setBlockSze:
+
+withdraw:
+
+deposit:
+
+reinvest:
+
+mine1000:
+
+
+--------------------------------------------------
+
+            TESTS:
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) callSurplus([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) deposit(['0x414b49675070697a434a537243654c5279594b43524c2043436268586e734e5a'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 1000000000000000)	Returns: true
+	(4) callSurplus([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) addSurplus([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 100000000000000000000)	Returns: true
+	(6) mine1000([34897224822679715152216395187142295317087148740772291747178153206673827122125], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(7) setBlockSze([103604390485907915052639590140340616537740502731202727265229924498481107864600], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) callSurplus([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) deposit(['0x414b49675070697a434a537243654c5279594b43524c2043436268586e734e5a'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 1000000000000000)	Returns: true
+	(4) callSurplus([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) addSurplus([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 100000000000000000000)	Returns: true
+	(6) mine1000([34897224822679715152216395187142295317087148740772291747178153206673827122125], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(7) setBlockSze([103604390485907915052639590140340616537740502731202727265229924498481107864600], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) withdraw([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(3) withdraw([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(4) reinvest([47372886036827497598998535545294094649560348464393478221134938486238935796870, '0x6b786f41595a535a486a69566b6a656d7a45737a4553616b5078747862514276'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) setBlockSze([94355649754089199128147050630663399820057423104502867732643148355564592361705], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(6) addSurplus([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 1356914589211969)	Returns: true
+	(7) reinvest([63962874771606371083344880680483366120804981280603484868994665094823727475028, '0x4a6e686f4a7820456a77555754566c6d7070524e446446517246625074455a47'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) callSurplus([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) deposit(['0x414b49675070697a434a537243654c5279594b43524c2043436268586e734e5a'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 1000000000000000)	Returns: true
+	(4) callSurplus([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) addSurplus([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 100000000000000000000)	Returns: true
+	(6) mine1000([34897224822679715152216395187142295317087148740772291747178153206673827122125], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(7) setBlockSze([103604390485907915052639590140340616537740502731202727265229924498481107864600], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) callSurplus([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) deposit(['0x414b49675070697a434a537243654c5279594b43524c2043436268586e734e5a'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 1000000000000000)	Returns: true
+	(4) callSurplus([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) addSurplus([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 100000000000000000000)	Returns: true
+	(6) mine1000([34897224822679715152216395187142295317087148740772291747178153206673827122125], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(7) setBlockSze([103604390485907915052639590140340616537740502731202727265229924498481107864600], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) withdraw([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) addSurplus([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 79429410109207993)	Returns: true
+	(4) deposit(['0x6d4b41746c717273634c64547056426b20536d6a78745861597a72204f757549'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 139564860295523728)	Returns: true
+	(5) addSurplus([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 1000000000000000)	Returns: true
+	(6) reinvest([200, '0x566967205079444a534a68676c44536a6f76534947716e4979614c655454754d'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(7) addSurplus([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 1000000000000000)	Returns: true
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) withdraw([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) addSurplus([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 79429410109207993)	Returns: true
+	(4) deposit(['0x6d4b41746c717273634c64547056426b20536d6a78745861597a72204f757549'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 139564860295523728)	Returns: true
+	(5) addSurplus([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 1000000000000000)	Returns: true
+	(6) reinvest([200, '0x566967205079444a534a68676c44536a6f76534947716e4979614c655454754d'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(7) addSurplus([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 1000000000000000)	Returns: true
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) withdraw([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) addSurplus([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 79429410109207993)	Returns: true
+	(4) deposit(['0x6d4b41746c717273634c64547056426b20536d6a78745861597a72204f757549'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 139564860295523728)	Returns: true
+	(5) addSurplus([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 1000000000000000)	Returns: true
+	(6) reinvest([200, '0x566967205079444a534a68676c44536a6f76534947716e4979614c655454754d'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(7) addSurplus([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 1000000000000000)	Returns: true
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) withdraw([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) addSurplus([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 79429410109207993)	Returns: true
+	(4) deposit(['0x6d4b41746c717273634c64547056426b20536d6a78745861597a72204f757549'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 139564860295523728)	Returns: true
+	(5) addSurplus([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 1000000000000000)	Returns: true
+	(6) reinvest([200, '0x566967205079444a534a68676c44536a6f76534947716e4979614c655454754d'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(7) addSurplus([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 1000000000000000)	Returns: true
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) callSurplus([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) deposit(['0x414b49675070697a434a537243654c5279594b43524c2043436268586e734e5a'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 1000000000000000)	Returns: true
+	(4) callSurplus([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) addSurplus([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 100000000000000000000)	Returns: true
+	(6) mine1000([34897224822679715152216395187142295317087148740772291747178153206673827122125], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(7) setBlockSze([103604390485907915052639590140340616537740502731202727265229924498481107864600], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) deposit(['0x504b666e5549714358514f6d47694d7043434d4458706a496c496c694948734a'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 68889767757325680)	Returns: true
+	(3) addSurplus([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 1000000000000000000)	Returns: true
+	(4) reinvest([0, '0x77447066517563595371466742444a676820674758755079556d42674d642070'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) reinvest([107663664246071114611698737371618085608301910348831319489619891321091775425547, '0x744b6c4f55536e206e494464757a57627a44566c64574b437264412056507759'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(6) owedAt([65933722223050691228994420589591658235566859954234994727920434185969175880520], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) deposit(['0x5644657175587954466b725251594b567070434176204c7a61567262634f514a'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 28961926981877200)	Returns: true
+	(8) mine1000([0], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(9) callSurplus([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) deposit(['0x504b666e5549714358514f6d47694d7043434d4458706a496c496c694948734a'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 68889767757325680)	Returns: true
+	(3) addSurplus([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 1000000000000000000)	Returns: true
+	(4) reinvest([0, '0x77447066517563595371466742444a676820674758755079556d42674d642070'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) reinvest([107663664246071114611698737371618085608301910348831319489619891321091775425547, '0x744b6c4f55536e206e494464757a57627a44566c64574b437264412056507759'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(6) owedAt([65933722223050691228994420589591658235566859954234994727920434185969175880520], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) deposit(['0x5644657175587954466b725251594b567070434176204c7a61567262634f514a'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 28961926981877200)	Returns: true
+	(8) mine1000([0], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(9) callSurplus([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) deposit(['0x504b666e5549714358514f6d47694d7043434d4458706a496c496c694948734a'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 68889767757325680)	Returns: true
+	(3) addSurplus([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 1000000000000000000)	Returns: true
+	(4) reinvest([0, '0x77447066517563595371466742444a676820674758755079556d42674d642070'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) reinvest([107663664246071114611698737371618085608301910348831319489619891321091775425547, '0x744b6c4f55536e206e494464757a57627a44566c64574b437264412056507759'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(6) owedAt([65933722223050691228994420589591658235566859954234994727920434185969175880520], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) deposit(['0x5644657175587954466b725251594b567070434176204c7a61567262634f514a'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 28961926981877200)	Returns: true
+	(8) mine1000([0], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(9) callSurplus([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) deposit(['0x504b666e5549714358514f6d47694d7043434d4458706a496c496c694948734a'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 68889767757325680)	Returns: true
+	(3) addSurplus([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 1000000000000000000)	Returns: true
+	(4) reinvest([0, '0x77447066517563595371466742444a676820674758755079556d42674d642070'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) reinvest([107663664246071114611698737371618085608301910348831319489619891321091775425547, '0x744b6c4f55536e206e494464757a57627a44566c64574b437264412056507759'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(6) owedAt([65933722223050691228994420589591658235566859954234994727920434185969175880520], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) deposit(['0x5644657175587954466b725251594b567070434176204c7a61567262634f514a'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 28961926981877200)	Returns: true
+	(8) mine1000([0], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(9) callSurplus([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) deposit(['0x504b666e5549714358514f6d47694d7043434d4458706a496c496c694948734a'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 68889767757325680)	Returns: true
+	(3) addSurplus([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 1000000000000000000)	Returns: true
+	(4) reinvest([0, '0x77447066517563595371466742444a676820674758755079556d42674d642070'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) reinvest([107663664246071114611698737371618085608301910348831319489619891321091775425547, '0x744b6c4f55536e206e494464757a57627a44566c64574b437264412056507759'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(6) owedAt([65933722223050691228994420589591658235566859954234994727920434185969175880520], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) deposit(['0x5644657175587954466b725251594b567070434176204c7a61567262634f514a'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 28961926981877200)	Returns: true
+	(8) mine1000([0], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(9) callSurplus([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) deposit(['0x504b666e5549714358514f6d47694d7043434d4458706a496c496c694948734a'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 68889767757325680)	Returns: true
+	(3) addSurplus([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 1000000000000000000)	Returns: true
+	(4) reinvest([0, '0x77447066517563595371466742444a676820674758755079556d42674d642070'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) reinvest([107663664246071114611698737371618085608301910348831319489619891321091775425547, '0x744b6c4f55536e206e494464757a57627a44566c64574b437264412056507759'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(6) owedAt([65933722223050691228994420589591658235566859954234994727920434185969175880520], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) deposit(['0x5644657175587954466b725251594b567070434176204c7a61567262634f514a'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 28961926981877200)	Returns: true
+	(8) mine1000([0], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(9) callSurplus([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) deposit(['0x504b666e5549714358514f6d47694d7043434d4458706a496c496c694948734a'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 68889767757325680)	Returns: true
+	(3) addSurplus([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 1000000000000000000)	Returns: true
+	(4) reinvest([0, '0x77447066517563595371466742444a676820674758755079556d42674d642070'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) reinvest([107663664246071114611698737371618085608301910348831319489619891321091775425547, '0x744b6c4f55536e206e494464757a57627a44566c64574b437264412056507759'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(6) owedAt([65933722223050691228994420589591658235566859954234994727920434185969175880520], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) deposit(['0x5644657175587954466b725251594b567070434176204c7a61567262634f514a'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 28961926981877200)	Returns: true
+	(8) mine1000([0], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(9) callSurplus([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) deposit(['0x504b666e5549714358514f6d47694d7043434d4458706a496c496c694948734a'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 68889767757325680)	Returns: true
+	(3) addSurplus([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 1000000000000000000)	Returns: true
+	(4) reinvest([0, '0x77447066517563595371466742444a676820674758755079556d42674d642070'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) reinvest([107663664246071114611698737371618085608301910348831319489619891321091775425547, '0x744b6c4f55536e206e494464757a57627a44566c64574b437264412056507759'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(6) owedAt([65933722223050691228994420589591658235566859954234994727920434185969175880520], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) deposit(['0x5644657175587954466b725251594b567070434176204c7a61567262634f514a'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 28961926981877200)	Returns: true
+	(8) mine1000([0], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(9) callSurplus([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) deposit(['0x504b666e5549714358514f6d47694d7043434d4458706a496c496c694948734a'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 68889767757325680)	Returns: true
+	(3) addSurplus([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 1000000000000000000)	Returns: true
+	(4) reinvest([0, '0x77447066517563595371466742444a676820674758755079556d42674d642070'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) reinvest([107663664246071114611698737371618085608301910348831319489619891321091775425547, '0x744b6c4f55536e206e494464757a57627a44566c64574b437264412056507759'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(6) owedAt([65933722223050691228994420589591658235566859954234994727920434185969175880520], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) deposit(['0x5644657175587954466b725251594b567070434176204c7a61567262634f514a'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 28961926981877200)	Returns: true
+	(8) mine1000([0], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(9) callSurplus([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) deposit(['0x0000000000000000000000000000000000000000000000000000000000000000'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 134454804973939019)	Returns: true
+	(3) deposit(['0x4c6b5142646b7962774e7a55617071464f69535247476c6172597772576c5541'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 100000000000000000000)	Returns: true
+	(4) deposit(['0x597843715a6b67504b694176785963676b75774161526975426176456c725254'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 148848096393094937)	Returns: true
+	(5) owedAt([8847851709849884881917791734709196880064968462162443692260498433609042938091], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(6) callSurplus([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) mine1000([2], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) deposit(['0x0000000000000000000000000000000000000000000000000000000000000000'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 134454804973939019)	Returns: true
+	(3) deposit(['0x4c6b5142646b7962774e7a55617071464f69535247476c6172597772576c5541'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 100000000000000000000)	Returns: true
+	(4) deposit(['0x597843715a6b67504b694176785963676b75774161526975426176456c725254'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 148848096393094937)	Returns: true
+	(5) owedAt([8847851709849884881917791734709196880064968462162443692260498433609042938091], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(6) callSurplus([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) mine1000([2], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) callSurplus([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) deposit(['0x414b49675070697a434a537243654c5279594b43524c2043436268586e734e5a'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 1000000000000000)	Returns: true
+	(4) callSurplus([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) addSurplus([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 100000000000000000000)	Returns: true
+	(6) mine1000([34897224822679715152216395187142295317087148740772291747178153206673827122125], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(7) setBlockSze([103604390485907915052639590140340616537740502731202727265229924498481107864600], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) callSurplus([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) deposit(['0x414b49675070697a434a537243654c5279594b43524c2043436268586e734e5a'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 1000000000000000)	Returns: true
+	(4) callSurplus([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) addSurplus([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 100000000000000000000)	Returns: true
+	(6) mine1000([34897224822679715152216395187142295317087148740772291747178153206673827122125], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(7) setBlockSze([103604390485907915052639590140340616537740502731202727265229924498481107864600], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) callSurplus([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) deposit(['0x414b49675070697a434a537243654c5279594b43524c2043436268586e734e5a'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 1000000000000000)	Returns: true
+	(4) callSurplus([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) addSurplus([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 100000000000000000000)	Returns: true
+	(6) mine1000([34897224822679715152216395187142295317087148740772291747178153206673827122125], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(7) setBlockSze([103604390485907915052639590140340616537740502731202727265229924498481107864600], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) callSurplus([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) deposit(['0x414b49675070697a434a537243654c5279594b43524c2043436268586e734e5a'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 1000000000000000)	Returns: true
+	(4) callSurplus([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) addSurplus([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 100000000000000000000)	Returns: true
+	(6) mine1000([34897224822679715152216395187142295317087148740772291747178153206673827122125], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(7) setBlockSze([103604390485907915052639590140340616537740502731202727265229924498481107864600], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) callSurplus([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) deposit(['0x414b49675070697a434a537243654c5279594b43524c2043436268586e734e5a'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 1000000000000000)	Returns: true
+	(4) callSurplus([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) addSurplus([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 100000000000000000000)	Returns: true
+	(6) mine1000([34897224822679715152216395187142295317087148740772291747178153206673827122125], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(7) setBlockSze([103604390485907915052639590140340616537740502731202727265229924498481107864600], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) callSurplus([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) deposit(['0x414b49675070697a434a537243654c5279594b43524c2043436268586e734e5a'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 1000000000000000)	Returns: true
+	(4) callSurplus([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) addSurplus([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 100000000000000000000)	Returns: true
+	(6) mine1000([34897224822679715152216395187142295317087148740772291747178153206673827122125], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(7) setBlockSze([103604390485907915052639590140340616537740502731202727265229924498481107864600], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) callSurplus([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) deposit(['0x414b49675070697a434a537243654c5279594b43524c2043436268586e734e5a'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 1000000000000000)	Returns: true
+	(4) callSurplus([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) addSurplus([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 100000000000000000000)	Returns: true
+	(6) mine1000([34897224822679715152216395187142295317087148740772291747178153206673827122125], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(7) setBlockSze([103604390485907915052639590140340616537740502731202727265229924498481107864600], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) callSurplus([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) deposit(['0x414b49675070697a434a537243654c5279594b43524c2043436268586e734e5a'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 1000000000000000)	Returns: true
+	(4) callSurplus([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) addSurplus([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 100000000000000000000)	Returns: true
+	(6) mine1000([34897224822679715152216395187142295317087148740772291747178153206673827122125], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(7) setBlockSze([103604390485907915052639590140340616537740502731202727265229924498481107864600], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) callSurplus([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) deposit(['0x414b49675070697a434a537243654c5279594b43524c2043436268586e734e5a'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 1000000000000000)	Returns: true
+	(4) callSurplus([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) addSurplus([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 100000000000000000000)	Returns: true
+	(6) mine1000([34897224822679715152216395187142295317087148740772291747178153206673827122125], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(7) setBlockSze([103604390485907915052639590140340616537740502731202727265229924498481107864600], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) callSurplus([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) deposit(['0x414b49675070697a434a537243654c5279594b43524c2043436268586e734e5a'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 1000000000000000)	Returns: true
+	(4) callSurplus([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) addSurplus([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 100000000000000000000)	Returns: true
+	(6) mine1000([34897224822679715152216395187142295317087148740772291747178153206673827122125], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(7) setBlockSze([103604390485907915052639590140340616537740502731202727265229924498481107864600], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) callSurplus([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) deposit(['0x414b49675070697a434a537243654c5279594b43524c2043436268586e734e5a'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 1000000000000000)	Returns: true
+	(4) callSurplus([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) addSurplus([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 100000000000000000000)	Returns: true
+	(6) mine1000([34897224822679715152216395187142295317087148740772291747178153206673827122125], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(7) setBlockSze([103604390485907915052639590140340616537740502731202727265229924498481107864600], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) callSurplus([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) deposit(['0x414b49675070697a434a537243654c5279594b43524c2043436268586e734e5a'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 1000000000000000)	Returns: true
+	(4) callSurplus([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) addSurplus([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 100000000000000000000)	Returns: true
+	(6) mine1000([34897224822679715152216395187142295317087148740772291747178153206673827122125], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(7) setBlockSze([103604390485907915052639590140340616537740502731202727265229924498481107864600], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) callSurplus([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) deposit(['0x414b49675070697a434a537243654c5279594b43524c2043436268586e734e5a'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 1000000000000000)	Returns: true
+	(4) callSurplus([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) addSurplus([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 100000000000000000000)	Returns: true
+	(6) mine1000([34897224822679715152216395187142295317087148740772291747178153206673827122125], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(7) setBlockSze([103604390485907915052639590140340616537740502731202727265229924498481107864600], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) callSurplus([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) deposit(['0x414b49675070697a434a537243654c5279594b43524c2043436268586e734e5a'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 1000000000000000)	Returns: true
+	(4) callSurplus([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) addSurplus([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 100000000000000000000)	Returns: true
+	(6) mine1000([34897224822679715152216395187142295317087148740772291747178153206673827122125], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(7) setBlockSze([103604390485907915052639590140340616537740502731202727265229924498481107864600], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) callSurplus([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(3) owedAt([5], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(4) deposit(['0x6571626e76586a526451527954734e4578495146204c5943516b524865694b77'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 115435203355355527)	Returns: true
+	(5) owedAt([5], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) deposit(['0x734c51786c596743677279676c5a6c416744696e6456787654725166674f6167'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 1000000000000000)	Returns: true
+	(7) addSurplus([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 100000000000000000000)	Returns: true
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) callSurplus([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) deposit(['0x414b49675070697a434a537243654c5279594b43524c2043436268586e734e5a'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 1000000000000000)	Returns: true
+	(4) callSurplus([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) addSurplus([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 100000000000000000000)	Returns: true
+	(6) mine1000([34897224822679715152216395187142295317087148740772291747178153206673827122125], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(7) setBlockSze([103604390485907915052639590140340616537740502731202727265229924498481107864600], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) callSurplus([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) deposit(['0x414b49675070697a434a537243654c5279594b43524c2043436268586e734e5a'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 1000000000000000)	Returns: true
+	(4) callSurplus([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) addSurplus([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 100000000000000000000)	Returns: true
+	(6) mine1000([34897224822679715152216395187142295317087148740772291747178153206673827122125], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(7) setBlockSze([103604390485907915052639590140340616537740502731202727265229924498481107864600], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) callSurplus([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) deposit(['0x414b49675070697a434a537243654c5279594b43524c2043436268586e734e5a'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 1000000000000000)	Returns: true
+	(4) callSurplus([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) addSurplus([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 100000000000000000000)	Returns: true
+	(6) mine1000([34897224822679715152216395187142295317087148740772291747178153206673827122125], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(7) setBlockSze([103604390485907915052639590140340616537740502731202727265229924498481107864600], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) callSurplus([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) deposit(['0x414b49675070697a434a537243654c5279594b43524c2043436268586e734e5a'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 1000000000000000)	Returns: true
+	(4) callSurplus([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) addSurplus([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 100000000000000000000)	Returns: true
+	(6) mine1000([34897224822679715152216395187142295317087148740772291747178153206673827122125], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(7) setBlockSze([103604390485907915052639590140340616537740502731202727265229924498481107864600], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) callSurplus([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(3) owedAt([5], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(4) deposit(['0x6571626e76586a526451527954734e4578495146204c5943516b524865694b77'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 115435203355355527)	Returns: true
+	(5) owedAt([5], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) deposit(['0x734c51786c596743677279676c5a6c416744696e6456787654725166674f6167'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 1000000000000000)	Returns: true
+	(7) addSurplus([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 100000000000000000000)	Returns: true
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) deposit(['0x76624965476e5077204757624b666f796a594361586d5758704154207a455852'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 100000000000000000000)	Returns: true
+	(3) setBlockSze([50441409891824497611681344976347400875838988597161091167118505792944151500207], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(4) setBlockSze([25], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(5) callSurplus([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) owedAt([77202119410835742811291528060863985870860633762459941373365366291613682127156], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) owedAt([9615172000455612281602337804907696219063244471943421637022967576491731523172], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) reinvest([32, '0x4c5445534464566c6542646d4c51705979654b74414271435a517841626c566a'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) addSurplus([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 125029862525354014)	Returns: true
+	(4) addSurplus([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 1000000000000000000)	Returns: true
+	(5) callSurplus([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(6) deposit(['0x715a6d614f767059464d78437661415170494e5675565768594d44616c61764e'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(7) deposit(['0x6d6f5143415a594e6374595a4949546f76434f6d536e6f474a426e2049654544'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 1000000000000000)	Returns: true
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) reinvest([32, '0x4c5445534464566c6542646d4c51705979654b74414271435a517841626c566a'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) addSurplus([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 125029862525354014)	Returns: true
+	(4) addSurplus([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 1000000000000000000)	Returns: true
+	(5) callSurplus([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(6) deposit(['0x715a6d614f767059464d78437661415170494e5675565768594d44616c61764e'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(7) deposit(['0x6d6f5143415a594e6374595a4949546f76434f6d536e6f474a426e2049654544'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 1000000000000000)	Returns: true
+
+	(1) constructor([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)
+	(2) addSurplus([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 70730847430033437)	Returns: true
+	(3) deposit(['0x594b72436a6249697972625041545377725450544b5653517675755357506d42'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 1000000000000000)	Returns: true
+	(4) owedAt([89155344177730323569673538410726713957027479996079612111153344768537649987973], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(5) addSurplus([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 100000000000000000000)	Returns: true
+	(6) reinvest([1000, '0x726f72624a6e44702041487957734e7052684a644c63766865496d6968485362'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(7) callSurplus([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)
+	(2) addSurplus([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 70730847430033437)	Returns: true
+	(3) deposit(['0x594b72436a6249697972625041545377725450544b5653517675755357506d42'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 1000000000000000)	Returns: true
+	(4) owedAt([89155344177730323569673538410726713957027479996079612111153344768537649987973], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(5) addSurplus([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 100000000000000000000)	Returns: true
+	(6) reinvest([1000, '0x726f72624a6e44702041487957734e7052684a644c63766865496d6968485362'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(7) callSurplus([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)
+	(2) addSurplus([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 70730847430033437)	Returns: true
+	(3) deposit(['0x594b72436a6249697972625041545377725450544b5653517675755357506d42'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 1000000000000000)	Returns: true
+	(4) owedAt([89155344177730323569673538410726713957027479996079612111153344768537649987973], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(5) addSurplus([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 100000000000000000000)	Returns: true
+	(6) reinvest([1000, '0x726f72624a6e44702041487957734e7052684a644c63766865496d6968485362'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(7) callSurplus([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) reinvest([32, '0x4c5445534464566c6542646d4c51705979654b74414271435a517841626c566a'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) addSurplus([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 125029862525354014)	Returns: true
+	(4) addSurplus([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 1000000000000000000)	Returns: true
+	(5) callSurplus([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(6) deposit(['0x715a6d614f767059464d78437661415170494e5675565768594d44616c61764e'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(7) deposit(['0x6d6f5143415a594e6374595a4949546f76434f6d536e6f474a426e2049654544'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 1000000000000000)	Returns: true
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) reinvest([32, '0x4c5445534464566c6542646d4c51705979654b74414271435a517841626c566a'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) addSurplus([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 125029862525354014)	Returns: true
+	(4) addSurplus([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 1000000000000000000)	Returns: true
+	(5) callSurplus([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(6) deposit(['0x715a6d614f767059464d78437661415170494e5675565768594d44616c61764e'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(7) deposit(['0x6d6f5143415a594e6374595a4949546f76434f6d536e6f474a426e2049654544'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 1000000000000000)	Returns: true
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) reinvest([32, '0x4c5445534464566c6542646d4c51705979654b74414271435a517841626c566a'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) addSurplus([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 125029862525354014)	Returns: true
+	(4) addSurplus([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 1000000000000000000)	Returns: true
+	(5) callSurplus([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(6) deposit(['0x715a6d614f767059464d78437661415170494e5675565768594d44616c61764e'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(7) deposit(['0x6d6f5143415a594e6374595a4949546f76434f6d536e6f474a426e2049654544'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 1000000000000000)	Returns: true
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) reinvest([32, '0x4c5445534464566c6542646d4c51705979654b74414271435a517841626c566a'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) addSurplus([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 125029862525354014)	Returns: true
+	(4) addSurplus([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 1000000000000000000)	Returns: true
+	(5) callSurplus([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(6) deposit(['0x715a6d614f767059464d78437661415170494e5675565768594d44616c61764e'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(7) deposit(['0x6d6f5143415a594e6374595a4949546f76434f6d536e6f474a426e2049654544'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 1000000000000000)	Returns: true
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) callSurplus([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) deposit(['0x414b49675070697a434a537243654c5279594b43524c2043436268586e734e5a'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 1000000000000000)	Returns: true
+	(4) callSurplus([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) addSurplus([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 100000000000000000000)	Returns: true
+	(6) mine1000([34897224822679715152216395187142295317087148740772291747178153206673827122125], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(7) setBlockSze([103604390485907915052639590140340616537740502731202727265229924498481107864600], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) callSurplus([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) deposit(['0x414b49675070697a434a537243654c5279594b43524c2043436268586e734e5a'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 1000000000000000)	Returns: true
+	(4) callSurplus([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) addSurplus([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 100000000000000000000)	Returns: true
+	(6) mine1000([34897224822679715152216395187142295317087148740772291747178153206673827122125], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(7) setBlockSze([103604390485907915052639590140340616537740502731202727265229924498481107864600], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) callSurplus([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(3) deposit(['0x414b49675070697a434a537243654c5279594b43524c2043436268586e734e5a'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 1000000000000000)	Returns: true
+	(4) callSurplus([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) addSurplus([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 100000000000000000000)	Returns: true
+	(6) mine1000([34897224822679715152216395187142295317087148740772291747178153206673827122125], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(7) setBlockSze([103604390485907915052639590140340616537740502731202727265229924498481107864600], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) callSurplus([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(3) withdraw([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(4) withdraw([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(5) mine1000([61838893977408600423711259794067398988170407453642319618967450845974291389758], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(6) deposit(['0x4e5a5370634d697a6262725475477069474351547244426b43714e5346754370'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 168383736478167683)	Returns: true
+	(7) withdraw([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) callSurplus([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(3) withdraw([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(4) withdraw([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(5) mine1000([61838893977408600423711259794067398988170407453642319618967450845974291389758], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(6) deposit(['0x4e5a5370634d697a6262725475477069474351547244426b43714e5346754370'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 168383736478167683)	Returns: true
+	(7) withdraw([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) callSurplus([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(3) withdraw([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(4) withdraw([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(5) mine1000([61838893977408600423711259794067398988170407453642319618967450845974291389758], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(6) deposit(['0x4e5a5370634d697a6262725475477069474351547244426b43714e5346754370'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 168383736478167683)	Returns: true
+	(7) withdraw([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) callSurplus([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(3) withdraw([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(4) withdraw([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(5) mine1000([61838893977408600423711259794067398988170407453642319618967450845974291389758], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(6) deposit(['0x4e5a5370634d697a6262725475477069474351547244426b43714e5346754370'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 168383736478167683)	Returns: true
+	(7) withdraw([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) callSurplus([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(3) withdraw([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(4) withdraw([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(5) mine1000([61838893977408600423711259794067398988170407453642319618967450845974291389758], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(6) deposit(['0x4e5a5370634d697a6262725475477069474351547244426b43714e5346754370'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 168383736478167683)	Returns: true
+	(7) withdraw([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true

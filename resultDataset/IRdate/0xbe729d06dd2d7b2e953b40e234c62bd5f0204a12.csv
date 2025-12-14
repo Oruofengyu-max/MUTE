@@ -1,0 +1,13 @@
+Source Function,Target Function
+removeValidator(address),"setUserPermission(address,bytes4)"
+addValidator(address),"setUserPermission(address,bytes4)"
+"removeUserPermission(address,bytes4)","setUserPermission(address,bytes4)"
+"addPermission(bytes4,string,string,string)","setUserPermission(address,bytes4)"
+removePermission(bytes4),"setUserPermission(address,bytes4)"
+upgradeTo(address),claimOwnership()
+transferOwnership(address),claimOwnership()
+"setUserPermission(address,bytes4)","removeUserPermission(address,bytes4)"
+removeValidator(address),"removeUserPermission(address,bytes4)"
+addValidator(address),"removeUserPermission(address,bytes4)"
+"addPermission(bytes4,string,string,string)","removeUserPermission(address,bytes4)"
+removePermission(bytes4),"removeUserPermission(address,bytes4)"

@@ -1,0 +1,13 @@
+Source Function,Target Function
+"startSale(uint256,bool)",setPrice(uint256)
+stopSale(),setPrice(uint256)
+transferOwnership(address),setPrice(uint256)
+setPrice(uint256),"startSale(uint256,bool)"
+stopSale(),"startSale(uint256,bool)"
+transferOwnership(address),"startSale(uint256,bool)"
+setPrice(uint256),stopSale()
+"startSale(uint256,bool)",stopSale()
+transferOwnership(address),stopSale()
+setPrice(uint256),transferOwnership(address)
+"startSale(uint256,bool)",transferOwnership(address)
+stopSale(),transferOwnership(address)

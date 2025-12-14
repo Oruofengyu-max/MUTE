@@ -1,0 +1,9 @@
+Source Function,Target Function
+"submitOracleVote(uint256,bytes16,uint8,uint8)","submitEntry(bytes16,uint64,uint64,string)"
+addOracle(address),"submitOracleVote(uint256,bytes16,uint8,uint8)"
+"submitEntry(bytes16,uint64,uint64,string)",claimTopEntry(uint256)
+renounceOwnership(),claimTopEntry(uint256)
+"closeOracleVoting(bytes16,uint8,uint8)",claimTopEntry(uint256)
+addOracle(address),claimTopEntry(uint256)
+transferOwnership(address),claimTopEntry(uint256)
+"submitOracleVote(uint256,bytes16,uint8,uint8)",claimTopEntry(uint256)

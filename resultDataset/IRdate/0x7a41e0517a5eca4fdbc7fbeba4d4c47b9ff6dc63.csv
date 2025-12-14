@@ -1,0 +1,14 @@
+Source Function,Target Function
+"registerSale(address,address)",setMigrationAgent(address)
+applyMigrate(uint256),setMigrationAgent(address)
+transferOwnership(address),setMigrationAgent(address)
+setMigrationAgent(address),"registerSale(address,address)"
+applyMigrate(uint256),"registerSale(address,address)"
+transferOwnership(address),"registerSale(address,address)"
+"approve(address,uint256)",applyMigrate(uint256)
+"transferFrom(address,address,uint256)",applyMigrate(uint256)
+"registerSale(address,address)",applyMigrate(uint256)
+"transfer(address,uint256)",applyMigrate(uint256)
+setMigrationAgent(address),transferOwnership(address)
+"registerSale(address,address)",transferOwnership(address)
+applyMigrate(uint256),transferOwnership(address)

@@ -1,0 +1,13 @@
+Source Function,Target Function
+addMinter(address),"approve(address,uint256)"
+renounceMinter(),"approve(address,uint256)"
+"setApprovalForAll(address,bool)","approve(address,uint256)"
+renounceOwnership(),"mintWithTokenURI(address,uint256,string)"
+finishMinting(),"mintWithTokenURI(address,uint256,string)"
+transferOwnership(address),"mintWithTokenURI(address,uint256,string)"
+"approve(address,uint256)",ownerOf(uint256)
+addMinter(address),ownerOf(uint256)
+renounceMinter(),ownerOf(uint256)
+"setApprovalForAll(address,bool)",ownerOf(uint256)
+renounceOwnership(),finishMinting()
+transferOwnership(address),finishMinting()

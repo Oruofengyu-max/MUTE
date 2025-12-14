@@ -1,0 +1,23 @@
+Source Function,Target Function
+"addNamespaceMember(string,address)","engrave(string,bytes32)"
+"removeNamespaceMember(string,address)","engrave(string,bytes32)"
+"engraveNamespace(string,string,bytes32)","engrave(string,bytes32)"
+createNamespace(string),"engrave(string,bytes32)"
+updateFee(uint256),"engrave(string,bytes32)"
+transferOwnership(address),"engrave(string,bytes32)"
+"engrave(string,bytes32)","removeNamespaceMember(string,address)"
+"addNamespaceMember(string,address)","removeNamespaceMember(string,address)"
+"engraveNamespace(string,string,bytes32)","removeNamespaceMember(string,address)"
+createNamespace(string),"removeNamespaceMember(string,address)"
+"engrave(string,bytes32)","engraveNamespace(string,string,bytes32)"
+"addNamespaceMember(string,address)","engraveNamespace(string,string,bytes32)"
+"removeNamespaceMember(string,address)","engraveNamespace(string,string,bytes32)"
+createNamespace(string),"engraveNamespace(string,string,bytes32)"
+updateFee(uint256),"engraveNamespace(string,string,bytes32)"
+transferOwnership(address),"engraveNamespace(string,string,bytes32)"
+"engrave(string,bytes32)",createNamespace(string)
+"addNamespaceMember(string,address)",createNamespace(string)
+"removeNamespaceMember(string,address)",createNamespace(string)
+"engraveNamespace(string,string,bytes32)",createNamespace(string)
+updateFee(uint256),createNamespace(string)
+transferOwnership(address),createNamespace(string)

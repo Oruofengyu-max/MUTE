@@ -1,0 +1,19 @@
+Source Function,Target Function
+setMinGasPrice(uint256),invokeFor(address)
+setProxy(address),invokeFor(address)
+"registerFor(address,address,uint256,uint256,uint256)",invokeFor(address)
+"unregisterFor(address,bytes32,address,uint256,uint256,uint256)",invokeFor(address)
+transferOwnership(address),invokeFor(address)
+setMinGasPrice(uint256),invokeOnceFor(address)
+setProxy(address),invokeOnceFor(address)
+"registerFor(address,address,uint256,uint256,uint256)",invokeOnceFor(address)
+"unregisterFor(address,bytes32,address,uint256,uint256,uint256)",invokeOnceFor(address)
+transferOwnership(address),invokeOnceFor(address)
+setMinGasPrice(uint256),"registerFor(address,address,uint256,uint256,uint256)"
+setProxy(address),"registerFor(address,address,uint256,uint256,uint256)"
+"unregisterFor(address,bytes32,address,uint256,uint256,uint256)","registerFor(address,address,uint256,uint256,uint256)"
+transferOwnership(address),"registerFor(address,address,uint256,uint256,uint256)"
+setMinGasPrice(uint256),"unregisterFor(address,bytes32,address,uint256,uint256,uint256)"
+setProxy(address),"unregisterFor(address,bytes32,address,uint256,uint256,uint256)"
+"registerFor(address,address,uint256,uint256,uint256)","unregisterFor(address,bytes32,address,uint256,uint256,uint256)"
+transferOwnership(address),"unregisterFor(address,bytes32,address,uint256,uint256,uint256)"

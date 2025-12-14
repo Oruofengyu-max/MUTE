@@ -1,0 +1,7 @@
+Source Function,Target Function
+remOperator(address),"transferFrom(address,address,uint256)"
+addOperator(address),"transferFrom(address,address,uint256)"
+addWhitelist(address[]),"transferFrom(address,address,uint256)"
+"transferFrom(address,address,uint256)",addWhitelist(address[])
+remOperator(address),addWhitelist(address[])
+addOperator(address),addWhitelist(address[])

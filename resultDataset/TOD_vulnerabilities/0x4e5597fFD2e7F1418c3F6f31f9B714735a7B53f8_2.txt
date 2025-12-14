@@ -1,0 +1,571 @@
+Contract:			Storage
+Number of Relevant Branches:	39
+Number of Branches Covered:		36
+Runtime: 											1882.153268
+Blockchain Time: 							1739.191379
+Iterations										
+11
+--------------------------------------------------
+METHODS:
+
+Constructor:
+	Inputs :[]
+	Payable: nonpayable
+set:
+
+get:
+
+del:
+
+
+--------------------------------------------------
+
+            TESTS:
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) del(['0x5473207864555644777346784f6661486d6c4573477077614c434c45444b6442'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) set(['0x636450544d415248435852684c464945726568504a4a4169724a57794b52594e', 'Standard String'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(4) del(['0x7553556a206746766d6c636d6a5347777250494a7952794d5258675951634d42'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(5) set(['0x4d47736474734f4a6250797145764f7762734c776d50626e796b58416d516d56', 'uQQodvrDJbTzURKMujmZHAiylKTgVNoqnRTSCfmcQuprrFxaLBXJulysJIokgDMdbXZiNTcsTHvqbtBnCvu lfdHFcARLUDxRBMPETeMHBQvFITILvfsOuwCJWqQMuqUcLk tuGyrINEqrnr oVsKiEUgaW lnPWG TvJax'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) get(['0x0000000000000000000000000000000000000000000000000000000000000000'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) set(['0x4c71736220744b596d74744a5964535a6478575a734f674e6c6277654f636642', '"username has already been taken"'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)
+	(2) set(['0x0000000000000000000000000000000000000000000000000000000000000000', '"username has already been taken"'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(3) del(['0x48786259517a6d6a4120737656595a686f6d2042637962414d74774276547745'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) del(['0x0000000000000000000000000000000000000000000000000000000000000000'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(5) del(['0x7a204365414f4c445463666e7449587853584455692072464f58724361414443'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(6) del(['0x696d4844567144574a5758785066526d6a5950696a436a4f57666b4264574142'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) set(['0x4b7361757947624f43526f4647684a5a6268416a4d4856494f6b6c5a4d504a53', 'IVHRIekxTcJfmcGMfiLarkVjqUYcEknSMhsfYOxSFLFmepNzWuxKKGUTh'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(8) del(['0x624a414256676d69206645436f6b445772536c634771676772534e526e727a79'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) del(['0x5473207864555644777346784f6661486d6c4573477077614c434c45444b6442'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) set(['0x636450544d415248435852684c464945726568504a4a4169724a57794b52594e', 'Standard String'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(4) del(['0x7553556a206746766d6c636d6a5347777250494a7952794d5258675951634d42'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(5) set(['0x4d47736474734f4a6250797145764f7762734c776d50626e796b58416d516d56', 'uQQodvrDJbTzURKMujmZHAiylKTgVNoqnRTSCfmcQuprrFxaLBXJulysJIokgDMdbXZiNTcsTHvqbtBnCvu lfdHFcARLUDxRBMPETeMHBQvFITILvfsOuwCJWqQMuqUcLk tuGyrINEqrnr oVsKiEUgaW lnPWG TvJax'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) get(['0x0000000000000000000000000000000000000000000000000000000000000000'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) set(['0x4c71736220744b596d74744a5964535a6478575a734f674e6c6277654f636642', '"username has already been taken"'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) del(['0x5473207864555644777346784f6661486d6c4573477077614c434c45444b6442'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) set(['0x636450544d415248435852684c464945726568504a4a4169724a57794b52594e', 'Standard String'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(4) del(['0x7553556a206746766d6c636d6a5347777250494a7952794d5258675951634d42'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(5) set(['0x4d47736474734f4a6250797145764f7762734c776d50626e796b58416d516d56', 'uQQodvrDJbTzURKMujmZHAiylKTgVNoqnRTSCfmcQuprrFxaLBXJulysJIokgDMdbXZiNTcsTHvqbtBnCvu lfdHFcARLUDxRBMPETeMHBQvFITILvfsOuwCJWqQMuqUcLk tuGyrINEqrnr oVsKiEUgaW lnPWG TvJax'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) get(['0x0000000000000000000000000000000000000000000000000000000000000000'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) set(['0x4c71736220744b596d74744a5964535a6478575a734f674e6c6277654f636642', '"username has already been taken"'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) del(['0x5473207864555644777346784f6661486d6c4573477077614c434c45444b6442'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) set(['0x636450544d415248435852684c464945726568504a4a4169724a57794b52594e', 'Standard String'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(4) del(['0x7553556a206746766d6c636d6a5347777250494a7952794d5258675951634d42'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(5) set(['0x4d47736474734f4a6250797145764f7762734c776d50626e796b58416d516d56', 'uQQodvrDJbTzURKMujmZHAiylKTgVNoqnRTSCfmcQuprrFxaLBXJulysJIokgDMdbXZiNTcsTHvqbtBnCvu lfdHFcARLUDxRBMPETeMHBQvFITILvfsOuwCJWqQMuqUcLk tuGyrINEqrnr oVsKiEUgaW lnPWG TvJax'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) get(['0x0000000000000000000000000000000000000000000000000000000000000000'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) set(['0x4c71736220744b596d74744a5964535a6478575a734f674e6c6277654f636642', '"username has already been taken"'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) del(['0x5473207864555644777346784f6661486d6c4573477077614c434c45444b6442'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) set(['0x636450544d415248435852684c464945726568504a4a4169724a57794b52594e', 'Standard String'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(4) del(['0x7553556a206746766d6c636d6a5347777250494a7952794d5258675951634d42'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(5) set(['0x4d47736474734f4a6250797145764f7762734c776d50626e796b58416d516d56', 'uQQodvrDJbTzURKMujmZHAiylKTgVNoqnRTSCfmcQuprrFxaLBXJulysJIokgDMdbXZiNTcsTHvqbtBnCvu lfdHFcARLUDxRBMPETeMHBQvFITILvfsOuwCJWqQMuqUcLk tuGyrINEqrnr oVsKiEUgaW lnPWG TvJax'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) get(['0x0000000000000000000000000000000000000000000000000000000000000000'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) set(['0x4c71736220744b596d74744a5964535a6478575a734f674e6c6277654f636642', '"username has already been taken"'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) del(['0x5473207864555644777346784f6661486d6c4573477077614c434c45444b6442'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) set(['0x636450544d415248435852684c464945726568504a4a4169724a57794b52594e', 'Standard String'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(4) del(['0x7553556a206746766d6c636d6a5347777250494a7952794d5258675951634d42'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(5) set(['0x4d47736474734f4a6250797145764f7762734c776d50626e796b58416d516d56', 'uQQodvrDJbTzURKMujmZHAiylKTgVNoqnRTSCfmcQuprrFxaLBXJulysJIokgDMdbXZiNTcsTHvqbtBnCvu lfdHFcARLUDxRBMPETeMHBQvFITILvfsOuwCJWqQMuqUcLk tuGyrINEqrnr oVsKiEUgaW lnPWG TvJax'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) get(['0x0000000000000000000000000000000000000000000000000000000000000000'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) set(['0x4c71736220744b596d74744a5964535a6478575a734f674e6c6277654f636642', '"username has already been taken"'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) del(['0x5473207864555644777346784f6661486d6c4573477077614c434c45444b6442'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) set(['0x636450544d415248435852684c464945726568504a4a4169724a57794b52594e', 'Standard String'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(4) del(['0x7553556a206746766d6c636d6a5347777250494a7952794d5258675951634d42'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(5) set(['0x4d47736474734f4a6250797145764f7762734c776d50626e796b58416d516d56', 'uQQodvrDJbTzURKMujmZHAiylKTgVNoqnRTSCfmcQuprrFxaLBXJulysJIokgDMdbXZiNTcsTHvqbtBnCvu lfdHFcARLUDxRBMPETeMHBQvFITILvfsOuwCJWqQMuqUcLk tuGyrINEqrnr oVsKiEUgaW lnPWG TvJax'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) get(['0x0000000000000000000000000000000000000000000000000000000000000000'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) set(['0x4c71736220744b596d74744a5964535a6478575a734f674e6c6277654f636642', '"username has already been taken"'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) del(['0x5473207864555644777346784f6661486d6c4573477077614c434c45444b6442'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) set(['0x636450544d415248435852684c464945726568504a4a4169724a57794b52594e', 'Standard String'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(4) del(['0x7553556a206746766d6c636d6a5347777250494a7952794d5258675951634d42'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(5) set(['0x4d47736474734f4a6250797145764f7762734c776d50626e796b58416d516d56', 'uQQodvrDJbTzURKMujmZHAiylKTgVNoqnRTSCfmcQuprrFxaLBXJulysJIokgDMdbXZiNTcsTHvqbtBnCvu lfdHFcARLUDxRBMPETeMHBQvFITILvfsOuwCJWqQMuqUcLk tuGyrINEqrnr oVsKiEUgaW lnPWG TvJax'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) get(['0x0000000000000000000000000000000000000000000000000000000000000000'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) set(['0x4c71736220744b596d74744a5964535a6478575a734f674e6c6277654f636642', '"username has already been taken"'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) set(['0x634e537150744f6a6a45756e6e69505246534f4541574c6c62614d5653534776', 'VdDmvdYtodZbMDKyancdSDajGslovHlJUFYmGsjqAkZIESoCFnANQXknwEJWgddNvPBohWMtdxWpBwrFAwqevextQyfUkmUmuGkNeqfoqTjVmJJYLbqpBSteesoSHbWwxHJkUejaIsIJmhUCdHATkaaUZQkRodAQtX'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(3) set(['0x6a49744c477644675a627a5675477a4155544e475a4c61637976784b67526656', 'DFoIyjROapAWWLuhODnE qnRMNdWHCZSTJoiPcKsKWefHzusqXRtggMhhtpTkvDAOmEaMbjlYW'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(4) set(['0x43734871516654206a497055697464496f6c7820645556586251464552494945', 'ZSAMAoxcqEIIWOdkuhZUmMJOKbBmINOkYMiFbUqsHmHrczHRcfeZrIjdd WavfFawCWxlalqkcjNIBaMpzGCKEyGAIoyxEDZwKaTWjgzRwTvxgpitD'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) set(['0x746f72466151207754474a2046426271675a65204669504c725761556b4b4767', 'OQcWNfJPpwIaLeNijPUCgVTQsHvLiytdHaFQidQrXVoGDnYKTBZyuNgUXwVkdbepxjLfcFkbZAhdOJdRwmwtCxEqNxWTyZCDzaRIAJYXZSrpOoCMsZsOZGLwJmkgSigGrfSOtHZQGFjtoPIHg oAbrsrSYvDzMawt mZOubcZzETwfIXutCuKOQhrBtKAuKNcrM'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) set(['0x765351784b727476704551794d73635a6871654b67436e44435169464a206d6e', 'UBMINgLpeEiltIBoNOhxxcfVuOOmLpPDdhfolJvvHkbYkXmoOEMnYlpFJvwvTFRFZIrJKDKPnxiXKWavRFptDFugkCkFeCwPoniTvgLDhZB qunUoJPI'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) set(['0x537269587679725a506d786a4a59674f45417a79626d646a4f7a585150694949', '"username has already been taken"'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) del(['0x5473207864555644777346784f6661486d6c4573477077614c434c45444b6442'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) set(['0x636450544d415248435852684c464945726568504a4a4169724a57794b52594e', 'Standard String'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(4) del(['0x7553556a206746766d6c636d6a5347777250494a7952794d5258675951634d42'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(5) set(['0x4d47736474734f4a6250797145764f7762734c776d50626e796b58416d516d56', 'uQQodvrDJbTzURKMujmZHAiylKTgVNoqnRTSCfmcQuprrFxaLBXJulysJIokgDMdbXZiNTcsTHvqbtBnCvu lfdHFcARLUDxRBMPETeMHBQvFITILvfsOuwCJWqQMuqUcLk tuGyrINEqrnr oVsKiEUgaW lnPWG TvJax'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) get(['0x0000000000000000000000000000000000000000000000000000000000000000'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) set(['0x4c71736220744b596d74744a5964535a6478575a734f674e6c6277654f636642', '"username has already been taken"'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) set(['0x634e537150744f6a6a45756e6e69505246534f4541574c6c62614d5653534776', 'VdDmvdYtodZbMDKyancdSDajGslovHlJUFYmGsjqAkZIESoCFnANQXknwEJWgddNvPBohWMtdxWpBwrFAwqevextQyfUkmUmuGkNeqfoqTjVmJJYLbqpBSteesoSHbWwxHJkUejaIsIJmhUCdHATkaaUZQkRodAQtX'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(3) set(['0x6a49744c477644675a627a5675477a4155544e475a4c61637976784b67526656', 'DFoIyjROapAWWLuhODnE qnRMNdWHCZSTJoiPcKsKWefHzusqXRtggMhhtpTkvDAOmEaMbjlYW'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(4) set(['0x43734871516654206a497055697464496f6c7820645556586251464552494945', 'ZSAMAoxcqEIIWOdkuhZUmMJOKbBmINOkYMiFbUqsHmHrczHRcfeZrIjdd WavfFawCWxlalqkcjNIBaMpzGCKEyGAIoyxEDZwKaTWjgzRwTvxgpitD'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) set(['0x746f72466151207754474a2046426271675a65204669504c725761556b4b4767', 'OQcWNfJPpwIaLeNijPUCgVTQsHvLiytdHaFQidQrXVoGDnYKTBZyuNgUXwVkdbepxjLfcFkbZAhdOJdRwmwtCxEqNxWTyZCDzaRIAJYXZSrpOoCMsZsOZGLwJmkgSigGrfSOtHZQGFjtoPIHg oAbrsrSYvDzMawt mZOubcZzETwfIXutCuKOQhrBtKAuKNcrM'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) set(['0x765351784b727476704551794d73635a6871654b67436e44435169464a206d6e', 'UBMINgLpeEiltIBoNOhxxcfVuOOmLpPDdhfolJvvHkbYkXmoOEMnYlpFJvwvTFRFZIrJKDKPnxiXKWavRFptDFugkCkFeCwPoniTvgLDhZB qunUoJPI'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) set(['0x537269587679725a506d786a4a59674f45417a79626d646a4f7a585150694949', '"username has already been taken"'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) set(['0x634e537150744f6a6a45756e6e69505246534f4541574c6c62614d5653534776', 'VdDmvdYtodZbMDKyancdSDajGslovHlJUFYmGsjqAkZIESoCFnANQXknwEJWgddNvPBohWMtdxWpBwrFAwqevextQyfUkmUmuGkNeqfoqTjVmJJYLbqpBSteesoSHbWwxHJkUejaIsIJmhUCdHATkaaUZQkRodAQtX'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(3) set(['0x6a49744c477644675a627a5675477a4155544e475a4c61637976784b67526656', 'DFoIyjROapAWWLuhODnE qnRMNdWHCZSTJoiPcKsKWefHzusqXRtggMhhtpTkvDAOmEaMbjlYW'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(4) set(['0x43734871516654206a497055697464496f6c7820645556586251464552494945', 'ZSAMAoxcqEIIWOdkuhZUmMJOKbBmINOkYMiFbUqsHmHrczHRcfeZrIjdd WavfFawCWxlalqkcjNIBaMpzGCKEyGAIoyxEDZwKaTWjgzRwTvxgpitD'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) set(['0x746f72466151207754474a2046426271675a65204669504c725761556b4b4767', 'OQcWNfJPpwIaLeNijPUCgVTQsHvLiytdHaFQidQrXVoGDnYKTBZyuNgUXwVkdbepxjLfcFkbZAhdOJdRwmwtCxEqNxWTyZCDzaRIAJYXZSrpOoCMsZsOZGLwJmkgSigGrfSOtHZQGFjtoPIHg oAbrsrSYvDzMawt mZOubcZzETwfIXutCuKOQhrBtKAuKNcrM'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) set(['0x765351784b727476704551794d73635a6871654b67436e44435169464a206d6e', 'UBMINgLpeEiltIBoNOhxxcfVuOOmLpPDdhfolJvvHkbYkXmoOEMnYlpFJvwvTFRFZIrJKDKPnxiXKWavRFptDFugkCkFeCwPoniTvgLDhZB qunUoJPI'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) set(['0x537269587679725a506d786a4a59674f45417a79626d646a4f7a585150694949', '"username has already been taken"'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) set(['0x634e537150744f6a6a45756e6e69505246534f4541574c6c62614d5653534776', 'VdDmvdYtodZbMDKyancdSDajGslovHlJUFYmGsjqAkZIESoCFnANQXknwEJWgddNvPBohWMtdxWpBwrFAwqevextQyfUkmUmuGkNeqfoqTjVmJJYLbqpBSteesoSHbWwxHJkUejaIsIJmhUCdHATkaaUZQkRodAQtX'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(3) set(['0x6a49744c477644675a627a5675477a4155544e475a4c61637976784b67526656', 'DFoIyjROapAWWLuhODnE qnRMNdWHCZSTJoiPcKsKWefHzusqXRtggMhhtpTkvDAOmEaMbjlYW'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(4) set(['0x43734871516654206a497055697464496f6c7820645556586251464552494945', 'ZSAMAoxcqEIIWOdkuhZUmMJOKbBmINOkYMiFbUqsHmHrczHRcfeZrIjdd WavfFawCWxlalqkcjNIBaMpzGCKEyGAIoyxEDZwKaTWjgzRwTvxgpitD'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) set(['0x746f72466151207754474a2046426271675a65204669504c725761556b4b4767', 'OQcWNfJPpwIaLeNijPUCgVTQsHvLiytdHaFQidQrXVoGDnYKTBZyuNgUXwVkdbepxjLfcFkbZAhdOJdRwmwtCxEqNxWTyZCDzaRIAJYXZSrpOoCMsZsOZGLwJmkgSigGrfSOtHZQGFjtoPIHg oAbrsrSYvDzMawt mZOubcZzETwfIXutCuKOQhrBtKAuKNcrM'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) set(['0x765351784b727476704551794d73635a6871654b67436e44435169464a206d6e', 'UBMINgLpeEiltIBoNOhxxcfVuOOmLpPDdhfolJvvHkbYkXmoOEMnYlpFJvwvTFRFZIrJKDKPnxiXKWavRFptDFugkCkFeCwPoniTvgLDhZB qunUoJPI'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) set(['0x537269587679725a506d786a4a59674f45417a79626d646a4f7a585150694949', '"username has already been taken"'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) set(['0x634e537150744f6a6a45756e6e69505246534f4541574c6c62614d5653534776', 'VdDmvdYtodZbMDKyancdSDajGslovHlJUFYmGsjqAkZIESoCFnANQXknwEJWgddNvPBohWMtdxWpBwrFAwqevextQyfUkmUmuGkNeqfoqTjVmJJYLbqpBSteesoSHbWwxHJkUejaIsIJmhUCdHATkaaUZQkRodAQtX'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(3) set(['0x6a49744c477644675a627a5675477a4155544e475a4c61637976784b67526656', 'DFoIyjROapAWWLuhODnE qnRMNdWHCZSTJoiPcKsKWefHzusqXRtggMhhtpTkvDAOmEaMbjlYW'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(4) set(['0x43734871516654206a497055697464496f6c7820645556586251464552494945', 'ZSAMAoxcqEIIWOdkuhZUmMJOKbBmINOkYMiFbUqsHmHrczHRcfeZrIjdd WavfFawCWxlalqkcjNIBaMpzGCKEyGAIoyxEDZwKaTWjgzRwTvxgpitD'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) set(['0x746f72466151207754474a2046426271675a65204669504c725761556b4b4767', 'OQcWNfJPpwIaLeNijPUCgVTQsHvLiytdHaFQidQrXVoGDnYKTBZyuNgUXwVkdbepxjLfcFkbZAhdOJdRwmwtCxEqNxWTyZCDzaRIAJYXZSrpOoCMsZsOZGLwJmkgSigGrfSOtHZQGFjtoPIHg oAbrsrSYvDzMawt mZOubcZzETwfIXutCuKOQhrBtKAuKNcrM'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) set(['0x765351784b727476704551794d73635a6871654b67436e44435169464a206d6e', 'UBMINgLpeEiltIBoNOhxxcfVuOOmLpPDdhfolJvvHkbYkXmoOEMnYlpFJvwvTFRFZIrJKDKPnxiXKWavRFptDFugkCkFeCwPoniTvgLDhZB qunUoJPI'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) set(['0x537269587679725a506d786a4a59674f45417a79626d646a4f7a585150694949', '"username has already been taken"'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) set(['0x634e537150744f6a6a45756e6e69505246534f4541574c6c62614d5653534776', 'VdDmvdYtodZbMDKyancdSDajGslovHlJUFYmGsjqAkZIESoCFnANQXknwEJWgddNvPBohWMtdxWpBwrFAwqevextQyfUkmUmuGkNeqfoqTjVmJJYLbqpBSteesoSHbWwxHJkUejaIsIJmhUCdHATkaaUZQkRodAQtX'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(3) set(['0x6a49744c477644675a627a5675477a4155544e475a4c61637976784b67526656', 'DFoIyjROapAWWLuhODnE qnRMNdWHCZSTJoiPcKsKWefHzusqXRtggMhhtpTkvDAOmEaMbjlYW'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(4) set(['0x43734871516654206a497055697464496f6c7820645556586251464552494945', 'ZSAMAoxcqEIIWOdkuhZUmMJOKbBmINOkYMiFbUqsHmHrczHRcfeZrIjdd WavfFawCWxlalqkcjNIBaMpzGCKEyGAIoyxEDZwKaTWjgzRwTvxgpitD'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) set(['0x746f72466151207754474a2046426271675a65204669504c725761556b4b4767', 'OQcWNfJPpwIaLeNijPUCgVTQsHvLiytdHaFQidQrXVoGDnYKTBZyuNgUXwVkdbepxjLfcFkbZAhdOJdRwmwtCxEqNxWTyZCDzaRIAJYXZSrpOoCMsZsOZGLwJmkgSigGrfSOtHZQGFjtoPIHg oAbrsrSYvDzMawt mZOubcZzETwfIXutCuKOQhrBtKAuKNcrM'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) set(['0x765351784b727476704551794d73635a6871654b67436e44435169464a206d6e', 'UBMINgLpeEiltIBoNOhxxcfVuOOmLpPDdhfolJvvHkbYkXmoOEMnYlpFJvwvTFRFZIrJKDKPnxiXKWavRFptDFugkCkFeCwPoniTvgLDhZB qunUoJPI'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) set(['0x537269587679725a506d786a4a59674f45417a79626d646a4f7a585150694949', '"username has already been taken"'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) set(['0x634e537150744f6a6a45756e6e69505246534f4541574c6c62614d5653534776', 'VdDmvdYtodZbMDKyancdSDajGslovHlJUFYmGsjqAkZIESoCFnANQXknwEJWgddNvPBohWMtdxWpBwrFAwqevextQyfUkmUmuGkNeqfoqTjVmJJYLbqpBSteesoSHbWwxHJkUejaIsIJmhUCdHATkaaUZQkRodAQtX'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(3) set(['0x6a49744c477644675a627a5675477a4155544e475a4c61637976784b67526656', 'DFoIyjROapAWWLuhODnE qnRMNdWHCZSTJoiPcKsKWefHzusqXRtggMhhtpTkvDAOmEaMbjlYW'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(4) set(['0x43734871516654206a497055697464496f6c7820645556586251464552494945', 'ZSAMAoxcqEIIWOdkuhZUmMJOKbBmINOkYMiFbUqsHmHrczHRcfeZrIjdd WavfFawCWxlalqkcjNIBaMpzGCKEyGAIoyxEDZwKaTWjgzRwTvxgpitD'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) set(['0x746f72466151207754474a2046426271675a65204669504c725761556b4b4767', 'OQcWNfJPpwIaLeNijPUCgVTQsHvLiytdHaFQidQrXVoGDnYKTBZyuNgUXwVkdbepxjLfcFkbZAhdOJdRwmwtCxEqNxWTyZCDzaRIAJYXZSrpOoCMsZsOZGLwJmkgSigGrfSOtHZQGFjtoPIHg oAbrsrSYvDzMawt mZOubcZzETwfIXutCuKOQhrBtKAuKNcrM'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) set(['0x765351784b727476704551794d73635a6871654b67436e44435169464a206d6e', 'UBMINgLpeEiltIBoNOhxxcfVuOOmLpPDdhfolJvvHkbYkXmoOEMnYlpFJvwvTFRFZIrJKDKPnxiXKWavRFptDFugkCkFeCwPoniTvgLDhZB qunUoJPI'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) set(['0x537269587679725a506d786a4a59674f45417a79626d646a4f7a585150694949', '"username has already been taken"'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) set(['0x634e537150744f6a6a45756e6e69505246534f4541574c6c62614d5653534776', 'VdDmvdYtodZbMDKyancdSDajGslovHlJUFYmGsjqAkZIESoCFnANQXknwEJWgddNvPBohWMtdxWpBwrFAwqevextQyfUkmUmuGkNeqfoqTjVmJJYLbqpBSteesoSHbWwxHJkUejaIsIJmhUCdHATkaaUZQkRodAQtX'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(3) set(['0x6a49744c477644675a627a5675477a4155544e475a4c61637976784b67526656', 'DFoIyjROapAWWLuhODnE qnRMNdWHCZSTJoiPcKsKWefHzusqXRtggMhhtpTkvDAOmEaMbjlYW'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(4) set(['0x43734871516654206a497055697464496f6c7820645556586251464552494945', 'ZSAMAoxcqEIIWOdkuhZUmMJOKbBmINOkYMiFbUqsHmHrczHRcfeZrIjdd WavfFawCWxlalqkcjNIBaMpzGCKEyGAIoyxEDZwKaTWjgzRwTvxgpitD'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) set(['0x746f72466151207754474a2046426271675a65204669504c725761556b4b4767', 'OQcWNfJPpwIaLeNijPUCgVTQsHvLiytdHaFQidQrXVoGDnYKTBZyuNgUXwVkdbepxjLfcFkbZAhdOJdRwmwtCxEqNxWTyZCDzaRIAJYXZSrpOoCMsZsOZGLwJmkgSigGrfSOtHZQGFjtoPIHg oAbrsrSYvDzMawt mZOubcZzETwfIXutCuKOQhrBtKAuKNcrM'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) set(['0x765351784b727476704551794d73635a6871654b67436e44435169464a206d6e', 'UBMINgLpeEiltIBoNOhxxcfVuOOmLpPDdhfolJvvHkbYkXmoOEMnYlpFJvwvTFRFZIrJKDKPnxiXKWavRFptDFugkCkFeCwPoniTvgLDhZB qunUoJPI'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) set(['0x537269587679725a506d786a4a59674f45417a79626d646a4f7a585150694949', '"username has already been taken"'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) set(['0x634e537150744f6a6a45756e6e69505246534f4541574c6c62614d5653534776', 'VdDmvdYtodZbMDKyancdSDajGslovHlJUFYmGsjqAkZIESoCFnANQXknwEJWgddNvPBohWMtdxWpBwrFAwqevextQyfUkmUmuGkNeqfoqTjVmJJYLbqpBSteesoSHbWwxHJkUejaIsIJmhUCdHATkaaUZQkRodAQtX'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(3) set(['0x6a49744c477644675a627a5675477a4155544e475a4c61637976784b67526656', 'DFoIyjROapAWWLuhODnE qnRMNdWHCZSTJoiPcKsKWefHzusqXRtggMhhtpTkvDAOmEaMbjlYW'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(4) set(['0x43734871516654206a497055697464496f6c7820645556586251464552494945', 'ZSAMAoxcqEIIWOdkuhZUmMJOKbBmINOkYMiFbUqsHmHrczHRcfeZrIjdd WavfFawCWxlalqkcjNIBaMpzGCKEyGAIoyxEDZwKaTWjgzRwTvxgpitD'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) set(['0x746f72466151207754474a2046426271675a65204669504c725761556b4b4767', 'OQcWNfJPpwIaLeNijPUCgVTQsHvLiytdHaFQidQrXVoGDnYKTBZyuNgUXwVkdbepxjLfcFkbZAhdOJdRwmwtCxEqNxWTyZCDzaRIAJYXZSrpOoCMsZsOZGLwJmkgSigGrfSOtHZQGFjtoPIHg oAbrsrSYvDzMawt mZOubcZzETwfIXutCuKOQhrBtKAuKNcrM'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) set(['0x765351784b727476704551794d73635a6871654b67436e44435169464a206d6e', 'UBMINgLpeEiltIBoNOhxxcfVuOOmLpPDdhfolJvvHkbYkXmoOEMnYlpFJvwvTFRFZIrJKDKPnxiXKWavRFptDFugkCkFeCwPoniTvgLDhZB qunUoJPI'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) set(['0x537269587679725a506d786a4a59674f45417a79626d646a4f7a585150694949', '"username has already been taken"'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) set(['0x634e537150744f6a6a45756e6e69505246534f4541574c6c62614d5653534776', 'VdDmvdYtodZbMDKyancdSDajGslovHlJUFYmGsjqAkZIESoCFnANQXknwEJWgddNvPBohWMtdxWpBwrFAwqevextQyfUkmUmuGkNeqfoqTjVmJJYLbqpBSteesoSHbWwxHJkUejaIsIJmhUCdHATkaaUZQkRodAQtX'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(3) set(['0x6a49744c477644675a627a5675477a4155544e475a4c61637976784b67526656', 'DFoIyjROapAWWLuhODnE qnRMNdWHCZSTJoiPcKsKWefHzusqXRtggMhhtpTkvDAOmEaMbjlYW'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(4) set(['0x43734871516654206a497055697464496f6c7820645556586251464552494945', 'ZSAMAoxcqEIIWOdkuhZUmMJOKbBmINOkYMiFbUqsHmHrczHRcfeZrIjdd WavfFawCWxlalqkcjNIBaMpzGCKEyGAIoyxEDZwKaTWjgzRwTvxgpitD'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) set(['0x746f72466151207754474a2046426271675a65204669504c725761556b4b4767', 'OQcWNfJPpwIaLeNijPUCgVTQsHvLiytdHaFQidQrXVoGDnYKTBZyuNgUXwVkdbepxjLfcFkbZAhdOJdRwmwtCxEqNxWTyZCDzaRIAJYXZSrpOoCMsZsOZGLwJmkgSigGrfSOtHZQGFjtoPIHg oAbrsrSYvDzMawt mZOubcZzETwfIXutCuKOQhrBtKAuKNcrM'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) set(['0x765351784b727476704551794d73635a6871654b67436e44435169464a206d6e', 'UBMINgLpeEiltIBoNOhxxcfVuOOmLpPDdhfolJvvHkbYkXmoOEMnYlpFJvwvTFRFZIrJKDKPnxiXKWavRFptDFugkCkFeCwPoniTvgLDhZB qunUoJPI'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) set(['0x537269587679725a506d786a4a59674f45417a79626d646a4f7a585150694949', '"username has already been taken"'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)
+	(2) get(['0x0000000000000000000000000000000000000000000000000000000000000000'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(3) del(['0x4e494544536779644475677a64735964574e6d445a5649536b67416359494320'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(4) set(['0x52686462754e6d7a4f537a445a7262514a6343436a686a66724c486d48786a46', 'lZXcGUivSOfBWhFeINseFOZsBaVFCdRjWrVDk noWtgKScgVqzvhcHLnHRGbLPMWNPKSrTZSsBpsTZwBOeXpJDxxJNrjUeBexvtqmNeUryggJm E eBuYQzOEkBNpOofmQCIxGVDCUzNuynVUDCpZvCbEezxmweUtV aFBZCWKNvmGUOmuLEym pmAGXbzhMt'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) del(['0x4e434976615657644e586c77666f41414b614b4c6541766a76454a4473774773'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(6) set(['0x0000000000000000000000000000000000000000000000000000000000000000', '"username has already been taken"'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) set(['0x0000000000000000000000000000000000000000000000000000000000000000', 'FjKhWwd DErwEXkQXqDV GFpoyFqugQOFXBiexYEkxUjbhDkpTZOoMaxQAxMUBGhfbXO'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) set(['0x634e537150744f6a6a45756e6e69505246534f4541574c6c62614d5653534776', 'VdDmvdYtodZbMDKyancdSDajGslovHlJUFYmGsjqAkZIESoCFnANQXknwEJWgddNvPBohWMtdxWpBwrFAwqevextQyfUkmUmuGkNeqfoqTjVmJJYLbqpBSteesoSHbWwxHJkUejaIsIJmhUCdHATkaaUZQkRodAQtX'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(3) set(['0x6a49744c477644675a627a5675477a4155544e475a4c61637976784b67526656', 'DFoIyjROapAWWLuhODnE qnRMNdWHCZSTJoiPcKsKWefHzusqXRtggMhhtpTkvDAOmEaMbjlYW'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(4) set(['0x43734871516654206a497055697464496f6c7820645556586251464552494945', 'ZSAMAoxcqEIIWOdkuhZUmMJOKbBmINOkYMiFbUqsHmHrczHRcfeZrIjdd WavfFawCWxlalqkcjNIBaMpzGCKEyGAIoyxEDZwKaTWjgzRwTvxgpitD'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) set(['0x746f72466151207754474a2046426271675a65204669504c725761556b4b4767', 'OQcWNfJPpwIaLeNijPUCgVTQsHvLiytdHaFQidQrXVoGDnYKTBZyuNgUXwVkdbepxjLfcFkbZAhdOJdRwmwtCxEqNxWTyZCDzaRIAJYXZSrpOoCMsZsOZGLwJmkgSigGrfSOtHZQGFjtoPIHg oAbrsrSYvDzMawt mZOubcZzETwfIXutCuKOQhrBtKAuKNcrM'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) set(['0x765351784b727476704551794d73635a6871654b67436e44435169464a206d6e', 'UBMINgLpeEiltIBoNOhxxcfVuOOmLpPDdhfolJvvHkbYkXmoOEMnYlpFJvwvTFRFZIrJKDKPnxiXKWavRFptDFugkCkFeCwPoniTvgLDhZB qunUoJPI'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) set(['0x537269587679725a506d786a4a59674f45417a79626d646a4f7a585150694949', '"username has already been taken"'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) set(['0x704565487151694e6b64544366464b4377776a5855624855666a635257555548', 'ZWOsENLFRtfZBqwBAqJgydtD nyoDKPgVCeIsNhzBzQeEBnlCsPxNVfODICnpTlJjXIVxecpAlqvtSBjJJqXvinNEXAnsAmFhIroegkjf SeNkU j DMuATYSqGlIXZAGlKbOMLnAxPHDDnY nmCyjJFRYlfrsRLmYwykRxhPoOHgbaYaOwSrsOCzqQJwxOrGvOwupsKELIgKbXYeXysxIFzn'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) del(['0x464463714e676a66566b546e6a6c7861486b6f48797076507578647764412063'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(4) set(['0x506f664e6377774d516c56746c415745776a6b616474205541656675514f6b61', 'DuGbyuqRtaRoIzx VwBceFaLtn KKH Tewi uPUJQwiTlnNdFdbJBhjcVvmFzR cgLJViFthPbPurLTdlXuIMJRpiInbTjXfPPoLsoqsvgVtXOVxXJeGgNYGjQnJBGUyxDBweRgjd'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) set(['0x424e486c784d644e6554505566527320674b754b6c70476e46764c666f464c77', ''], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) get(['0x7667696e66744c57684d526e6650744c796a5253524f487668504e41676f4c4f'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) del(['0x4371735a415451654961514a587a4e736c654a6a61204376666e567356584854'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) set(['0x634e537150744f6a6a45756e6e69505246534f4541574c6c62614d5653534776', 'VdDmvdYtodZbMDKyancdSDajGslovHlJUFYmGsjqAkZIESoCFnANQXknwEJWgddNvPBohWMtdxWpBwrFAwqevextQyfUkmUmuGkNeqfoqTjVmJJYLbqpBSteesoSHbWwxHJkUejaIsIJmhUCdHATkaaUZQkRodAQtX'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(3) set(['0x6a49744c477644675a627a5675477a4155544e475a4c61637976784b67526656', 'DFoIyjROapAWWLuhODnE qnRMNdWHCZSTJoiPcKsKWefHzusqXRtggMhhtpTkvDAOmEaMbjlYW'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(4) set(['0x43734871516654206a497055697464496f6c7820645556586251464552494945', 'ZSAMAoxcqEIIWOdkuhZUmMJOKbBmINOkYMiFbUqsHmHrczHRcfeZrIjdd WavfFawCWxlalqkcjNIBaMpzGCKEyGAIoyxEDZwKaTWjgzRwTvxgpitD'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) set(['0x746f72466151207754474a2046426271675a65204669504c725761556b4b4767', 'OQcWNfJPpwIaLeNijPUCgVTQsHvLiytdHaFQidQrXVoGDnYKTBZyuNgUXwVkdbepxjLfcFkbZAhdOJdRwmwtCxEqNxWTyZCDzaRIAJYXZSrpOoCMsZsOZGLwJmkgSigGrfSOtHZQGFjtoPIHg oAbrsrSYvDzMawt mZOubcZzETwfIXutCuKOQhrBtKAuKNcrM'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) set(['0x765351784b727476704551794d73635a6871654b67436e44435169464a206d6e', 'UBMINgLpeEiltIBoNOhxxcfVuOOmLpPDdhfolJvvHkbYkXmoOEMnYlpFJvwvTFRFZIrJKDKPnxiXKWavRFptDFugkCkFeCwPoniTvgLDhZB qunUoJPI'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) set(['0x537269587679725a506d786a4a59674f45417a79626d646a4f7a585150694949', '"username has already been taken"'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) set(['0x704565487151694e6b64544366464b4377776a5855624855666a635257555548', 'ZWOsENLFRtfZBqwBAqJgydtD nyoDKPgVCeIsNhzBzQeEBnlCsPxNVfODICnpTlJjXIVxecpAlqvtSBjJJqXvinNEXAnsAmFhIroegkjf SeNkU j DMuATYSqGlIXZAGlKbOMLnAxPHDDnY nmCyjJFRYlfrsRLmYwykRxhPoOHgbaYaOwSrsOCzqQJwxOrGvOwupsKELIgKbXYeXysxIFzn'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) del(['0x464463714e676a66566b546e6a6c7861486b6f48797076507578647764412063'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(4) set(['0x506f664e6377774d516c56746c415745776a6b616474205541656675514f6b61', 'DuGbyuqRtaRoIzx VwBceFaLtn KKH Tewi uPUJQwiTlnNdFdbJBhjcVvmFzR cgLJViFthPbPurLTdlXuIMJRpiInbTjXfPPoLsoqsvgVtXOVxXJeGgNYGjQnJBGUyxDBweRgjd'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) set(['0x424e486c784d644e6554505566527320674b754b6c70476e46764c666f464c77', ''], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) get(['0x7667696e66744c57684d526e6650744c796a5253524f487668504e41676f4c4f'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) del(['0x4371735a415451654961514a587a4e736c654a6a61204376666e567356584854'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) set(['0x634e537150744f6a6a45756e6e69505246534f4541574c6c62614d5653534776', 'VdDmvdYtodZbMDKyancdSDajGslovHlJUFYmGsjqAkZIESoCFnANQXknwEJWgddNvPBohWMtdxWpBwrFAwqevextQyfUkmUmuGkNeqfoqTjVmJJYLbqpBSteesoSHbWwxHJkUejaIsIJmhUCdHATkaaUZQkRodAQtX'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(3) set(['0x6a49744c477644675a627a5675477a4155544e475a4c61637976784b67526656', 'DFoIyjROapAWWLuhODnE qnRMNdWHCZSTJoiPcKsKWefHzusqXRtggMhhtpTkvDAOmEaMbjlYW'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(4) set(['0x43734871516654206a497055697464496f6c7820645556586251464552494945', 'ZSAMAoxcqEIIWOdkuhZUmMJOKbBmINOkYMiFbUqsHmHrczHRcfeZrIjdd WavfFawCWxlalqkcjNIBaMpzGCKEyGAIoyxEDZwKaTWjgzRwTvxgpitD'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) set(['0x746f72466151207754474a2046426271675a65204669504c725761556b4b4767', 'OQcWNfJPpwIaLeNijPUCgVTQsHvLiytdHaFQidQrXVoGDnYKTBZyuNgUXwVkdbepxjLfcFkbZAhdOJdRwmwtCxEqNxWTyZCDzaRIAJYXZSrpOoCMsZsOZGLwJmkgSigGrfSOtHZQGFjtoPIHg oAbrsrSYvDzMawt mZOubcZzETwfIXutCuKOQhrBtKAuKNcrM'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) set(['0x765351784b727476704551794d73635a6871654b67436e44435169464a206d6e', 'UBMINgLpeEiltIBoNOhxxcfVuOOmLpPDdhfolJvvHkbYkXmoOEMnYlpFJvwvTFRFZIrJKDKPnxiXKWavRFptDFugkCkFeCwPoniTvgLDhZB qunUoJPI'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) set(['0x537269587679725a506d786a4a59674f45417a79626d646a4f7a585150694949', '"username has already been taken"'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) set(['0x634e537150744f6a6a45756e6e69505246534f4541574c6c62614d5653534776', 'VdDmvdYtodZbMDKyancdSDajGslovHlJUFYmGsjqAkZIESoCFnANQXknwEJWgddNvPBohWMtdxWpBwrFAwqevextQyfUkmUmuGkNeqfoqTjVmJJYLbqpBSteesoSHbWwxHJkUejaIsIJmhUCdHATkaaUZQkRodAQtX'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(3) set(['0x6a49744c477644675a627a5675477a4155544e475a4c61637976784b67526656', 'DFoIyjROapAWWLuhODnE qnRMNdWHCZSTJoiPcKsKWefHzusqXRtggMhhtpTkvDAOmEaMbjlYW'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(4) set(['0x43734871516654206a497055697464496f6c7820645556586251464552494945', 'ZSAMAoxcqEIIWOdkuhZUmMJOKbBmINOkYMiFbUqsHmHrczHRcfeZrIjdd WavfFawCWxlalqkcjNIBaMpzGCKEyGAIoyxEDZwKaTWjgzRwTvxgpitD'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) set(['0x746f72466151207754474a2046426271675a65204669504c725761556b4b4767', 'OQcWNfJPpwIaLeNijPUCgVTQsHvLiytdHaFQidQrXVoGDnYKTBZyuNgUXwVkdbepxjLfcFkbZAhdOJdRwmwtCxEqNxWTyZCDzaRIAJYXZSrpOoCMsZsOZGLwJmkgSigGrfSOtHZQGFjtoPIHg oAbrsrSYvDzMawt mZOubcZzETwfIXutCuKOQhrBtKAuKNcrM'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) set(['0x765351784b727476704551794d73635a6871654b67436e44435169464a206d6e', 'UBMINgLpeEiltIBoNOhxxcfVuOOmLpPDdhfolJvvHkbYkXmoOEMnYlpFJvwvTFRFZIrJKDKPnxiXKWavRFptDFugkCkFeCwPoniTvgLDhZB qunUoJPI'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) set(['0x537269587679725a506d786a4a59674f45417a79626d646a4f7a585150694949', '"username has already been taken"'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) set(['0x634e537150744f6a6a45756e6e69505246534f4541574c6c62614d5653534776', 'VdDmvdYtodZbMDKyancdSDajGslovHlJUFYmGsjqAkZIESoCFnANQXknwEJWgddNvPBohWMtdxWpBwrFAwqevextQyfUkmUmuGkNeqfoqTjVmJJYLbqpBSteesoSHbWwxHJkUejaIsIJmhUCdHATkaaUZQkRodAQtX'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(3) set(['0x6a49744c477644675a627a5675477a4155544e475a4c61637976784b67526656', 'DFoIyjROapAWWLuhODnE qnRMNdWHCZSTJoiPcKsKWefHzusqXRtggMhhtpTkvDAOmEaMbjlYW'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(4) set(['0x43734871516654206a497055697464496f6c7820645556586251464552494945', 'ZSAMAoxcqEIIWOdkuhZUmMJOKbBmINOkYMiFbUqsHmHrczHRcfeZrIjdd WavfFawCWxlalqkcjNIBaMpzGCKEyGAIoyxEDZwKaTWjgzRwTvxgpitD'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) set(['0x746f72466151207754474a2046426271675a65204669504c725761556b4b4767', 'OQcWNfJPpwIaLeNijPUCgVTQsHvLiytdHaFQidQrXVoGDnYKTBZyuNgUXwVkdbepxjLfcFkbZAhdOJdRwmwtCxEqNxWTyZCDzaRIAJYXZSrpOoCMsZsOZGLwJmkgSigGrfSOtHZQGFjtoPIHg oAbrsrSYvDzMawt mZOubcZzETwfIXutCuKOQhrBtKAuKNcrM'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) set(['0x765351784b727476704551794d73635a6871654b67436e44435169464a206d6e', 'UBMINgLpeEiltIBoNOhxxcfVuOOmLpPDdhfolJvvHkbYkXmoOEMnYlpFJvwvTFRFZIrJKDKPnxiXKWavRFptDFugkCkFeCwPoniTvgLDhZB qunUoJPI'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) set(['0x537269587679725a506d786a4a59674f45417a79626d646a4f7a585150694949', '"username has already been taken"'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) del(['0x4d5a6e624e594f5074424d78624c7a464867435a486c626e5658642052464f6e'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) set(['0x0000000000000000000000000000000000000000000000000000000000000000', '"username has already been taken"'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(4) get(['0x0000000000000000000000000000000000000000000000000000000000000000'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) get(['0x4a4d504c41764d5a7a534a6c6b714572774666472067736d6f764a69624f5168'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(6) del(['0x7a6f6261756f54784679744e675454476259437a63686943766a724e4f6e6658'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(7) set(['0x4778775a71636661504b43686479707075686d6b504651656141204554556343', 'ohXmpKwZItQeeehijCnqvIgGkUnkz ShBFnqVKgYTBGVEmVzdhRbRnaVKKlvREKtNMaU CaMFHBTSoF'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(8) set(['0x6961636d615a5574575657644e797a4c454a53494946436370717465586d6f77', '"username has already been taken"'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) del(['0x4d5a6e624e594f5074424d78624c7a464867435a486c626e5658642052464f6e'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) set(['0x0000000000000000000000000000000000000000000000000000000000000000', '"username has already been taken"'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(4) get(['0x0000000000000000000000000000000000000000000000000000000000000000'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) get(['0x4a4d504c41764d5a7a534a6c6b714572774666472067736d6f764a69624f5168'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(6) del(['0x7a6f6261756f54784679744e675454476259437a63686943766a724e4f6e6658'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(7) set(['0x4778775a71636661504b43686479707075686d6b504651656141204554556343', 'ohXmpKwZItQeeehijCnqvIgGkUnkz ShBFnqVKgYTBGVEmVzdhRbRnaVKKlvREKtNMaU CaMFHBTSoF'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(8) set(['0x6961636d615a5574575657644e797a4c454a53494946436370717465586d6f77', '"username has already been taken"'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) del(['0x4d5a6e624e594f5074424d78624c7a464867435a486c626e5658642052464f6e'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) set(['0x0000000000000000000000000000000000000000000000000000000000000000', '"username has already been taken"'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(4) get(['0x0000000000000000000000000000000000000000000000000000000000000000'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) get(['0x4a4d504c41764d5a7a534a6c6b714572774666472067736d6f764a69624f5168'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(6) del(['0x7a6f6261756f54784679744e675454476259437a63686943766a724e4f6e6658'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(7) set(['0x4778775a71636661504b43686479707075686d6b504651656141204554556343', 'ohXmpKwZItQeeehijCnqvIgGkUnkz ShBFnqVKgYTBGVEmVzdhRbRnaVKKlvREKtNMaU CaMFHBTSoF'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(8) set(['0x6961636d615a5574575657644e797a4c454a53494946436370717465586d6f77', '"username has already been taken"'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) del(['0x5473207864555644777346784f6661486d6c4573477077614c434c45444b6442'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) set(['0x636450544d415248435852684c464945726568504a4a4169724a57794b52594e', 'Standard String'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(4) del(['0x7553556a206746766d6c636d6a5347777250494a7952794d5258675951634d42'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(5) set(['0x4d47736474734f4a6250797145764f7762734c776d50626e796b58416d516d56', 'uQQodvrDJbTzURKMujmZHAiylKTgVNoqnRTSCfmcQuprrFxaLBXJulysJIokgDMdbXZiNTcsTHvqbtBnCvu lfdHFcARLUDxRBMPETeMHBQvFITILvfsOuwCJWqQMuqUcLk tuGyrINEqrnr oVsKiEUgaW lnPWG TvJax'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) get(['0x0000000000000000000000000000000000000000000000000000000000000000'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) set(['0x4c71736220744b596d74744a5964535a6478575a734f674e6c6277654f636642', '"username has already been taken"'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) del(['0x5473207864555644777346784f6661486d6c4573477077614c434c45444b6442'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) set(['0x636450544d415248435852684c464945726568504a4a4169724a57794b52594e', 'Standard String'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(4) del(['0x7553556a206746766d6c636d6a5347777250494a7952794d5258675951634d42'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(5) set(['0x4d47736474734f4a6250797145764f7762734c776d50626e796b58416d516d56', 'uQQodvrDJbTzURKMujmZHAiylKTgVNoqnRTSCfmcQuprrFxaLBXJulysJIokgDMdbXZiNTcsTHvqbtBnCvu lfdHFcARLUDxRBMPETeMHBQvFITILvfsOuwCJWqQMuqUcLk tuGyrINEqrnr oVsKiEUgaW lnPWG TvJax'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) get(['0x0000000000000000000000000000000000000000000000000000000000000000'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) set(['0x4c71736220744b596d74744a5964535a6478575a734f674e6c6277654f636642', '"username has already been taken"'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) del(['0x5473207864555644777346784f6661486d6c4573477077614c434c45444b6442'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) set(['0x636450544d415248435852684c464945726568504a4a4169724a57794b52594e', 'Standard String'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(4) del(['0x7553556a206746766d6c636d6a5347777250494a7952794d5258675951634d42'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(5) set(['0x4d47736474734f4a6250797145764f7762734c776d50626e796b58416d516d56', 'uQQodvrDJbTzURKMujmZHAiylKTgVNoqnRTSCfmcQuprrFxaLBXJulysJIokgDMdbXZiNTcsTHvqbtBnCvu lfdHFcARLUDxRBMPETeMHBQvFITILvfsOuwCJWqQMuqUcLk tuGyrINEqrnr oVsKiEUgaW lnPWG TvJax'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) get(['0x0000000000000000000000000000000000000000000000000000000000000000'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) set(['0x4c71736220744b596d74744a5964535a6478575a734f674e6c6277654f636642', '"username has already been taken"'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) del(['0x5473207864555644777346784f6661486d6c4573477077614c434c45444b6442'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) set(['0x636450544d415248435852684c464945726568504a4a4169724a57794b52594e', 'Standard String'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(4) del(['0x7553556a206746766d6c636d6a5347777250494a7952794d5258675951634d42'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(5) set(['0x4d47736474734f4a6250797145764f7762734c776d50626e796b58416d516d56', 'uQQodvrDJbTzURKMujmZHAiylKTgVNoqnRTSCfmcQuprrFxaLBXJulysJIokgDMdbXZiNTcsTHvqbtBnCvu lfdHFcARLUDxRBMPETeMHBQvFITILvfsOuwCJWqQMuqUcLk tuGyrINEqrnr oVsKiEUgaW lnPWG TvJax'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) get(['0x0000000000000000000000000000000000000000000000000000000000000000'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) set(['0x4c71736220744b596d74744a5964535a6478575a734f674e6c6277654f636642', '"username has already been taken"'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) del(['0x5473207864555644777346784f6661486d6c4573477077614c434c45444b6442'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) set(['0x636450544d415248435852684c464945726568504a4a4169724a57794b52594e', 'Standard String'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(4) del(['0x7553556a206746766d6c636d6a5347777250494a7952794d5258675951634d42'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(5) set(['0x4d47736474734f4a6250797145764f7762734c776d50626e796b58416d516d56', 'uQQodvrDJbTzURKMujmZHAiylKTgVNoqnRTSCfmcQuprrFxaLBXJulysJIokgDMdbXZiNTcsTHvqbtBnCvu lfdHFcARLUDxRBMPETeMHBQvFITILvfsOuwCJWqQMuqUcLk tuGyrINEqrnr oVsKiEUgaW lnPWG TvJax'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) get(['0x0000000000000000000000000000000000000000000000000000000000000000'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) set(['0x4c71736220744b596d74744a5964535a6478575a734f674e6c6277654f636642', '"username has already been taken"'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true

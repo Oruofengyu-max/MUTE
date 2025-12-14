@@ -1,0 +1,26 @@
+Source Function,Target Function
+"approve(address,uint256)",removeOwner(address)
+"transferFrom(address,address,uint256)",removeOwner(address)
+addOwner(address),removeOwner(address)
+distributeToken(address),removeOwner(address)
+"transfer(address,uint256)",removeOwner(address)
+"approveAndCall(address,uint256,bytes)",removeOwner(address)
+"approve(address,uint256)",addOwner(address)
+removeOwner(address),addOwner(address)
+"transferFrom(address,address,uint256)",addOwner(address)
+distributeToken(address),addOwner(address)
+"transfer(address,uint256)",addOwner(address)
+"approveAndCall(address,uint256,bytes)",addOwner(address)
+"approve(address,uint256)",distributeToken(address)
+removeOwner(address),distributeToken(address)
+"transferFrom(address,address,uint256)",distributeToken(address)
+addOwner(address),distributeToken(address)
+"transfer(address,uint256)",distributeToken(address)
+"approveAndCall(address,uint256,bytes)",distributeToken(address)
+"approve(address,uint256)","transferAnyERC20Token(address,uint256)"
+removeOwner(address),"transferAnyERC20Token(address,uint256)"
+"transferFrom(address,address,uint256)","transferAnyERC20Token(address,uint256)"
+addOwner(address),"transferAnyERC20Token(address,uint256)"
+distributeToken(address),"transferAnyERC20Token(address,uint256)"
+"transfer(address,uint256)","transferAnyERC20Token(address,uint256)"
+"approveAndCall(address,uint256,bytes)","transferAnyERC20Token(address,uint256)"

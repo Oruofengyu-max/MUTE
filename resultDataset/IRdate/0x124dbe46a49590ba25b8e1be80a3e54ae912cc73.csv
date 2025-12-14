@@ -1,0 +1,21 @@
+Source Function,Target Function
+"approve(address,uint256)","transferFrom(address,address,uint256)"
+refund(),"transferFrom(address,address,uint256)"
+"decreaseApproval(address,uint256)","transferFrom(address,address,uint256)"
+"transfer(address,uint256)","transferFrom(address,address,uint256)"
+createTokens(),"transferFrom(address,address,uint256)"
+"increaseApproval(address,uint256)","transferFrom(address,address,uint256)"
+"approve(address,uint256)",refund()
+"transferFrom(address,address,uint256)",refund()
+"decreaseApproval(address,uint256)",refund()
+"transfer(address,uint256)",refund()
+createTokens(),refund()
+"increaseApproval(address,uint256)",refund()
+"approve(address,uint256)","transfer(address,uint256)"
+"transferFrom(address,address,uint256)","transfer(address,uint256)"
+refund(),"transfer(address,uint256)"
+"decreaseApproval(address,uint256)","transfer(address,uint256)"
+createTokens(),"transfer(address,uint256)"
+"increaseApproval(address,uint256)","transfer(address,uint256)"
+finalize(),createTokens()
+refund(),createTokens()

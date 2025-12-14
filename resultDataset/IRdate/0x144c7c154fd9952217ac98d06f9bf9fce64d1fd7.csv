@@ -1,0 +1,16 @@
+Source Function,Target Function
+"approve(address,uint256)","transferFrom(address,address,uint256)"
+burn(uint256),"transferFrom(address,address,uint256)"
+"freezeAccount(address,bool)","transferFrom(address,address,uint256)"
+burn(uint256),changeLocked()
+transferOwnership(address),changeLocked()
+changeLocked(),burn(uint256)
+transferOwnership(address),burn(uint256)
+"approve(address,uint256)",burn(uint256)
+"transferFrom(address,address,uint256)",burn(uint256)
+"freezeAccount(address,bool)",burn(uint256)
+changeLocked(),"freezeAccount(address,bool)"
+burn(uint256),"freezeAccount(address,bool)"
+transferOwnership(address),"freezeAccount(address,bool)"
+changeLocked(),transferOwnership(address)
+burn(uint256),transferOwnership(address)

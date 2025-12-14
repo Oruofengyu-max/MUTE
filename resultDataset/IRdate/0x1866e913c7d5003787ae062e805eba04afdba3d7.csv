@@ -1,0 +1,11 @@
+Source Function,Target Function
+"approve(address,uint256)","transferFrom(address,address,uint256)"
+"freezeAccount(address,bool)","transferFrom(address,address,uint256)"
+"setPrices(uint256,uint256)","changeMinimumCommission(uint256,uint256)"
+setStatus(bool),"changeMinimumCommission(uint256,uint256)"
+transferCommissionGetter(address),"changeMinimumCommission(uint256,uint256)"
+transferOwnership(address),"changeMinimumCommission(uint256,uint256)"
+"setPrices(uint256,uint256)",transferCommissionGetter(address)
+setStatus(bool),transferCommissionGetter(address)
+"changeMinimumCommission(uint256,uint256)",transferCommissionGetter(address)
+transferOwnership(address),transferCommissionGetter(address)

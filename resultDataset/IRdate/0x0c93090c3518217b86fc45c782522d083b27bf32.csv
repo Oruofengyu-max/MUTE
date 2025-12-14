@@ -1,0 +1,9 @@
+Source Function,Target Function
+"invest(address,uint8)","distributeInvestorsFee(uint256,uint256)"
+transferOwnership(address),"distributeInvestorsFee(uint256,uint256)"
+setEthUsdRate(uint256),"distributeInvestorsFee(uint256,uint256)"
+setInvestors(address),"distributeInvestorsFee(uint256,uint256)"
+"distributeInvestorsFee(uint256,uint256)","invest(address,uint8)"
+transferOwnership(address),"invest(address,uint8)"
+setEthUsdRate(uint256),"invest(address,uint8)"
+setInvestors(address),"invest(address,uint8)"

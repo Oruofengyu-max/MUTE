@@ -1,0 +1,429 @@
+Contract:			CMCToken
+Number of Relevant Branches:	26
+Number of Branches Covered:		26
+Runtime: 											216.822182
+Blockchain Time: 							188.356026
+Iterations										
+1
+--------------------------------------------------
+METHODS:
+
+Constructor:
+	Inputs :[{'name': '_addressFounder', 'type': 'address'}]
+	Payable: nonpayable
+transfer:
+
+transferFrom:
+
+approve:
+
+stop:
+
+start:
+
+setName:
+
+burn:
+
+
+--------------------------------------------------
+
+            TESTS:
+
+	(1) constructor(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)
+	(2) stop([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) transferFrom(['0xC352C77703A000382541035D9F12F27608999903', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', 53901333312070108278106434746553097262424258323600891940636546568784490185966], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(4) burn([6], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(5) approve(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 31933641714573676660284769426532869342174577454449559383778691107315884975042], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(6) burn([50000000000000000], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(7) setName(['XEIgkiCVHjMcCcwrgauvjnZKzfUkwNYwryMkrtEEtFrlesfPnoaxVHlcHypDgzAMlzXWYVbREPpzeeqSeIrLyZaJHPiracyeINRiOONXiCneBsufRZScMaGucfhkDXeyDwkby q CAhcSShlyPbMKkRuUpIVoniQNrIWdIFcjqvPbfXMmBggNIGugYzCXVAvBxHPdsrhyxwOT'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)
+	(2) stop([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) transferFrom(['0xC352C77703A000382541035D9F12F27608999903', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', 53901333312070108278106434746553097262424258323600891940636546568784490185966], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(4) burn([6], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(5) approve(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 31933641714573676660284769426532869342174577454449559383778691107315884975042], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(6) burn([50000000000000000], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(7) setName(['XEIgkiCVHjMcCcwrgauvjnZKzfUkwNYwryMkrtEEtFrlesfPnoaxVHlcHypDgzAMlzXWYVbREPpzeeqSeIrLyZaJHPiracyeINRiOONXiCneBsufRZScMaGucfhkDXeyDwkby q CAhcSShlyPbMKkRuUpIVoniQNrIWdIFcjqvPbfXMmBggNIGugYzCXVAvBxHPdsrhyxwOT'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)
+	(2) stop([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) transferFrom(['0xC352C77703A000382541035D9F12F27608999903', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', 53901333312070108278106434746553097262424258323600891940636546568784490185966], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(4) burn([6], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(5) approve(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 31933641714573676660284769426532869342174577454449559383778691107315884975042], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(6) burn([50000000000000000], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(7) setName(['XEIgkiCVHjMcCcwrgauvjnZKzfUkwNYwryMkrtEEtFrlesfPnoaxVHlcHypDgzAMlzXWYVbREPpzeeqSeIrLyZaJHPiracyeINRiOONXiCneBsufRZScMaGucfhkDXeyDwkby q CAhcSShlyPbMKkRuUpIVoniQNrIWdIFcjqvPbfXMmBggNIGugYzCXVAvBxHPdsrhyxwOT'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)
+	(2) stop([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) transferFrom(['0xC352C77703A000382541035D9F12F27608999903', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', 53901333312070108278106434746553097262424258323600891940636546568784490185966], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(4) burn([6], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(5) approve(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 31933641714573676660284769426532869342174577454449559383778691107315884975042], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(6) burn([50000000000000000], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(7) setName(['XEIgkiCVHjMcCcwrgauvjnZKzfUkwNYwryMkrtEEtFrlesfPnoaxVHlcHypDgzAMlzXWYVbREPpzeeqSeIrLyZaJHPiracyeINRiOONXiCneBsufRZScMaGucfhkDXeyDwkby q CAhcSShlyPbMKkRuUpIVoniQNrIWdIFcjqvPbfXMmBggNIGugYzCXVAvBxHPdsrhyxwOT'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)
+	(2) stop([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) transferFrom(['0xC352C77703A000382541035D9F12F27608999903', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', 53901333312070108278106434746553097262424258323600891940636546568784490185966], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(4) burn([6], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(5) approve(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 31933641714573676660284769426532869342174577454449559383778691107315884975042], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(6) burn([50000000000000000], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(7) setName(['XEIgkiCVHjMcCcwrgauvjnZKzfUkwNYwryMkrtEEtFrlesfPnoaxVHlcHypDgzAMlzXWYVbREPpzeeqSeIrLyZaJHPiracyeINRiOONXiCneBsufRZScMaGucfhkDXeyDwkby q CAhcSShlyPbMKkRuUpIVoniQNrIWdIFcjqvPbfXMmBggNIGugYzCXVAvBxHPdsrhyxwOT'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)
+	(2) stop([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) transferFrom(['0xC352C77703A000382541035D9F12F27608999903', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', 53901333312070108278106434746553097262424258323600891940636546568784490185966], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(4) burn([6], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(5) approve(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 31933641714573676660284769426532869342174577454449559383778691107315884975042], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(6) burn([50000000000000000], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(7) setName(['XEIgkiCVHjMcCcwrgauvjnZKzfUkwNYwryMkrtEEtFrlesfPnoaxVHlcHypDgzAMlzXWYVbREPpzeeqSeIrLyZaJHPiracyeINRiOONXiCneBsufRZScMaGucfhkDXeyDwkby q CAhcSShlyPbMKkRuUpIVoniQNrIWdIFcjqvPbfXMmBggNIGugYzCXVAvBxHPdsrhyxwOT'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) approve(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 0], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) setName(['bYrHUCmFmZcBSNfGJBQrTAXdVPGgljoHfJsitfGDcJSBCxMdIMxOkwhhUtlCfTMXTFVtnwsgtyMUrWMQCSOLZkYoevgpLVLOJLsFqTUdcVjPGufGLIpOvORGwpUmbo bftmwFzbbi jRhNljYzhsmcCqffR'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(4) start([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) start([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) start([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(7) start([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) approve(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 0], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) setName(['bYrHUCmFmZcBSNfGJBQrTAXdVPGgljoHfJsitfGDcJSBCxMdIMxOkwhhUtlCfTMXTFVtnwsgtyMUrWMQCSOLZkYoevgpLVLOJLsFqTUdcVjPGufGLIpOvORGwpUmbo bftmwFzbbi jRhNljYzhsmcCqffR'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(4) start([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) start([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) start([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(7) start([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)
+	(2) stop([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) transferFrom(['0xC352C77703A000382541035D9F12F27608999903', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', 53901333312070108278106434746553097262424258323600891940636546568784490185966], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(4) burn([6], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(5) approve(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 31933641714573676660284769426532869342174577454449559383778691107315884975042], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(6) burn([50000000000000000], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(7) setName(['XEIgkiCVHjMcCcwrgauvjnZKzfUkwNYwryMkrtEEtFrlesfPnoaxVHlcHypDgzAMlzXWYVbREPpzeeqSeIrLyZaJHPiracyeINRiOONXiCneBsufRZScMaGucfhkDXeyDwkby q CAhcSShlyPbMKkRuUpIVoniQNrIWdIFcjqvPbfXMmBggNIGugYzCXVAvBxHPdsrhyxwOT'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)
+	(2) stop([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) transferFrom(['0xC352C77703A000382541035D9F12F27608999903', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', 53901333312070108278106434746553097262424258323600891940636546568784490185966], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(4) burn([6], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(5) approve(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 31933641714573676660284769426532869342174577454449559383778691107315884975042], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(6) burn([50000000000000000], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(7) setName(['XEIgkiCVHjMcCcwrgauvjnZKzfUkwNYwryMkrtEEtFrlesfPnoaxVHlcHypDgzAMlzXWYVbREPpzeeqSeIrLyZaJHPiracyeINRiOONXiCneBsufRZScMaGucfhkDXeyDwkby q CAhcSShlyPbMKkRuUpIVoniQNrIWdIFcjqvPbfXMmBggNIGugYzCXVAvBxHPdsrhyxwOT'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)
+	(2) stop([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) transferFrom(['0xC352C77703A000382541035D9F12F27608999903', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', 53901333312070108278106434746553097262424258323600891940636546568784490185966], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(4) burn([6], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(5) approve(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 31933641714573676660284769426532869342174577454449559383778691107315884975042], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(6) burn([50000000000000000], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(7) setName(['XEIgkiCVHjMcCcwrgauvjnZKzfUkwNYwryMkrtEEtFrlesfPnoaxVHlcHypDgzAMlzXWYVbREPpzeeqSeIrLyZaJHPiracyeINRiOONXiCneBsufRZScMaGucfhkDXeyDwkby q CAhcSShlyPbMKkRuUpIVoniQNrIWdIFcjqvPbfXMmBggNIGugYzCXVAvBxHPdsrhyxwOT'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)
+	(2) stop([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) transferFrom(['0xC352C77703A000382541035D9F12F27608999903', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', 53901333312070108278106434746553097262424258323600891940636546568784490185966], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(4) burn([6], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(5) approve(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 31933641714573676660284769426532869342174577454449559383778691107315884975042], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(6) burn([50000000000000000], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(7) setName(['XEIgkiCVHjMcCcwrgauvjnZKzfUkwNYwryMkrtEEtFrlesfPnoaxVHlcHypDgzAMlzXWYVbREPpzeeqSeIrLyZaJHPiracyeINRiOONXiCneBsufRZScMaGucfhkDXeyDwkby q CAhcSShlyPbMKkRuUpIVoniQNrIWdIFcjqvPbfXMmBggNIGugYzCXVAvBxHPdsrhyxwOT'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)
+	(2) stop([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) transferFrom(['0xC352C77703A000382541035D9F12F27608999903', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', 53901333312070108278106434746553097262424258323600891940636546568784490185966], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(4) burn([6], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(5) approve(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 31933641714573676660284769426532869342174577454449559383778691107315884975042], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(6) burn([50000000000000000], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(7) setName(['XEIgkiCVHjMcCcwrgauvjnZKzfUkwNYwryMkrtEEtFrlesfPnoaxVHlcHypDgzAMlzXWYVbREPpzeeqSeIrLyZaJHPiracyeINRiOONXiCneBsufRZScMaGucfhkDXeyDwkby q CAhcSShlyPbMKkRuUpIVoniQNrIWdIFcjqvPbfXMmBggNIGugYzCXVAvBxHPdsrhyxwOT'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)
+	(2) stop([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) transferFrom(['0xC352C77703A000382541035D9F12F27608999903', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', 53901333312070108278106434746553097262424258323600891940636546568784490185966], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(4) burn([6], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(5) approve(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 31933641714573676660284769426532869342174577454449559383778691107315884975042], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(6) burn([50000000000000000], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(7) setName(['XEIgkiCVHjMcCcwrgauvjnZKzfUkwNYwryMkrtEEtFrlesfPnoaxVHlcHypDgzAMlzXWYVbREPpzeeqSeIrLyZaJHPiracyeINRiOONXiCneBsufRZScMaGucfhkDXeyDwkby q CAhcSShlyPbMKkRuUpIVoniQNrIWdIFcjqvPbfXMmBggNIGugYzCXVAvBxHPdsrhyxwOT'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) stop([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(3) stop([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(4) transfer(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 22457272771583626177761531885310370516277279228614009552219165372868766569604], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(5) stop([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(6) transferFrom(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 50000000000000000], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) setName(['"CMCToken"'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(8) stop([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(9) setName([''], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+
+	(1) constructor(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)
+	(2) stop([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) transferFrom(['0xC352C77703A000382541035D9F12F27608999903', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', 53901333312070108278106434746553097262424258323600891940636546568784490185966], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(4) burn([6], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(5) approve(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 31933641714573676660284769426532869342174577454449559383778691107315884975042], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(6) burn([50000000000000000], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(7) setName(['XEIgkiCVHjMcCcwrgauvjnZKzfUkwNYwryMkrtEEtFrlesfPnoaxVHlcHypDgzAMlzXWYVbREPpzeeqSeIrLyZaJHPiracyeINRiOONXiCneBsufRZScMaGucfhkDXeyDwkby q CAhcSShlyPbMKkRuUpIVoniQNrIWdIFcjqvPbfXMmBggNIGugYzCXVAvBxHPdsrhyxwOT'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)
+	(2) stop([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) transferFrom(['0xC352C77703A000382541035D9F12F27608999903', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', 53901333312070108278106434746553097262424258323600891940636546568784490185966], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(4) burn([6], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(5) approve(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 31933641714573676660284769426532869342174577454449559383778691107315884975042], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(6) burn([50000000000000000], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(7) setName(['XEIgkiCVHjMcCcwrgauvjnZKzfUkwNYwryMkrtEEtFrlesfPnoaxVHlcHypDgzAMlzXWYVbREPpzeeqSeIrLyZaJHPiracyeINRiOONXiCneBsufRZScMaGucfhkDXeyDwkby q CAhcSShlyPbMKkRuUpIVoniQNrIWdIFcjqvPbfXMmBggNIGugYzCXVAvBxHPdsrhyxwOT'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) stop([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(3) stop([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(4) transfer(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 22457272771583626177761531885310370516277279228614009552219165372868766569604], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(5) stop([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(6) transferFrom(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 50000000000000000], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) setName(['"CMCToken"'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(8) stop([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(9) setName([''], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+
+	(1) constructor(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) approve(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 0], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) setName(['bYrHUCmFmZcBSNfGJBQrTAXdVPGgljoHfJsitfGDcJSBCxMdIMxOkwhhUtlCfTMXTFVtnwsgtyMUrWMQCSOLZkYoevgpLVLOJLsFqTUdcVjPGufGLIpOvORGwpUmbo bftmwFzbbi jRhNljYzhsmcCqffR'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(4) start([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) start([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) start([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(7) start([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) approve(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 0], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) setName(['bYrHUCmFmZcBSNfGJBQrTAXdVPGgljoHfJsitfGDcJSBCxMdIMxOkwhhUtlCfTMXTFVtnwsgtyMUrWMQCSOLZkYoevgpLVLOJLsFqTUdcVjPGufGLIpOvORGwpUmbo bftmwFzbbi jRhNljYzhsmcCqffR'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(4) start([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) start([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) start([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(7) start([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) transfer(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 6], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) start([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(4) burn([16914041827147585209047453150529176926381209953274608884997641796788015737927], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(5) transferFrom(['0xC352C77703A000382541035D9F12F27608999903', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', 6], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(6) transferFrom(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xC352C77703A000382541035D9F12F27608999903', 8202418592103627115658513994926465006463415511759187338399889147807355726458], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) burn([6], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+
+	(1) constructor(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) transfer(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 6], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) start([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(4) burn([16914041827147585209047453150529176926381209953274608884997641796788015737927], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(5) transferFrom(['0xC352C77703A000382541035D9F12F27608999903', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', 6], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(6) transferFrom(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xC352C77703A000382541035D9F12F27608999903', 8202418592103627115658513994926465006463415511759187338399889147807355726458], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) burn([6], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+
+	(1) constructor(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) transfer(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 6], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) start([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(4) burn([16914041827147585209047453150529176926381209953274608884997641796788015737927], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(5) transferFrom(['0xC352C77703A000382541035D9F12F27608999903', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', 6], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(6) transferFrom(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xC352C77703A000382541035D9F12F27608999903', 8202418592103627115658513994926465006463415511759187338399889147807355726458], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) burn([6], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+
+	(1) constructor(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) approve(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 0], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) setName(['bYrHUCmFmZcBSNfGJBQrTAXdVPGgljoHfJsitfGDcJSBCxMdIMxOkwhhUtlCfTMXTFVtnwsgtyMUrWMQCSOLZkYoevgpLVLOJLsFqTUdcVjPGufGLIpOvORGwpUmbo bftmwFzbbi jRhNljYzhsmcCqffR'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(4) start([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) start([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) start([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(7) start([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) approve(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 0], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) setName(['bYrHUCmFmZcBSNfGJBQrTAXdVPGgljoHfJsitfGDcJSBCxMdIMxOkwhhUtlCfTMXTFVtnwsgtyMUrWMQCSOLZkYoevgpLVLOJLsFqTUdcVjPGufGLIpOvORGwpUmbo bftmwFzbbi jRhNljYzhsmcCqffR'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(4) start([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) start([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) start([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(7) start([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) approve(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 0], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) setName(['bYrHUCmFmZcBSNfGJBQrTAXdVPGgljoHfJsitfGDcJSBCxMdIMxOkwhhUtlCfTMXTFVtnwsgtyMUrWMQCSOLZkYoevgpLVLOJLsFqTUdcVjPGufGLIpOvORGwpUmbo bftmwFzbbi jRhNljYzhsmcCqffR'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(4) start([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) start([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) start([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(7) start([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true

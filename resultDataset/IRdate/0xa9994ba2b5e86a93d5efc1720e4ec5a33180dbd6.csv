@@ -1,0 +1,26 @@
+Source Function,Target Function
+"approve(address,uint256)","transferFrom(address,address,uint256)"
+"decreaseApproval(address,uint256)","transferFrom(address,address,uint256)"
+BasilNetwork(),"transferFrom(address,address,uint256)"
+"increaseApproval(address,uint256)","transferFrom(address,address,uint256)"
+changeOwner(address),claimTokens()
+startSale(),claimTokens()
+BasilNetwork(),claimTokens()
+stopSale(),claimTokens()
+enableTransfers(bool),claimTokens()
+startSale(),changeOwner(address)
+BasilNetwork(),changeOwner(address)
+stopSale(),changeOwner(address)
+enableTransfers(bool),changeOwner(address)
+changeOwner(address),startSale()
+BasilNetwork(),startSale()
+stopSale(),startSale()
+enableTransfers(bool),startSale()
+changeOwner(address),stopSale()
+startSale(),stopSale()
+BasilNetwork(),stopSale()
+enableTransfers(bool),stopSale()
+changeOwner(address),enableTransfers(bool)
+startSale(),enableTransfers(bool)
+BasilNetwork(),enableTransfers(bool)
+stopSale(),enableTransfers(bool)

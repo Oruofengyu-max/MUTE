@@ -1,0 +1,53 @@
+Contract:			SimpleTokenCoin
+Number of Relevant Branches:	6
+Number of Branches Covered:		2
+Runtime: 											349.712531
+Blockchain Time: 							269.910583
+Iterations										
+11
+--------------------------------------------------
+METHODS:
+
+Constructor:
+	Inputs :[]
+	Payable: nonpayable
+balanceOf:
+
+transfer:
+
+_fallback:
+
+
+--------------------------------------------------
+
+            TESTS:
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) balanceOf(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(3) _fallback([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 169973304250579915)	Returns: 
+	(4) transfer(['0xC352C77703A000382541035D9F12F27608999903', 64964334989324726389105410494857804592974939846513163479800117379305057136854], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) transfer(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 120], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) _fallback([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(7) balanceOf(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) balanceOf(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(3) _fallback([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 169973304250579915)	Returns: 
+	(4) transfer(['0xC352C77703A000382541035D9F12F27608999903', 64964334989324726389105410494857804592974939846513163479800117379305057136854], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) transfer(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 120], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) _fallback([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(7) balanceOf(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true

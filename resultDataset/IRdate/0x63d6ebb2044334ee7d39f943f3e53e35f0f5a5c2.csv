@@ -1,0 +1,16 @@
+Source Function,Target Function
+setReceiverAddress(address),"setConfig(string,uint256)"
+setNodalblockURL(string),"setConfig(string,uint256)"
+transferOwnership(address),"setConfig(string,uint256)"
+setReceiverAddress(address),releaseFunds()
+setNodalblockURL(string),releaseFunds()
+transferOwnership(address),releaseFunds()
+setNodalblockURL(string),setReceiverAddress(address)
+transferOwnership(address),setReceiverAddress(address)
+setReceiverAddress(address),setNodalblockURL(string)
+transferOwnership(address),setNodalblockURL(string)
+setReceiverAddress(address),transferOwnership(address)
+setNodalblockURL(string),transferOwnership(address)
+setReceiverAddress(address),"setServiceAccount(address,bool)"
+setNodalblockURL(string),"setServiceAccount(address,bool)"
+transferOwnership(address),"setServiceAccount(address,bool)"

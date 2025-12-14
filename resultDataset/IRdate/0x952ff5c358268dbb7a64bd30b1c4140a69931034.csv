@@ -1,0 +1,13 @@
+Source Function,Target Function
+startTakeToken(),setFriend(address)
+stopTakeToken(),setFriend(address)
+setFriend(address),"transferFrom(address,address,uint256)"
+"approve(address,uint256)","transferFrom(address,address,uint256)"
+"transfer(address,uint256)","transferFrom(address,address,uint256)"
+startTakeToken(),withdraw(uint256)
+stopTakeToken(),withdraw(uint256)
+stopTakeToken(),startTakeToken()
+setFriend(address),"transfer(address,uint256)"
+"approve(address,uint256)","transfer(address,uint256)"
+"transferFrom(address,address,uint256)","transfer(address,uint256)"
+startTakeToken(),stopTakeToken()

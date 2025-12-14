@@ -1,0 +1,16 @@
+Source Function,Target Function
+saveToken(uint256),returnToken(uint256)
+"startAuction(uint256,uint256,uint256)",returnToken(uint256)
+buyAuction(uint256),returnToken(uint256)
+returnToken(uint256),saveToken(uint256)
+"startAuction(uint256,uint256,uint256)",saveToken(uint256)
+buyAuction(uint256),saveToken(uint256)
+setBeneficiary(address),"startAuction(uint256,uint256,uint256)"
+setFee(uint256),"startAuction(uint256,uint256,uint256)"
+transferOwnership(address),"startAuction(uint256,uint256,uint256)"
+setBeneficiary(address),buyAuction(uint256)
+setFee(uint256),buyAuction(uint256)
+transferOwnership(address),buyAuction(uint256)
+returnToken(uint256),buyAuction(uint256)
+saveToken(uint256),buyAuction(uint256)
+"startAuction(uint256,uint256,uint256)",buyAuction(uint256)

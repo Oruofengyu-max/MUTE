@@ -1,0 +1,14 @@
+Source Function,Target Function
+"approve(address,uint256)",ownerOf(uint256)
+"transferFrom(address,address,uint256)",ownerOf(uint256)
+"createTransferAuction(uint256,uint256,uint256,uint256)",ownerOf(uint256)
+"setPlayerForm(uint256,uint8)",ownerOf(uint256)
+"setExtendedPlayerAttributesForPlayer(uint256,uint8[])",ownerOf(uint256)
+"createPlayerOnAuction(uint8,uint8,uint8,uint8,uint8,uint8,uint8,uint8,bytes,string,uint256)",ownerOf(uint256)
+"transfer(address,uint256)",ownerOf(uint256)
+"approve(address,uint256)","setPlayerForm(uint256,uint8)"
+"transferFrom(address,address,uint256)","setPlayerForm(uint256,uint8)"
+"createTransferAuction(uint256,uint256,uint256,uint256)","setPlayerForm(uint256,uint8)"
+"setExtendedPlayerAttributesForPlayer(uint256,uint8[])","setPlayerForm(uint256,uint8)"
+"createPlayerOnAuction(uint8,uint8,uint8,uint8,uint8,uint8,uint8,uint8,bytes,string,uint256)","setPlayerForm(uint256,uint8)"
+"transfer(address,uint256)","setPlayerForm(uint256,uint8)"

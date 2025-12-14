@@ -1,0 +1,11 @@
+Source Function,Target Function
+invokeTop(),setProxy(address)
+"register(address,uint256,uint256,uint256)",setProxy(address)
+transferOwnership(address),setProxy(address)
+invokeTop(),transferOwnership(address)
+"register(address,uint256,uint256,uint256)",transferOwnership(address)
+setProxy(address),transferOwnership(address)
+invokeTop(),"transferToken(address,address,uint256)"
+"register(address,uint256,uint256,uint256)","transferToken(address,address,uint256)"
+setProxy(address),"transferToken(address,address,uint256)"
+transferOwnership(address),"transferToken(address,address,uint256)"

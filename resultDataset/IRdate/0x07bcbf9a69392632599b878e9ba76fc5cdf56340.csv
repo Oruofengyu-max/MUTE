@@ -1,0 +1,13 @@
+Source Function,Target Function
+addWalletToWhitelist(address),"sendBonusTokens(address[],uint256[])"
+addWalletsToWhitelist(address[]),"sendBonusTokens(address[],uint256[])"
+removeWalletFromWhitelist(address),"sendBonusTokens(address[],uint256[])"
+removeWalletsFromWhitelist(address[]),"sendBonusTokens(address[],uint256[])"
+renounceOwnership(),finishSale()
+setRound(uint256),finishSale()
+"sendTokens(address[],uint256[])",finishSale()
+transferOwnership(address),finishSale()
+addWalletToWhitelist(address),"sendTokens(address[],uint256[])"
+addWalletsToWhitelist(address[]),"sendTokens(address[],uint256[])"
+removeWalletFromWhitelist(address),"sendTokens(address[],uint256[])"
+removeWalletsFromWhitelist(address[]),"sendTokens(address[],uint256[])"

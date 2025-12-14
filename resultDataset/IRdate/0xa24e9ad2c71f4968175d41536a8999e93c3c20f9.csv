@@ -1,0 +1,22 @@
+Source Function,Target Function
+grant(address),"manualMinting(address,uint256)"
+revoke(address),"manualMinting(address,uint256)"
+grant(address),setStartTime(uint256)
+revoke(address),setStartTime(uint256)
+"manualMinting(address,uint256)",setStartTime(uint256)
+halt(),setStartTime(uint256)
+unhalt(),setStartTime(uint256)
+setEndTime(uint256),setStartTime(uint256)
+setBonusMintingAgent(address),setStartTime(uint256)
+grant(address),halt()
+revoke(address),halt()
+revoke(address),grant(address)
+grant(address),revoke(address)
+grant(address),finishCrowdsale()
+revoke(address),finishCrowdsale()
+grant(address),unhalt()
+revoke(address),unhalt()
+grant(address),setEndTime(uint256)
+revoke(address),setEndTime(uint256)
+grant(address),setBonusMintingAgent(address)
+revoke(address),setBonusMintingAgent(address)

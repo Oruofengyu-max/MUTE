@@ -1,0 +1,27 @@
+Source Function,Target Function
+"batchRedeemChannel(bytes32[],bytes32[])","batchCreateChannel(address[],uint256[],uint256[],uint256[],bytes32[])"
+batchRefundChannel(bytes32[]),"batchCreateChannel(address[],uint256[],uint256[],uint256[],bytes32[])"
+refundChannel(bytes32),"batchCreateChannel(address[],uint256[],uint256[],uint256[],bytes32[])"
+"redeemChannel(bytes32,bytes32)","batchCreateChannel(address[],uint256[],uint256[],uint256[],bytes32[])"
+"createChannel(address,uint256,uint256,uint256,bytes32)","batchCreateChannel(address[],uint256[],uint256[],uint256[],bytes32[])"
+changeExchangeStatus(bool),"batchCreateChannel(address[],uint256[],uint256[],uint256[],bytes32[])"
+changeCommissionRecipient(address),"batchCreateChannel(address[],uint256[],uint256[],uint256[],bytes32[])"
+changeExchangeOperator(address),"batchCreateChannel(address[],uint256[],uint256[],uint256[],bytes32[])"
+"batchRedeemChannel(bytes32[],bytes32[])",batchRefundChannel(bytes32[])
+"batchCreateChannel(address[],uint256[],uint256[],uint256[],bytes32[])",batchRefundChannel(bytes32[])
+refundChannel(bytes32),batchRefundChannel(bytes32[])
+"redeemChannel(bytes32,bytes32)",batchRefundChannel(bytes32[])
+"createChannel(address,uint256,uint256,uint256,bytes32)",batchRefundChannel(bytes32[])
+"batchRedeemChannel(bytes32[],bytes32[])",refundChannel(bytes32)
+"batchCreateChannel(address[],uint256[],uint256[],uint256[],bytes32[])",refundChannel(bytes32)
+batchRefundChannel(bytes32[]),refundChannel(bytes32)
+"redeemChannel(bytes32,bytes32)",refundChannel(bytes32)
+"createChannel(address,uint256,uint256,uint256,bytes32)",refundChannel(bytes32)
+"batchRedeemChannel(bytes32[],bytes32[])","createChannel(address,uint256,uint256,uint256,bytes32)"
+"batchCreateChannel(address[],uint256[],uint256[],uint256[],bytes32[])","createChannel(address,uint256,uint256,uint256,bytes32)"
+batchRefundChannel(bytes32[]),"createChannel(address,uint256,uint256,uint256,bytes32)"
+refundChannel(bytes32),"createChannel(address,uint256,uint256,uint256,bytes32)"
+"redeemChannel(bytes32,bytes32)","createChannel(address,uint256,uint256,uint256,bytes32)"
+changeExchangeStatus(bool),"createChannel(address,uint256,uint256,uint256,bytes32)"
+changeCommissionRecipient(address),"createChannel(address,uint256,uint256,uint256,bytes32)"
+changeExchangeOperator(address),"createChannel(address,uint256,uint256,uint256,bytes32)"

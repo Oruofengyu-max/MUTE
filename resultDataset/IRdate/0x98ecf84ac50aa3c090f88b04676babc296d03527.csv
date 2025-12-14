@@ -1,0 +1,14 @@
+Source Function,Target Function
+"approve(address,uint256)","transferFrom(address,address,uint256)"
+"transferAll(address,uint256[])","transferFrom(address,address,uint256)"
+"approveMany(address,uint256[])","transferFrom(address,address,uint256)"
+"transfer(address,uint256)","transferFrom(address,address,uint256)"
+takeOwnership(uint256),"transferFrom(address,address,uint256)"
+"approve(address,uint256)",ownerOf(uint256)
+"transferFrom(address,address,uint256)",ownerOf(uint256)
+"transferAll(address,uint256[])",ownerOf(uint256)
+"approveMany(address,uint256[])",ownerOf(uint256)
+"transfer(address,uint256)",ownerOf(uint256)
+takeOwnership(uint256),ownerOf(uint256)
+setMetadataBase(string),"transferAll(address,uint256[])"
+setMetadataBase(string),"transfer(address,uint256)"

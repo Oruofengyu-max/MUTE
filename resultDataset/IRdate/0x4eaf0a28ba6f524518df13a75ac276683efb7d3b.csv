@@ -1,0 +1,21 @@
+Source Function,Target Function
+"approve(address,uint256)","transferFrom(address,address,uint256)"
+burn(uint256),"transferFrom(address,address,uint256)"
+"transfer(address,uint256)","transferFrom(address,address,uint256)"
+IotaGoldToken(address),"transferFrom(address,address,uint256)"
+"TokenDrop(address[],uint256[])","transferFrom(address,address,uint256)"
+"approve(address,uint256)",burn(uint256)
+"transferFrom(address,address,uint256)",burn(uint256)
+"transfer(address,uint256)",burn(uint256)
+IotaGoldToken(address),burn(uint256)
+"TokenDrop(address[],uint256[])",burn(uint256)
+"approve(address,uint256)","transfer(address,uint256)"
+"transferFrom(address,address,uint256)","transfer(address,uint256)"
+burn(uint256),"transfer(address,uint256)"
+IotaGoldToken(address),"transfer(address,uint256)"
+"TokenDrop(address[],uint256[])","transfer(address,uint256)"
+"approve(address,uint256)","TokenDrop(address[],uint256[])"
+"transferFrom(address,address,uint256)","TokenDrop(address[],uint256[])"
+burn(uint256),"TokenDrop(address[],uint256[])"
+"transfer(address,uint256)","TokenDrop(address[],uint256[])"
+IotaGoldToken(address),"TokenDrop(address[],uint256[])"

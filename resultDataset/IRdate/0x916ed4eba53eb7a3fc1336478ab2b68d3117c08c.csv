@@ -1,0 +1,10 @@
+Source Function,Target Function
+"transferFrom(address,address,uint256)","approve(address,uint256)"
+withdrawTokens(uint256),"approve(address,uint256)"
+"transfer(address,uint256)","approve(address,uint256)"
+"approve(address,uint256)",withdrawTokens(uint256)
+"transferFrom(address,address,uint256)",withdrawTokens(uint256)
+"transfer(address,uint256)",withdrawTokens(uint256)
+"approve(address,uint256)","transfer(address,uint256)"
+"transferFrom(address,address,uint256)","transfer(address,uint256)"
+withdrawTokens(uint256),"transfer(address,uint256)"

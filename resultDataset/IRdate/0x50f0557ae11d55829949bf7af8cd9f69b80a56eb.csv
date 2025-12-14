@@ -1,0 +1,27 @@
+Source Function,Target Function
+setMigrationMaster(address),"approve(address,uint256)"
+unpause(),"approve(address,uint256)"
+migrate(uint256),"approve(address,uint256)"
+setMigrationAgent(address),"approve(address,uint256)"
+pause(),"approve(address,uint256)"
+setMigrationMaster(address),"transferFrom(address,address,uint256)"
+unpause(),"transferFrom(address,address,uint256)"
+migrate(uint256),"transferFrom(address,address,uint256)"
+setMigrationAgent(address),"transferFrom(address,address,uint256)"
+pause(),"transferFrom(address,address,uint256)"
+setMigrationMaster(address),unpause()
+migrate(uint256),unpause()
+setMigrationAgent(address),unpause()
+pause(),unpause()
+"approve(address,uint256)",migrate(uint256)
+"transferFrom(address,address,uint256)",migrate(uint256)
+"transfer(address,uint256)",migrate(uint256)
+setMigrationMaster(address),pause()
+unpause(),pause()
+migrate(uint256),pause()
+setMigrationAgent(address),pause()
+setMigrationMaster(address),"transfer(address,uint256)"
+unpause(),"transfer(address,uint256)"
+migrate(uint256),"transfer(address,uint256)"
+setMigrationAgent(address),"transfer(address,uint256)"
+pause(),"transfer(address,uint256)"

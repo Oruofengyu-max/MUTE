@@ -1,0 +1,17 @@
+Source Function,Target Function
+"approve(address,uint256)","modifyPowPrice(uint256,uint256)"
+"transferFrom(address,address,uint256)","modifyPowPrice(uint256,uint256)"
+"transfer(address,uint256)","modifyPowPrice(uint256,uint256)"
+takeOwnership(uint256),"modifyPowPrice(uint256,uint256)"
+purchase(uint256),"modifyPowPrice(uint256,uint256)"
+"approve(address,uint256)",ownerOf(uint256)
+"transferFrom(address,address,uint256)",ownerOf(uint256)
+"modifyPowPrice(uint256,uint256)",ownerOf(uint256)
+"transfer(address,uint256)",ownerOf(uint256)
+takeOwnership(uint256),ownerOf(uint256)
+purchase(uint256),ownerOf(uint256)
+"approve(address,uint256)",purchase(uint256)
+"transferFrom(address,address,uint256)",purchase(uint256)
+"modifyPowPrice(uint256,uint256)",purchase(uint256)
+"transfer(address,uint256)",purchase(uint256)
+takeOwnership(uint256),purchase(uint256)

@@ -1,0 +1,26 @@
+Source Function,Target Function
+"replaceProto(uint16,uint8,uint8,uint8,uint8,uint8,uint8)",makePermanantlyTradable(uint8)
+"setLimit(uint16,uint64)",makePermanantlyTradable(uint8)
+makeTradeable(uint8),makePermanantlyTradable(uint8)
+makeUntradable(uint8),makePermanantlyTradable(uint8)
+"addProtos(uint16[],uint8[],uint8[],uint8[],uint8[],uint8[],uint8[],uint8[],bool[])",makePermanantlyTradable(uint8)
+makePermanantlyTradable(uint8),"replaceProto(uint16,uint8,uint8,uint8,uint8,uint8,uint8)"
+"setLimit(uint16,uint64)","replaceProto(uint16,uint8,uint8,uint8,uint8,uint8,uint8)"
+makeTradeable(uint8),"replaceProto(uint16,uint8,uint8,uint8,uint8,uint8,uint8)"
+makeUntradable(uint8),"replaceProto(uint16,uint8,uint8,uint8,uint8,uint8,uint8)"
+"addProtos(uint16[],uint8[],uint8[],uint8[],uint8[],uint8[],uint8[],uint8[],bool[])","replaceProto(uint16,uint8,uint8,uint8,uint8,uint8,uint8)"
+makePermanantlyTradable(uint8),"setLimit(uint16,uint64)"
+"replaceProto(uint16,uint8,uint8,uint8,uint8,uint8,uint8)","setLimit(uint16,uint64)"
+makeTradeable(uint8),"setLimit(uint16,uint64)"
+makeUntradable(uint8),"setLimit(uint16,uint64)"
+"addProtos(uint16[],uint8[],uint8[],uint8[],uint8[],uint8[],uint8[],uint8[],bool[])","setLimit(uint16,uint64)"
+makePermanantlyTradable(uint8),makeUntradable(uint8)
+"replaceProto(uint16,uint8,uint8,uint8,uint8,uint8,uint8)",makeUntradable(uint8)
+"setLimit(uint16,uint64)",makeUntradable(uint8)
+makeTradeable(uint8),makeUntradable(uint8)
+"addProtos(uint16[],uint8[],uint8[],uint8[],uint8[],uint8[],uint8[],uint8[],bool[])",makeUntradable(uint8)
+makePermanantlyTradable(uint8),"addProtos(uint16[],uint8[],uint8[],uint8[],uint8[],uint8[],uint8[],uint8[],bool[])"
+"replaceProto(uint16,uint8,uint8,uint8,uint8,uint8,uint8)","addProtos(uint16[],uint8[],uint8[],uint8[],uint8[],uint8[],uint8[],uint8[],bool[])"
+"setLimit(uint16,uint64)","addProtos(uint16[],uint8[],uint8[],uint8[],uint8[],uint8[],uint8[],uint8[],bool[])"
+makeTradeable(uint8),"addProtos(uint16[],uint8[],uint8[],uint8[],uint8[],uint8[],uint8[],uint8[],bool[])"
+makeUntradable(uint8),"addProtos(uint16[],uint8[],uint8[],uint8[],uint8[],uint8[],uint8[],uint8[],bool[])"

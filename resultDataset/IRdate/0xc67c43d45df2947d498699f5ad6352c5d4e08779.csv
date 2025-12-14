@@ -1,0 +1,23 @@
+Source Function,Target Function
+burn(uint256),"approve(address,uint256)"
+"newGift(uint256,address,address,string,uint256,uint256)","approve(address,uint256)"
+addMinter(address),"approve(address,uint256)"
+renounceMinter(),"approve(address,uint256)"
+"setApprovalForAll(address,bool)","approve(address,uint256)"
+"approve(address,uint256)",burn(uint256)
+"newGift(uint256,address,address,string,uint256,uint256)",burn(uint256)
+addMinter(address),burn(uint256)
+renounceMinter(),burn(uint256)
+"setApprovalForAll(address,bool)",burn(uint256)
+"approve(address,uint256)",ownerOf(uint256)
+burn(uint256),ownerOf(uint256)
+"newGift(uint256,address,address,string,uint256,uint256)",ownerOf(uint256)
+addMinter(address),ownerOf(uint256)
+renounceMinter(),ownerOf(uint256)
+"setApprovalForAll(address,bool)",ownerOf(uint256)
+"approve(address,uint256)",getGift(uint256)
+burn(uint256),getGift(uint256)
+"newGift(uint256,address,address,string,uint256,uint256)",getGift(uint256)
+addMinter(address),getGift(uint256)
+renounceMinter(),getGift(uint256)
+"setApprovalForAll(address,bool)",getGift(uint256)

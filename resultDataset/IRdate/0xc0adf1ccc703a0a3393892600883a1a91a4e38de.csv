@@ -1,0 +1,11 @@
+Source Function,Target Function
+"initLottery(uint256,uint256,uint256,int256)","getTicketDetails(int256,uint256,uint256,address)"
+"setMessage(int256,string)","getTicketDetails(int256,uint256,uint256,address)"
+buyTickets(uint256[]),"getTicketDetails(int256,uint256,uint256,address)"
+finalizeLottery(uint256),"getTicketDetails(int256,uint256,uint256,address)"
+"initLottery(uint256,uint256,uint256,int256)","setMessage(int256,string)"
+buyTickets(uint256[]),"setMessage(int256,string)"
+finalizeLottery(uint256),"setMessage(int256,string)"
+"initLottery(uint256,uint256,uint256,int256)",buyTickets(uint256[])
+"setMessage(int256,string)",buyTickets(uint256[])
+finalizeLottery(uint256),buyTickets(uint256[])

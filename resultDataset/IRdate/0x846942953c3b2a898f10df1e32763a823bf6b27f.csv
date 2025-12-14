@@ -1,0 +1,22 @@
+Source Function,Target Function
+addManager(address),setPriceForVerification(uint256)
+"addVerificationData(address,string,bytes20,uint256,string,string,uint256,string)",setPriceForVerification(uint256)
+removeManager(address),setPriceForVerification(uint256)
+"uploadSignedString(string,bytes20,string)",setPriceForVerification(uint256)
+revokeVerification(address),setPriceForVerification(uint256)
+setPriceForVerification(uint256),fixWithdrawalAddress(address)
+setWithdrawalAddress(address),fixWithdrawalAddress(address)
+changeOwnerStart(address),fixWithdrawalAddress(address)
+changeOwnerAccept(),fixWithdrawalAddress(address)
+setPriceForVerification(uint256),setWithdrawalAddress(address)
+fixWithdrawalAddress(address),setWithdrawalAddress(address)
+changeOwnerStart(address),setWithdrawalAddress(address)
+changeOwnerAccept(),setWithdrawalAddress(address)
+addManager(address),"addVerificationData(address,string,bytes20,uint256,string,string,uint256,string)"
+removeManager(address),"addVerificationData(address,string,bytes20,uint256,string,string,uint256,string)"
+"uploadSignedString(string,bytes20,string)","addVerificationData(address,string,bytes20,uint256,string,string,uint256,string)"
+revokeVerification(address),"addVerificationData(address,string,bytes20,uint256,string,string,uint256,string)"
+addManager(address),"uploadSignedString(string,bytes20,string)"
+"addVerificationData(address,string,bytes20,uint256,string,string,uint256,string)","uploadSignedString(string,bytes20,string)"
+removeManager(address),"uploadSignedString(string,bytes20,string)"
+revokeVerification(address),"uploadSignedString(string,bytes20,string)"

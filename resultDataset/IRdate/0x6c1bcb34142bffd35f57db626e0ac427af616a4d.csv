@@ -1,0 +1,11 @@
+Source Function,Target Function
+personal_withdraw(),withdraw(address)
+purchase_tokens(),withdraw(address)
+set_token(address),withdraw(address)
+set_refunded(bool),withdraw(address)
+activate_kill_switch(string),withdraw(address)
+withdraw(address),personal_withdraw()
+purchase_tokens(),personal_withdraw()
+set_token(address),personal_withdraw()
+set_refunded(bool),personal_withdraw()
+activate_kill_switch(string),personal_withdraw()

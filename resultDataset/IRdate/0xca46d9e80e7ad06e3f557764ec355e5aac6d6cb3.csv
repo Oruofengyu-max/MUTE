@@ -1,0 +1,10 @@
+Source Function,Target Function
+authorize(address),"random(uint256,uint256,uint256)"
+deauthorize(address),"random(uint256,uint256,uint256)"
+"random(uint256,uint256,uint256)",authorize(address)
+transferOwnership(address),authorize(address)
+deauthorize(address),authorize(address)
+"random(uint256,uint256,uint256)",transferOwnership(address)
+"random(uint256,uint256,uint256)",deauthorize(address)
+transferOwnership(address),deauthorize(address)
+authorize(address),deauthorize(address)

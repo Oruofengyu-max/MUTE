@@ -1,0 +1,20 @@
+Source Function,Target Function
+setToken(address),returnTokens(uint256)
+setEndDate(uint256),returnTokens(uint256)
+"addHolder(address,uint256)",returnTokens(uint256)
+removeAssetsOwner(address),returnTokens(uint256)
+setStartDate(uint256),returnTokens(uint256)
+transferOwnership(address),returnTokens(uint256)
+addAssetsOwner(address),returnTokens(uint256)
+"addHolder(address,uint256)","changeHold(address,uint256)"
+removeAssetsOwner(address),"changeHold(address,uint256)"
+unlockTokens(),"changeHold(address,uint256)"
+addAssetsOwner(address),"changeHold(address,uint256)"
+"addHolder(address,uint256)",unlockTokens()
+removeAssetsOwner(address),unlockTokens()
+"changeHold(address,uint256)",unlockTokens()
+addAssetsOwner(address),unlockTokens()
+setToken(address),unlockTokens()
+setEndDate(uint256),unlockTokens()
+setStartDate(uint256),unlockTokens()
+transferOwnership(address),unlockTokens()

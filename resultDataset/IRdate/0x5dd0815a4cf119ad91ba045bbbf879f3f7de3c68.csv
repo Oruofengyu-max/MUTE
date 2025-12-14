@@ -1,0 +1,12 @@
+Source Function,Target Function
+setSiteAccountAddress(address),finalize()
+transferOwnership(address),finalize()
+finalize(),setSiteAccountAddress(address)
+transferOwnership(address),setSiteAccountAddress(address)
+"approve(address,uint256)","transfer(address,uint256)"
+setSiteAccountAddress(address),"transfer(address,uint256)"
+"addAirdrop(address,uint256)","transfer(address,uint256)"
+"decreaseApproval(address,uint256)","transfer(address,uint256)"
+"increaseApproval(address,uint256)","transfer(address,uint256)"
+finalize(),transferOwnership(address)
+setSiteAccountAddress(address),transferOwnership(address)

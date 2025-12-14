@@ -1,0 +1,9 @@
+Source Function,Target Function
+"approve(address,uint256)","burnTokens(address,uint256)"
+"transferFrom(address,address,uint256)","burnTokens(address,uint256)"
+"transfer(address,uint256)","burnTokens(address,uint256)"
+"mintTokens(address,uint256)","burnTokens(address,uint256)"
+"TransferBy(address,address,uint256)","burnTokens(address,uint256)"
+"burnTokens(address,uint256)","TransferBy(address,address,uint256)"
+set_centralAccount(address),"TransferBy(address,address,uint256)"
+"mintTokens(address,uint256)","TransferBy(address,address,uint256)"

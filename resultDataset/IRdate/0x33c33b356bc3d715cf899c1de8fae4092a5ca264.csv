@@ -1,0 +1,9 @@
+Source Function,Target Function
+"transfer(address,uint256)","transferFrom(address,address,uint256)"
+updateTokensPerEth(uint256),withdraw()
+transferOwnership(address),withdraw()
+transferOwnership(address),updateTokensPerEth(uint256)
+"transferFrom(address,address,uint256)","transfer(address,uint256)"
+updateTokensPerEth(uint256),transferOwnership(address)
+updateTokensPerEth(uint256),withdrawAltcoinTokens(address)
+transferOwnership(address),withdrawAltcoinTokens(address)

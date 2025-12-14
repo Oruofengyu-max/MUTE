@@ -1,0 +1,24 @@
+Source Function,Target Function
+"distributeFeeRewards(address[],uint256)","sendReward(uint256,uint256)"
+distributeReward(uint256),"sendReward(uint256,uint256)"
+"makeDeposit(address,uint256)","sendReward(uint256,uint256)"
+"create(address,uint256,uint256,uint256,uint256)","sendReward(uint256,uint256)"
+setParetoToken(address),"sendReward(uint256,uint256)"
+changeOwner(address),"sendReward(uint256,uint256)"
+"sendReward(uint256,uint256)",distributeReward(uint256)
+"distributeFeeRewards(address[],uint256)",distributeReward(uint256)
+"makeDeposit(address,uint256)",distributeReward(uint256)
+"create(address,uint256,uint256,uint256,uint256)",distributeReward(uint256)
+setParetoToken(address),distributeReward(uint256)
+changeOwner(address),distributeReward(uint256)
+setParetoToken(address),"makeDeposit(address,uint256)"
+"sendReward(uint256,uint256)","makeDeposit(address,uint256)"
+distributeReward(uint256),"makeDeposit(address,uint256)"
+changeOwner(address),"makeDeposit(address,uint256)"
+"create(address,uint256,uint256,uint256,uint256)","makeDeposit(address,uint256)"
+"sendReward(uint256,uint256)","create(address,uint256,uint256,uint256,uint256)"
+"distributeFeeRewards(address[],uint256)","create(address,uint256,uint256,uint256,uint256)"
+distributeReward(uint256),"create(address,uint256,uint256,uint256,uint256)"
+"makeDeposit(address,uint256)","create(address,uint256,uint256,uint256,uint256)"
+setParetoToken(address),"create(address,uint256,uint256,uint256,uint256)"
+changeOwner(address),"create(address,uint256,uint256,uint256,uint256)"

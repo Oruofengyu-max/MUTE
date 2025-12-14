@@ -1,0 +1,13 @@
+Source Function,Target Function
+burn(uint256),"transferFrom(address,address,uint256)"
+"burnFrom(address,uint256)","transferFrom(address,address,uint256)"
+"transfer(address,uint256)","transferFrom(address,address,uint256)"
+"transferFrom(address,address,uint256)",burn(uint256)
+"burnFrom(address,uint256)",burn(uint256)
+"transfer(address,uint256)",burn(uint256)
+"transferFrom(address,address,uint256)","burnFrom(address,uint256)"
+burn(uint256),"burnFrom(address,uint256)"
+"transfer(address,uint256)","burnFrom(address,uint256)"
+"transferFrom(address,address,uint256)","transfer(address,uint256)"
+burn(uint256),"transfer(address,uint256)"
+"burnFrom(address,uint256)","transfer(address,uint256)"

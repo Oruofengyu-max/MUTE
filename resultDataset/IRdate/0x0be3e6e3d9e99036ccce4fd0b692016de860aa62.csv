@@ -1,0 +1,23 @@
+Source Function,Target Function
+setOwner2(address),setOwner1(address)
+"placeBet(uint256,uint256,uint256,uint256,bytes32,bytes32)",setOwner1(address)
+increaseJackpot(uint256),setOwner1(address)
+setSecretSigner(address),setOwner1(address)
+"settleBet(bytes20,bytes20,bytes32)",setOwner1(address)
+refundBet(uint256),setOwner1(address)
+setCroupier(address),setOwner1(address)
+setMaxProfit(uint256),setOwner1(address)
+setOwner1(address),setOwner2(address)
+"placeBet(uint256,uint256,uint256,uint256,bytes32,bytes32)",setOwner2(address)
+increaseJackpot(uint256),setOwner2(address)
+setSecretSigner(address),setOwner2(address)
+"settleBet(bytes20,bytes20,bytes32)",setOwner2(address)
+refundBet(uint256),setOwner2(address)
+setCroupier(address),setOwner2(address)
+setMaxProfit(uint256),setOwner2(address)
+"settleBet(bytes20,bytes20,bytes32)","placeBet(uint256,uint256,uint256,uint256,bytes32,bytes32)"
+refundBet(uint256),"placeBet(uint256,uint256,uint256,uint256,bytes32,bytes32)"
+"placeBet(uint256,uint256,uint256,uint256,bytes32,bytes32)","settleBet(bytes20,bytes20,bytes32)"
+refundBet(uint256),"settleBet(bytes20,bytes20,bytes32)"
+"placeBet(uint256,uint256,uint256,uint256,bytes32,bytes32)",refundBet(uint256)
+"settleBet(bytes20,bytes20,bytes32)",refundBet(uint256)

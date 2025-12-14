@@ -1,0 +1,22 @@
+Source Function,Target Function
+"approve(address,uint256)","transferFrom(address,address,uint256)"
+claimTokens(),"transferFrom(address,address,uint256)"
+"decreaseApproval(address,uint256)","transferFrom(address,address,uint256)"
+"allocateTokens(address,uint256,uint256)","transferFrom(address,address,uint256)"
+"transfer(address,uint256)","transferFrom(address,address,uint256)"
+"allocateDelayedTokens(address,uint256)","transferFrom(address,address,uint256)"
+"increaseApproval(address,uint256)","transferFrom(address,address,uint256)"
+"approve(address,uint256)",claimTokens()
+"transferFrom(address,address,uint256)",claimTokens()
+"decreaseApproval(address,uint256)",claimTokens()
+"allocateTokens(address,uint256,uint256)",claimTokens()
+"transfer(address,uint256)",claimTokens()
+"allocateDelayedTokens(address,uint256)",claimTokens()
+"increaseApproval(address,uint256)",claimTokens()
+"approve(address,uint256)","transfer(address,uint256)"
+"transferFrom(address,address,uint256)","transfer(address,uint256)"
+claimTokens(),"transfer(address,uint256)"
+"decreaseApproval(address,uint256)","transfer(address,uint256)"
+"allocateTokens(address,uint256,uint256)","transfer(address,uint256)"
+"allocateDelayedTokens(address,uint256)","transfer(address,uint256)"
+"increaseApproval(address,uint256)","transfer(address,uint256)"

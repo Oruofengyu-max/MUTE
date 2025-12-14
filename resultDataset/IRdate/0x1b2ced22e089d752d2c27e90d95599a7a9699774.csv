@@ -1,0 +1,15 @@
+Source Function,Target Function
+"setTokenURI(uint256,string)","approve(address,uint256)"
+"setApprovalForAll(address,bool)","approve(address,uint256)"
+"registerDapps(string,string)","approve(address,uint256)"
+"approve(address,uint256)","setDapps(uint256,string,string)"
+"setTokenURI(uint256,string)","setDapps(uint256,string,string)"
+"setApprovalForAll(address,bool)","setDapps(uint256,string,string)"
+"registerDapps(string,string)","setDapps(uint256,string,string)"
+"approve(address,uint256)","setTokenURI(uint256,string)"
+"setApprovalForAll(address,bool)","setTokenURI(uint256,string)"
+"registerDapps(string,string)","setTokenURI(uint256,string)"
+"approve(address,uint256)",ownerOf(uint256)
+"setTokenURI(uint256,string)",ownerOf(uint256)
+"setApprovalForAll(address,bool)",ownerOf(uint256)
+"registerDapps(string,string)",ownerOf(uint256)

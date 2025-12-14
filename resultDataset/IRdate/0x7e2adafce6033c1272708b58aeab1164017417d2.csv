@@ -1,0 +1,15 @@
+Source Function,Target Function
+"setReleaseMake(uint256,bool)","purchaseCard(uint256,uint256)"
+"setReleaseCar(uint256,bool)","purchaseCard(uint256,uint256)"
+"setReleaseCompany(uint256,bool)","purchaseCard(uint256,uint256)"
+"purchaseAdv(uint256,uint256,string,string)","purchaseCard(uint256,uint256)"
+"purchaseCard(uint256,uint256)","purchaseAdv(uint256,uint256,string,string)"
+"setReleaseMake(uint256,bool)","purchaseAdv(uint256,uint256,string,string)"
+"setReleaseCar(uint256,bool)","purchaseAdv(uint256,uint256,string,string)"
+"setReleaseCompany(uint256,bool)","purchaseAdv(uint256,uint256,string,string)"
+InitiateWhaleCard(),purchaseWhaleCard()
+pauseGame(),purchaseWhaleCard()
+InitiateCars(),purchaseWhaleCard()
+InitiateCompanies(),purchaseWhaleCard()
+playGame(),purchaseWhaleCard()
+InitiateMakes(),purchaseWhaleCard()

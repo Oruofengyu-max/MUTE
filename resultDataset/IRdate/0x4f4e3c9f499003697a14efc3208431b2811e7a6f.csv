@@ -1,0 +1,11 @@
+Source Function,Target Function
+transferOwner(address),"postWish(bytes,bytes)"
+withdrawServiceFee(),"postWish(bytes,bytes)"
+setMinimumWishTribute(uint256),"postWish(bytes,bytes)"
+setServiceProvider(address),"postWish(bytes,bytes)"
+"setServiceFee(uint256,uint256)","postWish(bytes,bytes)"
+"postWish(bytes,bytes)",withdrawServiceFee()
+transferOwner(address),withdrawServiceFee()
+setMinimumWishTribute(uint256),withdrawServiceFee()
+setServiceProvider(address),withdrawServiceFee()
+"setServiceFee(uint256,uint256)",withdrawServiceFee()

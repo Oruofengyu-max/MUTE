@@ -1,0 +1,9 @@
+Source Function,Target Function
+"approve(address,uint256)","mint(uint256,bytes32)"
+merge(),"mint(uint256,bytes32)"
+"transferFrom(address,address,uint256)","mint(uint256,bytes32)"
+"transfer(address,uint256)","mint(uint256,bytes32)"
+"approveAndCall(address,uint256,bytes)","mint(uint256,bytes32)"
+merge(),acceptOwnership()
+"mint(uint256,bytes32)",acceptOwnership()
+transferOwnership(address),acceptOwnership()

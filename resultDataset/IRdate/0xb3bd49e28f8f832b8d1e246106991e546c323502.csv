@@ -1,0 +1,13 @@
+Source Function,Target Function
+"approve(address,uint256)",refund()
+"transferFrom(address,address,uint256)",refund()
+finalize(),refund()
+"changeRegistrationStatuses(address[],bool)",refund()
+"transfer(address,uint256)",refund()
+"changeRegistrationStatus(address,bool)",refund()
+"approve(address,uint256)","transfer(address,uint256)"
+"transferFrom(address,address,uint256)","transfer(address,uint256)"
+finalize(),"transfer(address,uint256)"
+refund(),"transfer(address,uint256)"
+"changeRegistrationStatuses(address[],bool)","transfer(address,uint256)"
+"changeRegistrationStatus(address,bool)","transfer(address,uint256)"

@@ -1,0 +1,19 @@
+Source Function,Target Function
+deauthorize(address),"deposit(address,uint256,bool)"
+removeModerator(address),"deposit(address,uint256,bool)"
+addModerator(address),"deposit(address,uint256,bool)"
+authorize(address),"deposit(address,uint256,bool)"
+deauthorize(address),"fund(address,uint256)"
+removeModerator(address),"fund(address,uint256)"
+addModerator(address),"fund(address,uint256)"
+authorize(address),"fund(address,uint256)"
+deauthorize(address),approve(uint256)
+removeModerator(address),approve(uint256)
+addModerator(address),approve(uint256)
+authorize(address),approve(uint256)
+activate(),"withdraw(address,uint256)"
+setOwner(address),"withdraw(address,uint256)"
+setMaxFundAmount(uint256),"withdraw(address,uint256)"
+setCasinoContract(address),"withdraw(address,uint256)"
+setReceiver(address),"withdraw(address,uint256)"
+pause(),"withdraw(address,uint256)"

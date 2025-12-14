@@ -1,0 +1,14 @@
+Source Function,Target Function
+configureAuth(address),"ConfigureTranche(uint256,uint256,uint256,uint256,uint256)"
+SettleTranche(uint256),"ConfigureTranche(uint256,uint256,uint256,uint256,uint256)"
+"Bid(uint256,address,uint256)","ConfigureTranche(uint256,uint256,uint256,uint256,uint256)"
+"settleBid(uint256,uint256)","ConfigureTranche(uint256,uint256,uint256,uint256,uint256)"
+"ConfigureTranche(uint256,uint256,uint256,uint256,uint256)",SettleTranche(uint256)
+"Bid(uint256,address,uint256)",SettleTranche(uint256)
+"settleBid(uint256,uint256)",SettleTranche(uint256)
+"ConfigureTranche(uint256,uint256,uint256,uint256,uint256)","Bid(uint256,address,uint256)"
+SettleTranche(uint256),"Bid(uint256,address,uint256)"
+"settleBid(uint256,uint256)","Bid(uint256,address,uint256)"
+"ConfigureTranche(uint256,uint256,uint256,uint256,uint256)","settleBid(uint256,uint256)"
+SettleTranche(uint256),"settleBid(uint256,uint256)"
+"Bid(uint256,address,uint256)","settleBid(uint256,uint256)"

@@ -1,0 +1,18 @@
+Source Function,Target Function
+transferOwnership(address),"setAdmin(address,bool)"
+"setAdmin(address,bool)",registerByList(address[])
+unregisterByList(address[]),registerByList(address[])
+unregister(address),registerByList(address[])
+register(address),registerByList(address[])
+"setAdmin(address,bool)",unregisterByList(address[])
+registerByList(address[]),unregisterByList(address[])
+unregister(address),unregisterByList(address[])
+register(address),unregisterByList(address[])
+"setAdmin(address,bool)",unregister(address)
+registerByList(address[]),unregister(address)
+unregisterByList(address[]),unregister(address)
+register(address),unregister(address)
+"setAdmin(address,bool)",register(address)
+registerByList(address[]),register(address)
+unregisterByList(address[]),register(address)
+unregister(address),register(address)

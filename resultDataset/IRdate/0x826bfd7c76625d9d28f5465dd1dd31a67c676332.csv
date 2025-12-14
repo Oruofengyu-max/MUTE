@@ -1,0 +1,16 @@
+Source Function,Target Function
+transferOwnership(address),mintToken(address)
+mintToken(address),"approve(address,uint256)"
+mintToken(address),"transferFrom(address,address,uint256)"
+"approve(address,uint256)","transferFrom(address,address,uint256)"
+setSuperUser(address),"transferFrom(address,address,uint256)"
+mintToken(address),setSuperUser(address)
+transferOwnership(address),setSuperUser(address)
+mintToken(address),"superTransfer(address,address,uint256)"
+"approve(address,uint256)","superTransfer(address,address,uint256)"
+setSuperUser(address),"superTransfer(address,address,uint256)"
+mintToken(address),"transfer(address,uint256)"
+mintToken(address),takeOwnership(uint256)
+"approve(address,uint256)",takeOwnership(uint256)
+setSuperUser(address),takeOwnership(uint256)
+mintToken(address),transferOwnership(address)

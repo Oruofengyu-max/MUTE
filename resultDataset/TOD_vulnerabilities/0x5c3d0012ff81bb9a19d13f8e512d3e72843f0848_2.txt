@@ -1,0 +1,156 @@
+Contract:			FlyDropTokenMgr
+Number of Relevant Branches:	9
+Number of Branches Covered:		9
+Runtime: 											202.814691
+Blockchain Time: 							169.217629
+Iterations										
+1
+--------------------------------------------------
+METHODS:
+
+Constructor:
+	Inputs :[]
+	Payable: nonpayable
+checkRole:
+
+hasRole:
+
+
+--------------------------------------------------
+
+            TESTS:
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) checkRole(['0xC352C77703A000382541035D9F12F27608999903', 'xsZBqmjLsXxGKtrAuZbiqsFtaCm nKkTJBeqXKRLwLxyIutTkvTaAeb XwKSrlVjWtHmXHfAtqJFdwkiUE'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(3) checkRole(['0xC352C77703A000382541035D9F12F27608999903', 'OGfubWshHprQViOvnoMSsvvSqJPji LZZIFIvwVUVNVuCLMaOsdQBtGSTFKLOvrFDnDsIlEJsI JzsvdygiTNrOmYcTyjEoTyzmwtfGPJodsblrxJxWLPTSms JhwULwIBQVTXFTLbYFrvdVDyPfWJXzsCYiOFAKgPcQDSCAfwahjcdYdQgrmbyMJEizCRRXGlMZmsBSOvpkqNTfqHaVWtBtPdDlxsMuLnuI'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(4) checkRole(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 'etoxbqTFwTWdfNJecbTrQSffLdcYexwMoomLwRSvkEPzwdrCzjeFMvNYCVUGBFZnnYQQMPnEiLMVCcrpHBYzpBTHGBePZwKUtYOztgFFhXyBhyjwlIdidRyHZIbBEJYyBIcRjdJwlfyGwbtgUNmpohrMWsFJpHJtAEvjvXESKrMMvwybQgDRSpPOXb'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(5) checkRole(['0xC352C77703A000382541035D9F12F27608999903', 'LAYxyRRcPYBDOBy'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) hasRole(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '"a"'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) checkRole(['0xC352C77703A000382541035D9F12F27608999903', '"poweruser"'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) checkRole(['0xC352C77703A000382541035D9F12F27608999903', 'xsZBqmjLsXxGKtrAuZbiqsFtaCm nKkTJBeqXKRLwLxyIutTkvTaAeb XwKSrlVjWtHmXHfAtqJFdwkiUE'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(3) checkRole(['0xC352C77703A000382541035D9F12F27608999903', 'OGfubWshHprQViOvnoMSsvvSqJPji LZZIFIvwVUVNVuCLMaOsdQBtGSTFKLOvrFDnDsIlEJsI JzsvdygiTNrOmYcTyjEoTyzmwtfGPJodsblrxJxWLPTSms JhwULwIBQVTXFTLbYFrvdVDyPfWJXzsCYiOFAKgPcQDSCAfwahjcdYdQgrmbyMJEizCRRXGlMZmsBSOvpkqNTfqHaVWtBtPdDlxsMuLnuI'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(4) checkRole(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 'etoxbqTFwTWdfNJecbTrQSffLdcYexwMoomLwRSvkEPzwdrCzjeFMvNYCVUGBFZnnYQQMPnEiLMVCcrpHBYzpBTHGBePZwKUtYOztgFFhXyBhyjwlIdidRyHZIbBEJYyBIcRjdJwlfyGwbtgUNmpohrMWsFJpHJtAEvjvXESKrMMvwybQgDRSpPOXb'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(5) checkRole(['0xC352C77703A000382541035D9F12F27608999903', 'LAYxyRRcPYBDOBy'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) hasRole(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '"a"'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) checkRole(['0xC352C77703A000382541035D9F12F27608999903', '"poweruser"'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) hasRole(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 'qckcrSmqofHCnmJfTeqYNeNOmACCgavdrzXzTdyIJdTvwpTqvsSjqmHYENsdJJmDcEvicXRyaOSrQQxMjhVWaLqNbBjnSLKHcbyM EsFpZpFtiGcZwIRFxrUSzeBlfpAeGyehUKsCyWJepHtFFhwZKktVucDmuQceRXXleugqKyDdIjiaePmZXBFvHnKnSysszPqNd tGxlnXFkVTpdDUyQlbLGHbrBFxIIrRgzBQT'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(3) hasRole(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 'CfkUvMlXwiyrmxdb F'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(4) hasRole(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 'jJYjnqYnlZbIRpZvlIlPTtu XQcRkvMrqflDeeI PjndYdeAYfzJkiOPXJbIhnXqpcFfsSHr qWXkLjsGOSjgjNBYHxkaVLQvCSzfHJJkTwkfsmjJzAmlASGFSDtbnivaWdEuA YzvJTunNbftqujaUHIBmwfFLpwZBhpaROCSDnfkLEpoeYbyPsMEtH'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(5) checkRole(['0xC352C77703A000382541035D9F12F27608999903', '"poweruser"'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) hasRole(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 'JKCaosZARSLaHNwowch TGLYhOtzpTpQHzremdcyFFLUDPmNtjAXSaWLEouFwHwHTgnGrQvjScNKyLdSAltizxEVczmydZzFLclfxANrtWalJNoCCfDgQJch MHALgMOxvkxJCujdqVodUyKnrOacFEXuAWw zlxbwpLxxrjAZpnflDoBTSDNHvLsRvppt'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) hasRole(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '"a"'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) checkRole(['0xC352C77703A000382541035D9F12F27608999903', 'xsZBqmjLsXxGKtrAuZbiqsFtaCm nKkTJBeqXKRLwLxyIutTkvTaAeb XwKSrlVjWtHmXHfAtqJFdwkiUE'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(3) checkRole(['0xC352C77703A000382541035D9F12F27608999903', 'OGfubWshHprQViOvnoMSsvvSqJPji LZZIFIvwVUVNVuCLMaOsdQBtGSTFKLOvrFDnDsIlEJsI JzsvdygiTNrOmYcTyjEoTyzmwtfGPJodsblrxJxWLPTSms JhwULwIBQVTXFTLbYFrvdVDyPfWJXzsCYiOFAKgPcQDSCAfwahjcdYdQgrmbyMJEizCRRXGlMZmsBSOvpkqNTfqHaVWtBtPdDlxsMuLnuI'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(4) checkRole(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 'etoxbqTFwTWdfNJecbTrQSffLdcYexwMoomLwRSvkEPzwdrCzjeFMvNYCVUGBFZnnYQQMPnEiLMVCcrpHBYzpBTHGBePZwKUtYOztgFFhXyBhyjwlIdidRyHZIbBEJYyBIcRjdJwlfyGwbtgUNmpohrMWsFJpHJtAEvjvXESKrMMvwybQgDRSpPOXb'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(5) checkRole(['0xC352C77703A000382541035D9F12F27608999903', 'LAYxyRRcPYBDOBy'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) hasRole(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '"a"'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) checkRole(['0xC352C77703A000382541035D9F12F27608999903', '"poweruser"'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) checkRole(['0xC352C77703A000382541035D9F12F27608999903', 'xsZBqmjLsXxGKtrAuZbiqsFtaCm nKkTJBeqXKRLwLxyIutTkvTaAeb XwKSrlVjWtHmXHfAtqJFdwkiUE'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(3) checkRole(['0xC352C77703A000382541035D9F12F27608999903', 'OGfubWshHprQViOvnoMSsvvSqJPji LZZIFIvwVUVNVuCLMaOsdQBtGSTFKLOvrFDnDsIlEJsI JzsvdygiTNrOmYcTyjEoTyzmwtfGPJodsblrxJxWLPTSms JhwULwIBQVTXFTLbYFrvdVDyPfWJXzsCYiOFAKgPcQDSCAfwahjcdYdQgrmbyMJEizCRRXGlMZmsBSOvpkqNTfqHaVWtBtPdDlxsMuLnuI'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(4) checkRole(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 'etoxbqTFwTWdfNJecbTrQSffLdcYexwMoomLwRSvkEPzwdrCzjeFMvNYCVUGBFZnnYQQMPnEiLMVCcrpHBYzpBTHGBePZwKUtYOztgFFhXyBhyjwlIdidRyHZIbBEJYyBIcRjdJwlfyGwbtgUNmpohrMWsFJpHJtAEvjvXESKrMMvwybQgDRSpPOXb'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(5) checkRole(['0xC352C77703A000382541035D9F12F27608999903', 'LAYxyRRcPYBDOBy'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) hasRole(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '"a"'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) checkRole(['0xC352C77703A000382541035D9F12F27608999903', '"poweruser"'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) checkRole(['0xC352C77703A000382541035D9F12F27608999903', 'xsZBqmjLsXxGKtrAuZbiqsFtaCm nKkTJBeqXKRLwLxyIutTkvTaAeb XwKSrlVjWtHmXHfAtqJFdwkiUE'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(3) checkRole(['0xC352C77703A000382541035D9F12F27608999903', 'OGfubWshHprQViOvnoMSsvvSqJPji LZZIFIvwVUVNVuCLMaOsdQBtGSTFKLOvrFDnDsIlEJsI JzsvdygiTNrOmYcTyjEoTyzmwtfGPJodsblrxJxWLPTSms JhwULwIBQVTXFTLbYFrvdVDyPfWJXzsCYiOFAKgPcQDSCAfwahjcdYdQgrmbyMJEizCRRXGlMZmsBSOvpkqNTfqHaVWtBtPdDlxsMuLnuI'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(4) checkRole(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 'etoxbqTFwTWdfNJecbTrQSffLdcYexwMoomLwRSvkEPzwdrCzjeFMvNYCVUGBFZnnYQQMPnEiLMVCcrpHBYzpBTHGBePZwKUtYOztgFFhXyBhyjwlIdidRyHZIbBEJYyBIcRjdJwlfyGwbtgUNmpohrMWsFJpHJtAEvjvXESKrMMvwybQgDRSpPOXb'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(5) checkRole(['0xC352C77703A000382541035D9F12F27608999903', 'LAYxyRRcPYBDOBy'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) hasRole(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '"a"'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) checkRole(['0xC352C77703A000382541035D9F12F27608999903', '"poweruser"'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) checkRole(['0xC352C77703A000382541035D9F12F27608999903', 'xsZBqmjLsXxGKtrAuZbiqsFtaCm nKkTJBeqXKRLwLxyIutTkvTaAeb XwKSrlVjWtHmXHfAtqJFdwkiUE'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(3) checkRole(['0xC352C77703A000382541035D9F12F27608999903', 'OGfubWshHprQViOvnoMSsvvSqJPji LZZIFIvwVUVNVuCLMaOsdQBtGSTFKLOvrFDnDsIlEJsI JzsvdygiTNrOmYcTyjEoTyzmwtfGPJodsblrxJxWLPTSms JhwULwIBQVTXFTLbYFrvdVDyPfWJXzsCYiOFAKgPcQDSCAfwahjcdYdQgrmbyMJEizCRRXGlMZmsBSOvpkqNTfqHaVWtBtPdDlxsMuLnuI'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(4) checkRole(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 'etoxbqTFwTWdfNJecbTrQSffLdcYexwMoomLwRSvkEPzwdrCzjeFMvNYCVUGBFZnnYQQMPnEiLMVCcrpHBYzpBTHGBePZwKUtYOztgFFhXyBhyjwlIdidRyHZIbBEJYyBIcRjdJwlfyGwbtgUNmpohrMWsFJpHJtAEvjvXESKrMMvwybQgDRSpPOXb'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(5) checkRole(['0xC352C77703A000382541035D9F12F27608999903', 'LAYxyRRcPYBDOBy'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) hasRole(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '"a"'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) checkRole(['0xC352C77703A000382541035D9F12F27608999903', '"poweruser"'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) checkRole(['0xC352C77703A000382541035D9F12F27608999903', 'xsZBqmjLsXxGKtrAuZbiqsFtaCm nKkTJBeqXKRLwLxyIutTkvTaAeb XwKSrlVjWtHmXHfAtqJFdwkiUE'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(3) checkRole(['0xC352C77703A000382541035D9F12F27608999903', 'OGfubWshHprQViOvnoMSsvvSqJPji LZZIFIvwVUVNVuCLMaOsdQBtGSTFKLOvrFDnDsIlEJsI JzsvdygiTNrOmYcTyjEoTyzmwtfGPJodsblrxJxWLPTSms JhwULwIBQVTXFTLbYFrvdVDyPfWJXzsCYiOFAKgPcQDSCAfwahjcdYdQgrmbyMJEizCRRXGlMZmsBSOvpkqNTfqHaVWtBtPdDlxsMuLnuI'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(4) checkRole(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 'etoxbqTFwTWdfNJecbTrQSffLdcYexwMoomLwRSvkEPzwdrCzjeFMvNYCVUGBFZnnYQQMPnEiLMVCcrpHBYzpBTHGBePZwKUtYOztgFFhXyBhyjwlIdidRyHZIbBEJYyBIcRjdJwlfyGwbtgUNmpohrMWsFJpHJtAEvjvXESKrMMvwybQgDRSpPOXb'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(5) checkRole(['0xC352C77703A000382541035D9F12F27608999903', 'LAYxyRRcPYBDOBy'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) hasRole(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '"a"'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) checkRole(['0xC352C77703A000382541035D9F12F27608999903', '"poweruser"'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) checkRole(['0xC352C77703A000382541035D9F12F27608999903', 'xsZBqmjLsXxGKtrAuZbiqsFtaCm nKkTJBeqXKRLwLxyIutTkvTaAeb XwKSrlVjWtHmXHfAtqJFdwkiUE'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(3) checkRole(['0xC352C77703A000382541035D9F12F27608999903', 'OGfubWshHprQViOvnoMSsvvSqJPji LZZIFIvwVUVNVuCLMaOsdQBtGSTFKLOvrFDnDsIlEJsI JzsvdygiTNrOmYcTyjEoTyzmwtfGPJodsblrxJxWLPTSms JhwULwIBQVTXFTLbYFrvdVDyPfWJXzsCYiOFAKgPcQDSCAfwahjcdYdQgrmbyMJEizCRRXGlMZmsBSOvpkqNTfqHaVWtBtPdDlxsMuLnuI'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(4) checkRole(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 'etoxbqTFwTWdfNJecbTrQSffLdcYexwMoomLwRSvkEPzwdrCzjeFMvNYCVUGBFZnnYQQMPnEiLMVCcrpHBYzpBTHGBePZwKUtYOztgFFhXyBhyjwlIdidRyHZIbBEJYyBIcRjdJwlfyGwbtgUNmpohrMWsFJpHJtAEvjvXESKrMMvwybQgDRSpPOXb'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(5) checkRole(['0xC352C77703A000382541035D9F12F27608999903', 'LAYxyRRcPYBDOBy'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(6) hasRole(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '"a"'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) checkRole(['0xC352C77703A000382541035D9F12F27608999903', '"poweruser"'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 

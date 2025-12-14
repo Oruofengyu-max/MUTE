@@ -1,0 +1,10 @@
+Source Function,Target Function
+transferOwnership(address),renounceOwnership()
+setBullAmount(uint256),renounceOwnership()
+renounceOwnership(),claimTokens(address)
+transferOwnership(address),claimTokens(address)
+setBullAmount(uint256),claimTokens(address)
+renounceOwnership(),transferOwnership(address)
+setBullAmount(uint256),transferOwnership(address)
+renounceOwnership(),setBullAmount(uint256)
+transferOwnership(address),setBullAmount(uint256)

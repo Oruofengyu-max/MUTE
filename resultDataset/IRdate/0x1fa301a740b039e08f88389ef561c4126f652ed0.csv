@@ -1,0 +1,11 @@
+Source Function,Target Function
+set_centralAccount(address),"burnTokens(address,uint256)"
+transferOwnership(address),"burnTokens(address,uint256)"
+"approve(address,uint256)","burnTokens(address,uint256)"
+"transferFrom(address,address,uint256)","burnTokens(address,uint256)"
+"Controller(address,address,uint256)","burnTokens(address,uint256)"
+"transfer(address,uint256)","burnTokens(address,uint256)"
+"burnTokens(address,uint256)",set_centralAccount(address)
+transferOwnership(address),set_centralAccount(address)
+"burnTokens(address,uint256)",transferOwnership(address)
+set_centralAccount(address),transferOwnership(address)

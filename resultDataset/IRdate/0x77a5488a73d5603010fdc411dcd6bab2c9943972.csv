@@ -1,0 +1,26 @@
+Source Function,Target Function
+setReleaseAgent(address),"setTransferAgent(address,bool)"
+burn(uint256),"setTransferAgent(address,bool)"
+"burnFrom(address,uint256)","setTransferAgent(address,bool)"
+release(),"setTransferAgent(address,bool)"
+transferOwnership(address),"setTransferAgent(address,bool)"
+burn(uint256),setReleaseAgent(address)
+"burnFrom(address,uint256)",setReleaseAgent(address)
+release(),setReleaseAgent(address)
+transferOwnership(address),setReleaseAgent(address)
+setReleaseAgent(address),burn(uint256)
+"burnFrom(address,uint256)",burn(uint256)
+release(),burn(uint256)
+transferOwnership(address),burn(uint256)
+setReleaseAgent(address),"burnFrom(address,uint256)"
+burn(uint256),"burnFrom(address,uint256)"
+release(),"burnFrom(address,uint256)"
+transferOwnership(address),"burnFrom(address,uint256)"
+"setTransferAgent(address,bool)","burnFrom(address,uint256)"
+"approve(address,uint256)","burnFrom(address,uint256)"
+"transferFrom(address,address,uint256)","burnFrom(address,uint256)"
+"transfer(address,uint256)","burnFrom(address,uint256)"
+setReleaseAgent(address),transferOwnership(address)
+burn(uint256),transferOwnership(address)
+"burnFrom(address,uint256)",transferOwnership(address)
+release(),transferOwnership(address)

@@ -1,0 +1,14 @@
+Source Function,Target Function
+"setFee(address[],address[],uint256[])",removeFromWhitelist(address)
+"setup(address[],uint256[],address[])",removeFromWhitelist(address)
+"addToWhitelist(address,uint256)",removeFromWhitelist(address)
+"setFee(address[],address[],uint256[])","setup(address[],uint256[],address[])"
+removeFromWhitelist(address),"setup(address[],uint256[],address[])"
+"addToWhitelist(address,uint256)","setup(address[],uint256[],address[])"
+"setFee(address[],address[],uint256[])",read(uint256)
+removeFromWhitelist(address),read(uint256)
+"setup(address[],uint256[],address[])",read(uint256)
+"addToWhitelist(address,uint256)",read(uint256)
+"setFee(address[],address[],uint256[])","addToWhitelist(address,uint256)"
+removeFromWhitelist(address),"addToWhitelist(address,uint256)"
+"setup(address[],uint256[],address[])","addToWhitelist(address,uint256)"

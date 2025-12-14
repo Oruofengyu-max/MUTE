@@ -1,0 +1,10 @@
+Source Function,Target Function
+removeMinter(address),"transferFrom(address,address,uint256)"
+addMinter(address),"transferFrom(address,address,uint256)"
+"approve(address,uint256)","transferFrom(address,address,uint256)"
+"mintChest(address,uint16,uint24,uint24,uint8,uint8)",convertChest(uint256)
+"mintChest(address,uint16,uint24,uint24,uint8,uint8)","transfer(address,uint256)"
+removeMinter(address),"mintChest(address,uint16,uint24,uint24,uint8,uint8)"
+addMinter(address),"mintChest(address,uint16,uint24,uint24,uint8,uint8)"
+"approve(address,uint256)","mintChest(address,uint16,uint24,uint24,uint8,uint8)"
+"mintChest(address,uint16,uint24,uint24,uint8,uint8)","approve(address,uint256)"

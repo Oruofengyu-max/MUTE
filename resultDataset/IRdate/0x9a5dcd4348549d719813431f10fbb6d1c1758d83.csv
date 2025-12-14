@@ -1,0 +1,22 @@
+Source Function,Target Function
+acceptOwnership(),"transferFrom(address,address,uint256)"
+disableLock(bool),"transferFrom(address,address,uint256)"
+changeOwner(address),"transferFrom(address,address,uint256)"
+enableTransfer(bool),"transferFrom(address,address,uint256)"
+"approve(address,uint256)","transferFrom(address,address,uint256)"
+removeLock(address),"transferFrom(address,address,uint256)"
+addLock(address),"transferFrom(address,address,uint256)"
+"setExclude(address,bool)","transferFrom(address,address,uint256)"
+"transfer(address,uint256)","transferFrom(address,address,uint256)"
+disableLock(bool),acceptOwnership()
+changeOwner(address),acceptOwnership()
+enableTransfer(bool),acceptOwnership()
+acceptOwnership(),"transfer(address,uint256)"
+disableLock(bool),"transfer(address,uint256)"
+changeOwner(address),"transfer(address,uint256)"
+enableTransfer(bool),"transfer(address,uint256)"
+"approve(address,uint256)","transfer(address,uint256)"
+"transferFrom(address,address,uint256)","transfer(address,uint256)"
+removeLock(address),"transfer(address,uint256)"
+addLock(address),"transfer(address,uint256)"
+"setExclude(address,bool)","transfer(address,uint256)"

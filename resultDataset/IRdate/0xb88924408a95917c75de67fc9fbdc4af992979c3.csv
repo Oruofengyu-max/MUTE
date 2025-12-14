@@ -1,0 +1,21 @@
+Source Function,Target Function
+"horseForSale(uint256,uint256)","transferFrom(address,address,uint256)"
+horseNotForSale(uint256),"transferFrom(address,address,uint256)"
+"stallionWith(uint256,uint256)","transferFrom(address,address,uint256)"
+"transfer(address,uint256)","transferFrom(address,address,uint256)"
+"createGen0Horse(uint256,uint256,uint256,uint256,uint256,uint256,address)","transferFrom(address,address,uint256)"
+"transferFrom(address,address,uint256)","horseForSale(uint256,uint256)"
+horseNotForSale(uint256),"horseForSale(uint256,uint256)"
+"stallionWith(uint256,uint256)","horseForSale(uint256,uint256)"
+"transfer(address,uint256)","horseForSale(uint256,uint256)"
+"createGen0Horse(uint256,uint256,uint256,uint256,uint256,uint256,address)","horseForSale(uint256,uint256)"
+"transferFrom(address,address,uint256)",horseNotForSale(uint256)
+"horseForSale(uint256,uint256)",horseNotForSale(uint256)
+"stallionWith(uint256,uint256)",horseNotForSale(uint256)
+"transfer(address,uint256)",horseNotForSale(uint256)
+"createGen0Horse(uint256,uint256,uint256,uint256,uint256,uint256,address)",horseNotForSale(uint256)
+"createGen0Horse(uint256,uint256,uint256,uint256,uint256,uint256,address)","stallionWith(uint256,uint256)"
+setSecondsPerBlock(uint256),"createGen0Horse(uint256,uint256,uint256,uint256,uint256,uint256,address)"
+"stallionWith(uint256,uint256)","createGen0Horse(uint256,uint256,uint256,uint256,uint256,uint256,address)"
+setBirthFee(uint256),"createGen0Horse(uint256,uint256,uint256,uint256,uint256,uint256,address)"
+setSaleFee(uint256),"createGen0Horse(uint256,uint256,uint256,uint256,uint256,uint256,address)"

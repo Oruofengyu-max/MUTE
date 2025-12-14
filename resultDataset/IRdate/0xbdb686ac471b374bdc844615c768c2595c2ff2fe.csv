@@ -1,0 +1,27 @@
+Source Function,Target Function
+unpause(),changeMultiSigAddress(address)
+depositForDividend(uint256),changeMultiSigAddress(address)
+pause(),changeMultiSigAddress(address)
+"sendProfit(address,uint256)",withdraw()
+changeMultiSigAddress(address),withdraw()
+unpause(),withdraw()
+depositForDividend(uint256),withdraw()
+pause(),withdraw()
+changeMultiSigAddress(address),unpause()
+depositForDividend(uint256),unpause()
+pause(),unpause()
+changeMultiSigAddress(address),depositForDividend(uint256)
+unpause(),depositForDividend(uint256)
+pause(),depositForDividend(uint256)
+changeMultiSigAddress(address),destroy()
+unpause(),destroy()
+depositForDividend(uint256),destroy()
+pause(),destroy()
+changeMultiSigAddress(address),pause()
+unpause(),pause()
+depositForDividend(uint256),pause()
+withdraw(),"sendProfit(address,uint256)"
+changeMultiSigAddress(address),"sendProfit(address,uint256)"
+unpause(),"sendProfit(address,uint256)"
+depositForDividend(uint256),"sendProfit(address,uint256)"
+pause(),"sendProfit(address,uint256)"

@@ -1,0 +1,17 @@
+Source Function,Target Function
+releaseToken(),"transferFrom(address,address,uint256)"
+enableTransfers(bool),"transferFrom(address,address,uint256)"
+releaseToken(),getFrozenBalanceByAddress(address)
+enableTransfers(bool),getFrozenBalanceByAddress(address)
+releaseToken(),getTotalFrozenBalance()
+enableTransfers(bool),getTotalFrozenBalance()
+releaseToken(),"transfer(address,uint256)"
+enableTransfers(bool),"transfer(address,uint256)"
+"approve(address,uint256)","transfer(address,uint256)"
+"transferFrom(address,address,uint256)","transfer(address,uint256)"
+releaseToken(),getInitialBalanceByAddress(address)
+enableTransfers(bool),getInitialBalanceByAddress(address)
+enableTransfers(bool),releaseToken()
+"approve(address,uint256)",releaseToken()
+"transferFrom(address,address,uint256)",releaseToken()
+"transfer(address,uint256)",releaseToken()

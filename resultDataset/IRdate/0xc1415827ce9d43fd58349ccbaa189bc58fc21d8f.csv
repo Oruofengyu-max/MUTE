@@ -1,0 +1,25 @@
+Source Function,Target Function
+"newIntegrityFeeProposal(uint256,string)",executeProposal(uint256)
+"newTransferProposal(address,string)",executeProposal(uint256)
+"newOwnershipFeeProposal(uint256,string)",executeProposal(uint256)
+"vote(uint256,bool)",executeProposal(uint256)
+lockFunds(uint256),withdrawDividends()
+unlockFunds(),withdrawDividends()
+"vote(uint256,bool)",withdrawDividends()
+withdrawDividends(),lockFunds(uint256)
+unlockFunds(),lockFunds(uint256)
+"vote(uint256,bool)",lockFunds(uint256)
+"newIntegrityFeeProposal(uint256,string)",withdrawFullTokenBalance(address)
+"newTransferProposal(address,string)",withdrawFullTokenBalance(address)
+"newOwnershipFeeProposal(uint256,string)",withdrawFullTokenBalance(address)
+startIncomeDistribution(),withdrawFullTokenBalance(address)
+withdrawDividends(),unlockFunds()
+lockFunds(uint256),unlockFunds()
+"vote(uint256,bool)",unlockFunds()
+"newIntegrityFeeProposal(uint256,string)","withdrawTokenBalance(uint256,address)"
+"newTransferProposal(address,string)","withdrawTokenBalance(uint256,address)"
+"newOwnershipFeeProposal(uint256,string)","withdrawTokenBalance(uint256,address)"
+startIncomeDistribution(),"withdrawTokenBalance(uint256,address)"
+withdrawDividends(),"vote(uint256,bool)"
+lockFunds(uint256),"vote(uint256,bool)"
+unlockFunds(),"vote(uint256,bool)"

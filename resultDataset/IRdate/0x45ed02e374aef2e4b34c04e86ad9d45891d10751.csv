@@ -1,0 +1,25 @@
+Source Function,Target Function
+"mint(address,uint256)",reclaimToken(address)
+finishMinting(),reclaimToken(address)
+setTransferEnabled(bool),reclaimToken(address)
+transferOwnership(address),reclaimToken(address)
+"mint(address,uint256)",reclaimContract(address)
+finishMinting(),reclaimContract(address)
+setTransferEnabled(bool),reclaimContract(address)
+transferOwnership(address),reclaimContract(address)
+finishMinting(),"mint(address,uint256)"
+setTransferEnabled(bool),"mint(address,uint256)"
+transferOwnership(address),"mint(address,uint256)"
+"mint(address,uint256)",finishMinting()
+setTransferEnabled(bool),finishMinting()
+transferOwnership(address),finishMinting()
+"mint(address,uint256)",reclaimEther()
+finishMinting(),reclaimEther()
+setTransferEnabled(bool),reclaimEther()
+transferOwnership(address),reclaimEther()
+"mint(address,uint256)",setTransferEnabled(bool)
+finishMinting(),setTransferEnabled(bool)
+transferOwnership(address),setTransferEnabled(bool)
+"mint(address,uint256)",transferOwnership(address)
+finishMinting(),transferOwnership(address)
+setTransferEnabled(bool),transferOwnership(address)

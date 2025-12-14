@@ -1,0 +1,294 @@
+Contract:			DiceGame
+Number of Relevant Branches:	39
+Number of Branches Covered:		17
+Runtime: 											1570.302436
+Blockchain Time: 							1330.338695
+Iterations										
+21
+--------------------------------------------------
+METHODS:
+
+Constructor:
+	Inputs :[{'name': '_croupier', 'type': 'address'}, {'name': '_maxProfit', 'type': 'uint256'}]
+	Payable: nonpayable
+_fallback:
+
+setAdministrator:
+
+setCroupier:
+
+setMaxProfit:
+
+withdrawFunds:
+
+kill:
+
+placeGame:
+
+settleGame:
+
+refundGame:
+
+withdrawInvitationProfit:
+
+getInvitationBalance:
+
+
+--------------------------------------------------
+
+            TESTS:
+
+	(1) constructor(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 709], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) refundGame([52243923258608645848529110790107104732763730408492499117925148342986352663883], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) withdrawFunds(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 1486], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(4) withdrawInvitationProfit([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(5) refundGame([104967129902161927836829054632170342013982832331515287698928185946046425165176], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(6) setAdministrator(['0x716c53464a746a204b6653554e654e5652564c67565870425141627353574f47', False], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(7) getInvitationBalance([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 709], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) refundGame([52243923258608645848529110790107104732763730408492499117925148342986352663883], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) withdrawFunds(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 1486], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(4) withdrawInvitationProfit([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(5) refundGame([104967129902161927836829054632170342013982832331515287698928185946046425165176], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(6) setAdministrator(['0x716c53464a746a204b6653554e654e5652564c67565870425141627353574f47', False], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(7) getInvitationBalance([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 709], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) refundGame([52243923258608645848529110790107104732763730408492499117925148342986352663883], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) withdrawFunds(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 1486], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(4) withdrawInvitationProfit([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(5) refundGame([104967129902161927836829054632170342013982832331515287698928185946046425165176], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(6) setAdministrator(['0x716c53464a746a204b6653554e654e5652564c67565870425141627353574f47', False], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(7) getInvitationBalance([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 709], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) refundGame([52243923258608645848529110790107104732763730408492499117925148342986352663883], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) withdrawFunds(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 1486], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(4) withdrawInvitationProfit([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(5) refundGame([104967129902161927836829054632170342013982832331515287698928185946046425165176], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(6) setAdministrator(['0x716c53464a746a204b6653554e654e5652564c67565870425141627353574f47', False], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(7) getInvitationBalance([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 24], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) setMaxProfit([13412042423502974874766676997663637042594561037234844281141231626119951274352], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) getInvitationBalance([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(4) setAdministrator(['0x6c65655462614e746f7a576c4d61696e68487678476c4d687a415172596c5057', False], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(5) setCroupier(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(6) placeGame([100, 250, 255061, '0x436c4341574f7976454c7a626a507076767a437671554a7151724e4b616d5349', '0x0000000000000000000000000000000000000000000000000000000000000000', '0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(7) setAdministrator(['0x0000000000000000000000000000000000000000000000000000000000000000', True], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+
+	(1) constructor(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 24], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) setMaxProfit([13412042423502974874766676997663637042594561037234844281141231626119951274352], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) getInvitationBalance([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(4) setAdministrator(['0x6c65655462614e746f7a576c4d61696e68487678476c4d687a415172596c5057', False], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(5) setCroupier(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(6) placeGame([100, 250, 255061, '0x436c4341574f7976454c7a626a507076767a437671554a7151724e4b616d5349', '0x0000000000000000000000000000000000000000000000000000000000000000', '0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(7) setAdministrator(['0x0000000000000000000000000000000000000000000000000000000000000000', True], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+
+	(1) constructor(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 24], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) setMaxProfit([13412042423502974874766676997663637042594561037234844281141231626119951274352], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) getInvitationBalance([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(4) setAdministrator(['0x6c65655462614e746f7a576c4d61696e68487678476c4d687a415172596c5057', False], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(5) setCroupier(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(6) placeGame([100, 250, 255061, '0x436c4341574f7976454c7a626a507076767a437671554a7151724e4b616d5349', '0x0000000000000000000000000000000000000000000000000000000000000000', '0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(7) setAdministrator(['0x0000000000000000000000000000000000000000000000000000000000000000', True], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+
+	(1) constructor(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 24], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) setMaxProfit([13412042423502974874766676997663637042594561037234844281141231626119951274352], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) getInvitationBalance([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(4) setAdministrator(['0x6c65655462614e746f7a576c4d61696e68487678476c4d687a415172596c5057', False], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(5) setCroupier(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(6) placeGame([100, 250, 255061, '0x436c4341574f7976454c7a626a507076767a437671554a7151724e4b616d5349', '0x0000000000000000000000000000000000000000000000000000000000000000', '0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(7) setAdministrator(['0x0000000000000000000000000000000000000000000000000000000000000000', True], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+
+	(1) constructor(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 709], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) refundGame([52243923258608645848529110790107104732763730408492499117925148342986352663883], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) withdrawFunds(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 1486], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(4) withdrawInvitationProfit([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(5) refundGame([104967129902161927836829054632170342013982832331515287698928185946046425165176], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(6) setAdministrator(['0x716c53464a746a204b6653554e654e5652564c67565870425141627353574f47', False], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(7) getInvitationBalance([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 256], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) setAdministrator(['0x766a5943617641474a616d73696a644a634d55616a716a5a576278624366626f', False], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) kill(['0xC352C77703A000382541035D9F12F27608999903'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(4) setCroupier(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(5) setMaxProfit([50], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(6) withdrawFunds(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 43006302474891543385991824041616186351572831276981345181729424078139682409574], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(7) withdrawInvitationProfit([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+
+	(1) constructor(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 256], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) setAdministrator(['0x766a5943617641474a616d73696a644a634d55616a716a5a576278624366626f', False], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) kill(['0xC352C77703A000382541035D9F12F27608999903'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(4) setCroupier(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(5) setMaxProfit([50], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(6) withdrawFunds(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 43006302474891543385991824041616186351572831276981345181729424078139682409574], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(7) withdrawInvitationProfit([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+
+	(1) constructor(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 256], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) setAdministrator(['0x766a5943617641474a616d73696a644a634d55616a716a5a576278624366626f', False], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) kill(['0xC352C77703A000382541035D9F12F27608999903'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(4) setCroupier(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(5) setMaxProfit([50], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(6) withdrawFunds(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 43006302474891543385991824041616186351572831276981345181729424078139682409574], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(7) withdrawInvitationProfit([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+
+	(1) constructor(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 256], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) setAdministrator(['0x766a5943617641474a616d73696a644a634d55616a716a5a576278624366626f', False], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) kill(['0xC352C77703A000382541035D9F12F27608999903'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(4) setCroupier(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(5) setMaxProfit([50], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(6) withdrawFunds(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 43006302474891543385991824041616186351572831276981345181729424078139682409574], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(7) withdrawInvitationProfit([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+
+	(1) constructor(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 709], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) refundGame([52243923258608645848529110790107104732763730408492499117925148342986352663883], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) withdrawFunds(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 1486], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(4) withdrawInvitationProfit([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(5) refundGame([104967129902161927836829054632170342013982832331515287698928185946046425165176], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(6) setAdministrator(['0x716c53464a746a204b6653554e654e5652564c67565870425141627353574f47', False], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(7) getInvitationBalance([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 709], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) refundGame([52243923258608645848529110790107104732763730408492499117925148342986352663883], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) withdrawFunds(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 1486], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(4) withdrawInvitationProfit([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(5) refundGame([104967129902161927836829054632170342013982832331515287698928185946046425165176], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(6) setAdministrator(['0x716c53464a746a204b6653554e654e5652564c67565870425141627353574f47', False], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(7) getInvitationBalance([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 709], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) refundGame([52243923258608645848529110790107104732763730408492499117925148342986352663883], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) withdrawFunds(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 1486], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(4) withdrawInvitationProfit([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(5) refundGame([104967129902161927836829054632170342013982832331515287698928185946046425165176], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(6) setAdministrator(['0x716c53464a746a204b6653554e654e5652564c67565870425141627353574f47', False], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(7) getInvitationBalance([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 709], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) refundGame([52243923258608645848529110790107104732763730408492499117925148342986352663883], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) withdrawFunds(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 1486], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(4) withdrawInvitationProfit([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(5) refundGame([104967129902161927836829054632170342013982832331515287698928185946046425165176], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(6) setAdministrator(['0x716c53464a746a204b6653554e654e5652564c67565870425141627353574f47', False], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(7) getInvitationBalance([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true

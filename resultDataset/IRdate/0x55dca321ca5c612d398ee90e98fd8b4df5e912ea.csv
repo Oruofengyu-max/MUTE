@@ -1,0 +1,9 @@
+Source Function,Target Function
+"approve(address,uint256)","transferFrom(address,address,uint256)"
+"burnFrom(address,uint256)","transferFrom(address,address,uint256)"
+"approveAndCall(address,uint256,bytes)","transferFrom(address,address,uint256)"
+unlock(),acceptOwnership()
+transferOwnership(address),acceptOwnership()
+"approve(address,uint256)","burnFrom(address,uint256)"
+"transferFrom(address,address,uint256)","burnFrom(address,uint256)"
+"approveAndCall(address,uint256,bytes)","burnFrom(address,uint256)"

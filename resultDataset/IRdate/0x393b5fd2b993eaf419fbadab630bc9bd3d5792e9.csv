@@ -1,0 +1,15 @@
+Source Function,Target Function
+"approve(address,uint256)",ownerOf(uint256)
+"transferFrom(address,address,uint256)",ownerOf(uint256)
+"transfer(address,uint256)",ownerOf(uint256)
+takeOwnership(uint256),ownerOf(uint256)
+"registerOpinion(uint256,string)",ownerOf(uint256)
+"sponsorOpinion(uint256,uint8,bool)",ownerOf(uint256)
+deleteThis(uint256),"registerOpinion(uint256,string)"
+"sponsorOpinion(uint256,uint8,bool)","registerOpinion(uint256,string)"
+"approve(address,uint256)","registerOpinion(uint256,string)"
+"transferFrom(address,address,uint256)","registerOpinion(uint256,string)"
+"transfer(address,uint256)","registerOpinion(uint256,string)"
+takeOwnership(uint256),"registerOpinion(uint256,string)"
+deleteThis(uint256),"sponsorOpinion(uint256,uint8,bool)"
+"registerOpinion(uint256,string)","sponsorOpinion(uint256,uint8,bool)"

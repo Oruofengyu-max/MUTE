@@ -1,0 +1,15 @@
+Source Function,Target Function
+"approve(address,uint256)","transferFrom(address,address,uint256)"
+withdrawTokens(uint256),"transferFrom(address,address,uint256)"
+"decreaseApproval(address,uint256)","transferFrom(address,address,uint256)"
+"transfer(address,uint256)","transferFrom(address,address,uint256)"
+"increaseApproval(address,uint256)","transferFrom(address,address,uint256)"
+changeRate(uint256),withdrawTokens(uint256)
+transferOwnership(address),withdrawTokens(uint256)
+transferOwnership(address),changeRate(uint256)
+"approve(address,uint256)","transfer(address,uint256)"
+"transferFrom(address,address,uint256)","transfer(address,uint256)"
+withdrawTokens(uint256),"transfer(address,uint256)"
+"decreaseApproval(address,uint256)","transfer(address,uint256)"
+"increaseApproval(address,uint256)","transfer(address,uint256)"
+changeRate(uint256),transferOwnership(address)

@@ -1,0 +1,21 @@
+Source Function,Target Function
+"approve(address,uint256)","transferFrom(address,address,uint256)"
+"decreaseApproval(address,uint256)","transferFrom(address,address,uint256)"
+"transfer(address,uint256)","transferFrom(address,address,uint256)"
+"increaseApproval(address,uint256)","transferFrom(address,address,uint256)"
+unpauseToken(),pauseToken()
+setIcoContract(address),pauseToken()
+transferOwnership(address),pauseToken()
+pauseToken(),unpauseToken()
+setIcoContract(address),unpauseToken()
+transferOwnership(address),unpauseToken()
+"approve(address,uint256)","transfer(address,uint256)"
+"transferFrom(address,address,uint256)","transfer(address,uint256)"
+"decreaseApproval(address,uint256)","transfer(address,uint256)"
+"increaseApproval(address,uint256)","transfer(address,uint256)"
+pauseToken(),setIcoContract(address)
+unpauseToken(),setIcoContract(address)
+transferOwnership(address),setIcoContract(address)
+pauseToken(),transferOwnership(address)
+unpauseToken(),transferOwnership(address)
+setIcoContract(address),transferOwnership(address)

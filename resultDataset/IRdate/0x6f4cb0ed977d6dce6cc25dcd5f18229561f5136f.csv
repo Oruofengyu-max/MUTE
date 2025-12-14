@@ -1,0 +1,10 @@
+Source Function,Target Function
+addGovernor(address),"approve(address,uint256)"
+"setApprovalForAll(address,bool)","approve(address,uint256)"
+"mint(address,uint256,string)","approve(address,uint256)"
+renounceGovernor(),"approve(address,uint256)"
+"approve(address,uint256)",ownerOf(uint256)
+addGovernor(address),ownerOf(uint256)
+"setApprovalForAll(address,bool)",ownerOf(uint256)
+"mint(address,uint256,string)",ownerOf(uint256)
+renounceGovernor(),ownerOf(uint256)

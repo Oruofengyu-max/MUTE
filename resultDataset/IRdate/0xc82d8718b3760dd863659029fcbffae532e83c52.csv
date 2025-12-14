@@ -1,0 +1,17 @@
+Source Function,Target Function
+burnOwnerTokens(uint256),setOwnerBurner(address)
+"setTokenInformation(string,string)",setOwnerBurner(address)
+initialSupply(address),setOwnerBurner(address)
+transferOwnership(address),setOwnerBurner(address)
+setOwnerBurner(address),"setTokenInformation(string,string)"
+burnOwnerTokens(uint256),"setTokenInformation(string,string)"
+initialSupply(address),"setTokenInformation(string,string)"
+transferOwnership(address),"setTokenInformation(string,string)"
+setOwnerBurner(address),initialSupply(address)
+burnOwnerTokens(uint256),initialSupply(address)
+"setTokenInformation(string,string)",initialSupply(address)
+transferOwnership(address),initialSupply(address)
+setOwnerBurner(address),transferOwnership(address)
+burnOwnerTokens(uint256),transferOwnership(address)
+"setTokenInformation(string,string)",transferOwnership(address)
+initialSupply(address),transferOwnership(address)

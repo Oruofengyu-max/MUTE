@@ -1,0 +1,16 @@
+Source Function,Target Function
+setExternalDependencies(address[]),remainingGold()
+setInternalDependencies(address[]),remainingGold()
+transferOwnership(address),remainingGold()
+setExternalDependencies(address[]),"giveGold(address,uint256)"
+setInternalDependencies(address[]),"giveGold(address,uint256)"
+transferOwnership(address),"giveGold(address,uint256)"
+setExternalDependencies(address[]),migrate(address)
+setInternalDependencies(address[]),migrate(address)
+transferOwnership(address),migrate(address)
+setExternalDependencies(address[]),burnGold(uint256)
+setInternalDependencies(address[]),burnGold(uint256)
+transferOwnership(address),burnGold(uint256)
+setExternalDependencies(address[]),takeGold(uint256)
+setInternalDependencies(address[]),takeGold(uint256)
+transferOwnership(address),takeGold(uint256)

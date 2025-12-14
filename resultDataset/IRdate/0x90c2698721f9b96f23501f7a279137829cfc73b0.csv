@@ -1,0 +1,20 @@
+Source Function,Target Function
+"addDedication(uint256,string)","approve(address,uint256)"
+"setApprovalForAll(address,bool)","approve(address,uint256)"
+"mint(address,bytes32,uint256)","approve(address,uint256)"
+renounceOwnership(),"safeTransferFrom(address,address,uint256)"
+"mint(address,bytes32,uint256)","safeTransferFrom(address,address,uint256)"
+transferOwnership(address),"safeTransferFrom(address,address,uint256)"
+"approve(address,uint256)",ownerOf(uint256)
+"addDedication(uint256,string)",ownerOf(uint256)
+"setApprovalForAll(address,bool)",ownerOf(uint256)
+"mint(address,bytes32,uint256)",ownerOf(uint256)
+"mint(address,bytes32,uint256)",renounceOwnership()
+transferOwnership(address),renounceOwnership()
+"approve(address,uint256)","addDedication(uint256,string)"
+"setApprovalForAll(address,bool)","addDedication(uint256,string)"
+"mint(address,bytes32,uint256)","addDedication(uint256,string)"
+renounceOwnership(),"mint(address,bytes32,uint256)"
+transferOwnership(address),"mint(address,bytes32,uint256)"
+renounceOwnership(),transferOwnership(address)
+"mint(address,bytes32,uint256)",transferOwnership(address)

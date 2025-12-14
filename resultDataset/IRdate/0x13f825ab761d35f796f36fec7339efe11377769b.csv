@@ -1,0 +1,7 @@
+Source Function,Target Function
+"upgradeContract(uint256,address)",getActiveContractAddress(uint256)
+"rollbackContract(uint256,address)",getActiveContractAddress(uint256)
+transferOwnership(address),"upgradeContract(uint256,address)"
+"rollbackContract(uint256,address)","upgradeContract(uint256,address)"
+transferOwnership(address),"rollbackContract(uint256,address)"
+"upgradeContract(uint256,address)","rollbackContract(uint256,address)"

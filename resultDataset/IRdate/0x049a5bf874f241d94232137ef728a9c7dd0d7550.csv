@@ -1,0 +1,21 @@
+Source Function,Target Function
+"approve(address,uint256)","transferFrom(address,address,uint256)"
+"mintTokensWithApproval(address,uint256,address)","transferFrom(address,address,uint256)"
+"transfer(address,uint256)","transferFrom(address,address,uint256)"
+"mintTokens(address,uint256)","transferFrom(address,address,uint256)"
+burnUnmintedTokens(uint256),"mintTokensWithApproval(address,uint256,address)"
+"mintTokens(address,uint256)","mintTokensWithApproval(address,uint256,address)"
+transferOwnership(address),"mintTokensWithApproval(address,uint256,address)"
+"approve(address,uint256)","transfer(address,uint256)"
+"transferFrom(address,address,uint256)","transfer(address,uint256)"
+"mintTokensWithApproval(address,uint256,address)","transfer(address,uint256)"
+"mintTokens(address,uint256)","transfer(address,uint256)"
+"mintTokensWithApproval(address,uint256,address)",burnUnmintedTokens(uint256)
+"mintTokens(address,uint256)",burnUnmintedTokens(uint256)
+transferOwnership(address),burnUnmintedTokens(uint256)
+"mintTokensWithApproval(address,uint256,address)","mintTokens(address,uint256)"
+burnUnmintedTokens(uint256),"mintTokens(address,uint256)"
+transferOwnership(address),"mintTokens(address,uint256)"
+"mintTokensWithApproval(address,uint256,address)",transferOwnership(address)
+burnUnmintedTokens(uint256),transferOwnership(address)
+"mintTokens(address,uint256)",transferOwnership(address)

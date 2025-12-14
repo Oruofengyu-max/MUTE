@@ -1,0 +1,25 @@
+Source Function,Target Function
+"allocateMarketingTokens(address,uint256)",enableTokenTransfers()
+revokeUsers(address[]),enableTokenTransfers()
+"allocatePresaleTokens(address,uint256,uint256,uint256)",enableTokenTransfers()
+setMaxGasPrice(uint256),enableTokenTransfers()
+whitelistUsers(address[]),enableTokenTransfers()
+transferOwnership(address),enableTokenTransfers()
+revokeUsers(address[]),"allocateMarketingTokens(address,uint256)"
+"allocatePresaleTokens(address,uint256,uint256,uint256)","allocateMarketingTokens(address,uint256)"
+whitelistUsers(address[]),"allocateMarketingTokens(address,uint256)"
+enableTokenTransfers(),"allocateMarketingTokens(address,uint256)"
+setMaxGasPrice(uint256),"allocateMarketingTokens(address,uint256)"
+transferOwnership(address),"allocateMarketingTokens(address,uint256)"
+"allocateMarketingTokens(address,uint256)",revokeUsers(address[])
+"allocatePresaleTokens(address,uint256,uint256,uint256)",revokeUsers(address[])
+whitelistUsers(address[]),revokeUsers(address[])
+"allocateMarketingTokens(address,uint256)","allocatePresaleTokens(address,uint256,uint256,uint256)"
+revokeUsers(address[]),"allocatePresaleTokens(address,uint256,uint256,uint256)"
+whitelistUsers(address[]),"allocatePresaleTokens(address,uint256,uint256,uint256)"
+enableTokenTransfers(),"allocatePresaleTokens(address,uint256,uint256,uint256)"
+setMaxGasPrice(uint256),"allocatePresaleTokens(address,uint256,uint256,uint256)"
+transferOwnership(address),"allocatePresaleTokens(address,uint256,uint256,uint256)"
+"allocateMarketingTokens(address,uint256)",whitelistUsers(address[])
+revokeUsers(address[]),whitelistUsers(address[])
+"allocatePresaleTokens(address,uint256,uint256,uint256)",whitelistUsers(address[])

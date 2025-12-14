@@ -1,0 +1,9 @@
+Source Function,Target Function
+renounceOwnership(),"setNewPriceToItem(string,uint256,uint256)"
+transferOwnership(address),"setNewPriceToItem(string,uint256,uint256)"
+transferOwnership(address),renounceOwnership()
+renounceOwnership(),getPayOut()
+transferOwnership(address),getPayOut()
+renounceOwnership(),transferOwnership(address)
+renounceOwnership(),getBalanceOfLogicContract()
+transferOwnership(address),getBalanceOfLogicContract()

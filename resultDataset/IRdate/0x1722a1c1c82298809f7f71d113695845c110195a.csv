@@ -1,0 +1,14 @@
+Source Function,Target Function
+"CreateRatio(address,uint256)","ClaimTokens(address,uint256)"
+WithdrawTokenFees(address),"ClaimTokens(address,uint256)"
+WithdrawAllFees(),"ClaimTokens(address,uint256)"
+"HodlTokens(address,uint256)","ClaimTokens(address,uint256)"
+"CreateRatio(address,uint256)",WithdrawTokenFees(address)
+WithdrawAllFees(),WithdrawTokenFees(address)
+"HodlTokens(address,uint256)",WithdrawTokenFees(address)
+"CreateRatio(address,uint256)",WithdrawAllFees()
+WithdrawTokenFees(address),WithdrawAllFees()
+"HodlTokens(address,uint256)",WithdrawAllFees()
+"CreateRatio(address,uint256)","HodlTokens(address,uint256)"
+WithdrawTokenFees(address),"HodlTokens(address,uint256)"
+WithdrawAllFees(),"HodlTokens(address,uint256)"

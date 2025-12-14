@@ -1,0 +1,10 @@
+Source Function,Target Function
+addAgent(address),"approve(address,uint256)"
+"mintTo(address,uint256,uint256,uint256,uint32)","approve(address,uint256)"
+removeAgent(address),"approve(address,uint256)"
+"setApprovalForAll(address,bool)","approve(address,uint256)"
+"approve(address,uint256)",ownerOf(uint256)
+addAgent(address),ownerOf(uint256)
+"mintTo(address,uint256,uint256,uint256,uint32)",ownerOf(uint256)
+removeAgent(address),ownerOf(uint256)
+"setApprovalForAll(address,bool)",ownerOf(uint256)

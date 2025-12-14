@@ -1,0 +1,11 @@
+Source Function,Target Function
+"adminSetLock(bool,bool)","onERC721Received(address,address,uint256,bytes)"
+"adminSetDetails(uint32,uint32,uint32,uint32,uint64,uint64,uint256,uint256)","onERC721Received(address,address,uint256,bytes)"
+adminChange(address),"onERC721Received(address,address,uint256,bytes)"
+"onERC721Received(address,address,uint256,bytes)","purchase(address,uint64)"
+"onERC721Received(address,address,uint256,bytes)",removeListing(uint64)
+"onERC721Received(address,address,uint256,bytes)",getListing(uint64)
+"onERC721Received(address,address,uint256,bytes)",adminClose(address)
+"adminSetLock(bool,bool)",adminClose(address)
+"adminSetDetails(uint32,uint32,uint32,uint32,uint64,uint64,uint256,uint256)",adminClose(address)
+adminChange(address),adminClose(address)

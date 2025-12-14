@@ -1,0 +1,27 @@
+Source Function,Target Function
+sendChatMessage(string),setFeeDivisor(uint256)
+"placeBlock(uint16,uint16)",setFeeDivisor(uint256)
+transferOwnership(address),setFeeDivisor(uint256)
+setFeeDivisor(uint256),censorChatMessage(uint256)
+sendChatMessage(string),censorChatMessage(uint256)
+"placeBlock(uint16,uint16)",censorChatMessage(uint256)
+transferOwnership(address),censorChatMessage(uint256)
+censorChatMessage(uint256),registerUsername(bytes32)
+sendChatMessage(string),registerUsername(bytes32)
+withdrawBalance(uint256),registerUsername(bytes32)
+"placeBlock(uint16,uint16)",registerUsername(bytes32)
+censorChatMessage(uint256),sendChatMessage(string)
+registerUsername(bytes32),sendChatMessage(string)
+withdrawBalance(uint256),sendChatMessage(string)
+"placeBlock(uint16,uint16)",sendChatMessage(string)
+censorChatMessage(uint256),withdrawBalance(uint256)
+registerUsername(bytes32),withdrawBalance(uint256)
+sendChatMessage(string),withdrawBalance(uint256)
+"placeBlock(uint16,uint16)",withdrawBalance(uint256)
+censorChatMessage(uint256),"placeBlock(uint16,uint16)"
+registerUsername(bytes32),"placeBlock(uint16,uint16)"
+sendChatMessage(string),"placeBlock(uint16,uint16)"
+withdrawBalance(uint256),"placeBlock(uint16,uint16)"
+setFeeDivisor(uint256),transferOwnership(address)
+sendChatMessage(string),transferOwnership(address)
+"placeBlock(uint16,uint16)",transferOwnership(address)

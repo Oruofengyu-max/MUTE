@@ -1,0 +1,7 @@
+Source Function,Target Function
+"grantAllocation(address,uint256,bool)","processAllocation(address,uint256)"
+revokeAllocation(address),"processAllocation(address,uint256)"
+"processAllocation(address,uint256)","grantAllocation(address,uint256,bool)"
+revokeAllocation(address),"grantAllocation(address,uint256,bool)"
+"processAllocation(address,uint256)",revokeAllocation(address)
+"grantAllocation(address,uint256,bool)",revokeAllocation(address)

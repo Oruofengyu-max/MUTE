@@ -1,0 +1,27 @@
+Source Function,Target Function
+putForExchange(uint256),"confirmExchange(address,uint256)"
+transferOwnership(address),"confirmExchange(address,uint256)"
+"approve(address,uint256)","confirmExchange(address,uint256)"
+"transferFrom(address,address,uint256)","confirmExchange(address,uint256)"
+"decreaseApproval(address,uint256)","confirmExchange(address,uint256)"
+"transfer(address,uint256)","confirmExchange(address,uint256)"
+"increaseApproval(address,uint256)","confirmExchange(address,uint256)"
+"approve(address,uint256)","transferFrom(address,address,uint256)"
+"confirmExchange(address,uint256)","transferFrom(address,address,uint256)"
+putForExchange(uint256),"transferFrom(address,address,uint256)"
+"decreaseApproval(address,uint256)","transferFrom(address,address,uint256)"
+"transfer(address,uint256)","transferFrom(address,address,uint256)"
+"increaseApproval(address,uint256)","transferFrom(address,address,uint256)"
+"approve(address,uint256)",putForExchange(uint256)
+"confirmExchange(address,uint256)",putForExchange(uint256)
+"transferFrom(address,address,uint256)",putForExchange(uint256)
+"decreaseApproval(address,uint256)",putForExchange(uint256)
+"transfer(address,uint256)",putForExchange(uint256)
+"increaseApproval(address,uint256)",putForExchange(uint256)
+"approve(address,uint256)","transfer(address,uint256)"
+"confirmExchange(address,uint256)","transfer(address,uint256)"
+"transferFrom(address,address,uint256)","transfer(address,uint256)"
+putForExchange(uint256),"transfer(address,uint256)"
+"decreaseApproval(address,uint256)","transfer(address,uint256)"
+"increaseApproval(address,uint256)","transfer(address,uint256)"
+putForExchange(uint256),transferOwnership(address)

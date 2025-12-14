@@ -1,0 +1,25 @@
+Source Function,Target Function
+unpause(),"transferFrom(address,address,uint256)"
+finishMinting(),"transferFrom(address,address,uint256)"
+pause(),"transferFrom(address,address,uint256)"
+transferOwnership(address),"transferFrom(address,address,uint256)"
+finishMinting(),unpause()
+pause(),unpause()
+transferOwnership(address),unpause()
+unpause(),finishMinting()
+pause(),finishMinting()
+transferOwnership(address),finishMinting()
+unpause(),pause()
+finishMinting(),pause()
+transferOwnership(address),pause()
+unpause(),"transfer(address,uint256)"
+finishMinting(),"transfer(address,uint256)"
+pause(),"transfer(address,uint256)"
+transferOwnership(address),"transfer(address,uint256)"
+unpause(),"mintTimelocked(address,uint256,uint256)"
+finishMinting(),"mintTimelocked(address,uint256,uint256)"
+pause(),"mintTimelocked(address,uint256,uint256)"
+transferOwnership(address),"mintTimelocked(address,uint256,uint256)"
+unpause(),transferOwnership(address)
+finishMinting(),transferOwnership(address)
+pause(),transferOwnership(address)

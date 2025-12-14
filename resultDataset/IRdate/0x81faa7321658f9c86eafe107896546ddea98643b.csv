@@ -1,0 +1,13 @@
+Source Function,Target Function
+finishMinting(),"mint(address,uint256)"
+setContactInformation(string),"mint(address,uint256)"
+transferOwnership(address),"mint(address,uint256)"
+"mint(address,uint256)",finishMinting()
+setContactInformation(string),finishMinting()
+transferOwnership(address),finishMinting()
+"mint(address,uint256)",setContactInformation(string)
+finishMinting(),setContactInformation(string)
+transferOwnership(address),setContactInformation(string)
+"mint(address,uint256)",transferOwnership(address)
+finishMinting(),transferOwnership(address)
+setContactInformation(string),transferOwnership(address)

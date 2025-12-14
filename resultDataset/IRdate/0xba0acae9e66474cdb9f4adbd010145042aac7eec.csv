@@ -1,0 +1,14 @@
+Source Function,Target Function
+setRate(uint256),"placeTokens(address,uint256)"
+unpause(),"placeTokens(address,uint256)"
+pause(),"placeTokens(address,uint256)"
+setCS(address),"placeTokens(address,uint256)"
+setWallet(address),"placeTokens(address,uint256)"
+transferOwnership(address),"placeTokens(address,uint256)"
+"placeTokens(address,uint256)",finishSale()
+setRate(uint256),finishSale()
+unpause(),finishSale()
+pause(),finishSale()
+setCS(address),finishSale()
+setWallet(address),finishSale()
+transferOwnership(address),finishSale()

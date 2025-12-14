@@ -1,0 +1,27 @@
+Source Function,Target Function
+"mint(address,uint256)",reclaimToken(address)
+finishMinting(),reclaimToken(address)
+transferOwnership(address),reclaimToken(address)
+"mint(address,uint256)","transferFrom(address,address,uint256)"
+finishMinting(),"transferFrom(address,address,uint256)"
+transferOwnership(address),"transferFrom(address,address,uint256)"
+"approve(address,uint256)","transferFrom(address,address,uint256)"
+"decreaseApproval(address,uint256)","transferFrom(address,address,uint256)"
+"transfer(address,uint256)","transferFrom(address,address,uint256)"
+"increaseApproval(address,uint256)","transferFrom(address,address,uint256)"
+"mint(address,uint256)",reclaimContract(address)
+finishMinting(),reclaimContract(address)
+transferOwnership(address),reclaimContract(address)
+finishMinting(),"mint(address,uint256)"
+transferOwnership(address),"mint(address,uint256)"
+"mint(address,uint256)",finishMinting()
+transferOwnership(address),finishMinting()
+"mint(address,uint256)","transfer(address,uint256)"
+finishMinting(),"transfer(address,uint256)"
+transferOwnership(address),"transfer(address,uint256)"
+"approve(address,uint256)","transfer(address,uint256)"
+"transferFrom(address,address,uint256)","transfer(address,uint256)"
+"decreaseApproval(address,uint256)","transfer(address,uint256)"
+"increaseApproval(address,uint256)","transfer(address,uint256)"
+"mint(address,uint256)",transferOwnership(address)
+finishMinting(),transferOwnership(address)

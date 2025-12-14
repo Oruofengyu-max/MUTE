@@ -1,0 +1,16 @@
+Source Function,Target Function
+renounceOwnership(),setCurrentPassportLogic(string)
+transferOwnership(address),setCurrentPassportLogic(string)
+setCurrentPassportLogic(string),renounceOwnership()
+transferOwnership(address),renounceOwnership()
+setCurrentPassportLogic(string),reclaimEther()
+renounceOwnership(),reclaimEther()
+transferOwnership(address),reclaimEther()
+setCurrentPassportLogic(string),"addPassportLogic(string,address)"
+renounceOwnership(),"addPassportLogic(string,address)"
+transferOwnership(address),"addPassportLogic(string,address)"
+setCurrentPassportLogic(string),transferOwnership(address)
+renounceOwnership(),transferOwnership(address)
+setCurrentPassportLogic(string),reclaimToken(address)
+renounceOwnership(),reclaimToken(address)
+transferOwnership(address),reclaimToken(address)

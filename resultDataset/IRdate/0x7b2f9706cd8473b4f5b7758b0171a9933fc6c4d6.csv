@@ -1,0 +1,9 @@
+Source Function,Target Function
+setCrowdsale(address),massNotify(address[])
+transferOwnership(address),massNotify(address[])
+setCrowdsale(address),kill()
+transferOwnership(address),kill()
+transferOwnership(address),setCrowdsale(address)
+setCrowdsale(address),"extractTokens(address,address)"
+transferOwnership(address),"extractTokens(address,address)"
+setCrowdsale(address),transferOwnership(address)

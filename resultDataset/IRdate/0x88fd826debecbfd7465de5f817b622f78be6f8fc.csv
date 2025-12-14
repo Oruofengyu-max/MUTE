@@ -1,0 +1,20 @@
+Source Function,Target Function
+"withdrawTokenByAdmin(address,uint256)",withdraw(uint256)
+"buyfp(uint256,uint256)",withdraw(uint256)
+"withdrawByAdmin(address,uint256,address)",withdraw(uint256)
+setOwner(address),withdraw(uint256)
+withdraw(uint256),"withdrawTokenByAdmin(address,uint256)"
+"buyfp(uint256,uint256)","withdrawTokenByAdmin(address,uint256)"
+"withdrawByAdmin(address,uint256,address)","withdrawTokenByAdmin(address,uint256)"
+setOwner(address),"withdrawTokenByAdmin(address,uint256)"
+setOwner(address),tokenInfo()
+withdraw(uint256),showInvestorVaultFull(address)
+"withdrawTokenByAdmin(address,uint256)",showInvestorVaultFull(address)
+"buyfp(uint256,uint256)",showInvestorVaultFull(address)
+"withdrawByAdmin(address,uint256,address)",showInvestorVaultFull(address)
+setOwner(address),"buyfp(uint256,uint256)"
+setOwner(address),emptyWrongToken(address)
+withdraw(uint256),"withdrawByAdmin(address,uint256,address)"
+"withdrawTokenByAdmin(address,uint256)","withdrawByAdmin(address,uint256,address)"
+"buyfp(uint256,uint256)","withdrawByAdmin(address,uint256,address)"
+setOwner(address),"withdrawByAdmin(address,uint256,address)"

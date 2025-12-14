@@ -1,0 +1,79 @@
+Contract:			CrowdsaleToken
+Number of Relevant Branches:	5
+Number of Branches Covered:		4
+Runtime: 											1115.957886
+Blockchain Time: 							943.238069
+Iterations										
+11
+--------------------------------------------------
+METHODS:
+
+Constructor:
+	Inputs :[{'name': '_name', 'type': 'string'}, {'name': '_symbol', 'type': 'string'}, {'name': '_initialSupply', 'type': 'uint256'}, {'name': '_decimals', 'type': 'uint256'}, {'name': '_mintable', 'type': 'bool'}]
+	Payable: nonpayable
+transferOwnership:
+
+
+--------------------------------------------------
+
+            TESTS:
+
+	(1) constructor(['wFAnyOOveQyVay', 'ZVtELctmpUIWDJiBUcQflxanmrOPaniJHkaKscSEohFchmpAcDNxDhaEwiVTsZBlUNVHLeORBeNjBsmydvhXKrBKXcKYtmQYwuYrtTLTxIlRaDmTYkQSfws YH', 108730292603065456790734506058657440799649411675276962081907973299335496270340, 20, True], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) transferOwnership(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(3) transferOwnership(['0xC352C77703A000382541035D9F12F27608999903'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(4) transferOwnership(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) transferOwnership(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) transferOwnership(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(7) transferOwnership(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor(['wFAnyOOveQyVay', 'ZVtELctmpUIWDJiBUcQflxanmrOPaniJHkaKscSEohFchmpAcDNxDhaEwiVTsZBlUNVHLeORBeNjBsmydvhXKrBKXcKYtmQYwuYrtTLTxIlRaDmTYkQSfws YH', 108730292603065456790734506058657440799649411675276962081907973299335496270340, 20, True], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) transferOwnership(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(3) transferOwnership(['0xC352C77703A000382541035D9F12F27608999903'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(4) transferOwnership(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) transferOwnership(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) transferOwnership(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(7) transferOwnership(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor(['wFAnyOOveQyVay', 'ZVtELctmpUIWDJiBUcQflxanmrOPaniJHkaKscSEohFchmpAcDNxDhaEwiVTsZBlUNVHLeORBeNjBsmydvhXKrBKXcKYtmQYwuYrtTLTxIlRaDmTYkQSfws YH', 108730292603065456790734506058657440799649411675276962081907973299335496270340, 20, True], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) transferOwnership(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(3) transferOwnership(['0xC352C77703A000382541035D9F12F27608999903'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(4) transferOwnership(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) transferOwnership(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) transferOwnership(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(7) transferOwnership(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor(['wFAnyOOveQyVay', 'ZVtELctmpUIWDJiBUcQflxanmrOPaniJHkaKscSEohFchmpAcDNxDhaEwiVTsZBlUNVHLeORBeNjBsmydvhXKrBKXcKYtmQYwuYrtTLTxIlRaDmTYkQSfws YH', 108730292603065456790734506058657440799649411675276962081907973299335496270340, 20, True], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) transferOwnership(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(3) transferOwnership(['0xC352C77703A000382541035D9F12F27608999903'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(4) transferOwnership(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) transferOwnership(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) transferOwnership(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(7) transferOwnership(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true

@@ -1,0 +1,13 @@
+Source Function,Target Function
+transferOwnership(address),renounceOwnership()
+renounceOwnership(),"_createCompany(bytes32,bytes32)"
+transferOwnership(address),"_createCompany(bytes32,bytes32)"
+renounceOwnership(),"_updateCompany(bytes32,bytes32)"
+transferOwnership(address),"_updateCompany(bytes32,bytes32)"
+renounceOwnership(),"_updateCompanies(bytes32[],bytes32[])"
+transferOwnership(address),"_updateCompanies(bytes32[],bytes32[])"
+renounceOwnership(),transferOwnership(address)
+renounceOwnership(),_deleteCompany(bytes32)
+transferOwnership(address),_deleteCompany(bytes32)
+renounceOwnership(),"_createCompanies(bytes32[],bytes32[])"
+transferOwnership(address),"_createCompanies(bytes32[],bytes32[])"

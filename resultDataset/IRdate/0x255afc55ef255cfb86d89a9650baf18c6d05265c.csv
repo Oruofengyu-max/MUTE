@@ -1,0 +1,27 @@
+Source Function,Target Function
+revoke(address),Balance()
+destroyBeneficiary(address),Balance()
+clearAll(),Balance()
+transferOwnership(address),Balance()
+"addBeneficiary(address,uint256,uint256,uint256,uint256,bool,string)",Balance()
+destroyBeneficiary(address),revoke(address)
+clearAll(),revoke(address)
+"addBeneficiary(address,uint256,uint256,uint256,uint256,bool,string)",revoke(address)
+transferOwnership(address),revoke(address)
+revoke(address),destroy()
+destroyBeneficiary(address),destroy()
+clearAll(),destroy()
+transferOwnership(address),destroy()
+"addBeneficiary(address,uint256,uint256,uint256,uint256,bool,string)",destroy()
+revoke(address),destroyBeneficiary(address)
+clearAll(),destroyBeneficiary(address)
+transferOwnership(address),destroyBeneficiary(address)
+"addBeneficiary(address,uint256,uint256,uint256,uint256,bool,string)",destroyBeneficiary(address)
+revoke(address),clearAll()
+destroyBeneficiary(address),clearAll()
+transferOwnership(address),clearAll()
+"addBeneficiary(address,uint256,uint256,uint256,uint256,bool,string)",clearAll()
+revoke(address),"addBeneficiary(address,uint256,uint256,uint256,uint256,bool,string)"
+destroyBeneficiary(address),"addBeneficiary(address,uint256,uint256,uint256,uint256,bool,string)"
+clearAll(),"addBeneficiary(address,uint256,uint256,uint256,uint256,bool,string)"
+transferOwnership(address),"addBeneficiary(address,uint256,uint256,uint256,uint256,bool,string)"

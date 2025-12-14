@@ -1,0 +1,19 @@
+Source Function,Target Function
+changeAll(address),"approve(address,uint256)"
+changeAdmin(address),"approve(address,uint256)"
+"pause(bool,bool)","approve(address,uint256)"
+changeAdmin(address),changeAll(address)
+"pause(bool,bool)",changeAll(address)
+changeAll(address),"decreaseApproval(address,uint256)"
+changeAdmin(address),"decreaseApproval(address,uint256)"
+"pause(bool,bool)","decreaseApproval(address,uint256)"
+changeAll(address),changeAdmin(address)
+"pause(bool,bool)",changeAdmin(address)
+changeAll(address),"increaseApproval(address,uint256)"
+changeAdmin(address),"increaseApproval(address,uint256)"
+"pause(bool,bool)","increaseApproval(address,uint256)"
+changeAll(address),"emergencyERC20Drain(address,uint256)"
+changeAdmin(address),"emergencyERC20Drain(address,uint256)"
+"pause(bool,bool)","emergencyERC20Drain(address,uint256)"
+changeAll(address),"pause(bool,bool)"
+changeAdmin(address),"pause(bool,bool)"

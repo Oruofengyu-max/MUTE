@@ -1,0 +1,23 @@
+Source Function,Target Function
+addAuthority(address),"changeAuthority(address,address)"
+"propose(address,uint256,bytes)","changeAuthority(address,address)"
+revoke(bytes32),"changeAuthority(address,address)"
+removeAuthority(address),"changeAuthority(address,address)"
+addAuthority(address),revoke(bytes32)
+"propose(address,uint256,bytes)",revoke(bytes32)
+"changeAuthority(address,address)",revoke(bytes32)
+removeAuthority(address),revoke(bytes32)
+addAuthority(address),"hasConfirmed(bytes32,address)"
+"propose(address,uint256,bytes)","hasConfirmed(bytes32,address)"
+"changeAuthority(address,address)","hasConfirmed(bytes32,address)"
+revoke(bytes32),"hasConfirmed(bytes32,address)"
+removeAuthority(address),"hasConfirmed(bytes32,address)"
+addAuthority(address),removeAuthority(address)
+"propose(address,uint256,bytes)",removeAuthority(address)
+"changeAuthority(address,address)",removeAuthority(address)
+revoke(bytes32),removeAuthority(address)
+addAuthority(address),getAuthorityIndex(address)
+"propose(address,uint256,bytes)",getAuthorityIndex(address)
+"changeAuthority(address,address)",getAuthorityIndex(address)
+revoke(bytes32),getAuthorityIndex(address)
+removeAuthority(address),getAuthorityIndex(address)

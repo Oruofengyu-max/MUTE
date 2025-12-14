@@ -1,0 +1,12 @@
+Source Function,Target Function
+setContractStakeToken(address),"depositToken(address,uint8,uint256)"
+setContractErc20Token(address),"depositToken(address,uint8,uint256)"
+changeOwner(address),"depositToken(address,uint8,uint256)"
+setContractStakeToken(address),withdrawToken(address)
+"depositToken(address,uint8,uint256)",withdrawToken(address)
+setContractErc20Token(address),withdrawToken(address)
+changeOwner(address),withdrawToken(address)
+setContractStakeToken(address),withdrawOwnerToken(uint256)
+"depositToken(address,uint8,uint256)",withdrawOwnerToken(uint256)
+setContractErc20Token(address),withdrawOwnerToken(uint256)
+changeOwner(address),withdrawOwnerToken(uint256)

@@ -1,0 +1,17 @@
+Source Function,Target Function
+"approve(address,uint256)","transferFrom(address,address,uint256)"
+mint(uint256),"transferFrom(address,address,uint256)"
+"icoTransfer(address,uint256)","transferFrom(address,address,uint256)"
+"refer(address,address)","transferFrom(address,address,uint256)"
+"safeApprove(address,uint256,uint256)","transferFrom(address,address,uint256)"
+"approve(address,uint256)",closeIco()
+"transferFrom(address,address,uint256)",closeIco()
+mint(uint256),closeIco()
+"icoTransfer(address,uint256)",closeIco()
+"refer(address,address)",closeIco()
+"safeApprove(address,uint256,uint256)",closeIco()
+"approve(address,uint256)","safeApprove(address,uint256,uint256)"
+"transferFrom(address,address,uint256)","safeApprove(address,uint256,uint256)"
+mint(uint256),"safeApprove(address,uint256,uint256)"
+"icoTransfer(address,uint256)","safeApprove(address,uint256,uint256)"
+"refer(address,address)","safeApprove(address,uint256,uint256)"

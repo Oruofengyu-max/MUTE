@@ -1,0 +1,13 @@
+Source Function,Target Function
+finishMinting(),"mint(address,uint256)"
+bulkMint(uint256[]),"mint(address,uint256)"
+transferOwnership(address),"mint(address,uint256)"
+"mint(address,uint256)",finishMinting()
+bulkMint(uint256[]),finishMinting()
+transferOwnership(address),finishMinting()
+"mint(address,uint256)",bulkMint(uint256[])
+finishMinting(),bulkMint(uint256[])
+transferOwnership(address),bulkMint(uint256[])
+"mint(address,uint256)",transferOwnership(address)
+finishMinting(),transferOwnership(address)
+bulkMint(uint256[]),transferOwnership(address)

@@ -1,0 +1,12 @@
+Source Function,Target Function
+incAdminEpoch(),upgradeMe(address)
+"setPermissions(address,bool)",upgradeMe(address)
+"upgradePermissionedSC(address,address)",upgradeMe(address)
+setOwner(address),"setPermissions(address,bool)"
+incAdminEpoch(),"setPermissions(address,bool)"
+doLockdown(),"setPermissions(address,bool)"
+setOwner(address),"upgradePermissionedSC(address,address)"
+incAdminEpoch(),"upgradePermissionedSC(address,address)"
+doLockdown(),"upgradePermissionedSC(address,address)"
+setOwner(address),doLockdown()
+incAdminEpoch(),doLockdown()

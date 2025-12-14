@@ -1,0 +1,120 @@
+Contract:			ERC20Swap
+Number of Relevant Branches:	9
+Number of Branches Covered:		5
+Runtime: 											975.854706
+Blockchain Time: 							795.252755
+Iterations										
+11
+--------------------------------------------------
+METHODS:
+
+Constructor:
+	Inputs :[{'internalType': 'string', 'name': '_VERSION', 'type': 'string'}, {'internalType': 'address', 'name': '_TOKEN_ADDRESS', 'type': 'address'}]
+	Payable: nonpayable
+audit:
+
+auditSecret:
+
+brokerFees:
+
+initiatable:
+
+redeemable:
+
+redeemedAt:
+
+refundable:
+
+swapID:
+
+initiate:
+
+initiateWithFees:
+
+redeem:
+
+redeemToSpender:
+
+refund:
+
+withdrawBrokerFees:
+
+
+--------------------------------------------------
+
+            TESTS:
+
+	(1) constructor(['"b"', '0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) refund(['0x6e6b6d426f63527976796e4b20666a73474952675953474c565252777858656c'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) audit(['0x686e6d6370532079474c474d4f665946656e46436d43704e7655776c63554e70'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) refundable(['0x7a646d6f5a4167526d4370455a4e4f7063457a6f58415351546d65594775764c'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) redeemedAt(['0x7a6159536161744d4661535a5a546e616472597a4d56714649416b495066506f'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(6) audit(['0x686e754d4d67424c797044745046787557746c4f776e7a42567a6c7258665161'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) auditSecret(['0x6320444e7761724244634f6268447a51516f784a46684a75777254524c676c4b'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor(['"b"', '0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) refund(['0x6e6b6d426f63527976796e4b20666a73474952675953474c565252777858656c'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) audit(['0x686e6d6370532079474c474d4f665946656e46436d43704e7655776c63554e70'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) refundable(['0x7a646d6f5a4167526d4370455a4e4f7063457a6f58415351546d65594775764c'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) redeemedAt(['0x7a6159536161744d4661535a5a546e616472597a4d56714649416b495066506f'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(6) audit(['0x686e754d4d67424c797044745046787557746c4f776e7a42567a6c7258665161'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) auditSecret(['0x6320444e7761724244634f6268447a51516f784a46684a75777254524c676c4b'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor(['"b"', '0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) refund(['0x6e6b6d426f63527976796e4b20666a73474952675953474c565252777858656c'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) audit(['0x686e6d6370532079474c474d4f665946656e46436d43704e7655776c63554e70'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) refundable(['0x7a646d6f5a4167526d4370455a4e4f7063457a6f58415351546d65594775764c'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) redeemedAt(['0x7a6159536161744d4661535a5a546e616472597a4d56714649416b495066506f'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(6) audit(['0x686e754d4d67424c797044745046787557746c4f776e7a42567a6c7258665161'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) auditSecret(['0x6320444e7761724244634f6268447a51516f784a46684a75777254524c676c4b'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor(['"b"', '0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) refund(['0x6e6b6d426f63527976796e4b20666a73474952675953474c565252777858656c'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) audit(['0x686e6d6370532079474c474d4f665946656e46436d43704e7655776c63554e70'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) refundable(['0x7a646d6f5a4167526d4370455a4e4f7063457a6f58415351546d65594775764c'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) redeemedAt(['0x7a6159536161744d4661535a5a546e616472597a4d56714649416b495066506f'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(6) audit(['0x686e754d4d67424c797044745046787557746c4f776e7a42567a6c7258665161'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) auditSecret(['0x6320444e7761724244634f6268447a51516f784a46684a75777254524c676c4b'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+
+	(1) constructor(['"b"', '0xd67d275C3743A0a83278B9FF31c38Faf135BB928'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) refund(['0x6e6b6d426f63527976796e4b20666a73474952675953474c565252777858656c'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) audit(['0x686e6d6370532079474c474d4f665946656e46436d43704e7655776c63554e70'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) refundable(['0x7a646d6f5a4167526d4370455a4e4f7063457a6f58415351546d65594775764c'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) redeemedAt(['0x7a6159536161744d4661535a5a546e616472597a4d56714649416b495066506f'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(6) audit(['0x686e754d4d67424c797044745046787557746c4f776e7a42567a6c7258665161'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) auditSecret(['0x6320444e7761724244634f6268447a51516f784a46684a75777254524c676c4b'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 

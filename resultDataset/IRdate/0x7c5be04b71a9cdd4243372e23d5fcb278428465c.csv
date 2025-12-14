@@ -1,0 +1,24 @@
+Source Function,Target Function
+"approve(address,uint256)","transferFrom(address,address,uint256)"
+burnToken(uint256),"transferFrom(address,address,uint256)"
+"setFrozen(address,bool,uint256)","transferFrom(address,address,uint256)"
+"transfer(address,uint256)","transferFrom(address,address,uint256)"
+burnToken(uint256),transferAdminship(address)
+setSupplyLock(bool),transferAdminship(address)
+transferAdminship(address),"claimTokens(address,address)"
+burnToken(uint256),"claimTokens(address,address)"
+setSupplyLock(bool),"claimTokens(address,address)"
+transferAdminship(address),burnToken(uint256)
+setSupplyLock(bool),burnToken(uint256)
+transferAdminship(address),"setFrozen(address,bool,uint256)"
+burnToken(uint256),"setFrozen(address,bool,uint256)"
+setSupplyLock(bool),"setFrozen(address,bool,uint256)"
+"approve(address,uint256)","setFrozen(address,bool,uint256)"
+"transferFrom(address,address,uint256)","setFrozen(address,bool,uint256)"
+"transfer(address,uint256)","setFrozen(address,bool,uint256)"
+"approve(address,uint256)","transfer(address,uint256)"
+"transferFrom(address,address,uint256)","transfer(address,uint256)"
+burnToken(uint256),"transfer(address,uint256)"
+"setFrozen(address,bool,uint256)","transfer(address,uint256)"
+transferAdminship(address),setSupplyLock(bool)
+burnToken(uint256),setSupplyLock(bool)

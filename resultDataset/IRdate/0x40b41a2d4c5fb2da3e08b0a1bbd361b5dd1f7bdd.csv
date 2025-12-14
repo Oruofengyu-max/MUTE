@@ -1,0 +1,11 @@
+Source Function,Target Function
+burn(uint256),"approve(address,uint256)"
+"setApprovalForAll(address,bool)","approve(address,uint256)"
+"mintPaper(string,string)","approve(address,uint256)"
+"approve(address,uint256)",burn(uint256)
+"setApprovalForAll(address,bool)",burn(uint256)
+"mintPaper(string,string)",burn(uint256)
+"approve(address,uint256)",ownerOf(uint256)
+burn(uint256),ownerOf(uint256)
+"setApprovalForAll(address,bool)",ownerOf(uint256)
+"mintPaper(string,string)",ownerOf(uint256)

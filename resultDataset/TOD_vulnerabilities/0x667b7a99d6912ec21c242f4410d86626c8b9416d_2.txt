@@ -1,0 +1,34 @@
+Contract:			MemeAwards2018
+Number of Relevant Branches:	1
+Number of Branches Covered:		1
+Runtime: 											163.275126
+Blockchain Time: 							134.361502
+Iterations										
+1
+--------------------------------------------------
+METHODS:
+
+Constructor:
+	Inputs :[{'name': 'name', 'type': 'string'}, {'name': 'symbol', 'type': 'string'}]
+	Payable: nonpayable
+supportsInterface:
+
+
+--------------------------------------------------
+
+            TESTS:
+
+	(1) constructor(['"a"', '"a"'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) supportsInterface(['0x76687370'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) supportsInterface(['0x474b7969'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(4) supportsInterface(['0x79795063'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) supportsInterface(['0x4c526452'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(6) supportsInterface(['0x796c4d71'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) supportsInterface(['0x4a466d59'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true

@@ -1,0 +1,27 @@
+Source Function,Target Function
+"blacklistParty(address,bool)","buyPerUnit(address,uint256)"
+unlistDda(address),"buyPerUnit(address,uint256)"
+"list(address,uint256,uint256)","buyPerUnit(address,uint256)"
+"listDda(address,uint256,uint256,bool)","buyPerUnit(address,uint256)"
+"blacklistParty(address,bool)",unlist(uint256)
+"buyPerUnit(address,uint256)",unlist(uint256)
+unlistDda(address),unlist(uint256)
+"list(address,uint256,uint256)",unlist(uint256)
+"listDda(address,uint256,uint256,bool)",unlist(uint256)
+"blacklistParty(address,bool)",unlistDda(address)
+"buyPerUnit(address,uint256)",unlistDda(address)
+"list(address,uint256,uint256)",unlistDda(address)
+"listDda(address,uint256,uint256,bool)",unlistDda(address)
+"blacklistParty(address,bool)",buy(uint256)
+"buyPerUnit(address,uint256)",buy(uint256)
+unlistDda(address),buy(uint256)
+"list(address,uint256,uint256)",buy(uint256)
+"listDda(address,uint256,uint256,bool)",buy(uint256)
+"blacklistParty(address,bool)","list(address,uint256,uint256)"
+"buyPerUnit(address,uint256)","list(address,uint256,uint256)"
+unlistDda(address),"list(address,uint256,uint256)"
+"listDda(address,uint256,uint256,bool)","list(address,uint256,uint256)"
+"blacklistParty(address,bool)","listDda(address,uint256,uint256,bool)"
+"buyPerUnit(address,uint256)","listDda(address,uint256,uint256,bool)"
+unlistDda(address),"listDda(address,uint256,uint256,bool)"
+"list(address,uint256,uint256)","listDda(address,uint256,uint256,bool)"

@@ -1,0 +1,13 @@
+Source Function,Target Function
+transferOwnership(address),"getToken(uint256,address)"
+setLockTime(),"getToken(uint256,address)"
+setHHRAddress(address),"getToken(uint256,address)"
+setLockTime(),transferOwnership(address)
+setHHRAddress(address),transferOwnership(address)
+transferOwnership(address),setLockTime()
+setHHRAddress(address),setLockTime()
+transferOwnership(address),cashOut(uint256)
+setLockTime(),cashOut(uint256)
+setHHRAddress(address),cashOut(uint256)
+transferOwnership(address),setHHRAddress(address)
+setLockTime(),setHHRAddress(address)

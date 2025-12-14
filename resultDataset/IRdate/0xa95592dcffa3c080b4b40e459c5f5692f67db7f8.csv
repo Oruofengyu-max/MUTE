@@ -1,0 +1,16 @@
+Source Function,Target Function
+"updateWhitelist(address,bool)","multivestBuy(address,uint256)"
+unsetAllowedMultivest(address),"multivestBuy(address,uint256)"
+refund(),"multivestBuy(address,uint256)"
+setAllowedMultivest(address),"multivestBuy(address,uint256)"
+"updateWhitelist(address,bool)",refund()
+unsetAllowedMultivest(address),refund()
+setAllowedMultivest(address),refund()
+"updateWhitelist(address,bool)","multivestBuy(address,uint8,bytes32,bytes32)"
+unsetAllowedMultivest(address),"multivestBuy(address,uint8,bytes32,bytes32)"
+refund(),"multivestBuy(address,uint8,bytes32,bytes32)"
+setAllowedMultivest(address),"multivestBuy(address,uint8,bytes32,bytes32)"
+"updateWhitelist(address,bool)",setEtherInUSD(string)
+unsetAllowedMultivest(address),setEtherInUSD(string)
+refund(),setEtherInUSD(string)
+setAllowedMultivest(address),setEtherInUSD(string)

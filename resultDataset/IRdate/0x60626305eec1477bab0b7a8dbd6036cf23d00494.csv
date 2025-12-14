@@ -1,0 +1,13 @@
+Source Function,Target Function
+"transferFrom(address,address,uint256)","approve(address,uint256)"
+addToBlackList(address),"approve(address,uint256)"
+delFromBlackList(address),"approve(address,uint256)"
+"approveAndCall(address,uint256,bytes)","approve(address,uint256)"
+"approve(address,uint256)","transferFrom(address,address,uint256)"
+addToBlackList(address),"transferFrom(address,address,uint256)"
+delFromBlackList(address),"transferFrom(address,address,uint256)"
+"approveAndCall(address,uint256,bytes)","transferFrom(address,address,uint256)"
+"approve(address,uint256)","approveAndCall(address,uint256,bytes)"
+"transferFrom(address,address,uint256)","approveAndCall(address,uint256,bytes)"
+addToBlackList(address),"approveAndCall(address,uint256,bytes)"
+delFromBlackList(address),"approveAndCall(address,uint256,bytes)"

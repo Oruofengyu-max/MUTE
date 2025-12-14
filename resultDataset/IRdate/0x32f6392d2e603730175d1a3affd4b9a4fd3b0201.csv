@@ -1,0 +1,6 @@
+Source Function,Target Function
+"approve(address,uint256)","transferFrom(address,address,uint256)"
+"approveAndCall(address,uint256,bytes)","transferFrom(address,address,uint256)"
+"freezeAccount(address,bool)","transferFrom(address,address,uint256)"
+transferOwnership(address),withdrawEther()
+transferOwnership(address),"freezeAccount(address,bool)"

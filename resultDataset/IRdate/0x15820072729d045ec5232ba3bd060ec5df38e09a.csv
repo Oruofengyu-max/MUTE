@@ -1,0 +1,25 @@
+Source Function,Target Function
+"setTokenURI(uint256,string)","approve(address,uint256)"
+"mint(address,uint256)","approve(address,uint256)"
+burn(uint256),"approve(address,uint256)"
+transferSuperuser(address),"approve(address,uint256)"
+"batchMint(address[],uint256[])","approve(address,uint256)"
+"setApprovalForAll(address,bool)","approve(address,uint256)"
+"approve(address,uint256)",burn(uint256)
+"setTokenURI(uint256,string)",burn(uint256)
+"mint(address,uint256)",burn(uint256)
+transferSuperuser(address),burn(uint256)
+"batchMint(address[],uint256[])",burn(uint256)
+"setApprovalForAll(address,bool)",burn(uint256)
+"approve(address,uint256)",ownerOf(uint256)
+"setTokenURI(uint256,string)",ownerOf(uint256)
+"mint(address,uint256)",ownerOf(uint256)
+burn(uint256),ownerOf(uint256)
+transferSuperuser(address),ownerOf(uint256)
+"batchMint(address[],uint256[])",ownerOf(uint256)
+"setApprovalForAll(address,bool)",ownerOf(uint256)
+setTavernContract(address),renounceOwnership()
+"mint(address,uint256)",renounceOwnership()
+burn(uint256),renounceOwnership()
+"batchMint(address[],uint256[])",renounceOwnership()
+transferOwnership(address),renounceOwnership()

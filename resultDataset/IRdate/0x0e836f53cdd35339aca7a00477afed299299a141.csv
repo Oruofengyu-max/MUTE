@@ -1,0 +1,21 @@
+Source Function,Target Function
+"approve(address,uint256)","transferFrom(address,address,uint256)"
+burn(uint256),"transferFrom(address,address,uint256)"
+"adminClaimAirdrop(address,uint256)","transferFrom(address,address,uint256)"
+"adminClaimAirdropMultiple(address[],uint256)","transferFrom(address,address,uint256)"
+"transfer(address,uint256)","transferFrom(address,address,uint256)"
+"approve(address,uint256)",burn(uint256)
+"transferFrom(address,address,uint256)",burn(uint256)
+"adminClaimAirdrop(address,uint256)",burn(uint256)
+"adminClaimAirdropMultiple(address[],uint256)",burn(uint256)
+"transfer(address,uint256)",burn(uint256)
+burn(uint256),finishDistribution()
+"adminClaimAirdrop(address,uint256)",finishDistribution()
+"adminClaimAirdropMultiple(address[],uint256)",finishDistribution()
+updateTokensPerEth(uint256),finishDistribution()
+transferOwnership(address),finishDistribution()
+"approve(address,uint256)","transfer(address,uint256)"
+"transferFrom(address,address,uint256)","transfer(address,uint256)"
+burn(uint256),"transfer(address,uint256)"
+"adminClaimAirdrop(address,uint256)","transfer(address,uint256)"
+"adminClaimAirdropMultiple(address[],uint256)","transfer(address,uint256)"

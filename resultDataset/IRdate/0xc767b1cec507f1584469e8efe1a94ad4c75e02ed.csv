@@ -1,0 +1,12 @@
+Source Function,Target Function
+"claimUnits(uint256,bool)",purchaseFactory(uint256)
+"addFactory(uint256,uint256,address,uint256)",purchaseFactory(uint256)
+addPremiumUnit(address),purchaseFactory(uint256)
+purchaseFactory(uint256),"claimUnits(uint256,bool)"
+"addFactory(uint256,uint256,address,uint256)","claimUnits(uint256,bool)"
+addPremiumUnit(address),"claimUnits(uint256,bool)"
+"updateFactoryConfig(uint256,uint256,uint256)","addFactory(uint256,uint256,address,uint256)"
+purchaseFactory(uint256),"addFactory(uint256,uint256,address,uint256)"
+"claimUnits(uint256,bool)","addFactory(uint256,uint256,address,uint256)"
+addPremiumUnit(address),"addFactory(uint256,uint256,address,uint256)"
+"updateFactoryConfig(uint256,uint256,uint256)",addPremiumUnit(address)

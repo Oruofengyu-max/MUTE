@@ -1,0 +1,17 @@
+Source Function,Target Function
+changeCreator(address),close()
+freeze(uint256),close()
+setAllSupply(uint256),close()
+close(),"issueTokens(address,uint256)"
+changeCreator(address),"issueTokens(address,uint256)"
+freeze(uint256),"issueTokens(address,uint256)"
+setAllSupply(uint256),"issueTokens(address,uint256)"
+close(),changeCreator(address)
+freeze(uint256),changeCreator(address)
+setAllSupply(uint256),changeCreator(address)
+close(),freeze(uint256)
+changeCreator(address),freeze(uint256)
+setAllSupply(uint256),freeze(uint256)
+close(),setAllSupply(uint256)
+changeCreator(address),setAllSupply(uint256)
+freeze(uint256),setAllSupply(uint256)

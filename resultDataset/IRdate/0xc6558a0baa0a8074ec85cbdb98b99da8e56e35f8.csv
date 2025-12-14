@@ -1,0 +1,22 @@
+Source Function,Target Function
+"approve(address,uint256)","transferFrom(address,address,uint256)"
+"mint(address,uint256)","transferFrom(address,address,uint256)"
+"decreaseApproval(address,uint256)","transferFrom(address,address,uint256)"
+"transfer(address,uint256)","transferFrom(address,address,uint256)"
+"increaseApproval(address,uint256)","transferFrom(address,address,uint256)"
+sell(uint256),"transferFrom(address,address,uint256)"
+"freezeAccount(address,bool)","transferFrom(address,address,uint256)"
+"approve(address,uint256)","transfer(address,uint256)"
+"transferFrom(address,address,uint256)","transfer(address,uint256)"
+"mint(address,uint256)","transfer(address,uint256)"
+"decreaseApproval(address,uint256)","transfer(address,uint256)"
+"increaseApproval(address,uint256)","transfer(address,uint256)"
+sell(uint256),"transfer(address,uint256)"
+"freezeAccount(address,bool)","transfer(address,uint256)"
+"approve(address,uint256)",sell(uint256)
+"transferFrom(address,address,uint256)",sell(uint256)
+"mint(address,uint256)",sell(uint256)
+"decreaseApproval(address,uint256)",sell(uint256)
+"transfer(address,uint256)",sell(uint256)
+"increaseApproval(address,uint256)",sell(uint256)
+"freezeAccount(address,bool)",sell(uint256)

@@ -1,0 +1,20 @@
+Source Function,Target Function
+"approve(address,uint256)","transferFrom(address,address,uint256)"
+referral(address),"transferFrom(address,address,uint256)"
+"transfer(address,uint256)","transferFrom(address,address,uint256)"
+transferSupply(address),"transferFrom(address,address,uint256)"
+setblnpereth(uint256),referral(address)
+setbounty(uint256),referral(address)
+transferSupply(address),referral(address)
+triggerSale(bool),referral(address)
+"approve(address,uint256)",referral(address)
+"transferFrom(address,address,uint256)",referral(address)
+"transfer(address,uint256)",referral(address)
+"approve(address,uint256)","transfer(address,uint256)"
+"transferFrom(address,address,uint256)","transfer(address,uint256)"
+referral(address),"transfer(address,uint256)"
+transferSupply(address),"transfer(address,uint256)"
+"approve(address,uint256)",transferSupply(address)
+"transferFrom(address,address,uint256)",transferSupply(address)
+referral(address),transferSupply(address)
+"transfer(address,uint256)",transferSupply(address)

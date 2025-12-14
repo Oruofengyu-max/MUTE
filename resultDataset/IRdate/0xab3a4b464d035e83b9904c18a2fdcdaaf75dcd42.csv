@@ -1,0 +1,10 @@
+Source Function,Target Function
+"approve(address,uint256)","transferFrom(address,address,uint256)"
+"decreaseApproval(address,uint256)","transferFrom(address,address,uint256)"
+"increaseApproval(address,uint256)","transferFrom(address,address,uint256)"
+unlock(),"distribute(address,address)"
+transferOwnership(address),"distribute(address,address)"
+"distribute(address,address)",unlock()
+transferOwnership(address),unlock()
+"distribute(address,address)",transferOwnership(address)
+unlock(),transferOwnership(address)

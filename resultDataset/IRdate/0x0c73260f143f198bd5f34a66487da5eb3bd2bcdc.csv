@@ -1,0 +1,21 @@
+Source Function,Target Function
+"setAirdropAgent(address,bool)","airdropDynamic(address[],uint256[])"
+getFreeTokens(),"airdropDynamic(address[],uint256[])"
+addAddressToCraneList(address[]),"airdropDynamic(address[],uint256[])"
+airdrop(address[]),"airdropDynamic(address[],uint256[])"
+"airdropDynamic(address[],uint256[])",getFreeTokens()
+changeCraneStatus(bool),getFreeTokens()
+changeTokenAmount(uint256),getFreeTokens()
+airdrop(address[]),getFreeTokens()
+changeTokenAddress(address),getFreeTokens()
+transferOwnership(address),getFreeTokens()
+"setAirdropAgent(address,bool)",getFreeTokens()
+addAddressToCraneList(address[]),getFreeTokens()
+"setAirdropAgent(address,bool)",addAddressToCraneList(address[])
+"airdropDynamic(address[],uint256[])",addAddressToCraneList(address[])
+getFreeTokens(),addAddressToCraneList(address[])
+airdrop(address[]),addAddressToCraneList(address[])
+"setAirdropAgent(address,bool)",airdrop(address[])
+"airdropDynamic(address[],uint256[])",airdrop(address[])
+getFreeTokens(),airdrop(address[])
+addAddressToCraneList(address[]),airdrop(address[])

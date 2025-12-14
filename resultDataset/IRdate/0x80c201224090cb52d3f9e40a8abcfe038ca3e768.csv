@@ -1,0 +1,9 @@
+Source Function,Target Function
+setSBFWContractAddress(address),"allowTransaction(uint256,address,address)"
+"setOwner(address,string,bytes32)","allowTransaction(uint256,address,address)"
+setBypassForAll(bool),"allowTransaction(uint256,address,address)"
+"setSuperOwner(address,string,bytes32)","allowTransaction(uint256,address,address)"
+setSBFWContractAddress(address),"allowAccess(address,bytes4)"
+"setOwner(address,string,bytes32)","allowAccess(address,bytes4)"
+setBypassForAll(bool),"allowAccess(address,bytes4)"
+"setSuperOwner(address,string,bytes32)","allowAccess(address,bytes4)"

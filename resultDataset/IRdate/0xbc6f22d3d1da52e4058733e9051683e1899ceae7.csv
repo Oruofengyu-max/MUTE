@@ -1,0 +1,23 @@
+Source Function,Target Function
+"approve(address,uint256)","transferFrom(address,address,uint256)"
+"transferByOwner(address,address,uint256)","transferFrom(address,address,uint256)"
+"transfer(address,uint256)","transferFrom(address,address,uint256)"
+acceptOwnership(),unpause()
+pause(),unpause()
+transferOwnership(address),unpause()
+unpause(),"transferByOwner(address,address,uint256)"
+acceptOwnership(),"transferByOwner(address,address,uint256)"
+pause(),"transferByOwner(address,address,uint256)"
+transferOwnership(address),"transferByOwner(address,address,uint256)"
+"approve(address,uint256)","transferByOwner(address,address,uint256)"
+"transferFrom(address,address,uint256)","transferByOwner(address,address,uint256)"
+"transfer(address,uint256)","transferByOwner(address,address,uint256)"
+unpause(),pause()
+acceptOwnership(),pause()
+transferOwnership(address),pause()
+"approve(address,uint256)","transfer(address,uint256)"
+"transferFrom(address,address,uint256)","transfer(address,uint256)"
+"transferByOwner(address,address,uint256)","transfer(address,uint256)"
+unpause(),transferOwnership(address)
+acceptOwnership(),transferOwnership(address)
+pause(),transferOwnership(address)

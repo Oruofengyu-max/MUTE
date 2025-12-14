@@ -1,0 +1,13 @@
+Source Function,Target Function
+"approve(address,uint256)","transferFrom(address,address,uint256)"
+burn(),"transferFrom(address,address,uint256)"
+"sendBatchCS(address[],uint256[])","transferFrom(address,address,uint256)"
+"transfer(address,uint256)","transferFrom(address,address,uint256)"
+"approve(address,uint256)",burn()
+"transferFrom(address,address,uint256)",burn()
+"sendBatchCS(address[],uint256[])",burn()
+"transfer(address,uint256)",burn()
+"approve(address,uint256)","transfer(address,uint256)"
+"transferFrom(address,address,uint256)","transfer(address,uint256)"
+burn(),"transfer(address,uint256)"
+"sendBatchCS(address[],uint256[])","transfer(address,uint256)"

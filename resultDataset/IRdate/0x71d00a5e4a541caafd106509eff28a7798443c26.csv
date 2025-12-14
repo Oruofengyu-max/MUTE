@@ -1,0 +1,23 @@
+Source Function,Target Function
+updateMaintenanceAddress(address),calculateEthereumReceived(uint256)
+"transfer(address,uint256)",calculateEthereumReceived(uint256)
+transferOwnership(address),calculateEthereumReceived(uint256)
+removeAddressesFromWhitelist(address[]),"transfer(address,uint256)"
+removeAddressFromWhitelist(address),"transfer(address,uint256)"
+addAddressToWhitelist(address),"transfer(address,uint256)"
+addAddressesToWhitelist(address[]),"transfer(address,uint256)"
+reinvestByProxy(address),"transfer(address,uint256)"
+reinvest(),"transfer(address,uint256)"
+removeAddressesFromWhitelist(address[]),"buyFor(address,address)"
+removeAddressFromWhitelist(address),"buyFor(address,address)"
+addAddressToWhitelist(address),"buyFor(address,address)"
+"transfer(address,uint256)","buyFor(address,address)"
+addAddressesToWhitelist(address[]),"buyFor(address,address)"
+reinvestByProxy(address),"buyFor(address,address)"
+reinvest(),"buyFor(address,address)"
+removeAddressesFromWhitelist(address[]),reinvestByProxy(address)
+removeAddressFromWhitelist(address),reinvestByProxy(address)
+addAddressToWhitelist(address),reinvestByProxy(address)
+"transfer(address,uint256)",reinvestByProxy(address)
+addAddressesToWhitelist(address[]),reinvestByProxy(address)
+reinvest(),reinvestByProxy(address)

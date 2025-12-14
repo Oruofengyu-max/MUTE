@@ -1,0 +1,17 @@
+Source Function,Target Function
+"buyTicket(address,uint8,uint32,uint16)",sweep()
+"buyCombo(address,uint32,uint16)",sweep()
+"setBaseRound(uint16,uint64)",sweep()
+"announceWinningNum(uint16,uint16,uint16,uint16)",sweep()
+claimPrize(uint16),"buyTicket(address,uint8,uint32,uint16)"
+"buyCombo(address,uint32,uint16)","buyTicket(address,uint8,uint32,uint16)"
+"announceWinningNum(uint16,uint16,uint16,uint16)","buyTicket(address,uint8,uint32,uint16)"
+"buyTicket(address,uint8,uint32,uint16)",claimPrize(uint16)
+"buyCombo(address,uint32,uint16)",claimPrize(uint16)
+"announceWinningNum(uint16,uint16,uint16,uint16)",claimPrize(uint16)
+"buyTicket(address,uint8,uint32,uint16)","buyCombo(address,uint32,uint16)"
+claimPrize(uint16),"buyCombo(address,uint32,uint16)"
+"announceWinningNum(uint16,uint16,uint16,uint16)","buyCombo(address,uint32,uint16)"
+"buyTicket(address,uint8,uint32,uint16)","announceWinningNum(uint16,uint16,uint16,uint16)"
+claimPrize(uint16),"announceWinningNum(uint16,uint16,uint16,uint16)"
+"buyCombo(address,uint32,uint16)","announceWinningNum(uint16,uint16,uint16,uint16)"

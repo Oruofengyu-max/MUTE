@@ -1,0 +1,27 @@
+Source Function,Target Function
+transferOwnership(address),withdraw(uint256)
+"cancelBid(bytes32,uint256,uint256,uint256,uint256,uint8,bytes32,bytes32,uint8)",refundBid(bytes32)
+withdraw(uint256),refundBid(bytes32)
+"verifyBid(bytes32,bytes32)",refundBid(bytes32)
+"acceptBid(address,bytes32,uint256,uint256,uint256,uint256,bytes32,uint8,bytes32,bytes32,uint8)",refundBid(bytes32)
+giveupBid(bytes32),refundBid(bytes32)
+deposit(uint256),refundBid(bytes32)
+"cancelBid(bytes32,uint256,uint256,uint256,uint256,uint8,bytes32,bytes32,uint8)","verifyBid(bytes32,bytes32)"
+withdraw(uint256),"verifyBid(bytes32,bytes32)"
+refundBid(bytes32),"verifyBid(bytes32,bytes32)"
+"acceptBid(address,bytes32,uint256,uint256,uint256,uint256,bytes32,uint8,bytes32,bytes32,uint8)","verifyBid(bytes32,bytes32)"
+giveupBid(bytes32),"verifyBid(bytes32,bytes32)"
+deposit(uint256),"verifyBid(bytes32,bytes32)"
+"cancelBid(bytes32,uint256,uint256,uint256,uint256,uint8,bytes32,bytes32,uint8)","acceptBid(address,bytes32,uint256,uint256,uint256,uint256,bytes32,uint8,bytes32,bytes32,uint8)"
+withdraw(uint256),"acceptBid(address,bytes32,uint256,uint256,uint256,uint256,bytes32,uint8,bytes32,bytes32,uint8)"
+refundBid(bytes32),"acceptBid(address,bytes32,uint256,uint256,uint256,uint256,bytes32,uint8,bytes32,bytes32,uint8)"
+"verifyBid(bytes32,bytes32)","acceptBid(address,bytes32,uint256,uint256,uint256,uint256,bytes32,uint8,bytes32,bytes32,uint8)"
+giveupBid(bytes32),"acceptBid(address,bytes32,uint256,uint256,uint256,uint256,bytes32,uint8,bytes32,bytes32,uint8)"
+deposit(uint256),"acceptBid(address,bytes32,uint256,uint256,uint256,uint256,bytes32,uint8,bytes32,bytes32,uint8)"
+"cancelBid(bytes32,uint256,uint256,uint256,uint256,uint8,bytes32,bytes32,uint8)",giveupBid(bytes32)
+withdraw(uint256),giveupBid(bytes32)
+refundBid(bytes32),giveupBid(bytes32)
+"verifyBid(bytes32,bytes32)",giveupBid(bytes32)
+"acceptBid(address,bytes32,uint256,uint256,uint256,uint256,bytes32,uint8,bytes32,bytes32,uint8)",giveupBid(bytes32)
+deposit(uint256),giveupBid(bytes32)
+transferOwnership(address),deposit(uint256)

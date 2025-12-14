@@ -1,0 +1,51 @@
+Contract:			TokenManager
+Number of Relevant Branches:	2
+Number of Branches Covered:		2
+Runtime: 											111.105744
+Blockchain Time: 							86.938163
+Iterations										
+1
+--------------------------------------------------
+METHODS:
+
+Constructor:
+	Inputs :[]
+	Payable: nonpayable
+getTimestamp:
+
+getEntityState:
+
+
+--------------------------------------------------
+
+            TESTS:
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) getEntityState(['0x7a44595872674f4a6a48685961656e44416b776e67664e6879634e6e73756354'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(3) getTimestamp([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) getEntityState(['0x6f6f5777706c564f5948684f2076717566766361625755466f73547068764669'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) getEntityState(['0x515059644d6a6a794d64757746524141436768795276474a5266414769475941'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) getEntityState(['0x7249504e494357795963484664686e426254546d4356726f436f615667677252'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) getEntityState(['0x7144664a766a42577353735246666675707945757747786b4a684e5a5258436e'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) getEntityState(['0x7a44595872674f4a6a48685961656e44416b776e67664e6879634e6e73756354'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(3) getTimestamp([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(4) getEntityState(['0x6f6f5777706c564f5948684f2076717566766361625755466f73547068764669'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) getEntityState(['0x515059644d6a6a794d64757746524141436768795276474a5266414769475941'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) getEntityState(['0x7249504e494357795963484664686e426254546d4356726f436f615667677252'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) getEntityState(['0x7144664a766a42577353735246666675707945757747786b4a684e5a5258436e'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true

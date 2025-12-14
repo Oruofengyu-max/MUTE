@@ -1,0 +1,26 @@
+Source Function,Target Function
+"approve(address,uint256)","transferFrom(address,address,uint256)"
+"decreaseApproval(address,uint256)","transferFrom(address,address,uint256)"
+"stakeBelaSplit(uint256,address)","transferFrom(address,address,uint256)"
+"transfer(address,uint256)","transferFrom(address,address,uint256)"
+"increaseApproval(address,uint256)","transferFrom(address,address,uint256)"
+claimStake(),"transferFrom(address,address,uint256)"
+claimStake(),ownerClaim()
+transferOwnership(address),ownerClaim()
+ownerClaim(),reclaimEther()
+claimStake(),reclaimEther()
+transferOwnership(address),reclaimEther()
+"approve(address,uint256)","transfer(address,uint256)"
+"transferFrom(address,address,uint256)","transfer(address,uint256)"
+"decreaseApproval(address,uint256)","transfer(address,uint256)"
+"stakeBelaSplit(uint256,address)","transfer(address,uint256)"
+"increaseApproval(address,uint256)","transfer(address,uint256)"
+claimStake(),"transfer(address,uint256)"
+"approve(address,uint256)",claimStake()
+"transferFrom(address,address,uint256)",claimStake()
+"decreaseApproval(address,uint256)",claimStake()
+"stakeBelaSplit(uint256,address)",claimStake()
+"transfer(address,uint256)",claimStake()
+"increaseApproval(address,uint256)",claimStake()
+ownerClaim(),transferOwnership(address)
+claimStake(),transferOwnership(address)

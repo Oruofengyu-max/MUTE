@@ -1,0 +1,11 @@
+Source Function,Target Function
+"approve(address,uint256)","transferFrom(address,address,uint256)"
+"freeze(address,uint256,uint256)","transferFrom(address,address,uint256)"
+unfreeze(address),"transferFrom(address,address,uint256)"
+"clear(address,uint256,uint256)","transferFrom(address,address,uint256)"
+"decreaseApproval(address,uint256)","transferFrom(address,address,uint256)"
+"transfer(address,uint256)","transferFrom(address,address,uint256)"
+"increaseApproval(address,uint256)","transferFrom(address,address,uint256)"
+transferOwnership(address),"freeze(address,uint256,uint256)"
+transferOwnership(address),unfreeze(address)
+transferOwnership(address),"clear(address,uint256,uint256)"

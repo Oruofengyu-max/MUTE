@@ -1,0 +1,11 @@
+Source Function,Target Function
+"approve(address,uint256)","transfer(address,uint256)"
+"transferFrom(address,address,uint256)","transfer(address,uint256)"
+buyGFN(),"transfer(address,uint256)"
+acceptOwnership(),buyGFN()
+transferOwnership(address),buyGFN()
+"approve(address,uint256)",buyGFN()
+"transferFrom(address,address,uint256)",buyGFN()
+"transfer(address,uint256)",buyGFN()
+acceptOwnership(),collectETH()
+transferOwnership(address),collectETH()

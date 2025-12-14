@@ -1,0 +1,16 @@
+Source Function,Target Function
+"approve(address,uint256)","transferFrom(address,address,uint256)"
+"mint(address,uint256)","transferFrom(address,address,uint256)"
+"controllerApproval(address,uint256)","transferFrom(address,address,uint256)"
+replaceController(address),"mint(address,uint256)"
+finishMinting(),"mint(address,uint256)"
+setApprovalCount(uint256),"mint(address,uint256)"
+setMinApprovalCount(uint256),"mint(address,uint256)"
+"mint(address,uint256)",finishMinting()
+replaceController(address),finishMinting()
+setApprovalCount(uint256),finishMinting()
+setMinApprovalCount(uint256),finishMinting()
+"approve(address,uint256)","transfer(address,uint256)"
+"transferFrom(address,address,uint256)","transfer(address,uint256)"
+"mint(address,uint256)","transfer(address,uint256)"
+"controllerApproval(address,uint256)","transfer(address,uint256)"

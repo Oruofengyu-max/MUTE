@@ -1,0 +1,21 @@
+Source Function,Target Function
+refund(),claimTokensByAdmin(address)
+"adminshipLevel(address,uint8)",claimTokensByAdmin(address)
+claimTokensByUser(),claimTokensByAdmin(address)
+claimTokensByAdmin(address),externalTokensRecovery(address)
+refund(),externalTokensRecovery(address)
+"adminshipLevel(address,uint8)",externalTokensRecovery(address)
+claimTokensByUser(),externalTokensRecovery(address)
+claimTokensByAdmin(address),refund()
+"adminshipLevel(address,uint8)",refund()
+claimTokensByUser(),refund()
+claimTokensByAdmin(address),"adminshipLevel(address,uint8)"
+refund(),"adminshipLevel(address,uint8)"
+claimTokensByUser(),"adminshipLevel(address,uint8)"
+claimTokensByAdmin(address),claimTokensByUser()
+refund(),claimTokensByUser()
+"adminshipLevel(address,uint8)",claimTokensByUser()
+claimTokensByAdmin(address),retrieveOnFail()
+refund(),retrieveOnFail()
+"adminshipLevel(address,uint8)",retrieveOnFail()
+claimTokensByUser(),retrieveOnFail()

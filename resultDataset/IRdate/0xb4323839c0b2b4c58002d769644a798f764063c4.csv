@@ -1,0 +1,26 @@
+Source Function,Target Function
+renounceOwnership(),"changeRefund(uint8,uint256,uint8)"
+"edit(address,address)","changeRefund(uint8,uint256,uint8)"
+"addRefund(uint256,uint8)","changeRefund(uint8,uint256,uint8)"
+transferOwnership(address),"changeRefund(uint8,uint256,uint8)"
+renounceOwnership(),withdraw()
+"edit(address,address)",withdraw()
+"addRefund(uint256,uint8)",withdraw()
+transferOwnership(address),withdraw()
+"edit(address,address)",renounceOwnership()
+"addRefund(uint256,uint8)",renounceOwnership()
+transferOwnership(address),renounceOwnership()
+renounceOwnership(),"edit(address,address)"
+"addRefund(uint256,uint8)","edit(address,address)"
+transferOwnership(address),"edit(address,address)"
+renounceOwnership(),"addRefund(uint256,uint8)"
+"edit(address,address)","addRefund(uint256,uint8)"
+transferOwnership(address),"addRefund(uint256,uint8)"
+"changeRefund(uint8,uint256,uint8)","addRefund(uint256,uint8)"
+renounceOwnership(),"addRooms(string,uint256)"
+"edit(address,address)","addRooms(string,uint256)"
+"addRefund(uint256,uint8)","addRooms(string,uint256)"
+transferOwnership(address),"addRooms(string,uint256)"
+renounceOwnership(),transferOwnership(address)
+"edit(address,address)",transferOwnership(address)
+"addRefund(uint256,uint8)",transferOwnership(address)

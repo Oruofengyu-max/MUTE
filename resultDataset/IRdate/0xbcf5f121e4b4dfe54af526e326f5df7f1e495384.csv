@@ -1,0 +1,18 @@
+Source Function,Target Function
+burn(uint256),setLocked(bool)
+transferOwnership(address),setLocked(bool)
+"approve(address,uint256)",burn(uint256)
+"transferFrom(address,address,uint256)",burn(uint256)
+"allowAddress(address,bool)",burn(uint256)
+"decreaseApproval(address,uint256)",burn(uint256)
+"transfer(address,uint256)",burn(uint256)
+"increaseApproval(address,uint256)",burn(uint256)
+"lockAddress(address,bool)",burn(uint256)
+setLocked(bool),"allowAddress(address,bool)"
+burn(uint256),"allowAddress(address,bool)"
+transferOwnership(address),"allowAddress(address,bool)"
+setLocked(bool),"lockAddress(address,bool)"
+burn(uint256),"lockAddress(address,bool)"
+transferOwnership(address),"lockAddress(address,bool)"
+setLocked(bool),transferOwnership(address)
+burn(uint256),transferOwnership(address)

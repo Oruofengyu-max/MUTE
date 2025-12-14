@@ -1,0 +1,13 @@
+Source Function,Target Function
+purchaseCountry(uint256),purchasePlayer(uint256)
+InitiateTeams(),purchasePlayer(uint256)
+"addPlayer(string,address,uint256,uint256)",purchasePlayer(uint256)
+"modifyPriceCountry(uint256,uint256)",purchasePlayer(uint256)
+purchasePlayer(uint256),purchaseCountry(uint256)
+InitiateTeams(),purchaseCountry(uint256)
+"addPlayer(string,address,uint256,uint256)",purchaseCountry(uint256)
+"modifyPriceCountry(uint256,uint256)",purchaseCountry(uint256)
+purchasePlayer(uint256),"modifyPriceCountry(uint256,uint256)"
+purchaseCountry(uint256),"modifyPriceCountry(uint256,uint256)"
+InitiateTeams(),"modifyPriceCountry(uint256,uint256)"
+"addPlayer(string,address,uint256,uint256)","modifyPriceCountry(uint256,uint256)"

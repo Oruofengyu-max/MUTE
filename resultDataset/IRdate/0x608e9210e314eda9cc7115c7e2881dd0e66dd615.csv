@@ -1,0 +1,17 @@
+Source Function,Target Function
+acceptOwnership(),"setshares(uint256,address)"
+settotal(uint256),"setshares(uint256,address)"
+transferOwnership(address),"setshares(uint256,address)"
+acceptOwnership(),settotal(uint256)
+transferOwnership(address),settotal(uint256)
+acceptOwnership(),"addmember(uint256,address)"
+settotal(uint256),"addmember(uint256,address)"
+transferOwnership(address),"addmember(uint256,address)"
+acceptOwnership(),"addshares(uint256,address)"
+settotal(uint256),"addshares(uint256,address)"
+transferOwnership(address),"addshares(uint256,address)"
+acceptOwnership(),transferOwnership(address)
+settotal(uint256),transferOwnership(address)
+acceptOwnership(),"deductshares(uint256,address)"
+settotal(uint256),"deductshares(uint256,address)"
+transferOwnership(address),"deductshares(uint256,address)"

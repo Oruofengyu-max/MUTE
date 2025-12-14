@@ -1,0 +1,17 @@
+Source Function,Target Function
+"approve(address,uint256)","transferFrom(address,address,uint256)"
+addTokenToTotalSupply(uint256),"transferFrom(address,address,uint256)"
+"decreaseApproval(address,uint256)","transferFrom(address,address,uint256)"
+"adminTransfer(address,address,uint256,uint256)","transferFrom(address,address,uint256)"
+"increaseApproval(address,uint256)","transferFrom(address,address,uint256)"
+addTokenToTotalSupply(uint256),changeFeeHoldingAddress(address)
+transferOwnership(address),changeFeeHoldingAddress(address)
+addTokenToTotalSupply(uint256),"adminTransfer(address,address,uint256,uint256)"
+changeFeeHoldingAddress(address),"adminTransfer(address,address,uint256,uint256)"
+transferOwnership(address),"adminTransfer(address,address,uint256,uint256)"
+"approve(address,uint256)","adminTransfer(address,address,uint256,uint256)"
+"transferFrom(address,address,uint256)","adminTransfer(address,address,uint256,uint256)"
+"decreaseApproval(address,uint256)","adminTransfer(address,address,uint256,uint256)"
+"increaseApproval(address,uint256)","adminTransfer(address,address,uint256,uint256)"
+addTokenToTotalSupply(uint256),transferOwnership(address)
+changeFeeHoldingAddress(address),transferOwnership(address)

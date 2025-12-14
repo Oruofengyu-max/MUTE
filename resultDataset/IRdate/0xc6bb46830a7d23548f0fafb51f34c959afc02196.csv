@@ -1,0 +1,9 @@
+Source Function,Target Function
+freeze(),unsetImplementation(string)
+renounceOwnership(),unsetImplementation(string)
+transferOwnership(address),unsetImplementation(string)
+renounceOwnership(),freeze()
+transferOwnership(address),freeze()
+freeze(),"setImplementation(string,address)"
+renounceOwnership(),"setImplementation(string,address)"
+transferOwnership(address),"setImplementation(string,address)"

@@ -1,0 +1,9 @@
+Source Function,Target Function
+"newTokens(address,uint256)","escrowAmount(address,uint256)"
+burnTokens(uint256),"escrowAmount(address,uint256)"
+burnTokens(uint256),"newTokens(address,uint256)"
+"newTokens(address,uint256)",burnTokens(uint256)
+"escrowAmount(address,uint256)",burnTokens(uint256)
+"freezeAccount(address,bool)",burnTokens(uint256)
+"newTokens(address,uint256)","freezeAccount(address,bool)"
+burnTokens(uint256),"freezeAccount(address,bool)"

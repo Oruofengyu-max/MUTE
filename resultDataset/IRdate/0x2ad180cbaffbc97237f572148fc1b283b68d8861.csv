@@ -1,0 +1,14 @@
+Source Function,Target Function
+"generateTokens(address,uint256)",changeController(address)
+"destroyTokens(address,uint256)",changeController(address)
+changeController(address),"generateTokens(address,uint256)"
+"destroyTokens(address,uint256)","generateTokens(address,uint256)"
+"approve(address,uint256)","transfer(address,uint256)"
+"transferFrom(address,address,uint256)","transfer(address,uint256)"
+"generateTokens(address,uint256)","transfer(address,uint256)"
+"destroyTokens(address,uint256)","transfer(address,uint256)"
+changeController(address),"destroyTokens(address,uint256)"
+"generateTokens(address,uint256)","destroyTokens(address,uint256)"
+changeController(address),claimTokens(address)
+"generateTokens(address,uint256)",claimTokens(address)
+"destroyTokens(address,uint256)",claimTokens(address)

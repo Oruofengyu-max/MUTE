@@ -1,0 +1,26 @@
+Source Function,Target Function
+renouncePauser(),"fulfillBountyAndClaimFunds(uint256,uint256)"
+"createBountyAndLockFunds(uint256,uint256,uint256,uint256,uint256)","fulfillBountyAndClaimFunds(uint256,uint256)"
+addPauser(address),"fulfillBountyAndClaimFunds(uint256,uint256)"
+withdrawBountyWithNoFeesTakenIfContractIsFrozen(uint256),"fulfillBountyAndClaimFunds(uint256,uint256)"
+withdrawUnsuccessfulBounty(uint256),"fulfillBountyAndClaimFunds(uint256,uint256)"
+"fulfillBountyAndClaimFunds(uint256,uint256)",withdrawBountyWithNoFeesTakenIfContractIsFrozen(uint256)
+renouncePauser(),withdrawBountyWithNoFeesTakenIfContractIsFrozen(uint256)
+"createBountyAndLockFunds(uint256,uint256,uint256,uint256,uint256)",withdrawBountyWithNoFeesTakenIfContractIsFrozen(uint256)
+addPauser(address),withdrawBountyWithNoFeesTakenIfContractIsFrozen(uint256)
+withdrawUnsuccessfulBounty(uint256),withdrawBountyWithNoFeesTakenIfContractIsFrozen(uint256)
+"fulfillBountyAndClaimFunds(uint256,uint256)",withdrawUnsuccessfulBounty(uint256)
+renouncePauser(),withdrawUnsuccessfulBounty(uint256)
+"createBountyAndLockFunds(uint256,uint256,uint256,uint256,uint256)",withdrawUnsuccessfulBounty(uint256)
+addPauser(address),withdrawUnsuccessfulBounty(uint256)
+withdrawBountyWithNoFeesTakenIfContractIsFrozen(uint256),withdrawUnsuccessfulBounty(uint256)
+setUnsuccessfulBountyFeeInWei(uint256),withdrawOwnerEarnings()
+"fulfillBountyAndClaimFunds(uint256,uint256)",withdrawOwnerEarnings()
+unpause(),withdrawOwnerEarnings()
+renounceOwnership(),withdrawOwnerEarnings()
+"createBountyAndLockFunds(uint256,uint256,uint256,uint256,uint256)",withdrawOwnerEarnings()
+pause(),withdrawOwnerEarnings()
+setMaximumLockoutDurationInBlocks(uint256),withdrawOwnerEarnings()
+setSuccessfulBountyFeeInBasisPoints(uint256),withdrawOwnerEarnings()
+transferOwnership(address),withdrawOwnerEarnings()
+withdrawUnsuccessfulBounty(uint256),withdrawOwnerEarnings()

@@ -1,0 +1,25 @@
+Source Function,Target Function
+"approve(address,uint256)","transferFrom(address,address,uint256)"
+"joinGreatHarmon(string,string)","transferFrom(address,address,uint256)"
+burn(uint256),"transferFrom(address,address,uint256)"
+"burnFrom(address,uint256)","transferFrom(address,address,uint256)"
+donate(string),"transferFrom(address,address,uint256)"
+"freezeAccount(address,bool)","transferFrom(address,address,uint256)"
+"approve(address,uint256)","joinGreatHarmon(string,string)"
+"transferFrom(address,address,uint256)","joinGreatHarmon(string,string)"
+burn(uint256),"joinGreatHarmon(string,string)"
+"burnFrom(address,uint256)","joinGreatHarmon(string,string)"
+donate(string),"joinGreatHarmon(string,string)"
+"freezeAccount(address,bool)","joinGreatHarmon(string,string)"
+"approve(address,uint256)",burn(uint256)
+"transferFrom(address,address,uint256)",burn(uint256)
+"joinGreatHarmon(string,string)",burn(uint256)
+"burnFrom(address,uint256)",burn(uint256)
+donate(string),burn(uint256)
+"freezeAccount(address,bool)",burn(uint256)
+"approve(address,uint256)","burnFrom(address,uint256)"
+"transferFrom(address,address,uint256)","burnFrom(address,uint256)"
+"joinGreatHarmon(string,string)","burnFrom(address,uint256)"
+burn(uint256),"burnFrom(address,uint256)"
+donate(string),"burnFrom(address,uint256)"
+"freezeAccount(address,bool)","burnFrom(address,uint256)"

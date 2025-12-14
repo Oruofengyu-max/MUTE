@@ -1,0 +1,299 @@
+Contract:			phononfinance
+Number of Relevant Branches:	18
+Number of Branches Covered:		18
+Runtime: 											74.853621
+Blockchain Time: 							44.248557
+Iterations										
+1
+--------------------------------------------------
+METHODS:
+
+Constructor:
+	Inputs :[{'internalType': 'string', 'name': '_name', 'type': 'string'}, {'internalType': 'string', 'name': '_symbol', 'type': 'string'}, {'internalType': 'uint256', 'name': '_supply', 'type': 'uint256'}]
+	Payable: payable
+allowance:
+
+balanceOf:
+
+totalSupply:
+
+transfer:
+
+transferFrom:
+
+approve:
+
+
+--------------------------------------------------
+
+            TESTS:
+
+	(1) constructor(['"ERC20: transfer amount exceeds allowance"', 'DaSyQBHhLMVsclaliOlJfCDDegOyFSWYkufxSm NcelsMTTKVIcNVnBoYfhaWfiMkxEoMuzmYrVOhYQHGIHkDsjZSCyHTGqbEMbFrOhGWYDguyDfaDgtYGImGTPVCqbIAGOXKBfedseNqxUrUpVTrDoYBZoMSEZFeaJNzT Dkmj ECIOtd bwVHZgDVCg nVtKXH', 82273], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 110889609871127277)
+	(2) allowance(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(3) transferFrom(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 703], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(4) allowance(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) balanceOf(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) totalSupply([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(7) balanceOf(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor(['"ERC20: transfer amount exceeds allowance"', 'DaSyQBHhLMVsclaliOlJfCDDegOyFSWYkufxSm NcelsMTTKVIcNVnBoYfhaWfiMkxEoMuzmYrVOhYQHGIHkDsjZSCyHTGqbEMbFrOhGWYDguyDfaDgtYGImGTPVCqbIAGOXKBfedseNqxUrUpVTrDoYBZoMSEZFeaJNzT Dkmj ECIOtd bwVHZgDVCg nVtKXH', 82273], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 110889609871127277)
+	(2) allowance(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(3) transferFrom(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 703], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(4) allowance(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) balanceOf(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) totalSupply([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(7) balanceOf(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor(['"ERC20: transfer amount exceeds allowance"', 'DaSyQBHhLMVsclaliOlJfCDDegOyFSWYkufxSm NcelsMTTKVIcNVnBoYfhaWfiMkxEoMuzmYrVOhYQHGIHkDsjZSCyHTGqbEMbFrOhGWYDguyDfaDgtYGImGTPVCqbIAGOXKBfedseNqxUrUpVTrDoYBZoMSEZFeaJNzT Dkmj ECIOtd bwVHZgDVCg nVtKXH', 82273], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 110889609871127277)
+	(2) allowance(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(3) transferFrom(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 703], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(4) allowance(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) balanceOf(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) totalSupply([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(7) balanceOf(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor(['"ERC20: transfer amount exceeds allowance"', 'DaSyQBHhLMVsclaliOlJfCDDegOyFSWYkufxSm NcelsMTTKVIcNVnBoYfhaWfiMkxEoMuzmYrVOhYQHGIHkDsjZSCyHTGqbEMbFrOhGWYDguyDfaDgtYGImGTPVCqbIAGOXKBfedseNqxUrUpVTrDoYBZoMSEZFeaJNzT Dkmj ECIOtd bwVHZgDVCg nVtKXH', 82273], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 110889609871127277)
+	(2) allowance(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(3) transferFrom(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 703], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(4) allowance(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) balanceOf(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) totalSupply([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(7) balanceOf(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor(['bcFeEpmMwtmQNVaHzPslPhEyiPiAGtUXBWJYLCnoUwWHodBKKgHWnbIXAGcjVbFMbnpfSrTzmtvfFSHFSSmTVcaHuYZIkOHEUPbJCvTdcmCsdKFNHDlbDvDyeZyEYgqCXwjhtFCWnCYNuuaSYnXzDdzTZiycWuhnUAsfInkSbFztDCMqJPB fsnGL', 'Standard String', 6], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) approve(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 659], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 73262462438628719)	Returns: true
+	(3) totalSupply([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(4) allowance(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(5) transferFrom(['0xC352C77703A000382541035D9F12F27608999903', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', 109681517110812073223745774121215215572649970551348771413397617111446324552701], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 105413488396380044)	Returns: 
+	(6) balanceOf(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) allowance(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor(['bcFeEpmMwtmQNVaHzPslPhEyiPiAGtUXBWJYLCnoUwWHodBKKgHWnbIXAGcjVbFMbnpfSrTzmtvfFSHFSSmTVcaHuYZIkOHEUPbJCvTdcmCsdKFNHDlbDvDyeZyEYgqCXwjhtFCWnCYNuuaSYnXzDdzTZiycWuhnUAsfInkSbFztDCMqJPB fsnGL', 'Standard String', 6], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) approve(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 659], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 73262462438628719)	Returns: true
+	(3) totalSupply([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(4) allowance(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(5) transferFrom(['0xC352C77703A000382541035D9F12F27608999903', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', 109681517110812073223745774121215215572649970551348771413397617111446324552701], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 105413488396380044)	Returns: 
+	(6) balanceOf(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) allowance(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor(['bcFeEpmMwtmQNVaHzPslPhEyiPiAGtUXBWJYLCnoUwWHodBKKgHWnbIXAGcjVbFMbnpfSrTzmtvfFSHFSSmTVcaHuYZIkOHEUPbJCvTdcmCsdKFNHDlbDvDyeZyEYgqCXwjhtFCWnCYNuuaSYnXzDdzTZiycWuhnUAsfInkSbFztDCMqJPB fsnGL', 'Standard String', 6], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) approve(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 659], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 73262462438628719)	Returns: true
+	(3) totalSupply([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(4) allowance(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(5) transferFrom(['0xC352C77703A000382541035D9F12F27608999903', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', 109681517110812073223745774121215215572649970551348771413397617111446324552701], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 105413488396380044)	Returns: 
+	(6) balanceOf(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) allowance(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor(['"ERC20: transfer amount exceeds allowance"', 'DaSyQBHhLMVsclaliOlJfCDDegOyFSWYkufxSm NcelsMTTKVIcNVnBoYfhaWfiMkxEoMuzmYrVOhYQHGIHkDsjZSCyHTGqbEMbFrOhGWYDguyDfaDgtYGImGTPVCqbIAGOXKBfedseNqxUrUpVTrDoYBZoMSEZFeaJNzT Dkmj ECIOtd bwVHZgDVCg nVtKXH', 82273], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 110889609871127277)
+	(2) allowance(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(3) transferFrom(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 703], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(4) allowance(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) balanceOf(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) totalSupply([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(7) balanceOf(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor(['"ERC20: transfer amount exceeds allowance"', 'DaSyQBHhLMVsclaliOlJfCDDegOyFSWYkufxSm NcelsMTTKVIcNVnBoYfhaWfiMkxEoMuzmYrVOhYQHGIHkDsjZSCyHTGqbEMbFrOhGWYDguyDfaDgtYGImGTPVCqbIAGOXKBfedseNqxUrUpVTrDoYBZoMSEZFeaJNzT Dkmj ECIOtd bwVHZgDVCg nVtKXH', 82273], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 110889609871127277)
+	(2) allowance(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(3) transferFrom(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 703], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(4) allowance(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) balanceOf(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) totalSupply([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(7) balanceOf(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor(['"ERC20: approve from the zero address"', 'lgwRklzFAHWnxPbEaZoZRUQawEujbxYsBUW ZmXvDfKoWtwfWkFBGwBgevutrBvmPaJNyAnHKrpaK gOWDbFLXo ySeXelyyc fDcOUQTqBBQGLrzqMzLCMnMgtYmdrYgLqpTJnRdhfBxVMJlYNrBiiyLltMMIDGRxXboQfszfbjSetCiJGEhRfwlqMmoXMKhBlxEskRSSHLhVXFdzPvnSVzmpuPUrVcxyQi', 927], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 106916362326203395)
+	(2) balanceOf(['0xB1edf760606209BA4c63a3d1330a89aF2849f079'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(3) allowance(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xC352C77703A000382541035D9F12F27608999903'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(4) approve(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 87722192101891386709591249916577870624247313917472342906662886507214329332612], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(5) balanceOf(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) transferFrom(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xC352C77703A000382541035D9F12F27608999903', 703], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(7) totalSupply([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor(['"ERC20: transfer amount exceeds allowance"', 'DaSyQBHhLMVsclaliOlJfCDDegOyFSWYkufxSm NcelsMTTKVIcNVnBoYfhaWfiMkxEoMuzmYrVOhYQHGIHkDsjZSCyHTGqbEMbFrOhGWYDguyDfaDgtYGImGTPVCqbIAGOXKBfedseNqxUrUpVTrDoYBZoMSEZFeaJNzT Dkmj ECIOtd bwVHZgDVCg nVtKXH', 82273], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 110889609871127277)
+	(2) allowance(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(3) transferFrom(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 703], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(4) allowance(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) balanceOf(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) totalSupply([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(7) balanceOf(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor(['"ERC20: transfer amount exceeds allowance"', 'DaSyQBHhLMVsclaliOlJfCDDegOyFSWYkufxSm NcelsMTTKVIcNVnBoYfhaWfiMkxEoMuzmYrVOhYQHGIHkDsjZSCyHTGqbEMbFrOhGWYDguyDfaDgtYGImGTPVCqbIAGOXKBfedseNqxUrUpVTrDoYBZoMSEZFeaJNzT Dkmj ECIOtd bwVHZgDVCg nVtKXH', 82273], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 110889609871127277)
+	(2) allowance(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(3) transferFrom(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 703], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(4) allowance(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) balanceOf(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) totalSupply([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(7) balanceOf(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor(['"ERC20: transfer amount exceeds allowance"', 'DaSyQBHhLMVsclaliOlJfCDDegOyFSWYkufxSm NcelsMTTKVIcNVnBoYfhaWfiMkxEoMuzmYrVOhYQHGIHkDsjZSCyHTGqbEMbFrOhGWYDguyDfaDgtYGImGTPVCqbIAGOXKBfedseNqxUrUpVTrDoYBZoMSEZFeaJNzT Dkmj ECIOtd bwVHZgDVCg nVtKXH', 82273], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 110889609871127277)
+	(2) allowance(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(3) transferFrom(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 703], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(4) allowance(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) balanceOf(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) totalSupply([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(7) balanceOf(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor(['c SPlYC', '"ff"', 81811452237125199025915283669529448589943424327398911215291653779476028404223], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)
+	(2) balanceOf(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(3) transfer(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 4277198], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) transferFrom(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 2488], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(5) approve(['0xC352C77703A000382541035D9F12F27608999903', 9083], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(6) balanceOf(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) totalSupply([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor(['c SPlYC', '"ff"', 81811452237125199025915283669529448589943424327398911215291653779476028404223], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)
+	(2) balanceOf(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(3) transfer(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 4277198], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) transferFrom(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 2488], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(5) approve(['0xC352C77703A000382541035D9F12F27608999903', 9083], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(6) balanceOf(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) totalSupply([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor(['c SPlYC', '"ff"', 81811452237125199025915283669529448589943424327398911215291653779476028404223], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)
+	(2) balanceOf(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(3) transfer(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 4277198], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) transferFrom(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 2488], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(5) approve(['0xC352C77703A000382541035D9F12F27608999903', 9083], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(6) balanceOf(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) totalSupply([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor(['"ERC20: transfer amount exceeds allowance"', 'DaSyQBHhLMVsclaliOlJfCDDegOyFSWYkufxSm NcelsMTTKVIcNVnBoYfhaWfiMkxEoMuzmYrVOhYQHGIHkDsjZSCyHTGqbEMbFrOhGWYDguyDfaDgtYGImGTPVCqbIAGOXKBfedseNqxUrUpVTrDoYBZoMSEZFeaJNzT Dkmj ECIOtd bwVHZgDVCg nVtKXH', 82273], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 110889609871127277)
+	(2) allowance(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(3) transferFrom(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 703], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(4) allowance(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) balanceOf(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) totalSupply([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(7) balanceOf(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor(['"ERC20: transfer amount exceeds allowance"', 'DaSyQBHhLMVsclaliOlJfCDDegOyFSWYkufxSm NcelsMTTKVIcNVnBoYfhaWfiMkxEoMuzmYrVOhYQHGIHkDsjZSCyHTGqbEMbFrOhGWYDguyDfaDgtYGImGTPVCqbIAGOXKBfedseNqxUrUpVTrDoYBZoMSEZFeaJNzT Dkmj ECIOtd bwVHZgDVCg nVtKXH', 82273], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 110889609871127277)
+	(2) allowance(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(3) transferFrom(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 703], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(4) allowance(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) balanceOf(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) totalSupply([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(7) balanceOf(['0xC352C77703A000382541035D9F12F27608999903'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true

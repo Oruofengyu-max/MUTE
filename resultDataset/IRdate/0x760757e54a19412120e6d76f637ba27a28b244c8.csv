@@ -1,0 +1,7 @@
+Source Function,Target Function
+"mintTo(address,uint256)","burnFrom(address,uint256)"
+"transfer(address,uint256)","burnFrom(address,uint256)"
+"freezeAccount(address,bool)","burnFrom(address,uint256)"
+"mintTo(address,uint256)","transfer(address,uint256)"
+"burnFrom(address,uint256)","transfer(address,uint256)"
+"freezeAccount(address,bool)","transfer(address,uint256)"

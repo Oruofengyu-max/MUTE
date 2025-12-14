@@ -1,0 +1,23 @@
+Source Function,Target Function
+"receiveApproval(address,uint256,address)","distributeTokensToContributor(uint256,uint256)"
+"addContributorManually(address,uint256,uint256)","distributeTokensToContributor(uint256,uint256)"
+withdrawTokensRemaining(),"distributeTokensToContributor(uint256,uint256)"
+distributeTokensToContributorByIndex(uint256),"distributeTokensToContributor(uint256,uint256)"
+changeOwner(address),"distributeTokensToContributor(uint256,uint256)"
+startSale(),"distributeTokensToContributor(uint256,uint256)"
+distributeAllTokensToContributor(),"distributeTokensToContributor(uint256,uint256)"
+setDistributionTime(uint256),"distributeTokensToContributor(uint256,uint256)"
+"setPresaleDates(uint256,uint256)","distributeTokensToContributor(uint256,uint256)"
+setlargeBonusStopTime(uint256),"distributeTokensToContributor(uint256,uint256)"
+"setSale(uint256,uint256)","distributeTokensToContributor(uint256,uint256)"
+"receiveApproval(address,uint256,address)",distributeTokensToContributorByIndex(uint256)
+"addContributorManually(address,uint256,uint256)",distributeTokensToContributorByIndex(uint256)
+withdrawTokensRemaining(),distributeTokensToContributorByIndex(uint256)
+"distributeTokensToContributor(uint256,uint256)",distributeTokensToContributorByIndex(uint256)
+changeOwner(address),distributeTokensToContributorByIndex(uint256)
+startSale(),distributeTokensToContributorByIndex(uint256)
+distributeAllTokensToContributor(),distributeTokensToContributorByIndex(uint256)
+setDistributionTime(uint256),distributeTokensToContributorByIndex(uint256)
+"setPresaleDates(uint256,uint256)",distributeTokensToContributorByIndex(uint256)
+setlargeBonusStopTime(uint256),distributeTokensToContributorByIndex(uint256)
+"setSale(uint256,uint256)",distributeTokensToContributorByIndex(uint256)

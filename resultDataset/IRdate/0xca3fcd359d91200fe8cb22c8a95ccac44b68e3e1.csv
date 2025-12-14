@@ -1,0 +1,14 @@
+Source Function,Target Function
+"setAdministrator(bytes32,bool)",setStakingRequirement(uint256)
+"transfer(address,uint256)",setStakingRequirement(uint256)
+reinvest(),setStakingRequirement(uint256)
+"transfer(address,uint256)","setAdministrator(bytes32,bool)"
+reinvest(),"setAdministrator(bytes32,bool)"
+"setAdministrator(bytes32,bool)","transfer(address,uint256)"
+reinvest(),"transfer(address,uint256)"
+"setAdministrator(bytes32,bool)",setSymbol(string)
+"transfer(address,uint256)",setSymbol(string)
+reinvest(),setSymbol(string)
+"setAdministrator(bytes32,bool)",setName(string)
+"transfer(address,uint256)",setName(string)
+reinvest(),setName(string)

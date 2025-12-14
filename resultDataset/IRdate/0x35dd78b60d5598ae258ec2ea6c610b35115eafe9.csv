@@ -1,0 +1,10 @@
+Source Function,Target Function
+init(),finishByInactivity(uint256)
+claimPrizeByInactivity(uint256),finishByInactivity(uint256)
+bet(),finishByInactivity(uint256)
+finishByInactivity(uint256),claimPrizeByInactivity(uint256)
+init(),claimPrizeByInactivity(uint256)
+bet(),claimPrizeByInactivity(uint256)
+finishByInactivity(uint256),bet()
+init(),bet()
+claimPrizeByInactivity(uint256),bet()

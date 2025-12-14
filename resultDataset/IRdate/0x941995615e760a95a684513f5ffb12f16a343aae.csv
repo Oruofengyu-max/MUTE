@@ -1,0 +1,19 @@
+Source Function,Target Function
+"approve(address,uint256)","transferFrom(address,address,uint256)"
+burn(uint256),"transferFrom(address,address,uint256)"
+"burnFrom(address,uint256)","transferFrom(address,address,uint256)"
+voteAgainst(),"transferFrom(address,address,uint256)"
+"approveAndCall(address,uint256,bytes)","transferFrom(address,address,uint256)"
+voteFor(),"transferFrom(address,address,uint256)"
+"approve(address,uint256)",burn(uint256)
+"transferFrom(address,address,uint256)",burn(uint256)
+"burnFrom(address,uint256)",burn(uint256)
+voteAgainst(),burn(uint256)
+"approveAndCall(address,uint256,bytes)",burn(uint256)
+voteFor(),burn(uint256)
+"approve(address,uint256)","burnFrom(address,uint256)"
+"transferFrom(address,address,uint256)","burnFrom(address,uint256)"
+burn(uint256),"burnFrom(address,uint256)"
+voteAgainst(),"burnFrom(address,uint256)"
+"approveAndCall(address,uint256,bytes)","burnFrom(address,uint256)"
+voteFor(),"burnFrom(address,uint256)"

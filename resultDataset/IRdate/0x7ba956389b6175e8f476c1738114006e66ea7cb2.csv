@@ -1,0 +1,26 @@
+Source Function,Target Function
+"approve(address,uint256)","transferFrom(address,address,uint256)"
+burn(uint256),"transferFrom(address,address,uint256)"
+"transfer(address,uint256)","transferFrom(address,address,uint256)"
+"approve(address,uint256)",burn(uint256)
+"transferFrom(address,address,uint256)",burn(uint256)
+"transfer(address,uint256)",burn(uint256)
+"approve(address,uint256)","transfer(address,uint256)"
+"transferFrom(address,address,uint256)","transfer(address,uint256)"
+burn(uint256),"transfer(address,uint256)"
+burn(uint256),EnableTransfer()
+DisableTransfer(),EnableTransfer()
+UpdateBeneficiary(address),EnableTransfer()
+transferOwnership(address),EnableTransfer()
+burn(uint256),DisableTransfer()
+EnableTransfer(),DisableTransfer()
+UpdateBeneficiary(address),DisableTransfer()
+transferOwnership(address),DisableTransfer()
+burn(uint256),UpdateBeneficiary(address)
+EnableTransfer(),UpdateBeneficiary(address)
+DisableTransfer(),UpdateBeneficiary(address)
+transferOwnership(address),UpdateBeneficiary(address)
+burn(uint256),transferOwnership(address)
+EnableTransfer(),transferOwnership(address)
+DisableTransfer(),transferOwnership(address)
+UpdateBeneficiary(address),transferOwnership(address)

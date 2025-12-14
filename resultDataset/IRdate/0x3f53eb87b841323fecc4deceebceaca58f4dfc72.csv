@@ -1,0 +1,19 @@
+Source Function,Target Function
+"manualSend(address,bytes5)",retrieveFunds()
+"processRequest(bytes32[],bytes5,address)",retrieveFunds()
+"changeControllerAccess(address,bool)",retrieveFunds()
+"processRequest(bytes32[],bytes5,address)","manualSend(address,bytes5)"
+"changeControllerAccess(address,bool)","manualSend(address,bytes5)"
+"manualSend(address,bytes5)","processRequest(bytes32[],bytes5,address)"
+"changeControllerAccess(address,bool)","processRequest(bytes32[],bytes5,address)"
+"manualSend(address,bytes5)",boom()
+"processRequest(bytes32[],bytes5,address)",boom()
+"changeControllerAccess(address,bool)",boom()
+"manualSend(address,bytes5)","updateSettings(uint256,uint256,bytes32)"
+"processRequest(bytes32[],bytes5,address)","updateSettings(uint256,uint256,bytes32)"
+"changeControllerAccess(address,bool)","updateSettings(uint256,uint256,bytes32)"
+"manualSend(address,bytes5)","changeControllerAccess(address,bool)"
+"processRequest(bytes32[],bytes5,address)","changeControllerAccess(address,bool)"
+"manualSend(address,bytes5)",changeController(address)
+"processRequest(bytes32[],bytes5,address)",changeController(address)
+"changeControllerAccess(address,bool)",changeController(address)

@@ -1,0 +1,19 @@
+Source Function,Target Function
+setContractMiniGame(address),"subPrograms(address,uint256[])"
+"setProgramPriceByDarkCrystals(uint256,uint256)","subPrograms(address,uint256[])"
+removeContractMiniGame(address),"subPrograms(address,uint256[])"
+"addFactory(uint256,uint256,uint256,uint256,uint256,uint256)","subPrograms(address,uint256[])"
+"setProgramValue(uint256,uint256)","subPrograms(address,uint256[])"
+startGame(),"subPrograms(address,uint256[])"
+"setProgramPriceByCrystals(uint256,uint256)","subPrograms(address,uint256[])"
+setContractMiniGame(address),updateFactory()
+"setProgramPriceByDarkCrystals(uint256,uint256)",updateFactory()
+removeContractMiniGame(address),updateFactory()
+"addFactory(uint256,uint256,uint256,uint256,uint256,uint256)",updateFactory()
+"setProgramValue(uint256,uint256)",updateFactory()
+startGame(),updateFactory()
+"setProgramPriceByCrystals(uint256,uint256)",updateFactory()
+setMemoryInterface(address),updateFactory()
+setMiningWarInterface(address),updateFactory()
+"setupMiniGame(uint256,uint256)",updateFactory()
+setEngineerInterface(address),updateFactory()

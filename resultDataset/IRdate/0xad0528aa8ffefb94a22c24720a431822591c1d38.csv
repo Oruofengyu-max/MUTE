@@ -1,0 +1,25 @@
+Source Function,Target Function
+"endRound(uint256,uint256,address[],address[],bool)",lockRound(uint256)
+transferOwnership(address),lockRound(uint256)
+activate(),lockRound(uint256)
+deactivate(),lockRound(uint256)
+dumpPrize(),lockRound(uint256)
+"drawRound(uint256,string)",lockRound(uint256)
+transferOwnership(address),"endRound(uint256,uint256,address[],address[],bool)"
+activate(),"endRound(uint256,uint256,address[],address[],bool)"
+deactivate(),"endRound(uint256,uint256,address[],address[],bool)"
+lockRound(uint256),"endRound(uint256,uint256,address[],address[],bool)"
+dumpPrize(),"endRound(uint256,uint256,address[],address[],bool)"
+"drawRound(uint256,string)","endRound(uint256,uint256,address[],address[],bool)"
+"endRound(uint256,uint256,address[],address[],bool)",dumpPrize()
+transferOwnership(address),dumpPrize()
+activate(),dumpPrize()
+deactivate(),dumpPrize()
+lockRound(uint256),dumpPrize()
+"drawRound(uint256,string)",dumpPrize()
+"endRound(uint256,uint256,address[],address[],bool)","drawRound(uint256,string)"
+transferOwnership(address),"drawRound(uint256,string)"
+activate(),"drawRound(uint256,string)"
+deactivate(),"drawRound(uint256,string)"
+lockRound(uint256),"drawRound(uint256,string)"
+dumpPrize(),"drawRound(uint256,string)"

@@ -1,0 +1,7 @@
+Source Function,Target Function
+"addMinerTokens(uint32,address[],uint32[])","transferAnyERC20Token(address,uint256)"
+withdraw(),"transferAnyERC20Token(address,uint256)"
+withdraw(),"addMinerTokens(uint32,address[],uint32[])"
+"addMinerTokens(uint32,address[],uint32[])",withdraw()
+"addMinerTokens(uint32,address[],uint32[])",withdrawEther(uint32)
+withdraw(),withdrawEther(uint32)

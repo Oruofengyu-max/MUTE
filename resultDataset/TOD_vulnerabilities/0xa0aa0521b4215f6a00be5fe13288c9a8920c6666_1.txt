@@ -1,0 +1,881 @@
+Contract:			SONICToken
+Number of Relevant Branches:	58
+Number of Branches Covered:		56
+Runtime: 											1498.372112
+Blockchain Time: 							1326.015049
+Iterations										
+11
+--------------------------------------------------
+METHODS:
+
+Constructor:
+	Inputs :[{'name': 'tokenName', 'type': 'string'}, {'name': 'decimalUnits', 'type': 'uint8'}, {'name': 'tokenSymbol', 'type': 'string'}]
+	Payable: nonpayable
+_fallback:
+
+transfer:
+
+approve:
+
+approveAndCall:
+
+transferFrom:
+
+withdrawalInitiate:
+
+withdrawalComplete:
+
+calculateReward:
+
+calculateFee:
+
+quickWithdraw:
+
+
+--------------------------------------------------
+
+            TESTS:
+
+	(1) constructor(['QLJKBXNvpzzqRozaYqJQwVFBcwCwnzpgCTLruFoezswgVf  sbswRIuEjhvppcgFwMNWs c GWylc', 20, '"receiveApproval(address,uint256,address,bytes)"'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) approveAndCall(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 90794683064494777835637944300626122920437959582911094068086597930610070420813, ['0x52']], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) transferFrom(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', 32], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(4) approve(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 65051], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) approveAndCall(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 63743831708170264733078344167034182722174352383418484684254334034973681938264, ['0x75', '0x46', '0x48', '0x65', '0x57', '0x67', '0x59', '0x4c', '0x72']], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(6) calculateReward([30], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) calculateFee([0], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor(['"receiveApproval(address,uint256,address,bytes)"', 100, 'wnmdfbOySmNnqGjEJZtozsRiYsLoTrnvqpuVjlvuOvEojexrDPHCSwmTjpSWVVpHXKLSqtLbFcxbBGLErIbUiGDCMeeGHlTHyawOjzgk'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)
+	(2) quickWithdraw([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 122597155753297076)	Returns: 
+	(3) calculateReward([4], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(4) quickWithdraw([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 44070913795193157)	Returns: 
+	(5) approveAndCall(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 555421008975746848151850392764206939750158076854811259314537428300388017631, ['0x4f', '0x63', '0x74', '0x6a', '0x73', '0x72', '0x00', '0x70']], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(6) withdrawalComplete([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(7) transferFrom(['0xC352C77703A000382541035D9F12F27608999903', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 23682410772152983170620620193197343080723065354831285840131492783531362267452], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+
+	(1) constructor(['"receiveApproval(address,uint256,address,bytes)"', 200, '"receiveApproval(address,uint256,address,bytes)"'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) quickWithdraw([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 100038263832787366)	Returns: 
+	(3) approveAndCall(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 80477678936883070723735297657055766510526782927980939809306711690697700627428, ['0x00', '0x74', '0x7a']], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(4) approveAndCall(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 36306171615825437467223939392520867148725061690630047053914931650822352166387, ['0x72']], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) quickWithdraw([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 151065337821060741)	Returns: 
+	(6) approveAndCall(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 42847459882999676391916282762446838892354692561483482820372614605645428863016, ['0x51', '0x45', '0x67', '0x66', '0x67']], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) transfer(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 1223383003782642134545177700811272864537591253997382980636893808690718035907], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+
+	(1) constructor(['"receiveApproval(address,uint256,address,bytes)"', 200, '"receiveApproval(address,uint256,address,bytes)"'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) quickWithdraw([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 100038263832787366)	Returns: 
+	(3) approveAndCall(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 80477678936883070723735297657055766510526782927980939809306711690697700627428, ['0x00', '0x74', '0x7a']], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(4) approveAndCall(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 36306171615825437467223939392520867148725061690630047053914931650822352166387, ['0x72']], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) quickWithdraw([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 151065337821060741)	Returns: 
+	(6) approveAndCall(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 42847459882999676391916282762446838892354692561483482820372614605645428863016, ['0x51', '0x45', '0x67', '0x66', '0x67']], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) transfer(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 1223383003782642134545177700811272864537591253997382980636893808690718035907], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+
+	(1) constructor(['"receiveApproval(address,uint256,address,bytes)"', 200, '"receiveApproval(address,uint256,address,bytes)"'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) quickWithdraw([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 100038263832787366)	Returns: 
+	(3) approveAndCall(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 80477678936883070723735297657055766510526782927980939809306711690697700627428, ['0x00', '0x74', '0x7a']], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(4) approveAndCall(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 36306171615825437467223939392520867148725061690630047053914931650822352166387, ['0x72']], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) quickWithdraw([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 151065337821060741)	Returns: 
+	(6) approveAndCall(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 42847459882999676391916282762446838892354692561483482820372614605645428863016, ['0x51', '0x45', '0x67', '0x66', '0x67']], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) transfer(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 1223383003782642134545177700811272864537591253997382980636893808690718035907], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+
+	(1) constructor(['"receiveApproval(address,uint256,address,bytes)"', 200, '"receiveApproval(address,uint256,address,bytes)"'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) quickWithdraw([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 100038263832787366)	Returns: 
+	(3) approveAndCall(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 80477678936883070723735297657055766510526782927980939809306711690697700627428, ['0x00', '0x74', '0x7a']], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(4) approveAndCall(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 36306171615825437467223939392520867148725061690630047053914931650822352166387, ['0x72']], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) quickWithdraw([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 151065337821060741)	Returns: 
+	(6) approveAndCall(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 42847459882999676391916282762446838892354692561483482820372614605645428863016, ['0x51', '0x45', '0x67', '0x66', '0x67']], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) transfer(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 1223383003782642134545177700811272864537591253997382980636893808690718035907], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+
+	(1) constructor(['DVjznQFRNhVKzuxAwLXLuzxqcfydjBOmqmwcZI', 82, '"receiveApproval(address,uint256,address,bytes)"'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) withdrawalInitiate([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(3) withdrawalComplete([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(4) approve(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 331092199325094097115050685148827111259240346525128108403101517827480887552], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) withdrawalComplete([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(6) quickWithdraw([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(7) withdrawalInitiate([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor(['DVjznQFRNhVKzuxAwLXLuzxqcfydjBOmqmwcZI', 82, '"receiveApproval(address,uint256,address,bytes)"'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) withdrawalInitiate([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(3) withdrawalComplete([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(4) approve(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 331092199325094097115050685148827111259240346525128108403101517827480887552], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) withdrawalComplete([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(6) quickWithdraw([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(7) withdrawalInitiate([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor(['DVjznQFRNhVKzuxAwLXLuzxqcfydjBOmqmwcZI', 82, '"receiveApproval(address,uint256,address,bytes)"'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) withdrawalInitiate([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(3) withdrawalComplete([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(4) approve(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 331092199325094097115050685148827111259240346525128108403101517827480887552], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(5) withdrawalComplete([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(6) quickWithdraw([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(7) withdrawalInitiate([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor(['MtsfWsLTyGTdHaCrdRXRmMCavPFboolRWUmsgDvHzYyhXiiuSLyIkRLNhDHKoqPFPJjejLKfIC', 162, '"SONIC 0.2"'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) transferFrom(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0xC352C77703A000382541035D9F12F27608999903', 64897719024163036893029494840347459746941177671654845869062073138341877816481], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) withdrawalComplete([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) withdrawalComplete([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) _fallback([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 106328795702104068)	Returns: true
+	(6) approve(['0xC352C77703A000382541035D9F12F27608999903', 30], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) withdrawalComplete([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+
+	(1) constructor(['MtsfWsLTyGTdHaCrdRXRmMCavPFboolRWUmsgDvHzYyhXiiuSLyIkRLNhDHKoqPFPJjejLKfIC', 162, '"SONIC 0.2"'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) transferFrom(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0xC352C77703A000382541035D9F12F27608999903', 64897719024163036893029494840347459746941177671654845869062073138341877816481], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) withdrawalComplete([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) withdrawalComplete([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) _fallback([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 106328795702104068)	Returns: true
+	(6) approve(['0xC352C77703A000382541035D9F12F27608999903', 30], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) withdrawalComplete([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+
+	(1) constructor(['QLJKBXNvpzzqRozaYqJQwVFBcwCwnzpgCTLruFoezswgVf  sbswRIuEjhvppcgFwMNWs c GWylc', 20, '"receiveApproval(address,uint256,address,bytes)"'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) approveAndCall(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 90794683064494777835637944300626122920437959582911094068086597930610070420813, ['0x52']], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) transferFrom(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', 32], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(4) approve(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 65051], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) approveAndCall(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 63743831708170264733078344167034182722174352383418484684254334034973681938264, ['0x75', '0x46', '0x48', '0x65', '0x57', '0x67', '0x59', '0x4c', '0x72']], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(6) calculateReward([30], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) calculateFee([0], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor(['QLJKBXNvpzzqRozaYqJQwVFBcwCwnzpgCTLruFoezswgVf  sbswRIuEjhvppcgFwMNWs c GWylc', 20, '"receiveApproval(address,uint256,address,bytes)"'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) approveAndCall(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 90794683064494777835637944300626122920437959582911094068086597930610070420813, ['0x52']], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) transferFrom(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', 32], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(4) approve(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 65051], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) approveAndCall(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 63743831708170264733078344167034182722174352383418484684254334034973681938264, ['0x75', '0x46', '0x48', '0x65', '0x57', '0x67', '0x59', '0x4c', '0x72']], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(6) calculateReward([30], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) calculateFee([0], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor(['QLJKBXNvpzzqRozaYqJQwVFBcwCwnzpgCTLruFoezswgVf  sbswRIuEjhvppcgFwMNWs c GWylc', 20, '"receiveApproval(address,uint256,address,bytes)"'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) approveAndCall(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 90794683064494777835637944300626122920437959582911094068086597930610070420813, ['0x52']], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) transferFrom(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', 32], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(4) approve(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 65051], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) approveAndCall(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 63743831708170264733078344167034182722174352383418484684254334034973681938264, ['0x75', '0x46', '0x48', '0x65', '0x57', '0x67', '0x59', '0x4c', '0x72']], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(6) calculateReward([30], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) calculateFee([0], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor(['QLJKBXNvpzzqRozaYqJQwVFBcwCwnzpgCTLruFoezswgVf  sbswRIuEjhvppcgFwMNWs c GWylc', 20, '"receiveApproval(address,uint256,address,bytes)"'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) approveAndCall(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 90794683064494777835637944300626122920437959582911094068086597930610070420813, ['0x52']], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) transferFrom(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', 32], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(4) approve(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 65051], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) approveAndCall(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 63743831708170264733078344167034182722174352383418484684254334034973681938264, ['0x75', '0x46', '0x48', '0x65', '0x57', '0x67', '0x59', '0x4c', '0x72']], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(6) calculateReward([30], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) calculateFee([0], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor(['QLJKBXNvpzzqRozaYqJQwVFBcwCwnzpgCTLruFoezswgVf  sbswRIuEjhvppcgFwMNWs c GWylc', 20, '"receiveApproval(address,uint256,address,bytes)"'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) approveAndCall(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 90794683064494777835637944300626122920437959582911094068086597930610070420813, ['0x52']], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) transferFrom(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', 32], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(4) approve(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 65051], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) approveAndCall(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 63743831708170264733078344167034182722174352383418484684254334034973681938264, ['0x75', '0x46', '0x48', '0x65', '0x57', '0x67', '0x59', '0x4c', '0x72']], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(6) calculateReward([30], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) calculateFee([0], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor(['QLJKBXNvpzzqRozaYqJQwVFBcwCwnzpgCTLruFoezswgVf  sbswRIuEjhvppcgFwMNWs c GWylc', 20, '"receiveApproval(address,uint256,address,bytes)"'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) approveAndCall(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 90794683064494777835637944300626122920437959582911094068086597930610070420813, ['0x52']], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) transferFrom(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', 32], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(4) approve(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 65051], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) approveAndCall(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 63743831708170264733078344167034182722174352383418484684254334034973681938264, ['0x75', '0x46', '0x48', '0x65', '0x57', '0x67', '0x59', '0x4c', '0x72']], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(6) calculateReward([30], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) calculateFee([0], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor(['QLJKBXNvpzzqRozaYqJQwVFBcwCwnzpgCTLruFoezswgVf  sbswRIuEjhvppcgFwMNWs c GWylc', 20, '"receiveApproval(address,uint256,address,bytes)"'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) approveAndCall(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 90794683064494777835637944300626122920437959582911094068086597930610070420813, ['0x52']], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) transferFrom(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', 32], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(4) approve(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 65051], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) approveAndCall(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 63743831708170264733078344167034182722174352383418484684254334034973681938264, ['0x75', '0x46', '0x48', '0x65', '0x57', '0x67', '0x59', '0x4c', '0x72']], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(6) calculateReward([30], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) calculateFee([0], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor(['QLJKBXNvpzzqRozaYqJQwVFBcwCwnzpgCTLruFoezswgVf  sbswRIuEjhvppcgFwMNWs c GWylc', 20, '"receiveApproval(address,uint256,address,bytes)"'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) approveAndCall(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 90794683064494777835637944300626122920437959582911094068086597930610070420813, ['0x52']], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) transferFrom(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', 32], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(4) approve(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 65051], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) approveAndCall(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 63743831708170264733078344167034182722174352383418484684254334034973681938264, ['0x75', '0x46', '0x48', '0x65', '0x57', '0x67', '0x59', '0x4c', '0x72']], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(6) calculateReward([30], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) calculateFee([0], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor(['QLJKBXNvpzzqRozaYqJQwVFBcwCwnzpgCTLruFoezswgVf  sbswRIuEjhvppcgFwMNWs c GWylc', 20, '"receiveApproval(address,uint256,address,bytes)"'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) approveAndCall(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 90794683064494777835637944300626122920437959582911094068086597930610070420813, ['0x52']], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) transferFrom(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', 32], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(4) approve(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 65051], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) approveAndCall(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 63743831708170264733078344167034182722174352383418484684254334034973681938264, ['0x75', '0x46', '0x48', '0x65', '0x57', '0x67', '0x59', '0x4c', '0x72']], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(6) calculateReward([30], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) calculateFee([0], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor(['QLJKBXNvpzzqRozaYqJQwVFBcwCwnzpgCTLruFoezswgVf  sbswRIuEjhvppcgFwMNWs c GWylc', 20, '"receiveApproval(address,uint256,address,bytes)"'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) approveAndCall(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 90794683064494777835637944300626122920437959582911094068086597930610070420813, ['0x52']], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) transferFrom(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', 32], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(4) approve(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 65051], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) approveAndCall(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 63743831708170264733078344167034182722174352383418484684254334034973681938264, ['0x75', '0x46', '0x48', '0x65', '0x57', '0x67', '0x59', '0x4c', '0x72']], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(6) calculateReward([30], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) calculateFee([0], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor(['QLJKBXNvpzzqRozaYqJQwVFBcwCwnzpgCTLruFoezswgVf  sbswRIuEjhvppcgFwMNWs c GWylc', 20, '"receiveApproval(address,uint256,address,bytes)"'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) approveAndCall(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 90794683064494777835637944300626122920437959582911094068086597930610070420813, ['0x52']], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) transferFrom(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', 32], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(4) approve(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 65051], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) approveAndCall(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 63743831708170264733078344167034182722174352383418484684254334034973681938264, ['0x75', '0x46', '0x48', '0x65', '0x57', '0x67', '0x59', '0x4c', '0x72']], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(6) calculateReward([30], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) calculateFee([0], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor(['QLJKBXNvpzzqRozaYqJQwVFBcwCwnzpgCTLruFoezswgVf  sbswRIuEjhvppcgFwMNWs c GWylc', 20, '"receiveApproval(address,uint256,address,bytes)"'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) approveAndCall(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 90794683064494777835637944300626122920437959582911094068086597930610070420813, ['0x52']], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) transferFrom(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', 32], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(4) approve(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 65051], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) approveAndCall(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 63743831708170264733078344167034182722174352383418484684254334034973681938264, ['0x75', '0x46', '0x48', '0x65', '0x57', '0x67', '0x59', '0x4c', '0x72']], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(6) calculateReward([30], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) calculateFee([0], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor(['QLJKBXNvpzzqRozaYqJQwVFBcwCwnzpgCTLruFoezswgVf  sbswRIuEjhvppcgFwMNWs c GWylc', 20, '"receiveApproval(address,uint256,address,bytes)"'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) approveAndCall(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 90794683064494777835637944300626122920437959582911094068086597930610070420813, ['0x52']], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) transferFrom(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', 32], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(4) approve(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 65051], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) approveAndCall(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 63743831708170264733078344167034182722174352383418484684254334034973681938264, ['0x75', '0x46', '0x48', '0x65', '0x57', '0x67', '0x59', '0x4c', '0x72']], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(6) calculateReward([30], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) calculateFee([0], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor(['QLJKBXNvpzzqRozaYqJQwVFBcwCwnzpgCTLruFoezswgVf  sbswRIuEjhvppcgFwMNWs c GWylc', 20, '"receiveApproval(address,uint256,address,bytes)"'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) approveAndCall(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 90794683064494777835637944300626122920437959582911094068086597930610070420813, ['0x52']], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) transferFrom(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', 32], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(4) approve(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 65051], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) approveAndCall(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 63743831708170264733078344167034182722174352383418484684254334034973681938264, ['0x75', '0x46', '0x48', '0x65', '0x57', '0x67', '0x59', '0x4c', '0x72']], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(6) calculateReward([30], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) calculateFee([0], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor(['"SONIC 0.2"', 32, ' ZSrSUwyRPKoRrGKQlYDiLpQwctwZueyEByboqtprEEruwEoLXTUk KFHCKRcUexsoITaVHxvpKtODMzl QnSNVWhIaymCiNghpzOXaSlNZmjuJeqygYWcdfsrcIG'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) transferFrom(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 75443748260334313984398455044653399967744023157452738542149762957847345767460], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) withdrawalInitiate([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(4) _fallback([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 159816110482885164)	Returns: 
+	(5) quickWithdraw([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 187025194245624174)	Returns: 
+	(6) approve(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 74939084523126685926694949987579126760374826573496016653995430682810181688116], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) withdrawalComplete([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+
+	(1) constructor(['"SONIC 0.2"', 32, ' ZSrSUwyRPKoRrGKQlYDiLpQwctwZueyEByboqtprEEruwEoLXTUk KFHCKRcUexsoITaVHxvpKtODMzl QnSNVWhIaymCiNghpzOXaSlNZmjuJeqygYWcdfsrcIG'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) transferFrom(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 75443748260334313984398455044653399967744023157452738542149762957847345767460], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) withdrawalInitiate([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(4) _fallback([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 159816110482885164)	Returns: 
+	(5) quickWithdraw([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 187025194245624174)	Returns: 
+	(6) approve(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 74939084523126685926694949987579126760374826573496016653995430682810181688116], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) withdrawalComplete([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+
+	(1) constructor(['"SONIC 0.2"', 32, ' ZSrSUwyRPKoRrGKQlYDiLpQwctwZueyEByboqtprEEruwEoLXTUk KFHCKRcUexsoITaVHxvpKtODMzl QnSNVWhIaymCiNghpzOXaSlNZmjuJeqygYWcdfsrcIG'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) transferFrom(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 75443748260334313984398455044653399967744023157452738542149762957847345767460], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) withdrawalInitiate([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(4) _fallback([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 159816110482885164)	Returns: 
+	(5) quickWithdraw([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 187025194245624174)	Returns: 
+	(6) approve(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 74939084523126685926694949987579126760374826573496016653995430682810181688116], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) withdrawalComplete([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+
+	(1) constructor(['MtsfWsLTyGTdHaCrdRXRmMCavPFboolRWUmsgDvHzYyhXiiuSLyIkRLNhDHKoqPFPJjejLKfIC', 162, '"SONIC 0.2"'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) transferFrom(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0xC352C77703A000382541035D9F12F27608999903', 64897719024163036893029494840347459746941177671654845869062073138341877816481], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) withdrawalComplete([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) withdrawalComplete([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) _fallback([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 106328795702104068)	Returns: true
+	(6) approve(['0xC352C77703A000382541035D9F12F27608999903', 30], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) withdrawalComplete([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+
+	(1) constructor(['"SONIC 0.2"', 32, '"SONIC 0.2"'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)
+	(2) calculateReward([3], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(3) _fallback([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+	(4) transferFrom(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xC352C77703A000382541035D9F12F27608999903', 4], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(5) transferFrom(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0xC352C77703A000382541035D9F12F27608999903', 105759629490026822729617687871661365886682918795189528734354003901503228981474], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(6) calculateFee([100], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) approveAndCall(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 57724628829349157751962548234036126321627611218214959443441188806153992738472, ['0x00', '0x54', '0x6f', '0x76']], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+
+	(1) constructor(['MtsfWsLTyGTdHaCrdRXRmMCavPFboolRWUmsgDvHzYyhXiiuSLyIkRLNhDHKoqPFPJjejLKfIC', 162, '"SONIC 0.2"'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) transferFrom(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0xC352C77703A000382541035D9F12F27608999903', 64897719024163036893029494840347459746941177671654845869062073138341877816481], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) withdrawalComplete([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) withdrawalComplete([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) _fallback([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 106328795702104068)	Returns: true
+	(6) approve(['0xC352C77703A000382541035D9F12F27608999903', 30], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) withdrawalComplete([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+
+	(1) constructor(['MtsfWsLTyGTdHaCrdRXRmMCavPFboolRWUmsgDvHzYyhXiiuSLyIkRLNhDHKoqPFPJjejLKfIC', 162, '"SONIC 0.2"'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) transferFrom(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0xC352C77703A000382541035D9F12F27608999903', 64897719024163036893029494840347459746941177671654845869062073138341877816481], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(3) withdrawalComplete([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(4) withdrawalComplete([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(5) _fallback([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 106328795702104068)	Returns: true
+	(6) approve(['0xC352C77703A000382541035D9F12F27608999903', 30], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(7) withdrawalComplete([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+
+	(1) constructor(['"receiveApproval(address,uint256,address,bytes)"', 200, '"receiveApproval(address,uint256,address,bytes)"'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) quickWithdraw([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 100038263832787366)	Returns: 
+	(3) approveAndCall(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 80477678936883070723735297657055766510526782927980939809306711690697700627428, ['0x00', '0x74', '0x7a']], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(4) approveAndCall(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 36306171615825437467223939392520867148725061690630047053914931650822352166387, ['0x72']], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) quickWithdraw([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 151065337821060741)	Returns: 
+	(6) approveAndCall(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 42847459882999676391916282762446838892354692561483482820372614605645428863016, ['0x51', '0x45', '0x67', '0x66', '0x67']], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) transfer(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 1223383003782642134545177700811272864537591253997382980636893808690718035907], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+
+	(1) constructor(['ZpslojimB Je QphDB  ', 20, 'FpKgYccQPaoCKNesDStXxBZNwwmMGvXiGpUTAQgJKSFtjJygCMBtOJbGzvzmvoSsNRgBpFUuRIpCkYnPoujvIxZzCnWVVqPuJXdSaFroopmL OdNGPmw ZhZGyPbaXWgVacuKcTJgGtoYrWkMGAyGAObo omWLfWeTwKtHalYorZaXyzQOVrMy'], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)
+	(2) approve(['0xC352C77703A000382541035D9F12F27608999903', 111455033723859689334034490835551169343006118847657865075487280097223047976778], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) approveAndCall(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 64490, ['0x00', '0x49', '0x59', '0x6e', '0x50', '0x41', '0x4b']], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(4) transfer(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 0], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) quickWithdraw([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 100488674652131488)	Returns: 
+	(6) transferFrom(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', 100476191822690688443480900844499237877161338668877069608275361952374690107265], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(7) transferFrom(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 77397765704796879214847187108872009093212660125034858272676645483944433135443], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+
+	(1) constructor(['njwnURoxo gnjcBtGboTqLAnqhcxILrfudjNnBI GEaEonctODFQPdaXvXAMdsdghXhoYSCoJTinfafwHUfjFRhLTGUfCvEU', 34, 'SYLgxtiumTNpShspACcPDaUd JsccDmuYuXDGBLvBUeUTHyYTJZVtCpMtgGiIiPZHCTPgvpcRqnjfhqphLoRoJmKaiwCq DWgHyptsBiemxYeFZawhDDLeToGFpeLvQDuYkmbZDaxTkyUrpuM'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) transfer(['0xC352C77703A000382541035D9F12F27608999903', 2], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(3) withdrawalComplete([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(4) transferFrom(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 74827219392662653787980929258754489227382883302216893049198593437989936814287], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(5) withdrawalComplete([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(6) approve(['0xC352C77703A000382541035D9F12F27608999903', 41527375017022234609639219754515819819381539917551596053137158456520575364481], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) transfer(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 83031984103027651385294261892284861913592589664484602980326921761865666455472], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+
+	(1) constructor(['njwnURoxo gnjcBtGboTqLAnqhcxILrfudjNnBI GEaEonctODFQPdaXvXAMdsdghXhoYSCoJTinfafwHUfjFRhLTGUfCvEU', 34, 'SYLgxtiumTNpShspACcPDaUd JsccDmuYuXDGBLvBUeUTHyYTJZVtCpMtgGiIiPZHCTPgvpcRqnjfhqphLoRoJmKaiwCq DWgHyptsBiemxYeFZawhDDLeToGFpeLvQDuYkmbZDaxTkyUrpuM'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) transfer(['0xC352C77703A000382541035D9F12F27608999903', 2], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(3) withdrawalComplete([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(4) transferFrom(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 74827219392662653787980929258754489227382883302216893049198593437989936814287], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(5) withdrawalComplete([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(6) approve(['0xC352C77703A000382541035D9F12F27608999903', 41527375017022234609639219754515819819381539917551596053137158456520575364481], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) transfer(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 83031984103027651385294261892284861913592589664484602980326921761865666455472], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+
+	(1) constructor(['njwnURoxo gnjcBtGboTqLAnqhcxILrfudjNnBI GEaEonctODFQPdaXvXAMdsdghXhoYSCoJTinfafwHUfjFRhLTGUfCvEU', 34, 'SYLgxtiumTNpShspACcPDaUd JsccDmuYuXDGBLvBUeUTHyYTJZVtCpMtgGiIiPZHCTPgvpcRqnjfhqphLoRoJmKaiwCq DWgHyptsBiemxYeFZawhDDLeToGFpeLvQDuYkmbZDaxTkyUrpuM'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) transfer(['0xC352C77703A000382541035D9F12F27608999903', 2], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(3) withdrawalComplete([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(4) transferFrom(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 74827219392662653787980929258754489227382883302216893049198593437989936814287], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(5) withdrawalComplete([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(6) approve(['0xC352C77703A000382541035D9F12F27608999903', 41527375017022234609639219754515819819381539917551596053137158456520575364481], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) transfer(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 83031984103027651385294261892284861913592589664484602980326921761865666455472], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+
+	(1) constructor(['njwnURoxo gnjcBtGboTqLAnqhcxILrfudjNnBI GEaEonctODFQPdaXvXAMdsdghXhoYSCoJTinfafwHUfjFRhLTGUfCvEU', 34, 'SYLgxtiumTNpShspACcPDaUd JsccDmuYuXDGBLvBUeUTHyYTJZVtCpMtgGiIiPZHCTPgvpcRqnjfhqphLoRoJmKaiwCq DWgHyptsBiemxYeFZawhDDLeToGFpeLvQDuYkmbZDaxTkyUrpuM'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) transfer(['0xC352C77703A000382541035D9F12F27608999903', 2], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(3) withdrawalComplete([], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(4) transferFrom(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', '0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 74827219392662653787980929258754489227382883302216893049198593437989936814287], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(5) withdrawalComplete([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: 
+	(6) approve(['0xC352C77703A000382541035D9F12F27608999903', 41527375017022234609639219754515819819381539917551596053137158456520575364481], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) transfer(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 83031984103027651385294261892284861913592589664484602980326921761865666455472], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+
+	(1) constructor(['"receiveApproval(address,uint256,address,bytes)"', 200, '"receiveApproval(address,uint256,address,bytes)"'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) quickWithdraw([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 100038263832787366)	Returns: 
+	(3) approveAndCall(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 80477678936883070723735297657055766510526782927980939809306711690697700627428, ['0x00', '0x74', '0x7a']], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(4) approveAndCall(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 36306171615825437467223939392520867148725061690630047053914931650822352166387, ['0x72']], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) quickWithdraw([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 151065337821060741)	Returns: 
+	(6) approveAndCall(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 42847459882999676391916282762446838892354692561483482820372614605645428863016, ['0x51', '0x45', '0x67', '0x66', '0x67']], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) transfer(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 1223383003782642134545177700811272864537591253997382980636893808690718035907], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+
+	(1) constructor(['"receiveApproval(address,uint256,address,bytes)"', 200, '"receiveApproval(address,uint256,address,bytes)"'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) quickWithdraw([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 100038263832787366)	Returns: 
+	(3) approveAndCall(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 80477678936883070723735297657055766510526782927980939809306711690697700627428, ['0x00', '0x74', '0x7a']], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(4) approveAndCall(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 36306171615825437467223939392520867148725061690630047053914931650822352166387, ['0x72']], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) quickWithdraw([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 151065337821060741)	Returns: 
+	(6) approveAndCall(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 42847459882999676391916282762446838892354692561483482820372614605645428863016, ['0x51', '0x45', '0x67', '0x66', '0x67']], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) transfer(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 1223383003782642134545177700811272864537591253997382980636893808690718035907], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+
+	(1) constructor(['"receiveApproval(address,uint256,address,bytes)"', 200, '"receiveApproval(address,uint256,address,bytes)"'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) quickWithdraw([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 100038263832787366)	Returns: 
+	(3) approveAndCall(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 80477678936883070723735297657055766510526782927980939809306711690697700627428, ['0x00', '0x74', '0x7a']], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(4) approveAndCall(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 36306171615825437467223939392520867148725061690630047053914931650822352166387, ['0x72']], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) quickWithdraw([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 151065337821060741)	Returns: 
+	(6) approveAndCall(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 42847459882999676391916282762446838892354692561483482820372614605645428863016, ['0x51', '0x45', '0x67', '0x66', '0x67']], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) transfer(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 1223383003782642134545177700811272864537591253997382980636893808690718035907], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+
+	(1) constructor(['"receiveApproval(address,uint256,address,bytes)"', 200, '"receiveApproval(address,uint256,address,bytes)"'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) quickWithdraw([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 100038263832787366)	Returns: 
+	(3) approveAndCall(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 80477678936883070723735297657055766510526782927980939809306711690697700627428, ['0x00', '0x74', '0x7a']], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(4) approveAndCall(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 36306171615825437467223939392520867148725061690630047053914931650822352166387, ['0x72']], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) quickWithdraw([], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 151065337821060741)	Returns: 
+	(6) approveAndCall(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 42847459882999676391916282762446838892354692561483482820372614605645428863016, ['0x51', '0x45', '0x67', '0x66', '0x67']], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) transfer(['0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 1223383003782642134545177700811272864537591253997382980636893808690718035907], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+
+	(1) constructor(['QLJKBXNvpzzqRozaYqJQwVFBcwCwnzpgCTLruFoezswgVf  sbswRIuEjhvppcgFwMNWs c GWylc', 20, '"receiveApproval(address,uint256,address,bytes)"'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) approveAndCall(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 90794683064494777835637944300626122920437959582911094068086597930610070420813, ['0x52']], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) transferFrom(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', 32], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(4) approve(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 65051], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) approveAndCall(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 63743831708170264733078344167034182722174352383418484684254334034973681938264, ['0x75', '0x46', '0x48', '0x65', '0x57', '0x67', '0x59', '0x4c', '0x72']], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(6) calculateReward([30], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) calculateFee([0], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor(['QLJKBXNvpzzqRozaYqJQwVFBcwCwnzpgCTLruFoezswgVf  sbswRIuEjhvppcgFwMNWs c GWylc', 20, '"receiveApproval(address,uint256,address,bytes)"'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) approveAndCall(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 90794683064494777835637944300626122920437959582911094068086597930610070420813, ['0x52']], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) transferFrom(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', 32], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(4) approve(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 65051], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) approveAndCall(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 63743831708170264733078344167034182722174352383418484684254334034973681938264, ['0x75', '0x46', '0x48', '0x65', '0x57', '0x67', '0x59', '0x4c', '0x72']], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(6) calculateReward([30], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) calculateFee([0], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor(['QLJKBXNvpzzqRozaYqJQwVFBcwCwnzpgCTLruFoezswgVf  sbswRIuEjhvppcgFwMNWs c GWylc', 20, '"receiveApproval(address,uint256,address,bytes)"'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) approveAndCall(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 90794683064494777835637944300626122920437959582911094068086597930610070420813, ['0x52']], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) transferFrom(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', 32], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(4) approve(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 65051], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) approveAndCall(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 63743831708170264733078344167034182722174352383418484684254334034973681938264, ['0x75', '0x46', '0x48', '0x65', '0x57', '0x67', '0x59', '0x4c', '0x72']], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(6) calculateReward([30], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) calculateFee([0], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor(['QLJKBXNvpzzqRozaYqJQwVFBcwCwnzpgCTLruFoezswgVf  sbswRIuEjhvppcgFwMNWs c GWylc', 20, '"receiveApproval(address,uint256,address,bytes)"'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) approveAndCall(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 90794683064494777835637944300626122920437959582911094068086597930610070420813, ['0x52']], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) transferFrom(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', 32], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(4) approve(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 65051], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) approveAndCall(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 63743831708170264733078344167034182722174352383418484684254334034973681938264, ['0x75', '0x46', '0x48', '0x65', '0x57', '0x67', '0x59', '0x4c', '0x72']], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(6) calculateReward([30], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) calculateFee([0], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor(['qZOtAkcF KjLZD CuQTjbMfADmuOZEPNwNEaimirqMupSEMGodVCRLrO  eOgtyfvXeaVrAUORS', 250, '"receiveApproval(address,uint256,address,bytes)"'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) transfer(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 55770306566108025226898370635857061183790297633791946249715938733277221422380], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) approveAndCall(['0xC352C77703A000382541035D9F12F27608999903', 0, ['0x48', '0x43', '0x64', '0x57', '0x00']], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(4) transferFrom(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', 0], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) quickWithdraw([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(6) calculateFee([32], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) approveAndCall(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 32966869633389397107394668740344666730138357697052220225396396501204631595324, ['0x44', '0x47', '0x74', '0x56', '0x63', '0x77']], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(8) transfer(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 32], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor(['RtKaDuuEZwdggaEUhdlIKAHVqyUhzW pLMDxcSTHgPMVmpcsyw bLImoOSfTTcRWrFEj cCGinUUaDHFgpHxcPBDAepfUKhL pqsMmaGISalhRjihZQ XGnBrrpemioiEbnqgXARtkMwDjoZaPzoo KEPCxTGMdbrenfWBobQWawVzWxNlMHIYDBWNxDYnVmBhSIo bvuZbZlxANpzrIZMrYOHPgjUbtBPKiUbIKkBphcAcaEEYMBULDZbfDtjx', 0, '"receiveApproval(address,uint256,address,bytes)"'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) withdrawalComplete([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(3) transferFrom(['0xC352C77703A000382541035D9F12F27608999903', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', 98667564237295703284705704652314352384974109801862103766603750316564085215087], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(4) transferFrom(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 15000000], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(5) calculateFee([30946], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(6) withdrawalInitiate([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) approve(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 30946], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+
+	(1) constructor(['RtKaDuuEZwdggaEUhdlIKAHVqyUhzW pLMDxcSTHgPMVmpcsyw bLImoOSfTTcRWrFEj cCGinUUaDHFgpHxcPBDAepfUKhL pqsMmaGISalhRjihZQ XGnBrrpemioiEbnqgXARtkMwDjoZaPzoo KEPCxTGMdbrenfWBobQWawVzWxNlMHIYDBWNxDYnVmBhSIo bvuZbZlxANpzrIZMrYOHPgjUbtBPKiUbIKkBphcAcaEEYMBULDZbfDtjx', 0, '"receiveApproval(address,uint256,address,bytes)"'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) withdrawalComplete([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(3) transferFrom(['0xC352C77703A000382541035D9F12F27608999903', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', 98667564237295703284705704652314352384974109801862103766603750316564085215087], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(4) transferFrom(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 15000000], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(5) calculateFee([30946], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(6) withdrawalInitiate([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) approve(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 30946], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+
+	(1) constructor(['qZOtAkcF KjLZD CuQTjbMfADmuOZEPNwNEaimirqMupSEMGodVCRLrO  eOgtyfvXeaVrAUORS', 250, '"receiveApproval(address,uint256,address,bytes)"'], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)
+	(2) transfer(['0xB1edf760606209BA4c63a3d1330a89aF2849f079', 55770306566108025226898370635857061183790297633791946249715938733277221422380], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(3) approveAndCall(['0xC352C77703A000382541035D9F12F27608999903', 0, ['0x48', '0x43', '0x64', '0x57', '0x00']], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+	(4) transferFrom(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', 0], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) quickWithdraw([], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(6) calculateFee([32], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)	Returns: true
+	(7) approveAndCall(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 32966869633389397107394668740344666730138357697052220225396396501204631595324, ['0x44', '0x47', '0x74', '0x56', '0x63', '0x77']], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(8) transfer(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', 32], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: true
+
+	(1) constructor(['RtKaDuuEZwdggaEUhdlIKAHVqyUhzW pLMDxcSTHgPMVmpcsyw bLImoOSfTTcRWrFEj cCGinUUaDHFgpHxcPBDAepfUKhL pqsMmaGISalhRjihZQ XGnBrrpemioiEbnqgXARtkMwDjoZaPzoo KEPCxTGMdbrenfWBobQWawVzWxNlMHIYDBWNxDYnVmBhSIo bvuZbZlxANpzrIZMrYOHPgjUbtBPKiUbIKkBphcAcaEEYMBULDZbfDtjx', 0, '"receiveApproval(address,uint256,address,bytes)"'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)
+	(2) withdrawalComplete([], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(3) transferFrom(['0xC352C77703A000382541035D9F12F27608999903', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', 98667564237295703284705704652314352384974109801862103766603750316564085215087], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(4) transferFrom(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', '0xd67d275C3743A0a83278B9FF31c38Faf135BB928', 15000000], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: 
+	(5) calculateFee([30946], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(6) withdrawalInitiate([], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(7) approve(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 30946], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: 
+
+	(1) constructor(['QLJKBXNvpzzqRozaYqJQwVFBcwCwnzpgCTLruFoezswgVf  sbswRIuEjhvppcgFwMNWs c GWylc', 20, '"receiveApproval(address,uint256,address,bytes)"'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) approveAndCall(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 90794683064494777835637944300626122920437959582911094068086597930610070420813, ['0x52']], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) transferFrom(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', 32], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(4) approve(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 65051], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) approveAndCall(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 63743831708170264733078344167034182722174352383418484684254334034973681938264, ['0x75', '0x46', '0x48', '0x65', '0x57', '0x67', '0x59', '0x4c', '0x72']], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(6) calculateReward([30], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) calculateFee([0], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor(['QLJKBXNvpzzqRozaYqJQwVFBcwCwnzpgCTLruFoezswgVf  sbswRIuEjhvppcgFwMNWs c GWylc', 20, '"receiveApproval(address,uint256,address,bytes)"'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) approveAndCall(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 90794683064494777835637944300626122920437959582911094068086597930610070420813, ['0x52']], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) transferFrom(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', 32], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(4) approve(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 65051], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) approveAndCall(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 63743831708170264733078344167034182722174352383418484684254334034973681938264, ['0x75', '0x46', '0x48', '0x65', '0x57', '0x67', '0x59', '0x4c', '0x72']], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(6) calculateReward([30], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) calculateFee([0], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor(['QLJKBXNvpzzqRozaYqJQwVFBcwCwnzpgCTLruFoezswgVf  sbswRIuEjhvppcgFwMNWs c GWylc', 20, '"receiveApproval(address,uint256,address,bytes)"'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) approveAndCall(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 90794683064494777835637944300626122920437959582911094068086597930610070420813, ['0x52']], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) transferFrom(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', 32], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(4) approve(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 65051], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) approveAndCall(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 63743831708170264733078344167034182722174352383418484684254334034973681938264, ['0x75', '0x46', '0x48', '0x65', '0x57', '0x67', '0x59', '0x4c', '0x72']], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(6) calculateReward([30], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) calculateFee([0], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor(['QLJKBXNvpzzqRozaYqJQwVFBcwCwnzpgCTLruFoezswgVf  sbswRIuEjhvppcgFwMNWs c GWylc', 20, '"receiveApproval(address,uint256,address,bytes)"'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) approveAndCall(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 90794683064494777835637944300626122920437959582911094068086597930610070420813, ['0x52']], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) transferFrom(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', 32], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(4) approve(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 65051], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) approveAndCall(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 63743831708170264733078344167034182722174352383418484684254334034973681938264, ['0x75', '0x46', '0x48', '0x65', '0x57', '0x67', '0x59', '0x4c', '0x72']], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(6) calculateReward([30], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) calculateFee([0], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+
+	(1) constructor(['QLJKBXNvpzzqRozaYqJQwVFBcwCwnzpgCTLruFoezswgVf  sbswRIuEjhvppcgFwMNWs c GWylc', 20, '"receiveApproval(address,uint256,address,bytes)"'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)
+	(2) approveAndCall(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 90794683064494777835637944300626122920437959582911094068086597930610070420813, ['0x52']], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(3) transferFrom(['0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e', '0xB1edf760606209BA4c63a3d1330a89aF2849f079', 32], from: 0x9eD0d2230ACFfCEE31Af8123B1F64A878B1Bef6e,
+                    value: 0)	Returns: 
+	(4) approve(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 65051], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(5) approveAndCall(['0x9Db9Af7B84d632B4360619355589D9D8c554ad44', 63743831708170264733078344167034182722174352383418484684254334034973681938264, ['0x75', '0x46', '0x48', '0x65', '0x57', '0x67', '0x59', '0x4c', '0x72']], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: 
+	(6) calculateReward([30], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true
+	(7) calculateFee([0], from: 0xC352C77703A000382541035D9F12F27608999903,
+                    value: 0)	Returns: true

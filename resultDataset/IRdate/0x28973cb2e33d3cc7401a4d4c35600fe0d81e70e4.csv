@@ -1,0 +1,8 @@
+Source Function,Target Function
+initMarket(uint256),"buyField(uint256,address)"
+getFreeField(uint256),"buyField(uint256,address)"
+reInvest(uint256),"buyField(uint256,address)"
+"buyField(uint256,address)",getFreeField(uint256)
+initMarket(uint256),getFreeField(uint256)
+reInvest(uint256),getFreeField(uint256)
+initMarket(uint256),reInvest(uint256)

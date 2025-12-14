@@ -1,0 +1,11 @@
+Source Function,Target Function
+"approve(address,uint256)","transferFrom(address,address,uint256)"
+"transferToBuyer(address,uint256,address)","transferFrom(address,address,uint256)"
+"transferToExchange(address,uint256,uint256)","transferFrom(address,address,uint256)"
+burnTokens(address),"transferFrom(address,address,uint256)"
+"approveAndCall(address,uint256,bytes)","transferFrom(address,address,uint256)"
+"approve(address,uint256)",burnTokens(address)
+"transferFrom(address,address,uint256)",burnTokens(address)
+"transferToBuyer(address,uint256,address)",burnTokens(address)
+"transferToExchange(address,uint256,uint256)",burnTokens(address)
+"approveAndCall(address,uint256,bytes)",burnTokens(address)

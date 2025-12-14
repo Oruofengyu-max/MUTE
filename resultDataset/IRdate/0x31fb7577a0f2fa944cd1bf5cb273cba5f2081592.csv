@@ -1,0 +1,10 @@
+Source Function,Target Function
+"setEnvelopeType(uint256,uint256[2])","take(uint256,uint256[4])"
+redeem(uint256),"take(uint256,uint256[4])"
+"make(uint256,uint256[4])","take(uint256,uint256[4])"
+"setEnvelopeType(uint256,uint256[2])",redeem(uint256)
+"take(uint256,uint256[4])",redeem(uint256)
+"make(uint256,uint256[4])",redeem(uint256)
+"setEnvelopeType(uint256,uint256[2])","make(uint256,uint256[4])"
+"take(uint256,uint256[4])","make(uint256,uint256[4])"
+redeem(uint256),"make(uint256,uint256[4])"

@@ -1,0 +1,17 @@
+Source Function,Target Function
+"approve(address,uint256)","transferFrom(address,address,uint256)"
+"decreaseApproval(address,uint256)","transferFrom(address,address,uint256)"
+"transfer(address,uint256)","transferFrom(address,address,uint256)"
+"increaseApproval(address,uint256)","transferFrom(address,address,uint256)"
+finalizeSto(),"transferFrom(address,address,uint256)"
+finalizeSto(),startSto()
+transferOwnership(address),startSto()
+"approve(address,uint256)","transfer(address,uint256)"
+"transferFrom(address,address,uint256)","transfer(address,uint256)"
+"decreaseApproval(address,uint256)","transfer(address,uint256)"
+"increaseApproval(address,uint256)","transfer(address,uint256)"
+finalizeSto(),"transfer(address,uint256)"
+startSto(),finalizeSto()
+transferOwnership(address),finalizeSto()
+startSto(),transferOwnership(address)
+finalizeSto(),transferOwnership(address)

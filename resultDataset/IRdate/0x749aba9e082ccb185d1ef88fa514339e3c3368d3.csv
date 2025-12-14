@@ -1,0 +1,17 @@
+Source Function,Target Function
+"addService(bytes32,uint256)",renounceOwnership()
+removeService(bytes32),renounceOwnership()
+transferOwnership(address),renounceOwnership()
+renounceOwnership(),"addService(bytes32,uint256)"
+removeService(bytes32),"addService(bytes32,uint256)"
+transferOwnership(address),"addService(bytes32,uint256)"
+renounceOwnership(),removeService(bytes32)
+"addService(bytes32,uint256)",removeService(bytes32)
+transferOwnership(address),removeService(bytes32)
+renounceOwnership(),transferOwnership(address)
+"addService(bytes32,uint256)",transferOwnership(address)
+removeService(bytes32),transferOwnership(address)
+renounceOwnership(),"updateServiceFee(bytes32,uint256)"
+"addService(bytes32,uint256)","updateServiceFee(bytes32,uint256)"
+removeService(bytes32),"updateServiceFee(bytes32,uint256)"
+transferOwnership(address),"updateServiceFee(bytes32,uint256)"

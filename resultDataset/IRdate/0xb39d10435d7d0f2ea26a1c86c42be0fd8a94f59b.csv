@@ -1,0 +1,21 @@
+Source Function,Target Function
+"purchaseAccessory(uint256,uint256,string,uint256)","purchaseNew(uint256,string,string,uint256)"
+"approve(address,uint256)","changeName(string,uint256)"
+"purchaseNew(uint256,string,string,uint256)","changeName(string,uint256)"
+"transfer(address,uint256)","changeName(string,uint256)"
+purchaseExistent(uint256),"changeName(string,uint256)"
+"approve(address,uint256)",ownerOf(uint256)
+"purchaseNew(uint256,string,string,uint256)",ownerOf(uint256)
+"transfer(address,uint256)",ownerOf(uint256)
+purchaseExistent(uint256),ownerOf(uint256)
+"purchaseNew(uint256,string,string,uint256)","purchaseAccessory(uint256,uint256,string,uint256)"
+"approve(address,uint256)","changePrice(uint256,uint256)"
+"purchaseNew(uint256,string,string,uint256)","changePrice(uint256,uint256)"
+"transfer(address,uint256)","changePrice(uint256,uint256)"
+purchaseExistent(uint256),"changePrice(uint256,uint256)"
+"approve(address,uint256)",makeItSellable(uint256)
+"purchaseNew(uint256,string,string,uint256)",makeItSellable(uint256)
+"transfer(address,uint256)",makeItSellable(uint256)
+purchaseExistent(uint256),makeItSellable(uint256)
+"purchaseNew(uint256,string,string,uint256)",purchaseExistent(uint256)
+"purchaseAccessory(uint256,uint256,string,uint256)",purchaseExistent(uint256)

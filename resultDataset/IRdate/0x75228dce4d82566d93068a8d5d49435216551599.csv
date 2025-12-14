@@ -1,0 +1,18 @@
+Source Function,Target Function
+setController(address),"logOrderFilled(address,address,address,bytes32,uint256,uint256,uint256,uint256,uint256,uint256,uint256,bytes32)"
+setController(address),"createChildUniverse(bytes32,uint256[],bool)"
+"disputeCrowdsourcerCreated(address,address,address,uint256[],uint256,bool)","logFeeWindowCreated(address,uint256)"
+"createChildUniverse(bytes32,uint256[],bool)","logFeeWindowCreated(address,uint256)"
+createGenesisUniverse(),"logFeeWindowCreated(address,uint256)"
+setController(address),createGenesisUniverse()
+setController(address),logEscapeHatchChanged(bool)
+setController(address),"logCompleteSetsPurchased(address,address,address,uint256)"
+setController(address),logTimestampSet(uint256)
+setController(address),"trustedTransfer(address,address,address,uint256)"
+setController(address),"logCompleteSetsSold(address,address,address,uint256)"
+setController(address),"logOrderCreated(uint8,uint256,uint256,address,uint256,uint256,bytes32,bytes32,address,address)"
+"disputeCrowdsourcerCreated(address,address,address,uint256[],uint256,bool)",logUniverseForked()
+"createChildUniverse(bytes32,uint256[],bool)",logUniverseForked()
+createGenesisUniverse(),logUniverseForked()
+setController(address),"logTradingProceedsClaimed(address,address,address,address,uint256,uint256,uint256)"
+setController(address),"logOrderCanceled(address,address,address,bytes32,uint8,uint256,uint256)"

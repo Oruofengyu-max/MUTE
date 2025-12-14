@@ -1,0 +1,17 @@
+Source Function,Target Function
+payment(),"mint(address,uint256)"
+finishMinting(),"mint(address,uint256)"
+commandMintBonus(address),"mint(address,uint256)"
+transferOwnership(address),"mint(address,uint256)"
+finishMinting(),payment()
+commandMintBonus(address),payment()
+transferOwnership(address),payment()
+payment(),finishMinting()
+commandMintBonus(address),finishMinting()
+transferOwnership(address),finishMinting()
+payment(),commandMintBonus(address)
+finishMinting(),commandMintBonus(address)
+transferOwnership(address),commandMintBonus(address)
+payment(),transferOwnership(address)
+finishMinting(),transferOwnership(address)
+commandMintBonus(address),transferOwnership(address)

@@ -1,0 +1,11 @@
+Source Function,Target Function
+multisend(address[]),"transferFrom(address,address,uint256)"
+"transfer(address,uint256)","transferFrom(address,address,uint256)"
+renounceOwnership(),multisend(address[])
+transferOwnership(address),multisend(address[])
+"transferFrom(address,address,uint256)",multisend(address[])
+"transfer(address,uint256)",multisend(address[])
+transferOwnership(address),renounceOwnership()
+"transferFrom(address,address,uint256)","transfer(address,uint256)"
+multisend(address[]),"transfer(address,uint256)"
+renounceOwnership(),transferOwnership(address)

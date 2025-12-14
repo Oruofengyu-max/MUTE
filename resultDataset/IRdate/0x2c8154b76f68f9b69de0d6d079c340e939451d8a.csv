@@ -1,0 +1,11 @@
+Source Function,Target Function
+revoke(address),refundPreSale()
+"authorize(address,uint8)",refundPreSale()
+refundPreSale(),"mintManual(address,uint256)"
+setStartMainSale(uint256),"mintManual(address,uint256)"
+setBuyPrice(uint256),"mintManual(address,uint256)"
+revoke(address),"mintManual(address,uint256)"
+setBuyBackAddress(address),"mintManual(address,uint256)"
+setBackEndAddress(address),"mintManual(address,uint256)"
+setEndMainSale(uint256),"mintManual(address,uint256)"
+"authorize(address,uint8)","mintManual(address,uint256)"

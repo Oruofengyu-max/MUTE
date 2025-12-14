@@ -1,0 +1,13 @@
+Source Function,Target Function
+activate(),abortSale()
+deactivate(),abortSale()
+finalizeSale(),abortSale()
+"initializeNewSale(uint256,uint256,address,address)",abortSale()
+abortSale(),finalizeSale()
+activate(),finalizeSale()
+deactivate(),finalizeSale()
+"initializeNewSale(uint256,uint256,address,address)",finalizeSale()
+abortSale(),"initializeNewSale(uint256,uint256,address,address)"
+activate(),"initializeNewSale(uint256,uint256,address,address)"
+deactivate(),"initializeNewSale(uint256,uint256,address,address)"
+finalizeSale(),"initializeNewSale(uint256,uint256,address,address)"

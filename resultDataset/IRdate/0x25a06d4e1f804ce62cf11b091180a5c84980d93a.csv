@@ -1,0 +1,23 @@
+Source Function,Target Function
+"setAdministrator(bytes32,bool)",setStakingRequirement(uint256)
+"transfer(address,uint256)",setStakingRequirement(uint256)
+sellingWithdraw(),setStakingRequirement(uint256)
+reinvest(),setStakingRequirement(uint256)
+"transfer(address,uint256)","setAdministrator(bytes32,bool)"
+sellingWithdraw(),"setAdministrator(bytes32,bool)"
+reinvest(),"setAdministrator(bytes32,bool)"
+"setAdministrator(bytes32,bool)",disableInitialStage()
+"transfer(address,uint256)",disableInitialStage()
+sellingWithdraw(),disableInitialStage()
+reinvest(),disableInitialStage()
+"setAdministrator(bytes32,bool)",setSymbol(string)
+"transfer(address,uint256)",setSymbol(string)
+sellingWithdraw(),setSymbol(string)
+reinvest(),setSymbol(string)
+"setAdministrator(bytes32,bool)",setName(string)
+"transfer(address,uint256)",setName(string)
+sellingWithdraw(),setName(string)
+reinvest(),setName(string)
+"setAdministrator(bytes32,bool)",sellingWithdraw()
+"transfer(address,uint256)",sellingWithdraw()
+reinvest(),sellingWithdraw()

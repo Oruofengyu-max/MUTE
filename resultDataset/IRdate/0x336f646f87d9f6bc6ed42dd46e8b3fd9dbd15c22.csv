@@ -1,0 +1,12 @@
+Source Function,Target Function
+burn(uint256),"mint(address,uint256)"
+finishMinting(),"mint(address,uint256)"
+transferOwnership(address),"mint(address,uint256)"
+"approve(address,uint256)",burn(uint256)
+"transferFrom(address,address,uint256)",burn(uint256)
+"mint(address,uint256)",burn(uint256)
+"transfer(address,uint256)",burn(uint256)
+"approve(address,uint256)","transfer(address,uint256)"
+"transferFrom(address,address,uint256)","transfer(address,uint256)"
+"mint(address,uint256)","transfer(address,uint256)"
+burn(uint256),"transfer(address,uint256)"

@@ -1,0 +1,22 @@
+Source Function,Target Function
+renounceOwnership(),"approve(address,uint256)"
+transferOwnership(address),"approve(address,uint256)"
+"approve(address,uint256)","transferFrom(address,address,uint256)"
+"decreaseApproval(address,uint256)","transferFrom(address,address,uint256)"
+"burnFrom(address,uint256)","transferFrom(address,address,uint256)"
+"transfer(address,uint256)","transferFrom(address,address,uint256)"
+"increaseApproval(address,uint256)","transferFrom(address,address,uint256)"
+transferOwnership(address),renounceOwnership()
+renounceOwnership(),"burnFrom(address,uint256)"
+transferOwnership(address),"burnFrom(address,uint256)"
+"approve(address,uint256)","burnFrom(address,uint256)"
+"transferFrom(address,address,uint256)","burnFrom(address,uint256)"
+"decreaseApproval(address,uint256)","burnFrom(address,uint256)"
+"transfer(address,uint256)","burnFrom(address,uint256)"
+"increaseApproval(address,uint256)","burnFrom(address,uint256)"
+"approve(address,uint256)","transfer(address,uint256)"
+"transferFrom(address,address,uint256)","transfer(address,uint256)"
+"decreaseApproval(address,uint256)","transfer(address,uint256)"
+"burnFrom(address,uint256)","transfer(address,uint256)"
+"increaseApproval(address,uint256)","transfer(address,uint256)"
+renounceOwnership(),transferOwnership(address)

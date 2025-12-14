@@ -1,0 +1,20 @@
+Source Function,Target Function
+setFinalizeAgent(address),finalize()
+setPricingStrategy(address),finalize()
+refund(),finalize()
+halt(),finalize()
+setEndsAt(uint256),finalize()
+acceptOwnership(),finalize()
+setRequireCustomerId(bool),finalize()
+loadRefund(),finalize()
+"allocate(address,uint256,uint256,string,uint256)",finalize()
+setOwnerTestValue(uint256),finalize()
+unhalt(),finalize()
+transferOwnership(address),finalize()
+setMultisig(address),finalize()
+"setAllocateAgent(address,bool)",refund()
+"allocate(address,uint256,uint256,string,uint256)",refund()
+"setEarlyParicipantWhitelist(address,bool)",refund()
+"setAllocateAgent(address,bool)","allocate(address,uint256,uint256,string,uint256)"
+refund(),"allocate(address,uint256,uint256,string,uint256)"
+"setEarlyParicipantWhitelist(address,bool)","allocate(address,uint256,uint256,string,uint256)"

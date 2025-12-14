@@ -1,0 +1,22 @@
+Source Function,Target Function
+updateToSendFromStorage(address),"optAddressIntoHolding(address,uint256)"
+emergencyUnpause(),"optAddressIntoHolding(address,uint256)"
+emergencyPause(),"optAddressIntoHolding(address,uint256)"
+updatePartners(address),"optAddressIntoHolding(address,uint256)"
+renounceOwnership(),"optAddressIntoHolding(address,uint256)"
+acceptOwnership(),"optAddressIntoHolding(address,uint256)"
+finalizeHoldingAndTeamTokens(uint256),"optAddressIntoHolding(address,uint256)"
+transferOwnershipAtomic(address),"optAddressIntoHolding(address,uint256)"
+updateTeam(address),"optAddressIntoHolding(address,uint256)"
+updateBackend(address),"optAddressIntoHolding(address,uint256)"
+transferOwnership(address),"optAddressIntoHolding(address,uint256)"
+updateToSendFromStorage(address),finalizeHoldingAndTeamTokens(uint256)
+emergencyUnpause(),finalizeHoldingAndTeamTokens(uint256)
+emergencyPause(),finalizeHoldingAndTeamTokens(uint256)
+updatePartners(address),finalizeHoldingAndTeamTokens(uint256)
+renounceOwnership(),finalizeHoldingAndTeamTokens(uint256)
+acceptOwnership(),finalizeHoldingAndTeamTokens(uint256)
+transferOwnershipAtomic(address),finalizeHoldingAndTeamTokens(uint256)
+updateTeam(address),finalizeHoldingAndTeamTokens(uint256)
+updateBackend(address),finalizeHoldingAndTeamTokens(uint256)
+transferOwnership(address),finalizeHoldingAndTeamTokens(uint256)

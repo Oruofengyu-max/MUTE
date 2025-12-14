@@ -1,0 +1,7 @@
+Source Function,Target Function
+"foreignBuy(address,uint256,uint256)",deleteCustomer(address)
+refund(),deleteCustomer(address)
+"registerCustomer(address,address)",deleteCustomer(address)
+deleteCustomer(address),refund()
+"foreignBuy(address,uint256,uint256)",refund()
+"registerCustomer(address,address)",refund()

@@ -1,0 +1,11 @@
+Source Function,Target Function
+acceptOwnership(),mining(uint256)
+transferOwnership(address),mining(uint256)
+acceptOwnership(),"transferAnyERC20Token(address,uint256)"
+mining(uint256),"transferAnyERC20Token(address,uint256)"
+transferOwnership(address),"transferAnyERC20Token(address,uint256)"
+acceptOwnership(),"undoTx(address,uint256,string)"
+mining(uint256),"undoTx(address,uint256,string)"
+transferOwnership(address),"undoTx(address,uint256,string)"
+acceptOwnership(),transferOwnership(address)
+mining(uint256),transferOwnership(address)

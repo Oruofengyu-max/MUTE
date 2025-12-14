@@ -1,0 +1,22 @@
+Source Function,Target Function
+"approve(address,uint256)","transferFrom(address,address,uint256)"
+COR(),"transferFrom(address,address,uint256)"
+"decreaseApproval(address,uint256)","transferFrom(address,address,uint256)"
+"transfer(address,uint256)","transferFrom(address,address,uint256)"
+createTokens(),"transferFrom(address,address,uint256)"
+"increaseApproval(address,uint256)","transferFrom(address,address,uint256)"
+createTokens(),COR()
+transferOwnership(address),COR()
+"approve(address,uint256)","transfer(address,uint256)"
+"transferFrom(address,address,uint256)","transfer(address,uint256)"
+COR(),"transfer(address,uint256)"
+"decreaseApproval(address,uint256)","transfer(address,uint256)"
+createTokens(),"transfer(address,uint256)"
+"increaseApproval(address,uint256)","transfer(address,uint256)"
+"approve(address,uint256)",createTokens()
+"transferFrom(address,address,uint256)",createTokens()
+COR(),createTokens()
+"decreaseApproval(address,uint256)",createTokens()
+"transfer(address,uint256)",createTokens()
+"increaseApproval(address,uint256)",createTokens()
+transferOwnership(address),createTokens()

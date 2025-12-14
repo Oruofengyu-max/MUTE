@@ -1,0 +1,17 @@
+Source Function,Target Function
+"sendToken(address,uint256,string)","approve(address,uint256)"
+"setApprovalForAll(address,bool)","approve(address,uint256)"
+"burnToken(address,uint256)","approve(address,uint256)"
+"approve(address,uint256)",ownerOf(uint256)
+"sendToken(address,uint256,string)",ownerOf(uint256)
+"setApprovalForAll(address,bool)",ownerOf(uint256)
+"burnToken(address,uint256)",ownerOf(uint256)
+"sendToken(address,uint256,string)","setAnimalMeta(uint256,string)"
+"burnToken(address,uint256)","setAnimalMeta(uint256,string)"
+transferOwnership(address),"setAnimalMeta(uint256,string)"
+"burnToken(address,uint256)","sendToken(address,uint256,string)"
+transferOwnership(address),"sendToken(address,uint256,string)"
+"sendToken(address,uint256,string)","burnToken(address,uint256)"
+transferOwnership(address),"burnToken(address,uint256)"
+"sendToken(address,uint256,string)",transferOwnership(address)
+"burnToken(address,uint256)",transferOwnership(address)

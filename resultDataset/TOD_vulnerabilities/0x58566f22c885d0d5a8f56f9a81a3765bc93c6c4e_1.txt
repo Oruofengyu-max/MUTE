@@ -1,0 +1,34 @@
+Contract:			AddressToken
+Number of Relevant Branches:	1
+Number of Branches Covered:		1
+Runtime: 											109.470162
+Blockchain Time: 							85.44768
+Iterations										
+1
+--------------------------------------------------
+METHODS:
+
+Constructor:
+	Inputs :[{'name': '_deployerHash', 'type': 'bytes32'}]
+	Payable: nonpayable
+supportsInterface:
+
+
+--------------------------------------------------
+
+            TESTS:
+
+	(1) constructor(['0x0000000000000000000000000000000000000000000000000000000000000000'], from: 0xd67d275C3743A0a83278B9FF31c38Faf135BB928,
+                    value: 0)
+	(2) supportsInterface(['0x4b6a7554'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(3) supportsInterface(['0x206b5a53'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(4) supportsInterface(['0x5542487a'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(5) supportsInterface(['0x4c577267'], from: 0xB1edf760606209BA4c63a3d1330a89aF2849f079,
+                    value: 0)	Returns: true
+	(6) supportsInterface(['0x524a5975'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true
+	(7) supportsInterface(['0x62486c42'], from: 0x9Db9Af7B84d632B4360619355589D9D8c554ad44,
+                    value: 0)	Returns: true

@@ -1,0 +1,21 @@
+Source Function,Target Function
+"transfer(address,uint256)",withdrawPayments()
+"spiceUp(uint256,string)",withdrawPayments()
+setCOO(address),ownerOf(uint256)
+unpause(),ownerOf(uint256)
+setCFO(address),ownerOf(uint256)
+claimOwnership(),ownerOf(uint256)
+withdrawPayments(),ownerOf(uint256)
+pause(),ownerOf(uint256)
+"setNextGameSettings(uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256)",ownerOf(uint256)
+transferOwnership(address),ownerOf(uint256)
+"transfer(address,uint256)",ownerOf(uint256)
+"spiceUp(uint256,string)",ownerOf(uint256)
+setCOO(address),"spiceUp(uint256,string)"
+unpause(),"spiceUp(uint256,string)"
+setCFO(address),"spiceUp(uint256,string)"
+claimOwnership(),"spiceUp(uint256,string)"
+withdrawPayments(),"spiceUp(uint256,string)"
+pause(),"spiceUp(uint256,string)"
+"setNextGameSettings(uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256)","spiceUp(uint256,string)"
+transferOwnership(address),"spiceUp(uint256,string)"

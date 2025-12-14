@@ -1,0 +1,10 @@
+Source Function,Target Function
+"approve(address,uint256)","transferFrom(address,address,uint256)"
+unfreeze(uint256),"transferFrom(address,address,uint256)"
+freeze(uint256),"transferFrom(address,address,uint256)"
+"approve(address,uint256)",unfreeze(uint256)
+"transferFrom(address,address,uint256)",unfreeze(uint256)
+freeze(uint256),unfreeze(uint256)
+"approve(address,uint256)",freeze(uint256)
+"transferFrom(address,address,uint256)",freeze(uint256)
+unfreeze(uint256),freeze(uint256)

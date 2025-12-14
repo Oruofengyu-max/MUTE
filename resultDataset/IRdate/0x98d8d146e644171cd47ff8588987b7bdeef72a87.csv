@@ -1,0 +1,14 @@
+Source Function,Target Function
+"approve(address,uint256)","transferFrom(address,address,uint256)"
+"freezeAccount(address,bool,uint256)","transferFrom(address,address,uint256)"
+"decreaseApproval(address,uint256)","transferFrom(address,address,uint256)"
+"freezeAmount(address,uint256)","transferFrom(address,address,uint256)"
+"freezeFrom(address,bool)","transferFrom(address,address,uint256)"
+"approveAndCall(address,uint256,bytes)","transferFrom(address,address,uint256)"
+"increaseApproval(address,uint256)","transferFrom(address,address,uint256)"
+acceptManager(),acceptOwnership()
+setUseFreeze(bool),acceptOwnership()
+setLockToken(bool),acceptOwnership()
+transferManager(address),acceptOwnership()
+"approveAndCall(address,uint256,bytes)",acceptOwnership()
+transferOwnership(address),acceptOwnership()

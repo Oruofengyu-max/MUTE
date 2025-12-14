@@ -1,0 +1,24 @@
+Source Function,Target Function
+setStakingRequirement(uint256),calculateEthereumReceived(uint256)
+disableInitialStage(),calculateEthereumReceived(uint256)
+setSymbol(string),calculateEthereumReceived(uint256)
+setName(string),calculateEthereumReceived(uint256)
+LootEtherCom(),setStakingRequirement(uint256)
+"setAdministrator(address,bool)",setStakingRequirement(uint256)
+"transfer(address,uint256)",setStakingRequirement(uint256)
+reinvest(),setStakingRequirement(uint256)
+LootEtherCom(),"setAdministrator(address,bool)"
+"transfer(address,uint256)","setAdministrator(address,bool)"
+reinvest(),"setAdministrator(address,bool)"
+LootEtherCom(),disableInitialStage()
+"setAdministrator(address,bool)",disableInitialStage()
+"transfer(address,uint256)",disableInitialStage()
+reinvest(),disableInitialStage()
+LootEtherCom(),setSymbol(string)
+"setAdministrator(address,bool)",setSymbol(string)
+"transfer(address,uint256)",setSymbol(string)
+reinvest(),setSymbol(string)
+LootEtherCom(),setName(string)
+"setAdministrator(address,bool)",setName(string)
+"transfer(address,uint256)",setName(string)
+reinvest(),setName(string)

@@ -1,0 +1,13 @@
+Source Function,Target Function
+unpause(),setAdmin(address)
+burn(uint256),setAdmin(address)
+pause(),setAdmin(address)
+transferOwnership(address),setAdmin(address)
+"transferFrom(address,address,uint256)","transfer(address,uint256)"
+burn(uint256),"transfer(address,uint256)"
+"decreaseApproval(address,uint256)","transfer(address,uint256)"
+"increaseApproval(address,uint256)","transfer(address,uint256)"
+unpause(),transferOwnership(address)
+burn(uint256),transferOwnership(address)
+setAdmin(address),transferOwnership(address)
+pause(),transferOwnership(address)

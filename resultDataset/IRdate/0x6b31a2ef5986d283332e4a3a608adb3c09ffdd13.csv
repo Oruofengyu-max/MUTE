@@ -1,0 +1,23 @@
+Source Function,Target Function
+"addTicketHash(uint256,address,uint8)","approve(address,uint256)"
+"buyTicket(uint8,uint8)","approve(address,uint256)"
+"exchangeOwnerTicket(uint8,uint256,uint8,bytes32,bytes32)","approve(address,uint256)"
+"addTicketHashList(uint256[],address[],uint8[])","approve(address,uint256)"
+"setApprovalForAll(address,bool)","approve(address,uint256)"
+"addTicketHash(uint256,address,uint8)","verifyOwnerTicket(uint256,uint8,bytes32,bytes32)"
+"approve(address,uint256)","verifyOwnerTicket(uint256,uint8,bytes32,bytes32)"
+"buyTicket(uint8,uint8)","verifyOwnerTicket(uint256,uint8,bytes32,bytes32)"
+"exchangeOwnerTicket(uint8,uint256,uint8,bytes32,bytes32)","verifyOwnerTicket(uint256,uint8,bytes32,bytes32)"
+"addTicketHashList(uint256[],address[],uint8[])","verifyOwnerTicket(uint256,uint8,bytes32,bytes32)"
+"setApprovalForAll(address,bool)","verifyOwnerTicket(uint256,uint8,bytes32,bytes32)"
+"addTicketHash(uint256,address,uint8)",ownerOf(uint256)
+"approve(address,uint256)",ownerOf(uint256)
+"buyTicket(uint8,uint8)",ownerOf(uint256)
+"exchangeOwnerTicket(uint8,uint256,uint8,bytes32,bytes32)",ownerOf(uint256)
+"addTicketHashList(uint256[],address[],uint8[])",ownerOf(uint256)
+"setApprovalForAll(address,bool)",ownerOf(uint256)
+"addTicketHash(uint256,address,uint8)","exchangeOwnerTicket(uint8,uint256,uint8,bytes32,bytes32)"
+"approve(address,uint256)","exchangeOwnerTicket(uint8,uint256,uint8,bytes32,bytes32)"
+"buyTicket(uint8,uint8)","exchangeOwnerTicket(uint8,uint256,uint8,bytes32,bytes32)"
+"addTicketHashList(uint256[],address[],uint8[])","exchangeOwnerTicket(uint8,uint256,uint8,bytes32,bytes32)"
+"setApprovalForAll(address,bool)","exchangeOwnerTicket(uint8,uint256,uint8,bytes32,bytes32)"

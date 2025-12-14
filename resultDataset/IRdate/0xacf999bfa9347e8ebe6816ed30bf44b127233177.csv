@@ -1,0 +1,13 @@
+Source Function,Target Function
+"cancelOrder(address,uint256,address,uint256,uint256,uint256,uint8,bytes32,bytes32,address)","adminWithdraw(address,uint256,address,uint256,uint8,bytes32,bytes32,uint256)"
+"depositToken(address,uint256)","adminWithdraw(address,uint256,address,uint256,uint8,bytes32,bytes32,uint256)"
+"setAdmin(address,bool)","adminWithdraw(address,uint256,address,uint256,uint8,bytes32,bytes32,uint256)"
+deposit(),"adminWithdraw(address,uint256,address,uint256,uint8,bytes32,bytes32,uint256)"
+"trade(uint256[8],address[4],uint8[2],bytes32[4])","adminWithdraw(address,uint256,address,uint256,uint8,bytes32,bytes32,uint256)"
+changeFeeAccount(address),acceptOwnership()
+transferOwnership(address),acceptOwnership()
+"cancelOrder(address,uint256,address,uint256,uint256,uint256,uint8,bytes32,bytes32,address)","trade(uint256[8],address[4],uint8[2],bytes32[4])"
+"adminWithdraw(address,uint256,address,uint256,uint8,bytes32,bytes32,uint256)","trade(uint256[8],address[4],uint8[2],bytes32[4])"
+"depositToken(address,uint256)","trade(uint256[8],address[4],uint8[2],bytes32[4])"
+"setAdmin(address,bool)","trade(uint256[8],address[4],uint8[2],bytes32[4])"
+deposit(),"trade(uint256[8],address[4],uint8[2],bytes32[4])"
