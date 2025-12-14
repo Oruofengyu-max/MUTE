@@ -1,0 +1,1347 @@
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    RigoBlock
+Line:        78
+Source:
+>
+>     function SetupToken(
+>     ^^^^^^^^^^^^^^^^^^^^
+>         string memory tokenName,
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    RigoBlock
+Line:        109
+Source:
+>
+>     function SetupMultipliers(
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         uint256 Multiplier1inX,
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    RigoBlock
+Line:        123
+Source:
+>
+>     function SetBonus(uint256 BonusTokensPerETHdonated) public onlyOwner {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         _BonusTokensPerETHdonated = BonusTokensPerETHdonated;
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    RigoBlock
+Line:        127
+Source:
+>
+>     function SetFreeTokens(uint256 FreeTokens) public onlyOwner {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         _FreeTokens = FreeTokens;
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    RigoBlock
+Line:        131
+Source:
+>
+>     function StartDistrib() public onlyOwner returns(bool) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         require(!DistribStarted && setupDone, "Cannot start distribution");
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    RigoBlock
+Line:        138
+Source:
+>
+>     function StopDistrib() public onlyOwner returns(bool) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         require(IsDistribRunning, "Distribution not running");
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    RigoBlock
+Line:        154
+Source:
+>
+>     function distribution(address[] memory addresses, uint256 _amount) public onlyOwner {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         uint256 _remainingAmount = _MaxDistribPublicSupply - _CurrentDistribPublicSupply;
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    RigoBlock
+Line:        174
+Source:
+>
+>     function distributeAmounts(address[] memory addresses, uint256[] memory amounts) public onlyOwner {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         uint256 _remainingAmount = _MaxDistribPublicSupply - _CurrentDistribPublicSupply;
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    RigoBlock
+Line:        196
+Source:
+>
+>     function BurnTokens(uint256 amount) public returns(bool) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         uint256 _amount = amount * 1e18;
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    RigoBlock
+Line:        207
+Source:
+>     // View functions
+>     function totalSupply() public view returns(uint256) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         return _totalSupply;
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    RigoBlock
+Line:        211
+Source:
+>
+>     function MaxDistribPublicSupply_() public view returns(uint256) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         return _MaxDistribPublicSupply;
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    RigoBlock
+Line:        215
+Source:
+>
+>     function OwnerDistribSupply_() public view returns(uint256) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         return _OwnerDistribSupply;
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    RigoBlock
+Line:        219
+Source:
+>
+>     function CurrentDistribPublicSupply_() public view returns(uint256) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         return _CurrentDistribPublicSupply;
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    RigoBlock
+Line:        223
+Source:
+>
+>     function RemainingTokensReceiverAddress() public view returns(address) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         return _remainingTokensReceiverAddress;
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    RigoBlock
+Line:        227
+Source:
+>
+>     function DistribFundsReceiverAddress() public view returns(address) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         return _DistribFundsReceiverAddress;
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    RigoBlock
+Line:        231
+Source:
+>
+>     function Owner() public view returns(address) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         return owner;
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    RigoBlock
+Line:        235
+Source:
+>
+>     function SetupDone() public view returns(bool) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         return setupDone;
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    RigoBlock
+Line:        239
+Source:
+>
+>     function IsDistribRunningFalg_() public view returns(bool) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         return IsDistribRunning;
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    RigoBlock
+Line:        243
+Source:
+>
+>     function IsDistribStarted() public view returns(bool) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         return DistribStarted;
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    RigoBlock
+Line:        247
+Source:
+>
+>     function balanceOf(address _owner) public view returns(uint256) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         return balances[_owner];
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    RigoBlock
+Line:        251
+Source:
+>
+>     function transfer(address _to, uint256 _amount) public returns(bool) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         if (balances[msg.sender] >= _amount && _amount > 0 && balances[_to] + _amount > balances[_to]) {
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    RigoBlock
+Line:        262
+Source:
+>
+>     function transferFrom(address _from, address _to, uint256 _amount) public returns(bool) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         if (balances[_from] >= _amount && allowed[_from][msg.sender] >= _amount && _amount > 0 && balances[_to] + _amount > balances[_to]) {
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    RigoBlock
+Line:        274
+Source:
+>
+>     function approve(address _spender, uint256 _amount) public returns(bool) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         allowed[msg.sender][_spender] = _amount;
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    RigoBlock
+Line:        280
+Source:
+>
+>     function allowance(address _owner, address _spender) public view returns(uint256) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         return allowed[_owner][_spender];
+
+
+Severity:    MEDIUM
+Pattern:     Missing Input Validation
+Description: Method arguments must be sanitized before they are used
+             in computations.
+Type:        Warning
+Contract:    RigoBlock
+Line:        109
+Source:
+>
+>     function SetupMultipliers(
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         uint256 Multiplier1inX,
+
+
+Severity:    MEDIUM
+Pattern:     Missing Input Validation
+Description: Method arguments must be sanitized before they are used
+             in computations.
+Type:        Warning
+Contract:    RigoBlock
+Line:        123
+Source:
+>
+>     function SetBonus(uint256 BonusTokensPerETHdonated) public onlyOwner {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         _BonusTokensPerETHdonated = BonusTokensPerETHdonated;
+
+
+Severity:    MEDIUM
+Pattern:     Missing Input Validation
+Description: Method arguments must be sanitized before they are used
+             in computations.
+Type:        Warning
+Contract:    RigoBlock
+Line:        127
+Source:
+>
+>     function SetFreeTokens(uint256 FreeTokens) public onlyOwner {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         _FreeTokens = FreeTokens;
+
+
+Severity:    MEDIUM
+Pattern:     Missing Input Validation
+Description: Method arguments must be sanitized before they are used
+             in computations.
+Type:        Violation
+Contract:    RigoBlock
+Line:        78
+Source:
+>
+>     function SetupToken(
+>     ^^^^^^^^^^^^^^^^^^^^
+>         string memory tokenName,
+
+
+Severity:    MEDIUM
+Pattern:     Missing Input Validation
+Description: Method arguments must be sanitized before they are used
+             in computations.
+Type:        Violation
+Contract:    RigoBlock
+Line:        247
+Source:
+>
+>     function balanceOf(address _owner) public view returns(uint256) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         return balances[_owner];
+
+
+Severity:    MEDIUM
+Pattern:     Missing Input Validation
+Description: Method arguments must be sanitized before they are used
+             in computations.
+Type:        Violation
+Contract:    RigoBlock
+Line:        274
+Source:
+>
+>     function approve(address _spender, uint256 _amount) public returns(bool) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         allowed[msg.sender][_spender] = _amount;
+
+
+Severity:    MEDIUM
+Pattern:     Missing Input Validation
+Description: Method arguments must be sanitized before they are used
+             in computations.
+Type:        Violation
+Contract:    RigoBlock
+Line:        280
+Source:
+>
+>     function allowance(address _owner, address _spender) public view returns(uint256) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         return allowed[_owner][_spender];
+
+
+Severity:    CRITICAL
+Pattern:     Reentrancy with constant gas
+Description: Ether transfers (such as send and transfer) that are
+             followed by state changes may be reentrant.
+Type:        Violation
+Contract:    RigoBlock
+Line:        47
+Source:
+>             if (((_CurrentDistribPublicSupply + _amount) > _MaxDistribPublicSupply) && _MaxDistribPublicSupply > 0) revert();
+>             if (!_DistribFundsReceiverAddress.send(msg.value)) revert();
+>                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>             if (!Claimed[msg.sender]) {
+
+
+Severity:    MEDIUM
+Pattern:     Shadowed Local Variable
+Description: Reports local variable declarations that shadow
+             declarations from outer scopes.
+Type:        Violation
+Contract:    RigoBlock
+Line:        85
+Source:
+>         address remainingTokensReceiverAddress,
+>         address payable DistribFundsReceiverAddress,
+>         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         uint256 FreeTokens
+
+
+Severity:    INFO
+Pattern:     Solidity Naming Convention
+Description: Reports declarations that do not adhere to Solidity's
+             naming convention.
+Type:        Violation
+Contract:    RigoBlock
+Line:        6
+Source:
+>     string public name = "Rigoblock";
+>     uint8 public constant decimals = 18;
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>     uint256 _totalSupply = 0;
+
+
+Severity:    INFO
+Pattern:     Solidity Naming Convention
+Description: Reports declarations that do not adhere to Solidity's
+             naming convention.
+Type:        Violation
+Contract:    RigoBlock
+Line:        8
+Source:
+>     uint256 _totalSupply = 0;
+>     uint256 _MaxDistribPublicSupply = 0;
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>     uint256 _OwnerDistribSupply = 0;
+
+
+Severity:    INFO
+Pattern:     Solidity Naming Convention
+Description: Reports declarations that do not adhere to Solidity's
+             naming convention.
+Type:        Violation
+Contract:    RigoBlock
+Line:        9
+Source:
+>     uint256 _MaxDistribPublicSupply = 0;
+>     uint256 _OwnerDistribSupply = 0;
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>     uint256 _CurrentDistribPublicSupply = 0;
+
+
+Severity:    INFO
+Pattern:     Solidity Naming Convention
+Description: Reports declarations that do not adhere to Solidity's
+             naming convention.
+Type:        Violation
+Contract:    RigoBlock
+Line:        10
+Source:
+>     uint256 _OwnerDistribSupply = 0;
+>     uint256 _CurrentDistribPublicSupply = 0;
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>     uint256 _FreeTokens = 0;
+
+
+Severity:    INFO
+Pattern:     Solidity Naming Convention
+Description: Reports declarations that do not adhere to Solidity's
+             naming convention.
+Type:        Violation
+Contract:    RigoBlock
+Line:        11
+Source:
+>     uint256 _CurrentDistribPublicSupply = 0;
+>     uint256 _FreeTokens = 0;
+>     ^^^^^^^^^^^^^^^^^^^^^^^
+>     uint256 _Multiplier1 = 2;
+
+
+Severity:    INFO
+Pattern:     Solidity Naming Convention
+Description: Reports declarations that do not adhere to Solidity's
+             naming convention.
+Type:        Violation
+Contract:    RigoBlock
+Line:        12
+Source:
+>     uint256 _FreeTokens = 0;
+>     uint256 _Multiplier1 = 2;
+>     ^^^^^^^^^^^^^^^^^^^^^^^^
+>     uint256 _Multiplier2 = 3;
+
+
+Severity:    INFO
+Pattern:     Solidity Naming Convention
+Description: Reports declarations that do not adhere to Solidity's
+             naming convention.
+Type:        Violation
+Contract:    RigoBlock
+Line:        13
+Source:
+>     uint256 _Multiplier1 = 2;
+>     uint256 _Multiplier2 = 3;
+>     ^^^^^^^^^^^^^^^^^^^^^^^^
+>     uint256 _LimitMultiplier1 = 4e15;
+
+
+Severity:    INFO
+Pattern:     Solidity Naming Convention
+Description: Reports declarations that do not adhere to Solidity's
+             naming convention.
+Type:        Violation
+Contract:    RigoBlock
+Line:        14
+Source:
+>     uint256 _Multiplier2 = 3;
+>     uint256 _LimitMultiplier1 = 4e15;
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>     uint256 _LimitMultiplier2 = 8e15;
+
+
+Severity:    INFO
+Pattern:     Solidity Naming Convention
+Description: Reports declarations that do not adhere to Solidity's
+             naming convention.
+Type:        Violation
+Contract:    RigoBlock
+Line:        15
+Source:
+>     uint256 _LimitMultiplier1 = 4e15;
+>     uint256 _LimitMultiplier2 = 8e15;
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>     uint256 _HighDonateLimit = 5e16;
+
+
+Severity:    INFO
+Pattern:     Solidity Naming Convention
+Description: Reports declarations that do not adhere to Solidity's
+             naming convention.
+Type:        Violation
+Contract:    RigoBlock
+Line:        16
+Source:
+>     uint256 _LimitMultiplier2 = 8e15;
+>     uint256 _HighDonateLimit = 5e16;
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>     uint256 _BonusTokensPerETHdonated = 0;
+
+
+Severity:    INFO
+Pattern:     Solidity Naming Convention
+Description: Reports declarations that do not adhere to Solidity's
+             naming convention.
+Type:        Violation
+Contract:    RigoBlock
+Line:        17
+Source:
+>     uint256 _HighDonateLimit = 5e16;
+>     uint256 _BonusTokensPerETHdonated = 0;
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>     address payable _DistribFundsReceiverAddress;
+
+
+Severity:    INFO
+Pattern:     Solidity Naming Convention
+Description: Reports declarations that do not adhere to Solidity's
+             naming convention.
+Type:        Violation
+Contract:    RigoBlock
+Line:        18
+Source:
+>     uint256 _BonusTokensPerETHdonated = 0;
+>     address payable _DistribFundsReceiverAddress;
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>     address _remainingTokensReceiverAddress;
+
+
+Severity:    INFO
+Pattern:     Solidity Naming Convention
+Description: Reports declarations that do not adhere to Solidity's
+             naming convention.
+Type:        Violation
+Contract:    RigoBlock
+Line:        22
+Source:
+>     bool setupDone = false;
+>     bool IsDistribRunning = false;
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>     bool DistribStarted = false;
+
+
+Severity:    INFO
+Pattern:     Solidity Naming Convention
+Description: Reports declarations that do not adhere to Solidity's
+             naming convention.
+Type:        Violation
+Contract:    RigoBlock
+Line:        23
+Source:
+>     bool IsDistribRunning = false;
+>     bool DistribStarted = false;
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>
+
+
+Severity:    INFO
+Pattern:     Solidity Naming Convention
+Description: Reports declarations that do not adhere to Solidity's
+             naming convention.
+Type:        Violation
+Contract:    RigoBlock
+Line:        31
+Source:
+>     mapping(address => mapping(address => uint256)) allowed;
+>     mapping(address => bool) public Claimed;
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>
+
+
+Severity:    INFO
+Pattern:     Solidity Naming Convention
+Description: Reports declarations that do not adhere to Solidity's
+             naming convention.
+Type:        Violation
+Contract:    RigoBlock
+Line:        44
+Source:
+>     function() external payable {
+>         uint256 _amount = 0;
+>         ^^^^^^^^^^^^^^^
+>         if (IsDistribRunning) {
+
+
+Severity:    INFO
+Pattern:     Solidity Naming Convention
+Description: Reports declarations that do not adhere to Solidity's
+             naming convention.
+Type:        Violation
+Contract:    RigoBlock
+Line:        78
+Source:
+>
+>     function SetupToken(
+>     ^^^^^^^^^^^^^^^^^^^^
+>         string memory tokenName,
+
+
+Severity:    INFO
+Pattern:     Solidity Naming Convention
+Description: Reports declarations that do not adhere to Solidity's
+             naming convention.
+Type:        Violation
+Contract:    RigoBlock
+Line:        109
+Source:
+>
+>     function SetupMultipliers(
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         uint256 Multiplier1inX,
+
+
+Severity:    INFO
+Pattern:     Solidity Naming Convention
+Description: Reports declarations that do not adhere to Solidity's
+             naming convention.
+Type:        Violation
+Contract:    RigoBlock
+Line:        123
+Source:
+>
+>     function SetBonus(uint256 BonusTokensPerETHdonated) public onlyOwner {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         _BonusTokensPerETHdonated = BonusTokensPerETHdonated;
+
+
+Severity:    INFO
+Pattern:     Solidity Naming Convention
+Description: Reports declarations that do not adhere to Solidity's
+             naming convention.
+Type:        Violation
+Contract:    RigoBlock
+Line:        127
+Source:
+>
+>     function SetFreeTokens(uint256 FreeTokens) public onlyOwner {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         _FreeTokens = FreeTokens;
+
+
+Severity:    INFO
+Pattern:     Solidity Naming Convention
+Description: Reports declarations that do not adhere to Solidity's
+             naming convention.
+Type:        Violation
+Contract:    RigoBlock
+Line:        131
+Source:
+>
+>     function StartDistrib() public onlyOwner returns(bool) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         require(!DistribStarted && setupDone, "Cannot start distribution");
+
+
+Severity:    INFO
+Pattern:     Solidity Naming Convention
+Description: Reports declarations that do not adhere to Solidity's
+             naming convention.
+Type:        Violation
+Contract:    RigoBlock
+Line:        138
+Source:
+>
+>     function StopDistrib() public onlyOwner returns(bool) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         require(IsDistribRunning, "Distribution not running");
+
+
+Severity:    INFO
+Pattern:     Solidity Naming Convention
+Description: Reports declarations that do not adhere to Solidity's
+             naming convention.
+Type:        Violation
+Contract:    RigoBlock
+Line:        142
+Source:
+>         if (_remainingTokensReceiverAddress != address(0) && _MaxDistribPublicSupply > 0) {
+>             uint256 _remainingAmount = _MaxDistribPublicSupply - _CurrentDistribPublicSupply;
+>             ^^^^^^^^^^^^^^^^^^^^^^^^
+>             if (_remainingAmount > 0) {
+
+
+Severity:    INFO
+Pattern:     Solidity Naming Convention
+Description: Reports declarations that do not adhere to Solidity's
+             naming convention.
+Type:        Violation
+Contract:    RigoBlock
+Line:        155
+Source:
+>     function distribution(address[] memory addresses, uint256 _amount) public onlyOwner {
+>         uint256 _remainingAmount = _MaxDistribPublicSupply - _CurrentDistribPublicSupply;
+>         ^^^^^^^^^^^^^^^^^^^^^^^^
+>         require(addresses.length <= 255, "Too many addresses");
+
+
+Severity:    INFO
+Pattern:     Solidity Naming Convention
+Description: Reports declarations that do not adhere to Solidity's
+             naming convention.
+Type:        Violation
+Contract:    RigoBlock
+Line:        175
+Source:
+>     function distributeAmounts(address[] memory addresses, uint256[] memory amounts) public onlyOwner {
+>         uint256 _remainingAmount = _MaxDistribPublicSupply - _CurrentDistribPublicSupply;
+>         ^^^^^^^^^^^^^^^^^^^^^^^^
+>         uint256 _amount;
+
+
+Severity:    INFO
+Pattern:     Solidity Naming Convention
+Description: Reports declarations that do not adhere to Solidity's
+             naming convention.
+Type:        Violation
+Contract:    RigoBlock
+Line:        176
+Source:
+>         uint256 _remainingAmount = _MaxDistribPublicSupply - _CurrentDistribPublicSupply;
+>         uint256 _amount;
+>         ^^^^^^^^^^^^^^^
+>
+
+
+Severity:    INFO
+Pattern:     Solidity Naming Convention
+Description: Reports declarations that do not adhere to Solidity's
+             naming convention.
+Type:        Violation
+Contract:    RigoBlock
+Line:        196
+Source:
+>
+>     function BurnTokens(uint256 amount) public returns(bool) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         uint256 _amount = amount * 1e18;
+
+
+Severity:    INFO
+Pattern:     Solidity Naming Convention
+Description: Reports declarations that do not adhere to Solidity's
+             naming convention.
+Type:        Violation
+Contract:    RigoBlock
+Line:        197
+Source:
+>     function BurnTokens(uint256 amount) public returns(bool) {
+>         uint256 _amount = amount * 1e18;
+>         ^^^^^^^^^^^^^^^
+>         require(balances[msg.sender] >= _amount, "Not enough balance");
+
+
+Severity:    INFO
+Pattern:     Solidity Naming Convention
+Description: Reports declarations that do not adhere to Solidity's
+             naming convention.
+Type:        Violation
+Contract:    RigoBlock
+Line:        211
+Source:
+>
+>     function MaxDistribPublicSupply_() public view returns(uint256) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         return _MaxDistribPublicSupply;
+
+
+Severity:    INFO
+Pattern:     Solidity Naming Convention
+Description: Reports declarations that do not adhere to Solidity's
+             naming convention.
+Type:        Violation
+Contract:    RigoBlock
+Line:        215
+Source:
+>
+>     function OwnerDistribSupply_() public view returns(uint256) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         return _OwnerDistribSupply;
+
+
+Severity:    INFO
+Pattern:     Solidity Naming Convention
+Description: Reports declarations that do not adhere to Solidity's
+             naming convention.
+Type:        Violation
+Contract:    RigoBlock
+Line:        219
+Source:
+>
+>     function CurrentDistribPublicSupply_() public view returns(uint256) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         return _CurrentDistribPublicSupply;
+
+
+Severity:    INFO
+Pattern:     Solidity Naming Convention
+Description: Reports declarations that do not adhere to Solidity's
+             naming convention.
+Type:        Violation
+Contract:    RigoBlock
+Line:        223
+Source:
+>
+>     function RemainingTokensReceiverAddress() public view returns(address) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         return _remainingTokensReceiverAddress;
+
+
+Severity:    INFO
+Pattern:     Solidity Naming Convention
+Description: Reports declarations that do not adhere to Solidity's
+             naming convention.
+Type:        Violation
+Contract:    RigoBlock
+Line:        227
+Source:
+>
+>     function DistribFundsReceiverAddress() public view returns(address) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         return _DistribFundsReceiverAddress;
+
+
+Severity:    INFO
+Pattern:     Solidity Naming Convention
+Description: Reports declarations that do not adhere to Solidity's
+             naming convention.
+Type:        Violation
+Contract:    RigoBlock
+Line:        231
+Source:
+>
+>     function Owner() public view returns(address) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         return owner;
+
+
+Severity:    INFO
+Pattern:     Solidity Naming Convention
+Description: Reports declarations that do not adhere to Solidity's
+             naming convention.
+Type:        Violation
+Contract:    RigoBlock
+Line:        235
+Source:
+>
+>     function SetupDone() public view returns(bool) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         return setupDone;
+
+
+Severity:    INFO
+Pattern:     Solidity Naming Convention
+Description: Reports declarations that do not adhere to Solidity's
+             naming convention.
+Type:        Violation
+Contract:    RigoBlock
+Line:        239
+Source:
+>
+>     function IsDistribRunningFalg_() public view returns(bool) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         return IsDistribRunning;
+
+
+Severity:    INFO
+Pattern:     Solidity Naming Convention
+Description: Reports declarations that do not adhere to Solidity's
+             naming convention.
+Type:        Violation
+Contract:    RigoBlock
+Line:        243
+Source:
+>
+>     function IsDistribStarted() public view returns(bool) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         return DistribStarted;
+
+
+Severity:    INFO
+Pattern:     State variables default visibility
+Description: Visibility of state variables should be stated explicitly
+Type:        Violation
+Contract:    RigoBlock
+Line:        7
+Source:
+>     uint8 public constant decimals = 18;
+>     uint256 _totalSupply = 0;
+>     ^^^^^^^^^^^^^^^^^^^^^^^^
+>     uint256 _MaxDistribPublicSupply = 0;
+
+
+Severity:    INFO
+Pattern:     State variables default visibility
+Description: Visibility of state variables should be stated explicitly
+Type:        Violation
+Contract:    RigoBlock
+Line:        8
+Source:
+>     uint256 _totalSupply = 0;
+>     uint256 _MaxDistribPublicSupply = 0;
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>     uint256 _OwnerDistribSupply = 0;
+
+
+Severity:    INFO
+Pattern:     State variables default visibility
+Description: Visibility of state variables should be stated explicitly
+Type:        Violation
+Contract:    RigoBlock
+Line:        9
+Source:
+>     uint256 _MaxDistribPublicSupply = 0;
+>     uint256 _OwnerDistribSupply = 0;
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>     uint256 _CurrentDistribPublicSupply = 0;
+
+
+Severity:    INFO
+Pattern:     State variables default visibility
+Description: Visibility of state variables should be stated explicitly
+Type:        Violation
+Contract:    RigoBlock
+Line:        10
+Source:
+>     uint256 _OwnerDistribSupply = 0;
+>     uint256 _CurrentDistribPublicSupply = 0;
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>     uint256 _FreeTokens = 0;
+
+
+Severity:    INFO
+Pattern:     State variables default visibility
+Description: Visibility of state variables should be stated explicitly
+Type:        Violation
+Contract:    RigoBlock
+Line:        11
+Source:
+>     uint256 _CurrentDistribPublicSupply = 0;
+>     uint256 _FreeTokens = 0;
+>     ^^^^^^^^^^^^^^^^^^^^^^^
+>     uint256 _Multiplier1 = 2;
+
+
+Severity:    INFO
+Pattern:     State variables default visibility
+Description: Visibility of state variables should be stated explicitly
+Type:        Violation
+Contract:    RigoBlock
+Line:        12
+Source:
+>     uint256 _FreeTokens = 0;
+>     uint256 _Multiplier1 = 2;
+>     ^^^^^^^^^^^^^^^^^^^^^^^^
+>     uint256 _Multiplier2 = 3;
+
+
+Severity:    INFO
+Pattern:     State variables default visibility
+Description: Visibility of state variables should be stated explicitly
+Type:        Violation
+Contract:    RigoBlock
+Line:        13
+Source:
+>     uint256 _Multiplier1 = 2;
+>     uint256 _Multiplier2 = 3;
+>     ^^^^^^^^^^^^^^^^^^^^^^^^
+>     uint256 _LimitMultiplier1 = 4e15;
+
+
+Severity:    INFO
+Pattern:     State variables default visibility
+Description: Visibility of state variables should be stated explicitly
+Type:        Violation
+Contract:    RigoBlock
+Line:        14
+Source:
+>     uint256 _Multiplier2 = 3;
+>     uint256 _LimitMultiplier1 = 4e15;
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>     uint256 _LimitMultiplier2 = 8e15;
+
+
+Severity:    INFO
+Pattern:     State variables default visibility
+Description: Visibility of state variables should be stated explicitly
+Type:        Violation
+Contract:    RigoBlock
+Line:        15
+Source:
+>     uint256 _LimitMultiplier1 = 4e15;
+>     uint256 _LimitMultiplier2 = 8e15;
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>     uint256 _HighDonateLimit = 5e16;
+
+
+Severity:    INFO
+Pattern:     State variables default visibility
+Description: Visibility of state variables should be stated explicitly
+Type:        Violation
+Contract:    RigoBlock
+Line:        16
+Source:
+>     uint256 _LimitMultiplier2 = 8e15;
+>     uint256 _HighDonateLimit = 5e16;
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>     uint256 _BonusTokensPerETHdonated = 0;
+
+
+Severity:    INFO
+Pattern:     State variables default visibility
+Description: Visibility of state variables should be stated explicitly
+Type:        Violation
+Contract:    RigoBlock
+Line:        17
+Source:
+>     uint256 _HighDonateLimit = 5e16;
+>     uint256 _BonusTokensPerETHdonated = 0;
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>     address payable _DistribFundsReceiverAddress;
+
+
+Severity:    INFO
+Pattern:     State variables default visibility
+Description: Visibility of state variables should be stated explicitly
+Type:        Violation
+Contract:    RigoBlock
+Line:        18
+Source:
+>     uint256 _BonusTokensPerETHdonated = 0;
+>     address payable _DistribFundsReceiverAddress;
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>     address _remainingTokensReceiverAddress;
+
+
+Severity:    INFO
+Pattern:     State variables default visibility
+Description: Visibility of state variables should be stated explicitly
+Type:        Violation
+Contract:    RigoBlock
+Line:        19
+Source:
+>     address payable _DistribFundsReceiverAddress;
+>     address _remainingTokensReceiverAddress;
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>     address owner;
+
+
+Severity:    INFO
+Pattern:     State variables default visibility
+Description: Visibility of state variables should be stated explicitly
+Type:        Violation
+Contract:    RigoBlock
+Line:        20
+Source:
+>     address _remainingTokensReceiverAddress;
+>     address owner;
+>     ^^^^^^^^^^^^^
+>     bool setupDone = false;
+
+
+Severity:    INFO
+Pattern:     State variables default visibility
+Description: Visibility of state variables should be stated explicitly
+Type:        Violation
+Contract:    RigoBlock
+Line:        21
+Source:
+>     address owner;
+>     bool setupDone = false;
+>     ^^^^^^^^^^^^^^^^^^^^^^
+>     bool IsDistribRunning = false;
+
+
+Severity:    INFO
+Pattern:     State variables default visibility
+Description: Visibility of state variables should be stated explicitly
+Type:        Violation
+Contract:    RigoBlock
+Line:        22
+Source:
+>     bool setupDone = false;
+>     bool IsDistribRunning = false;
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>     bool DistribStarted = false;
+
+
+Severity:    INFO
+Pattern:     State variables default visibility
+Description: Visibility of state variables should be stated explicitly
+Type:        Violation
+Contract:    RigoBlock
+Line:        23
+Source:
+>     bool IsDistribRunning = false;
+>     bool DistribStarted = false;
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>
+
+
+Severity:    INFO
+Pattern:     State variables default visibility
+Description: Visibility of state variables should be stated explicitly
+Type:        Violation
+Contract:    RigoBlock
+Line:        29
+Source:
+>
+>     mapping(address => uint256) balances;
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>     mapping(address => mapping(address => uint256)) allowed;
+
+
+Severity:    INFO
+Pattern:     State variables default visibility
+Description: Visibility of state variables should be stated explicitly
+Type:        Violation
+Contract:    RigoBlock
+Line:        30
+Source:
+>     mapping(address => uint256) balances;
+>     mapping(address => mapping(address => uint256)) allowed;
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>     mapping(address => bool) public Claimed;
+
+
+Severity:    CRITICAL
+Pattern:     Transaction Order Affects Ether Receiver
+Description: The receiver of ether transfers must not be influenced by
+             other transactions.
+Type:        Violation
+Contract:    RigoBlock
+Line:        47
+Source:
+>             if (((_CurrentDistribPublicSupply + _amount) > _MaxDistribPublicSupply) && _MaxDistribPublicSupply > 0) revert();
+>             if (!_DistribFundsReceiverAddress.send(msg.value)) revert();
+>                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>             if (!Claimed[msg.sender]) {
+
+
+Severity:    CRITICAL
+Pattern:     Transaction Order Affects Execution of Ether Transfer
+Description: Ether transfers whose execution can be manipulated by
+             other transactions must be inspected for unintended
+             behavior.
+Type:        Violation
+Contract:    RigoBlock
+Line:        47
+Source:
+>             if (((_CurrentDistribPublicSupply + _amount) > _MaxDistribPublicSupply) && _MaxDistribPublicSupply > 0) revert();
+>             if (!_DistribFundsReceiverAddress.send(msg.value)) revert();
+>                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>             if (!Claimed[msg.sender]) {
+
+
+Severity:    HIGH
+Pattern:     Uninitialized State Variable
+Description: State variables should be explicitly initialized.
+Type:        Violation
+Contract:    RigoBlock
+Line:        18
+Source:
+>     uint256 _BonusTokensPerETHdonated = 0;
+>     address payable _DistribFundsReceiverAddress;
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>     address _remainingTokensReceiverAddress;
+
+
+Severity:    HIGH
+Pattern:     Uninitialized State Variable
+Description: State variables should be explicitly initialized.
+Type:        Violation
+Contract:    RigoBlock
+Line:        19
+Source:
+>     address payable _DistribFundsReceiverAddress;
+>     address _remainingTokensReceiverAddress;
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>     address owner;
+
+
+Severity:    CRITICAL
+Pattern:     Unrestricted Ether Flow
+Description: The execution of ether flows should be restricted to an
+             authorized set of users.
+Type:        Warning
+Contract:    RigoBlock
+Line:        47
+Source:
+>             if (((_CurrentDistribPublicSupply + _amount) > _MaxDistribPublicSupply) && _MaxDistribPublicSupply > 0) revert();
+>             if (!_DistribFundsReceiverAddress.send(msg.value)) revert();
+>                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>             if (!Claimed[msg.sender]) {
+
+
+Severity:    CRITICAL
+Pattern:     Unrestricted write to storage
+Description: Contract fields that can be modified by any user must be
+             inspected.
+Type:        Violation
+Contract:    RigoBlock
+Line:        275
+Source:
+>     function approve(address _spender, uint256 _amount) public returns(bool) {
+>         allowed[msg.sender][_spender] = _amount;
+>         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         emit Approval(msg.sender, _spender, _amount);
+
+
+Severity:    INFO
+Pattern:     Unused State Variable
+Description: Unused state variables should be removed.
+Type:        Violation
+Contract:    RigoBlock
+Line:        4
+Source:
+> contract RigoBlock {
+>     string public symbol = "RGC";
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>     string public name = "Rigoblock";
+
+
+Severity:    INFO
+Pattern:     Unused State Variable
+Description: Unused state variables should be removed.
+Type:        Violation
+Contract:    RigoBlock
+Line:        5
+Source:
+>     string public symbol = "RGC";
+>     string public name = "Rigoblock";
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>     uint8 public constant decimals = 18;
+
+
+Severity:    INFO
+Pattern:     Unused State Variable
+Description: Unused state variables should be removed.
+Type:        Violation
+Contract:    RigoBlock
+Line:        6
+Source:
+>     string public name = "Rigoblock";
+>     uint8 public constant decimals = 18;
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>     uint256 _totalSupply = 0;

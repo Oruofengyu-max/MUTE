@@ -1,0 +1,8 @@
+Source Function,Target Function
+AddressDailyReward(address),withdraw()
+"transfer(address,uint256)",withdraw()
+AddressDailyReward(address),"transfer(address,uint256)"
+withdraw(),"transfer(address,uint256)"
+setForcedRecipient,payToReferer
+rewardMint,setVulnerableAmount
+"transfer(address,uint256)",destroyAndPayout

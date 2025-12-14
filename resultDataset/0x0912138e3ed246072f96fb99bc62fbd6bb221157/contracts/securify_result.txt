@@ -1,0 +1,220 @@
+Severity:    INFO
+Pattern:     Constable State Variables
+Description: State variables that do not change should be declared as
+             constants.
+Type:        Violation
+Contract:    ERC20TokenSAC
+Line:        6
+Source:
+>     string public symbol;
+>     uint8 public decimals = 18;
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+>     uint256 public totalSupply;
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    ERC20TokenSAC
+Line:        51
+Source:
+>
+>     function transfer(address _to, uint256 _value) public returns (bool success) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         _transfer(msg.sender, _to, _value);
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    ERC20TokenSAC
+Line:        56
+Source:
+>
+>     function transferFrom(address _from, address _to, uint256 _value) public returns (bool success) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         require(_value <= allowance[_from][msg.sender], "Allowance exceeded");
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    ERC20TokenSAC
+Line:        63
+Source:
+>
+>     function approve(address _spender, uint256 _value) public returns (bool success) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         require(_spender != address(0), "Invalid spender");
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    ERC20TokenSAC
+Line:        71
+Source:
+>
+>     function appointNewCFO(address newCFO) public onlyCFO returns (bool) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         require(newCFO != address(0), "Invalid address");
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    ERC20TokenSAC
+Line:        78
+Source:
+>
+>     function mintToken(address target, uint256 amount) public onlyCFO returns (bool) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         require(target != address(0), "Invalid target");
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    ERC20TokenSAC
+Line:        87
+Source:
+>
+>     function meltToken(address target, uint256 amount) public onlyCFO returns (bool) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         require(target != address(0), "Invalid target");
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    ERC20TokenSAC
+Line:        97
+Source:
+>
+>     function freezeAccount(address target, bool freeze) public onlyCFO returns (bool) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         require(target != address(0), "Invalid target");
+
+
+Severity:    MEDIUM
+Pattern:     Missing Input Validation
+Description: Method arguments must be sanitized before they are used
+             in computations.
+Type:        Warning
+Contract:    ERC20TokenSAC
+Line:        51
+Source:
+>
+>     function transfer(address _to, uint256 _value) public returns (bool success) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         _transfer(msg.sender, _to, _value);
+
+
+Severity:    MEDIUM
+Pattern:     Missing Input Validation
+Description: Method arguments must be sanitized before they are used
+             in computations.
+Type:        Warning
+Contract:    ERC20TokenSAC
+Line:        56
+Source:
+>
+>     function transferFrom(address _from, address _to, uint256 _value) public returns (bool success) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         require(_value <= allowance[_from][msg.sender], "Allowance exceeded");
+
+
+Severity:    MEDIUM
+Pattern:     Missing Input Validation
+Description: Method arguments must be sanitized before they are used
+             in computations.
+Type:        Violation
+Contract:    ERC20TokenSAC
+Line:        97
+Source:
+>
+>     function freezeAccount(address target, bool freeze) public onlyCFO returns (bool) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         require(target != address(0), "Invalid target");
+
+
+Severity:    CRITICAL
+Pattern:     Unrestricted write to storage
+Description: Contract fields that can be modified by any user must be
+             inspected.
+Type:        Warning
+Contract:    ERC20TokenSAC
+Line:        45
+Source:
+>         uint previousBalances = balanceOf[_from] + balanceOf[_to];
+>         balanceOf[_from] -= _value;
+>         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         balanceOf[_to] += _value;
+
+
+Severity:    CRITICAL
+Pattern:     Unrestricted write to storage
+Description: Contract fields that can be modified by any user must be
+             inspected.
+Type:        Warning
+Contract:    ERC20TokenSAC
+Line:        46
+Source:
+>         balanceOf[_from] -= _value;
+>         balanceOf[_to] += _value;
+>         ^^^^^^^^^^^^^^^^^^^^^^^^
+>         emit Transfer(_from, _to, _value);
+
+
+Severity:    CRITICAL
+Pattern:     Unrestricted write to storage
+Description: Contract fields that can be modified by any user must be
+             inspected.
+Type:        Violation
+Contract:    ERC20TokenSAC
+Line:        66
+Source:
+>         require(_value != 0, "Invalid value");
+>         allowance[msg.sender][_spender] = _value;
+>         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         emit Approval(msg.sender, _spender, _value);
+
+
+Severity:    INFO
+Pattern:     Unused State Variable
+Description: Unused state variables should be removed.
+Type:        Violation
+Contract:    ERC20TokenSAC
+Line:        4
+Source:
+> contract ERC20TokenSAC {
+>     string public name;
+>     ^^^^^^^^^^^^^^^^^^
+>     string public symbol;
+
+
+Severity:    INFO
+Pattern:     Unused State Variable
+Description: Unused state variables should be removed.
+Type:        Violation
+Contract:    ERC20TokenSAC
+Line:        5
+Source:
+>     string public name;
+>     string public symbol;
+>     ^^^^^^^^^^^^^^^^^^^^
+>     uint8 public decimals = 18;

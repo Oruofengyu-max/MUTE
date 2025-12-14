@@ -1,0 +1,618 @@
+Severity:    INFO
+Pattern:     Constable State Variables
+Description: State variables that do not change should be declared as
+             constants.
+Type:        Violation
+Contract:    HumanStandardToken
+Line:        58
+Source:
+>     string public symbol;
+>     string public version = "H0.1";
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    StandardToken
+Line:        21
+Source:
+>
+>     function transfer(address _to, uint256 _value) public returns (bool success) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         balances[msg.sender] -= _value;
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    StandardToken
+Line:        28
+Source:
+>
+>     function transferFrom(address _from, address _to, uint256 _value) public returns (bool success) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         uint256 _allowance = allowed[_from][msg.sender];
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    StandardToken
+Line:        39
+Source:
+>
+>     function balanceOf(address _owner) public view returns (uint256 balance) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         return balances[_owner];
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    StandardToken
+Line:        43
+Source:
+>
+>     function approve(address _spender, uint256 _value) public returns (bool success) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         allowed[msg.sender][_spender] = _value;
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    StandardToken
+Line:        49
+Source:
+>
+>     function allowance(address _owner, address _spender) public view returns (uint256 remaining) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         return allowed[_owner][_spender];
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    StandardToken
+Line:        21
+Source:
+>
+>     function transfer(address _to, uint256 _value) public returns (bool success) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         balances[msg.sender] -= _value;
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    StandardToken
+Line:        28
+Source:
+>
+>     function transferFrom(address _from, address _to, uint256 _value) public returns (bool success) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         uint256 _allowance = allowed[_from][msg.sender];
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    StandardToken
+Line:        39
+Source:
+>
+>     function balanceOf(address _owner) public view returns (uint256 balance) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         return balances[_owner];
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    StandardToken
+Line:        43
+Source:
+>
+>     function approve(address _spender, uint256 _value) public returns (bool success) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         allowed[msg.sender][_spender] = _value;
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    StandardToken
+Line:        49
+Source:
+>
+>     function allowance(address _owner, address _spender) public view returns (uint256 remaining) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         return allowed[_owner][_spender];
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    HumanStandardToken
+Line:        73
+Source:
+>
+>     function approveAndCall(address _spender, uint256 _value, bytes memory _extraData) public returns (bool success) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         allowed[msg.sender][_spender] = _value;
+
+
+Severity:    INFO
+Pattern:     Low Level Calls
+Description: Usage of <address>.call should be avoided
+Type:        Violation
+Contract:    HumanStandardToken
+Line:        77
+Source:
+>
+>         (bool success, ) = address(_spender).call(
+>                            ^^^^^^^^^^^^^^^^^^^^^^^
+>     abi.encodeWithSignature(
+
+
+Severity:    MEDIUM
+Pattern:     Missing Input Validation
+Description: Method arguments must be sanitized before they are used
+             in computations.
+Type:        Violation
+Contract:    StandardToken
+Line:        21
+Source:
+>
+>     function transfer(address _to, uint256 _value) public returns (bool success) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         balances[msg.sender] -= _value;
+
+
+Severity:    MEDIUM
+Pattern:     Missing Input Validation
+Description: Method arguments must be sanitized before they are used
+             in computations.
+Type:        Violation
+Contract:    StandardToken
+Line:        28
+Source:
+>
+>     function transferFrom(address _from, address _to, uint256 _value) public returns (bool success) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         uint256 _allowance = allowed[_from][msg.sender];
+
+
+Severity:    MEDIUM
+Pattern:     Missing Input Validation
+Description: Method arguments must be sanitized before they are used
+             in computations.
+Type:        Violation
+Contract:    StandardToken
+Line:        39
+Source:
+>
+>     function balanceOf(address _owner) public view returns (uint256 balance) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         return balances[_owner];
+
+
+Severity:    MEDIUM
+Pattern:     Missing Input Validation
+Description: Method arguments must be sanitized before they are used
+             in computations.
+Type:        Violation
+Contract:    StandardToken
+Line:        43
+Source:
+>
+>     function approve(address _spender, uint256 _value) public returns (bool success) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         allowed[msg.sender][_spender] = _value;
+
+
+Severity:    MEDIUM
+Pattern:     Missing Input Validation
+Description: Method arguments must be sanitized before they are used
+             in computations.
+Type:        Violation
+Contract:    StandardToken
+Line:        49
+Source:
+>
+>     function allowance(address _owner, address _spender) public view returns (uint256 remaining) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         return allowed[_owner][_spender];
+
+
+Severity:    MEDIUM
+Pattern:     Missing Input Validation
+Description: Method arguments must be sanitized before they are used
+             in computations.
+Type:        Violation
+Contract:    StandardToken
+Line:        21
+Source:
+>
+>     function transfer(address _to, uint256 _value) public returns (bool success) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         balances[msg.sender] -= _value;
+
+
+Severity:    MEDIUM
+Pattern:     Missing Input Validation
+Description: Method arguments must be sanitized before they are used
+             in computations.
+Type:        Violation
+Contract:    StandardToken
+Line:        28
+Source:
+>
+>     function transferFrom(address _from, address _to, uint256 _value) public returns (bool success) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         uint256 _allowance = allowed[_from][msg.sender];
+
+
+Severity:    MEDIUM
+Pattern:     Missing Input Validation
+Description: Method arguments must be sanitized before they are used
+             in computations.
+Type:        Violation
+Contract:    StandardToken
+Line:        39
+Source:
+>
+>     function balanceOf(address _owner) public view returns (uint256 balance) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         return balances[_owner];
+
+
+Severity:    MEDIUM
+Pattern:     Missing Input Validation
+Description: Method arguments must be sanitized before they are used
+             in computations.
+Type:        Violation
+Contract:    StandardToken
+Line:        43
+Source:
+>
+>     function approve(address _spender, uint256 _value) public returns (bool success) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         allowed[msg.sender][_spender] = _value;
+
+
+Severity:    MEDIUM
+Pattern:     Missing Input Validation
+Description: Method arguments must be sanitized before they are used
+             in computations.
+Type:        Violation
+Contract:    StandardToken
+Line:        49
+Source:
+>
+>     function allowance(address _owner, address _spender) public view returns (uint256 remaining) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         return allowed[_owner][_spender];
+
+
+Severity:    MEDIUM
+Pattern:     Missing Input Validation
+Description: Method arguments must be sanitized before they are used
+             in computations.
+Type:        Violation
+Contract:    HumanStandardToken
+Line:        73
+Source:
+>
+>     function approveAndCall(address _spender, uint256 _value, bytes memory _extraData) public returns (bool success) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         allowed[msg.sender][_spender] = _value;
+
+
+Severity:    MEDIUM
+Pattern:     Shadowed Local Variable
+Description: Reports local variable declarations that shadow
+             declarations from outer scopes.
+Type:        Violation
+Contract:    HumanStandardToken
+Line:        77
+Source:
+>
+>         (bool success, ) = address(_spender).call(
+>          ^^^^^^^^^^^^
+>     abi.encodeWithSignature(
+
+
+Severity:    INFO
+Pattern:     Solidity Naming Convention
+Description: Reports declarations that do not adhere to Solidity's
+             naming convention.
+Type:        Violation
+Contract:    StandardToken
+Line:        29
+Source:
+>     function transferFrom(address _from, address _to, uint256 _value) public returns (bool success) {
+>         uint256 _allowance = allowed[_from][msg.sender];
+>         ^^^^^^^^^^^^^^^^^^
+>         balances[_to] += _value;
+
+
+Severity:    INFO
+Pattern:     Solidity Naming Convention
+Description: Reports declarations that do not adhere to Solidity's
+             naming convention.
+Type:        Violation
+Contract:    HumanStandardToken
+Line:        77
+Source:
+>
+>         (bool success, ) = address(_spender).call(
+>          ^^^^^^^^^^^^
+>     abi.encodeWithSignature(
+
+
+Severity:    INFO
+Pattern:     State variables default visibility
+Description: Visibility of state variables should be stated explicitly
+Type:        Violation
+Contract:    StandardToken
+Line:        16
+Source:
+> contract StandardToken is ERC20Interface {
+>     uint256 constant MAX_UINT256 = 2**256 - 1;
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>
+
+
+Severity:    INFO
+Pattern:     State variables default visibility
+Description: Visibility of state variables should be stated explicitly
+Type:        Violation
+Contract:    StandardToken
+Line:        18
+Source:
+>
+>     mapping(address => uint256) balances;
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>     mapping(address => mapping(address => uint256)) allowed;
+
+
+Severity:    INFO
+Pattern:     State variables default visibility
+Description: Visibility of state variables should be stated explicitly
+Type:        Violation
+Contract:    StandardToken
+Line:        19
+Source:
+>     mapping(address => uint256) balances;
+>     mapping(address => mapping(address => uint256)) allowed;
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>
+
+
+Severity:    HIGH
+Pattern:     Uninitialized State Variable
+Description: State variables should be explicitly initialized.
+Type:        Violation
+Contract:    ERC20Interface
+Line:        4
+Source:
+> contract ERC20Interface {
+>     uint256 public totalSupply;
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+>     function balanceOf(address _owner) public view returns (uint256 balance);
+
+
+Severity:    CRITICAL
+Pattern:     Unrestricted write to storage
+Description: Contract fields that can be modified by any user must be
+             inspected.
+Type:        Violation
+Contract:    StandardToken
+Line:        23
+Source:
+>         balances[msg.sender] -= _value;
+>         balances[_to] += _value;
+>         ^^^^^^^^^^^^^^^^^^^^^^^
+>         emit Transfer(msg.sender, _to, _value);
+
+
+Severity:    CRITICAL
+Pattern:     Unrestricted write to storage
+Description: Contract fields that can be modified by any user must be
+             inspected.
+Type:        Violation
+Contract:    StandardToken
+Line:        30
+Source:
+>         uint256 _allowance = allowed[_from][msg.sender];
+>         balances[_to] += _value;
+>         ^^^^^^^^^^^^^^^^^^^^^^^
+>         balances[_from] -= _value;
+
+
+Severity:    CRITICAL
+Pattern:     Unrestricted write to storage
+Description: Contract fields that can be modified by any user must be
+             inspected.
+Type:        Violation
+Contract:    StandardToken
+Line:        31
+Source:
+>         balances[_to] += _value;
+>         balances[_from] -= _value;
+>         ^^^^^^^^^^^^^^^^^^^^^^^^^
+>         if (_allowance < MAX_UINT256) {
+
+
+Severity:    CRITICAL
+Pattern:     Unrestricted write to storage
+Description: Contract fields that can be modified by any user must be
+             inspected.
+Type:        Violation
+Contract:    StandardToken
+Line:        44
+Source:
+>     function approve(address _spender, uint256 _value) public returns (bool success) {
+>         allowed[msg.sender][_spender] = _value;
+>         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         emit Approval(msg.sender, _spender, _value);
+
+
+Severity:    CRITICAL
+Pattern:     Unrestricted write to storage
+Description: Contract fields that can be modified by any user must be
+             inspected.
+Type:        Violation
+Contract:    StandardToken
+Line:        23
+Source:
+>         balances[msg.sender] -= _value;
+>         balances[_to] += _value;
+>         ^^^^^^^^^^^^^^^^^^^^^^^
+>         emit Transfer(msg.sender, _to, _value);
+
+
+Severity:    CRITICAL
+Pattern:     Unrestricted write to storage
+Description: Contract fields that can be modified by any user must be
+             inspected.
+Type:        Violation
+Contract:    StandardToken
+Line:        30
+Source:
+>         uint256 _allowance = allowed[_from][msg.sender];
+>         balances[_to] += _value;
+>         ^^^^^^^^^^^^^^^^^^^^^^^
+>         balances[_from] -= _value;
+
+
+Severity:    CRITICAL
+Pattern:     Unrestricted write to storage
+Description: Contract fields that can be modified by any user must be
+             inspected.
+Type:        Violation
+Contract:    StandardToken
+Line:        31
+Source:
+>         balances[_to] += _value;
+>         balances[_from] -= _value;
+>         ^^^^^^^^^^^^^^^^^^^^^^^^^
+>         if (_allowance < MAX_UINT256) {
+
+
+Severity:    CRITICAL
+Pattern:     Unrestricted write to storage
+Description: Contract fields that can be modified by any user must be
+             inspected.
+Type:        Violation
+Contract:    StandardToken
+Line:        44
+Source:
+>     function approve(address _spender, uint256 _value) public returns (bool success) {
+>         allowed[msg.sender][_spender] = _value;
+>         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         emit Approval(msg.sender, _spender, _value);
+
+
+Severity:    CRITICAL
+Pattern:     Unrestricted write to storage
+Description: Contract fields that can be modified by any user must be
+             inspected.
+Type:        Violation
+Contract:    HumanStandardToken
+Line:        74
+Source:
+>     function approveAndCall(address _spender, uint256 _value, bytes memory _extraData) public returns (bool success) {
+>         allowed[msg.sender][_spender] = _value;
+>         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         emit Approval(msg.sender, _spender, _value);
+
+
+Severity:    INFO
+Pattern:     Unused State Variable
+Description: Unused state variables should be removed.
+Type:        Violation
+Contract:    ERC20Interface
+Line:        4
+Source:
+> contract ERC20Interface {
+>     uint256 public totalSupply;
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+>     function balanceOf(address _owner) public view returns (uint256 balance);
+
+
+Severity:    INFO
+Pattern:     Unused State Variable
+Description: Unused state variables should be removed.
+Type:        Violation
+Contract:    HumanStandardToken
+Line:        55
+Source:
+> contract HumanStandardToken is StandardToken {
+>     string public name;
+>     ^^^^^^^^^^^^^^^^^^
+>     uint8 public decimals;
+
+
+Severity:    INFO
+Pattern:     Unused State Variable
+Description: Unused state variables should be removed.
+Type:        Violation
+Contract:    HumanStandardToken
+Line:        56
+Source:
+>     string public name;
+>     uint8 public decimals;
+>     ^^^^^^^^^^^^^^^^^^^^^
+>     string public symbol;
+
+
+Severity:    INFO
+Pattern:     Unused State Variable
+Description: Unused state variables should be removed.
+Type:        Violation
+Contract:    HumanStandardToken
+Line:        57
+Source:
+>     uint8 public decimals;
+>     string public symbol;
+>     ^^^^^^^^^^^^^^^^^^^^
+>     string public version = "H0.1";
+
+
+Severity:    INFO
+Pattern:     Unused State Variable
+Description: Unused state variables should be removed.
+Type:        Violation
+Contract:    HumanStandardToken
+Line:        58
+Source:
+>     string public symbol;
+>     string public version = "H0.1";
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>

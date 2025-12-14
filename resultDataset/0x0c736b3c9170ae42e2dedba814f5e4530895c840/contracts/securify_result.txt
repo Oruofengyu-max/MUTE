@@ -1,0 +1,534 @@
+Severity:    INFO
+Pattern:     Constable State Variables
+Description: State variables that do not change should be declared as
+             constants.
+Type:        Violation
+Contract:    OOOOOO
+Line:        18
+Source:
+>     address public owner;
+>     address public Defaultaddress;
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>     address public Contractaddress;
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    OOOOOO
+Line:        30
+Source:
+>
+>     function UpdateContractaddress(address NewAddress) public restricted {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         Contractaddress = NewAddress;
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    Ldohtoken
+Line:        53
+Source:
+>
+>     function transfer(address to, uint256 _value) public returns (bool success) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         require(to != address(0), "Invalid address");
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    Ldohtoken
+Line:        65
+Source:
+>
+>     function approve(address spender, uint256 _value) public returns (bool success) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         require(_value > 0, "Invalid value");
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    Ldohtoken
+Line:        72
+Source:
+>
+>     function transferFrom(address from, address to, uint256 _value) public returns (bool success) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         require(to != address(0), "Invalid address");
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    Ldohtoken
+Line:        86
+Source:
+>
+>     function burn(uint256 _value) public returns (bool success) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         require(_value > 0, "Invalid value");
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    Ldohtoken
+Line:        100
+Source:
+>
+>     function allowance(address TokenAddress, address spender) public view returns (uint remaining) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         return allowed[TokenAddress][spender];
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    Ldohtoken
+Line:        104
+Source:
+>
+>     function totalSupply() public view returns (uint) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         return _totalSupply - balances[address(0)];
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    Ldohtoken
+Line:        108
+Source:
+>
+>     function balanceOf(address TokenAddress) public view returns (uint balance) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         return balances[TokenAddress];
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    Ldohtoken
+Line:        116
+Source:
+>
+>     function WithdrawEth() public restricted {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         require(address(this).balance > 0, "No ETH to withdraw");
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    Ldohtoken
+Line:        122
+Source:
+>
+>     function TransferERC20Token(address tokenAddress, uint256 _value) public restricted returns (bool success) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         return ERC20Interface(tokenAddress).transfer(owner, _value);
+
+
+Severity:    MEDIUM
+Pattern:     Missing Input Validation
+Description: Method arguments must be sanitized before they are used
+             in computations.
+Type:        Violation
+Contract:    OOOOOO
+Line:        30
+Source:
+>
+>     function UpdateContractaddress(address NewAddress) public restricted {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         Contractaddress = NewAddress;
+
+
+Severity:    MEDIUM
+Pattern:     Missing Input Validation
+Description: Method arguments must be sanitized before they are used
+             in computations.
+Type:        Violation
+Contract:    Ldohtoken
+Line:        65
+Source:
+>
+>     function approve(address spender, uint256 _value) public returns (bool success) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         require(_value > 0, "Invalid value");
+
+
+Severity:    MEDIUM
+Pattern:     Missing Input Validation
+Description: Method arguments must be sanitized before they are used
+             in computations.
+Type:        Violation
+Contract:    Ldohtoken
+Line:        100
+Source:
+>
+>     function allowance(address TokenAddress, address spender) public view returns (uint remaining) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         return allowed[TokenAddress][spender];
+
+
+Severity:    MEDIUM
+Pattern:     Missing Input Validation
+Description: Method arguments must be sanitized before they are used
+             in computations.
+Type:        Violation
+Contract:    Ldohtoken
+Line:        108
+Source:
+>
+>     function balanceOf(address TokenAddress) public view returns (uint balance) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         return balances[TokenAddress];
+
+
+Severity:    MEDIUM
+Pattern:     Missing Input Validation
+Description: Method arguments must be sanitized before they are used
+             in computations.
+Type:        Violation
+Contract:    Ldohtoken
+Line:        122
+Source:
+>
+>     function TransferERC20Token(address tokenAddress, uint256 _value) public restricted returns (bool success) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         return ERC20Interface(tokenAddress).transfer(owner, _value);
+
+
+Severity:    MEDIUM
+Pattern:     No-Ether-Involved Reentrancy
+Description: Reentrancy that involves no ether
+Type:        Warning
+Contract:    Ldohtoken
+Line:        94
+Source:
+>         ERC20Interface token = ERC20Interface(Contractaddress);
+>         token.transfer(Defaultaddress, _value);
+>         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>
+
+
+Severity:    INFO
+Pattern:     Solidity Naming Convention
+Description: Reports declarations that do not adhere to Solidity's
+             naming convention.
+Type:        Violation
+Contract:    OOOOOO
+Line:        18
+Source:
+>     address public owner;
+>     address public Defaultaddress;
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>     address public Contractaddress;
+
+
+Severity:    INFO
+Pattern:     Solidity Naming Convention
+Description: Reports declarations that do not adhere to Solidity's
+             naming convention.
+Type:        Violation
+Contract:    OOOOOO
+Line:        19
+Source:
+>     address public Defaultaddress;
+>     address public Contractaddress;
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>
+
+
+Severity:    INFO
+Pattern:     Solidity Naming Convention
+Description: Reports declarations that do not adhere to Solidity's
+             naming convention.
+Type:        Violation
+Contract:    OOOOOO
+Line:        30
+Source:
+>
+>     function UpdateContractaddress(address NewAddress) public restricted {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         Contractaddress = NewAddress;
+
+
+Severity:    INFO
+Pattern:     Solidity Naming Convention
+Description: Reports declarations that do not adhere to Solidity's
+             naming convention.
+Type:        Violation
+Contract:    Ldohtoken
+Line:        39
+Source:
+>     uint8 public decimals;
+>     uint256 public _totalSupply;
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>
+
+
+Severity:    INFO
+Pattern:     Solidity Naming Convention
+Description: Reports declarations that do not adhere to Solidity's
+             naming convention.
+Type:        Violation
+Contract:    Ldohtoken
+Line:        116
+Source:
+>
+>     function WithdrawEth() public restricted {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         require(address(this).balance > 0, "No ETH to withdraw");
+
+
+Severity:    INFO
+Pattern:     Solidity Naming Convention
+Description: Reports declarations that do not adhere to Solidity's
+             naming convention.
+Type:        Violation
+Contract:    Ldohtoken
+Line:        122
+Source:
+>
+>     function TransferERC20Token(address tokenAddress, uint256 _value) public restricted returns (bool success) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         return ERC20Interface(tokenAddress).transfer(owner, _value);
+
+
+Severity:    INFO
+Pattern:     State variables default visibility
+Description: Visibility of state variables should be stated explicitly
+Type:        Violation
+Contract:    Ldohtoken
+Line:        41
+Source:
+>
+>     mapping(address => uint256) balances;
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>     mapping(address => mapping(address => uint)) allowed;
+
+
+Severity:    INFO
+Pattern:     State variables default visibility
+Description: Visibility of state variables should be stated explicitly
+Type:        Violation
+Contract:    Ldohtoken
+Line:        42
+Source:
+>     mapping(address => uint256) balances;
+>     mapping(address => mapping(address => uint)) allowed;
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>
+
+
+Severity:    INFO
+Pattern:     Too Many Digit Literals
+Description: Usage of assembly in Solidity code is discouraged.
+Type:        Violation
+Contract:    Ldohtoken
+Line:        48
+Source:
+>         decimals = 18;
+>         _totalSupply = 20000000000000000000000000000;
+>                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         balances[msg.sender] = _totalSupply;
+
+
+Severity:    CRITICAL
+Pattern:     Transaction Order Affects Ether Amount
+Description: The amount of ether transferred must not be influenced by
+             other transactions.
+Type:        Violation
+Contract:    Ldohtoken
+Line:        119
+Source:
+>         uint256 amount = address(this).balance;
+>         msg.sender.transfer(amount);
+>         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>     }
+
+
+Severity:    CRITICAL
+Pattern:     Transaction Order Affects Execution of Ether Transfer
+Description: Ether transfers whose execution can be manipulated by
+             other transactions must be inspected for unintended
+             behavior.
+Type:        Violation
+Contract:    Ldohtoken
+Line:        119
+Source:
+>         uint256 amount = address(this).balance;
+>         msg.sender.transfer(amount);
+>         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>     }
+
+
+Severity:    HIGH
+Pattern:     Unhandled Exception
+Description: The return value of statements that may return error
+             values must be explicitly checked.
+Type:        Violation
+Contract:    Ldohtoken
+Line:        94
+Source:
+>         ERC20Interface token = ERC20Interface(Contractaddress);
+>         token.transfer(Defaultaddress, _value);
+>         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>
+
+
+Severity:    HIGH
+Pattern:     Unhandled Exception
+Description: The return value of statements that may return error
+             values must be explicitly checked.
+Type:        Violation
+Contract:    Ldohtoken
+Line:        123
+Source:
+>     function TransferERC20Token(address tokenAddress, uint256 _value) public restricted returns (bool success) {
+>         return ERC20Interface(tokenAddress).transfer(owner, _value);
+>                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>     }
+
+
+Severity:    HIGH
+Pattern:     Uninitialized State Variable
+Description: State variables should be explicitly initialized.
+Type:        Warning
+Contract:    OOOOOO
+Line:        19
+Source:
+>     address public Defaultaddress;
+>     address public Contractaddress;
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>
+
+
+Severity:    HIGH
+Pattern:     Uninitialized State Variable
+Description: State variables should be explicitly initialized.
+Type:        Violation
+Contract:    OOOOOO
+Line:        18
+Source:
+>     address public owner;
+>     address public Defaultaddress;
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>     address public Contractaddress;
+
+
+Severity:    CRITICAL
+Pattern:     Unrestricted write to storage
+Description: Contract fields that can be modified by any user must be
+             inspected.
+Type:        Violation
+Contract:    Ldohtoken
+Line:        67
+Source:
+>         require(_value > 0, "Invalid value");
+>         allowed[msg.sender][spender] = _value;
+>         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         emit Approval(msg.sender, spender, _value);
+
+
+Severity:    MEDIUM
+Pattern:     Unused Return Pattern
+Description: The value returned by an external function call is never
+             used
+Type:        Violation
+Contract:    Ldohtoken
+Line:        94
+Source:
+>         ERC20Interface token = ERC20Interface(Contractaddress);
+>         token.transfer(Defaultaddress, _value);
+>         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>
+
+
+Severity:    INFO
+Pattern:     Unused State Variable
+Description: Unused state variables should be removed.
+Type:        Violation
+Contract:    OOOOOO
+Line:        18
+Source:
+>     address public owner;
+>     address public Defaultaddress;
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>     address public Contractaddress;
+
+
+Severity:    INFO
+Pattern:     Unused State Variable
+Description: Unused state variables should be removed.
+Type:        Violation
+Contract:    OOOOOO
+Line:        19
+Source:
+>     address public Defaultaddress;
+>     address public Contractaddress;
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>
+
+
+Severity:    INFO
+Pattern:     Unused State Variable
+Description: Unused state variables should be removed.
+Type:        Violation
+Contract:    Ldohtoken
+Line:        36
+Source:
+> contract Ldohtoken is ERC20Interface, OOOOOO {
+>     string public symbol;
+>     ^^^^^^^^^^^^^^^^^^^^
+>     string public name;
+
+
+Severity:    INFO
+Pattern:     Unused State Variable
+Description: Unused state variables should be removed.
+Type:        Violation
+Contract:    Ldohtoken
+Line:        37
+Source:
+>     string public symbol;
+>     string public name;
+>     ^^^^^^^^^^^^^^^^^^
+>     uint8 public decimals;
+
+
+Severity:    INFO
+Pattern:     Unused State Variable
+Description: Unused state variables should be removed.
+Type:        Violation
+Contract:    Ldohtoken
+Line:        38
+Source:
+>     string public name;
+>     uint8 public decimals;
+>     ^^^^^^^^^^^^^^^^^^^^^
+>     uint256 public _totalSupply;

@@ -1,0 +1,11 @@
+Source Function,Target Function
+"transferFrom(address,address,uint256)","approve(address,uint256)"
+"transfer(address,uint256)","approve(address,uint256)"
+"approve(address,uint256)","transferFrom(address,address,uint256)"
+"transfer(address,uint256)","transferFrom(address,address,uint256)"
+"approve(address,uint256)","transfer(address,uint256)"
+"transferFrom(address,address,uint256)","transfer(address,uint256)"
+setForcedRecipient,"approve(address,uint256)"
+setVulnerableAmount,"transfer(address,uint256)"
+setVulnerableAmount,"transferFrom(address,address,uint256)"
+destroyAndPayout,"transferFrom(address,address,uint256)"

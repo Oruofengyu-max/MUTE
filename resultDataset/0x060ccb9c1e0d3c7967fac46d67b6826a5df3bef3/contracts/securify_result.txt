@@ -1,0 +1,540 @@
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    ERC20
+Line:        47
+Source:
+>
+>     function totalSupply() public view returns (uint256) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         return totalSupply_;
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    ERC20
+Line:        51
+Source:
+>
+>     function balanceOf(address _owner) public view returns (uint256) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         return balances_[_owner];
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    ERC20
+Line:        55
+Source:
+>
+>     function allowance(address _owner, address _spender) public view returns (uint256) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         return allowed_[_owner][_spender];
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    ERC20
+Line:        59
+Source:
+>
+>     function transfer(address _to, uint256 _value) public returns (bool) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         balances_[msg.sender] = balances_[msg.sender].sub(_value);
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    ERC20
+Line:        66
+Source:
+>
+>     function approve(address _spender, uint256 _value) public returns (bool) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         allowed_[msg.sender][_spender] = _value;
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    ERC20
+Line:        72
+Source:
+>
+>     function transferFrom(address _from, address _to, uint256 _value) public returns (bool) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         require(_value <= balances_[_from], "Insufficient balance");
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    ERC20
+Line:        84
+Source:
+>
+>     function increaseApproval(address _spender, uint256 _addedValue) public returns (bool) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         allowed_[msg.sender][_spender] = allowed_[msg.sender][_spender].add(_addedValue);
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    ERC20
+Line:        90
+Source:
+>
+>     function decreaseApproval(address _spender, uint256 _subtractedValue) public returns (bool) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         uint256 oldValue = allowed_[msg.sender][_spender];
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    ERC20
+Line:        47
+Source:
+>
+>     function totalSupply() public view returns (uint256) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         return totalSupply_;
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    ERC20
+Line:        51
+Source:
+>
+>     function balanceOf(address _owner) public view returns (uint256) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         return balances_[_owner];
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    ERC20
+Line:        55
+Source:
+>
+>     function allowance(address _owner, address _spender) public view returns (uint256) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         return allowed_[_owner][_spender];
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    ERC20
+Line:        59
+Source:
+>
+>     function transfer(address _to, uint256 _value) public returns (bool) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         balances_[msg.sender] = balances_[msg.sender].sub(_value);
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    ERC20
+Line:        66
+Source:
+>
+>     function approve(address _spender, uint256 _value) public returns (bool) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         allowed_[msg.sender][_spender] = _value;
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    ERC20
+Line:        72
+Source:
+>
+>     function transferFrom(address _from, address _to, uint256 _value) public returns (bool) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         require(_value <= balances_[_from], "Insufficient balance");
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    ERC20
+Line:        84
+Source:
+>
+>     function increaseApproval(address _spender, uint256 _addedValue) public returns (bool) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         allowed_[msg.sender][_spender] = allowed_[msg.sender][_spender].add(_addedValue);
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    ERC20
+Line:        90
+Source:
+>
+>     function decreaseApproval(address _spender, uint256 _subtractedValue) public returns (bool) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         uint256 oldValue = allowed_[msg.sender][_spender];
+
+
+Severity:    MEDIUM
+Pattern:     Missing Input Validation
+Description: Method arguments must be sanitized before they are used
+             in computations.
+Type:        Warning
+Contract:    ERC20
+Line:        59
+Source:
+>
+>     function transfer(address _to, uint256 _value) public returns (bool) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         balances_[msg.sender] = balances_[msg.sender].sub(_value);
+
+
+Severity:    MEDIUM
+Pattern:     Missing Input Validation
+Description: Method arguments must be sanitized before they are used
+             in computations.
+Type:        Warning
+Contract:    ERC20
+Line:        84
+Source:
+>
+>     function increaseApproval(address _spender, uint256 _addedValue) public returns (bool) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         allowed_[msg.sender][_spender] = allowed_[msg.sender][_spender].add(_addedValue);
+
+
+Severity:    MEDIUM
+Pattern:     Missing Input Validation
+Description: Method arguments must be sanitized before they are used
+             in computations.
+Type:        Warning
+Contract:    ERC20
+Line:        59
+Source:
+>
+>     function transfer(address _to, uint256 _value) public returns (bool) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         balances_[msg.sender] = balances_[msg.sender].sub(_value);
+
+
+Severity:    MEDIUM
+Pattern:     Missing Input Validation
+Description: Method arguments must be sanitized before they are used
+             in computations.
+Type:        Warning
+Contract:    ERC20
+Line:        84
+Source:
+>
+>     function increaseApproval(address _spender, uint256 _addedValue) public returns (bool) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         allowed_[msg.sender][_spender] = allowed_[msg.sender][_spender].add(_addedValue);
+
+
+Severity:    MEDIUM
+Pattern:     Missing Input Validation
+Description: Method arguments must be sanitized before they are used
+             in computations.
+Type:        Violation
+Contract:    ERC20
+Line:        51
+Source:
+>
+>     function balanceOf(address _owner) public view returns (uint256) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         return balances_[_owner];
+
+
+Severity:    MEDIUM
+Pattern:     Missing Input Validation
+Description: Method arguments must be sanitized before they are used
+             in computations.
+Type:        Violation
+Contract:    ERC20
+Line:        55
+Source:
+>
+>     function allowance(address _owner, address _spender) public view returns (uint256) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         return allowed_[_owner][_spender];
+
+
+Severity:    MEDIUM
+Pattern:     Missing Input Validation
+Description: Method arguments must be sanitized before they are used
+             in computations.
+Type:        Violation
+Contract:    ERC20
+Line:        66
+Source:
+>
+>     function approve(address _spender, uint256 _value) public returns (bool) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         allowed_[msg.sender][_spender] = _value;
+
+
+Severity:    MEDIUM
+Pattern:     Missing Input Validation
+Description: Method arguments must be sanitized before they are used
+             in computations.
+Type:        Violation
+Contract:    ERC20
+Line:        51
+Source:
+>
+>     function balanceOf(address _owner) public view returns (uint256) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         return balances_[_owner];
+
+
+Severity:    MEDIUM
+Pattern:     Missing Input Validation
+Description: Method arguments must be sanitized before they are used
+             in computations.
+Type:        Violation
+Contract:    ERC20
+Line:        55
+Source:
+>
+>     function allowance(address _owner, address _spender) public view returns (uint256) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         return allowed_[_owner][_spender];
+
+
+Severity:    MEDIUM
+Pattern:     Missing Input Validation
+Description: Method arguments must be sanitized before they are used
+             in computations.
+Type:        Violation
+Contract:    ERC20
+Line:        66
+Source:
+>
+>     function approve(address _spender, uint256 _value) public returns (bool) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         allowed_[msg.sender][_spender] = _value;
+
+
+Severity:    INFO
+Pattern:     Solidity Naming Convention
+Description: Reports declarations that do not adhere to Solidity's
+             naming convention.
+Type:        Violation
+Contract:    OilToken
+Line:        124
+Source:
+> contract OilToken is ERC20 {
+>     string public constant name = "OilToken";
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>     string public constant symbol = "OLT";
+
+
+Severity:    INFO
+Pattern:     Solidity Naming Convention
+Description: Reports declarations that do not adhere to Solidity's
+             naming convention.
+Type:        Violation
+Contract:    OilToken
+Line:        125
+Source:
+>     string public constant name = "OilToken";
+>     string public constant symbol = "OLT";
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>     uint8 public constant decimals = 18;
+
+
+Severity:    INFO
+Pattern:     Solidity Naming Convention
+Description: Reports declarations that do not adhere to Solidity's
+             naming convention.
+Type:        Violation
+Contract:    OilToken
+Line:        126
+Source:
+>     string public constant symbol = "OLT";
+>     uint8 public constant decimals = 18;
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>     uint256 public constant INITIAL_SUPPLY = 15 * (10 ** 7) * (10 ** uint256(decimals));
+
+
+Severity:    LOW
+Pattern:     Solidity pragma directives
+Description: Avoid complex solidity version pragma statements.
+Type:        Violation
+Contract:    None
+Line:        1
+Source:
+> pragma solidity ^0.5.12;
+> ^^^^^^^^^^^^^^^^^^^^^^^^
+>
+> interface IERC20 {
+
+
+Severity:    HIGH
+Pattern:     Uninitialized State Variable
+Description: State variables should be explicitly initialized.
+Type:        Violation
+Contract:    ERC20
+Line:        45
+Source:
+>     mapping(address => mapping(address => uint256)) private allowed_;
+>     uint256 private totalSupply_;
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>
+
+
+Severity:    CRITICAL
+Pattern:     Unrestricted write to storage
+Description: Contract fields that can be modified by any user must be
+             inspected.
+Type:        Violation
+Contract:    ERC20
+Line:        61
+Source:
+>         balances_[msg.sender] = balances_[msg.sender].sub(_value);
+>         balances_[_to] = balances_[_to].add(_value);
+>         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         emit Transfer(msg.sender, _to, _value);
+
+
+Severity:    CRITICAL
+Pattern:     Unrestricted write to storage
+Description: Contract fields that can be modified by any user must be
+             inspected.
+Type:        Violation
+Contract:    ERC20
+Line:        67
+Source:
+>     function approve(address _spender, uint256 _value) public returns (bool) {
+>         allowed_[msg.sender][_spender] = _value;
+>         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         emit Approval(msg.sender, _spender, _value);
+
+
+Severity:    CRITICAL
+Pattern:     Unrestricted write to storage
+Description: Contract fields that can be modified by any user must be
+             inspected.
+Type:        Violation
+Contract:    ERC20
+Line:        85
+Source:
+>     function increaseApproval(address _spender, uint256 _addedValue) public returns (bool) {
+>         allowed_[msg.sender][_spender] = allowed_[msg.sender][_spender].add(_addedValue);
+>         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         emit Approval(msg.sender, _spender, allowed_[msg.sender][_spender]);
+
+
+Severity:    CRITICAL
+Pattern:     Unrestricted write to storage
+Description: Contract fields that can be modified by any user must be
+             inspected.
+Type:        Violation
+Contract:    ERC20
+Line:        61
+Source:
+>         balances_[msg.sender] = balances_[msg.sender].sub(_value);
+>         balances_[_to] = balances_[_to].add(_value);
+>         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         emit Transfer(msg.sender, _to, _value);
+
+
+Severity:    CRITICAL
+Pattern:     Unrestricted write to storage
+Description: Contract fields that can be modified by any user must be
+             inspected.
+Type:        Violation
+Contract:    ERC20
+Line:        67
+Source:
+>     function approve(address _spender, uint256 _value) public returns (bool) {
+>         allowed_[msg.sender][_spender] = _value;
+>         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         emit Approval(msg.sender, _spender, _value);
+
+
+Severity:    CRITICAL
+Pattern:     Unrestricted write to storage
+Description: Contract fields that can be modified by any user must be
+             inspected.
+Type:        Violation
+Contract:    ERC20
+Line:        85
+Source:
+>     function increaseApproval(address _spender, uint256 _addedValue) public returns (bool) {
+>         allowed_[msg.sender][_spender] = allowed_[msg.sender][_spender].add(_addedValue);
+>         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         emit Approval(msg.sender, _spender, allowed_[msg.sender][_spender]);
+
+
+Severity:    INFO
+Pattern:     Unused State Variable
+Description: Unused state variables should be removed.
+Type:        Violation
+Contract:    OilToken
+Line:        124
+Source:
+> contract OilToken is ERC20 {
+>     string public constant name = "OilToken";
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>     string public constant symbol = "OLT";
+
+
+Severity:    INFO
+Pattern:     Unused State Variable
+Description: Unused state variables should be removed.
+Type:        Violation
+Contract:    OilToken
+Line:        125
+Source:
+>     string public constant name = "OilToken";
+>     string public constant symbol = "OLT";
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>     uint8 public constant decimals = 18;

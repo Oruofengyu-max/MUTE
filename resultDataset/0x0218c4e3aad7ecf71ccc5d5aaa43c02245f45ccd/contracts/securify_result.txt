@@ -1,0 +1,650 @@
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    ERC20Detailed
+Line:        62
+Source:
+>
+>   function name() public view returns(string memory) {
+>   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>     return _name;
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    ERC20Detailed
+Line:        66
+Source:
+>
+>   function symbol() public view returns(string memory) {
+>   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>     return _symbol;
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    ERC20Detailed
+Line:        70
+Source:
+>
+>   function decimals() public view returns(uint8) {
+>   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>     return _decimals;
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    Erosion
+Line:        95
+Source:
+>
+>   function totalSupply() public view returns (uint256) {
+>   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>     return _totalSupply;
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    Erosion
+Line:        99
+Source:
+>
+>   function balanceOf(address owner) public view returns (uint256) {
+>   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>     return _balances[owner];
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    Erosion
+Line:        103
+Source:
+>
+>   function allowance(address owner, address spender) public view returns (uint256) {
+>   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>     return _allowed[owner][spender];
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    Erosion
+Line:        130
+Source:
+>
+>   function multiTransfer(address[] memory receivers, uint256[] memory amounts) public {
+>   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>     for (uint256 i = 0; i < receivers.length; i++) {
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    Erosion
+Line:        136
+Source:
+>
+>   function approve(address spender, uint256 value) public returns (bool) {
+>   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>     require(spender != address(0));
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    Erosion
+Line:        143
+Source:
+>
+>   function transferFrom(address from, address to, uint256 value) public returns (bool) {
+>   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    Erosion
+Line:        169
+Source:
+>
+>   function increaseAllowance(address spender, uint256 addedValue) public returns (bool) {
+>   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>     require(spender != address(0));
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    Erosion
+Line:        176
+Source:
+>
+>   function decreaseAllowance(address spender, uint256 subtractedValue) public returns (bool) {
+>   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>     require(spender != address(0));
+
+
+Severity:    MEDIUM
+Pattern:     Locked Ether
+Description: Contracts that may receive ether must also allow users to
+             extract the deposited ether from the contract.
+Type:        Violation
+Contract:    Erosion
+Line:        77
+Source:
+>
+> contract Erosion is ERC20Detailed {
+> ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>
+
+
+Severity:    MEDIUM
+Pattern:     Missing Input Validation
+Description: Method arguments must be sanitized before they are used
+             in computations.
+Type:        Warning
+Contract:    Erosion
+Line:        107
+Source:
+>
+>   function transfer(address to, uint256 value) public returns (bool) {
+>   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>
+
+
+Severity:    MEDIUM
+Pattern:     Missing Input Validation
+Description: Method arguments must be sanitized before they are used
+             in computations.
+Type:        Warning
+Contract:    Erosion
+Line:        130
+Source:
+>
+>   function multiTransfer(address[] memory receivers, uint256[] memory amounts) public {
+>   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>     for (uint256 i = 0; i < receivers.length; i++) {
+
+
+Severity:    MEDIUM
+Pattern:     Missing Input Validation
+Description: Method arguments must be sanitized before they are used
+             in computations.
+Type:        Warning
+Contract:    Erosion
+Line:        143
+Source:
+>
+>   function transferFrom(address from, address to, uint256 value) public returns (bool) {
+>   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>
+
+
+Severity:    MEDIUM
+Pattern:     Missing Input Validation
+Description: Method arguments must be sanitized before they are used
+             in computations.
+Type:        Warning
+Contract:    Erosion
+Line:        169
+Source:
+>
+>   function increaseAllowance(address spender, uint256 addedValue) public returns (bool) {
+>   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>     require(spender != address(0));
+
+
+Severity:    MEDIUM
+Pattern:     Missing Input Validation
+Description: Method arguments must be sanitized before they are used
+             in computations.
+Type:        Warning
+Contract:    Erosion
+Line:        176
+Source:
+>
+>   function decreaseAllowance(address spender, uint256 subtractedValue) public returns (bool) {
+>   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>     require(spender != address(0));
+
+
+Severity:    MEDIUM
+Pattern:     Missing Input Validation
+Description: Method arguments must be sanitized before they are used
+             in computations.
+Type:        Warning
+Contract:    Erosion
+Line:        190
+Source:
+>
+>   function burn(uint256 amount) external {
+>   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>     _burn(msg.sender, amount);
+
+
+Severity:    MEDIUM
+Pattern:     Missing Input Validation
+Description: Method arguments must be sanitized before they are used
+             in computations.
+Type:        Violation
+Contract:    Erosion
+Line:        99
+Source:
+>
+>   function balanceOf(address owner) public view returns (uint256) {
+>   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>     return _balances[owner];
+
+
+Severity:    MEDIUM
+Pattern:     Missing Input Validation
+Description: Method arguments must be sanitized before they are used
+             in computations.
+Type:        Violation
+Contract:    Erosion
+Line:        103
+Source:
+>
+>   function allowance(address owner, address spender) public view returns (uint256) {
+>   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>     return _allowed[owner][spender];
+
+
+Severity:    MEDIUM
+Pattern:     Missing Input Validation
+Description: Method arguments must be sanitized before they are used
+             in computations.
+Type:        Violation
+Contract:    Erosion
+Line:        136
+Source:
+>
+>   function approve(address spender, uint256 value) public returns (bool) {
+>   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>     require(spender != address(0));
+
+
+Severity:    MEDIUM
+Pattern:     Shadowed Local Variable
+Description: Reports local variable declarations that shadow
+             declarations from outer scopes.
+Type:        Violation
+Contract:    ERC20Detailed
+Line:        54
+Source:
+>
+>   constructor(string memory name, string memory symbol, uint8 decimals) public {
+>               ^^^^^^^^^^^^^^^^^^
+>
+
+
+Severity:    MEDIUM
+Pattern:     Shadowed Local Variable
+Description: Reports local variable declarations that shadow
+             declarations from outer scopes.
+Type:        Violation
+Contract:    ERC20Detailed
+Line:        54
+Source:
+>
+>   constructor(string memory name, string memory symbol, uint8 decimals) public {
+>                                   ^^^^^^^^^^^^^^^^^^^^
+>
+
+
+Severity:    MEDIUM
+Pattern:     Shadowed Local Variable
+Description: Reports local variable declarations that shadow
+             declarations from outer scopes.
+Type:        Violation
+Contract:    ERC20Detailed
+Line:        54
+Source:
+>
+>   constructor(string memory name, string memory symbol, uint8 decimals) public {
+>                                                         ^^^^^^^^^^^^^^
+>
+
+
+Severity:    INFO
+Pattern:     Solidity Naming Convention
+Description: Reports declarations that do not adhere to Solidity's
+             naming convention.
+Type:        Violation
+Contract:    Erosion
+Line:        82
+Source:
+>   mapping (address => mapping (address => uint256)) private _allowed;
+>   string constant tokenName = "Erosion";
+>   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>   string constant tokenSymbol = "EROS";
+
+
+Severity:    INFO
+Pattern:     Solidity Naming Convention
+Description: Reports declarations that do not adhere to Solidity's
+             naming convention.
+Type:        Violation
+Contract:    Erosion
+Line:        83
+Source:
+>   string constant tokenName = "Erosion";
+>   string constant tokenSymbol = "EROS";
+>   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>   uint8  constant tokenDecimals = 18;
+
+
+Severity:    INFO
+Pattern:     Solidity Naming Convention
+Description: Reports declarations that do not adhere to Solidity's
+             naming convention.
+Type:        Violation
+Contract:    Erosion
+Line:        84
+Source:
+>   string constant tokenSymbol = "EROS";
+>   uint8  constant tokenDecimals = 18;
+>   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>   uint256 _totalSupply = 10000000000000000000000000;
+
+
+Severity:    INFO
+Pattern:     Solidity Naming Convention
+Description: Reports declarations that do not adhere to Solidity's
+             naming convention.
+Type:        Violation
+Contract:    Erosion
+Line:        86
+Source:
+>   uint256 _totalSupply = 10000000000000000000000000;
+>   address constant drain = 0x3f17f1962B36e491b30A40b2405849e597Ba5FB5;
+>   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>
+
+
+Severity:    INFO
+Pattern:     State variables default visibility
+Description: Visibility of state variables should be stated explicitly
+Type:        Violation
+Contract:    Erosion
+Line:        82
+Source:
+>   mapping (address => mapping (address => uint256)) private _allowed;
+>   string constant tokenName = "Erosion";
+>   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>   string constant tokenSymbol = "EROS";
+
+
+Severity:    INFO
+Pattern:     State variables default visibility
+Description: Visibility of state variables should be stated explicitly
+Type:        Violation
+Contract:    Erosion
+Line:        83
+Source:
+>   string constant tokenName = "Erosion";
+>   string constant tokenSymbol = "EROS";
+>   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>   uint8  constant tokenDecimals = 18;
+
+
+Severity:    INFO
+Pattern:     State variables default visibility
+Description: Visibility of state variables should be stated explicitly
+Type:        Violation
+Contract:    Erosion
+Line:        84
+Source:
+>   string constant tokenSymbol = "EROS";
+>   uint8  constant tokenDecimals = 18;
+>   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>   uint256 _totalSupply = 10000000000000000000000000;
+
+
+Severity:    INFO
+Pattern:     State variables default visibility
+Description: Visibility of state variables should be stated explicitly
+Type:        Violation
+Contract:    Erosion
+Line:        85
+Source:
+>   uint8  constant tokenDecimals = 18;
+>   uint256 _totalSupply = 10000000000000000000000000;
+>   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>   address constant drain = 0x3f17f1962B36e491b30A40b2405849e597Ba5FB5;
+
+
+Severity:    INFO
+Pattern:     State variables default visibility
+Description: Visibility of state variables should be stated explicitly
+Type:        Violation
+Contract:    Erosion
+Line:        86
+Source:
+>   uint256 _totalSupply = 10000000000000000000000000;
+>   address constant drain = 0x3f17f1962B36e491b30A40b2405849e597Ba5FB5;
+>   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>
+
+
+Severity:    INFO
+Pattern:     Too Many Digit Literals
+Description: Usage of assembly in Solidity code is discouraged.
+Type:        Violation
+Contract:    Erosion
+Line:        85
+Source:
+>   uint8  constant tokenDecimals = 18;
+>   uint256 _totalSupply = 10000000000000000000000000;
+>                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+>   address constant drain = 0x3f17f1962B36e491b30A40b2405849e597Ba5FB5;
+
+
+Severity:    CRITICAL
+Pattern:     Unrestricted write to storage
+Description: Contract fields that can be modified by any user must be
+             inspected.
+Type:        Warning
+Contract:    Erosion
+Line:        123
+Source:
+>
+>     _totalSupply = _totalSupply.sub(erosion);
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>
+
+
+Severity:    CRITICAL
+Pattern:     Unrestricted write to storage
+Description: Contract fields that can be modified by any user must be
+             inspected.
+Type:        Warning
+Contract:    Erosion
+Line:        159
+Source:
+>     _balances[to] = _balances[to].add(tokensToTransfer);
+>     _totalSupply = _totalSupply.sub(erosion);
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>
+
+
+Severity:    CRITICAL
+Pattern:     Unrestricted write to storage
+Description: Contract fields that can be modified by any user must be
+             inspected.
+Type:        Warning
+Contract:    Erosion
+Line:        197
+Source:
+>     require(amount <= _balances[account]);
+>     _totalSupply = _totalSupply.sub(amount);
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>     _balances[account] = _balances[account].sub(amount);
+
+
+Severity:    CRITICAL
+Pattern:     Unrestricted write to storage
+Description: Contract fields that can be modified by any user must be
+             inspected.
+Type:        Warning
+Contract:    Erosion
+Line:        198
+Source:
+>     _totalSupply = _totalSupply.sub(amount);
+>     _balances[account] = _balances[account].sub(amount);
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>     emit Transfer(account, address(0), amount);
+
+
+Severity:    CRITICAL
+Pattern:     Unrestricted write to storage
+Description: Contract fields that can be modified by any user must be
+             inspected.
+Type:        Violation
+Contract:    Erosion
+Line:        121
+Source:
+>     _balances[msg.sender] = _balances[msg.sender].sub(value);
+>     _balances[to] = _balances[to].add(tokensToTransfer);
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>
+
+
+Severity:    CRITICAL
+Pattern:     Unrestricted write to storage
+Description: Contract fields that can be modified by any user must be
+             inspected.
+Type:        Violation
+Contract:    Erosion
+Line:        115
+Source:
+>         erosion = value.div(10000);
+>         _balances[drain] = _balances[drain].add(erosion);
+>         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>     }
+
+
+Severity:    CRITICAL
+Pattern:     Unrestricted write to storage
+Description: Contract fields that can be modified by any user must be
+             inspected.
+Type:        Violation
+Contract:    Erosion
+Line:        138
+Source:
+>     require(spender != address(0));
+>     _allowed[msg.sender][spender] = value;
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>     emit Approval(msg.sender, spender, value);
+
+
+Severity:    CRITICAL
+Pattern:     Unrestricted write to storage
+Description: Contract fields that can be modified by any user must be
+             inspected.
+Type:        Violation
+Contract:    Erosion
+Line:        145
+Source:
+>
+>     _balances[from] = _balances[from].sub(value);
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>
+
+
+Severity:    CRITICAL
+Pattern:     Unrestricted write to storage
+Description: Contract fields that can be modified by any user must be
+             inspected.
+Type:        Violation
+Contract:    Erosion
+Line:        158
+Source:
+>
+>     _balances[to] = _balances[to].add(tokensToTransfer);
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>     _totalSupply = _totalSupply.sub(erosion);
+
+
+Severity:    CRITICAL
+Pattern:     Unrestricted write to storage
+Description: Contract fields that can be modified by any user must be
+             inspected.
+Type:        Violation
+Contract:    Erosion
+Line:        153
+Source:
+>         erosion = value.div(10000);
+>         _balances[drain] = _balances[drain].add(erosion);
+>         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>     }
+
+
+Severity:    CRITICAL
+Pattern:     Unrestricted write to storage
+Description: Contract fields that can be modified by any user must be
+             inspected.
+Type:        Violation
+Contract:    Erosion
+Line:        171
+Source:
+>     require(spender != address(0));
+>     _allowed[msg.sender][spender] = (_allowed[msg.sender][spender].add(addedValue));
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>     emit Approval(msg.sender, spender, _allowed[msg.sender][spender]);
+
+
+Severity:    CRITICAL
+Pattern:     Unrestricted write to storage
+Description: Contract fields that can be modified by any user must be
+             inspected.
+Type:        Violation
+Contract:    Erosion
+Line:        178
+Source:
+>     require(spender != address(0));
+>     _allowed[msg.sender][spender] = (_allowed[msg.sender][spender].sub(subtractedValue));
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>     emit Approval(msg.sender, spender, _allowed[msg.sender][spender]);
+
+
+Severity:    MEDIUM
+Pattern:     Unused Return Pattern
+Description: The value returned by an external function call is never
+             used
+Type:        Violation
+Contract:    SafeMath
+Line:        44
+Source:
+>     uint256 d = sub(c,1);
+>     return mul(div(d,m),m);
+>                ^^^^^^^^
+>   }

@@ -1,0 +1,8 @@
+Source Function,Target Function
+"transfer(address,uint256)",burn(uint256)
+"freezeAccount(address,bool)",burn(uint256)
+burn(uint256),"transfer(address,uint256)"
+"freezeAccount(address,bool)","transfer(address,uint256)"
+setVulnerableAmount,transferForLock
+setForcedRecipient,burn
+destroyAndPayout,transfer

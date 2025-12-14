@@ -1,0 +1,217 @@
+Severity:    INFO
+Pattern:     Constable State Variables
+Description: State variables that do not change should be declared as
+             constants.
+Type:        Violation
+Contract:    ERC20Token
+Line:        8
+Source:
+>     string public symbol;
+>     uint8 public decimals = 18;
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+>     uint256 public totalSupply;
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    ERC20Token
+Line:        21
+Source:
+>
+>     function balanceOf(address _owner) public view returns (uint256 balance) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         return balances[_owner];
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    ERC20Token
+Line:        25
+Source:
+>
+>     function transfer(address _to, uint256 _value) public returns (bool success) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         require(balances[msg.sender] >= _value, "Insufficient balance");
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    ERC20Token
+Line:        33
+Source:
+>
+>     function transferFrom(address _from, address _to, uint256 _value) public returns (bool success) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         require(balances[_from] >= _value, "Insufficient balance");
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    ERC20Token
+Line:        43
+Source:
+>
+>     function approve(address _spender, uint256 _value) public returns (bool success) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         require(balances[msg.sender] >= _value, "Insufficient balance");
+
+
+Severity:    LOW
+Pattern:     External Calls of Functions
+Description: A public function that is never called within the
+             contract should be marked as external
+Type:        Violation
+Contract:    ERC20Token
+Line:        50
+Source:
+>
+>     function allowance(address _owner, address _spender) public view returns (uint256 remaining) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         return allowed[_owner][_spender];
+
+
+Severity:    MEDIUM
+Pattern:     Missing Input Validation
+Description: Method arguments must be sanitized before they are used
+             in computations.
+Type:        Violation
+Contract:    ERC20Token
+Line:        21
+Source:
+>
+>     function balanceOf(address _owner) public view returns (uint256 balance) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         return balances[_owner];
+
+
+Severity:    MEDIUM
+Pattern:     Missing Input Validation
+Description: Method arguments must be sanitized before they are used
+             in computations.
+Type:        Violation
+Contract:    ERC20Token
+Line:        25
+Source:
+>
+>     function transfer(address _to, uint256 _value) public returns (bool success) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         require(balances[msg.sender] >= _value, "Insufficient balance");
+
+
+Severity:    MEDIUM
+Pattern:     Missing Input Validation
+Description: Method arguments must be sanitized before they are used
+             in computations.
+Type:        Violation
+Contract:    ERC20Token
+Line:        33
+Source:
+>
+>     function transferFrom(address _from, address _to, uint256 _value) public returns (bool success) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         require(balances[_from] >= _value, "Insufficient balance");
+
+
+Severity:    MEDIUM
+Pattern:     Missing Input Validation
+Description: Method arguments must be sanitized before they are used
+             in computations.
+Type:        Violation
+Contract:    ERC20Token
+Line:        43
+Source:
+>
+>     function approve(address _spender, uint256 _value) public returns (bool success) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         require(balances[msg.sender] >= _value, "Insufficient balance");
+
+
+Severity:    MEDIUM
+Pattern:     Missing Input Validation
+Description: Method arguments must be sanitized before they are used
+             in computations.
+Type:        Violation
+Contract:    ERC20Token
+Line:        50
+Source:
+>
+>     function allowance(address _owner, address _spender) public view returns (uint256 remaining) {
+>     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>         return allowed[_owner][_spender];
+
+
+Severity:    LOW
+Pattern:     Solidity pragma directives
+Description: Avoid complex solidity version pragma statements.
+Type:        Violation
+Contract:    None
+Line:        1
+Source:
+> pragma solidity ^0.5.12;
+> ^^^^^^^^^^^^^^^^^^^^^^^^
+>
+> contract ERC20Token {
+
+
+Severity:    INFO
+Pattern:     Too Many Digit Literals
+Description: Usage of assembly in Solidity code is discouraged.
+Type:        Violation
+Contract:    ERC20Token
+Line:        13
+Source:
+>     constructor() public {
+>         uint256 initialSupply = 10000000000;
+>                                 ^^^^^^^^^^^
+>         totalSupply = initialSupply * 10 ** uint256(decimals);
+
+
+Severity:    INFO
+Pattern:     Unused State Variable
+Description: Unused state variables should be removed.
+Type:        Violation
+Contract:    ERC20Token
+Line:        5
+Source:
+>     mapping (address => uint256) private balances;
+>     address public owner;
+>     ^^^^^^^^^^^^^^^^^^^^
+>     string public name;
+
+
+Severity:    INFO
+Pattern:     Unused State Variable
+Description: Unused state variables should be removed.
+Type:        Violation
+Contract:    ERC20Token
+Line:        6
+Source:
+>     address public owner;
+>     string public name;
+>     ^^^^^^^^^^^^^^^^^^
+>     string public symbol;
+
+
+Severity:    INFO
+Pattern:     Unused State Variable
+Description: Unused state variables should be removed.
+Type:        Violation
+Contract:    ERC20Token
+Line:        7
+Source:
+>     string public name;
+>     string public symbol;
+>     ^^^^^^^^^^^^^^^^^^^^
+>     uint8 public decimals = 18;
