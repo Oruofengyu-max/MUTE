@@ -1,9 +1,0 @@
-Source Function,Target Function
-getToken(),"approve(address,uint256)"
-"setApprovalForAll(address,bool)","approve(address,uint256)"
-"approve(address,uint256)",getToken()
-"setApprovalForAll(address,bool)",getToken()
-"approve(address,uint256)",ownerOf(uint256)
-getToken(),ownerOf(uint256)
-"setApprovalForAll(address,bool)",ownerOf(uint256)
-getToken(),transferOwnership(address)

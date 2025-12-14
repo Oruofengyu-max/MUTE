@@ -1,9 +1,0 @@
-Source Function,Target Function
-"approve(address,uint256)","transferFrom(address,address,uint256)"
-claimTokens(),"transferFrom(address,address,uint256)"
-"authorize(address,uint256)","transferFrom(address,address,uint256)"
-"approve(address,uint256)",claimTokens()
-"transferFrom(address,address,uint256)",claimTokens()
-"authorize(address,uint256)",claimTokens()
-EndStage(),"authorize(address,uint256)"
-initStages(),"authorize(address,uint256)"
