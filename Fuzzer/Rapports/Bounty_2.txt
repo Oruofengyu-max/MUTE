@@ -1,0 +1,264 @@
+Contract:			Bounty
+Number of Relevant Branches:	27
+Number of Branches Covered:		21
+Runtime: 											4382.545346
+Blockchain Time: 							2418.850804
+Iterations										
+21
+--------------------------------------------------
+METHODS:
+
+Constructor:
+	Inputs :[]
+	Payable: nonpayable
+donate:
+
+payout:
+
+withdraw:
+
+setBeneficiary:
+
+getProposed_beneficiary:
+
+getBounty_paid:
+
+getHas_donated:
+
+getBalances:
+
+
+--------------------------------------------------
+
+            TESTS:
+
+	(1) constructor([], from: 0x68749f7A5c57b0e0cacFe0AaE5EFbbB0DBEE05F9,
+                    value: 0)
+	(2) donate(['0x68749f7A5c57b0e0cacFe0AaE5EFbbB0DBEE05F9'], from: 0xfa6C4D97a5D55fec2ac6af424f65Fbe402e1697A,
+                    value: 0)	Returns: true
+	(3) getProposed_beneficiary([], from: 0xCb6D558CF0bBA7E9c05F99E60BfB3FD9E23556F4,
+                    value: 0)	Returns: true
+	(4) getProposed_beneficiary([], from: 0xa0Cf0c6F625410C537C5E0Ea2B691b074A117e9A,
+                    value: 0)	Returns: true
+	(5) getProposed_beneficiary([], from: 0x79b9C3D9d6C46f61Ba370eD4f0ba083e1F365824,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x68749f7A5c57b0e0cacFe0AaE5EFbbB0DBEE05F9,
+                    value: 0)
+	(2) getBalances(['0xCb6D558CF0bBA7E9c05F99E60BfB3FD9E23556F4'], from: 0x035cdaEC768C578FCFbB0e5F386FC0993effa175,
+                    value: 0)	Returns: true
+	(3) getProposed_beneficiary([], from: 0xE9AF41916c6668D6C1a1dC556C0621009daB01fA,
+                    value: 0)	Returns: true
+	(4) getBounty_paid([], from: 0x8d69cBA28A26204C484e157D0C3bd994440ACdf9,
+                    value: 0)	Returns: true
+	(5) payout(['BoAbruuVfDTxTuwoNWUIslHuVRGvRLQMkHcgEIqEfGSIVjXzVPnStLGiOEfxYPEwDOiDSlqTDgMlMZoYChrjgoMuqSIIIQyhixS DUIwDuwxRPrlIkllqMCBBwsjaJMFkGFGLGjTbBnR jHZPcNYHVzoLKEVlDnJejCKvQUTDzKfryMAyCcoSvrSFcbxaGezPDifhRuuqbBHkseSXAMxQQNdQTYnxLcSFojUnAMJmtU tMdxEicuKDHyDZI', '0x766b166394f3Ad9e5859E1c22EbA6De987bBa052'], from: 0xE9AF41916c6668D6C1a1dC556C0621009daB01fA,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x68749f7A5c57b0e0cacFe0AaE5EFbbB0DBEE05F9,
+                    value: 0)
+	(2) getBalances(['0xCb6D558CF0bBA7E9c05F99E60BfB3FD9E23556F4'], from: 0x035cdaEC768C578FCFbB0e5F386FC0993effa175,
+                    value: 0)	Returns: true
+	(3) getProposed_beneficiary([], from: 0xE9AF41916c6668D6C1a1dC556C0621009daB01fA,
+                    value: 0)	Returns: true
+	(4) getBounty_paid([], from: 0x8d69cBA28A26204C484e157D0C3bd994440ACdf9,
+                    value: 0)	Returns: true
+	(5) payout(['BoAbruuVfDTxTuwoNWUIslHuVRGvRLQMkHcgEIqEfGSIVjXzVPnStLGiOEfxYPEwDOiDSlqTDgMlMZoYChrjgoMuqSIIIQyhixS DUIwDuwxRPrlIkllqMCBBwsjaJMFkGFGLGjTbBnR jHZPcNYHVzoLKEVlDnJejCKvQUTDzKfryMAyCcoSvrSFcbxaGezPDifhRuuqbBHkseSXAMxQQNdQTYnxLcSFojUnAMJmtU tMdxEicuKDHyDZI', '0x766b166394f3Ad9e5859E1c22EbA6De987bBa052'], from: 0xE9AF41916c6668D6C1a1dC556C0621009daB01fA,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x68749f7A5c57b0e0cacFe0AaE5EFbbB0DBEE05F9,
+                    value: 0)
+	(2) getBalances(['0xCb6D558CF0bBA7E9c05F99E60BfB3FD9E23556F4'], from: 0x035cdaEC768C578FCFbB0e5F386FC0993effa175,
+                    value: 0)	Returns: true
+	(3) getProposed_beneficiary([], from: 0xE9AF41916c6668D6C1a1dC556C0621009daB01fA,
+                    value: 0)	Returns: true
+	(4) getBounty_paid([], from: 0x8d69cBA28A26204C484e157D0C3bd994440ACdf9,
+                    value: 0)	Returns: true
+	(5) payout(['BoAbruuVfDTxTuwoNWUIslHuVRGvRLQMkHcgEIqEfGSIVjXzVPnStLGiOEfxYPEwDOiDSlqTDgMlMZoYChrjgoMuqSIIIQyhixS DUIwDuwxRPrlIkllqMCBBwsjaJMFkGFGLGjTbBnR jHZPcNYHVzoLKEVlDnJejCKvQUTDzKfryMAyCcoSvrSFcbxaGezPDifhRuuqbBHkseSXAMxQQNdQTYnxLcSFojUnAMJmtU tMdxEicuKDHyDZI', '0x766b166394f3Ad9e5859E1c22EbA6De987bBa052'], from: 0xE9AF41916c6668D6C1a1dC556C0621009daB01fA,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x68749f7A5c57b0e0cacFe0AaE5EFbbB0DBEE05F9,
+                    value: 0)
+	(2) getBalances(['0xCb6D558CF0bBA7E9c05F99E60BfB3FD9E23556F4'], from: 0x035cdaEC768C578FCFbB0e5F386FC0993effa175,
+                    value: 0)	Returns: true
+	(3) getProposed_beneficiary([], from: 0xE9AF41916c6668D6C1a1dC556C0621009daB01fA,
+                    value: 0)	Returns: true
+	(4) getBounty_paid([], from: 0x8d69cBA28A26204C484e157D0C3bd994440ACdf9,
+                    value: 0)	Returns: true
+	(5) payout(['BoAbruuVfDTxTuwoNWUIslHuVRGvRLQMkHcgEIqEfGSIVjXzVPnStLGiOEfxYPEwDOiDSlqTDgMlMZoYChrjgoMuqSIIIQyhixS DUIwDuwxRPrlIkllqMCBBwsjaJMFkGFGLGjTbBnR jHZPcNYHVzoLKEVlDnJejCKvQUTDzKfryMAyCcoSvrSFcbxaGezPDifhRuuqbBHkseSXAMxQQNdQTYnxLcSFojUnAMJmtU tMdxEicuKDHyDZI', '0x766b166394f3Ad9e5859E1c22EbA6De987bBa052'], from: 0xE9AF41916c6668D6C1a1dC556C0621009daB01fA,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x68749f7A5c57b0e0cacFe0AaE5EFbbB0DBEE05F9,
+                    value: 0)
+	(2) getBalances(['0xCb6D558CF0bBA7E9c05F99E60BfB3FD9E23556F4'], from: 0x035cdaEC768C578FCFbB0e5F386FC0993effa175,
+                    value: 0)	Returns: true
+	(3) getProposed_beneficiary([], from: 0xE9AF41916c6668D6C1a1dC556C0621009daB01fA,
+                    value: 0)	Returns: true
+	(4) getBounty_paid([], from: 0x8d69cBA28A26204C484e157D0C3bd994440ACdf9,
+                    value: 0)	Returns: true
+	(5) payout(['BoAbruuVfDTxTuwoNWUIslHuVRGvRLQMkHcgEIqEfGSIVjXzVPnStLGiOEfxYPEwDOiDSlqTDgMlMZoYChrjgoMuqSIIIQyhixS DUIwDuwxRPrlIkllqMCBBwsjaJMFkGFGLGjTbBnR jHZPcNYHVzoLKEVlDnJejCKvQUTDzKfryMAyCcoSvrSFcbxaGezPDifhRuuqbBHkseSXAMxQQNdQTYnxLcSFojUnAMJmtU tMdxEicuKDHyDZI', '0x766b166394f3Ad9e5859E1c22EbA6De987bBa052'], from: 0xE9AF41916c6668D6C1a1dC556C0621009daB01fA,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xCb6D558CF0bBA7E9c05F99E60BfB3FD9E23556F4,
+                    value: 0)
+	(2) donate(['0x5d8B8dA78F672C3Ad92Eb28F8f2A637c4b08Ed88'], from: 0x766b166394f3Ad9e5859E1c22EbA6De987bBa052,
+                    value: 0)	Returns: true
+	(3) getBalances(['0x68749f7A5c57b0e0cacFe0AaE5EFbbB0DBEE05F9'], from: 0x5d8B8dA78F672C3Ad92Eb28F8f2A637c4b08Ed88,
+                    value: 0)	Returns: true
+	(4) setBeneficiary(['0x5d8B8dA78F672C3Ad92Eb28F8f2A637c4b08Ed88'], from: 0xa0Cf0c6F625410C537C5E0Ea2B691b074A117e9A,
+                    value: 0)	Returns: true
+	(5) donate(['0x766b166394f3Ad9e5859E1c22EbA6De987bBa052'], from: 0x5d8B8dA78F672C3Ad92Eb28F8f2A637c4b08Ed88,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x035cdaEC768C578FCFbB0e5F386FC0993effa175,
+                    value: 0)
+	(2) getProposed_beneficiary([], from: 0x5d8B8dA78F672C3Ad92Eb28F8f2A637c4b08Ed88,
+                    value: 0)	Returns: true
+	(3) donate(['0xfa6C4D97a5D55fec2ac6af424f65Fbe402e1697A'], from: 0xfa6C4D97a5D55fec2ac6af424f65Fbe402e1697A,
+                    value: 0)	Returns: true
+	(4) getBalances(['0x035cdaEC768C578FCFbB0e5F386FC0993effa175'], from: 0x035cdaEC768C578FCFbB0e5F386FC0993effa175,
+                    value: 0)	Returns: true
+	(5) getHas_donated(['0x035cdaEC768C578FCFbB0e5F386FC0993effa175'], from: 0xa0Cf0c6F625410C537C5E0Ea2B691b074A117e9A,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x68749f7A5c57b0e0cacFe0AaE5EFbbB0DBEE05F9,
+                    value: 0)
+	(2) donate(['0x68749f7A5c57b0e0cacFe0AaE5EFbbB0DBEE05F9'], from: 0xfa6C4D97a5D55fec2ac6af424f65Fbe402e1697A,
+                    value: 0)	Returns: true
+	(3) getProposed_beneficiary([], from: 0xCb6D558CF0bBA7E9c05F99E60BfB3FD9E23556F4,
+                    value: 0)	Returns: true
+	(4) getProposed_beneficiary([], from: 0xa0Cf0c6F625410C537C5E0Ea2B691b074A117e9A,
+                    value: 0)	Returns: true
+	(5) getProposed_beneficiary([], from: 0x79b9C3D9d6C46f61Ba370eD4f0ba083e1F365824,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x68749f7A5c57b0e0cacFe0AaE5EFbbB0DBEE05F9,
+                    value: 0)
+	(2) donate(['0x68749f7A5c57b0e0cacFe0AaE5EFbbB0DBEE05F9'], from: 0xfa6C4D97a5D55fec2ac6af424f65Fbe402e1697A,
+                    value: 0)	Returns: true
+	(3) getProposed_beneficiary([], from: 0xCb6D558CF0bBA7E9c05F99E60BfB3FD9E23556F4,
+                    value: 0)	Returns: true
+	(4) getProposed_beneficiary([], from: 0xa0Cf0c6F625410C537C5E0Ea2B691b074A117e9A,
+                    value: 0)	Returns: true
+	(5) getProposed_beneficiary([], from: 0x79b9C3D9d6C46f61Ba370eD4f0ba083e1F365824,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x68749f7A5c57b0e0cacFe0AaE5EFbbB0DBEE05F9,
+                    value: 0)
+	(2) donate(['0x68749f7A5c57b0e0cacFe0AaE5EFbbB0DBEE05F9'], from: 0xfa6C4D97a5D55fec2ac6af424f65Fbe402e1697A,
+                    value: 0)	Returns: true
+	(3) getProposed_beneficiary([], from: 0xCb6D558CF0bBA7E9c05F99E60BfB3FD9E23556F4,
+                    value: 0)	Returns: true
+	(4) getProposed_beneficiary([], from: 0xa0Cf0c6F625410C537C5E0Ea2B691b074A117e9A,
+                    value: 0)	Returns: true
+	(5) getProposed_beneficiary([], from: 0x79b9C3D9d6C46f61Ba370eD4f0ba083e1F365824,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x035cdaEC768C578FCFbB0e5F386FC0993effa175,
+                    value: 0)
+	(2) getProposed_beneficiary([], from: 0x5d8B8dA78F672C3Ad92Eb28F8f2A637c4b08Ed88,
+                    value: 0)	Returns: true
+	(3) donate(['0xfa6C4D97a5D55fec2ac6af424f65Fbe402e1697A'], from: 0xfa6C4D97a5D55fec2ac6af424f65Fbe402e1697A,
+                    value: 0)	Returns: true
+	(4) getBalances(['0x035cdaEC768C578FCFbB0e5F386FC0993effa175'], from: 0x035cdaEC768C578FCFbB0e5F386FC0993effa175,
+                    value: 0)	Returns: true
+	(5) getHas_donated(['0x035cdaEC768C578FCFbB0e5F386FC0993effa175'], from: 0xa0Cf0c6F625410C537C5E0Ea2B691b074A117e9A,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x68749f7A5c57b0e0cacFe0AaE5EFbbB0DBEE05F9,
+                    value: 0)
+	(2) donate(['0x68749f7A5c57b0e0cacFe0AaE5EFbbB0DBEE05F9'], from: 0xfa6C4D97a5D55fec2ac6af424f65Fbe402e1697A,
+                    value: 0)	Returns: true
+	(3) getProposed_beneficiary([], from: 0xCb6D558CF0bBA7E9c05F99E60BfB3FD9E23556F4,
+                    value: 0)	Returns: true
+	(4) getProposed_beneficiary([], from: 0xa0Cf0c6F625410C537C5E0Ea2B691b074A117e9A,
+                    value: 0)	Returns: true
+	(5) getProposed_beneficiary([], from: 0x79b9C3D9d6C46f61Ba370eD4f0ba083e1F365824,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x68749f7A5c57b0e0cacFe0AaE5EFbbB0DBEE05F9,
+                    value: 0)
+	(2) getBalances(['0xCb6D558CF0bBA7E9c05F99E60BfB3FD9E23556F4'], from: 0x035cdaEC768C578FCFbB0e5F386FC0993effa175,
+                    value: 0)	Returns: true
+	(3) getProposed_beneficiary([], from: 0xE9AF41916c6668D6C1a1dC556C0621009daB01fA,
+                    value: 0)	Returns: true
+	(4) getBounty_paid([], from: 0x8d69cBA28A26204C484e157D0C3bd994440ACdf9,
+                    value: 0)	Returns: true
+	(5) payout(['BoAbruuVfDTxTuwoNWUIslHuVRGvRLQMkHcgEIqEfGSIVjXzVPnStLGiOEfxYPEwDOiDSlqTDgMlMZoYChrjgoMuqSIIIQyhixS DUIwDuwxRPrlIkllqMCBBwsjaJMFkGFGLGjTbBnR jHZPcNYHVzoLKEVlDnJejCKvQUTDzKfryMAyCcoSvrSFcbxaGezPDifhRuuqbBHkseSXAMxQQNdQTYnxLcSFojUnAMJmtU tMdxEicuKDHyDZI', '0x766b166394f3Ad9e5859E1c22EbA6De987bBa052'], from: 0xE9AF41916c6668D6C1a1dC556C0621009daB01fA,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x68749f7A5c57b0e0cacFe0AaE5EFbbB0DBEE05F9,
+                    value: 0)
+	(2) donate(['0x68749f7A5c57b0e0cacFe0AaE5EFbbB0DBEE05F9'], from: 0xfa6C4D97a5D55fec2ac6af424f65Fbe402e1697A,
+                    value: 0)	Returns: true
+	(3) getProposed_beneficiary([], from: 0xCb6D558CF0bBA7E9c05F99E60BfB3FD9E23556F4,
+                    value: 0)	Returns: true
+	(4) getProposed_beneficiary([], from: 0xa0Cf0c6F625410C537C5E0Ea2B691b074A117e9A,
+                    value: 0)	Returns: true
+	(5) getProposed_beneficiary([], from: 0x79b9C3D9d6C46f61Ba370eD4f0ba083e1F365824,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x8d69cBA28A26204C484e157D0C3bd994440ACdf9,
+                    value: 0)
+	(2) withdraw([], from: 0xfa6C4D97a5D55fec2ac6af424f65Fbe402e1697A,
+                    value: 0)	Returns: 
+	(3) getHas_donated(['0x5d8B8dA78F672C3Ad92Eb28F8f2A637c4b08Ed88'], from: 0x79b9C3D9d6C46f61Ba370eD4f0ba083e1F365824,
+                    value: 0)	Returns: true
+	(4) getProposed_beneficiary([], from: 0xCb6D558CF0bBA7E9c05F99E60BfB3FD9E23556F4,
+                    value: 0)	Returns: true
+	(5) payout(['YllIdPSYlaUGUeZllWKYIhlVOVptJTDMHgMhZYxwDiTsQEa OSMxHsAttybCfwy YBDoBgexrwGjLwKwQoMZfmitUCKNKbsHbZPfrVvFrUDkVmqDWblZqhVuaPIFUWzHofqhNQmOFkbhRejYVqkRwvhcuAzXDES C csHjaZVaFLWGX aVSDVLhQxZkPIwoqJyTXPKZRxXYOXmCl', '0xE9AF41916c6668D6C1a1dC556C0621009daB01fA'], from: 0xCb6D558CF0bBA7E9c05F99E60BfB3FD9E23556F4,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x8d69cBA28A26204C484e157D0C3bd994440ACdf9,
+                    value: 0)
+	(2) withdraw([], from: 0xfa6C4D97a5D55fec2ac6af424f65Fbe402e1697A,
+                    value: 0)	Returns: 
+	(3) getHas_donated(['0x5d8B8dA78F672C3Ad92Eb28F8f2A637c4b08Ed88'], from: 0x79b9C3D9d6C46f61Ba370eD4f0ba083e1F365824,
+                    value: 0)	Returns: true
+	(4) getProposed_beneficiary([], from: 0xCb6D558CF0bBA7E9c05F99E60BfB3FD9E23556F4,
+                    value: 0)	Returns: true
+	(5) payout(['YllIdPSYlaUGUeZllWKYIhlVOVptJTDMHgMhZYxwDiTsQEa OSMxHsAttybCfwy YBDoBgexrwGjLwKwQoMZfmitUCKNKbsHbZPfrVvFrUDkVmqDWblZqhVuaPIFUWzHofqhNQmOFkbhRejYVqkRwvhcuAzXDES C csHjaZVaFLWGX aVSDVLhQxZkPIwoqJyTXPKZRxXYOXmCl', '0xE9AF41916c6668D6C1a1dC556C0621009daB01fA'], from: 0xCb6D558CF0bBA7E9c05F99E60BfB3FD9E23556F4,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x8d69cBA28A26204C484e157D0C3bd994440ACdf9,
+                    value: 0)
+	(2) withdraw([], from: 0xfa6C4D97a5D55fec2ac6af424f65Fbe402e1697A,
+                    value: 0)	Returns: 
+	(3) getHas_donated(['0x5d8B8dA78F672C3Ad92Eb28F8f2A637c4b08Ed88'], from: 0x79b9C3D9d6C46f61Ba370eD4f0ba083e1F365824,
+                    value: 0)	Returns: true
+	(4) getProposed_beneficiary([], from: 0xCb6D558CF0bBA7E9c05F99E60BfB3FD9E23556F4,
+                    value: 0)	Returns: true
+	(5) payout(['YllIdPSYlaUGUeZllWKYIhlVOVptJTDMHgMhZYxwDiTsQEa OSMxHsAttybCfwy YBDoBgexrwGjLwKwQoMZfmitUCKNKbsHbZPfrVvFrUDkVmqDWblZqhVuaPIFUWzHofqhNQmOFkbhRejYVqkRwvhcuAzXDES C csHjaZVaFLWGX aVSDVLhQxZkPIwoqJyTXPKZRxXYOXmCl', '0xE9AF41916c6668D6C1a1dC556C0621009daB01fA'], from: 0xCb6D558CF0bBA7E9c05F99E60BfB3FD9E23556F4,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xCb6D558CF0bBA7E9c05F99E60BfB3FD9E23556F4,
+                    value: 0)
+	(2) payout(['sqVhYRnc DnnLgmmHWtXqQjnihDexyXbQQcO IaVLOIFgMiBYpbTndnaa ApMNalC MCKCPxouDJBKkEPNzkTtWJdQrOUyxxyOlZiELriuDTLuFRkbaNHBSprMHk cfdhSQtpcWPwllHIyJS JfPg jZzdOENOR TqQoFXYekwBhLNrUZLJ', '0xfa6C4D97a5D55fec2ac6af424f65Fbe402e1697A'], from: 0xCb6D558CF0bBA7E9c05F99E60BfB3FD9E23556F4,
+                    value: 0)	Returns: true
+	(3) donate(['0x68749f7A5c57b0e0cacFe0AaE5EFbbB0DBEE05F9'], from: 0x68749f7A5c57b0e0cacFe0AaE5EFbbB0DBEE05F9,
+                    value: 0)	Returns: true
+	(4) withdraw([], from: 0x035cdaEC768C578FCFbB0e5F386FC0993effa175,
+                    value: 0)	Returns: 
+	(5) getBounty_paid([], from: 0x766b166394f3Ad9e5859E1c22EbA6De987bBa052,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xCb6D558CF0bBA7E9c05F99E60BfB3FD9E23556F4,
+                    value: 0)
+	(2) payout(['sqVhYRnc DnnLgmmHWtXqQjnihDexyXbQQcO IaVLOIFgMiBYpbTndnaa ApMNalC MCKCPxouDJBKkEPNzkTtWJdQrOUyxxyOlZiELriuDTLuFRkbaNHBSprMHk cfdhSQtpcWPwllHIyJS JfPg jZzdOENOR TqQoFXYekwBhLNrUZLJ', '0xfa6C4D97a5D55fec2ac6af424f65Fbe402e1697A'], from: 0xCb6D558CF0bBA7E9c05F99E60BfB3FD9E23556F4,
+                    value: 0)	Returns: true
+	(3) donate(['0x68749f7A5c57b0e0cacFe0AaE5EFbbB0DBEE05F9'], from: 0x68749f7A5c57b0e0cacFe0AaE5EFbbB0DBEE05F9,
+                    value: 0)	Returns: true
+	(4) withdraw([], from: 0x035cdaEC768C578FCFbB0e5F386FC0993effa175,
+                    value: 0)	Returns: 
+	(5) getBounty_paid([], from: 0x766b166394f3Ad9e5859E1c22EbA6De987bBa052,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xCb6D558CF0bBA7E9c05F99E60BfB3FD9E23556F4,
+                    value: 0)
+	(2) payout(['sqVhYRnc DnnLgmmHWtXqQjnihDexyXbQQcO IaVLOIFgMiBYpbTndnaa ApMNalC MCKCPxouDJBKkEPNzkTtWJdQrOUyxxyOlZiELriuDTLuFRkbaNHBSprMHk cfdhSQtpcWPwllHIyJS JfPg jZzdOENOR TqQoFXYekwBhLNrUZLJ', '0xfa6C4D97a5D55fec2ac6af424f65Fbe402e1697A'], from: 0xCb6D558CF0bBA7E9c05F99E60BfB3FD9E23556F4,
+                    value: 0)	Returns: true
+	(3) donate(['0x68749f7A5c57b0e0cacFe0AaE5EFbbB0DBEE05F9'], from: 0x68749f7A5c57b0e0cacFe0AaE5EFbbB0DBEE05F9,
+                    value: 0)	Returns: true
+	(4) withdraw([], from: 0x035cdaEC768C578FCFbB0e5F386FC0993effa175,
+                    value: 0)	Returns: 
+	(5) getBounty_paid([], from: 0x766b166394f3Ad9e5859E1c22EbA6De987bBa052,
+                    value: 0)	Returns: true

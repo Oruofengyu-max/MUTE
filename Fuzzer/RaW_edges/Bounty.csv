@@ -1,0 +1,8 @@
+Source Function,Target Function
+"payout(string,address)",setBeneficiary(address)
+donate(address),setBeneficiary(address)
+setBeneficiary(address),"payout(string,address)"
+donate(address),"payout(string,address)"
+setBeneficiary(address),withdraw()
+"payout(string,address)",withdraw()
+donate(address),withdraw()

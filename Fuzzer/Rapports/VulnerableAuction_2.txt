@@ -1,0 +1,227 @@
+Contract:			VulnerableAuction
+Number of Relevant Branches:	35
+Number of Branches Covered:		28
+Runtime: 											422.477924
+Blockchain Time: 							263.297892
+Iterations										
+21
+--------------------------------------------------
+METHODS:
+
+Constructor:
+	Inputs :[{'internalType': 'uint256', 'name': '_biddingTime', 'type': 'uint256'}]
+	Payable: nonpayable
+bid:
+
+withdraw:
+
+endAuction:
+
+
+--------------------------------------------------
+
+            TESTS:
+
+	(1) constructor([11388523682777752634007981021029886777696340043900614612472780086372850150751], from: 0x8173222a8BB86aa1B5a46393325adB4092A0DecA,
+                    value: 0)
+	(2) endAuction([], from: 0xef05d9Ae331BbFE62bC775FaF702c2D98A405d5d,
+                    value: 0)	Returns: 
+	(3) bid([], from: 0x8173222a8BB86aa1B5a46393325adB4092A0DecA,
+                    value: 0)	Returns: 
+
+	(1) constructor([11388523682777752634007981021029886777696340043900614612472780086372850150751], from: 0x8173222a8BB86aa1B5a46393325adB4092A0DecA,
+                    value: 0)
+	(2) endAuction([], from: 0xef05d9Ae331BbFE62bC775FaF702c2D98A405d5d,
+                    value: 0)	Returns: 
+	(3) bid([], from: 0x8173222a8BB86aa1B5a46393325adB4092A0DecA,
+                    value: 0)	Returns: 
+
+	(1) constructor([0], from: 0x2A7A97a09190459FF9f741eAf926F4eAa45a48ED,
+                    value: 0)
+	(2) withdraw([], from: 0xef05d9Ae331BbFE62bC775FaF702c2D98A405d5d,
+                    value: 0)	Returns: 
+	(3) bid([], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 0)	Returns: 
+
+	(1) constructor([0], from: 0x2A7A97a09190459FF9f741eAf926F4eAa45a48ED,
+                    value: 0)
+	(2) withdraw([], from: 0xef05d9Ae331BbFE62bC775FaF702c2D98A405d5d,
+                    value: 0)	Returns: 
+	(3) bid([], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 0)	Returns: 
+
+	(1) constructor([0], from: 0x2A7A97a09190459FF9f741eAf926F4eAa45a48ED,
+                    value: 0)
+	(2) withdraw([], from: 0xef05d9Ae331BbFE62bC775FaF702c2D98A405d5d,
+                    value: 0)	Returns: 
+	(3) bid([], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 0)	Returns: 
+
+	(1) constructor([0], from: 0x8173222a8BB86aa1B5a46393325adB4092A0DecA,
+                    value: 0)
+	(2) endAuction([], from: 0x8173222a8BB86aa1B5a46393325adB4092A0DecA,
+                    value: 0)	Returns: true
+	(3) withdraw([], from: 0x8173222a8BB86aa1B5a46393325adB4092A0DecA,
+                    value: 0)	Returns: 
+	(4) bid([], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 0)	Returns: 
+
+	(1) constructor([0], from: 0x2A7A97a09190459FF9f741eAf926F4eAa45a48ED,
+                    value: 0)
+	(2) withdraw([], from: 0xef05d9Ae331BbFE62bC775FaF702c2D98A405d5d,
+                    value: 0)	Returns: 
+	(3) bid([], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 0)	Returns: 
+
+	(1) constructor([0], from: 0x8173222a8BB86aa1B5a46393325adB4092A0DecA,
+                    value: 0)
+	(2) endAuction([], from: 0x8173222a8BB86aa1B5a46393325adB4092A0DecA,
+                    value: 0)	Returns: true
+	(3) withdraw([], from: 0x8173222a8BB86aa1B5a46393325adB4092A0DecA,
+                    value: 0)	Returns: 
+	(4) bid([], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 0)	Returns: 
+
+	(1) constructor([0], from: 0x2A7A97a09190459FF9f741eAf926F4eAa45a48ED,
+                    value: 0)
+	(2) withdraw([], from: 0xef05d9Ae331BbFE62bC775FaF702c2D98A405d5d,
+                    value: 0)	Returns: 
+	(3) bid([], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 0)	Returns: 
+
+	(1) constructor([0], from: 0x2A7A97a09190459FF9f741eAf926F4eAa45a48ED,
+                    value: 0)
+	(2) withdraw([], from: 0xef05d9Ae331BbFE62bC775FaF702c2D98A405d5d,
+                    value: 0)	Returns: 
+	(3) bid([], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 0)	Returns: 
+
+	(1) constructor([0], from: 0x2A7A97a09190459FF9f741eAf926F4eAa45a48ED,
+                    value: 0)
+	(2) withdraw([], from: 0xef05d9Ae331BbFE62bC775FaF702c2D98A405d5d,
+                    value: 0)	Returns: 
+	(3) bid([], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 0)	Returns: 
+
+	(1) constructor([0], from: 0x2A7A97a09190459FF9f741eAf926F4eAa45a48ED,
+                    value: 0)
+	(2) withdraw([], from: 0xef05d9Ae331BbFE62bC775FaF702c2D98A405d5d,
+                    value: 0)	Returns: 
+	(3) bid([], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 0)	Returns: 
+
+	(1) constructor([0], from: 0x2A7A97a09190459FF9f741eAf926F4eAa45a48ED,
+                    value: 0)
+	(2) withdraw([], from: 0xef05d9Ae331BbFE62bC775FaF702c2D98A405d5d,
+                    value: 0)	Returns: 
+	(3) bid([], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 0)	Returns: 
+
+	(1) constructor([0], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 0)
+	(2) endAuction([], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 0)	Returns: true
+	(3) withdraw([], from: 0xef05d9Ae331BbFE62bC775FaF702c2D98A405d5d,
+                    value: 0)	Returns: 
+
+	(1) constructor([0], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 0)
+	(2) endAuction([], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 0)	Returns: true
+	(3) withdraw([], from: 0xef05d9Ae331BbFE62bC775FaF702c2D98A405d5d,
+                    value: 0)	Returns: 
+
+	(1) constructor([0], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 0)
+	(2) endAuction([], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 0)	Returns: true
+	(3) withdraw([], from: 0xef05d9Ae331BbFE62bC775FaF702c2D98A405d5d,
+                    value: 0)	Returns: 
+
+	(1) constructor([0], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 0)
+	(2) endAuction([], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 0)	Returns: true
+	(3) withdraw([], from: 0xef05d9Ae331BbFE62bC775FaF702c2D98A405d5d,
+                    value: 0)	Returns: 
+
+	(1) constructor([0], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 0)
+	(2) endAuction([], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 0)	Returns: true
+	(3) withdraw([], from: 0xef05d9Ae331BbFE62bC775FaF702c2D98A405d5d,
+                    value: 0)	Returns: 
+
+	(1) constructor([0], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 0)
+	(2) endAuction([], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 0)	Returns: true
+	(3) withdraw([], from: 0xef05d9Ae331BbFE62bC775FaF702c2D98A405d5d,
+                    value: 0)	Returns: 
+
+	(1) constructor([0], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 0)
+	(2) endAuction([], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 0)	Returns: true
+	(3) withdraw([], from: 0xef05d9Ae331BbFE62bC775FaF702c2D98A405d5d,
+                    value: 0)	Returns: 
+
+	(1) constructor([0], from: 0xef05d9Ae331BbFE62bC775FaF702c2D98A405d5d,
+                    value: 0)
+	(2) bid([], from: 0x2A7A97a09190459FF9f741eAf926F4eAa45a48ED,
+                    value: 0)	Returns: 
+	(3) endAuction([], from: 0xef05d9Ae331BbFE62bC775FaF702c2D98A405d5d,
+                    value: 0)	Returns: true
+	(4) endAuction([], from: 0xef05d9Ae331BbFE62bC775FaF702c2D98A405d5d,
+                    value: 0)	Returns: 
+
+	(1) constructor([0], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 0)
+	(2) endAuction([], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 0)	Returns: true
+	(3) withdraw([], from: 0xef05d9Ae331BbFE62bC775FaF702c2D98A405d5d,
+                    value: 0)	Returns: 
+
+	(1) constructor([0], from: 0xef05d9Ae331BbFE62bC775FaF702c2D98A405d5d,
+                    value: 0)
+	(2) bid([], from: 0x2A7A97a09190459FF9f741eAf926F4eAa45a48ED,
+                    value: 0)	Returns: 
+	(3) endAuction([], from: 0xef05d9Ae331BbFE62bC775FaF702c2D98A405d5d,
+                    value: 0)	Returns: true
+	(4) endAuction([], from: 0xef05d9Ae331BbFE62bC775FaF702c2D98A405d5d,
+                    value: 0)	Returns: 
+
+	(1) constructor([0], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 0)
+	(2) endAuction([], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 0)	Returns: true
+	(3) withdraw([], from: 0xef05d9Ae331BbFE62bC775FaF702c2D98A405d5d,
+                    value: 0)	Returns: 
+
+	(1) constructor([0], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 0)
+	(2) endAuction([], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 0)	Returns: true
+	(3) withdraw([], from: 0xef05d9Ae331BbFE62bC775FaF702c2D98A405d5d,
+                    value: 0)	Returns: 
+
+	(1) constructor([0], from: 0x2A7A97a09190459FF9f741eAf926F4eAa45a48ED,
+                    value: 0)
+	(2) withdraw([], from: 0xef05d9Ae331BbFE62bC775FaF702c2D98A405d5d,
+                    value: 0)	Returns: 
+	(3) bid([], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 0)	Returns: 
+
+	(1) constructor([11388523682777752634007981021029886777696340043900614612472780086372850150751], from: 0x8173222a8BB86aa1B5a46393325adB4092A0DecA,
+                    value: 0)
+	(2) endAuction([], from: 0xef05d9Ae331BbFE62bC775FaF702c2D98A405d5d,
+                    value: 0)	Returns: 
+	(3) bid([], from: 0x8173222a8BB86aa1B5a46393325adB4092A0DecA,
+                    value: 0)	Returns: 
+
+	(1) constructor([11388523682777752634007981021029886777696340043900614612472780086372850150751], from: 0x8173222a8BB86aa1B5a46393325adB4092A0DecA,
+                    value: 0)
+	(2) endAuction([], from: 0xef05d9Ae331BbFE62bC775FaF702c2D98A405d5d,
+                    value: 0)	Returns: 
+	(3) bid([], from: 0x8173222a8BB86aa1B5a46393325adB4092A0DecA,
+                    value: 0)	Returns: 

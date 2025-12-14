@@ -1,0 +1,253 @@
+Contract:			AddressBook
+Number of Relevant Branches:	40
+Number of Branches Covered:		38
+Runtime: 											659.84978
+Blockchain Time: 							415.272479
+Iterations										
+21
+--------------------------------------------------
+METHODS:
+
+Constructor:
+	Inputs :[]
+	Payable: nonpayable
+getAddresses:
+
+addAddress:
+
+removeAddress:
+
+getAlias:
+
+getState:
+
+
+--------------------------------------------------
+
+            TESTS:
+
+	(1) constructor([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) getState([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) removeAddress(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) addAddress(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 'txTr'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(3) addAddress(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 'edRcTNijuUdCIzVSzpctQgEJnwJRqtYolvcopVDEcsNUqGIZoztsTKvALskTHCXUv'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(4) removeAddress(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) addAddress(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 'txTr'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(3) addAddress(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 'edRcTNijuUdCIzVSzpctQgEJnwJRqtYolvcopVDEcsNUqGIZoztsTKvALskTHCXUv'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(4) removeAddress(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) addAddress(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 'txTr'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(3) addAddress(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 'edRcTNijuUdCIzVSzpctQgEJnwJRqtYolvcopVDEcsNUqGIZoztsTKvALskTHCXUv'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(4) removeAddress(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) addAddress(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 'TONKWCyeMSDkmQelQMPvWZJZYQCnsxJbsZTlkHtlbQbTIVZPsuhGkOTCBlc JfoIFxKpCgLvG zQFpCajNQFtxDuVozXqGV JQnxSEPZiTWqLjwbKNYslAxukWKqRMFHxRlIGihUyvjFBIbZtLmFvMGitiuwxlIjwkjfCUWenRWFGAdxh e kIXLfpEAPOcWJLt'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(3) removeAddress(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) addAddress(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 'TONKWCyeMSDkmQelQMPvWZJZYQCnsxJbsZTlkHtlbQbTIVZPsuhGkOTCBlc JfoIFxKpCgLvG zQFpCajNQFtxDuVozXqGV JQnxSEPZiTWqLjwbKNYslAxukWKqRMFHxRlIGihUyvjFBIbZtLmFvMGitiuwxlIjwkjfCUWenRWFGAdxh e kIXLfpEAPOcWJLt'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(3) removeAddress(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) addAddress(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 'TONKWCyeMSDkmQelQMPvWZJZYQCnsxJbsZTlkHtlbQbTIVZPsuhGkOTCBlc JfoIFxKpCgLvG zQFpCajNQFtxDuVozXqGV JQnxSEPZiTWqLjwbKNYslAxukWKqRMFHxRlIGihUyvjFBIbZtLmFvMGitiuwxlIjwkjfCUWenRWFGAdxh e kIXLfpEAPOcWJLt'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(3) removeAddress(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) addAddress(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 'TONKWCyeMSDkmQelQMPvWZJZYQCnsxJbsZTlkHtlbQbTIVZPsuhGkOTCBlc JfoIFxKpCgLvG zQFpCajNQFtxDuVozXqGV JQnxSEPZiTWqLjwbKNYslAxukWKqRMFHxRlIGihUyvjFBIbZtLmFvMGitiuwxlIjwkjfCUWenRWFGAdxh e kIXLfpEAPOcWJLt'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(3) removeAddress(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) addAddress(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 'TONKWCyeMSDkmQelQMPvWZJZYQCnsxJbsZTlkHtlbQbTIVZPsuhGkOTCBlc JfoIFxKpCgLvG zQFpCajNQFtxDuVozXqGV JQnxSEPZiTWqLjwbKNYslAxukWKqRMFHxRlIGihUyvjFBIbZtLmFvMGitiuwxlIjwkjfCUWenRWFGAdxh e kIXLfpEAPOcWJLt'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(3) removeAddress(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) addAddress(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 'TONKWCyeMSDkmQelQMPvWZJZYQCnsxJbsZTlkHtlbQbTIVZPsuhGkOTCBlc JfoIFxKpCgLvG zQFpCajNQFtxDuVozXqGV JQnxSEPZiTWqLjwbKNYslAxukWKqRMFHxRlIGihUyvjFBIbZtLmFvMGitiuwxlIjwkjfCUWenRWFGAdxh e kIXLfpEAPOcWJLt'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(3) removeAddress(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) addAddress(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 'TONKWCyeMSDkmQelQMPvWZJZYQCnsxJbsZTlkHtlbQbTIVZPsuhGkOTCBlc JfoIFxKpCgLvG zQFpCajNQFtxDuVozXqGV JQnxSEPZiTWqLjwbKNYslAxukWKqRMFHxRlIGihUyvjFBIbZtLmFvMGitiuwxlIjwkjfCUWenRWFGAdxh e kIXLfpEAPOcWJLt'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(3) removeAddress(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) removeAddress(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) removeAddress(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) removeAddress(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) addAddress(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 'AKQHbnqPdbfpGORQwtKhWrEdrtykEebgeMlnRrlfVHUv'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) addAddress(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 'AKQHbnqPdbfpGORQwtKhWrEdrtykEebgeMlnRrlfVHUv'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) addAddress(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 'AKQHbnqPdbfpGORQwtKhWrEdrtykEebgeMlnRrlfVHUv'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) addAddress(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 'AKQHbnqPdbfpGORQwtKhWrEdrtykEebgeMlnRrlfVHUv'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) addAddress(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 'AKQHbnqPdbfpGORQwtKhWrEdrtykEebgeMlnRrlfVHUv'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) addAddress(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 'AKQHbnqPdbfpGORQwtKhWrEdrtykEebgeMlnRrlfVHUv'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) addAddress(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', ''], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) addAddress(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 'AKQHbnqPdbfpGORQwtKhWrEdrtykEebgeMlnRrlfVHUv'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) addAddress(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 'AKQHbnqPdbfpGORQwtKhWrEdrtykEebgeMlnRrlfVHUv'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) addAddress(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 'AKQHbnqPdbfpGORQwtKhWrEdrtykEebgeMlnRrlfVHUv'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) addAddress(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', ''], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) addAddress(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 'AKQHbnqPdbfpGORQwtKhWrEdrtykEebgeMlnRrlfVHUv'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) addAddress(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 'lrEdqiEwAyWNxPndwwyqBQxgRQrbiTEvtRFzChpYeGQptVZBnCJktcRUfSfWSfrNfECHyPvXszmTeAAPVRIfWFFuviAeQIL'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(3) getAddresses([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) getAddresses([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) getAddresses([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) getAddresses([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) addAddress(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 'rFehrlgfDTuuvAJoitcLvSfzEkYHSRY'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(3) getAlias(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) getAlias(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) addAddress(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 'YNaSBbKxfkIYutxeUBfzcDzVjyCOfcjiiTAhruqaKODPyqMJAHwttdfyzNxnAxf'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(3) getAlias(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) addAddress(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 'YNaSBbKxfkIYutxeUBfzcDzVjyCOfcjiiTAhruqaKODPyqMJAHwttdfyzNxnAxf'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(3) getAlias(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) addAddress(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3', 'YNaSBbKxfkIYutxeUBfzcDzVjyCOfcjiiTAhruqaKODPyqMJAHwttdfyzNxnAxf'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+	(3) getAlias(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) getAlias(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)
+	(2) getAlias(['0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3'], from: 0x2354fC8f1dBcAF59038e5C52439b1aBCFa1BDFe3,
+                    value: 0)	Returns: true

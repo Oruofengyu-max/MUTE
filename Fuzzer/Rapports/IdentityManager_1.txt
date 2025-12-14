@@ -1,0 +1,125 @@
+Contract:			IdentityManager
+Number of Relevant Branches:	12
+Number of Branches Covered:		12
+Runtime: 											19.56416
+Blockchain Time: 							6.098649
+Iterations										
+1
+--------------------------------------------------
+METHODS:
+
+Constructor:
+	Inputs :[]
+	Payable: nonpayable
+addressKnown:
+
+addValidator:
+
+convertAddress:
+
+equals:
+
+getIdentity:
+
+identityExists:
+
+isSender:
+
+recover:
+
+removeValidator:
+
+stopValidatingFor:
+
+
+--------------------------------------------------
+
+            TESTS:
+
+	(1) constructor([], from: 0x8173222a8BB86aa1B5a46393325adB4092A0DecA,
+                    value: 0)
+	(2) removeValidator([82075077324506433002201408555488086326480940972302572576600431671344990587744], from: 0xef05d9Ae331BbFE62bC775FaF702c2D98A405d5d,
+                    value: 0)	Returns: 
+	(3) addValidator(['0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863'], from: 0x8173222a8BB86aa1B5a46393325adB4092A0DecA,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 0)
+	(2) stopValidatingFor([111034240865699716518751754593818171530934811190064008515441803474454871664160], from: 0x8173222a8BB86aa1B5a46393325adB4092A0DecA,
+                    value: 0)	Returns: 
+	(3) recover([0, '0x8173222a8BB86aa1B5a46393325adB4092A0DecA'], from: 0xef05d9Ae331BbFE62bC775FaF702c2D98A405d5d,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x2A7A97a09190459FF9f741eAf926F4eAa45a48ED,
+                    value: 0)
+	(2) identityExists([86550783460367686501277309775041681309590724387824191167220775706483882150733], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 0)	Returns: true
+	(3) stopValidatingFor([11576685280109341841147151971522831883123104136035782308333742424972223521014], from: 0x2A7A97a09190459FF9f741eAf926F4eAa45a48ED,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 0)
+	(2) identityExists([0], from: 0xef05d9Ae331BbFE62bC775FaF702c2D98A405d5d,
+                    value: 0)	Returns: true
+	(3) equals([0, '0x2A7A97a09190459FF9f741eAf926F4eAa45a48ED'], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x8173222a8BB86aa1B5a46393325adB4092A0DecA,
+                    value: 0)
+	(2) removeValidator([82075077324506433002201408555488086326480940972302572576600431671344990587744], from: 0xef05d9Ae331BbFE62bC775FaF702c2D98A405d5d,
+                    value: 0)	Returns: 
+	(3) addValidator(['0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863'], from: 0x8173222a8BB86aa1B5a46393325adB4092A0DecA,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x2A7A97a09190459FF9f741eAf926F4eAa45a48ED,
+                    value: 0)
+	(2) addressKnown(['0x2A7A97a09190459FF9f741eAf926F4eAa45a48ED'], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 0)	Returns: true
+	(3) identityExists([0], from: 0x8173222a8BB86aa1B5a46393325adB4092A0DecA,
+                    value: 0)	Returns: true
+	(4) addressKnown(['0x8173222a8BB86aa1B5a46393325adB4092A0DecA'], from: 0xef05d9Ae331BbFE62bC775FaF702c2D98A405d5d,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x2A7A97a09190459FF9f741eAf926F4eAa45a48ED,
+                    value: 0)
+	(2) identityExists([86550783460367686501277309775041681309590724387824191167220775706483882150733], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 0)	Returns: true
+	(3) stopValidatingFor([11576685280109341841147151971522831883123104136035782308333742424972223521014], from: 0x2A7A97a09190459FF9f741eAf926F4eAa45a48ED,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x2A7A97a09190459FF9f741eAf926F4eAa45a48ED,
+                    value: 0)
+	(2) identityExists([86550783460367686501277309775041681309590724387824191167220775706483882150733], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 0)	Returns: true
+	(3) stopValidatingFor([11576685280109341841147151971522831883123104136035782308333742424972223521014], from: 0x2A7A97a09190459FF9f741eAf926F4eAa45a48ED,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x8173222a8BB86aa1B5a46393325adB4092A0DecA,
+                    value: 0)
+	(2) identityExists([19649289535376590953617200428871813235007323609411059120625321334598321446253], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 0)	Returns: true
+	(3) recover([19813976286300113380904630455992894052179321841597943341580484469473483696533, '0xef05d9Ae331BbFE62bC775FaF702c2D98A405d5d'], from: 0xef05d9Ae331BbFE62bC775FaF702c2D98A405d5d,
+                    value: 0)	Returns: 
+	(4) isSender([91665962842652317895926877809118442133234709101088901247262918005042697928137], from: 0x2A7A97a09190459FF9f741eAf926F4eAa45a48ED,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 0)
+	(2) addValidator(['0x8173222a8BB86aa1B5a46393325adB4092A0DecA'], from: 0xef05d9Ae331BbFE62bC775FaF702c2D98A405d5d,
+                    value: 0)	Returns: 
+	(3) getIdentity(['0x8173222a8BB86aa1B5a46393325adB4092A0DecA'], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x8173222a8BB86aa1B5a46393325adB4092A0DecA,
+                    value: 0)
+	(2) removeValidator([82075077324506433002201408555488086326480940972302572576600431671344990587744], from: 0xef05d9Ae331BbFE62bC775FaF702c2D98A405d5d,
+                    value: 0)	Returns: 
+	(3) addValidator(['0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863'], from: 0x8173222a8BB86aa1B5a46393325adB4092A0DecA,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0xef05d9Ae331BbFE62bC775FaF702c2D98A405d5d,
+                    value: 0)
+	(2) convertAddress(['0x2A7A97a09190459FF9f741eAf926F4eAa45a48ED'], from: 0x2A7A97a09190459FF9f741eAf926F4eAa45a48ED,
+                    value: 0)	Returns: true
+	(3) stopValidatingFor([29003194243943072345165017332790972184182246924436167987678217397702522163878], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 0)	Returns: 

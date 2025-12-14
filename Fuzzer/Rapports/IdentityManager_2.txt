@@ -1,0 +1,127 @@
+Contract:			IdentityManager
+Number of Relevant Branches:	12
+Number of Branches Covered:		12
+Runtime: 											20.77036
+Blockchain Time: 							6.926667
+Iterations										
+1
+--------------------------------------------------
+METHODS:
+
+Constructor:
+	Inputs :[]
+	Payable: nonpayable
+addressKnown:
+
+addValidator:
+
+convertAddress:
+
+equals:
+
+getIdentity:
+
+identityExists:
+
+isSender:
+
+recover:
+
+removeValidator:
+
+stopValidatingFor:
+
+
+--------------------------------------------------
+
+            TESTS:
+
+	(1) constructor([], from: 0x8173222a8BB86aa1B5a46393325adB4092A0DecA,
+                    value: 0)
+	(2) equals([0, '0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863'], from: 0xef05d9Ae331BbFE62bC775FaF702c2D98A405d5d,
+                    value: 0)	Returns: true
+	(3) addValidator(['0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863'], from: 0x8173222a8BB86aa1B5a46393325adB4092A0DecA,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 0)
+	(2) convertAddress(['0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863'], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 0)	Returns: true
+	(3) recover([0, '0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863'], from: 0x8173222a8BB86aa1B5a46393325adB4092A0DecA,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x8173222a8BB86aa1B5a46393325adB4092A0DecA,
+                    value: 0)
+	(2) getIdentity(['0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863'], from: 0xef05d9Ae331BbFE62bC775FaF702c2D98A405d5d,
+                    value: 0)	Returns: true
+	(3) recover([0, '0xef05d9Ae331BbFE62bC775FaF702c2D98A405d5d'], from: 0x2A7A97a09190459FF9f741eAf926F4eAa45a48ED,
+                    value: 0)	Returns: 
+	(4) equals([0, '0x8173222a8BB86aa1B5a46393325adB4092A0DecA'], from: 0x8173222a8BB86aa1B5a46393325adB4092A0DecA,
+                    value: 0)	Returns: true
+	(5) identityExists([0], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x8173222a8BB86aa1B5a46393325adB4092A0DecA,
+                    value: 0)
+	(2) getIdentity(['0x2A7A97a09190459FF9f741eAf926F4eAa45a48ED'], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 0)	Returns: true
+	(3) equals([0, '0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863'], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x8173222a8BB86aa1B5a46393325adB4092A0DecA,
+                    value: 0)
+	(2) convertAddress(['0x8173222a8BB86aa1B5a46393325adB4092A0DecA'], from: 0x2A7A97a09190459FF9f741eAf926F4eAa45a48ED,
+                    value: 0)	Returns: true
+	(3) addValidator(['0x8173222a8BB86aa1B5a46393325adB4092A0DecA'], from: 0xef05d9Ae331BbFE62bC775FaF702c2D98A405d5d,
+                    value: 0)	Returns: 
+	(4) removeValidator([0], from: 0x8173222a8BB86aa1B5a46393325adB4092A0DecA,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x8173222a8BB86aa1B5a46393325adB4092A0DecA,
+                    value: 0)
+	(2) addressKnown(['0x8173222a8BB86aa1B5a46393325adB4092A0DecA'], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 0)	Returns: true
+	(3) getIdentity(['0x8173222a8BB86aa1B5a46393325adB4092A0DecA'], from: 0xef05d9Ae331BbFE62bC775FaF702c2D98A405d5d,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 0)
+	(2) convertAddress(['0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863'], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 0)	Returns: true
+	(3) recover([0, '0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863'], from: 0x8173222a8BB86aa1B5a46393325adB4092A0DecA,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x2A7A97a09190459FF9f741eAf926F4eAa45a48ED,
+                    value: 0)
+	(2) equals([0, '0x8173222a8BB86aa1B5a46393325adB4092A0DecA'], from: 0xef05d9Ae331BbFE62bC775FaF702c2D98A405d5d,
+                    value: 0)	Returns: true
+	(3) stopValidatingFor([0], from: 0x8173222a8BB86aa1B5a46393325adB4092A0DecA,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0xef05d9Ae331BbFE62bC775FaF702c2D98A405d5d,
+                    value: 0)
+	(2) isSender([108253311455860971512466125933826479874980440716203804783320056521842068705151], from: 0x8173222a8BB86aa1B5a46393325adB4092A0DecA,
+                    value: 0)	Returns: true
+	(3) getIdentity(['0xef05d9Ae331BbFE62bC775FaF702c2D98A405d5d'], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x8173222a8BB86aa1B5a46393325adB4092A0DecA,
+                    value: 0)
+	(2) getIdentity(['0x2A7A97a09190459FF9f741eAf926F4eAa45a48ED'], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 0)	Returns: true
+	(3) equals([0, '0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863'], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 0)
+	(2) convertAddress(['0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863'], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 0)	Returns: true
+	(3) recover([0, '0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863'], from: 0x8173222a8BB86aa1B5a46393325adB4092A0DecA,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 0)
+	(2) convertAddress(['0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863'], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 0)	Returns: true
+	(3) recover([0, '0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863'], from: 0x8173222a8BB86aa1B5a46393325adB4092A0DecA,
+                    value: 0)	Returns: 

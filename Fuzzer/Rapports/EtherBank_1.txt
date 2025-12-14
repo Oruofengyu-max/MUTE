@@ -1,0 +1,133 @@
+Contract:			EtherBank
+Number of Relevant Branches:	17
+Number of Branches Covered:		14
+Runtime: 											82.463352
+Blockchain Time: 							62.531272
+Iterations										
+21
+--------------------------------------------------
+METHODS:
+
+Constructor:
+	Inputs :[]
+	Payable: payable
+deposit:
+
+withdraw:
+
+refund:
+
+getBalance:
+
+getBankBalance:
+
+
+--------------------------------------------------
+
+            TESTS:
+
+	(1) constructor([], from: 0xef05d9Ae331BbFE62bC775FaF702c2D98A405d5d,
+                    value: 1e+19)
+	(2) deposit([], from: 0x8173222a8BB86aa1B5a46393325adB4092A0DecA,
+                    value: 1e+18)	Returns: true
+	(3) getBalance(['0x2A7A97a09190459FF9f741eAf926F4eAa45a48ED'], from: 0xef05d9Ae331BbFE62bC775FaF702c2D98A405d5d,
+                    value: 0)	Returns: true
+	(4) refund([], from: 0x2A7A97a09190459FF9f741eAf926F4eAa45a48ED,
+                    value: 0)	Returns: 
+	(5) refund([], from: 0x8173222a8BB86aa1B5a46393325adB4092A0DecA,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0xef05d9Ae331BbFE62bC775FaF702c2D98A405d5d,
+                    value: 1e+19)
+	(2) deposit([], from: 0x8173222a8BB86aa1B5a46393325adB4092A0DecA,
+                    value: 1e+18)	Returns: true
+	(3) getBalance(['0x2A7A97a09190459FF9f741eAf926F4eAa45a48ED'], from: 0xef05d9Ae331BbFE62bC775FaF702c2D98A405d5d,
+                    value: 0)	Returns: true
+	(4) refund([], from: 0x2A7A97a09190459FF9f741eAf926F4eAa45a48ED,
+                    value: 0)	Returns: 
+	(5) refund([], from: 0x8173222a8BB86aa1B5a46393325adB4092A0DecA,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 1e+19)
+	(2) deposit([], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 0)	Returns: true
+	(3) refund([], from: 0xef05d9Ae331BbFE62bC775FaF702c2D98A405d5d,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 1e+19)
+	(2) deposit([], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 0)	Returns: true
+	(3) refund([], from: 0xef05d9Ae331BbFE62bC775FaF702c2D98A405d5d,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 1e+19)
+	(2) deposit([], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 0)	Returns: true
+	(3) refund([], from: 0xef05d9Ae331BbFE62bC775FaF702c2D98A405d5d,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x2A7A97a09190459FF9f741eAf926F4eAa45a48ED,
+                    value: 1e+19)
+	(2) deposit([], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 194007778397052276)	Returns: true
+	(3) getBankBalance([], from: 0x2A7A97a09190459FF9f741eAf926F4eAa45a48ED,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 1e+19)
+	(2) deposit([], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 0)	Returns: true
+	(3) refund([], from: 0xef05d9Ae331BbFE62bC775FaF702c2D98A405d5d,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x8173222a8BB86aa1B5a46393325adB4092A0DecA,
+                    value: 1e+19)
+	(2) deposit([], from: 0x8173222a8BB86aa1B5a46393325adB4092A0DecA,
+                    value: 1e+19)	Returns: true
+	(3) getBalance(['0xef05d9Ae331BbFE62bC775FaF702c2D98A405d5d'], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x8173222a8BB86aa1B5a46393325adB4092A0DecA,
+                    value: 1e+19)
+	(2) deposit([], from: 0x8173222a8BB86aa1B5a46393325adB4092A0DecA,
+                    value: 1e+19)	Returns: true
+	(3) getBalance(['0xef05d9Ae331BbFE62bC775FaF702c2D98A405d5d'], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x2A7A97a09190459FF9f741eAf926F4eAa45a48ED,
+                    value: 1e+19)
+	(2) withdraw([46939672554855804360625664722207365577990997490563648127778654669265659909018], from: 0xef05d9Ae331BbFE62bC775FaF702c2D98A405d5d,
+                    value: 0)	Returns: 
+	(3) getBankBalance([], from: 0xef05d9Ae331BbFE62bC775FaF702c2D98A405d5d,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x2A7A97a09190459FF9f741eAf926F4eAa45a48ED,
+                    value: 1e+19)
+	(2) withdraw([46939672554855804360625664722207365577990997490563648127778654669265659909018], from: 0xef05d9Ae331BbFE62bC775FaF702c2D98A405d5d,
+                    value: 0)	Returns: 
+	(3) getBankBalance([], from: 0xef05d9Ae331BbFE62bC775FaF702c2D98A405d5d,
+                    value: 0)	Returns: true
+
+	(1) constructor([], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 1e+19)
+	(2) refund([], from: 0x8173222a8BB86aa1B5a46393325adB4092A0DecA,
+                    value: 0)	Returns: 
+	(3) withdraw([0], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 1e+19)
+	(2) refund([], from: 0x8173222a8BB86aa1B5a46393325adB4092A0DecA,
+                    value: 0)	Returns: 
+	(3) withdraw([0], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 0)	Returns: 
+
+	(1) constructor([], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 1e+19)
+	(2) refund([], from: 0x8173222a8BB86aa1B5a46393325adB4092A0DecA,
+                    value: 0)	Returns: 
+	(3) withdraw([0], from: 0x235BdfAcb0a4Cfb7dedc62E25C6bCb6Ec555c863,
+                    value: 0)	Returns: 
