@@ -1,6 +1,5 @@
 # MUTE
 MUTE can automati- cally generate TOD vulnerabilities across four distinct subcategories.
-# Project README
 
 ## Required Environment
 - Truffle v5.6.9 (core: 5.6.9)
